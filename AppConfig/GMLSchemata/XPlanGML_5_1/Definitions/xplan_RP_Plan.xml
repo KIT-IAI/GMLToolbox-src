@@ -1,0 +1,502 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:36-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Plan">
+  <gml:description>Die Klasse RP_Plan modelliert einen Raumordnungsplan.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan</gml:identifier>
+  <gml:name>xplan:RP_Plan</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_bundesland">
+      <gml:description>Zuständige Bundesländer für den Plan.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:bundesland</gml:identifier>
+      <gml:name>xplan:bundesland</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1000">
+          <gml:description>Brandenburg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1000</gml:identifier>
+          <gml:name>BB</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1100">
+          <gml:description>Berlin</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1100</gml:identifier>
+          <gml:name>BE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1200">
+          <gml:description>Baden-Württemberg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1200</gml:identifier>
+          <gml:name>BW</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1300">
+          <gml:description>Bayern</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1300</gml:identifier>
+          <gml:name>BY</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1400">
+          <gml:description>Bremen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1400</gml:identifier>
+          <gml:name>HB</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1500">
+          <gml:description>Hessen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1500</gml:identifier>
+          <gml:name>HE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1600">
+          <gml:description>Hamburg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1600</gml:identifier>
+          <gml:name>HH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1700">
+          <gml:description>Mecklenburg-Vorpommern</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1700</gml:identifier>
+          <gml:name>MV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1800">
+          <gml:description>Niedersachsen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1800</gml:identifier>
+          <gml:name>NI</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_1900">
+          <gml:description>Nordrhein-Westfalen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:1900</gml:identifier>
+          <gml:name>NW</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_2000">
+          <gml:description>Rheinland-Pfalz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:2000</gml:identifier>
+          <gml:name>RP</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_2100">
+          <gml:description>Schleswig-Holstein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:2100</gml:identifier>
+          <gml:name>SH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_2200">
+          <gml:description>Saarland</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:2200</gml:identifier>
+          <gml:name>SL</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_2300">
+          <gml:description>Sachsen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:2300</gml:identifier>
+          <gml:name>SN</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_2400">
+          <gml:description>Sachsen-Anhalt</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:2400</gml:identifier>
+          <gml:name>ST</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_2500">
+          <gml:description>Thüringen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:2500</gml:identifier>
+          <gml:name>TH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_bundesland_XP_Bundeslaender_3000">
+          <gml:description>Der Bund.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:bundesland:XP_Bundeslaender:3000</gml:identifier>
+          <gml:name>Bund</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeName>XP_Bundeslaender</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_planArt">
+      <gml:description>Art des Raumordnungsplans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:planArt</gml:identifier>
+      <gml:name>xplan:planArt</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_1000">
+          <gml:description>Regionalplan.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:1000</gml:identifier>
+          <gml:name>Regionalplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_2000">
+          <gml:description>Sachlicher Teilplan auf der räumlichen Ebene einer Region</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:2000</gml:identifier>
+          <gml:name>SachlicherTeilplanRegionalebene</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_2001">
+          <gml:description>Sachlicher Teilplan auf räumlicher Ebene eines Bundeslandes</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:2001</gml:identifier>
+          <gml:name>SachlicherTeilplanLandesebene</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_3000">
+          <gml:description>Braunkohlenplan.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:3000</gml:identifier>
+          <gml:name>Braunkohlenplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_4000">
+          <gml:description>Landesweiter Raumordnungsplan auf räumlicher Ebene eines Bundeslandes</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:4000</gml:identifier>
+          <gml:name>LandesweiterRaumordnungsplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_5000">
+          <gml:description>Raumordnungsplan für das Bundesgebiet mit übergreifenden Standortkonzepten für Seehäfen, Binnenhäfen sowie Flughäfen gem. §17 Abs. 2 ROG.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:5000</gml:identifier>
+          <gml:name>StandortkonzeptBund</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_5001">
+          <gml:description>Plan des Bundes für den Gesamtraum und die ausschließliche Wirtschaftszone (AWZ).</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:5001</gml:identifier>
+          <gml:name>AWZPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_6000">
+          <gml:description>Räumlicher Teilplan auf regionaler Ebene</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:6000</gml:identifier>
+          <gml:name>RaeumlicherTeilplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_planArt_RP_Art_9999">
+          <gml:description>Sonstiges Planwerk der Raumordnung auf Bundesebene, Landesebene oder regionaler Ebene.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:planArt:RP_Art:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>RP_Art</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_sonstPlanArt">
+      <gml:description>Spezifikation einer weiteren Planart (CodeList) bei planArt == 9999.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:sonstPlanArt</gml:identifier>
+      <gml:name>xplan:sonstPlanArt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_SonstPlanArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_planungsregion">
+      <gml:description>Kennziffer der Planungsregion.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:planungsregion</gml:identifier>
+      <gml:name>xplan:planungsregion</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_teilabschnitt">
+      <gml:description>Kennziffer des Teilabschnittes.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:teilabschnitt</gml:identifier>
+      <gml:name>xplan:teilabschnitt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_rechtsstand">
+      <gml:description>Rechtsstand des Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:rechtsstand</gml:identifier>
+      <gml:name>xplan:rechtsstand</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_1000">
+          <gml:description>Aufstellungsbeschluss.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:1000</gml:identifier>
+          <gml:name>Aufstellungsbeschluss</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_2000">
+          <gml:description>Entwurf.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:2000</gml:identifier>
+          <gml:name>Entwurf</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_2001">
+          <gml:description>Entwurf genehmigt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:2001</gml:identifier>
+          <gml:name>EntwurfGenehmigt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_2002">
+          <gml:description>Entwurf geändert.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:2002</gml:identifier>
+          <gml:name>EntwurfGeaendert</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_2003">
+          <gml:description>Entwurf aufgegeben.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:2003</gml:identifier>
+          <gml:name>EntwurfAufgegeben</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_2004">
+          <gml:description>Entwurf ruht.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:2004</gml:identifier>
+          <gml:name>EntwurfRuht</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_3000">
+          <gml:description>Plan.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:3000</gml:identifier>
+          <gml:name>Plan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_4000">
+          <gml:description>Inkraftgetreten.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:4000</gml:identifier>
+          <gml:name>Inkraftgetreten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_5000">
+          <gml:description>Allgemeine Planungsabsicht.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:5000</gml:identifier>
+          <gml:name>AllgemeinePlanungsabsicht</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_6000">
+          <gml:description>Außer Kraft.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:6000</gml:identifier>
+          <gml:name>AusserKraft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_rechtsstand_RP_Rechtsstand_7000">
+          <gml:description>Plan ungültig.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:rechtsstand:RP_Rechtsstand:7000</gml:identifier>
+          <gml:name>PlanUngueltig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_Rechtsstand</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_status">
+      <gml:description>Status des Plans, definiert über eine CodeList.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:status</gml:identifier>
+      <gml:name>xplan:status</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_Status</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_aufstellungsbeschlussDatum">
+      <gml:description>Datum des Aufstellungsbeschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:aufstellungsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:aufstellungsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_auslegungStartDatum">
+      <gml:description>Start-Datum der öffentlichen Auslegung. Bei mehrfacher öffentlicher Auslegung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:auslegungStartDatum</gml:identifier>
+      <gml:name>xplan:auslegungStartDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_auslegungEndDatum">
+      <gml:description>End-Datum der öffentlichen Auslegung. Bei mehrfacher öffentlicher Auslegung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:auslegungEndDatum</gml:identifier>
+      <gml:name>xplan:auslegungEndDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_traegerbeteiligungsStartDatum">
+      <gml:description>Start-Datum der Trägerbeteiligung. Bei mehrfacher Trägerbeteiligung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:traegerbeteiligungsStartDatum</gml:identifier>
+      <gml:name>xplan:traegerbeteiligungsStartDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_traegerbeteiligungsEndDatum">
+      <gml:description>End-Datum der Trägerbeteiligung. Bei mehrfacher Trägerbeteiligung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:traegerbeteiligungsEndDatum</gml:identifier>
+      <gml:name>xplan:traegerbeteiligungsEndDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_aenderungenBisDatum">
+      <gml:description>Datum, bis zu dem Planänderungen berücksichtigt wurden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:aenderungenBisDatum</gml:identifier>
+      <gml:name>xplan:aenderungenBisDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_entwurfsbeschlussDatum">
+      <gml:description>Datum des Entwurfsbeschlusses</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:entwurfsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:entwurfsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_planbeschlussDatum">
+      <gml:description>Datum des Planbeschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:planbeschlussDatum</gml:identifier>
+      <gml:name>xplan:planbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_datumDesInkrafttretens">
+      <gml:description>Datum des Inkrafttretens des Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:datumDesInkrafttretens</gml:identifier>
+      <gml:name>xplan:datumDesInkrafttretens</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_verfahren">
+      <gml:description>Verfahrensstatus des Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:verfahren</gml:identifier>
+      <gml:name>xplan:verfahren</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_verfahren_RP_Verfahren_1000">
+          <gml:description>Änderung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:verfahren:RP_Verfahren:1000</gml:identifier>
+          <gml:name>Aenderung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_verfahren_RP_Verfahren_2000">
+          <gml:description>Teilfortschreibung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:verfahren:RP_Verfahren:2000</gml:identifier>
+          <gml:name>Teilfortschreibung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_verfahren_RP_Verfahren_3000">
+          <gml:description>Neuaufstellung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:verfahren:RP_Verfahren:3000</gml:identifier>
+          <gml:name>Neuaufstellung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_verfahren_RP_Verfahren_4000">
+          <gml:description>Gesamtfortschreibung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:verfahren:RP_Verfahren:4000</gml:identifier>
+          <gml:name>Gesamtfortschreibung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Plan_verfahren_RP_Verfahren_5000">
+          <gml:description>Aktualisierung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Plan:verfahren:RP_Verfahren:5000</gml:identifier>
+          <gml:name>Aktualisierung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_Verfahren</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_amtlicherSchluessel">
+      <gml:description>Amtlicher Schlüssel eines Plans auf Basis des  AGS-Schlüssels (Amtlicher Gemeindeschlüssel).</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:amtlicherSchluessel</gml:identifier>
+      <gml:name>xplan:amtlicherSchluessel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_genehmigungsbehoerde">
+      <gml:description>Zuständige Genehmigungsbehörde</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:attribute:genehmigungsbehoerde</gml:identifier>
+      <gml:name>xplan:genehmigungsbehoerde</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Plan_bereich">
+      <gml:description />
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Plan:association-role:bereich</gml:identifier>
+      <gml:name>xplan:bereich</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:RP_Bereich" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_Plan" />
+</TypeDefinition>

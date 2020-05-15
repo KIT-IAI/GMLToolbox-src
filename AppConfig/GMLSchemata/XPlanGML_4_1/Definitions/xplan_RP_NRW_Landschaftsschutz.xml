@@ -1,0 +1,43 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:18-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_NRW_Landschaftsschutz">
+  <gml:description>Schutz der Landschaft/landschaftsorientierte Erholung (2db)
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Landschaftsschutz</gml:identifier>
+  <gml:name>xplan:RP_NRW_Landschaftsschutz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Landschaftsschutz_typ">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Landschaftsschutz:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Landschaftsschutz_typ_RP_NRW_LandschaftsschutzTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Landschaftsschutz:typ:RP_NRW_LandschaftsschutzTypen:1000</gml:identifier>
+          <gml:name>Landschaftstruktur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Landschaftsschutz_typ_RP_NRW_LandschaftsschutzTypen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Landschaftsschutz:typ:RP_NRW_LandschaftsschutzTypen:2000</gml:identifier>
+          <gml:name>LandschaftsgebErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Landschaftsschutz_typ_RP_NRW_LandschaftsschutzTypen_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Landschaftsschutz:typ:RP_NRW_LandschaftsschutzTypen:3000</gml:identifier>
+          <gml:name>Landschaftsschutzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Landschaftsschutz_typ_RP_NRW_LandschaftsschutzTypen_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Landschaftsschutz:typ:RP_NRW_LandschaftsschutzTypen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NRW_LandschaftsschutzTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_NaturLandschaft" />
+</TypeDefinition>

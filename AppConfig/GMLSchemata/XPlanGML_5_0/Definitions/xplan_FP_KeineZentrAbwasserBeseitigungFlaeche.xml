@@ -1,0 +1,8 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:16-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_KeineZentrAbwasserBeseitigungFlaeche">
+  <gml:description>Baufläche, für die eine zentrale Abwasserbeseitigung nicht vorgesehen ist (§ 5, Abs. 2, Nr. 1 BauGB).</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_KeineZentrAbwasserBeseitigungFlaeche</gml:identifier>
+  <gml:name>xplan:FP_KeineZentrAbwasserBeseitigungFlaeche</gml:name>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Flaechenobjekt" />
+</TypeDefinition>

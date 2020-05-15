@@ -1,0 +1,380 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:09:07-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Rohstoffsicherung">
+  <gml:description>Rohstoffsicherung</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Rohstoffsicherung</gml:identifier>
+  <gml:name>xplan:RP_Rohstoffsicherung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Rohstoffsicherung_gebietsTyp">
+      <gml:description>Klassifikation des Gebietes nach Bundesraumordnungsgesetz.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Rohstoffsicherung:attribute:gebietsTyp</gml:identifier>
+      <gml:name>xplan:gebietsTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_gebietsTyp_RP_GebietsTyp_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:gebietsTyp:RP_GebietsTyp:1000</gml:identifier>
+          <gml:name>Vorranggebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_gebietsTyp_RP_GebietsTyp_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:gebietsTyp:RP_GebietsTyp:2000</gml:identifier>
+          <gml:name>Vorbehaltsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_gebietsTyp_RP_GebietsTyp_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:gebietsTyp:RP_GebietsTyp:3000</gml:identifier>
+          <gml:name>Eignungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_gebietsTyp_RP_GebietsTyp_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:gebietsTyp:RP_GebietsTyp:4000</gml:identifier>
+          <gml:name>Ausschlussgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_gebietsTyp_RP_GebietsTyp_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:gebietsTyp:RP_GebietsTyp:5000</gml:identifier>
+          <gml:name>SonstigesGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_GebietsTyp</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut">
+      <gml:description>Abgebauter Rohstoff.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Rohstoffsicherung:attribute:abbaugut</gml:identifier>
+      <gml:name>xplan:abbaugut</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1000</gml:identifier>
+          <gml:name>Anhydridstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1100">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1100</gml:identifier>
+          <gml:name>Baryt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1200</gml:identifier>
+          <gml:name>BasaltDiabas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1300">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1300</gml:identifier>
+          <gml:name>Bentonit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1400">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1400</gml:identifier>
+          <gml:name>Blaehton</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1500</gml:identifier>
+          <gml:name>Braunkohle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1600">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1600</gml:identifier>
+          <gml:name>Bundsandstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1700">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1700</gml:identifier>
+          <gml:name>Diorit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1800">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1800</gml:identifier>
+          <gml:name>Dolomitstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_1900">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:1900</gml:identifier>
+          <gml:name>Erdgas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2000</gml:identifier>
+          <gml:name>Erdoel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2100">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2100</gml:identifier>
+          <gml:name>Erz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2200</gml:identifier>
+          <gml:name>Feldspat</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2300">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2300</gml:identifier>
+          <gml:name>Flussspat</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2400">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2400</gml:identifier>
+          <gml:name>Gangquarz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2500</gml:identifier>
+          <gml:name>Gipsstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2600">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2600</gml:identifier>
+          <gml:name>Granit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2800">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2800</gml:identifier>
+          <gml:name>Grauwacke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_2900">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:2900</gml:identifier>
+          <gml:name>KalkKalktuffKreide</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3000</gml:identifier>
+          <gml:name>Kalkmergelstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3100">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3100</gml:identifier>
+          <gml:name>Kalkstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3200</gml:identifier>
+          <gml:name>Karbonatgestein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3300">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3300</gml:identifier>
+          <gml:name>KiesSand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3400">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3400</gml:identifier>
+          <gml:name>Kieselgur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3500</gml:identifier>
+          <gml:name>Kristallin</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3600">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3600</gml:identifier>
+          <gml:name>Kupfer</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3700">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3700</gml:identifier>
+          <gml:name>Lehm</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3800">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3800</gml:identifier>
+          <gml:name>Mergel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_3900">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:3900</gml:identifier>
+          <gml:name>Mergelstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4100">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4100</gml:identifier>
+          <gml:name>Muschelkalk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4200</gml:identifier>
+          <gml:name>Naturwerkstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4300">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4300</gml:identifier>
+          <gml:name>Pegmatitsand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4400">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4400</gml:identifier>
+          <gml:name>Quarzit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4500</gml:identifier>
+          <gml:name>Quarzsand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4600">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4600</gml:identifier>
+          <gml:name>Salz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4700">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4700</gml:identifier>
+          <gml:name>Sand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4800">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4800</gml:identifier>
+          <gml:name>Sandstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_4900">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:4900</gml:identifier>
+          <gml:name>Spezialton</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5000</gml:identifier>
+          <gml:name>Steinkohle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5100">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5100</gml:identifier>
+          <gml:name>Ton</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5200</gml:identifier>
+          <gml:name>Tonstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5300">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5300</gml:identifier>
+          <gml:name>Torf</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5400">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5400</gml:identifier>
+          <gml:name>TuffBimsstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5500</gml:identifier>
+          <gml:name>Uran</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5600">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5600</gml:identifier>
+          <gml:name>Vulkanit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5700">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5700</gml:identifier>
+          <gml:name>KieshaltigerSand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5800">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5800</gml:identifier>
+          <gml:name>Naturstein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_5900">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:5900</gml:identifier>
+          <gml:name>Oelschiefer</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_6000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:6000</gml:identifier>
+          <gml:name>Klei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Rohstoffsicherung_abbaugut_RP_Rohstoff_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Rohstoffsicherung:abbaugut:RP_Rohstoff:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_Rohstoff</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Rohstoffsicherung_istAusgleichsgebiet">
+      <gml:description>Gibt an, ob es sich um ein Ausgleichsgebiet handelt.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Rohstoffsicherung:attribute:istAusgleichsgebiet</gml:identifier>
+      <gml:name>xplan:istAusgleichsgebiet</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Rohstoffsicherung_istAusgleichsgebiet_Boolean_1">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::RP_Rohstoffsicherung:istAusgleichsgebiet:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Rohstoffsicherung_istAusgleichsgebiet_Boolean_0">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::RP_Rohstoffsicherung:istAusgleichsgebiet:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

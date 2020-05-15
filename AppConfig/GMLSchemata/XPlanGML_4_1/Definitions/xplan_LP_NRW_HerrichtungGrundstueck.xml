@@ -1,0 +1,85 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_NRW_HerrichtungGrundstueck">
+  <gml:description>Herrichtung von geschädigten oder nicht mehr genutzten Grundstücken i.S.v. § 26 Abs. 2 Nr. 4 LG
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_HerrichtungGrundstueck</gml:identifier>
+  <gml:name>xplan:LP_NRW_HerrichtungGrundstueck</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_massnahmeGrundstueck">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_HerrichtungGrundstueck:attribute:massnahmeGrundstueck</gml:identifier>
+      <gml:name>xplan:massnahmeGrundstueck</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_massnahmeGrundstueck_LP_NRW_GrundstuecksMassnahmen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_HerrichtungGrundstueck:massnahmeGrundstueck:LP_NRW_GrundstuecksMassnahmen:1000</gml:identifier>
+          <gml:name>Rekultivierung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_massnahmeGrundstueck_LP_NRW_GrundstuecksMassnahmen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_HerrichtungGrundstueck:massnahmeGrundstueck:LP_NRW_GrundstuecksMassnahmen:2000</gml:identifier>
+          <gml:name>Beseitigung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_massnahmeGrundstueck_LP_NRW_GrundstuecksMassnahmen_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_HerrichtungGrundstueck:massnahmeGrundstueck:LP_NRW_GrundstuecksMassnahmen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_GrundstuecksMassnahmen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_weitereMassnahmeGrundstueck">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_HerrichtungGrundstueck:attribute:weitereMassnahmeGrundstueck</gml:identifier>
+      <gml:name>xplan:weitereMassnahmeGrundstueck</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_weitereMassnahmeGrundstueck_LP_NRW_GrundstuecksMassnahmen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_HerrichtungGrundstueck:weitereMassnahmeGrundstueck:LP_NRW_GrundstuecksMassnahmen:1000</gml:identifier>
+          <gml:name>Rekultivierung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_weitereMassnahmeGrundstueck_LP_NRW_GrundstuecksMassnahmen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_HerrichtungGrundstueck:weitereMassnahmeGrundstueck:LP_NRW_GrundstuecksMassnahmen:2000</gml:identifier>
+          <gml:name>Beseitigung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_weitereMassnahmeGrundstueck_LP_NRW_GrundstuecksMassnahmen_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_HerrichtungGrundstueck:weitereMassnahmeGrundstueck:LP_NRW_GrundstuecksMassnahmen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_GrundstuecksMassnahmen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_detailMassnahme">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_HerrichtungGrundstueck:attribute:detailMassnahme</gml:identifier>
+      <gml:name>xplan:detailMassnahme</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_DetailGrundstuecksMassnahmen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_HerrichtungGrundstueck_detailWeitereMassnahme">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_HerrichtungGrundstueck:attribute:detailWeitereMassnahme</gml:identifier>
+      <gml:name>xplan:detailWeitereMassnahme</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_DetailGrundstuecksMassnahmen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_SchutzPflegeEntwicklung" />
+</TypeDefinition>

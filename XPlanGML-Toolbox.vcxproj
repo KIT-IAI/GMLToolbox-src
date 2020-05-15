@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Demo|Win32">
+      <Configuration>Demo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Demo|x64">
+      <Configuration>Demo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{84ADEC4F-4B8F-4E75-9456-697BE7AE9B5D}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <ProjectName>GML-Toolbox</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Demo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Demo|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Demo|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Demo|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)GPS\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)GPS\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+    <IncludePath>$(SolutionDir)GPS\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <TargetName>$(ProjectName)_Freeware</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+    <IncludePath>$(SolutionDir)GPS\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <TargetName>$(ProjectName)_Freeware</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)GPS\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)GPS\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <IncludePath>$(SolutionDir)GPS\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'">
+    <IncludePath>$(SolutionDir)GPS\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4275;4251;4947;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Rpcrt4.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ResourceCompile />
+    <EmbeddedResource />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4275;4251;4947;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Rpcrt4.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ResourceCompile />
+    <EmbeddedResource />
+    <Manifest>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>X3D-Module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Rpcrt4.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>X3D-Module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Rpcrt4.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;__DEMO;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Rpcrt4.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\XPlanGML-Toolbox_Executable\GML-Toolbox-Freeware.exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;__DEMO;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Rpcrt4.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'">
+    <ClCompile>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Appearance.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="BoreholeSelection.cpp" />
+    <ClCompile Include="BoreholeVisualisation2D.cpp" />
+    <ClCompile Include="Constant.cpp" />
+    <ClCompile Include="CoordSystemTransformation.cpp" />
+    <ClCompile Include="CreateGuid_64.cpp" />
+    <ClCompile Include="CSVTimeSeriesAnalysis.cpp" />
+    <ClCompile Include="CSVTimeSeriesMetadata.cpp" />
+    <ClCompile Include="EnumerationDictionaryGeneration.cpp" />
+    <ClCompile Include="FeatureExport.cpp" />
+    <ClCompile Include="FeatureOffset.cpp" />
+    <ClCompile Include="GeometrietestCityGML.cpp" />
+    <ClCompile Include="GeometrietestXPlanGML.cpp" />
+    <ClCompile Include="GeometryErrorDetails.cpp" />
+    <ClCompile Include="GeometryErrorsPerFeature.cpp" />
+    <ClCompile Include="GeometryErrorUebersicht.cpp" />
+    <ClCompile Include="GeometryKorrektur.cpp" />
+    <ClCompile Include="GeometryTestParams.cpp" />
+    <ClCompile Include="GmlModelTest.cpp" />
+    <ClCompile Include="GmlToolbox.cpp" />
+    <ClCompile Include="GMLReader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GMLToolboxPlugin.cpp" />
+    <ClCompile Include="GMLWriter.cpp" />
+    <ClCompile Include="Feature.cpp" />
+    <ClCompile Include="Convert.cpp" />
+    <ClCompile Include="Definitions.cpp" />
+    <ClCompile Include="Dictionary.cpp" />
+    <ClCompile Include="Geometrie.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GmlNamespaces.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GmlSchema.cpp" />
+    <ClCompile Include="KeyWords.cpp" />
+    <ClCompile Include="KmlVisualisierung.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="KonformitätsregelDetails.cpp" />
+    <ClCompile Include="KonvDateiReader.cpp" />
+    <ClCompile Include="KonversionINSPIRE_PLU.cpp" />
+    <ClCompile Include="Logfile.cpp" />
+    <ClCompile Include="MBoundingBox.cpp" />
+    <ClCompile Include="Migration.cpp" />
+    <ClCompile Include="ModellStatistik.cpp" />
+    <ClCompile Include="MonthlyTimeSeries.cpp" />
+    <ClCompile Include="ObjectDataWriter.cpp" />
+    <ClCompile Include="Checking.cpp" />
+    <ClCompile Include="PluginLoader.cpp" />
+    <ClCompile Include="SemantiktestXPlanGML.cpp" />
+    <ClCompile Include="ShpFileNamenKonv.cpp" />
+    <ClCompile Include="ShpFileObjekte.cpp" />
+    <ClCompile Include="shpfilereader.cpp" />
+    <ClCompile Include="SrsManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SvgVisualisierung.cpp" />
+    <ClCompile Include="TimeSeriesCombination.cpp" />
+    <ClCompile Include="TimeSeriesFilter.cpp" />
+    <ClCompile Include="TimeSeriesGaps.cpp" />
+    <ClCompile Include="TimeSeriesRepository.cpp" />
+    <ClCompile Include="TimeX.cpp" />
+    <ClCompile Include="TimeSeries.cpp" />
+    <ClCompile Include="Topologie.cpp" />
+    <ClCompile Include="Triangulation\ModeConverter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Triangulation\TessTriangulator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UnitOfMeasure.cpp" />
+    <ClCompile Include="ValidierungsfehlerDialog.cpp" />
+    <ClCompile Include="Visualisierung_2D.cpp" />
+    <ClCompile Include="Visualisierung_3D.cpp" />
+    <ClCompile Include="XPlanGML.cpp" />
+    <ClCompile Include="XPlanGML_Migration.cpp" />
+    <ClCompile Include="EnumerationConversion.cpp" />
+    <ClCompile Include="ExternalCodeLists.cpp" />
+    <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="GenerateKomplexAttribute.cpp" />
+    <ClCompile Include="GenerateKonversion.cpp" />
+    <ClCompile Include="Info.cpp" />
+    <ClCompile Include="KonformitaetsTest.cpp" />
+    <ClCompile Include="PlanAttributeNeu.cpp" />
+    <ClCompile Include="PlanBereiche.cpp" />
+    <ClCompile Include="Rasterizer.cpp" />
+    <ClCompile Include="RasterplanBasisDialog.cpp" />
+    <ClCompile Include="RasterplanBasisV2Dialog.cpp" />
+    <ClCompile Include="ShapeFileConversion.cpp" />
+    <ClCompile Include="StrukturDialog.cpp" />
+    <ClCompile Include="TextlicheFestsetzungen.cpp" />
+    <ClCompile Include="CodelistOrdnerAendernDialog.cpp" />
+    <ClCompile Include="FeatureAttribute.cpp" />
+    <ClCompile Include="GeometryInspector.cpp" />
+    <ClCompile Include="GmlTypAuswahlDialog.cpp" />
+    <ClCompile Include="HTMLDatei.cpp" />
+    <ClCompile Include="KmlErzeugungDialog.cpp" />
+    <ClCompile Include="KonformitaetsFehler.cpp" />
+    <ClCompile Include="KonvDateiNeu.cpp" />
+    <ClCompile Include="Options1.cpp" />
+    <ClCompile Include="TransformationINSPIRE_PLU.cpp" />
+    <ClCompile Include="XPlanGMLVersionsDialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppConfigPath.h" />
+    <ClInclude Include="BoreholeSelection.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="BoreholeVisualisation2D.h" />
+    <ClInclude Include="Appearance.h" />
+    <ClInclude Include="CoordSystemTransformation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CreateGuid_64.h" />
+    <ClInclude Include="CSVTimeSeriesAnalysis.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CSVTimeSeriesMetadata.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EnumerationDictionaryGeneration.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FeatureExport.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FeatureOffset.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeometrietestCityGML.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeometrietestXPlanGML.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeometryErrorDetails.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeometryErrorsPerFeature.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeometryErrorUebersicht.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeometryKorrektur.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeometryTestParams.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GmlModelTest.h" />
+    <ClInclude Include="GmlToolbox.h" />
+    <ClInclude Include="GMLReader.h" />
+    <ClInclude Include="GMLToolboxPlugin.h" />
+    <ClInclude Include="GMLWriter.h" />
+    <ClInclude Include="Feature.h" />
+    <ClInclude Include="constant.h" />
+    <ClInclude Include="Convert.h" />
+    <ClInclude Include="CoordPair.h" />
+    <ClInclude Include="Definitions.h" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="Geometrie.h" />
+    <ClInclude Include="GmlNamespaces.h" />
+    <ClInclude Include="GmlSchema.h" />
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="KeyWords.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="KmlVisualisierung.h" />
+    <ClInclude Include="KonformitätsregelDetails.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="KonvDateiReader.h" />
+    <ClInclude Include="KonversionINSPIRE_PLU.h" />
+    <ClInclude Include="Logfile.h" />
+    <ClInclude Include="MBoundingBox.h" />
+    <ClInclude Include="Migration.h" />
+    <ClInclude Include="ModellStatistik.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MonthlyTimeSeries.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ObjectDataWriter.h" />
+    <ClInclude Include="Checking.h" />
+    <ClInclude Include="PluginLoader.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource3.h" />
+    <ClInclude Include="SemantiktestXPlanGML.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ShpFileNamenKonv.h" />
+    <ClInclude Include="ShpFileObjekte.h" />
+    <ClInclude Include="shpfilereader.h" />
+    <ClInclude Include="shptypeenum.h" />
+    <ClInclude Include="SrsManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SvgVisualisierung.h" />
+    <ClInclude Include="TimeSeriesCombination.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TimeSeriesFilter.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TimeSeriesGaps.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TimeSeriesRepository.h" />
+    <ClInclude Include="TimeX.h" />
+    <ClInclude Include="TimeSeries.h" />
+    <ClInclude Include="Topologie.h" />
+    <ClInclude Include="Triangulation\ModeConverter.hpp" />
+    <ClInclude Include="Triangulation\TessTriangulator.hpp" />
+    <ClInclude Include="Triangulation\Triangulator.hpp" />
+    <ClInclude Include="Triangulation\x3dGL.h" />
+    <ClInclude Include="UnitOfMeasure.h" />
+    <ClInclude Include="ValidierungsfehlerDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Visualisierung_2D.h" />
+    <ClInclude Include="Visualisierung_3D.h" />
+    <ClInclude Include="XPlanGML.h" />
+    <ClInclude Include="XPlanGML_Migration.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CodelistOrdnerAendernDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EnumerationConversion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExternalCodeLists.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="FeatureAttribute.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GenerateKomplexAttribute.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GenerateKonversion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GeometryInspector.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GmlTypAuswahlDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="HTMLDatei.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Info.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="KmlErzeugungDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="KonformitaetsFehler.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="KonformitaetsTest.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="KonvDateiNeu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Options1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PlanAttributeNeu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PlanBereiche.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Rasterizer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RasterplanBasisDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RasterplanBasisV2Dialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ShapeFileConversion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="StrukturDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TextlicheFestsetzungen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TransformationINSPIRE_PLU.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="XPlanGMLVersionsDialog.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FZK_Gross.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BoreholeSelection.resx">
+      <DependentUpon>BoreholeSelection.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordSystemTransformation.resx">
+      <DependentUpon>CoordSystemTransformation.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSVTimeSeriesAnalysis.resx">
+      <DependentUpon>CSVTimeSeriesAnalysis.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSVTimeSeriesMetadata.resx">
+      <DependentUpon>CSVTimeSeriesMetadata.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumerationDictionaryGeneration.resx">
+      <DependentUpon>EnumerationDictionaryGeneration.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureExport.resx">
+      <DependentUpon>FeatureExport.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureOffset.resx">
+      <DependentUpon>FeatureOffset.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometrietestCityGML.resx">
+      <DependentUpon>GeometrietestCityGML.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometrietestXPlanGML.resx">
+      <DependentUpon>GeometrietestXPlanGML.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryErrorDetails.resx">
+      <DependentUpon>GeometryErrorDetails.h</DependentUpon>
+    </EmbeddedResource>
+    <!--EmbeddedResource Include="GeometryErrorUebersicht.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource-->
+    <EmbeddedResource Include="GeometryErrorsPerFeature.resx">
+      <DependentUpon>GeometryErrorsPerFeature.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryErrorUebersicht.resx">
+      <DependentUpon>GeometryErrorUebersicht.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryKorrektur.resx">
+      <DependentUpon>GeometryKorrektur.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryTestParams.resx">
+      <DependentUpon>GeometryTestParams.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyWords.resx">
+      <DependentUpon>KeyWords.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonformitätsregelDetails.resx">
+      <DependentUpon>KonformitätsregelDetails.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModellStatistik.resx">
+      <DependentUpon>ModellStatistik.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyTimeSeries.resx">
+      <DependentUpon>MonthlyTimeSeries.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SemantiktestXPlanGML.resx">
+      <DependentUpon>SemantiktestXPlanGML.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSeriesCombination.resx">
+      <DependentUpon>TimeSeriesCombination.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSeriesFilter.resx">
+      <DependentUpon>TimeSeriesFilter.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSeriesGaps.resx">
+      <DependentUpon>TimeSeriesGaps.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidierungsfehlerDialog.resx">
+      <DependentUpon>ValidierungsfehlerDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPlanGML_Migration.resx">
+      <DependentUpon>XPlanGML_Migration.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodelistOrdnerAendernDialog.resx">
+      <DependentUpon>CodelistOrdnerAendernDialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumerationConversion.resX">
+      <DependentUpon>EnumerationConversion.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExternalCodeLists.resX">
+      <DependentUpon>ExternalCodeLists.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureAttribute.resx">
+      <DependentUpon>FeatureAttribute.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resX">
+      <DependentUpon>Form1.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateKomplexAttribute.resx">
+      <DependentUpon>GenerateKomplexAttribute.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateKonversion.resX">
+      <DependentUpon>GenerateKonversion.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryInspector.resx">
+      <DependentUpon>GeometryInspector.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GmlTypAuswahlDialog.resx">
+      <DependentUpon>GmlTypAuswahlDialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HTMLDatei.resx">
+      <DependentUpon>HTMLDatei.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resX">
+      <DependentUpon>Info.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KmlErzeugungDialog.resx">
+      <DependentUpon>KmlErzeugungDialog.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonformitaetsFehler.resx">
+      <DependentUpon>KonformitaetsFehler.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonformitaetsTest.resX">
+      <DependentUpon>KonformitaetsTest.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonvDateiNeu.resx">
+      <DependentUpon>KonvDateiNeu.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options1.resx">
+      <DependentUpon>Options1.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanAttributeNeu.resX">
+      <DependentUpon>PlanAttributeNeu.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanBereiche.resX">
+      <DependentUpon>PlanBereiche.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rasterizer.resX">
+      <DependentUpon>Rasterizer.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterplanBasisDialog.resX">
+      <DependentUpon>RasterplanBasisDialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterplanBasisV2Dialog.resX">
+      <DependentUpon>RasterplanBasisV2Dialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFileConversion.resX">
+      <DependentUpon>ShapeFileConversion.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StrukturDialog.resX">
+      <DependentUpon>StrukturDialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextlicheFestsetzungen.resX">
+      <DependentUpon>TextlicheFestsetzungen.h</DependentUpon>
+      <SubType>Designer</SubType>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Demo|x64'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </LogicalName>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransformationINSPIRE_PLU.resx">
+      <DependentUpon>TransformationINSPIRE_PLU.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPlanGMLVersionsDialog.resx">
+      <DependentUpon>XPlanGMLVersionsDialog.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Diagramm\Diagramm.vcxproj">
+      <Project>{3305555a-8876-4446-a2d0-fb76b805bbf5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\gps\gps.vcxproj">
+      <Project>{bc272247-a408-4e41-a8cd-8c3a0e5211d8}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GML-Toolbox.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="app.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

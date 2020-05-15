@@ -1,0 +1,335 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:00:59-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_ExterneReferenz">
+  <gml:description>Verweis auf ein extern gespeichertes Dokument, einen extern gespeicherten, georeferenzierten Plan oder einen Datenbank-Eintrag. Einer der beiden Attribute "&lt;i&gt;referenzName&lt;/i&gt;" bzw. "&lt;i&gt;referenzURL&lt;/i&gt;" muss belegt sein.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz</gml:identifier>
+  <gml:name>xplan:XP_ExterneReferenz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_georefURL">
+      <gml:description>Referenz auf eine Georeferenzierungs-Datei. Das Attribut ist nur relevant bei Verweisen auf georeferenzierte Rasterbilder.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:georefURL</gml:identifier>
+      <gml:name>xplan:georefURL</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:gml:URI" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType">
+      <gml:description>Mime-Type der Georeferenzierungs-Datei. Das Attribut ist nur relevant bei Verweisen auf georeferenzierte Rasterbilder.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:georefMimeType</gml:identifier>
+      <gml:name>xplan:georefMimeType</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/pdf">
+          <gml:description>PDF-Dokument</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/pdf</gml:identifier>
+          <gml:name>application/pdf</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/zip">
+          <gml:description>ZIP-Archiv</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/zip</gml:identifier>
+          <gml:name>application/zip</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/xml">
+          <gml:description>XML-Dokument</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/xml</gml:identifier>
+          <gml:name>application/xml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/msword">
+          <gml:description>Word-Dokument</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/msword</gml:identifier>
+          <gml:name>application/msword</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/msexcel">
+          <gml:description>Excel-Tabelle</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/msexcel</gml:identifier>
+          <gml:name>application/msexcel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/vnd.ogc.sld+xml">
+          <gml:description>Styled Layer Descriptor (SLD) Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/vnd.ogc.sld+xml</gml:identifier>
+          <gml:name>application/vnd.ogc.sld+xml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/vnd.ogc.wms_xml">
+          <gml:description>WebMapService (WMS) Request</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/vnd.ogc.wms_xml</gml:identifier>
+          <gml:name>application/vnd.ogc.wms_xml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/vnd.ogc.gml">
+          <gml:description>GML-Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/vnd.ogc.gml</gml:identifier>
+          <gml:name>application/vnd.ogc.gml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_application/odt">
+          <gml:description>OpenDocument (ODT) Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:application/odt</gml:identifier>
+          <gml:name>application/odt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_image/jpg">
+          <gml:description>JPG rasterdatei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:image/jpg</gml:identifier>
+          <gml:name>image/jpg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_image/png">
+          <gml:description>PNG-Rasterdatei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:image/png</gml:identifier>
+          <gml:name>image/png</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_image/tiff">
+          <gml:description>TIFF-Rasterdatei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:image/tiff</gml:identifier>
+          <gml:name>image/tiff</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_image/ecw">
+          <gml:description>Autodesk image (ECW) Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:image/ecw</gml:identifier>
+          <gml:name>image/ecw</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_image/svg+xml">
+          <gml:description>Scalable Vector Graphics (SVG) Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:image/svg+xml</gml:identifier>
+          <gml:name>image/svg+xml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_text/html">
+          <gml:description>HTML-Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:text/html</gml:identifier>
+          <gml:name>text/html</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_georefMimeType_XP_MimeTypes_text/plain">
+          <gml:description>ASCII Text-Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:georefMimeType:XP_MimeTypes:text/plain</gml:identifier>
+          <gml:name>text/plain</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_MimeTypes</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_art">
+      <gml:description>Typisierung der referierten Dokumente: Beliebiges Dokument oder georeferenzierter Plan.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:art</gml:identifier>
+      <gml:name>xplan:art</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_art_XP_ExterneReferenzArt_Dokument">
+          <gml:description>Referenz auf ein Dokument.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:art:XP_ExterneReferenzArt:Dokument</gml:identifier>
+          <gml:name>Dokument</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_art_XP_ExterneReferenzArt_PlanMitGeoreferenz">
+          <gml:description>Referenz auf einen georeferenzierten Plan.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:art:XP_ExterneReferenzArt:PlanMitGeoreferenz</gml:identifier>
+          <gml:name>PlanMitGeoreferenz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ExterneReferenzArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_informationssystemURL">
+      <gml:description>URI des zugehörigen Informationssystems.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:informationssystemURL</gml:identifier>
+      <gml:name>xplan:informationssystemURL</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:gml:URI" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_referenzName">
+      <gml:description>Name des referierten Dokument innerhalb des Informationssystems.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:referenzName</gml:identifier>
+      <gml:name>xplan:referenzName</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_referenzURL">
+      <gml:description>URI des referierten Dokuments, bzw. Datenbank-Schlüssel.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:referenzURL</gml:identifier>
+      <gml:name>xplan:referenzURL</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:gml:URI" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType">
+      <gml:description>Mime-Type des referierten Dokumentes</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:referenzMimeType</gml:identifier>
+      <gml:name>xplan:referenzMimeType</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/pdf">
+          <gml:description>PDF-Dokument</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/pdf</gml:identifier>
+          <gml:name>application/pdf</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/zip">
+          <gml:description>ZIP-Archiv</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/zip</gml:identifier>
+          <gml:name>application/zip</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/xml">
+          <gml:description>XML-Dokument</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/xml</gml:identifier>
+          <gml:name>application/xml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/msword">
+          <gml:description>Word-Dokument</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/msword</gml:identifier>
+          <gml:name>application/msword</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/msexcel">
+          <gml:description>Excel-Tabelle</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/msexcel</gml:identifier>
+          <gml:name>application/msexcel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/vnd.ogc.sld+xml">
+          <gml:description>Styled Layer Descriptor (SLD) Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/vnd.ogc.sld+xml</gml:identifier>
+          <gml:name>application/vnd.ogc.sld+xml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/vnd.ogc.wms_xml">
+          <gml:description>WebMapService (WMS) Request</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/vnd.ogc.wms_xml</gml:identifier>
+          <gml:name>application/vnd.ogc.wms_xml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/vnd.ogc.gml">
+          <gml:description>GML-Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/vnd.ogc.gml</gml:identifier>
+          <gml:name>application/vnd.ogc.gml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_application/odt">
+          <gml:description>OpenDocument (ODT) Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:application/odt</gml:identifier>
+          <gml:name>application/odt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_image/jpg">
+          <gml:description>JPG rasterdatei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:image/jpg</gml:identifier>
+          <gml:name>image/jpg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_image/png">
+          <gml:description>PNG-Rasterdatei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:image/png</gml:identifier>
+          <gml:name>image/png</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_image/tiff">
+          <gml:description>TIFF-Rasterdatei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:image/tiff</gml:identifier>
+          <gml:name>image/tiff</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_image/ecw">
+          <gml:description>Autodesk image (ECW) Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:image/ecw</gml:identifier>
+          <gml:name>image/ecw</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_image/svg+xml">
+          <gml:description>Scalable Vector Graphics (SVG) Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:image/svg+xml</gml:identifier>
+          <gml:name>image/svg+xml</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_text/html">
+          <gml:description>HTML-Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:text/html</gml:identifier>
+          <gml:name>text/html</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_ExterneReferenz_referenzMimeType_XP_MimeTypes_text/plain">
+          <gml:description>ASCII Text-Datei</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_ExterneReferenz:referenzMimeType:XP_MimeTypes:text/plain</gml:identifier>
+          <gml:name>text/plain</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_MimeTypes</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_beschreibung">
+      <gml:description>Beschreibung des referierten Dokuments</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:beschreibung</gml:identifier>
+      <gml:name>xplan:beschreibung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_ExterneReferenz_datum">
+      <gml:description>Datum des referierten Dokuments</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_ExterneReferenz:attribute:datum</gml:identifier>
+      <gml:name>xplan:datum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

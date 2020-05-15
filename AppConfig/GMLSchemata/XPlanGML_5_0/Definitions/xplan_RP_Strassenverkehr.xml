@@ -1,0 +1,168 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:22-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Strassenverkehr">
+  <gml:description>Strassenverkehr-Infrastruktur.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Strassenverkehr</gml:identifier>
+  <gml:name>xplan:RP_Strassenverkehr</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Strassenverkehr_typ">
+      <gml:description>Klassifikation von Strassenverkehr-Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Strassenverkehr:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_1000">
+          <gml:description>Straßenverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:1000</gml:identifier>
+          <gml:name>Strassenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_1001">
+          <gml:description>Hauptverkehrsstraße.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:1001</gml:identifier>
+          <gml:name>Hauptverkehrsstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_1002">
+          <gml:description>Autobahn.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:1002</gml:identifier>
+          <gml:name>Autobahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_1003">
+          <gml:description>Bundesstraße.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:1003</gml:identifier>
+          <gml:name>Bundesstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_1004">
+          <gml:description>Staatsstraße.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:1004</gml:identifier>
+          <gml:name>Staatsstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_1005">
+          <gml:description>Landesstraße.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:1005</gml:identifier>
+          <gml:name>Landesstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_1006">
+          <gml:description>Kreisstraße.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:1006</gml:identifier>
+          <gml:name>Kreisstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_1007">
+          <gml:description>Fernstraße.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:1007</gml:identifier>
+          <gml:name>Fernstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_2000">
+          <gml:description>Trasse.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:2000</gml:identifier>
+          <gml:name>Trasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_3000">
+          <gml:description>Straßennetz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:3000</gml:identifier>
+          <gml:name>Strassennetz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_4000">
+          <gml:description>Busverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:4000</gml:identifier>
+          <gml:name>Busverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_5000">
+          <gml:description>Anschlussstelle.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:5000</gml:identifier>
+          <gml:name>Anschlussstelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_6000">
+          <gml:description>Straßentunnel.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:6000</gml:identifier>
+          <gml:name>Strassentunnel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_typ_RP_StrassenverkehrTypen_9999">
+          <gml:description>Sonstiger Straßenverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:typ:RP_StrassenverkehrTypen:9999</gml:identifier>
+          <gml:name>SonstigerStrassenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_StrassenverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Strassenverkehr_besondererTyp">
+      <gml:description>Klassifikation von besonderer Strassenverkehr-Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Strassenverkehr:attribute:besondererTyp</gml:identifier>
+      <gml:name>xplan:besondererTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_besondererTyp_RP_BesondererStrassenverkehrTypen_1000">
+          <gml:description>Zweistreifig.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:besondererTyp:RP_BesondererStrassenverkehrTypen:1000</gml:identifier>
+          <gml:name>Zweistreifig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_besondererTyp_RP_BesondererStrassenverkehrTypen_1001">
+          <gml:description>Dreistreifig.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:besondererTyp:RP_BesondererStrassenverkehrTypen:1001</gml:identifier>
+          <gml:name>Dreistreifig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_besondererTyp_RP_BesondererStrassenverkehrTypen_1002">
+          <gml:description>Vierstreifig.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:besondererTyp:RP_BesondererStrassenverkehrTypen:1002</gml:identifier>
+          <gml:name>Vierstreifig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_besondererTyp_RP_BesondererStrassenverkehrTypen_1003">
+          <gml:description>Sechsstreifig.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:besondererTyp:RP_BesondererStrassenverkehrTypen:1003</gml:identifier>
+          <gml:name>Sechsstreifig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_besondererTyp_RP_BesondererStrassenverkehrTypen_2000">
+          <gml:description>Problembereich.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:besondererTyp:RP_BesondererStrassenverkehrTypen:2000</gml:identifier>
+          <gml:name>Problembereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Strassenverkehr_besondererTyp_RP_BesondererStrassenverkehrTypen_3000">
+          <gml:description>Grünbrückenquerungsmöglichkeit.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Strassenverkehr:besondererTyp:RP_BesondererStrassenverkehrTypen:3000</gml:identifier>
+          <gml:name>GruenbrueckeQuerungsmoeglichkeit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_BesondererStrassenverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Verkehr" />
+</TypeDefinition>

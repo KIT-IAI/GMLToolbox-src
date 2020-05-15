@@ -1,0 +1,1286 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:08:03-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xplan="http://www.xplanung.de/xplangml/4/1" targetNamespace="http://www.xplanung.de/xplangml/4/1" xmlns:kit="http://www.kit.edu" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified" version="4.1">
+  <include schemaLocation="XPlanGML_Basisschema.xsd" />
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gmlProfile/gmlProfilexplan.xsd" />
+  <!--=========================================================================================-->
+  <!--RP_Art-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_Art">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Regionalplan-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--SachlicherTeilplan-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Braunkohlenplan-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--LandesweiterRaumordnungsplan-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--AWZPlan-->
+      </enumeration>
+      <enumeration value="5100">
+        <!--StandortkonzeptBund-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--Sonstiges-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Bereich-->
+  <!--=========================================================================================-->
+  <element name="RP_Bereich" type="xplan:RP_BereichType" substitutionGroup="xplan:XP_Bereich" />
+  <complexType name="RP_BereichType">
+    <annotation>
+      <documentation>Die Klasse modelliert einen Bereich eines Regionalplans,
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:XP_BereichType">
+        <sequence>
+          <element name="versionBROG" minOccurs="0" type="date" />
+          <element name="versionBROGText" minOccurs="0" type="string" />
+          <element name="versionLPLG" minOccurs="0" type="date" />
+          <element name="versionLPLGText" minOccurs="0" type="string" />
+          <element name="gehoertZuPlan" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>xplan:RP_Plan</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="inhaltRPlan" minOccurs="0" maxOccurs="unbounded" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>xplan:RP_Objekt</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="rasterAenderung" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_RasterplanAenderungPropertyType" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Bereich" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Bereich" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Flaechenobjekt-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="RP_Flaechenobjekt" type="xplan:RP_FlaechenobjektType" substitutionGroup="xplan:RP_Objekt" />
+  <complexType abstract="true" name="RP_FlaechenobjektType">
+    <annotation>
+      <documentation>Basisklasse für alle Objekte eines Regionalplans mit flächenhaftem Raumbezug (eine Einzelfläche oder eine Menge von Flächen, die sich nicht überlappen dürfen).
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_ObjektType">
+        <sequence>
+          <element name="position" type="gml:GeometryPropertyType" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Flaechenobjekt" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Flaechenobjekt" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_GebietsTyp-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_GebietsTyp">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Vorranggebiet-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Vorbehaltsgebiet-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Eignungsgebiet-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Ausschlussgebiet-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--SonstigesGebiet-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Geometrieobjekt-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="RP_Geometrieobjekt" type="xplan:RP_GeometrieobjektType" substitutionGroup="xplan:RP_Objekt" />
+  <complexType abstract="true" name="RP_GeometrieobjektType">
+    <annotation>
+      <documentation>Basisklasse für alle Objekte eines Regionalplans mit variablem Raumbezug. Ein konkretes Objekt muss entweder punktförmigen, linienförmigen oder flächenhaften Raumbezug haben, gemischte Geometrie ist nicht zugelassen.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_ObjektType">
+        <sequence>
+          <element name="position" type="gml:GeometryPropertyType" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Geometrieobjekt" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Geometrieobjekt" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Linienobjekt-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="RP_Linienobjekt" type="xplan:RP_LinienobjektType" substitutionGroup="xplan:RP_Objekt" />
+  <complexType abstract="true" name="RP_LinienobjektType">
+    <annotation>
+      <documentation>Basisklasse für alle Objekte eines Regionalplans mit linienförmigem Raumbezug (eine einzelne zusammenhängende Kurve, die aus Linienstücken und Kreisbögen zusammengesetzt sein kann, oder eine Menge derartiger Kurven).</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_ObjektType">
+        <sequence>
+          <element name="position" type="gml:GeometryPropertyType" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Linienobjekt" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Linienobjekt" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Objekt-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="RP_Objekt" type="xplan:RP_ObjektType" substitutionGroup="xplan:XP_Objekt" />
+  <complexType abstract="true" name="RP_ObjektType">
+    <annotation>
+      <documentation>Basisklasse für alle spezifischen Festlegungen eines Regionalplans.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:XP_ObjektType">
+        <sequence>
+          <element name="rechtscharakter" minOccurs="0" type="xplan:RP_Rechtscharakter" />
+          <element name="konkretisierung" minOccurs="0" type="string" />
+          <element name="gehoertZuRP_Bereich" minOccurs="0" maxOccurs="unbounded" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>xplan:RP_Bereich</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Objekt" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Objekt" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Plan-->
+  <!--=========================================================================================-->
+  <element name="RP_Plan" type="xplan:RP_PlanType" substitutionGroup="xplan:XP_Plan" />
+  <complexType name="RP_PlanType">
+    <annotation>
+      <documentation>Die Klasse modelliert einen Regionalplan.
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:XP_PlanType">
+        <sequence>
+          <element name="bundesland" maxOccurs="unbounded" type="xplan:XP_Bundeslaender" />
+          <element name="planArt" minOccurs="0" type="xplan:RP_Art" />
+          <element name="sonstPlanArt" minOccurs="0" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <kit:referenzierteCodelist>xplan:RP_SonstPlanArt</kit:referenzierteCodelist>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="planungsregion" minOccurs="0" type="integer" />
+          <element name="teilabschnitt" minOccurs="0" type="integer" />
+          <element name="rechtsstand" minOccurs="0" type="xplan:RP_Rechtsstand" />
+          <element name="status" minOccurs="0" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <kit:referenzierteCodelist>xplan:RP_Status</kit:referenzierteCodelist>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="aufstellungsbeschlussDatum" minOccurs="0" type="date" />
+          <element name="auslegungStartDatum" minOccurs="0" type="date" />
+          <element name="auslegungsEndDatum" minOccurs="0" type="date" />
+          <element name="traegerbeteiligungsStartDatum" minOccurs="0" type="date" />
+          <element name="traegerbeteiligungsEndDatum" minOccurs="0" type="date" />
+          <element name="aenderungenBisDatum" minOccurs="0" type="date" />
+          <element name="entwurfsbeschlussDatum" minOccurs="0" type="date" />
+          <element name="planbeschlussDatum" minOccurs="0" type="date" />
+          <element name="datumDesInkrafttretens" minOccurs="0" type="date" />
+          <element name="refUmweltbericht" minOccurs="0" type="xplan:XP_ExterneReferenzPropertyType" />
+          <element name="refSatzung" minOccurs="0" type="xplan:XP_ExterneReferenzPropertyType" />
+          <element name="bereich" minOccurs="0" maxOccurs="unbounded" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>xplan:RP_Bereich</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Plan" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Plan" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Punktobjekt-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="RP_Punktobjekt" type="xplan:RP_PunktobjektType" substitutionGroup="xplan:RP_Objekt" />
+  <complexType abstract="true" name="RP_PunktobjektType">
+    <annotation>
+      <documentation>Basisklasse für alle Objekte eines Regionalplans mit punktförmigem Raumbezug (Einzelpunkt oder Punktmenge).
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_ObjektType">
+        <sequence>
+          <element name="position" type="gml:GeometryPropertyType" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Punktobjekt" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Punktobjekt" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Rechtscharakter-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_Rechtscharakter">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--ZielDerRaumordnung-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--GrundsatzDerRaumordnung-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--NachrichtlicheUbernahme-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--NachrichtlicheUebernahmeZiel-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--NachrichtlicheUebernahmeGrundsatz-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Rechtsstand-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_Rechtsstand">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Aufstellungsbeschluss-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Entwurf-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Plan-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Inkraftgetreten-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--Untergegangen-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_TextAbschnitt-->
+  <!--=========================================================================================-->
+  <element name="RP_TextAbschnitt" type="xplan:RP_TextAbschnittType" substitutionGroup="xplan:XP_TextAbschnitt" />
+  <complexType name="RP_TextAbschnittType">
+    <annotation>
+      <documentation>Texlich formulierter Inhalt eines Regionalplans, der einen anderen Rechtscharakter als das zugrunde liegende Fachobjekt hat (Attribut &lt;i&gt;rechtscharakter &lt;/i&gt;des Fachobjektes), oder dem Plan als Ganzes zugeordnet ist.
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:XP_TextAbschnittType">
+        <sequence>
+          <element name="rechtscharakter" type="xplan:RP_Rechtscharakter" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_RasterplanAenderung-->
+  <!--=========================================================================================-->
+  <element name="RP_RasterplanAenderung" type="xplan:RP_RasterplanAenderungType" substitutionGroup="xplan:XP_RasterplanAenderung" />
+  <complexType name="RP_RasterplanAenderungType">
+    <complexContent>
+      <extension base="xplan:XP_RasterplanAenderungType">
+        <sequence>
+          <element name="aufstellungsbeschlussDatum" minOccurs="0" type="date" />
+          <element name="auslegungsStartDatum" minOccurs="0" type="date" />
+          <element name="auslegungsEndDatum" minOccurs="0" type="date" />
+          <element name="traegerbeteiligungsStartDatum" minOccurs="0" type="date" />
+          <element name="traegerbeteiligungsEndDatum" minOccurs="0" type="date" />
+          <element name="aenderungenBisDatum" minOccurs="0" type="date" />
+          <element name="entwurfsbeschlussDatum" minOccurs="0" type="date" />
+          <element name="satzungsbeschlussDatum" minOccurs="0" type="date" />
+          <element name="datumDesInkrafttretens" minOccurs="0" type="date" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_RasterplanAenderung" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_RasterplanAenderung" type="anyType" abstract="true" />
+  <complexType name="RP_RasterplanAenderungPropertyType">
+    <sequence>
+      <element ref="xplan:RP_RasterplanAenderung" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_Bodenschutz-->
+  <!--=========================================================================================-->
+  <element name="RP_Bodenschutz" type="xplan:RP_BodenschutzType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_BodenschutzType">
+    <annotation>
+      <documentation>Bodenschutz
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Bodenschutz" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Bodenschutz" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Forstwirtschaft-->
+  <!--=========================================================================================-->
+  <element name="RP_Forstwirtschaft" type="xplan:RP_ForstwirtschaftType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_ForstwirtschaftType">
+    <annotation>
+      <documentation>Forstwirtschaft</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Forstwirtschaft" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Forstwirtschaft" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_FreizeitErholung-->
+  <!--=========================================================================================-->
+  <element name="RP_FreizeitErholung" type="xplan:RP_FreizeitErholungType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_FreizeitErholungType">
+    <annotation>
+      <documentation>Freizeit und Erholung</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_FreizeitErholung" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_FreizeitErholung" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Gewaesser-->
+  <!--=========================================================================================-->
+  <element name="RP_Gewaesser" type="xplan:RP_GewaesserType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_GewaesserType">
+    <annotation>
+      <documentation>Gewässer</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Gewaesser" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Gewaesser" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_GruenzugGruenzaesur-->
+  <!--=========================================================================================-->
+  <element name="RP_GruenzugGruenzaesur" type="xplan:RP_GruenzugGruenzaesurType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_GruenzugGruenzaesurType">
+    <annotation>
+      <documentation>Regionaler Grünzug/Grünzäsur</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_GruenzugGruenzaesur" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_GruenzugGruenzaesur" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Klimaschutz-->
+  <!--=========================================================================================-->
+  <element name="RP_Klimaschutz" type="xplan:RP_KlimaschutzType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_KlimaschutzType">
+    <annotation>
+      <documentation>(Siedlungs-) Klimaschutz</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Klimaschutz" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Klimaschutz" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_KulturellesSachgut-->
+  <!--=========================================================================================-->
+  <element name="RP_KulturellesSachgut" type="xplan:RP_KulturellesSachgutType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_KulturellesSachgutType">
+    <annotation>
+      <documentation>Kulturelles Sachgut
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_KulturellesSachgut" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_KulturellesSachgut" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Landwirtschaft-->
+  <!--=========================================================================================-->
+  <element name="RP_Landwirtschaft" type="xplan:RP_LandwirtschaftType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_LandwirtschaftType">
+    <annotation>
+      <documentation>Landwirtschaft</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Landwirtschaft" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Landwirtschaft" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_NaturLandschaft-->
+  <!--=========================================================================================-->
+  <element name="RP_NaturLandschaft" type="xplan:RP_NaturLandschaftType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_NaturLandschaftType">
+    <annotation>
+      <documentation>Natur und Landschaft</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_NaturLandschaft" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_NaturLandschaft" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_NaturschutzrechtlichesSchutzgebiet-->
+  <!--=========================================================================================-->
+  <element name="RP_NaturschutzrechtlichesSchutzgebiet" type="xplan:RP_NaturschutzrechtlichesSchutzgebietType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_NaturschutzrechtlichesSchutzgebietType">
+    <annotation>
+      <documentation>Schutzgebiet nach Bundes-Naturschutzgesetz</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="zweckbestimmung" minOccurs="0" type="xplan:XP_KlassifizSchutzgebietNaturschutzrecht" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_NaturschutzrechtlichesSchutzgebiet" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_NaturschutzrechtlichesSchutzgebiet" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Rohstoff-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_Rohstoff">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Anhydridstein-->
+      </enumeration>
+      <enumeration value="1100">
+        <!--Baryt-->
+      </enumeration>
+      <enumeration value="1200">
+        <!--BasaltDiabas-->
+      </enumeration>
+      <enumeration value="1300">
+        <!--Bentonit-->
+      </enumeration>
+      <enumeration value="1400">
+        <!--Blaehton-->
+      </enumeration>
+      <enumeration value="1500">
+        <!--Braunkohle-->
+      </enumeration>
+      <enumeration value="1600">
+        <!--Bundsandstein-->
+      </enumeration>
+      <enumeration value="1700">
+        <!--Diorit-->
+      </enumeration>
+      <enumeration value="1800">
+        <!--Dolomitstein-->
+      </enumeration>
+      <enumeration value="1900">
+        <!--Erdgas-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Erdoel-->
+      </enumeration>
+      <enumeration value="2100">
+        <!--Erz-->
+      </enumeration>
+      <enumeration value="2200">
+        <!--Feldspat-->
+      </enumeration>
+      <enumeration value="2300">
+        <!--Flussspat-->
+      </enumeration>
+      <enumeration value="2400">
+        <!--Gangquarz-->
+      </enumeration>
+      <enumeration value="2500">
+        <!--Gipsstein-->
+      </enumeration>
+      <enumeration value="2600">
+        <!--Granit-->
+      </enumeration>
+      <enumeration value="2800">
+        <!--Grauwacke-->
+      </enumeration>
+      <enumeration value="2900">
+        <!--KalkKalktuffKreide-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Kalkmergelstein-->
+      </enumeration>
+      <enumeration value="3100">
+        <!--Kalkstein-->
+      </enumeration>
+      <enumeration value="3200">
+        <!--Karbonatgestein-->
+      </enumeration>
+      <enumeration value="3300">
+        <!--KiesSand-->
+      </enumeration>
+      <enumeration value="3400">
+        <!--Kieselgur-->
+      </enumeration>
+      <enumeration value="3500">
+        <!--Kristallin-->
+      </enumeration>
+      <enumeration value="3600">
+        <!--Kupfer-->
+      </enumeration>
+      <enumeration value="3700">
+        <!--Lehm-->
+      </enumeration>
+      <enumeration value="3800">
+        <!--Mergel-->
+      </enumeration>
+      <enumeration value="3900">
+        <!--Mergelstein-->
+      </enumeration>
+      <enumeration value="4100">
+        <!--Muschelkalk-->
+      </enumeration>
+      <enumeration value="4200">
+        <!--Naturwerkstein-->
+      </enumeration>
+      <enumeration value="4300">
+        <!--Pegmatitsand-->
+      </enumeration>
+      <enumeration value="4400">
+        <!--Quarzit-->
+      </enumeration>
+      <enumeration value="4500">
+        <!--Quarzsand-->
+      </enumeration>
+      <enumeration value="4600">
+        <!--Salz-->
+      </enumeration>
+      <enumeration value="4700">
+        <!--Sand-->
+      </enumeration>
+      <enumeration value="4800">
+        <!--Sandstein-->
+      </enumeration>
+      <enumeration value="4900">
+        <!--Spezialton-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--Steinkohle-->
+      </enumeration>
+      <enumeration value="5100">
+        <!--Ton-->
+      </enumeration>
+      <enumeration value="5200">
+        <!--Tonstein-->
+      </enumeration>
+      <enumeration value="5300">
+        <!--Torf-->
+      </enumeration>
+      <enumeration value="5400">
+        <!--TuffBimsstein-->
+      </enumeration>
+      <enumeration value="5500">
+        <!--Uran-->
+      </enumeration>
+      <enumeration value="5600">
+        <!--Vulkanit-->
+      </enumeration>
+      <enumeration value="5700">
+        <!--KieshaltigerSand-->
+      </enumeration>
+      <enumeration value="5800">
+        <!--Naturstein-->
+      </enumeration>
+      <enumeration value="5900">
+        <!--Oelschiefer-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--Klei-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--Sonstiges-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Rohstoffsicherung-->
+  <!--=========================================================================================-->
+  <element name="RP_Rohstoffsicherung" type="xplan:RP_RohstoffsicherungType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_RohstoffsicherungType">
+    <annotation>
+      <documentation>Rohstoffsicherung</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="abbaugut" minOccurs="0" type="xplan:RP_Rohstoff" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Rohstoffsicherung" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Rohstoffsicherung" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_SonstigerFreiraumstruktur-->
+  <!--=========================================================================================-->
+  <element name="RP_SonstigerFreiraumstruktur" type="xplan:RP_SonstigerFreiraumstrukturType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_SonstigerFreiraumstrukturType">
+    <annotation>
+      <documentation>Sonstiger Freiraumschutz</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_SonstigerFreiraumstruktur" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_SonstigerFreiraumstruktur" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_VorbHochwasserschutz-->
+  <!--=========================================================================================-->
+  <element name="RP_VorbHochwasserschutz" type="xplan:RP_VorbHochwasserschutzType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_VorbHochwasserschutzType">
+    <annotation>
+      <documentation>Vorbeugender Hochwasserschutz</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_VorbHochwasserschutz" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_VorbHochwasserschutz" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Wasserschutz-->
+  <!--=========================================================================================-->
+  <element name="RP_Wasserschutz" type="xplan:RP_WasserschutzType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_WasserschutzType">
+    <annotation>
+      <documentation>Grund- und Oberflächenwasserschutz</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="zone" minOccurs="0" type="xplan:RP_WasserschutzZone" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Wasserschutz" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Wasserschutz" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_WasserschutzZone-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_WasserschutzZone">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Zone_1-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Zone_2-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Zone_3-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Windenergienutzung-->
+  <!--=========================================================================================-->
+  <element name="RP_Windenergienutzung" type="xplan:RP_WindenergienutzungType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_WindenergienutzungType">
+    <annotation>
+      <documentation>Windenergienutzung</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="istAusgleichsgebiet" minOccurs="0" type="boolean" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Windenergienutzung" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Windenergienutzung" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Energieversorgung-->
+  <!--=========================================================================================-->
+  <element name="RP_Energieversorgung" type="xplan:RP_EnergieversorgungType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_EnergieversorgungType">
+    <annotation>
+      <documentation>Infrastruktur zur Energieversorgung
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="typ" minOccurs="0" type="xplan:RP_EnergieversorgungTypen" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Energieversorgung" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Energieversorgung" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_EnergieversorgungTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_EnergieversorgungTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Hochspannungsleitung-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Pipeline-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Kraftwerk-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--EnergieSpeicherung-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--Umspannwerk-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--SonstigeEnergieversorgung-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Entsorgung-->
+  <!--=========================================================================================-->
+  <element name="RP_Entsorgung" type="xplan:RP_EntsorgungType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_EntsorgungType">
+    <annotation>
+      <documentation>Entsorgungs-Infrastruktur</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="typ" minOccurs="0" type="xplan:RP_EntsorgungTypen" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Entsorgung" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Entsorgung" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_EntsorgungTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_EntsorgungTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Abfallwirtschaft-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Abwasserwirtschaft-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--SonstigeEntsorgung-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Kommunikation-->
+  <!--=========================================================================================-->
+  <element name="RP_Kommunikation" type="xplan:RP_KommunikationType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_KommunikationType">
+    <annotation>
+      <documentation>Infrastruktur zur Telekommunikation
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Kommunikation" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Kommunikation" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Laermschutzbereich-->
+  <!--=========================================================================================-->
+  <element name="RP_Laermschutzbereich" type="xplan:RP_LaermschutzbereichType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_LaermschutzbereichType">
+    <annotation>
+      <documentation>Infrastruktur zum Lärmschutz.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Laermschutzbereich" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Laermschutzbereich" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_SonstigeInfrastruktur-->
+  <!--=========================================================================================-->
+  <element name="RP_SonstigeInfrastruktur" type="xplan:RP_SonstigeInfrastrukturType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_SonstigeInfrastrukturType">
+    <annotation>
+      <documentation>Sonstige Infrastruktur</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_SonstigeInfrastruktur" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_SonstigeInfrastruktur" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_SozialeInfrastruktur-->
+  <!--=========================================================================================-->
+  <element name="RP_SozialeInfrastruktur" type="xplan:RP_SozialeInfrastrukturType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_SozialeInfrastrukturType">
+    <annotation>
+      <documentation>Soziale Infrastruktur
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="typ" minOccurs="0" type="xplan:RP_SozialeInfrastrukturTypen" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_SozialeInfrastruktur" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_SozialeInfrastruktur" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_SozialeInfrastrukturTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_SozialeInfrastrukturTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Kultur-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Sozialeinrichtung-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Gesundheit-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Bildung-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--SonstigeSozialeInfrastruktur-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Verkehr-->
+  <!--=========================================================================================-->
+  <element name="RP_Verkehr" type="xplan:RP_VerkehrType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_VerkehrType">
+    <annotation>
+      <documentation>Verkehrs-Infrastruktur</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="typ" minOccurs="0" type="xplan:RP_VerkehrTypen" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Verkehr" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Verkehr" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_VerkehrTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_VerkehrTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Schienenverkehr-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Strassenverkehr-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Luftverkehr-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Wasserverkehr-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--SonstigerVerkehr-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Wasserwirtschaft-->
+  <!--=========================================================================================-->
+  <element name="RP_Wasserwirtschaft" type="xplan:RP_WasserwirtschaftType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_WasserwirtschaftType">
+    <annotation>
+      <documentation>Wasserwirtschaft</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="typ" minOccurs="0" type="xplan:RP_WasserwirtschaftTypen" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Wasserwirtschaft" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Wasserwirtschaft" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_WasserwirtschaftTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_WasserwirtschaftTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Wasserleitung-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Wasserwerk-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--TalsperreStaudammDeich-->
+      </enumeration>
+      <enumeration value="3500">
+        <!--TalsperreSpeicherbecken-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Rückhaltebecken-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--SonstigeWasserwirtschaft-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Achse-->
+  <!--=========================================================================================-->
+  <element name="RP_Achse" type="xplan:RP_AchseType" substitutionGroup="xplan:RP_Linienobjekt" />
+  <complexType name="RP_AchseType">
+    <annotation>
+      <documentation>Siedlungsachse
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_LinienobjektType">
+        <sequence>
+          <element name="achsenTyp" minOccurs="0" type="xplan:RP_AchsenTypen" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Achse" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Achse" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_AchsenTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_AchsenTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Siedlungsachse-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--GrossraeumigeAchse-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--SonstigeAchse-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_Gemeindefunktionen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_Gemeindefunktionen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Wohnen-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Arbeiten-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Landwirtschaft-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Einzelhandel-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--ErholungFremdenverkehr-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--Verteidigung-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--SonstigeNutzung-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_GemeindeFunktionSiedlungsentwicklung-->
+  <!--=========================================================================================-->
+  <element name="RP_GemeindeFunktionSiedlungsentwicklung" type="xplan:RP_GemeindeFunktionSiedlungsentwicklungType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_GemeindeFunktionSiedlungsentwicklungType">
+    <annotation>
+      <documentation>Gemeindefunktion</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element name="funktion" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_Gemeindefunktionen" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_GemeindeFunktionSiedlungsentwicklung" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_GemeindeFunktionSiedlungsentwicklung" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Raumkategorie-->
+  <!--=========================================================================================-->
+  <element name="RP_Raumkategorie" type="xplan:RP_RaumkategorieType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_RaumkategorieType">
+    <annotation>
+      <documentation>Raumkategorien</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Raumkategorie" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Raumkategorie" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_SonstigeSiedlungsstruktur-->
+  <!--=========================================================================================-->
+  <element name="RP_SonstigeSiedlungsstruktur" type="xplan:RP_SonstigeSiedlungsstrukturType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_SonstigeSiedlungsstrukturType">
+    <annotation>
+      <documentation>Sonstige Siedlungsstruktur
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="gebietsTyp" minOccurs="0" maxOccurs="unbounded" type="xplan:RP_GebietsTyp" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_SonstigeSiedlungsstruktur" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_SonstigeSiedlungsstruktur" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Sperrgebiet-->
+  <!--=========================================================================================-->
+  <element name="RP_Sperrgebiet" type="xplan:RP_SperrgebietType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_SperrgebietType">
+    <annotation>
+      <documentation>Sperrgebiet
+</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Sperrgebiet" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Sperrgebiet" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_ZentralerOrt-->
+  <!--=========================================================================================-->
+  <element name="RP_ZentralerOrt" type="xplan:RP_ZentralerOrtType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_ZentralerOrtType">
+    <annotation>
+      <documentation>Zentrale Orte</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="funktion" minOccurs="0" type="xplan:RP_ZentralerOrtFunktionen" />
+          <element ref="xplan:_GenericApplicationPropertyOfRP_ZentralerOrt" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_ZentralerOrt" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_ZentralerOrtFunktionen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_ZentralerOrtFunktionen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Oberzentrum-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Mittelzentrum-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Grundzentrum-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Kleinzentrum-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--SonstigeFunktion-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_GenerischesObjekt-->
+  <!--=========================================================================================-->
+  <element name="RP_GenerischesObjekt" type="xplan:RP_GenerischesObjektType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_GenerischesObjektType">
+    <annotation>
+      <documentation>Klasse zur Modellierung aller Inhalte des Regionalplans, die durch keine andere Klasse des RPlan-Fachschemas dargestellt werden können.</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="zweckbestimmung" minOccurs="0" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <kit:referenzierteCodelist>xplan:RP_ZweckbestimmungGenerischeObjekte</kit:referenzierteCodelist>
+              </appinfo>
+            </annotation>
+          </element>
+          <element ref="xplan:_GenericApplicationPropertyOfRP_GenerischesObjekt" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_GenerischesObjekt" type="anyType" abstract="true" />
+  <!--=========================================================================================-->
+  <!--RP_Grenze-->
+  <!--=========================================================================================-->
+  <element name="RP_Grenze" type="xplan:RP_GrenzeType" substitutionGroup="xplan:RP_Geometrieobjekt" />
+  <complexType name="RP_GrenzeType">
+    <annotation>
+      <documentation>Grenzen</documentation>
+    </annotation>
+    <complexContent>
+      <extension base="xplan:RP_GeometrieobjektType">
+        <sequence>
+          <element name="typ" minOccurs="0" type="xplan:XP_GrenzeTypen" />
+          <element name="sonstTyp" minOccurs="0" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <kit:referenzierteCodelist>xplan:RP_SonstGrenzeTypen</kit:referenzierteCodelist>
+              </appinfo>
+            </annotation>
+          </element>
+          <element ref="xplan:_GenericApplicationPropertyOfRP_Grenze" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <element name="_GenericApplicationPropertyOfRP_Grenze" type="anyType" abstract="true" />
+</schema>

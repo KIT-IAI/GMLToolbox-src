@@ -1,0 +1,137 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:20-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Hochwasserschutz">
+  <gml:description>Die Klasse RP_Hochwasserschutz enthält Hochwasserschutz und vorbeugenden Hochwasserschutz.
+Hochwasserschutz und vorbeugender Hochwasserschutz beinhaltet den Schutz von Siedlungen, Nutz- und Verkehrsflächen vor Überschwemmungen. Im Binnenland besteht der Hochwasserschutz vor allem in der Sicherung und Rückgewinnung von Auen, Wasserrückhalteflächen (Retentionsflächen) und überschwemmungsgefährdeten Bereichen. An der Nord- und Ostsee erfolgt der Schutz vor Sturmfluten hauptsächlich durch Deiche und Siele (Küstenschutz).</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Hochwasserschutz</gml:identifier>
+  <gml:name>xplan:RP_Hochwasserschutz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Hochwasserschutz_typ">
+      <gml:description>Klassifikation von Hochwasserschutztypen.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Hochwasserschutz:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1000">
+          <gml:description>Hochwasserschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1000</gml:identifier>
+          <gml:name>Hochwasserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1001">
+          <gml:description>Technischer Hochwasserschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1001</gml:identifier>
+          <gml:name>TechnischerHochwasserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1100">
+          <gml:description>Hochwasserrückhaltebecken.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1100</gml:identifier>
+          <gml:name>Hochwasserrueckhaltebecken</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1101">
+          <gml:description>Hochwasserrückhaltebecken: Polder.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1101</gml:identifier>
+          <gml:name>HochwasserrueckhaltebeckenPolder</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1102">
+          <gml:description>Hochwasserrückhaltebecken: Bauwerk.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1102</gml:identifier>
+          <gml:name>HochwasserrueckhaltebeckenBauwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1200">
+          <gml:description>Risikobereich Hochwasser.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1200</gml:identifier>
+          <gml:name>RisikobereichHochwasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1300">
+          <gml:description>Küstenhochwasserschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1300</gml:identifier>
+          <gml:name>Kuestenhochwasserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1301">
+          <gml:description>Deich.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1301</gml:identifier>
+          <gml:name>Deich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1302">
+          <gml:description>Deichrückverlegung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1302</gml:identifier>
+          <gml:name>Deichrueckverlegung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1303">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1303</gml:identifier>
+          <gml:name>DeichgeschuetztesGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1400">
+          <gml:description>Sperrwerk.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1400</gml:identifier>
+          <gml:name>Sperrwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1500">
+          <gml:description>Hochwassergefährdete Küstenniederung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1500</gml:identifier>
+          <gml:name>HochwGefaehrdeteKuestenniederung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1600">
+          <gml:description>Überschwemmungsgebiet.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1600</gml:identifier>
+          <gml:name>Ueberschwemmungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1700">
+          <gml:description>Überschwemmungsgefährdeter Bereich.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1700</gml:identifier>
+          <gml:name>UeberschwemmungsgefaehrdeterBereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1800">
+          <gml:description>Retentionsraum.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1800</gml:identifier>
+          <gml:name>Retentionsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_1801">
+          <gml:description>Potenzieller Retentionsraum.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:1801</gml:identifier>
+          <gml:name>PotenziellerRetentionsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Hochwasserschutz_typ_RP_HochwasserschutzTypen_9999">
+          <gml:description>Sonstiger Hochwasserschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Hochwasserschutz:typ:RP_HochwasserschutzTypen:9999</gml:identifier>
+          <gml:name>SonstigerHochwasserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_HochwasserschutzTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Freiraum" />
+</TypeDefinition>

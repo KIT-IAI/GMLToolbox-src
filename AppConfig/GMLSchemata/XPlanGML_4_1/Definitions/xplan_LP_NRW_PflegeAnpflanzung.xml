@@ -1,0 +1,267 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_NRW_PflegeAnpflanzung">
+  <gml:description>Anlage, Pflege oder Anpflanzung ökologisch bedeutsamer/charakteristischer landschaftlicher Strukturen und Elemente i.S.V. § 26 Abs. 2 Nr. 2 LG.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_PflegeAnpflanzung</gml:identifier>
+  <gml:name>xplan:LP_NRW_PflegeAnpflanzung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_PflegeAnpflanzung:attribute:element</gml:identifier>
+      <gml:name>xplan:element</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:1000</gml:identifier>
+          <gml:name>Baumreihe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_1500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:1500</gml:identifier>
+          <gml:name>Baumgruppe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:2000</gml:identifier>
+          <gml:name>Einzelbaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_2500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:2500</gml:identifier>
+          <gml:name>Gehoelzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:3000</gml:identifier>
+          <gml:name>Gehoelzgruppe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_3500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:3500</gml:identifier>
+          <gml:name>Ufergehoelz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:4000</gml:identifier>
+          <gml:name>Hecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_4500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:4500</gml:identifier>
+          <gml:name>Wallhecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:5000</gml:identifier>
+          <gml:name>Schutzpflanzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_5500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:5500</gml:identifier>
+          <gml:name>Waldmantel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_element_LP_NRW_LandschaftsstrukturElemente_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:element:LP_NRW_LandschaftsstrukturElemente:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_LandschaftsstrukturElemente</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_PflegeAnpflanzung:attribute:weiteresElement1</gml:identifier>
+      <gml:name>xplan:weiteresElement1</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:1000</gml:identifier>
+          <gml:name>Baumreihe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_1500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:1500</gml:identifier>
+          <gml:name>Baumgruppe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:2000</gml:identifier>
+          <gml:name>Einzelbaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_2500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:2500</gml:identifier>
+          <gml:name>Gehoelzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:3000</gml:identifier>
+          <gml:name>Gehoelzgruppe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_3500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:3500</gml:identifier>
+          <gml:name>Ufergehoelz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:4000</gml:identifier>
+          <gml:name>Hecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_4500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:4500</gml:identifier>
+          <gml:name>Wallhecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:5000</gml:identifier>
+          <gml:name>Schutzpflanzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_5500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:5500</gml:identifier>
+          <gml:name>Waldmantel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement1_LP_NRW_LandschaftsstrukturElemente_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement1:LP_NRW_LandschaftsstrukturElemente:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_LandschaftsstrukturElemente</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_PflegeAnpflanzung:attribute:weiteresElement2</gml:identifier>
+      <gml:name>xplan:weiteresElement2</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:1000</gml:identifier>
+          <gml:name>Baumreihe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_1500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:1500</gml:identifier>
+          <gml:name>Baumgruppe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:2000</gml:identifier>
+          <gml:name>Einzelbaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_2500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:2500</gml:identifier>
+          <gml:name>Gehoelzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:3000</gml:identifier>
+          <gml:name>Gehoelzgruppe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_3500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:3500</gml:identifier>
+          <gml:name>Ufergehoelz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:4000</gml:identifier>
+          <gml:name>Hecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_4500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:4500</gml:identifier>
+          <gml:name>Wallhecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:5000</gml:identifier>
+          <gml:name>Schutzpflanzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_5500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:5500</gml:identifier>
+          <gml:name>Waldmantel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_weiteresElement2_LP_NRW_LandschaftsstrukturElemente_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_PflegeAnpflanzung:weiteresElement2:LP_NRW_LandschaftsstrukturElemente:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_LandschaftsstrukturElemente</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_detailElement">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_PflegeAnpflanzung:attribute:detailElement</gml:identifier>
+      <gml:name>xplan:detailElement</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_DetailLandschaftsstrukturElemente</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_detailWeiteresElement1">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_PflegeAnpflanzung:attribute:detailWeiteresElement1</gml:identifier>
+      <gml:name>xplan:detailWeiteresElement1</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_DetailLandschaftsstrukturElemente</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_PflegeAnpflanzung_detailWeiteresElement2">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_PflegeAnpflanzung:attribute:detailWeiteresElement2</gml:identifier>
+      <gml:name>xplan:detailWeiteresElement2</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_DetailLandschaftsstrukturElemente</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_SchutzPflegeEntwicklung" />
+</TypeDefinition>

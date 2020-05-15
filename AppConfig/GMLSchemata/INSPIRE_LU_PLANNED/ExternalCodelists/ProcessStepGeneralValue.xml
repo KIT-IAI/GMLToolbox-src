@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gml:Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:inscl="http://www.kit.edu/inspire/codelists" gml:id   ="GML_ProcessStepGeneralValue">
+  <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">ProcessStepGeneralValue</gml:identifier>
+  <gml:name>ProcessStepGeneralValue</gml:name>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_adoption">
+      <gml:description>Plan in the process of being legally adopted.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">adoption</gml:identifier>
+      <gml:name>adoption</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_elaboration">
+      <gml:description>Plan under elaboration.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">elaboration</gml:identifier>
+      <gml:name>elaboration</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_legalForce">
+      <gml:description>Plan already adopted and being legally binding or active.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">legalForce</gml:identifier>
+      <gml:name>legalForce</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_obsolete">
+      <gml:description>Plan having been substituted by another plan, or not being any longer in force.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">obsolete</gml:identifier>
+      <gml:name>obsolete</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

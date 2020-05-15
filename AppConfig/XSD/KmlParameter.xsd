@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="KmlVisualisierung">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="KmlKlassenVisualParams" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="KmlKlassenVisualParams" type="KmlKlassenVisualParamsType"/>
+    
+    <xs:complexType name="KmlKlassenVisualParamsType">
+        <xs:sequence>
+            <xs:element name="klassenName" type="xs:string"/>
+            <xs:element name="polyVisualParams" type="PolyVisualParamsType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="lineVisualParams" type="LineVisualParamsType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="PolyVisualParamsType">
+        <xs:sequence>
+            <xs:element name="fillColor" type="KmlColorType"/>
+            <xs:element name="lineColor" type="KmlColorType" minOccurs="0"/>
+            <xs:element name="colorTableEntry" type="ColorTableEntryType" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="physicalWidth" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="selectAttributName" type="xs:string" use="optional"/>
+    </xs:complexType>
+    
+    <xs:complexType name="LineVisualParamsType">
+        <xs:sequence>
+            <xs:element name="lineColor" type="KmlColorType"/>
+            <xs:element name="physicalWidth" type="xs:double"/>
+            <xs:element name="outerColor" type="KmlColorType" minOccurs="0"/>
+            <xs:element name="outerWidth" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:double">
+                        <xs:minExclusive value="0.0"/>
+                        <xs:maxExclusive value="1.0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="colorTableEntry" type="ColorTableEntryType" minOccurs="0" maxOccurs="unbounded"/>          
+        </xs:sequence>
+        <xs:attribute name="selectAttributName" type="xs:string" use="optional"/>
+    </xs:complexType>
+    
+    <xs:complexType name="KmlColorType">
+        <xs:attribute name="r" type="byte" use="required"/>
+        <xs:attribute name="g" type="byte" use="required"/>
+        <xs:attribute name="b" type="byte" use="required"/>
+        <xs:attribute name="alpha" type="byte" use="optional" default="255"/>
+    </xs:complexType>
+    
+    <xs:complexType name="ColorTableEntryType"> 
+        <xs:attribute name="attributWert" type="xs:string" use="required"/>
+        <xs:attribute name="r" type="byte" use="required"/>
+        <xs:attribute name="g" type="byte" use="required"/>
+        <xs:attribute name="b" type="byte" use="required"/>
+        <xs:attribute name="alpha" type="byte" use="optional" default="255"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="byte">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="255"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

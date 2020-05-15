@@ -1,0 +1,94 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:20-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Forstwirtschaft">
+  <gml:description>Forstwirtschaft ist die zielgerichtete Bewirtschaftung von Wäldern.
+Die natürlichen Abläufe in den Waldökosystemen werden dabei so gestaltet und gesteuert, dass sie einen möglichst großen Beitrag zur Erfüllung von Leistungen erbringen, die von den Waldeigentümern und der Gesellschaft gewünscht werden.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Forstwirtschaft</gml:identifier>
+  <gml:name>xplan:RP_Forstwirtschaft</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Forstwirtschaft_typ">
+      <gml:description>Klassifikation von Forstwirtschaftstypen und Wäldern.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Forstwirtschaft:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_1000">
+          <gml:description>Wald.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:1000</gml:identifier>
+          <gml:name>Wald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_1001">
+          <gml:description>Bannwald.
+Nach §32 (2) Baden-Württemberg "ein sich selbst überlassenes Waldreservat. Pflegemaßnahmen sind nicht erlaubt; anfallendes Holz darf nicht entnommen werden. [...] Fußwege sind zulässig."
+Nach $11 (1) BayWaldG Bayern " Wald, der auf Grund seiner Lage und seiner flächenmäßigen Ausdehnung vor allem in Verdichtungsräumen und waldarmen Bereichen unersetzlich ist, und deshalb in seiner Flächensubstanz erhalten werden muss und welchem eine außergewöhnliche Bedeutung für das Klima, den Wasserhaushalt oder die Luftreinigung zukommt.
+Nach §13 (2) ForstG Hessen ein Wald, der "in seiner Flächensubstanz in besonderem Maße schützenswert ist".
+In anderen Ländern ist ein Bannwald ggf. abweichend definiert.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:1001</gml:identifier>
+          <gml:name>Bannwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_1002">
+          <gml:description>Schonwald.
+Nach §32 (3) Baden-Württemberg "ein Waldreservat, in dem eine bestimmte Waldgesellschaft mit ihren Tier- und Pflanzenarten, ein bestimmter Bestandsaufbau oder ein bestimmter Waldbiotop zu erhalten, zu entwickeln oder zu erneuern ist. Die Forstbehörde legt PFlegemaßnahmen mti Zustimmung des Waldbesitzers fest." In anderen Ländern ist ein Schonwald ggf. abweichend definiert.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:1002</gml:identifier>
+          <gml:name>Schonwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_2000">
+          <gml:description>Waldmehrung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:2000</gml:identifier>
+          <gml:name>Waldmehrung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_2001">
+          <gml:description>Waldmehrung für Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:2001</gml:identifier>
+          <gml:name>WaldmehrungErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_2002">
+          <gml:description>Vergrößerung des Waldanteils.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:2002</gml:identifier>
+          <gml:name>VergroesserungDesWaldanteils</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_3000">
+          <gml:description>Waldschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:3000</gml:identifier>
+          <gml:name>Waldschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_3001">
+          <gml:description>Besondere Schutzfunktion des Waldes.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:3001</gml:identifier>
+          <gml:name>BesondereSchutzfunktionDesWaldes</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_4000">
+          <gml:description>Von Aufforstung freizuhaltendes Gebiet.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:4000</gml:identifier>
+          <gml:name>VonAufforstungFreizuhalten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Forstwirtschaft_typ_RP_ForstwirtschaftTypen_9999">
+          <gml:description>Sonstige Forstwirtschaft.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Forstwirtschaft:typ:RP_ForstwirtschaftTypen:9999</gml:identifier>
+          <gml:name>SonstigeForstwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_ForstwirtschaftTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Freiraum" />
+</TypeDefinition>

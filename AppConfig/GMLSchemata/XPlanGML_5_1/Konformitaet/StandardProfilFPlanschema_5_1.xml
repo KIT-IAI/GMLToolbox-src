@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd" name="StandardProfilFPlanSchema_5_1">
+
+ <!-- FP_Plan -->
+ <Rule class="FP_Plan">
+  <Required>
+   <RelationFilter relationName="gemeinde" minOccurs="1" maxOccurs="unbound"/>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_Plan" id="5.1.1.1">
+  <description>Eine Instanz der Klasse FP_Plan darf über die Relation bereich nur Instanzen der Klasse FP_Bereich aggregieren</description>
+  <Required>
+   <RelationFilter relationName="bereich" minOccurs="0" maxOccurs="unbound">
+    <GmlType>FP_BereichType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_Plan" id="5.1.1.2">
+  <description>Wenn das Attribut sonstPlanArt belegt ist, muss planArt unbelegt sein oder den Wert 9999 (Sonstiges) haben</description>
+  <If>
+   <AttributeFilter attributeName="sonstPlanArt" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="planArt" minOccurs="1" maxOccurs="1">
+    <AttributeValue>9999</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- FP_Bereich  -->
+ <Rule class="FP_Bereich" id="5.1.2.3">
+  <description>Eine Instanz der Klasse FP_Bereich muss über die Relation gehoertZuPlan genau eine Instanz der Klasse FP_Plan referieren. Diese Instanz referiert über die Relation bereich die Bereichs-Instanz</description>
+  <Required>
+   <RelationFilter relationName="gehoertZuPlan" minOccurs="1" maxOccurs="1" inverseRelationName="bereich">
+    <GmlType>FP_PlanType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+
+ <!-- FP_Objekt -->
+ <Rule superclassType="FP_ObjektType">
+  <description>Das Attribut rechtscharakter ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="rechtscharakter" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <Rule superclassType="FP_ObjektType" id="5.1.3.5">
+  <description>Die Relation refTextInhalt darf nur auf Instanzen der Klasse FP_TextAbschnitt verweisen</description>
+  <Required>
+   <RelationFilter relationName="refTextInhalt" minOccurs="0" maxOccurs="unbound">
+    <GmlType>FP_TextAbschnittType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+ 
+  <Rule superclassType="FP_ObjektType" id="5.1.3.1">
+  <description>Die Relation wirdAusgeglichenDurchFlaeche darf nur auf Instanzen der Klasse FP_AusgleichsFlaeche verweisen</description>
+  <Required>
+   <RelationFilter relationName="wirdAusgeglichenDurchFlaeche" minOccurs="0" maxOccurs="unbound">
+    <GmlType>FP_AusgleichsFlaeche</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="FP_ObjektType" id="5.1.3.2">
+  <description>Die Relation wirdAusgeglichenDurchSPE darf nur auf Instanzen der Klasse FP_SchutzPflegeEntwicklung verweisen</description>
+  <Required>
+   <RelationFilter relationName="wirdAusgeglichenDurchSPE" minOccurs="0" maxOccurs="unbound">
+    <GmlType>FP_SchutzPflegeEntwicklung</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+ 
+ <!-- FP_TextAbschnitt -->
+ <Rule class="FP_TextAbschnitt">
+  <description>Das Attribut rechtscharakter ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="rechtscharakter" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!--  FP_FlaechenobjektType -->
+ <Rule superclassType="FP_FlaechenobjektType">
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="FP_FlaechenobjektType" id="5.1.4.2">
+  <description>Das Attribut position darf nur mit Flächengeometrie (Einzelfläche oder Menge von Flächen) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="FP_FlaechenobjektType" id="5.1.4.1">
+  <description>Wenn das Attribut ebene != 0 ist, muss flaechenschluss == false sein</description>
+  <If>
+   <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="NOT_EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- FP_Geometrieobjekt -->
+ <Rule superclassType="FP_GeometrieobjektType" id="5.1.5.2">
+  <description>Wenn das Objekt mit flächenhaftem Raumbezug gebildet ist, muss das Attribut  flaechenschluss belegt sein</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="FP_GeometrieobjektType" id="5.1.5.1">
+  <description>Wenn das Attribut ebene != 0 ist, muss bei vorliegender Flächengeometrie das Attribut flaechenschluss == false sein</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="NOT_EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ <Rule superclassType="FP_GeometrieobjektType" id="5.1.5.3">
+  <description>Ausschluss von gemischter Geometrie</description>
+  <Required combination="OR">
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+  </Required>
+ </Rule>
+
+ <!--  FP_FlaechenschlussobjektType -->
+ <Rule superclassType="FP_FlaechenschlussobjektType" id="5.1.7.1">
+  <description>Wenn das Attribut ebene auf 0 gesetzt ist oder unbelegt ist, muss flaechenschluss auf true gesetzt werden</description>
+  <If>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue op="EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!--  FP_Linienobjekt -->
+ <Rule superclassType="FP_LinienobjektType" id="5.1.8.1">
+  <description>Das Attribut position darf nur mit Liniengeometrie (Einzellinie oder Menge von Linien) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+  </Required>
+ </Rule>
+
+ <!--  FP_PunktobjektType -->
+ <Rule superclassType="FP_PunktobjektType" id="5.1.9.1">
+  <description>Das Attribut position darf nur mit Punktgeometrie (Einzelpunkt oder Menge von Punkten) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+  </Required>
+ </Rule>
+
+ <!--  FP_UeberlagerungsobjektType -->
+ <Rule superclassType="FP_UeberlagerungsobjektType" id="5.1.6.1">
+  <description>Das Attribut flaechenschluss muss auf false gesetzt sein</description>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- FP_BebauungsFlaeche -->
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.1">
+  <description>Wenn besondereArtDerBaulNutzung den Wert 1000, 1100, 1200 oder 1300 hat, muss allgArtDerBaulNutzung unbelegt sein oder den Wert 1000 haben</description>
+  <If>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1000</AttributeValue>
+    <AttributeValue>1100</AttributeValue>
+    <AttributeValue>1200</AttributeValue>
+    <AttributeValue>1300</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>1000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.1">
+  <description>Wenn besondereArtDerBaulNutzung den Wert 1400, 1500. 1550 oder 1600 hat, muss allgArtDerBaulNutzung unbelegt sein oder den Wert 2000 haben</description>
+  <If>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1400</AttributeValue>
+    <AttributeValue>1500</AttributeValue>
+    <AttributeValue>1550</AttributeValue>
+    <AttributeValue>1600</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>2000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.1">
+  <description>Wenn besondereArtDerBaulNutzung den Wert 1700 oder 1800 hat, muss allgArtDerBaulNutzung unbelegt sein oder den Wert 3000 haben</description>
+  <If>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1700</AttributeValue>
+    <AttributeValue>1800</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>3000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.1">
+  <description>Wenn besondereArtDerBaulNutzung den Wert 2000, 2100, 3000 oder 4000 hat, muss allgArtDerBaulNutzung unbelegt sein oder den Wert 4000 haben</description>
+  <If>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>2000</AttributeValue>
+    <AttributeValue>2100</AttributeValue>
+    <AttributeValue>3000</AttributeValue>
+    <AttributeValue>4000</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>4000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.2">
+  <description>Wenn das Attribut sonderNutzung den Wert 1000, hat, muss besondereArtDerBaulNutzung unbelegt sein oder den Wert 3000 haben </description>
+  <If>
+   <AttributeFilter attributeName="sonderNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1000</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>3000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.2">
+  <description>Wenn das Attribut sonderNutzung den Wert 1100, 1200, 1300 oder 1400 hat, muss besondereArtDerBaulNutzung unbelegt sein oder den Wert 2000 haben </description>
+  <If>
+   <AttributeFilter attributeName="sonderNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1100</AttributeValue>
+    <AttributeValue>1200</AttributeValue>
+    <AttributeValue>1300</AttributeValue>
+    <AttributeValue>1400</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>2000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.2">
+  <description>Wenn das Attribut sonderNutzung den Wert 1500, 1600, 16000, 16001, 16002, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900  oder 9999 hat, 
+   muss besondereArtDerBaulNutzung unbelegt sein oder den Wert 2100 haben </description>
+  <If>
+   <AttributeFilter attributeName="sonderNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1500</AttributeValue>
+    <AttributeValue>1600</AttributeValue>
+    <AttributeValue>1700</AttributeValue>
+    <AttributeValue>1800</AttributeValue>
+    <AttributeValue>1900</AttributeValue>
+    <AttributeValue>2000</AttributeValue>
+    <AttributeValue>2100</AttributeValue>
+    <AttributeValue>2200</AttributeValue>
+    <AttributeValue>2300</AttributeValue>
+    <AttributeValue>2400</AttributeValue>
+    <AttributeValue>2500</AttributeValue>
+    <AttributeValue>2600</AttributeValue>
+    <AttributeValue>2700</AttributeValue>
+    <AttributeValue>2800</AttributeValue>
+    <AttributeValue>2900</AttributeValue>
+    <AttributeValue>9999</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>2100</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.3">
+  <description>Wenn das Attribut detaillierteArtDerBaulNutzung belegt ist, muss mindestens auch eins der Attribute allgArtDerBaulNutzung, besondereArtDerBaulNutzung oder sonderNutzung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteArtDerBaulNutzung" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <GroupFilter combination="OR">
+    <AttributeName>allgArtDerBaulNutzung</AttributeName>
+    <AttributeName>besondereArtDerBaulNutzung</AttributeName>
+    <AttributeName>sonderNutzung</AttributeName>
+   </GroupFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.4">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.4">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_BebauungsFlaeche" id="5.3.1.4">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <!-- FP_Gemeinbedarf -->
+ <Rule class="FP_Gemeinbedarf" id="5.4.1.7">
+  <Required>
+   <GeometryFilter geometryRestriction="NoLine" geometryPropertyName="position"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="FP_Gemeinbedarf" id="5.4.1.8">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If combination="AND">
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_Gemeinbedarf" id="5.4.1.6">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist. muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+ 
+
+ <!-- FP_SpielSportanlage -->
+ <Rule class="FP_SpielSportanlage" id="5.4.2.4">
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="NoLine"/>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_SpielSportanlage" id="5.4.2.5">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="unbound">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_SpielSportanlage" id="5.4.2.3">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+
+ 
+ <!-- FP_WaldFlaeche -->
+ <Rule class="FP_WaldFlaeche" id="5.5.1.3">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+
+ 
+ <!-- FP_LandwirtschaftsFlaeche  -->
+ <Rule class="FP_LandwirtschaftsFlaeche" id="5.5.2.3">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule> 
+
+
+ <!-- FP_Gruen -->
+ <Rule class="FP_Gruen" id="5.5.3.6">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule> 
+ 
+ <Rule class="FP_Gruen" id="5.5.3.7">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="unbound">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ 
+ <!-- FP_SchutzPflegeEntwicklung -->
+ 
+ <!-- FP_AusgleichsFlaeche -->
+ 
+ <!-- FP_VerEntsorgung-->
+ <Rule class="FP_VerEntsorgung" id="5.7.1.6">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule> 
+ 
+ <Rule class="FP_VerEntsorgung" id="5.7.1.7">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="unbound">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ 
+ <!-- FP_Strassenverkehr -->
+ <Rule class="FP_Strassenverkehr" id="5.8.1.2">
+  <description>Wenn das Attribut detaillierteZweckbestimmung belegt ist, muss auch das Attribut zweckbestimmung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>   
+  </Required>
+ </Rule>
+
+ <Rule class="FP_Strassenverkehr" id="5.8.1.3">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- FP_Gewaesser -->
+ <Rule class="FP_Gewaesser" id="5.9.1.1">
+  <description>Wenn das Attribut detaillierteZweckbestimmung belegt ist, muss auch das Attribut zweckbestimmung belegt sein.</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_Gewaesser" id="5.9.1.2">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- FP_Wasserwirtschaft -->
+ <Rule class="FP_Wasserwirtschaft" id="5.9.2.1">
+  <description>Wenn das Attribut detaillierteZweckbestimmung belegt ist, muss auch das Attribut zweckbestimmung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="FP_Wasserwirtschaft" id="5.9.2.2">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- FP_GenerischesObjekt -->
+
+ <!-- FP_PrivilegiertesVorhaben -->
+ 
+ <!-- FP_Kennzeichnung -->
+ 
+ <!-- FP_UnverbindlicheVormerkung -->
+ <Rule class="FP_UnverbindlicheVormerkung" id="5.10.4.1">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- FP_TextlicheDarstellungsFlaeche -->
+ <Rule class="FP_TextlicheDarstellungsFlaeche" id="5.10.6.1">
+  <description>Die Relation refTextInhalt muss mindestens einmal belegt sein</description>
+  <Required>
+   <RelationFilter relationName="refTextInhalt" minOccurs="1" maxOccurs="unbound"/>
+  </Required>
+ </Rule>
+
+
+</Profil>

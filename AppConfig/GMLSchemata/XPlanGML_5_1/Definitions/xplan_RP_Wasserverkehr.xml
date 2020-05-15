@@ -1,0 +1,109 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:40-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Wasserverkehr">
+  <gml:description>Wasserverkehr-Infrastruktur.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Wasserverkehr</gml:identifier>
+  <gml:name>xplan:RP_Wasserverkehr</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Wasserverkehr_typ">
+      <gml:description>Klassifikation von Wasserverkehr-Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Wasserverkehr:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_1000">
+          <gml:description>Hafen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:1000</gml:identifier>
+          <gml:name>Hafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_1001">
+          <gml:description>Seehafen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:1001</gml:identifier>
+          <gml:name>Seehafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_1002">
+          <gml:description>Binnenhafen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:1002</gml:identifier>
+          <gml:name>Binnenhafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_1003">
+          <gml:description>Sportboothafen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:1003</gml:identifier>
+          <gml:name>Sportboothafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_1004">
+          <gml:description>Lände.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:1004</gml:identifier>
+          <gml:name>Laende</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_2000">
+          <gml:description>Umschlagplatz.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:2000</gml:identifier>
+          <gml:name>Umschlagplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_3000">
+          <gml:description>Schleuse und/oder Hebewerk.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:3000</gml:identifier>
+          <gml:name>SchleuseHebewerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_4000">
+          <gml:description>Schifffahrt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:4000</gml:identifier>
+          <gml:name>Schifffahrt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_4001">
+          <gml:description>Wichtiger Schifffahrtsweg.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:4001</gml:identifier>
+          <gml:name>WichtigerSchifffahrtsweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_4002">
+          <gml:description>Sonstiger Schifffahrtsweg.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:4002</gml:identifier>
+          <gml:name>SonstigerSchifffahrtsweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_4003">
+          <gml:description>Wasserstraße.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:4003</gml:identifier>
+          <gml:name>Wasserstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_5000">
+          <gml:description>Reede.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:5000</gml:identifier>
+          <gml:name>Reede</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserverkehr_typ_RP_WasserverkehrTypen_9999">
+          <gml:description>Sonstiger Wasserverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserverkehr:typ:RP_WasserverkehrTypen:9999</gml:identifier>
+          <gml:name>SonstigerWasserverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_WasserverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Verkehr" />
+</TypeDefinition>

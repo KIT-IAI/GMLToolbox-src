@@ -1,0 +1,109 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:26-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_SonstVerkehr">
+  <gml:description>Sonstige Verkehrsinfrastruktur, die sich nicht eindeutig einem anderen Typ zuordnen lässt.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_SonstVerkehr</gml:identifier>
+  <gml:name>xplan:RP_SonstVerkehr</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_SonstVerkehr_typ">
+      <gml:description>Sonstige Klassifikation von Verkehrs-Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_SonstVerkehr:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1000">
+          <gml:description>Verkehrsanlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1000</gml:identifier>
+          <gml:name>Verkehrsanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1100">
+          <gml:description>Güterverkehrszentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1100</gml:identifier>
+          <gml:name>Gueterverkehrszentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1200">
+          <gml:description>Logistikzentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1200</gml:identifier>
+          <gml:name>Logistikzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1300">
+          <gml:description>Terminal des kombinierten Verkehrs.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1300</gml:identifier>
+          <gml:name>TerminalkombinierterVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1400">
+          <gml:description>ÖPNV.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1400</gml:identifier>
+          <gml:name>OEPNV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1500">
+          <gml:description>Verknüpfungspunkt Bahn-Bus.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1500</gml:identifier>
+          <gml:name>VerknuepfungspunktBahnBus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1600">
+          <gml:description>Park-and-Ride und/oder Bike-and-Ride.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1600</gml:identifier>
+          <gml:name>ParkandRideBikeandRide</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1700">
+          <gml:description>Fährverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1700</gml:identifier>
+          <gml:name>Faehrverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1800">
+          <gml:description>Infrastrukturkorridor.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1800</gml:identifier>
+          <gml:name>Infrastrukturkorridor</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_1900">
+          <gml:description>Tunnel.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:1900</gml:identifier>
+          <gml:name>Tunnel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_2000">
+          <gml:description>Neue Verkehrstechniken.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:2000</gml:identifier>
+          <gml:name>NeueVerkehrstechniken</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_2001">
+          <gml:description>Sicherung von Teststrecken für die Fahrzeugindustrie und Sicherung von Gebieten zur Entwicklung damit verbundener neuer Verkehrssysteme und -techniken.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:2001</gml:identifier>
+          <gml:name>Teststrecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SonstVerkehr_typ_RP_SonstVerkehrTypen_9999">
+          <gml:description>Sonstiger Verkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_SonstVerkehr:typ:RP_SonstVerkehrTypen:9999</gml:identifier>
+          <gml:name>SonstigerVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_SonstVerkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Verkehr" />
+</TypeDefinition>

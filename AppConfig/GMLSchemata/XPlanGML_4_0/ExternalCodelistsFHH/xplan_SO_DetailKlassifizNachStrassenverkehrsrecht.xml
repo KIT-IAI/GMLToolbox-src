@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="SO_DetailKlassifizNachStrassenverkehrsrecht">
+    <description>GML-Dictionary für erweiterte Klassifizierungen nach Strassenverkehrsrecht.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:SO_DetailKlassifizNachStrassenverkehrsrecht</identifier>
+    <name>xplan:SO_DetailKlassifizNachStrassenverkehrsrecht</name>
+</Dictionary>

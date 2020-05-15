@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../../../XSD/Testing.xsd" name="StandardProfilCityGML_2_0">
+    
+    <!-- Notwendige Generische Attribute  -->
+    
+     <Rule class="bldg:Building">
+        <Required>
+            <RelationFilter relationName="_GenericStringAttribute" minOccurs="1" maxOccurs="1"  attributNameInRelatedObject="genobj:name" attributeValueInRelatedObject="BezugspunktDach"/>                    
+        </Required>
+    </Rule>
+    
+    <Rule class="genobj:stringAttribute">
+        <If>
+            <AttributeFilter attributeName="genobj:name" minOccurs="1" maxOccurs="1">
+                <AttributeValue>BezugspunktDach</AttributeValue>
+            </AttributeFilter>
+            
+        </If>
+        <Required>           
+            <AttributeFilter attributeName="genobj:value" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+                <AttributeValue>2000</AttributeValue>
+                <AttributeValue>2100</AttributeValue>
+                <AttributeValue>2200</AttributeValue>
+                <AttributeValue>3000</AttributeValue>
+                <AttributeValue>4000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+     <Rule class="bldg:Building">
+        <Required>
+            <RelationFilter relationName="_GenericStringAttribute" minOccurs="1" maxOccurs="1"  attributNameInRelatedObject="genobj:name" attributeValueInRelatedObject="DatenquelleDachhoehe"/>                    
+        </Required>
+    </Rule>
+    
+    <Rule class="genobj:stringAttribute">
+        <If>
+            <AttributeFilter attributeName="genobj:name" minOccurs="1" maxOccurs="1">
+                <AttributeValue>DatenquelleDachhoehe</AttributeValue>
+            </AttributeFilter>
+            
+        </If>
+        <Required>           
+            <AttributeFilter attributeName="genobj:value" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+                <AttributeValue>2000</AttributeValue>
+                <AttributeValue>3000</AttributeValue>
+                <AttributeValue>4000</AttributeValue>
+                <AttributeValue>5000</AttributeValue>
+                <AttributeValue>6000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="bldg:Building">
+        <Required>
+            <RelationFilter relationName="_GenericStringAttribute" minOccurs="1" maxOccurs="1"  attributNameInRelatedObject="genobj:name" attributeValueInRelatedObject="DatenquelleLage"/>                    
+        </Required>
+    </Rule>
+    
+    <Rule class="genobj:stringAttribute">
+        <If>
+            <AttributeFilter attributeName="genobj:name" minOccurs="1" maxOccurs="1">
+                <AttributeValue>DatenquelleLage</AttributeValue>
+            </AttributeFilter>
+            
+        </If>
+        <Required>           
+            <AttributeFilter attributeName="genobj:value" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+                <AttributeValue>1100</AttributeValue>
+                <AttributeValue>1200</AttributeValue>
+                <AttributeValue>1300</AttributeValue>
+                <AttributeValue>2000</AttributeValue>
+                <AttributeValue>3000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    
+    <Rule class="bldg:Building">
+        <Required>
+            <RelationFilter relationName="_GenericStringAttribute" minOccurs="1" maxOccurs="1"  attributNameInRelatedObject="genobj:name" attributeValueInRelatedObject="DatenquelleBodenhoehe"/>                    
+        </Required>
+    </Rule>
+    
+    <Rule class="genobj:stringAttribute">
+        <If>
+            <AttributeFilter attributeName="genobj:name" minOccurs="1" maxOccurs="1">
+                <AttributeValue>DatenquelleBodenhoehe</AttributeValue>
+            </AttributeFilter>
+            
+        </If>
+        <Required>           
+            <AttributeFilter attributeName="genobj:value" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+                <AttributeValue>1100</AttributeValue>
+                <AttributeValue>1200</AttributeValue>
+                <AttributeValue>1300</AttributeValue>
+                <AttributeValue>1400</AttributeValue>
+                <AttributeValue>1500</AttributeValue>
+                <AttributeValue>1600</AttributeValue>
+                <AttributeValue>1700</AttributeValue>
+                <AttributeValue>1800</AttributeValue>
+                <AttributeValue>2000</AttributeValue>
+                <AttributeValue>3000</AttributeValue>
+                <AttributeValue>4000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>     
+       
+    <Rule class="bldg:Building">
+        <Required combination="AND">
+            <RelationFilter relationName="_GenericDoubleAttribute" minOccurs="0" maxOccurs="unbound" attributNameInRelatedObject="genobj:name">
+                <AttributeValueRelatedObject>Dachneigung</AttributeValueRelatedObject>
+            </RelationFilter>
+            <RelationFilter relationName="_GenericDoubleAttribute" minOccurs="0" maxOccurs="unbound" attributNameInRelatedObject="genobj:value">
+                <NumericValueRelatedObject op="GE">20</NumericValueRelatedObject>
+            </RelationFilter>           
+              <RelationFilter relationName="_GenericDoubleAttribute" minOccurs="0" maxOccurs="unbound" attributNameInRelatedObject="genobj:value">
+                <NumericValueRelatedObject op="LT">50</NumericValueRelatedObject>
+            </RelationFilter>           
+        </Required>
+    </Rule> 
+</Profil>

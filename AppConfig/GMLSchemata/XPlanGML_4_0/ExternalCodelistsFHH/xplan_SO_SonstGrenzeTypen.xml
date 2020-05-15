@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="SO_SonstGrenzeTypen">
+    <description>GML-Dictionary für erweiterte Klassifizierungen von Grenzen.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:SO_SonstGrenzeTypen</identifier>
+    <name>xplan:SO_SonstGrenzeTypen</name>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGrenzeTypen_1000">
+            <description>Grenze_12_Seemeilenzone</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGrenzeTypen_1000</identifier>
+            <name>1000</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGrenzeTypen_1001">
+            <description>BegrenzungDesKuestenmeeres</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGrenzeTypen_1001</identifier>
+            <name>1001</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGrenzeTypen_100624">
+            <description>Hafengrenze</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGrenzeTypen_100624</identifier>
+            <name>100624</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGrenzeTypen_2000">
+            <description>VerlaufUmstritten</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGrenzeTypen_2000</identifier>
+            <name>2000</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGrenzeTypen_3000">
+            <description>AuffassungSchleswigHolstein</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGrenzeTypen_3000</identifier>
+            <name>3000</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGrenzeTypen_4000">
+            <description>GrenzeDtAusschlWirtschaftszone</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGrenzeTypen_4000</identifier>
+            <name>4000</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGrenzeTypen_5000">
+            <description>MittlereTideHochwasserLinie</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGrenzeTypen_5000</identifier>
+            <name>5000</name>
+        </Definition>
+    </dictionaryEntry>
+    
+</Dictionary>

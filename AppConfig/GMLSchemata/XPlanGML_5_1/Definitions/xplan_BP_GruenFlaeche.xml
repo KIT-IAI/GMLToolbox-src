@@ -1,0 +1,709 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:26-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_GruenFlaeche">
+  <gml:description>Festsetzungen von öffentlichen und privaten Grünflächen (§ 9, Abs. 1, Nr. 15 BauGB).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche</gml:identifier>
+  <gml:name>xplan:BP_GruenFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_MaxZahlWohnungen">
+      <gml:description>Höchstzulässige Zahl der Wohnungen in Wohngebäuden</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:MaxZahlWohnungen</gml:identifier>
+      <gml:name>xplan:MaxZahlWohnungen</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Fmin">
+      <gml:description>Mindestmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Fmin</gml:identifier>
+      <gml:name>xplan:Fmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Fmax">
+      <gml:description>Höchstmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Fmax</gml:identifier>
+      <gml:name>xplan:Fmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Bmin">
+      <gml:description>Minimale Breite von Baugrundstücken</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Bmin</gml:identifier>
+      <gml:name>xplan:Bmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Bmax">
+      <gml:description>Maximale Breite von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Bmax</gml:identifier>
+      <gml:name>xplan:Bmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Tmin">
+      <gml:description>Minimale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Tmin</gml:identifier>
+      <gml:name>xplan:Tmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Tmax">
+      <gml:description>Maximale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Tmax</gml:identifier>
+      <gml:name>xplan:Tmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GFZmin">
+      <gml:description>Minimal zulässige Geschossflächenzahl .</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GFZmin</gml:identifier>
+      <gml:name>xplan:GFZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GFZmax">
+      <gml:description>Maximal zulässige Geschossflächenzahl bei einer Bereichsangabe. Das Attribut GFZmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GFZmax</gml:identifier>
+      <gml:name>xplan:GFZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GFZ">
+      <gml:description>Maximal zulässige Geschossflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GFZ</gml:identifier>
+      <gml:name>xplan:GFZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GFZ_Ausn">
+      <gml:description>Maximal zulässige Geschossflächenzahl als Ausnahme.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GFZ_Ausn</gml:identifier>
+      <gml:name>xplan:GFZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GFmin">
+      <gml:description>Minimal zulässige Geschossfläche</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GFmin</gml:identifier>
+      <gml:name>xplan:GFmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GFmax">
+      <gml:description>Maximal zulässige Geschossfläche bei einer Bereichsabgabe. Das Attribut GFmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GFmax</gml:identifier>
+      <gml:name>xplan:GFmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GF">
+      <gml:description>Maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GF</gml:identifier>
+      <gml:name>xplan:GF</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GF_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GF_Ausn</gml:identifier>
+      <gml:name>xplan:GF_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_BMZ">
+      <gml:description>Maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:BMZ</gml:identifier>
+      <gml:name>xplan:BMZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_BMZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:BMZ_Ausn</gml:identifier>
+      <gml:name>xplan:BMZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_BM">
+      <gml:description>Maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:BM</gml:identifier>
+      <gml:name>xplan:BM</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_BM_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:BM_Ausn</gml:identifier>
+      <gml:name>xplan:BM_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GRZmin">
+      <gml:description>Minimal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GRZmin</gml:identifier>
+      <gml:name>xplan:GRZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GRZmax">
+      <gml:description>Maximal zulässige Grundflächenzahl bei einer Bereichsangabe.  Das Attribut GRZmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GRZmax</gml:identifier>
+      <gml:name>xplan:GRZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GRZ">
+      <gml:description>Maximal zulässige Grundflächenzahl</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GRZ</gml:identifier>
+      <gml:name>xplan:GRZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GRZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GRZ_Ausn</gml:identifier>
+      <gml:name>xplan:GRZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GRmin">
+      <gml:description>Minimal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GRmin</gml:identifier>
+      <gml:name>xplan:GRmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GRmax">
+      <gml:description>Maximal zulässige Grundfläche bei einer Bereichsangabe. Das Attribut GRmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GRmax</gml:identifier>
+      <gml:name>xplan:GRmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GR">
+      <gml:description>Maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GR</gml:identifier>
+      <gml:name>xplan:GR</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_GR_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:GR_Ausn</gml:identifier>
+      <gml:name>xplan:GR_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Zmin">
+      <gml:description>Minimal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Zmin</gml:identifier>
+      <gml:name>xplan:Zmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Zmax">
+      <gml:description>Maximal zulässige Zahl der oberirdischen Vollgeschosse bei einer Bereichsangabe. Das Attribut Zmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Zmax</gml:identifier>
+      <gml:name>xplan:Zmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Zzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Zzwingend</gml:identifier>
+      <gml:name>xplan:Zzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Z">
+      <gml:description>Maximalzahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Z</gml:identifier>
+      <gml:name>xplan:Z</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Z_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Z_Ausn</gml:identifier>
+      <gml:name>xplan:Z_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Z_Staffel">
+      <gml:description>Maximalzahl von oberirdischen zurückgesetzten Vollgeschossen als Staffelgeschoss..</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Z_Staffel</gml:identifier>
+      <gml:name>xplan:Z_Staffel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_Z_Dach">
+      <gml:description>Maximalzahl der zusätzlich erlaubten Dachgeschosse, die gleichzeitig Vollgeschosse sind.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:Z_Dach</gml:identifier>
+      <gml:name>xplan:Z_Dach</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_ZUmin">
+      <gml:description>Minimal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:ZUmin</gml:identifier>
+      <gml:name>xplan:ZUmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_ZUmax">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse bei einer Bereichsangabe. Das Attribut ZUmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:ZUmax</gml:identifier>
+      <gml:name>xplan:ZUmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_ZUzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:ZUzwingend</gml:identifier>
+      <gml:name>xplan:ZUzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_ZU">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:ZU</gml:identifier>
+      <gml:name>xplan:ZU</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_ZU_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:ZU_Ausn</gml:identifier>
+      <gml:name>xplan:ZU_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung">
+      <gml:description>Zweckbestimmung der Grünfläche</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_1000">
+          <gml:description>Parkanlage; auch: Erholungsgrün, Grünanlage, Naherholung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:1000</gml:identifier>
+          <gml:name>Parkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_10000">
+          <gml:description>Historische Parkanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:10000</gml:identifier>
+          <gml:name>ParkanlageHistorisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_10001">
+          <gml:description>Naturnahe Parkanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:10001</gml:identifier>
+          <gml:name>ParkanlageNaturnah</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_10002">
+          <gml:description>Parkanlage mit Waldcharakter</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:10002</gml:identifier>
+          <gml:name>ParkanlageWaldcharakter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_10003">
+          <gml:description>Ufernahe Parkanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:10003</gml:identifier>
+          <gml:name>NaturnaheUferParkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_1200">
+          <gml:description>Dauerkleingarten; auch: Gartenfläche, Hofgärten, Gartenland.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:1200</gml:identifier>
+          <gml:name>Dauerkleingarten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_12000">
+          <gml:description>Erholungsgarten</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:12000</gml:identifier>
+          <gml:name>ErholungsGaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_1400">
+          <gml:description>Sportplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:1400</gml:identifier>
+          <gml:name>Sportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_14000">
+          <gml:description>Reitsportanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:14000</gml:identifier>
+          <gml:name>Reitsportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_14001">
+          <gml:description>Hundesportanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:14001</gml:identifier>
+          <gml:name>Hundesportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_14002">
+          <gml:description>Wassersportanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:14002</gml:identifier>
+          <gml:name>Wassersportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_14003">
+          <gml:description>Schießstand</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:14003</gml:identifier>
+          <gml:name>Schiessstand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_14004">
+          <gml:description>Golfplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:14004</gml:identifier>
+          <gml:name>Golfplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_14005">
+          <gml:description>Anlage für Skisport</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:14005</gml:identifier>
+          <gml:name>Skisport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_14006">
+          <gml:description>Tennisanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:14006</gml:identifier>
+          <gml:name>Tennisanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_14007">
+          <gml:description>Sonstiger Sportplatz
+
+Der Eintrag ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML V. 6.0 entfernt. Es sollte stattdessen der Code 1400 verwendet werden. </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:14007</gml:identifier>
+          <gml:name>SonstigerSportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_1600">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:1600</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_16000">
+          <gml:description>Bolzplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:16000</gml:identifier>
+          <gml:name>Bolzplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_16001">
+          <gml:description>Abenteuerspielplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:16001</gml:identifier>
+          <gml:name>Abenteuerspielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_1800">
+          <gml:description>Zeltplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:1800</gml:identifier>
+          <gml:name>Zeltplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_18000">
+          <gml:description>Campingplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:18000</gml:identifier>
+          <gml:name>Campingplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_2000">
+          <gml:description>Badeplatz, auch Schwimmbad, Liegewiese.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:2000</gml:identifier>
+          <gml:name>Badeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_2200">
+          <gml:description>Anlage für Freizeit und Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:2200</gml:identifier>
+          <gml:name>FreizeitErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_22000">
+          <gml:description>Anlage für Kleintierhaltung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:22000</gml:identifier>
+          <gml:name>Kleintierhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_22001">
+          <gml:description>Festplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:22001</gml:identifier>
+          <gml:name>Festplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_2400">
+          <gml:description>Spezielle Grünfläche</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:2400</gml:identifier>
+          <gml:name>SpezGruenflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_24000">
+          <gml:description>Straßenbegleitgrün</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:24000</gml:identifier>
+          <gml:name>StrassenbegleitGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_24001">
+          <gml:description>Böschungsfläche</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:24001</gml:identifier>
+          <gml:name>BoeschungsFlaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_24002">
+          <gml:description>Feld, Wald, Wiese allgemein
+
+Der Eintrag ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML V. 6.0 entfernt. Es sollte stattdessen der Code 2400 verwendet werden. </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:24002</gml:identifier>
+          <gml:name>FeldWaldWiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_24003">
+          <gml:description>Uferstreifen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:24003</gml:identifier>
+          <gml:name>Uferschutzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_24004">
+          <gml:description>Abschirmgrün</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:24004</gml:identifier>
+          <gml:name>Abschirmgruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_24005">
+          <gml:description>Umweltbildungspark, Schaugatter</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:24005</gml:identifier>
+          <gml:name>UmweltbildungsparkSchaugatter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_24006">
+          <gml:description>Fläche für den ruhenden Verkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:24006</gml:identifier>
+          <gml:name>RuhenderVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_2600">
+          <gml:description>Friedhof</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:2600</gml:identifier>
+          <gml:name>Friedhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_9999">
+          <gml:description>Sonstige Zweckbestimmung, falls keine der aufgeführten Klassifikationen anwendbar ist.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_zweckbestimmung_XP_ZweckbestimmungGruen_99990">
+          <gml:description>Gärtnerei</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:zweckbestimmung:XP_ZweckbestimmungGruen:99990</gml:identifier>
+          <gml:name>Gaertnerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Festlegung der Zweckbestimmung.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestGruenFlaeche</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_nutzungsform">
+      <gml:description>Nutzungsform der festgesetzten Fläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:nutzungsform</gml:identifier>
+      <gml:name>xplan:nutzungsform</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_nutzungsform_XP_Nutzungsform_1000">
+          <gml:description>Private Nutzung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:nutzungsform:XP_Nutzungsform:1000</gml:identifier>
+          <gml:name>Privat</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GruenFlaeche_nutzungsform_XP_Nutzungsform_2000">
+          <gml:description>Öffentliche Nutzung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GruenFlaeche:nutzungsform:XP_Nutzungsform:2000</gml:identifier>
+          <gml:name>Oeffentlich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_Nutzungsform</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GruenFlaeche_zugunstenVon">
+      <gml:description>Angabe des Begünstigten einer Ausweisung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GruenFlaeche:attribute:zugunstenVon</gml:identifier>
+      <gml:name>xplan:zugunstenVon</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Flaechenschlussobjekt" />
+</TypeDefinition>

@@ -1,0 +1,72 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:28-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Objekt">
+  <gml:description>Basisklasse für die Inhalte sonstiger raumbezogener Planwerke sowie von Klassen zur Modellierung nachrichtlicher Übernahmen.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:SO_Objekt</gml:identifier>
+  <gml:name>xplan:SO_Objekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Objekt_rechtscharakter">
+      <gml:description>Rechtscharakter des Planinhalts.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:SO_Objekt:attribute:rechtscharakter</gml:identifier>
+      <gml:name>xplan:rechtscharakter</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Objekt_rechtscharakter_SO_Rechtscharakter_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:SO_Objekt:rechtscharakter:SO_Rechtscharakter:2000</gml:identifier>
+          <gml:name>NachrichtlicheUebernahme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Objekt_rechtscharakter_SO_Rechtscharakter_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:SO_Objekt:rechtscharakter:SO_Rechtscharakter:3000</gml:identifier>
+          <gml:name>Hinweis</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Objekt_rechtscharakter_SO_Rechtscharakter_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:SO_Objekt:rechtscharakter:SO_Rechtscharakter:4000</gml:identifier>
+          <gml:name>Vermerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Objekt_rechtscharakter_SO_Rechtscharakter_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:SO_Objekt:rechtscharakter:SO_Rechtscharakter:5000</gml:identifier>
+          <gml:name>Kennzeichnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Objekt_rechtscharakter_SO_Rechtscharakter_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:SO_Objekt:rechtscharakter:SO_Rechtscharakter:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_Rechtscharakter</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Objekt_sonstRechtscharakter">
+      <gml:description>Klassifizierung des Rechtscharakters wenn das Attribut "&lt;i&gt;rechtscharakter" &lt;/i&gt;den Wert "Sonstiges" (9999)  hat.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:SO_Objekt:attribute:sonstRechtscharakter</gml:identifier>
+      <gml:name>xplan:sonstRechtscharakter</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Objekt_sonstRechtscharakter_SO_SonstRechtscharakter_FestsetzungBPlan">
+          <gml:description>Wird spezifiziert, wenn das Objekt den rechtlichen Charakter einer BPlan Festsetzung hat.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:SO_Objekt:sonstRechtscharakter:SO_SonstRechtscharakter:FestsetzungBPlan</gml:identifier>
+          <gml:name>FestsetzungBPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Objekt_sonstRechtscharakter_SO_SonstRechtscharakter_DarstellungFPlan">
+          <gml:description>Wird spezifiziert, wenn das Objekt der rechtlichen Charakter einer FPlan Darstellung hat.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:SO_Objekt:sonstRechtscharakter:SO_SonstRechtscharakter:DarstellungFPlan</gml:identifier>
+          <gml:name>DarstellungFPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_SonstRechtscharakter</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_Objekt" />
+</TypeDefinition>

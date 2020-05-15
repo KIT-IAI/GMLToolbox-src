@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="OSM_SemanticClassification">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="OSM_Class" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="OSM_key" type="xs:string" use="required"/>
+                    <xs:attribute name="FeatureType" type="xs:string" use="required"/>
+                    <xs:attribute name="priority" type="xs:int" use="required"/>
+                    <xs:attribute name="pointGeometry" type="xs:boolean" use="required"/>
+                    <xs:attribute name="lineGeometry" type="xs:boolean" use="required"/>
+                    <xs:attribute name="areaGeometry" type="xs:boolean" use="required"/>
+                    <xs:attribute name="relation" type="xs:boolean" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

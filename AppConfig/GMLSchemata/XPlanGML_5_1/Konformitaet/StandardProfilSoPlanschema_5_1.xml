@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd" name="StandardProfilSoPlanSchema_5_1">
+
+ <!--GlobalRule globalRuleId="TestRueckwaertsReferenzenSOObjekt" globalRuleErrorId="5.1.3.3"/-->
+
+ <!-- SO_Plan -->
+ <Rule class="SO_Plan" id="6.1.1.1">
+  <description>Eine Instanz der Klasse SO_Plan darf über die Relation bereich nur Instanzen der Klasse SO_Bereich aggregieren</description>
+  <Required>
+   <RelationFilter relationName="bereich" minOccurs="0" maxOccurs="unbound">
+    <GmlType>SO_BereichType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+ 
+ <Rule class="SO_Plan">
+  <description>planArt ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="planArt" minOccurs="1" maxOccurs="unbound"/>
+  </Required>
+ </Rule>
+
+ <!-- SO_Bereich  -->
+ <Rule class="SO_Bereich" id="6.1.2.3">
+  <description>Eine Instanz der Klasse SO_Bereich muss über die Relation gehoertZuPlan genau eine Instanz der Klasse SO_Plan referieren. Diese Instanz referiert über die Relation bereich die Bereichs-Instanz</description>
+  <Required>
+   <RelationFilter relationName="gehoertZuPlan" minOccurs="1" maxOccurs="1" inverseRelationName="bereich">
+    <GmlType>SO_PlanType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_Objekt -->
+ <Rule superclassType="SO_ObjektType">
+  <description>Das Attribut rechtscharakter ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="rechtscharakter" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <Rule superclassType="SO_ObjektType" id="6.1.3.3">
+  <description>Die Relation refTextInhalt darf nur auf Instanzen der Klasse SO_TextAbschnitt verweisen</description>
+  <Required>
+   <RelationFilter relationName="refTextInhalt" minOccurs="0" maxOccurs="unbound">
+    <GmlType>SO_TextAbschnittType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+ 
+ <!-- SO_TextAbschnitt -->
+ <Rule class="SO_TextAbschnitt">
+  <description>Das Attribut rechtscharakter ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="rechtscharakter" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <!--  SO_FlaechenobjektType -->
+ <Rule superclassType="SO_FlaechenobjektType">
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="SO_FlaechenobjektType" id="6.1.4.2">
+  <description>Das Attribut position darf nur mit Flächengeometrie (Einzelfläche oder Menge von Flächen) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="SO_FlaechenobjektType" id="6.1.4.1">
+  <description>Wenn das Attribut ebene != 0 ist, muss flaechenschluss == false sein</description>
+  <If>
+   <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="NOT_EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_Geometrieobjekt -->
+ <Rule superclassType="SO_GeometrieobjektType" id="6.1.5.2">
+  <description>Wenn das Objekt mit flächenhaftem Raumbezug gebildet ist muss das Attribut  flaechenschluss belegt sein</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="SO_GeometrieobjektType" id="6.1.5.1">
+  <description>Wenn das Attribut ebene != 0 ist, muss bei vorliegender Flächengeometrie das Attribut  flaechenschluss == false sein</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="NOT_EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ <Rule superclassType="SO_GeometrieobjektType" id="6.1.5.3">
+  <description>Ausschluss von gemischter Geometrie</description>
+  <Required combination="OR">
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </Required>
+ </Rule>
+
+ <!--  SO_Linienobjekt -->
+ <Rule superclassType="SO_LinienobjektType" id="5.1.6.1">
+  <description>Das Attribut position darf nur mit Liniengeometrie (Einzellinie oder Menge von Linien) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+  </Required>
+ </Rule>
+
+ <!--  SO_PunktobjektType -->
+ <Rule superclassType="SO_PunktobjektType" id="5.1.7.1">
+  <description>Das Attribut position darf nur mit Punktgeometrie (Einzelpunkt oder Menge von Punkten) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+  </Required>
+ </Rule>
+
+ <!-- SO_Bodenschutzrecht -->
+ <Rule class="SO_Bodenschutzrecht" id="6.2.1.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="SO_Bodenschutzrecht" id="6.2.1.2">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_Denkmalschutzrecht -->
+ <Rule class="SO_Denkmalschutzrecht" id="6.2.2.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="SO_Denkmalschutzrecht" id="6.2.2.1">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_Forstrecht -->
+ <Rule class="SO_Forstrecht" id="6.2.3.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- SO_Luftverkehrsrecht -->
+ <Rule class="SO_Forstrecht" id="6.2.4.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- SO_Schienenverkehrsrecht -->
+ <Rule class="SO_Schienenverkehrsrecht" id="6.2.5.2">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>   
+  </Required>
+ </Rule>
+
+ <Rule class="SO_Schienenverkehrsrecht" id="6.2.5.3">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_SonstigesRecht -->
+ <Rule class="SO_SonstigesRecht" id="6.2.6.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- SO_Strassenverkehrsrecht -->
+ <Rule class="SO_Strassenverkehrsrecht" id="6.2.7.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="SO_Strassenverkehrsrecht" id="6.2.7.2">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_Wasserrecht -->
+ <Rule class="SO_Wasserrecht" id="6.2.8.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- SO_SchutzgebietNaturschutzrecht -->
+ <Rule class="SO_SchutzgebietNaturschutzrecht" id="6.3.1.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="SO_SchutzgebietNaturschutzrecht" id="6.3.1.2">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_SchutzgebietWasserrecht -->
+ <Rule class="SO_SchutzgebietWasserrecht" id="6.3.2.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="SO_SchutzgebietWasserrecht" id="6.3.2.2">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_SchutzgebietSonstigesRecht -->
+ <Rule class="SO_SchutzgebietSonstigesRecht" id="6.3.3.1">
+  <description>Wenn das Attribut detailArtDerFestlegung belegt ist muss auch das Attribut artDerFestlegung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="SO_SchutzgebietSonstigesRecht" id="6.3.3.2">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_Gebiet -->
+ <Rule class="SO_Gebiet" id="6.4.1.1">
+  <description>Wenn das Attribut sonstGebietsArt belegt ist, muss gebietsArt unbelegt sein oder den Wert 9999 (Sonstiges) haben</description>
+  <If>
+   <AttributeFilter attributeName="sonstGebietsArt" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="gebietsArt" minOccurs="0" maxOccurs="1">
+    <AttributeValue>9999</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="SO_Gebiet" id="6.4.1.2">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- SO_Grenze -->
+ <Rule class="SO_Grenze" id="6.5.1.1">
+  <description>Wenn das Attribut sonstTyp belegt ist, muss typ unbelegt sein oder den Wert 9999 (SonstGrenze) haben</description>
+  <If>
+   <AttributeFilter attributeName="sonstTyp" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="0" maxOccurs="1">
+    <AttributeValue>9999</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+</Profil>

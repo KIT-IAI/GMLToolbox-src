@@ -1,0 +1,58 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:18-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_Gewaesser">
+  <gml:description>Darstellung von Wasserflächen nach §5, Abs. 2, Nr. 7 BauGB.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gewaesser</gml:identifier>
+  <gml:name>xplan:FP_Gewaesser</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gewaesser_zweckbestimmung">
+      <gml:description>Zweckbestimmung des Gewässers.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gewaesser:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gewaesser_zweckbestimmung_XP_ZweckbestimmungGewaesser_1000">
+          <gml:description>Hafen</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gewaesser:zweckbestimmung:XP_ZweckbestimmungGewaesser:1000</gml:identifier>
+          <gml:name>Hafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gewaesser_zweckbestimmung_XP_ZweckbestimmungGewaesser_1100">
+          <gml:description>Stehende Wasserfläche, auch See, Teich.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gewaesser:zweckbestimmung:XP_ZweckbestimmungGewaesser:1100</gml:identifier>
+          <gml:name>Wasserflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gewaesser_zweckbestimmung_XP_ZweckbestimmungGewaesser_1200">
+          <gml:description>Fließgewässer, auch Fluss, Bach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gewaesser:zweckbestimmung:XP_ZweckbestimmungGewaesser:1200</gml:identifier>
+          <gml:name>Fliessgewaesser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gewaesser_zweckbestimmung_XP_ZweckbestimmungGewaesser_9999">
+          <gml:description>Sonstiges Gewässer, sofern keiner der anderen Codes zutreffend ist.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gewaesser:zweckbestimmung:XP_ZweckbestimmungGewaesser:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGewaesser</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gewaesser_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codelist definierte detailliertere Zweckbestimmung des Objektes.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gewaesser:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestGewaesser</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Geometrieobjekt" />
+</TypeDefinition>

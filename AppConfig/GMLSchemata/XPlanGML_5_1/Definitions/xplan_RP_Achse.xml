@@ -1,0 +1,88 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:41-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Achse">
+  <gml:description>Achsen bündeln i.d.R. Verkehrs- und Versorgungsinfrastruktur und enthalten eine relativ dichte Folge von Siedlungskonzentrationen und Zentralen Orten.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Achse</gml:identifier>
+  <gml:name>xplan:RP_Achse</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Achse_typ">
+      <gml:description>Klassifikation verschiedener Achsen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Achse:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_1000">
+          <gml:description>Achsen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:1000</gml:identifier>
+          <gml:name>Achse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_2000">
+          <gml:description>Siedlungsachsen sind Achsen in Verdichtungsräumen, oft entlang von Strecken des öffentlichen Nahverkehrs.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:2000</gml:identifier>
+          <gml:name>Siedlungsachse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_3000">
+          <gml:description>Entwicklungsachse.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:3000</gml:identifier>
+          <gml:name>Entwicklungsachse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_3001">
+          <gml:description>Landesentwicklungsachse.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:3001</gml:identifier>
+          <gml:name>Landesentwicklungsachse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_3002">
+          <gml:description>Verbindungsachsen sind durch Verkehrsbeziehungen zwischen zentralen Orten verschiedener Stufen gekennzeichnet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:3002</gml:identifier>
+          <gml:name>Verbindungsachse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_3003">
+          <gml:description>Entwicklungskorridor.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:3003</gml:identifier>
+          <gml:name>Entwicklungskorridor</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_4000">
+          <gml:description>Abgrenzung von Entwicklungs- und Entlastungsorten.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:4000</gml:identifier>
+          <gml:name>AbgrenzungEntwicklungsEntlastungsorte</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_5000">
+          <gml:description>Achsengrundrichtung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:5000</gml:identifier>
+          <gml:name>Achsengrundrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_6000">
+          <gml:description>Äußerer Achsenschwerpunkt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:6000</gml:identifier>
+          <gml:name>AuessererAchsenSchwerpunkt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Achse_typ_RP_AchsenTypen_9999">
+          <gml:description>Sonstige Achse.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Achse:typ:RP_AchsenTypen:9999</gml:identifier>
+          <gml:name>SonstigeAchse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_AchsenTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

@@ -1,0 +1,18 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:42-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_Flaechenobjekt">
+  <gml:description>Basisklasse für alle Objekte eines Landschaftsplans mit flächenhaftem Raumbezug (eine Einzelfläche oder eine Menge von Flächen, die sich nicht überlappen dürfen).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_Flaechenobjekt</gml:identifier>
+  <gml:name>xplan:LP_Flaechenobjekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_Flaechenobjekt_position">
+      <gml:description>Flächenhafter Raumbezug des Objektes (Eine Einzelfläche oder eine Menge von Flächen, die sich nicht überlappen dürfen). .</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_Flaechenobjekt:attribute:position</gml:identifier>
+      <gml:name>xplan:position</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Flaechengeometrie" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_Objekt" />
+</TypeDefinition>

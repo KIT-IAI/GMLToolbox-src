@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="10.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE9ED0B0-6117-4DEB-A54B-495FF0A70A0C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>X3DModule</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\lib\</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>$(SolutionDir)\lib_x64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\lib_x64\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="X3D-Module.vcxproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="VisualParams.cpp" />
+    <ClCompile Include="Writable\DEFable.cpp" />
+    <ClCompile Include="Writable\EVENTable.cpp" />
+    <ClCompile Include="Writable\GlobalDef.cpp" />
+    <ClCompile Include="Writable\IDable.cpp" />
+    <ClCompile Include="Writable\Metaable.cpp" />
+    <ClCompile Include="Writable\X3D\Background.cpp" />
+    <ClCompile Include="Writable\X3D\ComposedGeometryNode.cpp" />
+    <ClCompile Include="Writable\X3D\Coordinate.cpp" />
+    <ClCompile Include="Writable\X3D\Group.cpp" />
+    <ClCompile Include="Writable\X3D\Grouping.cpp" />
+    <ClCompile Include="Writable\X3D\Indexable.cpp" />
+    <ClCompile Include="Writable\X3D\IndexedFaceSet.cpp" />
+    <ClCompile Include="Writable\X3D\IndexedLineSet.cpp" />
+    <ClCompile Include="Writable\X3D\IndexedTriangleSet.cpp" />
+    <ClCompile Include="Writable\X3D\Material.cpp" />
+    <ClCompile Include="Writable\X3D\Point3D.cpp" />
+    <ClCompile Include="Writable\X3D\PointSet.cpp" />
+    <ClCompile Include="Writable\X3D\Rotation.cpp" />
+    <ClCompile Include="Writable\X3D\Scene.cpp" />
+    <ClCompile Include="Writable\X3D\Shape.cpp" />
+    <ClCompile Include="Writable\X3D\Switch.cpp" />
+    <ClCompile Include="Writable\X3D\Viewpoint.cpp" />
+    <ClCompile Include="Writable\X3D\X3DAppearance.cpp" />
+    <ClCompile Include="Writable\X3D\X3DColor.cpp" />
+    <ClCompile Include="Writable\X3D\X3DNode.cpp" />
+    <ClCompile Include="Writable\XHTML\A.cpp" />
+    <ClCompile Include="Writable\XHTML\Button.cpp" />
+    <ClCompile Include="Writable\XHTML\Dd.cpp" />
+    <ClCompile Include="Writable\XHTML\Div.cpp" />
+    <ClCompile Include="Writable\XHTML\Dl.cpp" />
+    <ClCompile Include="Writable\XHTML\Dt.cpp" />
+    <ClCompile Include="Writable\XHTML\Input.cpp" />
+    <ClCompile Include="Writable\XHTML\InputNode.cpp" />
+    <ClCompile Include="Writable\XHTML\XHTMLNode.cpp" />
+    <ClCompile Include="X3D-Viewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EnumDefinition.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="VisualParams.h" />
+    <ClInclude Include="Writable\DEFable.h" />
+    <ClInclude Include="Writable\EVENTable.h" />
+    <ClInclude Include="Writable\GlobalDef.h" />
+    <ClInclude Include="Writable\IDable.h" />
+    <ClInclude Include="Writable\Metaable.h" />
+    <ClInclude Include="Writable\Writable.h" />
+    <ClInclude Include="Writable\X3D\Background.h" />
+    <ClInclude Include="Writable\X3D\ComposedGeometryNode.h" />
+    <ClInclude Include="Writable\X3D\Coordinate.h" />
+    <ClInclude Include="Writable\X3D\DefId.h" />
+    <ClInclude Include="Writable\X3D\Group.h" />
+    <ClInclude Include="Writable\X3D\Grouping.h" />
+    <ClInclude Include="Writable\X3D\Indexable.h" />
+    <ClInclude Include="Writable\X3D\IndexedFaceSet.h" />
+    <ClInclude Include="Writable\X3D\IndexedLineSet.h" />
+    <ClInclude Include="Writable\X3D\IndexedTriangleSet.h" />
+    <ClInclude Include="Writable\X3D\Material.h" />
+    <ClInclude Include="Writable\X3D\Optional.h" />
+    <ClInclude Include="Writable\X3D\Point3D.h" />
+    <ClInclude Include="Writable\X3D\PointSet.h" />
+    <ClInclude Include="Writable\X3D\Profile.h" />
+    <ClInclude Include="Writable\X3D\Rotation.h" />
+    <ClInclude Include="Writable\X3D\Scene.h" />
+    <ClInclude Include="Writable\X3D\Shape.h" />
+    <ClInclude Include="Writable\X3D\Switch.h" />
+    <ClInclude Include="Writable\X3D\Viewpoint.h" />
+    <ClInclude Include="Writable\X3D\X3DAppearance.h" />
+    <ClInclude Include="Writable\X3D\X3DColor.h" />
+    <ClInclude Include="Writable\X3D\X3DNode.h" />
+    <ClInclude Include="Writable\XHTML\A.h" />
+    <ClInclude Include="Writable\XHTML\Button.h" />
+    <ClInclude Include="Writable\XHTML\Dd.h" />
+    <ClInclude Include="Writable\XHTML\Div.h" />
+    <ClInclude Include="Writable\XHTML\Dl.h" />
+    <ClInclude Include="Writable\XHTML\Dt.h" />
+    <ClInclude Include="Writable\XHTML\Input.h" />
+    <ClInclude Include="Writable\XHTML\InputNode.h" />
+    <ClInclude Include="Writable\XHTML\XHTMLNode.h" />
+    <ClInclude Include="X3D-Viewer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

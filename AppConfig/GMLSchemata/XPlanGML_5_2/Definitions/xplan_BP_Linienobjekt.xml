@@ -1,0 +1,18 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:02-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_Linienobjekt">
+  <gml:description>Basisklasse für alle Objekte eines Bebauungsplans mit linienförmigem Raumbezug (Eine einzelne zusammenhängende Kurve, die aus Linienstücken und Kreisbögen zusammengesetzt sein kann, oder eine Menge derartiger Kurven).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Linienobjekt</gml:identifier>
+  <gml:name>xplan:BP_Linienobjekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Linienobjekt_position">
+      <gml:description>Linienförmiger Raumbezug (Einzelne zusammenhängende Kurve, die aus Linienstücken und Kreisbögen aufgebaut sit, oder eine Menge derartiger Kurven),</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Linienobjekt:attribute:position</gml:identifier>
+      <gml:name>xplan:position</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Liniengeometrie" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Objekt" />
+</TypeDefinition>

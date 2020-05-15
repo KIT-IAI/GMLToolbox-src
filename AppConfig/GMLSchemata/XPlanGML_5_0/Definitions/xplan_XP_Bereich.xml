@@ -1,0 +1,119 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:00:59-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_Bereich">
+  <gml:description>Abstrakte Oberklasse für die Modellierung von Planbereichen. Ein Planbereich fasst die Inhalte eines Plans nach bestimmten Kriterien zusammen.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich</gml:identifier>
+  <gml:name>xplan:XP_Bereich</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_nummer">
+      <gml:description>Nummer des Bereichs. Wenn der Bereich als Ebene eines BPlans interpretiert wird, kann aus dem Attribut die vertikale Reihenfolge der Ebenen rekonstruiert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:attribute:nummer</gml:identifier>
+      <gml:name>xplan:nummer</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_name">
+      <gml:description>Bezeichnung des Bereiches</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_bedeutung">
+      <gml:description>Spezifikation der semantischen Bedeutung eines Bereiches.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:attribute:bedeutung</gml:identifier>
+      <gml:name>xplan:bedeutung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Bereich_bedeutung_XP_BedeutungenBereich_1600">
+          <gml:description>Räumliche oder sachliche Aufteilung der Planinhalte.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Bereich:bedeutung:XP_BedeutungenBereich:1600</gml:identifier>
+          <gml:name>Teilbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Bereich_bedeutung_XP_BedeutungenBereich_1800">
+          <gml:description>Aggregation von Objekten außerhalb des Geltungsbereiches gemäß Eingriffsregelung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Bereich:bedeutung:XP_BedeutungenBereich:1800</gml:identifier>
+          <gml:name>Kompensationsbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Bereich_bedeutung_XP_BedeutungenBereich_9999">
+          <gml:description>Bereich, für den keine der aufgeführten Bedeutungen zutreffend ist. In dem Fall kann die Bedeutung über das Textattribut "&lt;i&gt;detaillierteBedeutung"&lt;/i&gt; angegeben werden.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Bereich:bedeutung:XP_BedeutungenBereich:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_BedeutungenBereich</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_detaillierteBedeutung">
+      <gml:description>Detaillierte Erklärung der semantischen Bedeutung eines Bereiches, in Ergänzung des Attributs "&lt;i&gt;bedeutung&lt;/i&gt;".</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:attribute:detaillierteBedeutung</gml:identifier>
+      <gml:name>xplan:detaillierteBedeutung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_erstellungsMassstab">
+      <gml:description>Der bei der Erstellung der Inhalte des Planbereichs benutzte Kartenmaßstab. Wenn dieses Attribut nicht spezifiziert ist, gilt für den Bereich der auf Planebene (&lt;i&gt;XP_Plan&lt;/i&gt;) spezifizierte Maßstab.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:attribute:erstellungsMassstab</gml:identifier>
+      <gml:name>xplan:erstellungsMassstab</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_geltungsbereich">
+      <gml:description>Räumliche Abgrenzung des Bereiches. Wenn dieses Attribut nicht spezifiziert ist, gilt für den Bereich der auf Planebene (&lt;i&gt;XP_Plan&lt;/i&gt;) spezifizierte Geltungsbereich.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:attribute:geltungsbereich</gml:identifier>
+      <gml:name>xplan:geltungsbereich</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Flaechengeometrie" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_planinhalt">
+      <gml:description>Verweis auf einen Planinhalt des Bereichs</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:association-role:planinhalt</gml:identifier>
+      <gml:name>xplan:planinhalt</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Objekt" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_praesentationsobjekt">
+      <gml:description>Referenz auf ein Präsentationsbereich, das zum Planbereich gehört.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:association-role:praesentationsobjekt</gml:identifier>
+      <gml:name>xplan:praesentationsobjekt</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Bereich_rasterBasis">
+      <gml:description>Referenz auf einen georeferenzierte Rasterplan, der die Inhalte des Planbereichs wiedergibt.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Bereich:association-role:rasterBasis</gml:identifier>
+      <gml:name>xplan:rasterBasis</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_RasterplanBasis" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

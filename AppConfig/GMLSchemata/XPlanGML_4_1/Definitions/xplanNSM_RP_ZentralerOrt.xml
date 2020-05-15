@@ -1,0 +1,84 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:27-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplanNSM_RP_ZentralerOrt">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_ZentralerOrt</gml:identifier>
+  <gml:name>xplanNSM:RP_ZentralerOrt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_ZentralerOrt:attribute:detailFunktion</gml:identifier>
+      <gml:name>xplanNSM:detailFunktion</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:10001</gml:identifier>
+          <gml:name>GemeinsamesOberzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_20001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:20001</gml:identifier>
+          <gml:name>MittelzentrumMitOberzentralerTeilfunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_20002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:20002</gml:identifier>
+          <gml:name>MittelzentrumImVerdichtungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_30001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:30001</gml:identifier>
+          <gml:name>GrundzentrumMitMittelzentralerTeilfunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_30002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:30002</gml:identifier>
+          <gml:name>Unterzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_30003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:30003</gml:identifier>
+          <gml:name>UnterzentrumMitMittelzentralerTeilfunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_40000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:40000</gml:identifier>
+          <gml:name>Stadtrandkern_1_Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_40001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:40001</gml:identifier>
+          <gml:name>Stadtrandkern_1_OrdnungMitMittelzentralerTeilfunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_40002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:40002</gml:identifier>
+          <gml:name>Stadtrandkern_2_Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_50000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:50000</gml:identifier>
+          <gml:name>LaendlicherZentralort</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_ZentralerOrt_detailFunktion_RP_NSM_ZentralerOrtFunktionen_99991">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_ZentralerOrt:detailFunktion:RP_NSM_ZentralerOrtFunktionen:99991</gml:identifier>
+          <gml:name>ZentralesSiedlungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NSM_ZentralerOrtFunktionen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification />
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_ZentralerOrt" />
+</TypeDefinition>

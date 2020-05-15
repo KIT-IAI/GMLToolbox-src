@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit FZK (www.iai.fzk.de) XPlanGML-Toolbox, Erstellungsdatum: 11/12/07-->
+<Dictionary   gml:id="ExternalCodeLists" xmlns="http://www.opengis.net/gml" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.opengis.net/gml E:\XPlanung\XPlanGML.2.0\Schema\gml/3.0.0/base/gml3nas.xsd">
+  <description>Externe Codelisten von Anwendungsschema 'XPlanGML'.</description>
+  <name>XPlanGML</name>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailDachform">
+      <name>BP_DetailDachform</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestBahnverkehr">
+      <name>BP_DetailZweckbestBahnverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestGemeinbedarf">
+      <name>BP_DetailZweckbestGemeinbedarf</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestGewaesser">
+      <name>BP_DetailZweckbestGewaesser</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestGruenFlaeche">
+      <name>BP_DetailZweckbestGruenFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestLandwirtschaftsFlaeche">
+      <name>BP_DetailZweckbestLandwirtschaftsFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestLuftverkehr">
+      <name>BP_DetailZweckbestLuftverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestNebenanlagen">
+      <name>BP_DetailZweckbestNebenanlagen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestSchutzgebiet">
+      <name>BP_DetailZweckbestSchutzgebiet</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestSpielSportanlage">
+      <name>BP_DetailZweckbestSpielSportanlage</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestStrassenverkehr">
+      <name>BP_DetailZweckbestStrassenverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestVerEntsorgung">
+      <name>BP_DetailZweckbestVerEntsorgung</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestVorbHochwSchutz">
+      <name>BP_DetailZweckbestVorbHochwSchutz</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestWaldFlaeche">
+      <name>BP_DetailZweckbestWaldFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestWasserrecht">
+      <name>BP_DetailZweckbestWasserrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetailZweckbestWasserwirtschaft">
+      <name>BP_DetailZweckbestWasserwirtschaft</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_DetaillZweckbestGemeinschaftsanlagen">
+      <name>BP_DetaillZweckbestGemeinschaftsanlagen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_Status">
+      <name>BP_Status</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="BP_ZweckbestimmungGenerischeObjekte">
+      <name>BP_ZweckbestimmungGenerischeObjekte</name>
+      <definitionMember>
+        <Definition gml:id="BP_ZweckbestimmungGenerischeObjekte_3333">
+          <description>Windkraftanlage</description>
+          <name>3333</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="BP_ZweckbestimmungGenerischeObjekte_8000">
+          <description>Hallo</description>
+          <name>8000</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZeckbestBahnverkehr">
+      <name>FP_DetailZeckbestBahnverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestGemeinbedarf">
+      <name>FP_DetailZweckbestGemeinbedarf</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestGewaesser">
+      <name>FP_DetailZweckbestGewaesser</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestGruen">
+      <name>FP_DetailZweckbestGruen</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestLandwirtschaftsFlaeche">
+      <name>FP_DetailZweckbestLandwirtschaftsFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestLuftverkehr">
+      <name>FP_DetailZweckbestLuftverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestSchutzgebiet">
+      <name>FP_DetailZweckbestSchutzgebiet</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestSpielSportanlage">
+      <name>FP_DetailZweckbestSpielSportanlage</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestStrassenverkehr">
+      <name>FP_DetailZweckbestStrassenverkehr</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestVerEntsorgung">
+      <name>FP_DetailZweckbestVerEntsorgung</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestVorbHochwSchutz">
+      <name>FP_DetailZweckbestVorbHochwSchutz</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestWaldFlaeche">
+      <name>FP_DetailZweckbestWaldFlaeche</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestWasserrecht">
+      <name>FP_DetailZweckbestWasserrecht</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DetailZweckbestWasserwirtschaft">
+      <name>FP_DetailZweckbestWasserwirtschaft</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_DifferenzArtDerBaulNutzung">
+      <name>FP_DifferenzArtDerBaulNutzung</name>
+      <definitionMember>
+        <Definition gml:id="FP_DifferenzArtDerBaulNutzung_3000">
+          <description>Sondergebiet Sport</description>
+          <name>3000</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="FP_DifferenzArtDerBaulNutzung_3100">
+          <description>Sondergebiet Kultur</description>
+          <name>3100</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="FP_DifferenzArtDerBaulNutzung_3200">
+          <description>Sondergebiet Tourismus</description>
+          <name>3200</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="FP_DifferenzArtDerBaulNutzung_3300">
+          <description>Sonstiges Sondergebiet</description>
+          <name>3300</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="FP_DifferenzArtDerBaulNutzung_3400">
+          <description>Sondergebiet Einzelhandel</description>
+          <name>3400</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="FP_DifferenzArtDerBaulNutzung_3500">
+          <description>Hafen</description>
+          <name>3500</name>
+        </Definition>
+      </definitionMember>
+      <definitionMember>
+        <Definition gml:id="FP_DifferenzArtDerBaulNutzung_3600">
+          <description>Wohn- und Dienstleistungszentrum</description>
+          <name>3600</name>
+        </Definition>
+      </definitionMember>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_Status">
+      <name>FP_Status</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="FP_ZweckbestimmungGenerischeObjekte">
+      <name>FP_ZweckbestimmungGenerischeObjekte</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="RP_DetailFestlegEntwicklungsschwerpunkte">
+      <name>RP_DetailFestlegEntwicklungsschwerpunkte</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <DefinitionCollection gml:id="XP_StylesheetListe">
+      <name>XP_StylesheetListe</name>
+    </DefinitionCollection>
+  </dictionaryEntry>
+</Dictionary  >

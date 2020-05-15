@@ -1,0 +1,39 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:06-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_BauLinie">
+  <gml:description>Festsetzung einer Baulinie (§9 Abs. 1 Nr. 2 BauGB, §22 und 23 BauNVO). Über die Attribute &lt;i&gt;geschossMin &lt;/i&gt;und &lt;i&gt;geschossMax &lt;/i&gt;kann die Festsetzung auf einen Bereich von Geschossen beschränkt werden. Wenn eine Einschränkung der Festsetzung durch explizite Höhenangaben erfolgen soll, ist dazu die Oberklassen-Relation &lt;i&gt;hoehenangabe &lt;/i&gt;auf den komplexen Datentyp &lt;i&gt;XP_Hoehenangabe &lt;/i&gt;zu verwenden. 
+Durch die Digitalisierungsreihenfolge der Linienstützpunkte muss sichergestellt sein, dass die überbaute Fläche (&lt;i&gt;BP_UeberbaubareGrundstuecksFlaeche&lt;/i&gt;) relativ zur Laufrichtung auf der linken Seite liegt.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BauLinie</gml:identifier>
+  <gml:name>xplan:BP_BauLinie</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BauLinie_bautiefe">
+      <gml:description>Angabe einer Bautiefe.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BauLinie:attribute:bautiefe</gml:identifier>
+      <gml:name>xplan:bautiefe</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BauLinie_geschossMin">
+      <gml:description>Gibt bei geschossweiser Festsetzung die Nummer des Geschosses an, ab den die Festsetzung gilt. Wenn das Attribut nicht belegt ist, gilt die Festsetzung für alle Geschosse bis einschl. "geschossMax".</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BauLinie:attribute:geschossMin</gml:identifier>
+      <gml:name>xplan:geschossMin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BauLinie_geschossMax">
+      <gml:description>Gibt bei geschossweiser Feststzung die Nummer des Geschosses an, bis zu der die Festsetzung gilt. Wenn das Attribut nicht belegt ist, gilt die Festsetzung für alle Geschosse ab einschl. "geschossMin".</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BauLinie:attribute:geschossMax</gml:identifier>
+      <gml:name>xplan:geschossMax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Linienobjekt" />
+</TypeDefinition>

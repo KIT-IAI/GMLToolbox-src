@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gml:Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:inscl="http://www.kit.edu/inspire/codelists" gml:id="GML_LegislationLevelValue">
+  <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">LegislationLeelValue</gml:identifier>
+  <gml:name>LegislationLeelValue</gml:name>
+  
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_international">
+      <gml:description>An international legal act or convention</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">international</gml:identifier>
+      <gml:name>international</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_european">
+      <gml:description>A legal act of the European Union</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">european</gml:identifier>
+      <gml:name>european</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry> 
+    
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_national">
+      <gml:description>A legal act at national level</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">national</gml:identifier>
+      <gml:name>national</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry> 
+      
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_sub-national">
+      <gml:description>A legal act at sub-national level</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">sub-national</gml:identifier>
+      <gml:name>sub-national</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry> 
+</gml:Dictionary>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:17:23-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="BP_DetailZweckbestStrassenverkehr">
+  <description>Über eine Codeliste definierte detailliertere Zweckbestimmung von Verkehrsflächen besonderer Zweckbestimmung.</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:BP_DetailZweckbestStrassenverkehr</identifier>
+  <name>xplan:BP_DetailZweckbestStrassenverkehr</name>
+</Dictionary>

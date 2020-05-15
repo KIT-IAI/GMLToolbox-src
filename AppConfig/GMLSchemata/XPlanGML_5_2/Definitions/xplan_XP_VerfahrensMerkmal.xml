@@ -1,0 +1,60 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:17:59-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_VerfahrensMerkmal">
+  <gml:description>Vermerk eines am Planungsverfahrens beteiligten Akteurs.
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_VerfahrensMerkmal</gml:identifier>
+  <gml:name>xplan:XP_VerfahrensMerkmal</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_VerfahrensMerkmal_vermerk">
+      <gml:description>Inhalt des Vermerks.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_VerfahrensMerkmal:attribute:vermerk</gml:identifier>
+      <gml:name>xplan:vermerk</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_VerfahrensMerkmal_datum">
+      <gml:description>Datum des Vermerks</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_VerfahrensMerkmal:attribute:datum</gml:identifier>
+      <gml:name>xplan:datum</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_VerfahrensMerkmal_signatur">
+      <gml:description>Unterschrift</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_VerfahrensMerkmal:attribute:signatur</gml:identifier>
+      <gml:name>xplan:signatur</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_VerfahrensMerkmal_signiert">
+      <gml:description>Angabe, ob die Unterschrift erfolgt ist.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_VerfahrensMerkmal:attribute:signiert</gml:identifier>
+      <gml:name>xplan:signiert</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_XP_VerfahrensMerkmal_signiert_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::XP_VerfahrensMerkmal:signiert:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_XP_VerfahrensMerkmal_signiert_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::XP_VerfahrensMerkmal:signiert:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

@@ -1,0 +1,116 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:23-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_NebenanlagenFlaeche">
+  <gml:description>Fläche für Nebenanlagen, die auf Grund anderer Vorschriften für die Nutzung von Grundstücken erforderlich sind, wie Spiel-, Freizeit- und Erholungsflächen sowie die Fläche für Stellplätze und Garagen mit ihren Einfahrten (§9 Abs. 1 Nr. 4 BauGB)</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NebenanlagenFlaeche</gml:identifier>
+  <gml:name>xplan:BP_NebenanlagenFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung">
+      <gml:description>Zweckbestimmung der Nebenanlagen-Fläche</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NebenanlagenFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_1000">
+          <gml:description>Stellplätze</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:1000</gml:identifier>
+          <gml:name>Stellplaetze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_2000">
+          <gml:description>Garagen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:2000</gml:identifier>
+          <gml:name>Garagen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_3000">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:3000</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_3100">
+          <gml:description>Carport</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:3100</gml:identifier>
+          <gml:name>Carport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_3200">
+          <gml:description>Tiefgarage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:3200</gml:identifier>
+          <gml:name>Tiefgarage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_3300">
+          <gml:description>Nebengebäude</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:3300</gml:identifier>
+          <gml:name>Nebengebaeude</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_3400">
+          <gml:description>Sammelanlagen für Abfall.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:3400</gml:identifier>
+          <gml:name>AbfallSammelanlagen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_3500">
+          <gml:description>Energie-Verteilungsanlagen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:3500</gml:identifier>
+          <gml:name>EnergieVerteilungsanlagen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_3600">
+          <gml:description>Abfall-Wertstoffbehälter</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:3600</gml:identifier>
+          <gml:name>AbfallWertstoffbehaelter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_3700">
+          <gml:description>Fahrrad Stellplätze</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:3700</gml:identifier>
+          <gml:name>Fahrradstellplaetze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenFlaeche_zweckbestimmung_BP_ZweckbestimmungNebenanlagen_9999">
+          <gml:description>Sonstige Zweckbestimmung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenFlaeche:zweckbestimmung:BP_ZweckbestimmungNebenanlagen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_ZweckbestimmungNebenanlagen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_NebenanlagenFlaeche_detaillierteZweckbestimmung">
+      <gml:description>Über eine CodeList definierte detailliertere Festlegung der Zweckbestimmung. 
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NebenanlagenFlaeche:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestNebenanlagen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_NebenanlagenFlaeche_Zmax">
+      <gml:description>Maximale Anzahl der Garagengeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NebenanlagenFlaeche:attribute:Zmax</gml:identifier>
+      <gml:name>xplan:Zmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Ueberlagerungsobjekt" />
+</TypeDefinition>

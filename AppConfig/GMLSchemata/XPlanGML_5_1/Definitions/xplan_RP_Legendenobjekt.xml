@@ -1,0 +1,37 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:36-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Legendenobjekt">
+  <gml:description>Die Klasse RP_Legendenobjekt enthält Daten zur Legende und Darstellung im Ursprungsplan.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Legendenobjekt</gml:identifier>
+  <gml:name>xplan:RP_Legendenobjekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Legendenobjekt_legendenBezeichnung">
+      <gml:description>Bezeichnung des XPlan-FeatureTypes in der Legende des dazugehörigen Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Legendenobjekt:attribute:legendenBezeichnung</gml:identifier>
+      <gml:name>xplan:legendenBezeichnung</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Legendenobjekt_reflegendenBild">
+      <gml:description>Referenz auf das Bild eines Planzeichens in der Legende eines Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Legendenobjekt:attribute:reflegendenBild</gml:identifier>
+      <gml:name>xplan:reflegendenBild</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_ExterneReferenz" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Legendenobjekt_gehoertZuPraesentationsobjekt">
+      <gml:description />
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Legendenobjekt:association-role:gehoertZuPraesentationsobjekt</gml:identifier>
+      <gml:name>xplan:gehoertZuPraesentationsobjekt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

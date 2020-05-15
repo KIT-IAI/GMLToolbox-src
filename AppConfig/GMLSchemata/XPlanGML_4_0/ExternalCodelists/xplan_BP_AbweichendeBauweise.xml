@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.11.2011 15:19:40-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="xplan_BP_AbweichendeBauweise">
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:BP_AbweichendeBauweise</identifier>
+  <name>xplan:BP_AbweichendeBauweise</name>
+</Dictionary>

@@ -1,0 +1,327 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Objekt">
+  <gml:description>RP_Objekt ist die Basisklasse für alle spezifischen Festlegungen eines Raumordnungsplans. Sie selbst ist abstrakt, d.h. sie wird selbst nicht als eigenes Objekt verwendet, sondern vererbt nur ihre Attribute an spezielle Klassen.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Objekt</gml:identifier>
+  <gml:name>xplan:RP_Objekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Objekt_rechtscharakter">
+      <gml:description>Rechtscharakter des Planinhalts.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Objekt:attribute:rechtscharakter</gml:identifier>
+      <gml:name>xplan:rechtscharakter</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_1000">
+          <gml:description>Ziel der Raumordnung. Verbindliche räumliche und sachliche Festlegung zur Entwicklung, Ordnung und Sicherung des Raumes.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:1000</gml:identifier>
+          <gml:name>ZielDerRaumordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_2000">
+          <gml:description>Grundsätze der Raumordnung sind nach §3 Abs. Aussagen zur Entwicklung, Ordnung und Sicherung des Raums als Vorgaben für nachfolgende Abwägungs- oder Ermessensentscheidungen. Grundsätze der Raumordnung können durch Gesetz oder Festlegungen in einem Raumordnungsplan (§7 Abs. 1 und 2, ROG) aufgestellt werden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:2000</gml:identifier>
+          <gml:name>GrundsatzDerRaumordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_3000">
+          <gml:description>Nachrichtliche Übernahme.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:3000</gml:identifier>
+          <gml:name>NachrichtlicheUebernahme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_4000">
+          <gml:description>Nachrichtliche Übernahme Ziel.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:4000</gml:identifier>
+          <gml:name>NachrichtlicheUebernahmeZiel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_5000">
+          <gml:description>Nachrichtliche Übernahme Grundsatz.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:5000</gml:identifier>
+          <gml:name>NachrichtlicheUebernahmeGrundsatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_6000">
+          <gml:description>Nur Informationsgehalt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:6000</gml:identifier>
+          <gml:name>NurInformationsgehalt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_7000">
+          <gml:description>Textliches Ziel.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:7000</gml:identifier>
+          <gml:name>TextlichesZiel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_8000">
+          <gml:description>Ziel und Grundsatz.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:8000</gml:identifier>
+          <gml:name>ZielundGrundsatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_9000">
+          <gml:description>Vorschlag.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:9000</gml:identifier>
+          <gml:name>Vorschlag</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_rechtscharakter_RP_Rechtscharakter_9998">
+          <gml:description>Unbekannter Rechtscharakter</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:rechtscharakter:RP_Rechtscharakter:9998</gml:identifier>
+          <gml:name>Unbekannt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>RP_Rechtscharakter</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Objekt_konkretisierung">
+      <gml:description>Konkretisierung des Rechtscharakters.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Objekt:attribute:konkretisierung</gml:identifier>
+      <gml:name>xplan:konkretisierung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Objekt_gebietsTyp">
+      <gml:description>Gebietstyp eines Objekts.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Objekt:attribute:gebietsTyp</gml:identifier>
+      <gml:name>xplan:gebietsTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1000">
+          <gml:description>Vorranggebiete sind für bestimmte raumbedeutsame Funktionen oder Nutzungen vorgesehen. In ihnen sind andere raumbedeutsame Nutzungen ausgeschlossen, soweit diese mit den vorrangigen Funktionen, Nutzungen oder Zielen der Raumordnung nicht vereinbar sind.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1000</gml:identifier>
+          <gml:name>Vorranggebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1001">
+          <gml:description>Vorrangstandort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1001</gml:identifier>
+          <gml:name>Vorrangstandort</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1100">
+          <gml:description>Vorbehaltsgebiete sind Gebiete, in denen bestimmten raumbedeutsamen Funktionen oder Nutzungen bei der Abwägung mit konkurrierenden raumbedeutsamen Nutzungen besonderes Gewicht begemessen werden soll. Vorbehaltsgebiete besitzen den Charakter von Grundsätzen der Raumordnung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1100</gml:identifier>
+          <gml:name>Vorbehaltsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1101">
+          <gml:description>Vorbehaltsstandort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1101</gml:identifier>
+          <gml:name>Vorbehaltsstandort</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1200">
+          <gml:description>Eignungsgebiete steuern raumbedeutsame Maßnahmen im bauplanungsrechtlichen Außenbereich. Diese Maßnahmen sind außerhalb dieser Gebiete regelmäßig ausgeschlossen, z.B. die Planung und Einrichtung von Windkraftanlagen. 
+Eignungsgebiete haben den Charakter von Zielen der Raumordnung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1200</gml:identifier>
+          <gml:name>Eignungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1300">
+          <gml:description>Vorrang und Eignungsgebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1300</gml:identifier>
+          <gml:name>VorrangundEignungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1400">
+          <gml:description>Ausschlussgebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1400</gml:identifier>
+          <gml:name>Ausschlussgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1500">
+          <gml:description>Vorsorgegebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1500</gml:identifier>
+          <gml:name>Vorsorgegebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1501">
+          <gml:description>Vorsorgestandort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1501</gml:identifier>
+          <gml:name>Vorsorgestandort</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1600">
+          <gml:description>Vorzugsraum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1600</gml:identifier>
+          <gml:name>Vorzugsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1700">
+          <gml:description>Potenzialgebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1700</gml:identifier>
+          <gml:name>Potenzialgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_1800">
+          <gml:description>Schwerpunktraum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:1800</gml:identifier>
+          <gml:name>Schwerpunktraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_gebietsTyp_RP_GebietsTyp_9999">
+          <gml:description>Sonstiges Gebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:gebietsTyp:RP_GebietsTyp:9999</gml:identifier>
+          <gml:name>SonstigesGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_GebietsTyp</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Objekt_kuestenmeer">
+      <gml:description>Zeigt an, ob das Objekt im Küstenmeer liegt.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Objekt:attribute:kuestenmeer</gml:identifier>
+      <gml:name>xplan:kuestenmeer</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Objekt_kuestenmeer_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::RP_Objekt:kuestenmeer:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Objekt_kuestenmeer_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::RP_Objekt:kuestenmeer:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit">
+      <gml:description>Bedeutsamkeit eines Objekts.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Objekt:attribute:bedeutsamkeit</gml:identifier>
+      <gml:name>xplan:bedeutsamkeit</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_1000">
+          <gml:description>Regional Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:1000</gml:identifier>
+          <gml:name>Regional</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_2000">
+          <gml:description>Überregional Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:2000</gml:identifier>
+          <gml:name>Ueberregional</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_3000">
+          <gml:description>Großräumig Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:3000</gml:identifier>
+          <gml:name>Grossraeumig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_4000">
+          <gml:description>Landesweit Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:4000</gml:identifier>
+          <gml:name>Landesweit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_5000">
+          <gml:description>Bundesweit Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:5000</gml:identifier>
+          <gml:name>Bundesweit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_6000">
+          <gml:description>Europäisch Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:6000</gml:identifier>
+          <gml:name>Europaeisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_7000">
+          <gml:description>International Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:7000</gml:identifier>
+          <gml:name>International</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_8000">
+          <gml:description>Flächenerschließend Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:8000</gml:identifier>
+          <gml:name>Flaechenerschliessend</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Objekt_bedeutsamkeit_RP_Bedeutsamkeit_9000">
+          <gml:description>Herausragend Bedeutsam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Objekt:bedeutsamkeit:RP_Bedeutsamkeit:9000</gml:identifier>
+          <gml:name>Herausragend</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_Bedeutsamkeit</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Objekt_istZweckbindung">
+      <gml:description>Zeigt an, ob es sich bei diesem Objekt um eine Zweckbindung handelt.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Objekt:attribute:istZweckbindung</gml:identifier>
+      <gml:name>xplan:istZweckbindung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Objekt_istZweckbindung_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::RP_Objekt:istZweckbindung:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Objekt_istZweckbindung_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::RP_Objekt:istZweckbindung:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Objekt_refTextInhalt">
+      <gml:description>Referenz eines raumbezogenen Fachobjektes auf textuell formulierte Planinhalte.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Objekt:association-role:refTextInhalt</gml:identifier>
+      <gml:name>xplan:refTextInhalt</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:RP_TextAbschnitt" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_Objekt" />
+</TypeDefinition>

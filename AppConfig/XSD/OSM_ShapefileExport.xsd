@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="SachdatenSchemata">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SachdatenSchema" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="NodeAttributes" type="AttributesType" minOccurs="0" maxOccurs="1"/>
+                            <xs:element name="WayAttributes" type="AttributesType" minOccurs="0" maxOccurs="1"/>
+                            <xs:element name="AreaAttributes" type="AttributesType" minOccurs="0" maxOccurs="1"/>
+                            <xs:element name="RelationAttributes" type="AttributesType" minOccurs="0" maxOccurs="1"/>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:ID" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>                
+    </xs:element>
+    
+    <xs:complexType name="AttributesType">
+        <xs:sequence>
+            <xs:element name="attribute" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="tagName" type="xs:string" use="required"/>
+                    <xs:attribute name="shapeAttributName" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>             
+    </xs:complexType>
+</xs:schema>

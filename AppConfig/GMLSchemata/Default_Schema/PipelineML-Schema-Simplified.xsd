@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns="http://www.opengis.net/pipelineml/0.9.0"
+           xmlns:plm="http://www.opengis.net/pipelineml/0.9.0" targetNamespace="http://www.opengis.net/pipelineml/0.9.0">
+  <!--xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/2.1.2/gml.xsd"/-->
+  <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  
+  <!--=========================================================================================-->
+  <!--SurveyPackage                                                                            -->
+  <!--=========================================================================================-->
+  <xs:element name="SurveyPackage" type="plm:SurveyPackageType" substitutionGroup="gml:AbstractFeature"/>
+  
+  <xs:complexType name="SurveyPackageType">
+      <xs:complexContent >
+        <xs:extension base="gml:AbstractFeatureType">
+      <xs:sequence>     
+        <xs:element name="packageMetadata" type="PackageMetadataPropertyType"/>
+        <xs:element name="member" type="plm:AbstractPipelineObjectPropertyType" minOccurs="0" maxOccurs="unbounded"/>       
+      </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  
+  <!--=========================================================================================-->
+  <!--AbstractPipelineObject                                                                   -->
+  <!--=========================================================================================--> 
+  <xs:element name="AbstractPipelineObject" type="plm:AbstractPipelineObjectType" abstract="true" substitutionGroup="gml:AbstractFeature"/>
+  
+  <xs:complexType name="AbstractPipelineObjectType">
+    <xs:complexContent>
+      <xs:extension base="gml:AbstractFeatureType">
+        
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  
+  <xs:complexType name="AbstractPipelineObjectPropertyType">
+    <xs:sequence>
+      <xs:element ref="plm:AbstractPipelineObject"/>
+    </xs:sequence>
+  </xs:complexType>  
+  
+  
+  <!--=========================================================================================-->
+  <!--PackageMetadata                                                                          -->
+  <!--=========================================================================================--> 
+  <xs:element name="PackageMetadata" type="PackageMetadataType" substitutionGroup="gml:AbstractFeature"/>
+  
+  <xs:complexType name="PackageMetadataType">
+      <xs:complexContent>
+        <xs:extension base="gml:AbstractFeatureType">
+      <xs:sequence>
+        <xs:element name="packageVersion" type="xs:decimal"/>
+        <xs:element name="packageName" type="xs:string"/>
+        <xs:element name="packageDescription" type="xs:string"/>
+        <xs:element name="packageNote" type="xs:string"/>
+        <xs:element name="domainCode" type="xs:integer"/>
+        <xs:element name="domainName" type="xs:NCName"/>
+        <xs:element name="subDomainCode" type="xs:integer"/>
+        <xs:element name="subDomainName" type="xs:NCName"/>
+        <xs:element name="interchangeStandard" type="xs:NCName"/>
+        <xs:element name="interchangeStandardVersion" type="xs:NMTOKEN"/>
+        <xs:element name="beginCreationDateTime" type="xs:dateTime"/>
+        <xs:element name="endCreationDateTime" type="xs:dateTime"/>
+        <xs:element name="serverName" type="xs:NCName"/>
+        <xs:element name="dbName" type="xs:NCName"/>
+        <xs:element name="systemUser" type="xs:string"/>
+        <xs:element name="appName" type="xs:string"/>
+        <xs:element name="languageID" type="xs:integer"/>
+        <xs:element name="languageCode" type="xs:NCName"/>
+        <xs:element name="unitOfMeasure" type="xs:string"/>
+        <xs:element maxOccurs="unbounded" name="company" type="plm:CompanyPropertyType"/>
+        <xs:element name="surveyBeginDate" type="xs:dateTime"/>
+        <xs:element name="surveyEndDate" type="xs:dateTime"/>
+        <xs:element name="surveySpecificationUsed" type="xs:NCName"/>
+        <xs:element name="surveySpecificationVersionUsed" type="xs:string"/>
+        <xs:element name="gPSGearUsed" type="xs:NCName"/>
+        <xs:element name="gPSGearAccuracy" type="xs:string"/>
+        <xs:element name="coordinateReferenceSystem" type="xs:NCName"/>
+        <xs:element name="gPSDatum" type="xs:string"/>
+        <xs:element name="gPSDeviationException" type="xs:string"/>
+        <xs:element name="pipelineID" type="xs:string"/>
+        <xs:element name="pipelineName" type="xs:string"/>
+        <xs:element name="pipelineSubsystemID" type="xs:string"/>
+        <xs:element name="pipelineSubsystemCode" type="xs:integer"/>
+        <xs:element name="pipelineSubsystemName" type="xs:string"/>
+        <xs:element name="pipelineStatusID" type="xs:string"/>
+        <xs:element name="pipelineStatusCode" type="xs:integer"/>
+        <xs:element name="pipelineStatusName" type="xs:NCName"/>
+      </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+ 
+  
+  <xs:complexType name="PackageMetadataPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:PackageMetadata"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>
+  
+  <xs:element name="Company">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="role" type="xs:string"/>
+        <xs:element name="department" type="xs:string"/>
+        <xs:element name="contact" type="xs:string"/>
+        <xs:element name="contactInfo" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="CompanyPropertyType">
+    <xs:sequence>
+      <xs:element ref="Company"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <!--=========================================================================================-->
+  <!--Casing                                                                                   -->
+  <!--=========================================================================================--> 
+  <xs:element name="Casing" type="CasingType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="CasingType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="casingAnnulusTypeCode" type="xs:integer"/>
+        <xs:element name="casingAnnulusTypeName" type="xs:string"/>
+        <xs:element name="casingCrossingTypeCode" type="xs:integer"/>
+        <xs:element name="casingCrossingTypeName" type="xs:NCName"/>
+        <xs:element name="casingInsulatorTypeCode" type="xs:integer"/>
+        <xs:element name="casingInsulatorTypeName" type="xs:NCName"/>
+        <xs:element name="casingSealTypeCode" type="xs:integer"/>
+        <xs:element name="casingSealTypeName" type="xs:NCName"/>
+        <xs:element name="linePipeDimensionBoundCode" type="gml:MeasureType"/>
+        <xs:element name="linePipeOutsideDiameter" type="gml:LengthType"/>
+        <xs:element name="linePipeNominalWallThickness" type="gml:LengthType"/>
+        <xs:element name="linePipeNominalPipeSize" type="gml:LengthType"/>
+        <xs:element name="linePipeSpecificationBoundCode" type="xs:integer"/>
+        <xs:element name="linePipeSpecificationSpecification" type="xs:string"/>
+        <xs:element name="linePipeSpecificationGrade" type="xs:NCName"/>
+        <xs:element name="linePipeSpecificationMaterial" type="xs:string"/>        
+        <xs:element name="linePipeSpecificationYieldStrength" type="gml:MeasureType"/>
+        <xs:element name="casingPipeMillLocation" type="xs:string"/>
+        <xs:element name="casingVentCount" type="xs:integer"/>
+        <xs:element name="description" type="xs:string"/>                
+        <xs:element name="installDate" type="xs:date"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>         
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+      </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+  
+  <xs:complexType name="CasingPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Casing"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>  
+  
+  <!--=========================================================================================-->
+  <!--Coating                                                                                  -->
+  <!--=========================================================================================--> 
+  <xs:element name="Coating" type="CoatingType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="CoatingType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="coatingTypeBoundCode" type="xs:integer"/>
+        <xs:element name="coatingTypeBoundName" type="xs:string"/>
+        <xs:element name="coatingPrimaryCoating" type="xs:string"/>
+        <xs:element name="coatingSecondaryCoating" type="xs:string"/>
+        <xs:element name="coatingProductName" type="xs:string"/>
+        <xs:element name="coatingApplicationLocation" type="xs:NCName"/>     
+        <xs:element name="installDate" type="xs:date"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+  
+ <xs:complexType name="CoatingPropertyType">
+   <xs:sequence minOccurs="0">
+     <xs:element ref="plm:Coating"/>
+   </xs:sequence>
+   <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+ </xs:complexType>
+  
+  
+  <!--=========================================================================================-->
+  <!--Compressor                                                                               -->
+  <!--=========================================================================================-->  
+  <xs:element name="Compressor" type="CompressorType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="CompressorType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="compressorTypeBoundCode" type="xs:integer"/>
+        <xs:element name="compressorTypeBoundName" type="xs:string"/>
+        <xs:element name="compressorNominalPipeSize" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="compressorInletDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="compressorOutletDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="compressorImpellerDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+ 
+  
+  <xs:complexType name="CompressorPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Compressor"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType> 
+  
+  <!--=========================================================================================-->
+  <!--Elbow                                                                          -->
+  <!--=========================================================================================--> 
+  <xs:element name="Elbow" type="ElbowType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="ElbowType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="elbowTypeBoundCode" type="xs:integer"/>
+        <xs:element name="elbowSpecification" type="xs:string"/>
+        <xs:element name="elbowNominalPipeSize" type="gml:MeasureType"/>
+        <xs:element name="elbowInletOutsideDiameter" type="gml:LengthType"/>
+        <xs:element name="elbowOutletOutsideDiameter" type="gml:LengthType"/>
+        <xs:element name="elbowWallThickness" type="gml:LengthType"/>
+        <xs:element name="elbowAngle" type="gml:AngleType"/>
+        <xs:element name="elbowPressureRating" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manfacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  
+  
+  <xs:complexType name="ElbowPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Elbow"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType> 
+   
+
+  <!--=========================================================================================-->
+  <!--Flange                                                                                   -->
+  <!--=========================================================================================--> 
+  <xs:element name="Flange" type="FlangeType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="FlangeType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="flangeTypeBoundCode" type="xs:integer"/>
+        <xs:element name="flangeTypeBoundName" type="xs:string"/>
+        <xs:element name="flangeSpecification" type="xs:string"/>
+        <xs:element name="flangeNominalPipeSize" type="gml:MeasureType"/>
+        <xs:element name="flangeClass" type="xs:integer"/>
+        <xs:element name="flangeMaterial" type="xs:string"/>
+        <xs:element name="flangeInsulationTypeCode" type="xs:integer"/>
+        <xs:element name="flangeInsulationTypeName" type="xs:string"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+ 
+  
+  <xs:complexType name="FlangePropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Flange"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>   
+   
+  
+  <!--=========================================================================================-->
+  <!--Joint                                                                                    -->
+  <!--=========================================================================================--> 
+  <xs:element name="Joint" type="JointType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="JointType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="jointTypeCode" type="xs:integer"/>
+        <xs:element name="jointTypeName" type="xs:NCName"/>
+        <xs:element name="jointCoatingBoundCode" type="xs:integer"/>
+        <xs:element name="jointCoatingBoundName" type="xs:string"/>
+        <xs:element name="primaryCoating" type="xs:NCName"/>
+        <xs:element name="secondaryCoating" type="xs:NCName"/>
+        <xs:element name="position" type="gml:MeasureType"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  
+  
+  <xs:complexType name="JointPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Joint"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>   
+
+  <!--=========================================================================================-->
+  <!--LauncherReceiver                                                                         -->
+  <!--=========================================================================================--> 
+  <xs:element name="LauncherReceiver" type="LauncherReceiverType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="LauncherReceiverType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="launcherRecieverTypeBoundCode" type="xs:integer"/>
+        <xs:element name="launcherRecieverTypeBoundName" type="xs:string"/>
+        <xs:element name="launcherRecieverNominalPipeSize" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="launcherRecieverValveDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+ 
+  
+  <xs:complexType name="LauncherReceiverPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:LauncherReceiver"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>    
+  
+  
+  <!--=========================================================================================-->
+  <!--LinePipe                                                                                 -->
+  <!--=========================================================================================--> 
+  <xs:element name="LinePipe" type="LinePipeType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="LinePipeType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="linePipeSpecificationBoundCode" type="xs:integer"/>
+        
+          <xs:element name="linePipeSpecificationBoundName" type="xs:string" minOccurs="0"/>
+         
+            <xs:element name="linePipeSpecificationSpecification" type="xs:string" minOccurs="0"/>
+            <xs:element name="linePipeSpecificationGrade" type="xs:NCName" minOccurs="0"/>
+            <xs:element name="linePipeSpecificationMaterial" type="xs:string" minOccurs="0"/>
+                  
+        <xs:element name="linePipeSpecificationYieldStrength" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="linePipeDimensionBoundCode" type="xs:integer"/>
+        <xs:element name="linePipeDimensionBoundName" type="xs:string" minOccurs="0"/>
+        <xs:element name="linePipeDimensionOutsideDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="linePipeDimensionNominalWallThickness" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="linePipeDimensionNominalPipeSize" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="linePipeBendTypeBoundCode" type="xs:integer"/>
+        <xs:element name="linePipeBendTypeBoundName" type="xs:string" minOccurs="0"/>
+        <xs:element name="linePipeSeamWeldTypeCode" type="xs:integer"/>
+        <xs:element name="linePipeSeamWeldTypeName" type="xs:string" minOccurs="0" />
+        <xs:element name="linePipeMillTestPressure" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="linePipeSecondaryWallThickness" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+   
+  <xs:complexType name="LinePipePropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:LinePipe"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>    
+  
+  
+  <!--=========================================================================================-->
+  <!--Meter                                                                                    -->
+  <!--=========================================================================================--> 
+  <xs:element name="Meter" type="MeterType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="MeterType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="meterTypeBoundCode" type="xs:integer"/>
+        <xs:element name="meterTypeBoundName" type="xs:string"/>
+        <xs:element name="nominalPipeSize" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  
+  
+  <xs:complexType name="MeterPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Meter"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>    
+ 
+
+  <!--=========================================================================================-->
+  <!--Pump                                                                                     -->
+  <!--=========================================================================================--> 
+  <xs:element name="Pump" type="PumpType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="PumpType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="pumpTypeBoundCode" type="xs:integer"/>
+        <xs:element name="pumpTypeBoundName" type="xs:string"/>
+        <xs:element name="pumpInletDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="pumpOutletDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="pumpImpellerDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="pumpNominalPipeSize" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  
+  
+  <xs:complexType name="PumpPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Pump"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>     
+ 
+  
+  <!--=========================================================================================-->
+  <!--Reducer                                                                                  -->
+  <!--=========================================================================================--> 
+  <xs:element name="Reducer" type="ReducerType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="ReducerType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="reducerTypeBoundCode" type="xs:integer"/>
+        <xs:element name="reducerGrade" type="xs:NCName"/>
+        <xs:element name="reducerNominalPipeSize" type="gml:MeasureType"/>
+        <xs:element name="reducerInletOutsideDiameter" type="gml:LengthType"/>
+        <xs:element name="reducerOutletOutsideDiameter" type="gml:LengthType"/>
+        <xs:element name="reducerInletWallThickness" type="gml:LengthType"/>
+        <xs:element name="reducerOutletWallThickness" type="gml:LengthType"/>
+        <xs:element name="reducerYieldStrength" type="xs:integer"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  
+  
+  <xs:complexType name="ReducerPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Reducer"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>     
+   
+  
+  <!--=========================================================================================-->
+  <!--Sleeve                                                                                   -->
+  <!--=========================================================================================--> 
+  <xs:element name="Sleeve" type="SleeveType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="SleeveType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="sleeveTypeBoundCode" type="xs:integer"/>
+        <xs:element name="sleeveTypeBoundName" type="xs:NCName"/>
+        <xs:element name="sleeveYieldStrength" type="xs:string"/>
+        <xs:element name="sleeveNominalPipeSize" type="gml:MeasureType"/>
+        <xs:element name="sleeveDiameter" type="gml:LengthType" minOccurs="0"/>
+        <xs:element name="sleeveWallThickness" type="gml:LengthType"/>
+        <xs:element name="sleeveMaterial" type="xs:string"/>
+        <xs:element name="sleevePressureRating" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="installDate" type="xs:date"/>
+        <xs:element name="manufactureDate" type="xs:date"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+ 
+  
+  <xs:complexType name="SleevePropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Sleeve"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>     
+  
+  <!--=========================================================================================-->
+  <!--Tap                                                                                      -->
+  <!--=========================================================================================--> 
+  <xs:element name="Tap" type="TapType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="TapType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="tapTypeBoundCode" type="xs:integer"/>
+        <xs:element name="tapSpecification" type="xs:string"/>
+        <xs:element name="tapClass" type="xs:integer"/>
+        <xs:element name="tapPipeDiameter" type="gml:LengthType"/>
+        <xs:element name="tapLength" type="gml:LengthType"/>
+        <xs:element name="tapNominalPipeSize" type="gml:MeasureType"/>
+        <xs:element name="tapPosition" type="gml:MeasureType"/>
+        <xs:element name="tapInstallMethod" type="xs:NCName"/>
+        <xs:element name="installDate" type="xs:date"/>
+        <xs:element name="manufactureDate" type="xs:date"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+ 
+  
+  <xs:complexType name="TapPropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Tap"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>     
+  
+  <!--=========================================================================================-->
+  <!--Tee                                                                                      -->
+  <!--=========================================================================================--> 
+  <xs:element name="Tee" type="TeeType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="TeeType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="teeTypeBoundCode" type="xs:integer"/>
+        <xs:element name="teeTypeBoundName" type="xs:NCName"/>
+        <xs:element name="teeNominalPipeSize" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="teeSpecification" type="xs:string"/>
+        <xs:element name="teeClass" type="xs:string"/>
+        <xs:element name="teeWeight" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="teeRunInsideDiameter" type="gml:LengthType"/>
+        <xs:element name="teeOutletOutsideDiameter" type="gml:LengthType"/>
+        <xs:element name="teeWallThickness" type="gml:LengthType"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+ 
+  
+  <xs:complexType name="TeePropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Tee"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>      
+  
+  <!--=========================================================================================-->
+  <!--Valve                                                                                    -->
+  <!--=========================================================================================--> 
+  <xs:element name="Valve" type="ValveType" substitutionGroup="plm:AbstractPipelineObject"/>
+  
+    <xs:complexType name="ValveType">
+      <xs:complexContent>
+        <xs:extension base="plm:AbstractPipelineObjectType">
+      <xs:sequence>
+        <!--xs:element ref="gml:name"/-->
+        <xs:element name="valveTypeBoundCode" type="xs:integer"/>
+        <xs:element name="valveTypeBoundName" type="xs:NCName"/>
+        <xs:element name="valveSpecification" type="xs:string"/>
+        <xs:element name="valveClass" type="xs:integer"/>
+        <xs:element name="valveNominalPipeSize" type="gml:MeasureType"/>
+        <xs:element name="valveMaterial" type="xs:NCName"/>
+        <xs:element name="valveFunctionBoundCode" type="xs:integer"/>
+        <xs:element name="valveFunctionBoundName" type="xs:string"/>
+        <xs:element name="valveActuatorBoundCode" type="xs:integer"/>
+        <xs:element name="valveActuatorBoundName" type="xs:string"/>
+        <xs:element name="valveActuationTime" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="valveShutdownTime" type="gml:MeasureType" minOccurs="0"/>
+        <xs:element name="manufacturerCode" type="xs:integer"/>
+        <xs:element name="manufacturerName" type="xs:string"/>
+        <xs:element name="componentLocation" type="gml:GeometryPropertyType"/>
+      </xs:sequence>
+      <!--xs:attribute ref="gml:id" use="required"/-->
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+  
+  <xs:complexType name="ValvePropertyType">
+    <xs:sequence minOccurs="0">
+      <xs:element ref="plm:Valve"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </xs:complexType>      
+  
+ 
+  <!--=========================================================================================-->
+  <!--ComponentLocation                                                                        -->
+  <!--=========================================================================================--> 
+ 
+  <!--xs:complexType name="ComponentLocationPropertyType">
+    <xs:choice>
+      <xs:element ref="gml:LineString"/>
+      <xs:element ref="gml:MultiCurve"/>
+      <xs:element ref="gml:Point"/>
+    </xs:choice>
+  </xs:complexType-->
+  
+ 
+</xs:schema>

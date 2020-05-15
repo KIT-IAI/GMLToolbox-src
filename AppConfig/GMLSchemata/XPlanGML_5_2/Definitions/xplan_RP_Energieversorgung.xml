@@ -1,0 +1,262 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:25-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Energieversorgung">
+  <gml:description>Infrastruktur zur Energieversorgung. Beinhaltet Energieerzeugung und die Belieferung von Verbrauchern mit Nutzenergie. Erneuerbare Energie wie Windkraft wird im Normalfall auf die Klasse RP_ErneuerbareEnergie im Unterpaket Freiraumstruktur zugeordnet. Je nach Kontext kann aber auch eine Zuordnung auf RP_Energieversorgung stattfinden.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Energieversorgung</gml:identifier>
+  <gml:name>xplan:RP_Energieversorgung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Energieversorgung_typ">
+      <gml:description>Klassifikation von Energieversorgungs-Einrichtungen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Energieversorgung:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_1000">
+          <gml:description>Leitungstrasse.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:1000</gml:identifier>
+          <gml:name>Leitungstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_1001">
+          <gml:description>Hochspannungsleitung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:1001</gml:identifier>
+          <gml:name>Hochspannungsleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_1002">
+          <gml:description>Kabeltrasse-Netzanbindung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:1002</gml:identifier>
+          <gml:name>KabeltrasseNetzanbindung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_2000">
+          <gml:description>Pipeline.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:2000</gml:identifier>
+          <gml:name>Pipeline</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_2001">
+          <gml:description>Übergabestation.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:2001</gml:identifier>
+          <gml:name>Uebergabestation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_3000">
+          <gml:description>Kraftwerk.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:3000</gml:identifier>
+          <gml:name>Kraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_3001">
+          <gml:description>Großkraftwerk.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:3001</gml:identifier>
+          <gml:name>Grosskraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_3002">
+          <gml:description>Energiegewinnung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:3002</gml:identifier>
+          <gml:name>Energiegewinnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_4000">
+          <gml:description>Energiespeicherung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:4000</gml:identifier>
+          <gml:name>Energiespeicherung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_4001">
+          <gml:description>Verstetigung-Speicherung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:4001</gml:identifier>
+          <gml:name>VerstetigungSpeicherung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_4002">
+          <gml:description>Untergrundspeicher.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:4002</gml:identifier>
+          <gml:name>Untergrundspeicher</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_5000">
+          <gml:description>Umspannwerk.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:5000</gml:identifier>
+          <gml:name>Umspannwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_6000">
+          <gml:description>Raffinerie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:6000</gml:identifier>
+          <gml:name>Raffinerie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_7000">
+          <gml:description>Leitungsabbau.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:7000</gml:identifier>
+          <gml:name>Leitungsabbau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_8000">
+          <gml:description>Korridor</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:8000</gml:identifier>
+          <gml:name>Korridor</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_typ_RP_EnergieversorgungTypen_9999">
+          <gml:description>Sonstige Energieversorgung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:typ:RP_EnergieversorgungTypen:9999</gml:identifier>
+          <gml:name>SonstigeEnergieversorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_EnergieversorgungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp">
+      <gml:description>Klassifikation von der mit der Infrastruktur in Beziehung stehenden Primärenergie.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Energieversorgung:attribute:primaerenergieTyp</gml:identifier>
+      <gml:name>xplan:primaerenergieTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_1000">
+          <gml:description>Erdöl.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:1000</gml:identifier>
+          <gml:name>Erdoel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_2000">
+          <gml:description>Gas.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:2000</gml:identifier>
+          <gml:name>Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_2001">
+          <gml:description>Ferngas.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:2001</gml:identifier>
+          <gml:name>Ferngas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_3000">
+          <gml:description>Fernwärme.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:3000</gml:identifier>
+          <gml:name>Fernwaerme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_4000">
+          <gml:description>Kraftstoff.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:4000</gml:identifier>
+          <gml:name>Kraftstoff</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_5000">
+          <gml:description>Kohle.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:5000</gml:identifier>
+          <gml:name>Kohle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_6000">
+          <gml:description>Wasser.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:6000</gml:identifier>
+          <gml:name>Wasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_7000">
+          <gml:description>Kernenergie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:7000</gml:identifier>
+          <gml:name>Kernenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_8000">
+          <gml:description>Reststoffverwertung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:8000</gml:identifier>
+          <gml:name>Reststoffverwertung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_9000">
+          <gml:description>Erneuerbare Energie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:9000</gml:identifier>
+          <gml:name>ErneuerbareEnergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_9001">
+          <gml:description>Windenergie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:9001</gml:identifier>
+          <gml:name>Windenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_primaerenergieTyp_RP_PrimaerenergieTypen_9999">
+          <gml:description>Sonstige Primärenergie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:primaerenergieTyp:RP_PrimaerenergieTypen:9999</gml:identifier>
+          <gml:name>SonstigePrimaerenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_PrimaerenergieTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Energieversorgung_spannung">
+      <gml:description>Klassifikation von Spannungen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Energieversorgung:attribute:spannung</gml:identifier>
+      <gml:name>xplan:spannung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_spannung_RP_SpannungTypen_1000">
+          <gml:description>110 Kilovolt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:spannung:RP_SpannungTypen:1000</gml:identifier>
+          <gml:name>110KV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_spannung_RP_SpannungTypen_2000">
+          <gml:description>220 Kilovolt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:spannung:RP_SpannungTypen:2000</gml:identifier>
+          <gml:name>220KV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_spannung_RP_SpannungTypen_3000">
+          <gml:description>330 Kilovolt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:spannung:RP_SpannungTypen:3000</gml:identifier>
+          <gml:name>330KV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Energieversorgung_spannung_RP_SpannungTypen_4000">
+          <gml:description>380 Kilovolt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Energieversorgung:spannung:RP_SpannungTypen:4000</gml:identifier>
+          <gml:name>380KV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_SpannungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

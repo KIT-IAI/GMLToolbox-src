@@ -1,0 +1,230 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Entsorgung">
+  <gml:description>Entsorgungs-Infrastruktur Beinhaltet Abfallentsorgung und Abwasserentsorgung.
+Abfälle sind Gegenstände, Stoffe oder Rückstände, deren sich der Besitzer entledigen will. Sie können verwertet oder beseitigt werden.
+Abwasser beinhaltet durch häuslichen, gewerblichen, landwirtschaftlichen oder sonstigen Gebrauch verunreinigtes Wasser sowie abfließendes Niederschlagswasser bzw. in die Kanalisation fließendes Wasser.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Entsorgung</gml:identifier>
+  <gml:name>xplan:RP_Entsorgung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Entsorgung_typAE">
+      <gml:description>Klassifikation von Abfallentsorgung-Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Entsorgung:attribute:typAE</gml:identifier>
+      <gml:name>xplan:typAE</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1000">
+          <gml:description>Beseitung beziehungsweise Entsorgung von Abfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1000</gml:identifier>
+          <gml:name>BeseitigungEntsorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1100">
+          <gml:description>Abfallbeseitigungsanlage</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1100</gml:identifier>
+          <gml:name>Abfallbeseitigungsanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1101">
+          <gml:description>Zentrale Abfallbeseitungsanlage.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1101</gml:identifier>
+          <gml:name>ZentraleAbfallbeseitigungsanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1200">
+          <gml:description>Deponie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1200</gml:identifier>
+          <gml:name>Deponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1300">
+          <gml:description>Untertageeinlagerung von Abfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1300</gml:identifier>
+          <gml:name>Untertageeinlagerung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1400">
+          <gml:description>Behandlung von Abfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1400</gml:identifier>
+          <gml:name>Behandlung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1500">
+          <gml:description>Kompostierung von Abfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1500</gml:identifier>
+          <gml:name>Kompostierung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1600">
+          <gml:description>Verbrennung von Abfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1600</gml:identifier>
+          <gml:name>Verbrennung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1700">
+          <gml:description>Umladestation.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1700</gml:identifier>
+          <gml:name>Umladestation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_1800">
+          <gml:description>Standortsicherung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:1800</gml:identifier>
+          <gml:name>Standortsicherung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAE_RP_AbfallentsorgungTypen_9999">
+          <gml:description>Sonstige Abfallentsorgung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAE:RP_AbfallentsorgungTypen:9999</gml:identifier>
+          <gml:name>SonstigeAbfallentsorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_AbfallentsorgungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Entsorgung_abfallTyp">
+      <gml:description>Klassifikation von mit der Entsorgungsinfrastruktur in Beziehung stehenden Abfalltypen</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Entsorgung:attribute:abfallTyp</gml:identifier>
+      <gml:name>xplan:abfallTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_abfallTyp_RP_AbfallTypen_1000">
+          <gml:description>Siedlungsabfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:abfallTyp:RP_AbfallTypen:1000</gml:identifier>
+          <gml:name>Siedlungsabfall</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_abfallTyp_RP_AbfallTypen_2000">
+          <gml:description>Mineralstoffabfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:abfallTyp:RP_AbfallTypen:2000</gml:identifier>
+          <gml:name>Mineralstoffabfall</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_abfallTyp_RP_AbfallTypen_3000">
+          <gml:description>Industrieabfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:abfallTyp:RP_AbfallTypen:3000</gml:identifier>
+          <gml:name>Industrieabfall</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_abfallTyp_RP_AbfallTypen_4000">
+          <gml:description>Sonderabfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:abfallTyp:RP_AbfallTypen:4000</gml:identifier>
+          <gml:name>Sonderabfall</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_abfallTyp_RP_AbfallTypen_5000">
+          <gml:description>Radioaktiver Abfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:abfallTyp:RP_AbfallTypen:5000</gml:identifier>
+          <gml:name>RadioaktiverAbfall</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_abfallTyp_RP_AbfallTypen_9999">
+          <gml:description>Sonstiger Abfall.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:abfallTyp:RP_AbfallTypen:9999</gml:identifier>
+          <gml:name>SonstigerAbfall</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_AbfallTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Entsorgung_typAW">
+      <gml:description>Klassifikation von Abwasser-Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Entsorgung:attribute:typAW</gml:identifier>
+      <gml:name>xplan:typAW</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAW_RP_AbwasserTypen_1000">
+          <gml:description>Kläranlage.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAW:RP_AbwasserTypen:1000</gml:identifier>
+          <gml:name>Klaeranlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAW_RP_AbwasserTypen_1001">
+          <gml:description>Zentrale Kläranlage.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAW:RP_AbwasserTypen:1001</gml:identifier>
+          <gml:name>ZentraleKlaeranlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAW_RP_AbwasserTypen_1002">
+          <gml:description>Großklärwerk.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAW:RP_AbwasserTypen:1002</gml:identifier>
+          <gml:name>Grossklaerwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAW_RP_AbwasserTypen_2000">
+          <gml:description>Hauptwasserableitung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAW:RP_AbwasserTypen:2000</gml:identifier>
+          <gml:name>Hauptwasserableitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAW_RP_AbwasserTypen_3000">
+          <gml:description>Abwasserverwertungsfläche.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAW:RP_AbwasserTypen:3000</gml:identifier>
+          <gml:name>Abwasserverwertungsflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAW_RP_AbwasserTypen_4000">
+          <gml:description>Abwasserbehandlungsanlage.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAW:RP_AbwasserTypen:4000</gml:identifier>
+          <gml:name>Abwasserbehandlungsanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typAW_RP_AbwasserTypen_9999">
+          <gml:description>Sonstige Abwasserinfrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typAW:RP_AbwasserTypen:9999</gml:identifier>
+          <gml:name>SonstigeAbwasserinfrastruktur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_AbwasserTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Entsorgung_istAufschuettungAblagerung">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Entsorgung:attribute:istAufschuettungAblagerung</gml:identifier>
+      <gml:name>xplan:istAufschuettungAblagerung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Entsorgung_istAufschuettungAblagerung_Boolean_1">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::RP_Entsorgung:istAufschuettungAblagerung:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Entsorgung_istAufschuettungAblagerung_Boolean_0">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::RP_Entsorgung:istAufschuettungAblagerung:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

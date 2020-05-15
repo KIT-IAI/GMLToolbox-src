@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) GML-Toolbox, Erstellungsdatum: 01/30/18-->
+<Dictionary   gml:id="xplan_BP_DetailArtDerBaulNutzung" xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <description>Über eine ExternalCodeList definierte zusätzliche Nutzungsarten.
+</description>
+  <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:BP_DetailArtDerBaulNutzung</identifier>
+  <name>urn:citgml:def:codelist:xplan:BP_DetailArtDerBaulNutzung</name>
+  <dictionaryEntry>
+    <Definition gml:id="xplan:BP_DetailArtDerBaulNutzung1000">
+      <description>Test</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:BP_DetailArtDerBaulNutzung:1000</identifier>
+      <name>1000</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="urn:citgml:def:codelist:xplan:BP_DetailArtDerBaulNutzung2000">
+      <description>Hallo</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:BP_DetailArtDerBaulNutzung:2000</identifier>
+      <name>2000</name>
+    </Definition>
+  </dictionaryEntry>
+</Dictionary  >

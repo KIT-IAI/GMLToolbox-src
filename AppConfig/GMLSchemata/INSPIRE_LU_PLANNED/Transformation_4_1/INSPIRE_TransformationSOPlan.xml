@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XPlanGMLTransformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/TransformationInspirePLU.xsd">
+    
+    <!-- ================================================================================================================================================== -->
+    <!-- =================================== Flächenschlussobjekte ======================================================================================== -->
+    <!-- ================================================================================================================================================== -->
+    
+    <!-- =========================================== SO_SchutzgebietNaturschutzrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_SchutzgebietNaturschutzrecht" wirdErwartet="false"/>
+    
+    <!-- =========================================== SO_Strassenverkehrsrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_Strassenverkehrsrecht">
+        <AttributTransformation XPlanAttributName="xplan:artDerFestlegung" istNotwendig="true">
+            <INSPIREDominantLandUseDefault>4_1_1_RoadTraffic</INSPIREDominantLandUseDefault>
+            <!--INSPIRESpecificLandUseDefault>Strassenverkehr</INSPIRESpecificLandUseDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Bundesautobahn">
+                <INSPIREDominantLandUse>4_1_1_RoadTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Bundesautobahn</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="Bundesstrasse">
+                <INSPIREDominantLandUse>4_1_1_RoadTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Bundesstrasse</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1200" XPlanAttributWert_Langform="LandesStaatsstrasse">
+                <INSPIREDominantLandUse>4_1_1_RoadTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>LandesStaatsstrasse</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1300" XPlanAttributWert_Langform="Kreisstrasse">
+                <INSPIREDominantLandUse>4_1_1_RoadTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Kreisstrasse</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <INSPIREDominantLandUse>4_1_1_RoadTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Sonstiges</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+        </AttributTransformation>
+    </FlaechenschlussobjektTransformation>
+    
+    <!-- =========================================== SO_Schienenverkehrsrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_Schienenverkehrsrecht">
+        <AttributTransformation XPlanAttributName="xplan:artDerFestlegung" istNotwendig="true">
+            <INSPIREDominantLandUseDefault>4_1_2_RailwayTraffic</INSPIREDominantLandUseDefault>
+            <!--INSPIRESpecificLandUseDefault>Schienenverkehr</INSPIRESpecificLandUseDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Bahnanlage">
+                <INSPIREDominantLandUse>4_1_2_RailwayTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Bahnanlage</INSPIRESpecificLandUse-->
+             </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1200" XPlanAttributWert_Langform="Bahnlinie">
+                <INSPIREDominantLandUse>4_1_2_RailwayTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Bahnlinie</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1400" XPlanAttributWert_Langform="OEPNV">
+                <INSPIREDominantLandUse>4_1_2_RailwayTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>OEPNV</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <INSPIREDominantLandUse>4_1_2_RailwayTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Sonstiges</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+        </AttributTransformation>
+    </FlaechenschlussobjektTransformation>
+    
+    <!-- =========================================== SO_Luftverkehrsrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_Luftverkehrsrecht">
+        <AttributTransformation XPlanAttributName="xplan:ArtDerFestlegung" istNotwendig="true">
+            <INSPIREDominantLandUseDefault>4_1_3_AirTraffic</INSPIREDominantLandUseDefault>
+            <!--INSPIRESpecificLandUseDefault>Luftverkehr</INSPIRESpecificLandUseDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Flughafen">
+                <INSPIREDominantLandUse>4_1_3_AirTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Flughafen</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="Landeplatz">
+                <INSPIREDominantLandUse>4_1_3_AirTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Landeplatz</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="3000" XPlanAttributWert_Langform="Segelfluggelaende">
+                <INSPIREDominantLandUse>4_1_3_AirTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Segelfluggelaende</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="4000" XPlanAttributWert_Langform="HubschrauberLandeplatz">
+                <INSPIREDominantLandUse>4_1_3_AirTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>HubschrauberLandeplatz</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="5000" XPlanAttributWert_Langform="Ballonstartplatz">
+                <INSPIREDominantLandUse>4_1_3_AirTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Ballonstartplatz</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="5200" XPlanAttributWert_Langform="Haengegleiter">
+                <INSPIREDominantLandUse>4_1_3_AirTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Haengegleiter</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="5400" XPlanAttributWert_Langform="Gleitsegler">
+                <INSPIREDominantLandUse>4_1_3_AirTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Gleitsegler</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <INSPIREDominantLandUse>4_1_3_AirTraffic</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Sonstiges</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+        </AttributTransformation>
+    </FlaechenschlussobjektTransformation>
+    
+    <!-- =========================================== SO_Wasserrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_Wasserrecht">
+        <AttributTransformation XPlanAttributName="xplan:arDerFestlegung" istNotwendig="true">
+            <INSPIREDominantLandUseDefault>6_OtherUse</INSPIREDominantLandUseDefault>
+            <!--INSPIRESpecificLandUseDefault>Wasserrecht</INSPIRESpecificLandUseDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Gewaesser1Ordnung">
+                <INSPIREDominantLandUse>6_3_2_WaterAreasInNaturalUse</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Gewaesser1Ordnung</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="Gewaesser2Ordnung">
+                <INSPIREDominantLandUse>6_3_2_WaterAreasInNaturalUse</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Gewaesser2Ordnung</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1300" XPlanAttributWert_Langform="Gewaesser3Ordnung">
+                <INSPIREDominantLandUse>6_3_2_WaterAreasInNaturalUse</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Gewaesser3Ordnung</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="Ueberschwemmungsgebiet">
+                <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Ueberschwemmungsgebiet</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20000" XPlanAttributWert_Langform="FestgesetztesUeberschwemmungsgebiet">
+                <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>FestgesetztesUeberschwemmungsgebiet</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20001" XPlanAttributWert_Langform="NochNichtFestgesetztesUeberschwemmungsgebiet">
+                <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>NochNichtFestgesetztesUeberschwemmungsgebiet</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20002" XPlanAttributWert_Langform="UeberschwennGefaehrdetesGebiet">
+                <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>UeberschwennGefaehrdetesGebiet</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                <!--INSPIRESpecificLandUse>Sonstiges</INSPIRESpecificLandUse-->
+            </AttributwertTransformation>
+        </AttributTransformation>
+    </FlaechenschlussobjektTransformation>
+    
+    <!-- =========================================== SO_SchutzgebietWasserrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_SchutzgebietWasserrecht" wirdErwartet="false"/>   
+    
+    <!-- =========================================== SO_Denkmalschutzrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_Denkmalschutzrecht" wirdErwartet="false"/>
+    
+    <!-- =========================================== SO_Forstrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_Forstrecht" wirdErwartet="false"/>
+    
+    <!-- =========================================== SO_Bodenschutzrecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_Bodenschutzrecht" wirdErwartet="false"/>
+    
+    <!-- =========================================== SO_SonstigesRecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_SonstigesRecht">
+         <AttributTransformation XPlanAttributName="xplan:artDerFestlegung" istNotwendig="true">
+             <INSPIREDominantLandUseDefault>6_OtherUse</INSPIREDominantLandUseDefault>
+             <!--INSPIRESpecificLandUseDefault>SonstigesRecht</INSPIRESpecificLandUseDefault-->
+             <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Bauschutzbereich" >
+                 <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                 <!--INSPIRESpecificLandUse>Bauschutzbereich</INSPIRESpecificLandUse-->
+             </AttributwertTransformation>
+             <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="Berggesetz">
+                 <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                 <!--INSPIRESpecificLandUse>Berggesetz</INSPIRESpecificLandUse-->
+             </AttributwertTransformation>
+             <AttributwertTransformation XPlanAttributWert_Schluessel="1200" XPlanAttributWert_Langform="Richtfunkverbindung">
+                 <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                 <!--INSPIRESpecificLandUse>Richtfunkverbindung</INSPIRESpecificLandUse-->
+             </AttributwertTransformation>
+             <AttributwertTransformation XPlanAttributWert_Schluessel="1300" XPlanAttributWert_Langform="Truppenuebungsplatz" >
+                 <INSPIREDominantLandUse>3_3_1_PublicAdministrationDefenseAndSocialSecurityServices</INSPIREDominantLandUse>
+                 <!--INSPIRESpecificLandUse>Truppenuebungsplatz</INSPIRESpecificLandUse-->
+             </AttributwertTransformation>
+             <AttributwertTransformation XPlanAttributWert_Schluessel="1400" XPlanAttributWert_Langform="VermessungsKatasterrecht">
+                 <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                 <!--INSPIRESpecificLandUse>VermessungsKatasterrecht</INSPIRESpecificLandUse-->
+             </AttributwertTransformation>
+             <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                 <INSPIREDominantLandUse>6_OtherUse</INSPIREDominantLandUse>
+                 <!--INSPIRESpecificLandUse>Sonstiges</INSPIRESpecificLandUse-->
+             </AttributwertTransformation>
+         </AttributTransformation>
+    </FlaechenschlussobjektTransformation>
+    
+    <!-- =========================================== SO_SchutzgebietSonstRecht ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_SchutzgebietSonstRecht" wirdErwartet="false"/>
+    
+    <!-- =========================================== SO_Gebiet ============================================================= -->
+    <FlaechenschlussobjektTransformation XPlanKlassenName="xplan:SO_Gebiet" wirdErwartet="false"/>
+    
+    <!-- ================================================================================================================================================== -->
+    <!-- =================================== Überlagerungsobjekte ========================================================================================= -->
+    <!-- ================================================================================================================================================== -->
+    
+    <!-- ===================================== SO_SchutzgebietNaturschutzrecht ==================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_SchutzgebietNaturschutzrecht">
+        <AttributTransformation XPlanAttributName="xplan:artDerFestlegung" istNotwendig="true" >
+            <SupplementaryRegulationDefault>3_HeritageProtection</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>SchutzgebietNaturschutzrecht</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Naturschutzgebiet">
+                <SupplementaryRegulation>1_4_NatureProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Naturschutzgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="Nationalpark">
+                <SupplementaryRegulation>1_4_NatureProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Nationalpark</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1200" XPlanAttributWert_Langform="Biosphaerenreservat">
+                <SupplementaryRegulation>1_4_2_BiodiversityReservoir</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Biosphaerenreservat</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1300" XPlanAttributWert_Langform="Landschaftsschutzgebiet">
+                <SupplementaryRegulation>3_2_LandscapeAreaProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Landschaftsschutzgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1400" XPlanAttributWert_Langform="Naturpark">
+                <SupplementaryRegulation>3_1_2_GeodiversityProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Naturpark</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1500" XPlanAttributWert_Langform="Naturdenkmal">
+                <SupplementaryRegulation>3_1_NaturalHeritageProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Naturdenkmal</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1600" XPlanAttributWert_Langform="GeschuetzterLandschaftsBestandteil">
+                <SupplementaryRegulation>3_2_LandscapeAreaProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>GeschuetzterLandschaftsBestandteil</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1700" XPlanAttributWert_Langform="GesetzlichGeschuetztesBiotop">
+                <SupplementaryRegulation>3_1_1_BiodiversityProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>GesetzlichGeschuetztesBiotop</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1800" XPlanAttributWert_Langform="Natura2000">
+                <SupplementaryRegulation>1_4_NatureProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Natura2000</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="18000" XPlanAttributWert_Langform="GebietGemeinschaftlicherBedeutung">
+                <SupplementaryRegulation>1_4_NatureProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>GebietGemeinschaftlicherBedeutung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="18001" XPlanAttributWert_Langform="EuropaeischesVogelschutzgebiet">
+                <SupplementaryRegulation>1_4_NatureProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>EuropaeischesVogelschutzgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="NationalesNaturmonument">
+                <SupplementaryRegulation>3_2_LandscapeAreaProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>NationalesNaturmonument</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <SupplementaryRegulation>3_HeritageProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Sonstiges</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+        </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_Strassenverkehrsrecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_Strassenverkehrsrecht">
+        <AttributTransformation XPlanAttributName="artDerFestlegung" istNotwendig="true">
+            <SupplementaryRegulationDefault>7_3_1_1_Road</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>Strassenverkekrsrecht</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Bundesautobahn">
+                <SupplementaryRegulation>7_3_1_1_Road</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Bundesautobahn</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="Bundesstrasse">
+                <SupplementaryRegulation>7_3_1_1_Road</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Bundesstrasse</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1200" XPlanAttributWert_Langform="LandesStaatsstrasse">
+                <SupplementaryRegulation>7_3_1_1_Road</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>LandesStaatsstrasse</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1300" XPlanAttributWert_Langform="Kreisstrasse">
+                <SupplementaryRegulation>7_3_1_1_Road</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Kreisstrasse</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="SonstOeffentlStrasse">
+                <SupplementaryRegulation>7_3_1_1_Road</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>SonstigeOeffentlicheStrasse</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+        </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_Schienenverkehrsrecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_Schienenverkehrsrecht">
+        <StandardKlassifikationSupplementaryRegulation>7_3_1_2_RailRoad</StandardKlassifikationSupplementaryRegulation>
+        <StandardKlassifikationLocalSupplementaryRegulation>Schienenverkehrsrecht</StandardKlassifikationLocalSupplementaryRegulation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_Luftverkehrsrecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_Luftverkehrsrecht">
+        <StandardKlassifikationSupplementaryRegulation>7_3_1_Network</StandardKlassifikationSupplementaryRegulation>
+        <StandardKlassifikationLocalSupplementaryRegulation>Luftverkehrsrecht</StandardKlassifikationLocalSupplementaryRegulation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_Wasserrecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_Wasserrecht">
+        <AttributTransformation XPlanAttributName="xplan:ártDerFestlegung" istNotwendig="true">
+            <SupplementaryRegulationDefault>10_OtherSupplementaryRegulation</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>Wasserrecht</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Gewaesser1Ordnung">
+                <SupplementaryRegulation>7_2_9_Water</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Gewaesser1Ordnung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="Gewaesser2Ordnung">
+                <SupplementaryRegulation>7_2_9_Water</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Gewaesser2Ordnung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1300" XPlanAttributWert_Langform="Gewaesser3Ordnung">
+                <SupplementaryRegulation>7_2_9_Water</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Gewaesser3Ordnung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="Ueberschwemmungsgebiet">
+                <SupplementaryRegulation>2_1_FloodRisks</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Ueberschwemmungsgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20000" XPlanAttributWert_Langform="FestgesetztesUeberschwemmungsgebiet">
+                <SupplementaryRegulation>2_1_FloodRisks</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>FestgesetztesUeberschwemmungsgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20001" XPlanAttributWert_Langform="NochNichtFestgesetztesUeberschwemmungsgebiet">
+                <SupplementaryRegulation>2_1_FloodRisks</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>NochNichtFestgesetztesUeberschwemmungsgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20002" XPlanAttributWert_Langform="UeberschwennGefaehrdetesGebiet" >
+                <SupplementaryRegulation>2_1_FloodRisks</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>UeberschwennGefaehrdetesGebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <SupplementaryRegulation>10_OtherSupplementaryRegulation</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Sonstiges</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+        </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_SchutzgebietWasserrecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_SchutzgebietWasserrecht">
+        <AttributTransformation XPlanAttributName="xplan:ArtDerFestlegung" istNotwendig="true">
+            <SupplementaryRegulationDefault>1_6_WaterProtection</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>SchutzgebietWasserrecht</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Wasserschutzgebiet">
+                <SupplementaryRegulation>1_6_5_DrinkingWaterProtectionArea</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Wasserschutzgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="10000" XPlanAttributWert_Langform="QuellGrundwasserSchutzgebiet">
+                <SupplementaryRegulation>1_6_5_DrinkingWaterProtectionArea</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>QuellGrundwasserSchutzgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="10001" XPlanAttributWert_Langform="OberflaechengewaesserSchutzgebiet">
+                <SupplementaryRegulation>1_6_5_DrinkingWaterProtectionArea</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>OberflaechengewaesserSchutzgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="Heilquellenschutzgebiet">
+                <SupplementaryRegulation>1_6_4_BathingWaters</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Heilquellenschutzgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <SupplementaryRegulation>1_6_WaterProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Sonstiges</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+         </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_Denkmalschutzrecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_Denkmalschutzrecht">
+        <AttributTransformation XPlanAttributName="xplan:artDerFestlegung" istNotwendig="true">
+            <SupplementaryRegulationDefault>3_3_BuiltHeritageProtection</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>Denkmalschutzrecht</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="DenkmalschutzEnsembele">
+                <SupplementaryRegulation>3_3_BuiltHeritageProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>DenkmalschutzEnsembele</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="DenkmalschutzEinzelanlage">
+                <SupplementaryRegulation>3_3_BuiltHeritageProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>DenkmalschutzEinzelanlage</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1200" XPlanAttributWert_Langform="Grabungsschutzgebiet">
+                <SupplementaryRegulation>3_4_ArcheologicalProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Grabungsschutzgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <SupplementaryRegulation>3_3_BuiltHeritageProtection</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Sonstiges</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+         </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_Forstrecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_Forstrecht">
+        <StandardKlassifikationSupplementaryRegulation>9_RegulatedActivities</StandardKlassifikationSupplementaryRegulation>
+        <StandardKlassifikationLocalSupplementaryRegulation>Forstrecht</StandardKlassifikationLocalSupplementaryRegulation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_Bodenschutzrecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_Bodenschutzrecht">
+        <AttributTransformation XPlanAttributName="xplan:artDerFestlegung" istNotwendig="true">
+            <SupplementaryRegulationDefault>2_2_IndustrialRisk</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>Bodenschutzrecht</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="SchaedlicheBodenveraenderung">
+                <SupplementaryRegulation>2_2_IndustrialRisk</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>SchaedlicheBodenveraenderung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="Altlast">
+                <SupplementaryRegulation>2_2_IndustrialRisk</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Altlast</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20000" XPlanAttributWert_Langform="Altablagerung">
+                <SupplementaryRegulation>2_2_IndustrialRisk</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Altablagerung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20001" XPlanAttributWert_Langform="Altstandort">
+                <SupplementaryRegulation>2_2_IndustrialRisk</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Altstandort</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="20002" XPlanAttributWert_Langform="AltstandortAufAltablagerung">
+                <SupplementaryRegulation>2_2_IndustrialRisk</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>AltstandortAufAltablagerung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+         </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_SonstigesRecht =================================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_SonstigesRecht">
+        <AttributTransformation XPlanAttributName="xplan:artDerFestlegung" istNotwendig="true">
+            <SupplementaryRegulationDefault>9_RegulatedActivities</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>SonstigesRecht</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Bauschutzbereich">
+                <SupplementaryRegulation>6_6_BuildingHightRegulation</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Bauschutzbereich</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="Berggesetz">
+                <SupplementaryRegulation>2_3_Mining</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Berggesetz</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1200" XPlanAttributWert_Langform="Richtfunkverbindung">
+                <SupplementaryRegulation>4_1_3_5_RadioElectricalEasement</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Richtfunkverbindung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1300" XPlanAttributWert_Langform="Truppenuebungsplatz">
+                <SupplementaryRegulation>4_2_OtherReservedAreasServingGeneralInterest</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Truppenuebungsplatz</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1400" XPlanAttributWert_Langform="VermessungsKatasterrecht">
+                <SupplementaryRegulation>5_LandPropertyRight</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>VermessungsKatasterrecht</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <SupplementaryRegulation>9_RegulatedActivities</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Sonstiges</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+         </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_SchutzgebietSonstigesRecht ==================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_SchutzgebietSonstigesRecht">
+        <AttributTransformation XPlanAttributName="xplan:artDerFestlegung" istNotwendig="true">
+            <SupplementaryRegulationDefault>10_OtherSupplementaryRegulation</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>SchutzgebietSonstigesRecht</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Laermschutzbereich">
+                <SupplementaryRegulation>1_1_1_NoiseProtectionArea</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Laermschutzbereich</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="SchutzzoneLeitungstrasse">
+                <SupplementaryRegulation>4_1_3_3_ElectricalPowerLineEasement.</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>SchutzzoneLeitungstrasse</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <SupplementaryRegulation>10_OtherSupplementaryRegulation</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Sonstiges</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+        </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    <!-- ====================================== SO_Gebiet ==================================================== -->
+    <UeberlagerungsobjektTransformation XPlanKlassenName="xplan:SO_Gebiet">
+        <AttributTransformation XPlanAttributName="xplan:gebietsArt" istNotwendig="true">
+            <SupplementaryRegulationDefault>9_RegulatedActivities</SupplementaryRegulationDefault>
+            <!--LocalSupplementaryRegulationDefault>Gebiet</LocalSupplementaryRegulationDefault-->
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1000" XPlanAttributWert_Langform="Umlegungsgebiet">
+                <SupplementaryRegulation>5_3_AreaReservedForRestructuringParcels</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Umlegungsgebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1100" XPlanAttributWert_Langform="StaedtebaulicheSanierung">
+                <SupplementaryRegulation>7_4_3_UrbanRehabilitationAndRestoration_</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>StaedtebaulicheSanierung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1200" XPlanAttributWert_Langform="StaedtebaulicheEntwicklungsmassnahme">
+                <SupplementaryRegulation>7_4_1_UrbanRenewal_</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>StaedtebaulicheEntwicklungsmassnahme</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1300" XPlanAttributWert_Langform="Stadtumbaugebiet">
+                <SupplementaryRegulation>7_4_2_UrbanRegenerationAndRevitalisation_</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Stadtumbaugebiet</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1400" XPlanAttributWert_Langform="SozialeStadt">
+                <SupplementaryRegulation>8_SocialHealthChoices</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>SozialeStadt</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1500" XPlanAttributWert_Langform="BusinessImprovementDistrict">
+                <SupplementaryRegulation>9_2_PermittedActivities</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>BusinessImprovementDistrict</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="1600" XPlanAttributWert_Langform="HousingImprovementDistrict">
+                <SupplementaryRegulation>9_2_PermittedActivities</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>HousingImprovementDistrict</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="ErhaltungsverordnungStaedtebaulicheGestalt">
+                <SupplementaryRegulation>3_3_BuiltHeritageProtection</SupplementaryRegulation>
+                <SupplementaryRegulation>9_1_RestrictedActivities</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>ErhaltungsverordnungStaedtebaulicheGestalt</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2100" XPlanAttributWert_Langform="ErhaltungsverordnungWohnbevoelkerung">
+                <SupplementaryRegulation>8_1_CompositionOfLocalResidentialPopulation</SupplementaryRegulation>
+                <SupplementaryRegulation>9_1_RestrictedActivities</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>ErhaltungsverordnungWohnbevoelkerung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="2200" XPlanAttributWert_Langform="ErhaltungsverordnungUmstrukturierung">
+                <SupplementaryRegulation>9_1_RestrictedActivities</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>ErhaltungsverordnungUmstrukturierung</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+            <AttributwertTransformation XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges">
+                <SupplementaryRegulation>9_RegulatedActivities</SupplementaryRegulation>
+                <!--LocalSupplementaryRegulation>Sonstiges</LocalSupplementaryRegulation-->
+            </AttributwertTransformation>
+         </AttributTransformation>
+    </UeberlagerungsobjektTransformation>
+    
+    
+    <!-- ================================================================================================================================================== -->
+    <!-- =================================== Oberklassen ================================================================================================== -->
+    <!-- ================================================================================================================================================== -->
+    
+    <OberklassenTransformationFlaechenschluss XPlanKlassenname="xplan:SO_Objekt">      
+        <AttributTransformation XPlanAttributName="xplan:rechtscharakter" istNotwendig="true">
+            <AttributZuordnung INSPIREAttributName="plu:regulationNature" INSPIREDefaultAttributWert="generallyBinding">
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="2000" XPlanAttributWert_Langform="Nachrichtliche Uebernahme" INSPIREAttributWert="generallyBinding"/>
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="3000" XPlanAttributWert_Langform="Hinweis" INSPIREAttributWert="nonBinding"/>
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="4000" XPlanAttributWert_Langform="Vermerk" INSPIREAttributWert="generallyBinding"/> 
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="5000" XPlanAttributWert_Langform="Kennzeichnung" INSPIREAttributWert="generallyBinding"/>
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges" INSPIREAttributWert="generallyBinding"/>
+            </AttributZuordnung>
+        </AttributTransformation>
+    </OberklassenTransformationFlaechenschluss> 
+    
+    <OberklassenTransformationUeberlagerung XPlanKlassenname="xplan:SO_Objekt">      
+        <AttributTransformation XPlanAttributName="xplan:rechtscharakter" istNotwendig="true">
+            <AttributZuordnung INSPIREAttributName="plu:regulationNature" INSPIREDefaultAttributWert="generallyBinding">
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="3000" XPlanAttributWert_Langform="Hinweis" INSPIREAttributWert="nonBinding"/>
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="4000" XPlanAttributWert_Langform="Vermerk" INSPIREAttributWert="generallyBinding"/> 
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="5000" XPlanAttributWert_Langform="Kennzeichnung" INSPIREAttributWert="generallyBinding"/>
+                <AttributwertZuordnung XPlanAttributWert_Schluessel="9999" XPlanAttributWert_Langform="Sonstiges" INSPIREAttributWert="generallyBinding"/>
+            </AttributZuordnung>
+        </AttributTransformation>
+    </OberklassenTransformationUeberlagerung> 
+    
+</XPlanGMLTransformation>    

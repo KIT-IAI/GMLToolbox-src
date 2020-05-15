@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+ <xs:element name="CheckResultsBuildings" type="CheckResultsBuildingType"/>
+ <xs:complexType name="CheckResultsBuildingType">
+  <xs:sequence>
+   <xs:element name="SingleBuildingResult" type="SingleBuildingResultType" minOccurs="0" maxOccurs="unbounded"/>
+   <xs:element name="BuildingOverlapResults" type="BuildingOverlapType" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+  <xs:attribute name="levelOfDetail" type="xs:string"/>
+  <xs:attribute name="minPointDist" type="xs:double"/>
+  <xs:attribute name="maxOrientationDist" type="xs:double"/>
+  <xs:attribute name="maxPlaneDist" type="xs:double"/>
+ </xs:complexType>
+ 
+ <xs:complexType name="SingleBuildingResultType">
+  <xs:sequence>  
+   <xs:element name="id" type="xs:string"/>  
+   <xs:element name="buildingPartCount" type="xs:int"/>   
+   <xs:element name="boundarySurfaceCount" type="xs:int"/>
+   <xs:element name="geometry" type="GeometryType"/>
+   <xs:element name="boundarySurfaces" type="ExteriorShellType" minOccurs="0"/>   
+   <xs:element name="attributes" type="BuildingAttributesType"/>   
+   <xs:element name="buildingPartResult" type="BuildingPartResultType" minOccurs="0" maxOccurs="unbounded"/>
+   <xs:element name="overlapResults" type="BuildingOverlapType" minOccurs="0" maxOccurs="unbounded"/>   
+   <xs:element name="buildingPartsWithoutOverlap" minOccurs="0"/>
+   <xs:element name="inconsistantAttributes" type="BuildingPartAttributesInconsistancyType" minOccurs="0"/>
+  </xs:sequence>
+ </xs:complexType>
+ 
+ <xs:complexType name="BuildingPartResultType">
+  <xs:sequence>
+   <xs:element name="id" type="xs:string"/>  
+   <xs:element name="geometry" type="GeometryType"/>
+   <xs:element name="boundarySurfaces" type="ExteriorShellType"/>   
+   <xs:element name="attributes" type="BuildingPartAttributesType"/>  
+  </xs:sequence>
+  <xs:attribute name="buildingPartNum" type="xs:int" use="required"/>
+ </xs:complexType>
+ 
+ <xs:complexType name="GeometryType">
+   <xs:attribute name="type" use="required">
+    <xs:simpleType>
+     <xs:restriction base="xs:string">
+      <xs:enumeration value="Solid"/>
+      <xs:enumeration value="MultiSurfaceSolid"/>
+      <xs:enumeration value="MultiSurfaceNoSolid"/>
+      <xs:enumeration value="NoGeometry"/>
+     </xs:restriction>
+    </xs:simpleType>
+   </xs:attribute>
+  <xs:attribute name="volumeAbs" type="xs:decimal" use="optional"/>  
+ </xs:complexType>
+ 
+ <xs:complexType name="ExteriorShellType"> 
+  <xs:attribute name="WallSurfaceCount" type="xs:int" use="optional"/>
+  <xs:attribute name="RoofSurfaceCount" type="xs:int"  use="optional"/>
+  <xs:attribute name="GroundSurfaceCount" type="xs:int"  use="optional"/>
+  <xs:attribute name="OuterFloorSurfaceCount" type="xs:int"  use="optional"/>
+  <xs:attribute name="OuterCeilingSurfaceCount" type="xs:int"  use="optional"/>
+  <xs:attribute name="ClosureSurfaceCount" type="xs:int"  use="optional"/>  
+  <xs:attribute name="MultiPolygonCount" type="xs:int" use="optional"/>
+  <xs:attribute name="polygonWithVoidsCount" type="xs:int" use="optional"/>
+  <xs:attribute name="area" type="xs:decimal" use="required"/>
+ </xs:complexType>
+ 
+ <xs:simpleType name="BoundarySurfaceType">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="WallSurface"/>
+   <xs:enumeration value="RoofSurface"/>
+   <xs:enumeration value="GroundSurface"/>
+   <xs:enumeration value="OuterFloorSurface"/>
+   <xs:enumeration value="OuterCeilingSurface"/>
+   <xs:enumeration value="ClosureSurface"/>
+  </xs:restriction>
+ </xs:simpleType>
+  
+ <xs:complexType name="BuildingAttributesType">  
+  <xs:attribute name="yearOfConstruction" type="xs:int" use="optional"/>
+  <xs:attribute name="buildingHeightAttribute" type="xs:decimal" use="optional"/>
+  <xs:attribute name="buildingHeightGeometry" type="xs:decimal" use="optional"/>
+  <xs:attribute name="storeysAboveGround" type="xs:int" use="optional"/>
+  <xs:attribute name="storeysBelowGround" type="xs:int" use="optional"/>
+  <xs:attribute name="function" type="xs:string" use="optional"/>
+  <xs:attribute name="roofType" type="xs:string" use="optional"/>
+  <xs:attribute name="otherAttributes" type="xs:string" use="optional"/>
+ </xs:complexType>
+ 
+ <xs:complexType name="BuildingPartAttributesType">  
+  <xs:attribute name="yearOfConstruction" type="xs:int" use="optional"/>
+  <xs:attribute name="buildingHeightAttribute" type="xs:decimal" use="optional"/>
+  <xs:attribute name="buildingHeightGeometry" type="xs:decimal" use="optional"/>
+  <xs:attribute name="storeysAboveGround" type="xs:int" use="optional"/>
+  <xs:attribute name="storeysBelowGround" type="xs:int" use="optional"/>
+  <xs:attribute name="function" type="xs:string" use="optional"/>
+  <xs:attribute name="roofType" type="xs:string" use="optional"/>
+  <xs:attribute name="otherAttributes" type="xs:string" use="optional"/>
+ </xs:complexType>
+ 
+ <xs:complexType name="BuildingPartAttributesInconsistancyType">  
+  <xs:attribute name="yearOfConstruction" type="xs:boolean" use="optional"/>
+  <xs:attribute name="buildingHeightAttribute" type="xs:boolean" use="optional"/> 
+  <xs:attribute name="storeysAboveGround" type="xs:boolean" use="optional"/>
+  <xs:attribute name="storeysBelowGround" type="xs:boolean" use="optional"/>
+  <xs:attribute name="function" type="xs:boolean" use="optional"/>
+  <xs:attribute name="roofType" type="xs:boolean" use="optional"/>  
+ </xs:complexType>
+ 
+ 
+ 
+ <xs:complexType name="BuildingOverlapType">
+  <xs:attribute name="b1Id" type="xs:string" use="optional"/>
+  <xs:attribute name="b2Id" type="xs:string" use="optional"/>
+  <xs:attribute name="bp1Id" type="xs:string" use="optional"/>
+  <xs:attribute name="bp2Id" type="xs:string" use="optional"/>
+  <xs:attribute name="bp1SurfaceId" type="xs:string" use="required"/>
+  <xs:attribute name="bp2SurfaceId" type="xs:string" use="required"/>
+  <xs:attribute name="oriDiff" type="xs:double" use="required"/>
+  <xs:attribute name="posDiff" type="xs:double" use="required"/>
+  <xs:attribute name="overlapArea" type="xs:double" use="optional"/>
+  <xs:attribute name="bp1FreeArea" type="xs:double" use="optional"/>
+  <xs:attribute name="bp2FreeArea" type="xs:double" use="optional"/>
+  <xs:attribute name="remarks" type="xs:string" use="optional"/>  
+ </xs:complexType>
+ 
+ 
+ 
+</xs:schema>

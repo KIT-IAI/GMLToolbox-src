@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:00:13-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="xplan_XP_MimeTypes">
+  <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes</identifier>
+  <name>xplan:XP_MimeTypes</name>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/pdf">
+      <description>application/pdf</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/pdf</identifier>
+      <name>application/pdf</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/zip">
+      <description>application/zip</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/zip</identifier>
+      <name>application/zip</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/xml">
+      <description>application/xml</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/xml</identifier>
+      <name>application/xml</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/msword">
+      <description>application/msword</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/msword</identifier>
+      <name>application/msword</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/msexcel">
+      <description>application/msexcel</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/msexcel</identifier>
+      <name>application/msexcel</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/vnd.ogc.sld+xml">
+      <description>application/vnd.ogc.sld+xml</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/vnd.ogc.sld+xml</identifier>
+      <name>application/vnd.ogc.sld+xml</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/vnd.ogc.wms_xml">
+      <description>application/vnd.ogc.wms_xml</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/vnd.ogc.wms_xml</identifier>
+      <name>application/vnd.ogc.wms_xml</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/vnd.ogc.gml">
+      <description>application/vnd.ogc.gml</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/vnd.ogc.gml</identifier>
+      <name>application/vnd.ogc.gml</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_application/odt">
+      <description>application/odt</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:application/odt</identifier>
+      <name>application/odt</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_image/jpg">
+      <description>image/jpg</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:image/jpg</identifier>
+      <name>image/jpg</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_image/png">
+      <description>image/png</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:image/png</identifier>
+      <name>image/png</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_image/tiff">
+      <description>image/tiff</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:image/tiff</identifier>
+      <name>image/tiff</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_image/ecw">
+      <description>image/ecw</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:image/ecw</identifier>
+      <name>image/ecw</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_image/svg+xml">
+      <description>image/svg+xml</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:image/svg+xml</identifier>
+      <name>image/svg+xml</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_text/html">
+      <description>text/html</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:text/html</identifier>
+      <name>text/html</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_text/plain">
+      <description>text/plain</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:XP_MimeTypes:text/plain</identifier>
+      <name>text/plain</name>
+    </Definition>
+  </dictionaryEntry>
+</Dictionary>

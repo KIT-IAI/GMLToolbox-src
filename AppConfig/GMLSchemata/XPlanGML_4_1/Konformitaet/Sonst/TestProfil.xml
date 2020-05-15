@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd"
+ name="StandardProfilBPlanSchema_4_1">
+
+     <!-- BP_GemeinbedarfsFlaeche -->
+    <Rule class="BP_GemeinbedarfsFlaeche" id="4.7.1.1">
+        <description>-	Wenn nur eine Zweckbestimmung spezifiziert werden soll, muss dafür immer das Attribut zweckbestimmung verwendet werden.
+-	Wenn zur Spezifikation mehrerer Zweckbestimmungen das Attribut zweckbestimmung mehrfach verwendet wird, dürfen die Attribute weitereZweckbestimmungi (i = 1, 2, 3, 4) nicht verwendet werden.
+</description>
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="2" maxOccurs="unbound"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="0" maxOccurs="0" combination="AND"/>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="0" maxOccurs="0" combination="AND"/>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="0" maxOccurs="0" combination="AND"/>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="0" maxOccurs="0" combination="AND"/>
+        </Required>
+    </Rule>   
+
+</Profil>

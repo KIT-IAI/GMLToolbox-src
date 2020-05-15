@@ -1,0 +1,84 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:47-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Strassenverkehrsrecht">
+  <gml:description>Festlegung nach Straßenverkehrsrecht.
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Strassenverkehrsrecht</gml:identifier>
+  <gml:name>xplan:SO_Strassenverkehrsrecht</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Strassenverkehrsrecht_artDerFestlegung">
+      <gml:description>Rechtliche Klassifizierung der Festlegung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Strassenverkehrsrecht:attribute:artDerFestlegung</gml:identifier>
+      <gml:name>xplan:artDerFestlegung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Strassenverkehrsrecht_artDerFestlegung_SO_KlassifizNachStrassenverkehrsrecht_1000">
+          <gml:description>Bundesautobahn</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Strassenverkehrsrecht:artDerFestlegung:SO_KlassifizNachStrassenverkehrsrecht:1000</gml:identifier>
+          <gml:name>Bundesautobahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Strassenverkehrsrecht_artDerFestlegung_SO_KlassifizNachStrassenverkehrsrecht_1100">
+          <gml:description>Bundesstraße</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Strassenverkehrsrecht:artDerFestlegung:SO_KlassifizNachStrassenverkehrsrecht:1100</gml:identifier>
+          <gml:name>Bundesstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Strassenverkehrsrecht_artDerFestlegung_SO_KlassifizNachStrassenverkehrsrecht_1200">
+          <gml:description>Landes- oder Staatsstraße</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Strassenverkehrsrecht:artDerFestlegung:SO_KlassifizNachStrassenverkehrsrecht:1200</gml:identifier>
+          <gml:name>LandesStaatsstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Strassenverkehrsrecht_artDerFestlegung_SO_KlassifizNachStrassenverkehrsrecht_1300">
+          <gml:description>Kreisstraße</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Strassenverkehrsrecht:artDerFestlegung:SO_KlassifizNachStrassenverkehrsrecht:1300</gml:identifier>
+          <gml:name>Kreisstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Strassenverkehrsrecht_artDerFestlegung_SO_KlassifizNachStrassenverkehrsrecht_9999">
+          <gml:description>Sonstige öffentliche Straße</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Strassenverkehrsrecht:artDerFestlegung:SO_KlassifizNachStrassenverkehrsrecht:9999</gml:identifier>
+          <gml:name>SonstOeffentlStrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_KlassifizNachStrassenverkehrsrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Strassenverkehrsrecht_detailArtDerFestlegung">
+      <gml:description>Über eine Codeliste definierte detailliertere rechtliche Klassifizierung der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Strassenverkehrsrecht:attribute:detailArtDerFestlegung</gml:identifier>
+      <gml:name>xplan:detailArtDerFestlegung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_DetailKlassifizNachStrassenverkehrsrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Strassenverkehrsrecht_name">
+      <gml:description>Informelle Bezeichnung der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Strassenverkehrsrecht:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Strassenverkehrsrecht_nummer">
+      <gml:description>Amtliche Bezeichnung / Kennziffer der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Strassenverkehrsrecht:attribute:nummer</gml:identifier>
+      <gml:name>xplan:nummer</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Geometrieobjekt" />
+</TypeDefinition>

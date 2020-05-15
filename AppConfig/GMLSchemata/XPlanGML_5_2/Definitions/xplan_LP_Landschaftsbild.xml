@@ -1,0 +1,18 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:32-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_Landschaftsbild">
+  <gml:description>Festlegung, Darstellung bzw. Festsetzung zum Landschaftsbild in einem  landschaftsplanerischen Planwerk.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_Landschaftsbild</gml:identifier>
+  <gml:name>xplan:LP_Landschaftsbild</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_Landschaftsbild_massnahme">
+      <gml:description>Über eine Codeliste definierte Spezifizierung der Maßnahme zum Landschaftsbild.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_Landschaftsbild:attribute:massnahme</gml:identifier>
+      <gml:name>xplan:massnahme</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_MassnahmeLandschaftsbild</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_Geometrieobjekt" />
+</TypeDefinition>

@@ -1,0 +1,200 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:11-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_AnpflanzungBindungErhaltung">
+  <gml:description>Festsetzung des Anpflanzens von Bäumen, Sträuchern und sonstigen Bepflanzungen;
+Festsetzung von Bindungen für Bepflanzungen und für die Erhaltung von Bäumen, Sträuchern und sonstigen Bepflanzungen sowie von Gewässern;  (§9 Abs. 1 Nr. 25 und Abs. 4 BauGB)</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung</gml:identifier>
+  <gml:name>xplan:BP_AnpflanzungBindungErhaltung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_massnahme">
+      <gml:description>Art der Maßnahme
+</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung:attribute:massnahme</gml:identifier>
+      <gml:name>xplan:massnahme</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_massnahme_XP_ABEMassnahmenTypen_1000">
+          <gml:description>Bindung und Erhaltung von Bäumen, Sträuchern und sonstigen Bepflanzungen, sowie von Gewässern.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:massnahme:XP_ABEMassnahmenTypen:1000</gml:identifier>
+          <gml:name>BindungErhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_massnahme_XP_ABEMassnahmenTypen_2000">
+          <gml:description>Anpflanzung von Bäumen, Sträuchern oder sonstigen Bepflanzungen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:massnahme:XP_ABEMassnahmenTypen:2000</gml:identifier>
+          <gml:name>Anpflanzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_massnahme_XP_ABEMassnahmenTypen_3000">
+          <gml:description>Bindung und Erhaltung von Bäumen, Sträuchern und sonstigen Bepflanzungen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:massnahme:XP_ABEMassnahmenTypen:3000</gml:identifier>
+          <gml:name>AnpflanzungBindungErhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ABEMassnahmenTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand">
+      <gml:description>Gegenstand der Maßnahme.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung:attribute:gegenstand</gml:identifier>
+      <gml:name>xplan:gegenstand</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_1000">
+          <gml:description>Bäume</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:1000</gml:identifier>
+          <gml:name>Baeume</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_1100">
+          <gml:description>Kopfbäume</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:1100</gml:identifier>
+          <gml:name>Kopfbaeume</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_1200">
+          <gml:description>Baumreihe</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:1200</gml:identifier>
+          <gml:name>Baumreihe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_2000">
+          <gml:description>Sträucher</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:2000</gml:identifier>
+          <gml:name>Straeucher</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_2050">
+          <gml:description>Bäume und Sträucher</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:2050</gml:identifier>
+          <gml:name>BaeumeUndStraeucher</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_2100">
+          <gml:description>Hecke</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:2100</gml:identifier>
+          <gml:name>Hecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_2200">
+          <gml:description>Knick</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:2200</gml:identifier>
+          <gml:name>Knick</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_3000">
+          <gml:description>Sonstige Bepflanzung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:3000</gml:identifier>
+          <gml:name>SonstBepflanzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_4000">
+          <gml:description>Gewässer (nur Erhaltung)</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:4000</gml:identifier>
+          <gml:name>Gewaesser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_5000">
+          <gml:description>Fassadenbegrünung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:5000</gml:identifier>
+          <gml:name>Fassadenbegruenung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_gegenstand_XP_AnpflanzungBindungErhaltungsGegenstand_6000">
+          <gml:description>Dachbegrünung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_AnpflanzungBindungErhaltung:gegenstand:XP_AnpflanzungBindungErhaltungsGegenstand:6000</gml:identifier>
+          <gml:name>Dachbegruenung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_AnpflanzungBindungErhaltungsGegenstand</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_kronendurchmesser">
+      <gml:description>Durchmesser der Baumkrone bei zu erhaltenden Bäumen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung:attribute:kronendurchmesser</gml:identifier>
+      <gml:name>xplan:kronendurchmesser</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_pflanztiefe">
+      <gml:description>Pflanztiefe</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung:attribute:pflanztiefe</gml:identifier>
+      <gml:name>xplan:pflanztiefe</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_istAusgleich">
+      <gml:description>Gibt an, ob die Fläche oder Maßnahme zum Ausgleich von Eingriffen genutzt wird.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung:attribute:istAusgleich</gml:identifier>
+      <gml:name>xplan:istAusgleich</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_AnpflanzungBindungErhaltung_istAusgleich_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_AnpflanzungBindungErhaltung:istAusgleich:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_AnpflanzungBindungErhaltung_istAusgleich_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_AnpflanzungBindungErhaltung:istAusgleich:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_baumArt">
+      <gml:description>Textliche Spezifikation einer Baumart.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung:attribute:baumArt</gml:identifier>
+      <gml:name>xplan:baumArt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_VegetationsobjektTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_mindesthoehe">
+      <gml:description>Mindesthöhe des Gegenstands der Festsetzung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung:attribute:mindesthoehe</gml:identifier>
+      <gml:name>xplan:mindesthoehe</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_AnpflanzungBindungErhaltung_anzahl">
+      <gml:description>Anzahl der anzupflanzenden Objekte</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_AnpflanzungBindungErhaltung:attribute:anzahl</gml:identifier>
+      <gml:name>xplan:anzahl</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Geometrieobjekt" />
+</TypeDefinition>

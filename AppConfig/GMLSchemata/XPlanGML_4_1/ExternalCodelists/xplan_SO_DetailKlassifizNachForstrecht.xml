@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 29.11.2012 08:16:31-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="xplan_SO_DetailKlassifizNachForstrecht">
+  <description>Detaillierte Klassifizierung nach Forstrecht.
+</description>
+  <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:SO_DetailKlassifizNachForstrecht</identifier>
+  <name>xplan:SO_DetailKlassifizNachForstrecht</name>
+</Dictionary>

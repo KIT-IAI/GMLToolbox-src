@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 29.11.2012 08:16:31-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="xplan_SO_SonstRechtscharakter">
+  <description>Weitere Klassifizierungen des Rechtscharakters.
+</description>
+  <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:SO_SonstRechtscharakter</identifier>
+  <name>xplan:SO_SonstRechtscharakter</name>
+  <dictionaryEntry>
+    <Definition gml:id="S_FestsetzungBPlan">
+      <description>FestsetzungBPlan</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:SO_SonstRechtscharakter:FestsetzungBPlan</identifier>
+      <name>FestsetzungBPlan</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="S_DarstellungFPlan">
+      <description>DarstellungFPlan</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:SO_SonstRechtscharakter:DarstellungFPlan</identifier>
+      <name>DarstellungFPlan</name>
+    </Definition>
+  </dictionaryEntry>
+</Dictionary>

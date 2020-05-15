@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:17:20-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="BP_DetailAbgrenzungenTypen">
+  <description>Codeliste für Typen von Nutzungs-Abgrenzungen, die nicht durch die Enumeration &lt;i&gt;BP_AbgrenzungenTypen &lt;/i&gt;abgebildet werden.</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:BP_DetailAbgrenzungenTypen</identifier>
+  <name>xplan:BP_DetailAbgrenzungenTypen</name>
+</Dictionary>

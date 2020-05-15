@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:11-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="SO_DetailKlassifizSchutzgebietWasserrecht">
+  <description>Aufzählung spezieller, z.B. länderspezifischer Klassifizierungen.
+</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:SO_DetailKlassifizSchutzgebietWasserrecht</identifier>
+  <name>xplan:SO_DetailKlassifizSchutzgebietWasserrecht</name>
+</Dictionary>

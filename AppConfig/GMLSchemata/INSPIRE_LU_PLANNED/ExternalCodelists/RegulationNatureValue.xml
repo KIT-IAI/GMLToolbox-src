@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gml:Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:inscl="http://www.kit.edu/inspire/codelists" gml:id   ="GML_RegulationNatureValue">
+  <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">RegulationNatureValue</gml:identifier>
+  <gml:name>RegulationNatureValue</gml:name>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_bindingForDevelopers">
+      <gml:description>The land use indication is binding only for the entity in charge of developing an area.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">bindingForDevelopers</gml:identifier>
+      <gml:name>binding for developers</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_bindingOnlyForAuthorities">
+      <gml:description>The land use indication is binding only for certain authorities.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">bindingOnlyForAuthorities</gml:identifier>
+      <gml:name>binding only for authorities</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_generallyBinding">
+      <gml:description>The land use indication is binding for everybody.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">generallyBinding</gml:identifier>
+      <gml:name>generally binding</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_nonBinding">
+      <gml:description>  The land use indication is not binding.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">nonBinding</gml:identifier>
+      <gml:name>not binding</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_definedInLegislation">
+      <gml:description>The land use indication is defined by the legislation.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">definedInLegislation</gml:identifier>
+      <gml:name>defined in legislation</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

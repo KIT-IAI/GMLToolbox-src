@@ -1,0 +1,68 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:14-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_Bereich">
+  <gml:description>Diese Klasse modelliert einen Bereich eines Flächennutzungsplans.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Bereich</gml:identifier>
+  <gml:name>xplan:FP_Bereich</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionBauNVODatum">
+      <gml:description>Datum der zugrunde liegenden Version der BauNVO</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Bereich:attribute:versionBauNVODatum</gml:identifier>
+      <gml:name>xplan:versionBauNVODatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionBauNVOText">
+      <gml:description>Zugrunde liegende Version der BauNVO. </gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Bereich:attribute:versionBauNVOText</gml:identifier>
+      <gml:name>xplan:versionBauNVOText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionBauGBDatum">
+      <gml:description>Datum der zugrunde liegenden Version des BauGB.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Bereich:attribute:versionBauGBDatum</gml:identifier>
+      <gml:name>xplan:versionBauGBDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionBauGBText">
+      <gml:description>Zugrunde liegende Version des BauGB.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Bereich:attribute:versionBauGBText</gml:identifier>
+      <gml:name>xplan:versionBauGBText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_gehoertZuPlan">
+      <gml:description>Referenz auf den Flächennutzungsplan, zu dem das Bereichsobjekt gehört.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Bereich:association-role:gehoertZuPlan</gml:identifier>
+      <gml:name>xplan:gehoertZuPlan</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:FP_Plan" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_rasterAenderung">
+      <gml:description>Referenz auf einen Änderungsplan, der durch ein georeferenziertes Rasterbild repräsentiert ist.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Bereich:association-role:rasterAenderung</gml:identifier>
+      <gml:name>xplan:rasterAenderung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:FP_RasterplanAenderung" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_Bereich" />
+</TypeDefinition>

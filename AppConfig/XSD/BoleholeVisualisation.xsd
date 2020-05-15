@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="BoreholeDarstellung">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="beschreibung" type="xs:string"/>
+                <xs:element name="boreholeDurchmesserLithologie" type="xs:decimal" minOccurs="0" maxOccurs="1" default="1.2"/>
+            	<xs:element name="boreholeDurchmesserStratigraphie" type="xs:decimal" minOccurs="0" maxOccurs="1" default="1.2"/>
+                <xs:element name="LithologyDarstellungen">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="LithologyDarstellung" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="Pattern" minOccurs="0"/>
+                                        <xs:element ref="Hatching" minOccurs="0"/>
+                                    	<xs:element name="Signature" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>                                 
+                                   <xs:attribute name="color" type="xs:string" use="required"/>
+                                   <xs:attribute name="rockCode" type="xs:string" use="required"/>
+                                   <xs:attribute name="rockName" type="xs:string" use="required"/>
+                                    
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                      
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="StratigraphyDarstellungen">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="StratigraphyDarstellung" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>                                  
+                                   <xs:attribute name="color" type="xs:string" use="required"/>         
+                                   <xs:attribute name="chronoStratigraphyCode" type="xs:string" use="required"/>
+                                   <xs:attribute name="chronoStratigraphyName" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>                       
+                    </xs:complexType>
+                </xs:element>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="Pattern">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="Path"/>
+				<xs:element ref="Circle"/>
+				<xs:element ref="Rect"/>
+				<xs:element ref="Text"/>
+			</xs:choice>
+			<xs:attribute name="name" type="xs:ID" use="required"/>
+			<xs:attribute name="x" type="xs:float" use="required"/>
+			<xs:attribute name="y" type="xs:float" use="required"/>
+			<xs:attribute name="width" type="xs:float" use="required"/>
+			<xs:attribute name="height" type="xs:float" use="required"/>			
+		</xs:complexType>
+	</xs:element>
+    
+    <xs:element name="Hatching">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="stroke-width" type="xs:float"/>
+				<xs:element name="line-dist" type="xs:float"/>				
+				<xs:element name="HatchingType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="horizontal"/>
+							<xs:enumeration value="vertical"/>
+							<xs:enumeration value="chequered"/>
+							<xs:enumeration value="lowerLeftToUpperRight"/>
+							<xs:enumeration value="upperLeftToLowerRight"/>
+							<xs:enumeration value="crossed"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:ID" use="required"/>	
+		</xs:complexType>
+	</xs:element>
+    
+    <xs:element name="Path">
+		<xs:complexType>
+			<xs:sequence>
+			    <xs:element name="fill" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true"/>
+				<xs:element name="Stroke-width" type="xs:float" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Stroke-dasharray" type="xs:float" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>			
+			<xs:attribute name="path" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Circle">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="fill" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true"/>
+				<xs:element name="Stroke-width" type="xs:float" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Stroke-dasharray" type="xs:float" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>			
+			<xs:attribute name="cx" type="xs:float" use="required"/>
+			<xs:attribute name="cy" type="xs:float" use="required"/>
+			<xs:attribute name="r" type="xs:float" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Rect">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="fill" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true"/>
+				<xs:element name="Stroke-width" type="xs:float" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="Stroke-dasharray" type="xs:float" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>			
+			<xs:attribute name="x" type="xs:float" use="optional" default="0.0"/>
+			<xs:attribute name="y" type="xs:float" use="optional" default="0.0"/>
+			<xs:attribute name="width" type="xs:float" use="required"/>
+			<xs:attribute name="height" type="xs:float" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Text">
+		<xs:complexType>		
+			<xs:attribute name="size" type="xs:float" use="required"/>
+			<xs:attribute name="x" type="xs:float" use="required"/>
+			<xs:attribute name="y" type="xs:float" use="required"/>
+			<xs:attribute name="text" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+    
+</xs:schema>

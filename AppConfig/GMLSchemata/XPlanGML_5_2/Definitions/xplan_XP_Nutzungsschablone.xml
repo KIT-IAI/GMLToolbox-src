@@ -1,0 +1,29 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:01-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_Nutzungsschablone">
+  <gml:description>Modelliert eine Nutzungsschablone. Die darzustellenden Attributwerte werden zeilenweise in die Nutzungsschablone geschrieben.
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_Nutzungsschablone</gml:identifier>
+  <gml:name>xplan:XP_Nutzungsschablone</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Nutzungsschablone_spaltenAnz">
+      <gml:description>Anzahl der Spalten in der Nutzungsschablone</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_Nutzungsschablone:attribute:spaltenAnz</gml:identifier>
+      <gml:name>xplan:spaltenAnz</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Nutzungsschablone_zeilenAnz">
+      <gml:description>Anzahl der Zeilen in der Nutzungsschablone</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_Nutzungsschablone:attribute:zeilenAnz</gml:identifier>
+      <gml:name>xplan:zeilenAnz</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_PTO" />
+</TypeDefinition>

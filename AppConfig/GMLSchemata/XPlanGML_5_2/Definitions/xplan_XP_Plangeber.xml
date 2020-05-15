@@ -1,0 +1,27 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:17:59-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_Plangeber">
+  <gml:description>Spezifikation der Institution, die für den Plan verantwortlich ist.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_Plangeber</gml:identifier>
+  <gml:name>xplan:XP_Plangeber</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Plangeber_name">
+      <gml:description>Name des Plangebers.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_Plangeber:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Plangeber_kennziffer">
+      <gml:description>Kennziffer des Plangebers.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_Plangeber:attribute:kennziffer</gml:identifier>
+      <gml:name>xplan:kennziffer</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

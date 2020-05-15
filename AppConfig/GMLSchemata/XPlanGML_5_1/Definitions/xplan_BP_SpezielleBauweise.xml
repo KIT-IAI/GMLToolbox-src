@@ -1,0 +1,127 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:23-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_SpezielleBauweise">
+  <gml:description>Festsetzung der speziellen Bauweise / baulichen Besonderheit eines Gebäudes oder Bauwerks.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_SpezielleBauweise</gml:identifier>
+  <gml:name>xplan:BP_SpezielleBauweise</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpezielleBauweise_typ">
+      <gml:description>Typ der speziellen Bauweise.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_SpezielleBauweise:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpezielleBauweise_typ_BP_SpezielleBauweiseTypen_1000">
+          <gml:description>Durchfahrt</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_SpezielleBauweise:typ:BP_SpezielleBauweiseTypen:1000</gml:identifier>
+          <gml:name>Durchfahrt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpezielleBauweise_typ_BP_SpezielleBauweiseTypen_1100">
+          <gml:description>Durchgang</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_SpezielleBauweise:typ:BP_SpezielleBauweiseTypen:1100</gml:identifier>
+          <gml:name>Durchgang</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpezielleBauweise_typ_BP_SpezielleBauweiseTypen_1200">
+          <gml:description>Durchfahrt oder Durchgang</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_SpezielleBauweise:typ:BP_SpezielleBauweiseTypen:1200</gml:identifier>
+          <gml:name>DurchfahrtDurchgang</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpezielleBauweise_typ_BP_SpezielleBauweiseTypen_1300">
+          <gml:description>Auskragung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_SpezielleBauweise:typ:BP_SpezielleBauweiseTypen:1300</gml:identifier>
+          <gml:name>Auskragung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpezielleBauweise_typ_BP_SpezielleBauweiseTypen_1400">
+          <gml:description>Arkade</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_SpezielleBauweise:typ:BP_SpezielleBauweiseTypen:1400</gml:identifier>
+          <gml:name>Arkade</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpezielleBauweise_typ_BP_SpezielleBauweiseTypen_1500">
+          <gml:description>Luftgeschoss</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_SpezielleBauweise:typ:BP_SpezielleBauweiseTypen:1500</gml:identifier>
+          <gml:name>Luftgeschoss</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpezielleBauweise_typ_BP_SpezielleBauweiseTypen_9999">
+          <gml:description>Sonstige spezielle Bauweise.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_SpezielleBauweise:typ:BP_SpezielleBauweiseTypen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_SpezielleBauweiseTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpezielleBauweise_sonstTyp">
+      <gml:description>Über eine Codeliste definierter Typ der speziellen Bauweise, wenn &lt;i&gt;typ &lt;/i&gt;den Wert 9999 (Sonstiges) hat.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_SpezielleBauweise:attribute:sonstTyp</gml:identifier>
+      <gml:name>xplan:sonstTyp</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_SpezielleBauweiseSonstTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpezielleBauweise_Bmin">
+      <gml:description>Minimale Breite von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_SpezielleBauweise:attribute:Bmin</gml:identifier>
+      <gml:name>xplan:Bmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpezielleBauweise_Bmax">
+      <gml:description>Maximale Breite von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_SpezielleBauweise:attribute:Bmax</gml:identifier>
+      <gml:name>xplan:Bmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpezielleBauweise_Tmin">
+      <gml:description>Minimale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_SpezielleBauweise:attribute:Tmin</gml:identifier>
+      <gml:name>xplan:Tmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpezielleBauweise_Tmax">
+      <gml:description>Maximale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_SpezielleBauweise:attribute:Tmax</gml:identifier>
+      <gml:name>xplan:Tmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpezielleBauweise_wegerecht">
+      <gml:description>Relation auf Angaben zu Wegerechten.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_SpezielleBauweise:association-role:wegerecht</gml:identifier>
+      <gml:name>xplan:wegerecht</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:BP_Wegerecht" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Ueberlagerungsobjekt" />
+</TypeDefinition>

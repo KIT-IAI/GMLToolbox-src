@@ -1,0 +1,497 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:09-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_SpielSportanlagenFlaeche">
+  <gml:description>Einrichtungen und Anlagen zur Versorgung mit Gütern und Dienstleistungen des öffentlichen und privaten Bereichs, hier Flächen für Sport- und Spielanlagen (§9, Abs. 1, Nr. 5 und Abs. 6 BauGB).</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche</gml:identifier>
+  <gml:name>xplan:BP_SpielSportanlagenFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_MaxZahlWohnungen">
+      <gml:description>Höchstzulässige Zahl der Wohnungen in Wohngebäuden</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:MaxZahlWohnungen</gml:identifier>
+      <gml:name>xplan:MaxZahlWohnungen</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Fmin">
+      <gml:description>Mindestmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Fmin</gml:identifier>
+      <gml:name>xplan:Fmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Fmax">
+      <gml:description>Höchstmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Fmax</gml:identifier>
+      <gml:name>xplan:Fmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Bmin">
+      <gml:description>Minimale Breite von Baugrundstücken</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Bmin</gml:identifier>
+      <gml:name>xplan:Bmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Bmax">
+      <gml:description>Maximale Breite von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Bmax</gml:identifier>
+      <gml:name>xplan:Bmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Tmin">
+      <gml:description>Minimale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Tmin</gml:identifier>
+      <gml:name>xplan:Tmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Tmax">
+      <gml:description>Maximale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Tmax</gml:identifier>
+      <gml:name>xplan:Tmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GFZmin">
+      <gml:description>Minimal zulässige Geschossflächenzahl .</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GFZmin</gml:identifier>
+      <gml:name>xplan:GFZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GFZmax">
+      <gml:description>Maximal zulässige Geschossflächenzahl bei einer Bereichsangabe. Das Attribut GFZmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GFZmax</gml:identifier>
+      <gml:name>xplan:GFZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GFZ">
+      <gml:description>Maximal zulässige Geschossflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GFZ</gml:identifier>
+      <gml:name>xplan:GFZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GFZ_Ausn">
+      <gml:description>Maximal zulässige Geschossflächenzahl als Ausnahme.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GFZ_Ausn</gml:identifier>
+      <gml:name>xplan:GFZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GFmin">
+      <gml:description>Minimal zulässige Geschossfläche</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GFmin</gml:identifier>
+      <gml:name>xplan:GFmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GFmax">
+      <gml:description>Maximal zulässige Geschossfläche bei einer Bereichsabgabe. Das Attribut GFmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GFmax</gml:identifier>
+      <gml:name>xplan:GFmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GF">
+      <gml:description>Maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GF</gml:identifier>
+      <gml:name>xplan:GF</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GF_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GF_Ausn</gml:identifier>
+      <gml:name>xplan:GF_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_BMZmin">
+      <gml:description>Minimal zulässige Baumassenzahl</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:BMZmin</gml:identifier>
+      <gml:name>xplan:BMZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_BMZmax">
+      <gml:description>Maximal zulässige Baumassenzahl bei einer Bereichsangabe. Das Attribut BMZmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:BMZmax</gml:identifier>
+      <gml:name>xplan:BMZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_BMZ">
+      <gml:description>Maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:BMZ</gml:identifier>
+      <gml:name>xplan:BMZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_BMZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:BMZ_Ausn</gml:identifier>
+      <gml:name>xplan:BMZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_BMmin">
+      <gml:description>Minimal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:BMmin</gml:identifier>
+      <gml:name>xplan:BMmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_BMmax">
+      <gml:description>Maximal zulässige Baumasse bei einer Bereichsangabe. Das Attribut BMmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:BMmax</gml:identifier>
+      <gml:name>xplan:BMmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_BM">
+      <gml:description>Maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:BM</gml:identifier>
+      <gml:name>xplan:BM</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_BM_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:BM_Ausn</gml:identifier>
+      <gml:name>xplan:BM_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GRZmin">
+      <gml:description>Minimal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GRZmin</gml:identifier>
+      <gml:name>xplan:GRZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GRZmax">
+      <gml:description>Maximal zulässige Grundflächenzahl bei einer Bereichsangabe.  Das Attribut GRZmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GRZmax</gml:identifier>
+      <gml:name>xplan:GRZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GRZ">
+      <gml:description>Maximal zulässige Grundflächenzahl</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GRZ</gml:identifier>
+      <gml:name>xplan:GRZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GRZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GRZ_Ausn</gml:identifier>
+      <gml:name>xplan:GRZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GRmin">
+      <gml:description>Minimal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GRmin</gml:identifier>
+      <gml:name>xplan:GRmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GRmax">
+      <gml:description>Maximal zulässige Grundfläche bei einer Bereichsangabe. Das Attribut GRmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GRmax</gml:identifier>
+      <gml:name>xplan:GRmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GR">
+      <gml:description>Maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GR</gml:identifier>
+      <gml:name>xplan:GR</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_GR_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:GR_Ausn</gml:identifier>
+      <gml:name>xplan:GR_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Zmin">
+      <gml:description>Minimal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Zmin</gml:identifier>
+      <gml:name>xplan:Zmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Zmax">
+      <gml:description>Maximal zulässige Zahl der oberirdischen Vollgeschosse bei einer Bereichsangabe. Das Attribut Zmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Zmax</gml:identifier>
+      <gml:name>xplan:Zmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Zzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Zzwingend</gml:identifier>
+      <gml:name>xplan:Zzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Z">
+      <gml:description>Maximalzahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Z</gml:identifier>
+      <gml:name>xplan:Z</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Z_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Z_Ausn</gml:identifier>
+      <gml:name>xplan:Z_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Z_Staffel">
+      <gml:description>Maximalzahl von oberirdischen zurückgesetzten Vollgeschossen als Staffelgeschoss..</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Z_Staffel</gml:identifier>
+      <gml:name>xplan:Z_Staffel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_Z_Dach">
+      <gml:description>Maximalzahl der zusätzlich erlaubten Dachgeschosse, die gleichzeitig Vollgeschosse sind.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:Z_Dach</gml:identifier>
+      <gml:name>xplan:Z_Dach</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_ZUmin">
+      <gml:description>Minimal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:ZUmin</gml:identifier>
+      <gml:name>xplan:ZUmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_ZUmax">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse bei einer Bereichsangabe. Das Attribut ZUmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:ZUmax</gml:identifier>
+      <gml:name>xplan:ZUmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_ZUzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:ZUzwingend</gml:identifier>
+      <gml:name>xplan:ZUzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_ZU">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:ZU</gml:identifier>
+      <gml:name>xplan:ZU</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_ZU_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:ZU_Ausn</gml:identifier>
+      <gml:name>xplan:ZU_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_zweckbestimmung">
+      <gml:description>Zweckbestimmung der festgesetzten Fläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_zweckbestimmung_XP_ZweckbestimmungSpielSportanlage_1000">
+          <gml:description>Sportanlage</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_SpielSportanlagenFlaeche:zweckbestimmung:XP_ZweckbestimmungSpielSportanlage:1000</gml:identifier>
+          <gml:name>Sportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_zweckbestimmung_XP_ZweckbestimmungSpielSportanlage_2000">
+          <gml:description>Spielanlage</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_SpielSportanlagenFlaeche:zweckbestimmung:XP_ZweckbestimmungSpielSportanlage:2000</gml:identifier>
+          <gml:name>Spielanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_zweckbestimmung_XP_ZweckbestimmungSpielSportanlage_3000">
+          <gml:description>Spiel- und/oder Sportanlage.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_SpielSportanlagenFlaeche:zweckbestimmung:XP_ZweckbestimmungSpielSportanlage:3000</gml:identifier>
+          <gml:name>SpielSportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_zweckbestimmung_XP_ZweckbestimmungSpielSportanlage_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_SpielSportanlagenFlaeche:zweckbestimmung:XP_ZweckbestimmungSpielSportanlage:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungSpielSportanlage</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Festlegung der Zweckbestimmung.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestSpielSportanlage</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_SpielSportanlagenFlaeche_zugunstenVon">
+      <gml:description>Angabe des Begünstigten einer Ausweisung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_SpielSportanlagenFlaeche:attribute:zugunstenVon</gml:identifier>
+      <gml:name>xplan:zugunstenVon</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Flaechenschlussobjekt" />
+</TypeDefinition>

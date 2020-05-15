@@ -1,0 +1,225 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:48-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Gebiet">
+  <gml:description>Umgrenzung eines sonstigen Gebietes nach BauGB
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet</gml:identifier>
+  <gml:name>xplan:SO_Gebiet</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_gemeinde">
+      <gml:description>Zuständige Gemeinde</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:gemeinde</gml:identifier>
+      <gml:name>xplan:gemeinde</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Gemeinde" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_gebietsArt">
+      <gml:description>Klassifikation des Gebietes nach BauGB.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:gebietsArt</gml:identifier>
+      <gml:name>xplan:gebietsArt</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_1000">
+          <gml:description>Umlegungsgebiet (§ 45 ff BauGB).</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:1000</gml:identifier>
+          <gml:name>Umlegungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_1100">
+          <gml:description>Gebiet nach § 136 ff BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:1100</gml:identifier>
+          <gml:name>StaedtebaulicheSanierung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_1200">
+          <gml:description>Gebiet nach § 165 ff BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:1200</gml:identifier>
+          <gml:name>StaedtebaulicheEntwicklungsmassnahme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_1300">
+          <gml:description>Gebiet nach § 171 a-d BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:1300</gml:identifier>
+          <gml:name>Stadtumbaugebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_1400">
+          <gml:description>Gebiet nach § 171 e BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:1400</gml:identifier>
+          <gml:name>SozialeStadt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_1500">
+          <gml:description>Gebiet nach §171 f BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:1500</gml:identifier>
+          <gml:name>BusinessImprovementDistrict</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_1600">
+          <gml:description>Gebiet nach §171 f BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:1600</gml:identifier>
+          <gml:name>HousingImprovementDistrict</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_1999">
+          <gml:description>Allgemeine Erhaltungsverordnung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:1999</gml:identifier>
+          <gml:name>Erhaltungsverordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_2000">
+          <gml:description>Gebiet einer Satzung nach § 172 Abs. 1.1 BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:2000</gml:identifier>
+          <gml:name>ErhaltungsverordnungStaedtebaulicheGestalt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_2100">
+          <gml:description>Gebiet einer Satzung nach § 172 Abs. 1.2 BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:2100</gml:identifier>
+          <gml:name>ErhaltungsverordnungWohnbevoelkerung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_2200">
+          <gml:description>Gebiet einer Satzung nach § 172 Abs. 1.2 BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:2200</gml:identifier>
+          <gml:name>ErhaltungsverordnungUmstrukturierung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_gebietsArt_SO_GebietsArt_9999">
+          <gml:description>Sonstiger Gebietstyp</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:gebietsArt:SO_GebietsArt:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_GebietsArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_sonstGebietsArt">
+      <gml:description>Über eine Codeliste definierte Klassifikation einer nicht auf dem BauGB beruhenden, z.B. länderspezifischen Gebietsausweisung. In dem Fall muss das Attribut "&lt;i&gt;gebietsArt" &lt;/i&gt;den Wert &lt;i&gt;9999 &lt;/i&gt;(Sonstiges) haben.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:sonstGebietsArt</gml:identifier>
+      <gml:name>xplan:sonstGebietsArt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_SonstGebietsArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_rechtsstandGebiet">
+      <gml:description>Rechtsstand der Gebietsausweisung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:rechtsstandGebiet</gml:identifier>
+      <gml:name>xplan:rechtsstandGebiet</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_rechtsstandGebiet_SO_RechtsstandGebietTyp_1000">
+          <gml:description>Vorbereitende Untersuchung </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:rechtsstandGebiet:SO_RechtsstandGebietTyp:1000</gml:identifier>
+          <gml:name>VorbereitendeUntersuchung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_rechtsstandGebiet_SO_RechtsstandGebietTyp_2000">
+          <gml:description>Aufstellung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:rechtsstandGebiet:SO_RechtsstandGebietTyp:2000</gml:identifier>
+          <gml:name>Aufstellung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_rechtsstandGebiet_SO_RechtsstandGebietTyp_3000">
+          <gml:description>Festlegung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:rechtsstandGebiet:SO_RechtsstandGebietTyp:3000</gml:identifier>
+          <gml:name>Festlegung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_rechtsstandGebiet_SO_RechtsstandGebietTyp_4000">
+          <gml:description>Abgeschlossen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:rechtsstandGebiet:SO_RechtsstandGebietTyp:4000</gml:identifier>
+          <gml:name>Abgeschlossen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_rechtsstandGebiet_SO_RechtsstandGebietTyp_5000">
+          <gml:description>Verstetigung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:rechtsstandGebiet:SO_RechtsstandGebietTyp:5000</gml:identifier>
+          <gml:name>Verstetigung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gebiet_rechtsstandGebiet_SO_RechtsstandGebietTyp_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gebiet:rechtsstandGebiet:SO_RechtsstandGebietTyp:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_RechtsstandGebietTyp</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_sonstRechtsstandGebiet">
+      <gml:description>Über eine Codeliste definierter sonstiger Rechtsstand der Gebietsausweisung, der nicht durch die Liste &lt;i&gt;SO_RechtsstandGebietTyp &lt;/i&gt;wiedergegeben werden kann. Das Attribut "&lt;i&gt;rechtsstandGebiet" &lt;/i&gt;muss in diesem Fall den Wert &lt;i&gt;9999 &lt;/i&gt;(Sonstiges) haben.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:sonstRechtsstandGebiet</gml:identifier>
+      <gml:name>xplan:sonstRechtsstandGebiet</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_SonstRechtsstandGebietTyp</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_aufstellungsbeschhlussDatum">
+      <gml:description>Datum des Aufstellungsbeschlusses</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:aufstellungsbeschhlussDatum</gml:identifier>
+      <gml:name>xplan:aufstellungsbeschhlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_durchfuehrungStartDatum">
+      <gml:description>Start-Datum der Durchführung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:durchfuehrungStartDatum</gml:identifier>
+      <gml:name>xplan:durchfuehrungStartDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_durchfuehrungEndDatum">
+      <gml:description>End-Datum der Durchführung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:durchfuehrungEndDatum</gml:identifier>
+      <gml:name>xplan:durchfuehrungEndDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gebiet_traegerMassnahme">
+      <gml:description>Maßnahmen-Träger</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gebiet:attribute:traegerMassnahme</gml:identifier>
+      <gml:name>xplan:traegerMassnahme</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Flaechenobjekt" />
+</TypeDefinition>

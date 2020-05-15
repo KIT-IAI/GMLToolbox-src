@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+ <xs:element name="Nutzungsprofile">
+  <xs:complexType>
+   <xs:sequence minOccurs="0" maxOccurs="unbounded">
+    <xs:choice>
+    <xs:element ref="Nutzungsprofil"/>
+     <xs:element ref="NutzungsprofilKomplex"/>
+    <xs:element name="NutzungsprofilGruppe" type="NutzungsprofilGruppeType"/>
+    </xs:choice>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+ 
+ <xs:complexType name="NutzungsprofilGruppeType">
+  <xs:sequence>
+   <xs:element name="heizung" type="NutzungsprofilGruppeMemberType"/>
+   <xs:element name="heizungBetrieb" type="NutzungsprofilGruppeMemberType"/>
+   <xs:element name="kuehlung" type="NutzungsprofilGruppeMemberType"/>
+   <xs:element name="kuehlungBetrieb" type="NutzungsprofilGruppeMemberType"/>
+   <xs:element name="lueftung" type="NutzungsprofilGruppeMemberType"/>
+   <xs:element name="beleuchtung" type="NutzungsprofilGruppeMemberType"/>
+   <xs:element name="personen" type="NutzungsprofilGruppeMemberType"/>
+   <xs:element name="geraete" type="NutzungsprofilGruppeMemberType"/>   
+  </xs:sequence>
+  <xs:attribute name="name" type="xs:string"/>
+ </xs:complexType>
+ 
+ <xs:complexType name="NutzungsprofilGruppeMemberType" mixed="false">  
+  <xs:attribute name="ref" type="xs:IDREF"/>
+ </xs:complexType>
+ 
+ <xs:element name="Nutzungsprofil" type="NutzungsprofilType"/>
+ 
+ <xs:complexType name="NutzungsprofilType">
+  <xs:sequence>
+   <xs:element name="name" type="xs:ID"/>
+   <xs:element name="description" type="xs:string" minOccurs="0"/>   
+   <xs:element name="aktiv" type="xs:boolean" minOccurs="0" default="true"/>
+   <xs:element name="periode" minOccurs="1" maxOccurs="unbounded">
+    <xs:complexType>
+     <xs:sequence>
+      <xs:element name="zeitreihe" type="DailyTimeSeriesType" minOccurs="0" maxOccurs="unbounded"/>
+     </xs:sequence>
+     <xs:attribute name="startDay" type="xs:int" use="required"/>
+     <xs:attribute name="startMonth" type="xs:int" use="required"/>
+     <xs:attribute name="endDay" type="xs:int" use="required"/>
+     <xs:attribute name="endMonth" type="xs:int" use="required"/>
+    </xs:complexType>
+   </xs:element>  
+  </xs:sequence>
+ </xs:complexType>
+ 
+ <xs:element name="NutzungsprofilKomplex" type="NutzungsprofilKomplexType"/>
+ 
+ <xs:complexType name="NutzungsprofilKomplexType">
+  <xs:sequence>
+  <xs:element name="name" type="xs:ID"/>
+  <xs:element name="description" type="xs:string" minOccurs="0"/>   
+  <xs:element name="aktiv" type="xs:boolean" minOccurs="0" default="true"/>
+   <xs:element name="period" type="NutzungsprofilKomplexMemberType" minOccurs="1" maxOccurs="unbounded"/>   
+  </xs:sequence>  
+ </xs:complexType>
+ 
+ <xs:complexType name="NutzungsprofilKomplexMemberType">
+  <xs:attribute name="anteil" type="xs:decimal" use="required"/>
+  <xs:attribute name="profil" type="xs:IDREF"/>
+ </xs:complexType>
+ 
+ <xs:element name="NutzungsprofilBetrieb" type="NutzungsprofilBetriebType" substitutionGroup="Nutzungsprofil"/>
+ <xs:complexType name="NutzungsprofilBetriebType">
+  <xs:complexContent >
+   <xs:extension base="NutzungsprofilType">
+    <xs:sequence>
+     <xs:element name="system" type="SystemType"/>
+    </xs:sequence>    
+   </xs:extension>
+  </xs:complexContent>
+ </xs:complexType>
+  
+ <xs:element name="NutzungsprofilHeizung" type="NutzungsprofilHeizungType" substitutionGroup="Nutzungsprofil"/>
+ <xs:complexType name="NutzungsprofilHeizungType">
+  <xs:complexContent >
+   <xs:extension base="NutzungsprofilType">
+    
+   </xs:extension>
+  </xs:complexContent>
+ </xs:complexType>
+ 
+ <xs:element name="NutzungsprofilKuehlung" type="NutzungsprofilKuehlungType" substitutionGroup="Nutzungsprofil"/>
+ 
+ <xs:complexType name="NutzungsprofilKuehlungType">
+  <xs:complexContent >
+   <xs:extension base="NutzungsprofilType">    
+   </xs:extension>
+  </xs:complexContent>
+ </xs:complexType>
+ 
+ <xs:element name="NutzungsprofilLueftung" type="NutzungsprofilLueftungType" substitutionGroup="Nutzungsprofil"/>
+ 
+ <xs:complexType name="NutzungsprofilLueftungType">
+  <xs:complexContent >
+   <xs:extension base="NutzungsprofilType">    
+   </xs:extension>
+  </xs:complexContent>
+ </xs:complexType>
+ 
+ <xs:element name="NutzungsprofilBeleuchtung" type="NutzungsprofilBeleuchtungType" substitutionGroup="Nutzungsprofil"/>
+ 
+ <xs:complexType name="NutzungsprofilBeleuchtungType">
+  <xs:complexContent >
+   <xs:extension base="NutzungsprofilType">
+    <xs:sequence>
+     <xs:element name="automatisch" type="xs:boolean" minOccurs="0" default="false"/>
+     <xs:element name="konvektAnteil" type="xs:double" minOccurs="0" default="50"/>    
+     <xs:element name="maxHelligkeit" type="xs:double" minOccurs="0" default="0"/>
+     <xs:element name="effizienz" type="xs:double" minOccurs="0" default="50"/>      
+     <xs:element name="maxWaermeleistung" type="xs:double" minOccurs="0" default="0"/>                     
+    </xs:sequence>    
+   </xs:extension>
+  </xs:complexContent>
+ </xs:complexType> 
+ 
+ <xs:element name="NutzungsprofilPersonen" type="NutzungsprofilPersonenType" substitutionGroup="Nutzungsprofil"/>
+ 
+ <xs:complexType name="NutzungsprofilPersonenType">
+  <xs:complexContent>
+   <xs:extension base="NutzungsprofilType">
+    <xs:sequence>
+     <xs:element name="waermeleistungPerson" type="xs:double"/>
+     <xs:element name="konvektAnteil" type="xs:double" minOccurs="0" default="50"/>   
+     <xs:element name="flaecheProPerson" type="xs:double" minOccurs="0" default="0"/>
+     <xs:element name="maxAnzahlPersonen" type="xs:double" minOccurs="0" default="0"/>     
+    </xs:sequence>
+   </xs:extension>
+  </xs:complexContent>
+ </xs:complexType>
+ 
+ <xs:element name="NutzungsprofilGeraete" type="NutzungsprofilGereateType" substitutionGroup="Nutzungsprofil"/>
+ 
+ <xs:complexType name="NutzungsprofilGereateType">
+  <xs:complexContent>
+   <xs:extension base="NutzungsprofilType">
+    <xs:sequence>    
+     <xs:element name="konvektAnteil" type="xs:double" minOccurs="0" default="50"/>   
+     <xs:element name="maxWaermeleistung" type="xs:double"/>         
+    </xs:sequence>
+   </xs:extension>
+  </xs:complexContent>
+ </xs:complexType> 
+ 
+ <xs:simpleType name="SystemType">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="heating"/>
+   <xs:enumeration value="cooling"/>
+   <xs:enumeration value="ventilation"/>
+  </xs:restriction>
+ </xs:simpleType>  
+
+ 
+ <xs:complexType name="DailyTimeSeriesType">
+  <xs:sequence>
+   <xs:element name="day" type="DayType"/>
+   <xs:element name="uom" type="xs:string"/>
+   <xs:element name="values" type="ValuesType"/>
+  </xs:sequence>
+  <xs:attribute name="minValue" type="xs:double" use="required"/>
+  <xs:attribute name="maxValue" type="xs:double" use="required"/>
+  <xs:attribute name="defaultValue" type="xs:double" use="required"/>
+ </xs:complexType>
+ 
+ <xs:simpleType name="DayType">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="monday"/>
+   <xs:enumeration value="tuesday"/>
+   <xs:enumeration value="wednesday"/>
+   <xs:enumeration value="thursday"/>
+   <xs:enumeration value="friday"/>
+   <xs:enumeration value="saturday"/>
+   <xs:enumeration value="sunday"/>
+   <xs:enumeration value="designDay"/>
+   <xs:enumeration value="weekDay"/>
+   <xs:enumeration value="weekEnd"/>
+   <xs:enumeration value="typicalDay"/>
+  </xs:restriction>
+ </xs:simpleType>
+ 
+ 
+ <xs:simpleType name="ValuesType">
+  <xs:restriction>
+   <xs:simpleType>
+    <xs:list itemType="xs:double"/>
+   </xs:simpleType>
+   <xs:minLength value="24"/>
+   <xs:maxLength value="24"/>
+  </xs:restriction>
+ 
+ </xs:simpleType>
+</xs:schema>

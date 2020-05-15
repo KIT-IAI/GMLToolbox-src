@@ -1,0 +1,40 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:23-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Siedlung">
+  <gml:description>Allgemeines Siedlungsobjekt. Dieses vererbt an mehrere Spezialisierungen, ist aber selbst nicht abstrakt.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Siedlung</gml:identifier>
+  <gml:name>xplan:RP_Siedlung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Siedlung_bauhoehenbeschraenkung">
+      <gml:description>Assoziierte Bauhöhenbeschränkung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Siedlung:attribute:bauhoehenbeschraenkung</gml:identifier>
+      <gml:name>xplan:bauhoehenbeschraenkung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Siedlung_istSiedlungsbeschraenkung">
+      <gml:description>Abfrage, ob der FeatureType eine Siedlungsbeschränkung ist.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Siedlung:attribute:istSiedlungsbeschraenkung</gml:identifier>
+      <gml:name>xplan:istSiedlungsbeschraenkung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Siedlung_istSiedlungsbeschraenkung_Boolean_1">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::RP_Siedlung:istSiedlungsbeschraenkung:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_RP_Siedlung_istSiedlungsbeschraenkung_Boolean_0">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::RP_Siedlung:istSiedlungsbeschraenkung:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

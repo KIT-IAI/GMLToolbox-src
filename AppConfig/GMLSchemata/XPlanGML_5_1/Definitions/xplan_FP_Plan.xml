@@ -1,0 +1,379 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:32-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_Plan">
+  <gml:description>Klasse zur Modellierung eines gesamten Flächennutzungsplans.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan</gml:identifier>
+  <gml:name>xplan:FP_Plan</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_gemeinde">
+      <gml:description>Zuständige Gemeinde</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:gemeinde</gml:identifier>
+      <gml:name>xplan:gemeinde</gml:name>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Gemeinde" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_planaufstellendeGemeinde">
+      <gml:description>Die für die ursprüngliche Planaufstellung zuständige Gemeinde, falls diese nicht unter dem Attribut &lt;i&gt;gemeinde &lt;/i&gt;aufgeführt ist. Dies kann z.B. nach Gemeindefusionen der Fall sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:planaufstellendeGemeinde</gml:identifier>
+      <gml:name>xplan:planaufstellendeGemeinde</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Gemeinde" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_plangeber">
+      <gml:description>Für die Planung zuständige Institution
+</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:plangeber</gml:identifier>
+      <gml:name>xplan:plangeber</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Plangeber" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_planArt">
+      <gml:description>Typ des FPlans</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:planArt</gml:identifier>
+      <gml:name>xplan:planArt</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_planArt_FP_PlanArt_1000">
+          <gml:description>Flächennutzungsplan nach § 5 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:planArt:FP_PlanArt:1000</gml:identifier>
+          <gml:name>FPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_planArt_FP_PlanArt_2000">
+          <gml:description>Gemeinsamer Flächennutzungsplan nach § 204 BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:planArt:FP_PlanArt:2000</gml:identifier>
+          <gml:name>GemeinsamerFPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_planArt_FP_PlanArt_3000">
+          <gml:description>Regionaler Flächennutzungsplan, der zugleich die Funktion eines Regionalplans als auch eines gemeinsamen Flächennutzungsplans nach § 204 BauGB erfüllt</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:planArt:FP_PlanArt:3000</gml:identifier>
+          <gml:name>RegFPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_planArt_FP_PlanArt_4000">
+          <gml:description>Flächennutzungsplan mit regionalplanerischen Festlegungen (nur in HH, HB, B).</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:planArt:FP_PlanArt:4000</gml:identifier>
+          <gml:name>FPlanRegPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_planArt_FP_PlanArt_5000">
+          <gml:description>Sachlicher Teilflächennutzungsplan nach §5 Abs. 2b BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:planArt:FP_PlanArt:5000</gml:identifier>
+          <gml:name>SachlicherTeilplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_planArt_FP_PlanArt_9999">
+          <gml:description>Sonstiger Flächennutzungsplan
+</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:planArt:FP_PlanArt:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>FP_PlanArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_sonstPlanArt">
+      <gml:description>Sonstiger Typ des FPlans bei "&lt;i&gt;planArt" &lt;/i&gt;== &lt;i&gt;9999&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:sonstPlanArt</gml:identifier>
+      <gml:name>xplan:sonstPlanArt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_SonstPlanArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_sachgebiet">
+      <gml:description>Sachgebiet eines Teilflächennutzungsplans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:sachgebiet</gml:identifier>
+      <gml:name>xplan:sachgebiet</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_verfahren">
+      <gml:description>Verfahren nach dem ein FPlan aufgestellt oder geändert wird.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:verfahren</gml:identifier>
+      <gml:name>xplan:verfahren</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_verfahren_FP_Verfahren_1000">
+          <gml:description>Normales FPlan Verfahren.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:verfahren:FP_Verfahren:1000</gml:identifier>
+          <gml:name>Normal</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_verfahren_FP_Verfahren_2000">
+          <gml:description>FPlan Verfahren nach Parag 13 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:verfahren:FP_Verfahren:2000</gml:identifier>
+          <gml:name>Parag13</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_Verfahren</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_rechtsstand">
+      <gml:description>Aktueller Rechtsstand des Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:rechtsstand</gml:identifier>
+      <gml:name>xplan:rechtsstand</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_1000">
+          <gml:description>Der Aufstellungsbeschluss liegt vor.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:1000</gml:identifier>
+          <gml:name>Aufstellungsbeschluss</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_2000">
+          <gml:description>Ein Planentwurf liegt vor.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:2000</gml:identifier>
+          <gml:name>Entwurf</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_2100">
+          <gml:description>Die frühzeitige Bürgerbeteiligung ist abgeschlossen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:2100</gml:identifier>
+          <gml:name>FruehzeitigeBehoerdenBeteiligung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_2200">
+          <gml:description>Die frühzeitige Beteiligun der Öffentlichkeit ist abgeschlossen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:2200</gml:identifier>
+          <gml:name>FruehzeitigeOeffentlichkeitsBeteiligung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_2300">
+          <gml:description>Die Behördenbeteiligung ist abgeschlossen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:2300</gml:identifier>
+          <gml:name>BehoerdenBeteiligung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_2400">
+          <gml:description>Die öffentliche Auslegung ist beendet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:2400</gml:identifier>
+          <gml:name>OeffentlicheAuslegung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_3000">
+          <gml:description>Der Plan ist technisch erstellt worden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:3000</gml:identifier>
+          <gml:name>Plan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_4000">
+          <gml:description>Der Plan ist rechtswirksam.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:4000</gml:identifier>
+          <gml:name>Wirksamkeit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Plan_rechtsstand_FP_Rechtsstand_5000">
+          <gml:description>Der Plan ist untergegangen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Plan:rechtsstand:FP_Rechtsstand:5000</gml:identifier>
+          <gml:name>Untergegangen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_Rechtsstand</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_status">
+      <gml:description>Über eine Codeliste definierter Status des Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:status</gml:identifier>
+      <gml:name>xplan:status</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_Status</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_aufstellungsbeschlussDatum">
+      <gml:description>Datum des Plan-Aufstellungsbeschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:aufstellungsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:aufstellungsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_auslegungsStartDatum">
+      <gml:description>Start-Datum der öffentlichen Auslegung. Bei mehrfacher öffentlicher Auslegung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:auslegungsStartDatum</gml:identifier>
+      <gml:name>xplan:auslegungsStartDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_auslegungsEndDatum">
+      <gml:description>End-Datum der öffentlichen Auslegung. Bei mehrfacher öffentlicher Auslegung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:auslegungsEndDatum</gml:identifier>
+      <gml:name>xplan:auslegungsEndDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_traegerbeteiligungsStartDatum">
+      <gml:description>Start-Datum der Trägerbeteiligung. Bei mehrfacher Trägerbeteiligung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:traegerbeteiligungsStartDatum</gml:identifier>
+      <gml:name>xplan:traegerbeteiligungsStartDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_traegerbeteiligungsEndDatum">
+      <gml:description>End-Datum der Trägerbeteiligung. Bei mehrfacher Trägerbeteiligung  können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:traegerbeteiligungsEndDatum</gml:identifier>
+      <gml:name>xplan:traegerbeteiligungsEndDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_aenderungenBisDatum">
+      <gml:description>Datum, bis zu dem Änderungen des Plans berücksichtigt wurden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:aenderungenBisDatum</gml:identifier>
+      <gml:name>xplan:aenderungenBisDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_entwurfsbeschlussDatum">
+      <gml:description>Datum des Entwurfsbeschlusses</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:entwurfsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:entwurfsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_planbeschlussDatum">
+      <gml:description>Datum des Planbeschlusses</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:planbeschlussDatum</gml:identifier>
+      <gml:name>xplan:planbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_wirksamkeitsDatum">
+      <gml:description>Datum der Wirksamkeit</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:wirksamkeitsDatum</gml:identifier>
+      <gml:name>xplan:wirksamkeitsDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_versionBauNVODatum">
+      <gml:description>Datum der zugrunde liegenden Version der BauNVO</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:versionBauNVODatum</gml:identifier>
+      <gml:name>xplan:versionBauNVODatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_versionBauNVOText">
+      <gml:description>Textliche Spezifikation der zugrunde liegenden Version der BauNVO</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:versionBauNVOText</gml:identifier>
+      <gml:name>xplan:versionBauNVOText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_versionBauGBDatum">
+      <gml:description>Datum der zugrunde liegenden Version des BauGB.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:versionBauGBDatum</gml:identifier>
+      <gml:name>xplan:versionBauGBDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_versionBauGBText">
+      <gml:description>Textliche Spezifikation der zugrunde liegenden Version des BauGB.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:versionBauGBText</gml:identifier>
+      <gml:name>xplan:versionBauGBText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_versionSonstRechtsgrundlageDatum">
+      <gml:description>Datum einer zugrunde liegenden anderen Rechtsgrundlage als BauGB / BauNVO.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:versionSonstRechtsgrundlageDatum</gml:identifier>
+      <gml:name>xplan:versionSonstRechtsgrundlageDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_versionSonstRechtsgrundlageText">
+      <gml:description>Textliche Spezifikation einer zugrunde liegenden anderen Rechtsgrundlage als BauGB / BauNVO.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:attribute:versionSonstRechtsgrundlageText</gml:identifier>
+      <gml:name>xplan:versionSonstRechtsgrundlageText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Plan_bereich">
+      <gml:description>Referenz auf einen Bereich des Flächennutzungsplans</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Plan:association-role:bereich</gml:identifier>
+      <gml:name>xplan:bereich</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:FP_Bereich" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_Plan" />
+</TypeDefinition>

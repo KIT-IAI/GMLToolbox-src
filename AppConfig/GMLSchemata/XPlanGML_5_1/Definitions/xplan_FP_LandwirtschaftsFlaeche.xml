@@ -1,0 +1,94 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:34-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_LandwirtschaftsFlaeche">
+  <gml:description>Darstellung einer Landwirtschaftsfläche nach §5, Abs. 2, Nr. 9a.
+
+Die Klasse ist als veraltet gekennzeinet und wird in Version 6.0 wegfallen. Es sollte stattdessen die Klasse FP_Landwirtschaft verwendet werden.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_LandwirtschaftsFlaeche</gml:identifier>
+  <gml:name>xplan:FP_LandwirtschaftsFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung">
+      <gml:description>Zweckbestimmung der Fläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_LandwirtschaftsFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_1000">
+          <gml:description>Allgemeine Landwirtschaft</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:1000</gml:identifier>
+          <gml:name>LandwirtschaftAllgemein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_1100">
+          <gml:description>Ackerbau</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:1100</gml:identifier>
+          <gml:name>Ackerbau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_1200">
+          <gml:description>Wiesen- und Weidewirtschaft</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:1200</gml:identifier>
+          <gml:name>WiesenWeidewirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_1300">
+          <gml:description>Gartenbauliche Erzeugung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:1300</gml:identifier>
+          <gml:name>GartenbaulicheErzeugung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_1400">
+          <gml:description>Obstbau</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:1400</gml:identifier>
+          <gml:name>Obstbau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_1500">
+          <gml:description>Weinbau</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:1500</gml:identifier>
+          <gml:name>Weinbau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_1600">
+          <gml:description>Imkerei</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:1600</gml:identifier>
+          <gml:name>Imkerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_1700">
+          <gml:description>Binnenfischerei</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:1700</gml:identifier>
+          <gml:name>Binnenfischerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_zweckbestimmung_XP_ZweckbestimmungLandwirtschaft_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_LandwirtschaftsFlaeche:zweckbestimmung:XP_ZweckbestimmungLandwirtschaft:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungLandwirtschaft</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_LandwirtschaftsFlaeche_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Zweckbestimmung.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_LandwirtschaftsFlaeche:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestLandwirtschaftsFlaeche</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Flaechenschlussobjekt" />
+</TypeDefinition>

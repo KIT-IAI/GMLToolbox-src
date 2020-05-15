@@ -1,0 +1,142 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:17:59-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_SPEMassnahmenDaten">
+  <gml:description>Spezifikation der Attribute für einer Schutz-, Pflege- oder Entwicklungsmaßnahme.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_SPEMassnahmenDaten</gml:identifier>
+  <gml:name>xplan:XP_SPEMassnahmenDaten</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme">
+      <gml:description>Klassifikation der Maßnahme</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_SPEMassnahmenDaten:attribute:klassifizMassnahme</gml:identifier>
+      <gml:name>xplan:klassifizMassnahme</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1000">
+          <gml:description>Artenreicher Gehölzbestand ist aus unterschiedlichen, standortgerechten Gehölzarten aufgebaut und weist einen Strauchanteil auf.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1000</gml:identifier>
+          <gml:name>ArtentreicherGehoelzbestand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1100">
+          <gml:description>Naturnahe Wälder zeichnen sich durch eine standortgemäße Gehölzzusammensetzung unterschiedlicher Altersstufen, durch eine Schichtung der Gehölze (z.B. Strauchschicht, sich überlagernder erster Baumschicht in 10-15 m Höhe und zweiter Baumschicht in 20-25 m Höhe) sowie durch eine in der Regeln artenreiche Krautschicht aus. Kennzeichnend sind zudem das gleichzeitige Nebeneinander von aufwachsenden Gehölzen, Altbäumen und Lichtungen in kleinräumigen Wechsel sowie ein gewisser Totholzanteil.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1100</gml:identifier>
+          <gml:name>NaturnaherWald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1200">
+          <gml:description>Gegenüber einer intensiven Nutzung sind bei extensiver Grünlandnutzung sowohl Beweidungsintensitäten als auch der Düngereinsatz deutlich geringer. Als Folge finden eine Reihe von eher konkurrenzschwachen, oft auch trittempflindlichen Pflanzenarten Möglichkeiten, sich neben den in der Regel sehr robusten, wuchskräftigen, jedoch sehr nährstoffbedürftigen Pflanzen intensiver Wirtschaftsflächen zu behaupten.  Dadurch kommt es zur Ausprägung von standortbedingt unterschiedlichen Grünlandgesellschaften mit deutlichen höheren Artenzahlen (größere Vielfalt).</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1200</gml:identifier>
+          <gml:name>ExtensivesGruenland</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1300">
+          <gml:description>Artenreiches Feuchtgrünland entwickelt sich bei extensiver Bewirtschaftung auf feuchten bis wechselnassen Standorten. Die geringe Tragfähigkeit des vielfach anstehenden Niedermoorbodens erschwert den Einsatz von Maschinen, so dass die Flächen vorwiegend beweidet bzw. erst spät im Jahr gemäht werden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1300</gml:identifier>
+          <gml:name>Feuchtgruenland</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1400">
+          <gml:description>Obstwiesen umfassen mittel- oder hochstämmige, großkronige Obstbäume auf beweidetem (Obstweide) oder gemähtem (obstwiese) Grünland. Im Optimalfall setzt sich der aufgelockerte Baumbestand aus verschiedenen, möglichst alten, regional-typischen Kultursorten zusammen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1400</gml:identifier>
+          <gml:name>Obstwiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1500">
+          <gml:description>Naturahne Uferbereiche umfassen unterschiedlich zusammengesetzte Röhrichte und Hochstaudenrieder oder Seggen-Gesellschaften sowie Ufergehölze, die sich vorwiegend aus strauch- oder baumförmigen Weiden, Erlen oder Eschen zusammensetzen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1500</gml:identifier>
+          <gml:name>NaturnaherUferbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1600">
+          <gml:description>Im flachen Wasser oder auf nassen Böden bilden sich hochwüchsige, oft artenarme Bestände aus überwiegend windblütigen Röhrichtarten aus. Naturliche Bestände finden sich im Uferbereich von Still- und Fließgewässern.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1600</gml:identifier>
+          <gml:name>Roehrichtzone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1700">
+          <gml:description>Ackerrandstreifen sind breite Streifen im Randbereich eines konventionell oder ökologisch genutzten Ackerschlages.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1700</gml:identifier>
+          <gml:name>Ackerrandstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1800">
+          <gml:description>Als Ackerbrachflächen werden solche Biotope angesprochen, die seit kurzer Zeit aus der Nutzung herausgenommen worden sind. Sie entstehen, indem Ackerflächen mindestens eine Vegetationsperiode nicht mehr bewirtschaftet werden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1800</gml:identifier>
+          <gml:name>Ackerbrache</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1900">
+          <gml:description>Als Grünlandbrachen werden solche Biotope angesprochen, die seit kurzer Zeit aus der Nutzung herausgenommen worden sind. Sie entstehen, indem Grünland mindestens eine Vegetationsperiode nicht mehr bewirtschaftet wird.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1900</gml:identifier>
+          <gml:name>Gruenlandbrache</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_2000">
+          <gml:description>Sukzessionsflächen umfassen dauerhaft ungenutzte, der natürlichen Entwicklung überlassene Vegetationsbestände auf trockenen bis feuchten Standorten.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:2000</gml:identifier>
+          <gml:name>Sukzessionsflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_2100">
+          <gml:description>Hochwüchsige, zumeist artenreiche Staudenfluren feuchter bis nasser Standorte entwickeln sich in der Regel auf Feuchtgrünland-Brachen, an gehölzfreien Uferstreifen oder an anderen zeitweilig gestörten Standorten mit hohen Grundwasserständen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:2100</gml:identifier>
+          <gml:name>Hochstaudenflur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_2200">
+          <gml:description>Trockenrasen sind durch zumindest zeitweilige extreme Trockenheit (Regelwasser versickert rasch) sowie durch Nährstoffarmut charakterisiert, die nur Arten mit speziell angepassten Lebensstrategien Entwicklungsmöglichkeiten bieten.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:2200</gml:identifier>
+          <gml:name>Trockenrasen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_2300">
+          <gml:description>Heiden sind Zwergstrauchgesellschaften auf nährstoffarmen, sauren, trockenen (Calluna-Heide) oder feuchten (Erica-Heide) Standorten. Im Binnenland haben sie in der Regel nach Entwaldung (Abholzung) und langer Übernutzung (Beweidung) primär nährstoffarmer Standorte entwickelt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:2300</gml:identifier>
+          <gml:name>Heide</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_SPEMassnahmenTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_SPEMassnahmenDaten_massnahmeText">
+      <gml:description>Durchzuführende Maßnahme als freier Text.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_SPEMassnahmenDaten:attribute:massnahmeText</gml:identifier>
+      <gml:name>xplan:massnahmeText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_SPEMassnahmenDaten_massnahmeKuerzel">
+      <gml:description>Kürzel der durchzuführenden Maßnahme.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_SPEMassnahmenDaten:attribute:massnahmeKuerzel</gml:identifier>
+      <gml:name>xplan:massnahmeKuerzel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

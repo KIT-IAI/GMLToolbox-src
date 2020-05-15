@@ -1,0 +1,281 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:43-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_ErholungFreizeit">
+  <gml:description>Sonstige Gebiete, Objekte, Zweckbestimmungen oder Maßnahmen mit besonderen Funktionen für die landschaftsgebundene Erholung und Freizeit.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_ErholungFreizeit</gml:identifier>
+  <gml:name>xplan:LP_ErholungFreizeit</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_ErholungFreizeit_funktion">
+      <gml:description>Funktion der Fläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_ErholungFreizeit:attribute:funktion</gml:identifier>
+      <gml:name>xplan:funktion</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1000">
+          <gml:description>Parkanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1000</gml:identifier>
+          <gml:name>Parkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1030">
+          <gml:description>Dauerkleingarten</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1030</gml:identifier>
+          <gml:name>Dauerkleingaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1050">
+          <gml:description>Sportplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1050</gml:identifier>
+          <gml:name>Sportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1100">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1100</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1200">
+          <gml:description>Zeltplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1200</gml:identifier>
+          <gml:name>Zeltplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1300">
+          <gml:description>Badeplatz, Freibad</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1300</gml:identifier>
+          <gml:name>BadeplatzFreibad</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1400">
+          <gml:description>Schutzhütte</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1400</gml:identifier>
+          <gml:name>Schutzhuette</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1500">
+          <gml:description>Rastplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1500</gml:identifier>
+          <gml:name>Rastplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1600">
+          <gml:description>Informationstafel</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1600</gml:identifier>
+          <gml:name>Informationstafel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1700">
+          <gml:description>Feuerstelle, Grillplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1700</gml:identifier>
+          <gml:name>FeuerstelleGrillplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1800">
+          <gml:description>Liegewiese</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1800</gml:identifier>
+          <gml:name>Liegewiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_1900">
+          <gml:description>Aussichtsturm</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:1900</gml:identifier>
+          <gml:name>Aussichtsturm</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2000">
+          <gml:description>Aussichtspunkt</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2000</gml:identifier>
+          <gml:name>Aussichtspunkt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2100">
+          <gml:description>Angelteich</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2100</gml:identifier>
+          <gml:name>Angelteich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2200">
+          <gml:description>Modellflugplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2200</gml:identifier>
+          <gml:name>Modellflugplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2300">
+          <gml:description>Wildgehege, Schaugatter</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2300</gml:identifier>
+          <gml:name>WildgehegeSchaugatter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2400">
+          <gml:description>Jugendzeltplatz, Jugendcamp</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2400</gml:identifier>
+          <gml:name>JugendzeltplatzEinzelcamp</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2500">
+          <gml:description>Gleitschirmplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2500</gml:identifier>
+          <gml:name>Gleitschirmplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2600">
+          <gml:description>Wandern allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2600</gml:identifier>
+          <gml:name>Wandern</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2700">
+          <gml:description>Wanderweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2700</gml:identifier>
+          <gml:name>Wanderweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2800">
+          <gml:description>Lehrpfad</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2800</gml:identifier>
+          <gml:name>Lehrpfad</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_2900">
+          <gml:description>Reitweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:2900</gml:identifier>
+          <gml:name>Reitweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3000">
+          <gml:description>Radweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3000</gml:identifier>
+          <gml:name>Radweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3100">
+          <gml:description>Wintersport allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3100</gml:identifier>
+          <gml:name>Wintersport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3200">
+          <gml:description>Skiabfahrt</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3200</gml:identifier>
+          <gml:name>Skiabfahrt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3300">
+          <gml:description>Langlaufloipe</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3300</gml:identifier>
+          <gml:name>Skilanglaufloipe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3400">
+          <gml:description>Rodelbahn, Bobbahn</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3400</gml:identifier>
+          <gml:name>RodelbahnBobbahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3500">
+          <gml:description>Wassersport allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3500</gml:identifier>
+          <gml:name>Wassersport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3600">
+          <gml:description>Wasserwanderweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3600</gml:identifier>
+          <gml:name>Wasserwanderweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3700">
+          <gml:description>Schifffahrtsroute</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3700</gml:identifier>
+          <gml:name>Schifffahrtsroute</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3800">
+          <gml:description>Schiffsanlegestelle mit Motorbooten</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3800</gml:identifier>
+          <gml:name>AnlegestelleMitMotorbooten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_3900">
+          <gml:description>Schiffsanlegestelle ohne Motorboote</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:3900</gml:identifier>
+          <gml:name>AnlegestelleOhneMotorboote</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_4000">
+          <gml:description>Sessellift, Schlepplift</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:4000</gml:identifier>
+          <gml:name>SesselliftSchlepplift</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_4100">
+          <gml:description>Kabinenseilbahn</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:4100</gml:identifier>
+          <gml:name>Kabinenseilbahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_5000">
+          <gml:description>Parkplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:5000</gml:identifier>
+          <gml:name>Parkplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_ErholungFreizeit_funktion_LP_ErholungFreizeitFunktionen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_ErholungFreizeit:funktion:LP_ErholungFreizeitFunktionen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>LP_ErholungFreizeitFunktionen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_ErholungFreizeit_detaillierteFunktion">
+      <gml:description>Über eine Codeliste definierte detailliertere Funktion eines Freizeit- oder Erholungs-Objektes.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteFunktion" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;funktion"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_ErholungFreizeit:attribute:detaillierteFunktion</gml:identifier>
+      <gml:name>xplan:detaillierteFunktion</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>LP_ErholungFreizeitDetailFunktionen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_Geometrieobjekt" />
+</TypeDefinition>

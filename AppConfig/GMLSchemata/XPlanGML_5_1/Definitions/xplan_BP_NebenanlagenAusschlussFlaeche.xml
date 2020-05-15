@@ -1,0 +1,42 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:23-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_NebenanlagenAusschlussFlaeche">
+  <gml:description>Festsetzung einer Flche fr die Einschrnkung oder den Ausschluss von Nebenanlagen nach §14 Absatz 1 Satz 3 BauNVO.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NebenanlagenAusschlussFlaeche</gml:identifier>
+  <gml:name>xplan:BP_NebenanlagenAusschlussFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_NebenanlagenAusschlussFlaeche_typ">
+      <gml:description>Art des Ausschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NebenanlagenAusschlussFlaeche:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenAusschlussFlaeche_typ_BP_NebenanlagenAusschlussTyp_1000">
+          <gml:description>Die Errichtung bestimmter Nebenanlagen ist eingeschränkt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenAusschlussFlaeche:typ:BP_NebenanlagenAusschlussTyp:1000</gml:identifier>
+          <gml:name>Einschraenkung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NebenanlagenAusschlussFlaeche_typ_BP_NebenanlagenAusschlussTyp_2000">
+          <gml:description>Die Errichtung bestimmter Nebenanlagen ist ausgeschlossen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NebenanlagenAusschlussFlaeche:typ:BP_NebenanlagenAusschlussTyp:2000</gml:identifier>
+          <gml:name>Ausschluss</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_NebenanlagenAusschlussTyp</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_NebenanlagenAusschlussFlaeche_abweichungText">
+      <gml:description>Textliche Beschreibung der Einschränkung oder des Ausschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NebenanlagenAusschlussFlaeche:association-role:abweichungText</gml:identifier>
+      <gml:name>xplan:abweichungText</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:BP_TextAbschnitt" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Ueberlagerungsobjekt" />
+</TypeDefinition>

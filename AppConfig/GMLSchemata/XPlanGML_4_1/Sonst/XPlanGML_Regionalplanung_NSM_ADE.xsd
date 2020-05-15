@@ -1,0 +1,1230 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 11.09.2013 11:07:20-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xplanNSM="http://www.xplanung.de/4/1/ADE_NSM" targetNamespace="http://www.xplanung.de/4/1/ADE_NSM" xmlns:kit="http://www.kit.edu" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xplan="http://www.xplanung.de/xplangml/4/1" elementFormDefault="qualified" version="4.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation=".\gml\3.2.1\gml.xsd" />
+  <import namespace="http://www.xplanung.de/xplangml/4/1" schemaLocation="XPlanGML_RPlan_Kernmodell.xsd" />
+  <!--=========================================================================================-->
+  <!--RP_Bodenschutz-->
+  <!--=========================================================================================-->
+  <element name="zweckbestimmungBS" type="xplanNSM:RP_NSM_ZweckbestimmungBodenschutz" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_Bodenschutz" />
+  <!--=========================================================================================-->
+  <!--RP_Forstwirtschaft-->
+  <!--=========================================================================================-->
+  <element name="zweckbestimmungFW" type="xplanNSM:RP_NSM_ZweckbestimmungForstwirtschaft" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_Forstwirtschaft" />
+  <!--=========================================================================================-->
+  <!--RP_Landwirtschaft-->
+  <!--=========================================================================================-->
+  <element name="typLW" type="xplanNSM:RP_NSM_LandwirtschaftTypen" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_Landwirtschaft" />
+  <!--=========================================================================================-->
+  <!--RP_NaturschutzrechtlichesSchutzgebiet-->
+  <!--=========================================================================================-->
+  <element name="besondereZweckbestimmungNSG" type="xplanNSM:RP_NSM_BesondereZweckbestimmungNSG" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_NaturschutzrechtlichesSchutzgebiet" />
+  <!--=========================================================================================-->
+  <!--RP_NSM_BesondereZweckbestimmungNSG-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_BesondereZweckbestimmungNSG">
+    <restriction base="string">
+      <enumeration value="14001">
+        <!--Kernzone-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Erholung-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Erholung" type="xplanNSM:RP_NSM_ErholungType" substitutionGroup="xplan:RP_FreizeitErholung" />
+  <complexType name="RP_NSM_ErholungType">
+    <complexContent>
+      <extension base="xplan:RP_FreizeitErholungType">
+        <sequence>
+          <element name="typET" minOccurs="0" type="xplanNSM:RP_NSM_ErholungTypen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_ErholungTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_ErholungTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Erholung-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--SchwerpunktbereichErholung-->
+      </enumeration>
+      <enumeration value="2001">
+        <!--KernbereichErholung-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--RuhigeErholungInNaturUndLandschaft-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--ErholungMitStarkerInanspruchnahmeDurchBevoelkerung-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--BesondereEntwicklungsaufgabeErholung-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--BesondereEntwicklungsaufgabeTourismus-->
+      </enumeration>
+      <enumeration value="7000">
+        <!--RegionalbedeutsamerEntwicklungsschwerpunkt-->
+      </enumeration>
+      <enumeration value="8000">
+        <!--Erholungswald-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_HochwasserschutzTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_HochwasserschutzTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Sperrwerk-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Hochwasserrueckhaltebecken_Bauwerk-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Hochwasserrueckhaltebecken-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Kuestenhochwasserschutz-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--Deich-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--Hochwasserschutz-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--HochwGefaehrderteKuestenniederung-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Landschaftsschutz-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Landschaftsschutz" type="xplanNSM:RP_NSM_LandschaftsschutzType" substitutionGroup="xplan:RP_NaturLandschaft" />
+  <complexType name="RP_NSM_LandschaftsschutzType">
+    <complexContent>
+      <extension base="xplan:RP_NaturLandschaftType">
+        <sequence>
+          <element name="typLS" minOccurs="0" type="xplanNSM:RP_NSM_LandschaftsschutzTypen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_LandschaftsschutzTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_LandschaftsschutzTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--VerbesserungLandschaftsstrukturNaturhaushalt-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Biotopverbundachse-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--KompensationEntwicklung-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_LandwirtschaftTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_LandwirtschaftTypen">
+    <restriction base="string">
+      <enumeration value="RP_NSM_LandwirtschaftTypen" />
+      <enumeration value="1000">
+        <!--AufGrundHohenErtragspotentials-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--AufGrundBesondererFunktionen-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Fischerei-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Naturschutz-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Naturschutz" type="xplanNSM:RP_NSM_NaturschutzType" substitutionGroup="xplan:RP_NaturLandschaft" />
+  <complexType name="RP_NSM_NaturschutzType">
+    <complexContent>
+      <extension base="xplan:RP_NaturLandschaftType">
+        <sequence>
+          <element name="typNS" minOccurs="0" type="xplanNSM:RP_NSM_NaturschutzTypen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_NaturschutzTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_NaturschutzTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--GruenlandBewirtschaftungPflegeEntwicklung-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Natura2000-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--NaturschutzLandschaftspflege-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--NaturschutzLandschaftspflegeAufGewaessern-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_OberflaechennaheBodenschaetze-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_OberflaechennaheBodenschaetze" type="xplanNSM:RP_NSM_OberflaechennaheBodenschaetzeType" substitutionGroup="xplan:RP_Rohstoffsicherung" />
+  <complexType name="RP_NSM_OberflaechennaheBodenschaetzeType">
+    <complexContent>
+      <extension base="xplan:RP_RohstoffsicherungType">
+        <sequence>
+          <element name="folgenutzung" minOccurs="0" type="xplanNSM:RP_NSM_TagebauFolgenutzung" />
+          <element name="folgenutzungText" minOccurs="0" type="string" />
+          <element name="zeitstufe" minOccurs="0" type="xplanNSM:RP_NSM_Zeitstufe" />
+          <element name="zeitstufeText" minOccurs="0" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_RegionalBedeutsamerWanderweg-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_RegionalBedeutsamerWanderweg" type="xplanNSM:RP_NSM_RegionalBedeutsamerWanderwegType" substitutionGroup="xplan:RP_FreizeitErholung" />
+  <complexType name="RP_NSM_RegionalBedeutsamerWanderwegType">
+    <complexContent>
+      <extension base="xplan:RP_FreizeitErholungType">
+        <sequence>
+          <element name="typRBW" minOccurs="0" type="xplanNSM:RP_NSN_RegionalbedeutsamerWanderwegTypen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_RegionalBedeutsameSportanlage-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_RegionalBedeutsameSportanlage" type="xplanNSM:RP_NSM_RegionalBedeutsameSportanlageType" substitutionGroup="xplan:RP_FreizeitErholung" />
+  <complexType name="RP_NSM_RegionalBedeutsameSportanlageType">
+    <complexContent>
+      <extension base="xplan:RP_FreizeitErholungType">
+        <sequence>
+          <element name="typRBS" minOccurs="0" type="xplanNSM:RP_NSM_RegionalBedeutsameSportanlageTypen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_RegionalBedeutsameSportanlageTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_RegionalBedeutsameSportanlageTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--RegionalBedeutsameSportanlage-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--RegionalBedeutsameSportanlage_Wassersport-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--RegionalBedeutsameSportanlage_Motorsport-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--RegionalBedeutsameSportanlage_Flugsport-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--RegionalBedeutsameSportanlage_Reitsport-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--RegionalBedeutsameSportanlage_Golfsport-->
+      </enumeration>
+      <enumeration value="7000">
+        <!--RegionalBedeutsameSportanlage_Sportzentrum-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_TagebauFolgenutzung-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_TagebauFolgenutzung">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Landwirtschaft-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Forstwirtschaft-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Gruenlandbewirtschaftung-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--NaturUndLandschaft-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--Naturschutz-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--Erholung-->
+      </enumeration>
+      <enumeration value="9999">
+        <!--Sonstiges-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_TiefliegendeRohstoffe-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_TiefliegendeRohstoffe" type="xplanNSM:RP_NSM_TiefliegendeRohstoffeType" substitutionGroup="xplan:RP_Rohstoffsicherung" />
+  <complexType name="RP_NSM_TiefliegendeRohstoffeType">
+    <complexContent>
+      <extension base="xplan:RP_RohstoffsicherungType" />
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Tourismus-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Tourismus" type="xplanNSM:RP_NSM_TourismusType" substitutionGroup="xplan:RP_FreizeitErholung" />
+  <complexType name="RP_NSM_TourismusType">
+    <complexContent>
+      <extension base="xplan:RP_FreizeitErholungType">
+        <sequence>
+          <element name="typTT" minOccurs="0" type="xplanNSM:RP_NSM_TourismusTypen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_TourismusTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_TourismusTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--TourismusErholung-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--SchwerpunktbereichTourismus-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--EntwicklungsgebietTourismusErholung-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--KernbereichTourismusErholung-->
+      </enumeration>
+      <enumeration value="4001">
+        <!--KernbereichErholung-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--TourismusKuestenraum-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Zeitstufe-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_Zeitstufe">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Zeitstufe_1-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Zeitstufe_2-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_ZweckbestimmungBodenschutz-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_ZweckbestimmungBodenschutz">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--BeseitigungErheblicherBodenbelastungen-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--SicherungSanierungVonAltlasten-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_ZweckbestimmungForstwirtschaft-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_ZweckbestimmungForstwirtschaft">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Wald-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--VergroesserungDesWaldanteils-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--VonAufforstungFreizuhaltendsesGebiet-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--BesondereSchutzfunktionDesWaldes-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_ZweckbestimmungWasserschutz-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_ZweckbestimmungWasserschutz">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Grundwasserschutz-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Trinkwassergewinnung-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Heilquelle-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSN_RegionalbedeutsamerWanderwegTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSN_RegionalbedeutsamerWanderwegTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--RegionalBedeutsamerWanderweg-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--RegionalBedeutsamerWanderweg_Radwandern-->
+      </enumeration>
+      <enumeration value="2001">
+        <!--RegionalBedeutsamerWanderweg_Radwandern_geplant-->
+      </enumeration>
+      <enumeration value="2002">
+        <!--Fernradweg-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--RegionalBedeutsamerWanderweg_Reiten-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--RegionalBedeutsamerWanderweg_Wandern-->
+      </enumeration>
+      <enumeration value="4001">
+        <!--Fernwanderweg-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--RegionalBedeutsamerWanderweg_Wasserwandern-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_VorbHochwasserschutz-->
+  <!--=========================================================================================-->
+  <element name="zweckbestimmungHWS" type="xplanNSM:RP_NSM_HochwasserschutzTypen" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_VorbHochwasserschutz" />
+  <!--=========================================================================================-->
+  <!--RP_Wasserschutz-->
+  <!--=========================================================================================-->
+  <element name="zweckbestimmungWS" type="xplanNSM:RP_NSM_ZweckbestimmungWasserschutz" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_Wasserschutz" />
+  <!--=========================================================================================-->
+  <!--RP_Energieversorgung-->
+  <!--=========================================================================================-->
+  <element name="detailTyp" type="xplanNSM:RP_NSM_EnergieversorgungTypen" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_Energieversorgung" />
+  <element name="status" type="xplanNSM:RP_NSM_EnergieversorgungStatus" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_Energieversorgung" />
+  <!--=========================================================================================-->
+  <!--RP_Laermschutzbereich-->
+  <!--=========================================================================================-->
+  <element name="typLS" type="xplanNSM:RP_NSM_LaermschutzTypen" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_Laermschutzbereich" />
+  <!--=========================================================================================-->
+  <!--RP_NSM_Abfallentsorgung-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Abfallentsorgung" type="xplanNSM:RP_NSM_AbfallentsorgungType" substitutionGroup="xplan:RP_Entsorgung" />
+  <complexType name="RP_NSM_AbfallentsorgungType">
+    <complexContent>
+      <extension base="xplan:RP_EntsorgungType">
+        <sequence>
+          <element name="typAE" minOccurs="0" type="xplanNSM:RP_NSM_AbfallentsorgungTypen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_AbfallentsorgungTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_AbfallentsorgungTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--SicherungVonStandortenFuerSiedlungsabfalldeponien-->
+      </enumeration>
+      <enumeration value="1001">
+        <!--ZentraleAbfallbeseitigungsAnlage-->
+      </enumeration>
+      <enumeration value="2100">
+        <!--AbfallbeseitigungAbfallverwertung_Deponie-->
+      </enumeration>
+      <enumeration value="2110">
+        <!--AbfallbeseitigungAbfallverwertung_Siedlungsabfalldeponie-->
+      </enumeration>
+      <enumeration value="2120">
+        <!--AbfallbeseitigungAbfallverwertung_Mineralstoffdeponie-->
+      </enumeration>
+      <enumeration value="2200">
+        <!--AbfallbeseitigungAbfallverwertung_Kompostierung-->
+      </enumeration>
+      <enumeration value="2300">
+        <!--AbfallbeseitigungAbfallverwertung_Verbrennung-->
+      </enumeration>
+      <enumeration value="2400">
+        <!--AbfallbeseitigungAbfallverwertung_Behandlung-->
+      </enumeration>
+      <enumeration value="2500">
+        <!--AbfallbeseitigungAbfallverwertung_Untertageeinlagerung-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--SonderabfallbeseitigungSonderabfallbehandlung-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--EntsorgungRadioaktiverAbfaelle-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Abwasser-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Abwasser" type="xplanNSM:RP_NSM_AbwasserType" substitutionGroup="xplan:RP_Entsorgung" />
+  <complexType name="RP_NSM_AbwasserType">
+    <complexContent>
+      <extension base="xplan:RP_EntsorgungType">
+        <sequence>
+          <element name="typAW" minOccurs="0" type="xplanNSM:RP_NSM_AbwasserTypen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_AbwasserTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_AbwasserTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--ZentraleKlaeranlage-->
+      </enumeration>
+      <enumeration value="1001">
+        <!--Grossklaerwerk-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Hauptabwasserleitung-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Abwasserverwertungsflaeche-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_EnergieversorgungStatus-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_EnergieversorgungStatus">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Bestand-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Geplant-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_EnergieversorgungTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_EnergieversorgungTypen">
+    <restriction base="string">
+      <enumeration value="10000">
+        <!--Leitungstrasse-->
+      </enumeration>
+      <enumeration value="10001">
+        <!--Leitungstrasse_110KV-->
+      </enumeration>
+      <enumeration value="10002">
+        <!--Leitungstrasse_220KV-->
+      </enumeration>
+      <enumeration value="10003">
+        <!--Leitungstrasse_380KV-->
+      </enumeration>
+      <enumeration value="10004">
+        <!--Kabeltrasse_Netzanbindung-->
+      </enumeration>
+      <enumeration value="20001">
+        <!--Rohrfernleitung_Erdoel-->
+      </enumeration>
+      <enumeration value="20002">
+        <!--Rohrfernleitung_Gas-->
+      </enumeration>
+      <enumeration value="20003">
+        <!--Rohrfernleitung_Fernwaerme-->
+      </enumeration>
+      <enumeration value="20004">
+        <!--Rohrfernleitung_Kraftstoff-->
+      </enumeration>
+      <enumeration value="20005">
+        <!--Uebergabeatation_Ferngas-->
+      </enumeration>
+      <enumeration value="30001">
+        <!--Kraftwerk_Kohle-->
+      </enumeration>
+      <enumeration value="30002">
+        <!--Kraftwerk_Gas-->
+      </enumeration>
+      <enumeration value="30003">
+        <!--Kraftwerk_Erdoel-->
+      </enumeration>
+      <enumeration value="30004">
+        <!--Kraftwerk_Wasser-->
+      </enumeration>
+      <enumeration value="30005">
+        <!--Kraftwerk_Kernenergie-->
+      </enumeration>
+      <enumeration value="30006">
+        <!--Kraftwerk_Reststoffverwertung-->
+      </enumeration>
+      <enumeration value="30007">
+        <!--Grosskraftwerk-->
+      </enumeration>
+      <enumeration value="30008">
+        <!--Grosskraftwerk_Kohle-->
+      </enumeration>
+      <enumeration value="30009">
+        <!--Grosskraftwerk_Gas-->
+      </enumeration>
+      <enumeration value="30010">
+        <!--Grosskraftwerk_Erdoel-->
+      </enumeration>
+      <enumeration value="30011">
+        <!--Grosskraftwerk_Wasser-->
+      </enumeration>
+      <enumeration value="30012">
+        <!--Grosskraftwerk_Kernenergie-->
+      </enumeration>
+      <enumeration value="30013">
+        <!--Grosskraftwerk_Reststoffverwertung-->
+      </enumeration>
+      <enumeration value="30014">
+        <!--Energiegewinnung-->
+      </enumeration>
+      <enumeration value="30015">
+        <!--Energiegewinnung_Kohle-->
+      </enumeration>
+      <enumeration value="30016">
+        <!--Energiegewinnung_Gas-->
+      </enumeration>
+      <enumeration value="30017">
+        <!--Energiegewinnung_Erdoel-->
+      </enumeration>
+      <enumeration value="30018">
+        <!--Energiegewinnung_Wasser-->
+      </enumeration>
+      <enumeration value="30019">
+        <!--Energiegewinnung_Kernenergie-->
+      </enumeration>
+      <enumeration value="40001">
+        <!--SpeicherungPrimaerenergie_Erdoel-->
+      </enumeration>
+      <enumeration value="40002">
+        <!--SpeicherungPrimaerenergie_Gas-->
+      </enumeration>
+      <enumeration value="40003">
+        <!--VerstetigungSpeicherungRegenerativeEnergie-->
+      </enumeration>
+      <enumeration value="40004">
+        <!--Untergrundspeicher-->
+      </enumeration>
+      <enumeration value="99991">
+        <!--Windenergienutzung-->
+      </enumeration>
+      <enumeration value="99992">
+        <!--ErneuerbareEnergien-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_LaermschutzTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_LaermschutzTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Laermbereich-->
+      </enumeration>
+      <enumeration value="1001">
+        <!--Laermschutzbereich-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Siedlungsbeschraenkungsbereich-->
+      </enumeration>
+      <enumeration value="2001">
+        <!--Siedlungszaesur-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Luftverkehr-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Luftverkehr" type="xplanNSM:RP_NSM_LuftverkehrType" substitutionGroup="xplan:RP_Verkehr" />
+  <complexType name="RP_NSM_LuftverkehrType">
+    <complexContent>
+      <extension base="xplan:RP_VerkehrType">
+        <sequence>
+          <element name="luftverkehrTyp" minOccurs="0" type="xplanNSM:RP_NSM_LuftverkehrTypen" />
+          <element name="sonstTyp" minOccurs="0" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <kit:referenzierteCodelist>xplanNSM:RP_NSM_SonstLuftvrkehrTypen</kit:referenzierteCodelist>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="status" minOccurs="0" type="xplanNSM:RP_NSM_LuftverkehrStatus" />
+          <element name="bezeichnung" minOccurs="0" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_LuftverkehrStatus-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_LuftverkehrStatus">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Bestand-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Geplant-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_LuftverkehrTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_LuftverkehrTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Flughafen-->
+      </enumeration>
+      <enumeration value="1001">
+        <!--Verkehrsflughafen-->
+      </enumeration>
+      <enumeration value="1002">
+        <!--Regionalflughafen-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Verkehrslandeplatz-->
+      </enumeration>
+      <enumeration value="2001">
+        <!--Regionalflugplatz-->
+      </enumeration>
+      <enumeration value="2002">
+        <!--SonstigerFlugplatz-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Bauschutzbereich-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Schienenverkehr-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Schienenverkehr" type="xplanNSM:RP_NSM_SchienenverkehrType" substitutionGroup="xplan:RP_Verkehr" />
+  <complexType name="RP_NSM_SchienenverkehrType">
+    <complexContent>
+      <extension base="xplan:RP_VerkehrType">
+        <sequence>
+          <element name="schienenverkehrTyp" minOccurs="0" type="xplanNSM:RP_NSM_SchienenverkehrTypen" />
+          <element name="sonstTyp" minOccurs="0" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <kit:referenzierteCodelist>xplanNSM:RP_NSM_SonstSchienenverkehrTypen</kit:referenzierteCodelist>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="status" minOccurs="0" type="xplanNSM:RP_NSM_SchienenverkehrStatus" />
+          <element name="bezeichnung" minOccurs="0" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_SchienenverkehrStatus-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_SchienenverkehrStatus">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Bestand-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Geplant-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_SchienenverkehrTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_SchienenverkehrTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Haupteisenbahnstrecke-->
+      </enumeration>
+      <enumeration value="1001">
+        <!--Haupteisenbahnstrecke_Zwei_Mehrgleisig-->
+      </enumeration>
+      <enumeration value="1002">
+        <!--Haupteisenbahnstrecke_Eingleisig-->
+      </enumeration>
+      <enumeration value="1003">
+        <!--GrossraeumigesSchienennetz-->
+      </enumeration>
+      <enumeration value="1004">
+        <!--UeberregionalesSchienennetz-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--SonstigeEisenbahnstrecke-->
+      </enumeration>
+      <enumeration value="2001">
+        <!--RegionalesSchienennetz-->
+      </enumeration>
+      <enumeration value="2002">
+        <!--OhneBetrieb_Trassensicherung-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Stadtbahn-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--AnschlussgleisFuerIndustrieUndGewerbe-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--BahnhofMitFernverkehrsfunktion-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--BahnhofMitVerknuepfungsfunktionFuerOEPNV-->
+      </enumeration>
+      <enumeration value="7000">
+        <!--BahnhofHaltepunkt-->
+      </enumeration>
+      <enumeration value="8000">
+        <!--ElektrischerBetrieb-->
+      </enumeration>
+      <enumeration value="8001">
+        <!--ZuElektrifizieren-->
+      </enumeration>
+      <enumeration value="8002">
+        <!--VerbesserungLeistungsfaehigkeit-->
+      </enumeration>
+      <enumeration value="9000">
+        <!--ParkAndRide_BikeAndRide-->
+      </enumeration>
+      <enumeration value="10000">
+        <!--Infrastrukturkorridor-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_SonstVerkehr-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_SonstVerkehr" type="xplanNSM:RP_NSM_SonstVerkehrType" substitutionGroup="xplan:RP_Verkehr" />
+  <complexType name="RP_NSM_SonstVerkehrType">
+    <complexContent>
+      <extension base="xplan:RP_VerkehrType">
+        <sequence>
+          <element name="sonstVerkehrTyp" minOccurs="0" type="xplanNSM:RP_NSM_SonstVerkehrTypen" />
+          <element name="bezeichnung" minOccurs="0" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_SonstVerkehrTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_SonstVerkehrTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Gueterverkehrszentrum-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--RegionalesGueterverkehrszentrum-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Tunnel-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--NeueVerkehrstechniken-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Strassenverkehr-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Strassenverkehr" type="xplanNSM:RP_NSM_StrassenverkehrType" substitutionGroup="xplan:RP_Verkehr" />
+  <complexType name="RP_NSM_StrassenverkehrType">
+    <complexContent>
+      <extension base="xplan:RP_VerkehrType">
+        <sequence>
+          <element name="strassenverkehrTyp" minOccurs="0" type="xplanNSM:RP_NSM_StrassenverkehrTypen" />
+          <element name="sonstTyp" minOccurs="0" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <kit:referenzierteCodelist>xplanNSM:RP_NSM_SonstStrassenverkehrTypen</kit:referenzierteCodelist>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="status" minOccurs="0" type="xplanNSM:RP_NSM_StrassenverkehrStatus" />
+          <element name="bezeichnung" minOccurs="0" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_StrassenverkehrStatus-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_StrassenverkehrStatus">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Bestand-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Geplant-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--AusbauGeplant-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Geplant_LinienfuehrungOffen-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_StrassenverkehrTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_StrassenverkehrTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Autobahn_sechsstreifig-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Autobahn_vierstreifig-->
+      </enumeration>
+      <enumeration value="2001">
+        <!--GrossraeumigesStrassennetz-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Hauptverkehrsstrasse_vierstreifig-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Hauptverkehrsstrasse-->
+      </enumeration>
+      <enumeration value="4001">
+        <!--UeberregionalesStrassennetz-->
+      </enumeration>
+      <enumeration value="4002">
+        <!--Hauprverkehrsstrasse_Problembereich-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--StrasseVonRegionalerBedeutung-->
+      </enumeration>
+      <enumeration value="5001">
+        <!--RegionalesStrassennetz-->
+      </enumeration>
+      <enumeration value="5002">
+        <!--StrasseVonRegionalerBedeutung_Problembereich-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--BedeutsamesFlaechenerschliessendesStrassennetz-->
+      </enumeration>
+      <enumeration value="7000">
+        <!--Faehrverbindung-->
+      </enumeration>
+      <enumeration value="8000">
+        <!--Anschlussstelle-->
+      </enumeration>
+      <enumeration value="9000">
+        <!--Strassentunnel-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_Wasserverkehr-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_Wasserverkehr" type="xplanNSM:RP_NSM_WasserverkehrType" substitutionGroup="xplan:RP_Verkehr" />
+  <complexType name="RP_NSM_WasserverkehrType">
+    <complexContent>
+      <extension base="xplan:RP_VerkehrType">
+        <sequence>
+          <element name="wasserverkehrTyp" minOccurs="0" type="xplanNSM:RP_NSM_WasserverkehrTypen" />
+          <element name="sonstTyp" minOccurs="0" type="gml:CodeType">
+            <annotation>
+              <appinfo>
+                <kit:referenzierteCodelist>xplanNSM:RP_NSM_SonstWasserverkehrTypen</kit:referenzierteCodelist>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="status" minOccurs="0" type="xplanNSM:RP_NSM_WasserverkehrStatus" />
+          <element name="bezeichnung" minOccurs="0" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_WasserverkehrStatus-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_WasserverkehrStatus">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Bestand-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Geplant-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_WasserverkehrTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_WasserverkehrTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Seehafen_Binnenhafen-->
+      </enumeration>
+      <enumeration value="1001">
+        <!--HafenVonUeberregionalerBedeutung-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--HafenVonRegionalerBedeutung-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--Hafen-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--Sportboothafen-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--Umschlagplatz-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--Schleuse_Hebewerk-->
+      </enumeration>
+      <enumeration value="7000">
+        <!--Schifffahrt-->
+      </enumeration>
+      <enumeration value="7001">
+        <!--WichtigerSchifffahrtsweg-->
+      </enumeration>
+      <enumeration value="7002">
+        <!--SonstigerSchifffahrtsweg-->
+      </enumeration>
+      <enumeration value="8000">
+        <!--UeberregionaleFaehrverbindung-->
+      </enumeration>
+      <enumeration value="9000">
+        <!--Reede-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_AchsenTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_AchsenTypen">
+    <restriction base="string">
+      <enumeration value="10000">
+        <!--Siedlungsachse-->
+      </enumeration>
+      <enumeration value="20001">
+        <!--Landesentwicklungsachse-->
+      </enumeration>
+      <enumeration value="20002">
+        <!--Achsengrundrichtung-->
+      </enumeration>
+      <enumeration value="20003">
+        <!--AeusserSiedlungsachsenSchwerpunkt-->
+      </enumeration>
+      <enumeration value="20004">
+        <!--GrenzeWirtschaftsraum-->
+      </enumeration>
+      <enumeration value="20005">
+        <!--AbgrenzungEntwicklungEntlastungsOrte-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_ASB-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_ASB" type="xplanNSM:RP_NSM_ASBType" substitutionGroup="xplan:RP_GemeindeFunktionSiedlungsentwicklung" />
+  <complexType name="RP_NSM_ASBType">
+    <complexContent>
+      <extension base="xplan:RP_GemeindeFunktionSiedlungsentwicklungType">
+        <sequence>
+          <element name="zweckbindungASB" minOccurs="0" type="xplanNSM:RP_NSM_ASB_Zweckbindungen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_ASB_Zweckbindungen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_ASB_Zweckbindungen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Wohnfunktion-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--GewerbeDienstleistungsfunktion-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--WohnGewerbeDienstleistungsfunktion-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--UeberoertlVersorgungsfunktionLaendlRaum-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--Baugebietsgrenze-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--Siedlungsgebiet-->
+      </enumeration>
+      <enumeration value="6001">
+        <!--Siedlungsschwerpunkt-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_GIB-->
+  <!--=========================================================================================-->
+  <element name="RP_NSM_GIB" type="xplanNSM:RP_NSM_GIBType" substitutionGroup="xplan:RP_GemeindeFunktionSiedlungsentwicklung" />
+  <complexType name="RP_NSM_GIBType">
+    <complexContent>
+      <extension base="xplan:RP_GemeindeFunktionSiedlungsentwicklungType">
+        <sequence>
+          <element name="zweckbindungGIB" minOccurs="0" type="xplanNSM:RP_NSM_GIB_Zweckbindungen" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_GIB_Zweckbindungen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_GIB_Zweckbindungen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--HafenorientierteWirtschaftlicheAnlagen-->
+      </enumeration>
+      <enumeration value="IndustrielleAnlagen" />
+      <enumeration value="3000">
+        <!--GewerblicherBereich-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--GewerbeIndustrie-->
+      </enumeration>
+      <enumeration value="4001">
+        <!--BedeutsamerEntwicklungsstandortGewerbeIndustrie-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_RaumkategorieTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_RaumkategorieTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--Ordnungsraum-->
+      </enumeration>
+      <enumeration value="1001">
+        <!--OrdnungsraumTourismusErholung-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Verdichtungsraum-->
+      </enumeration>
+      <enumeration value="3000">
+        <!--LaendlicherRaum-->
+      </enumeration>
+      <enumeration value="4000">
+        <!--StadtUmlandRaum-->
+      </enumeration>
+      <enumeration value="4001">
+        <!--StadtUmlandBereichLaendlRaum-->
+      </enumeration>
+      <enumeration value="5000">
+        <!--AbgrenzungOrdnungsraum-->
+      </enumeration>
+      <enumeration value="6000">
+        <!--Oberbereichsgrenze-->
+      </enumeration>
+      <enumeration value="7000">
+        <!--Mittelbereichsgrenze-->
+      </enumeration>
+      <enumeration value="8000">
+        <!--Nahbereichsgrenze-->
+      </enumeration>
+      <enumeration value="9000">
+        <!--DuennbesiedeltesAbgelegenesGebiet-->
+      </enumeration>
+      <enumeration value="10000">
+        <!--Umkreis_10_km-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_SperrgebietTypen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_SperrgebietTypen">
+    <restriction base="string">
+      <enumeration value="1000">
+        <!--SondergebietBund-->
+      </enumeration>
+      <enumeration value="1001">
+        <!--GrosseMilitaerischeAnlage-->
+      </enumeration>
+      <enumeration value="2000">
+        <!--Warngebiet-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_NSM_ZentralerOrtFunktionen-->
+  <!--=========================================================================================-->
+  <simpleType name="RP_NSM_ZentralerOrtFunktionen">
+    <restriction base="string">
+      <enumeration value="10001">
+        <!--GemeinsamesOberzentrum-->
+      </enumeration>
+      <enumeration value="20001">
+        <!--MittelzentrumMitOberzentralerTeilfunktion-->
+      </enumeration>
+      <enumeration value="20002">
+        <!--MittelzentrumImVerdichtungsraum-->
+      </enumeration>
+      <enumeration value="30001">
+        <!--GrundzentrumMitMittelzentralerTeilfunktion-->
+      </enumeration>
+      <enumeration value="30002">
+        <!--Unterzentrum-->
+      </enumeration>
+      <enumeration value="30003">
+        <!--UnterzentrumMitMittelzentralerTeilfunktion-->
+      </enumeration>
+      <enumeration value="40000">
+        <!--Stadtrandkern_1_Ordnung-->
+      </enumeration>
+      <enumeration value="40001">
+        <!--Stadtrandkern_1_OrdnungMitMittelzentralerTeilfunktion-->
+      </enumeration>
+      <enumeration value="40002">
+        <!--Stadtrandkern_2_Ordnung-->
+      </enumeration>
+      <enumeration value="50000">
+        <!--LaendlicherZentralort-->
+      </enumeration>
+      <enumeration value="99991">
+        <!--ZentralesSiedlungsgebiet-->
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--RP_ZentralerOrt-->
+  <!--=========================================================================================-->
+  <element name="detailFunktion" type="xplanNSM:RP_NSM_ZentralerOrtFunktionen" substitutionGroup="xplan:_GenericApplicationPropertyOfRP_ZentralerOrt" />
+</schema>

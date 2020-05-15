@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="PlanzListe">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Planz" minOccurs="0" maxOccurs="unbounded"/>                  
+            </xs:sequence>
+            <xs:attribute name="gmlTyp" type="GmlTypType" use="required"/>
+            <xs:attribute name="ausgabePfad" type="xs:string" use="required"/>           
+            <xs:attribute name="pngFolder" type="xs:string" use="optional"/>           
+            <xs:attribute name="svgFolder" type="xs:string" use="optional"/>            
+            <xs:attribute name="indexDateiName" type="xs:string" use="optional"/>          
+            <xs:attribute name="sizeX" type="xs:double" use="optional"/> 
+            <xs:attribute name="sizeY" type="xs:double" use="optional"/> 
+            <xs:attribute name="delta" type="xs:double" use="optional"/>
+            <xs:attribute name="pixelX" type="xs:int" use="optional"/> 
+            <xs:attribute name="pixelY" type="xs:int" use="optional"/> 
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:simpleType name="GmlTypType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="XPLANGML_V2"/>
+            <xs:enumeration value="XPLANGML_V3"/>
+            <xs:enumeration value="XPLANGML_V4"/>
+            <xs:enumeration value="XPLANGML_V5"/>
+            <xs:enumeration value="INSPIRE_PLU"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:element name="Planz">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="PlanzFlaechenDarst" minOccurs="0" maxOccurs="unbounded"/>                
+                <xs:element  minOccurs="0" maxOccurs="unbounded" ref="PlanzLinienDarst"/>                
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="PlanzPunktDarst"/>                
+            </xs:sequence>
+            
+            <xs:attribute name="gmlClass" type="xs:string" use="required"/>
+            <xs:attribute name="selectAttribut1" type="xs:string" use="optional"/>
+            <xs:attribute name="selectAttribut2" type="xs:string" use="optional"/>
+            <xs:attribute name="selectAttribut3" type="xs:string" use="optional"/>
+            <xs:attribute name="symbolAttribut" type="xs:string" use="optional"/>        
+            <xs:attribute name="sizeX" type="xs:double" use="optional"/>
+            <xs:attribute name="sizeY" type="xs:double" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="PlanzFlaechenDarst">
+        <xs:complexType>  
+            <xs:attribute name="selectAttribut1Wert" type="xs:string" use="optional"/>         
+            <xs:attribute name="selectAttribut2Wert" type="xs:string" use="optional"/>
+            <xs:attribute name="selectAttribut3Wert" type="xs:string" use="optional"/>
+              <xs:attribute name="symbolAttributWert" type="xs:string" use="optional"/>
+            <xs:attribute name="symbolScale" type="xs:decimal" use="optional"/>
+      </xs:complexType>
+    </xs:element>
+   
+    <xs:element name="PlanzLinienDarst">
+        <xs:complexType>
+            <xs:attribute name="selectAttribut1Wert" type="xs:string" use="optional"/>           
+            <xs:attribute name="selectAttribut2Wert" type="xs:string" use="optional"/>    
+            <xs:attribute name="symbolAttributWert" type="xs:string" use="optional"/>
+            <xs:attribute name="symbolScale" type="xs:decimal" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="PlanzPunktDarst">
+        <xs:complexType>
+            <xs:attribute name="selectAttribut1Wert" type="xs:string" use="optional"/>          
+            <xs:attribute name="selectAttribut2Wert" type="xs:string" use="optional"/> 
+            <xs:attribute name="symbolAttributWert" type="xs:string" use="optional"/>
+            <xs:attribute name="symbolScale" type="xs:decimal" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:48:27-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="BP_Status">
+  <description>Codeliste der möglichen Stati eines BPlans</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:BP_Status</identifier>
+  <name>xplan:BP_Status</name>
+</Dictionary>

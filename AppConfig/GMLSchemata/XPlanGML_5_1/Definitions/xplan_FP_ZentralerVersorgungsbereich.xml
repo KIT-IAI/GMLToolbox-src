@@ -1,0 +1,19 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:35-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_ZentralerVersorgungsbereich">
+  <gml:description>Darstellung nach § 5 Abs. 2 Nr. 2d (Ausstattung des Gemeindegebietes mit zentralen Versorgungsbereichen).
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_ZentralerVersorgungsbereich</gml:identifier>
+  <gml:name>xplan:FP_ZentralerVersorgungsbereich</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_ZentralerVersorgungsbereich_auspraegung">
+      <gml:description>Über eine Codeliste definierte Ausprägung eines zentralen Versorgungsbereiches.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_ZentralerVersorgungsbereich:attribute:auspraegung</gml:identifier>
+      <gml:name>xplan:auspraegung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_ZentralerVersorgungsbereichAuspraegung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Ueberlagerungsobjekt" />
+</TypeDefinition>

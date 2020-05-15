@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KmlVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/XPlanung/XPlanGML-Toolbox_Executable/XSD/KmlParameter.xsd">
+
+    <KmlKlassenVisualParams>
+        <klassenName>bml:Borehole</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="0" b="0"/>            
+        </polyVisualParams>
+        
+        <lineVisualParams>
+            <lineColor r="255" g="0" b="0"/>
+            <physicalWidth>1</physicalWidth>
+        </lineVisualParams>
+    </KmlKlassenVisualParams>
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bml:Interval</klassenName>
+        <polyVisualParams selectAttributName="bml:stratigraphy::bml:chronoStratigraphy">
+            <fillColor r="0" g="0" b="0"/>
+            <colorTableEntry attributWert="PH" r="154" g="217" b="221" />
+            <colorTableEntry attributWert="N" r="255" g="230" b="25" />
+            <colorTableEntry attributWert="O3" r="127" g="202" b="147" />
+            <colorTableEntry attributWert="O3H" r="166" g="219" b="171" />
+            <colorTableEntry attributWert="O3K" r="153" g="214" b="159" />
+            <colorTableEntry attributWert="O3S" r="140" g="208" b="148" />
+            <colorTableEntry attributWert="O2" r="77" g="180" b="126" />
+            <colorTableEntry attributWert="O2D" r="116" g="198" b="156" />
+            <colorTableEntry attributWert="O2Dp" r="102" g="192" b="146" />
+            <colorTableEntry attributWert="O1" r="26" g="157" b="111" />
+            <colorTableEntry attributWert="O1F" r="65" g="176" b="135" />
+            <colorTableEntry attributWert="O1T" r="51" g="169" b="128" />
+            <colorTableEntry attributWert="N2" r="255" g="242" b="174" />
+            <colorTableEntry attributWert="Cb" r="127" g="160" b="86" />
+            <colorTableEntry attributWert="CbF" r="179" g="224" b="149" />
+            <colorTableEntry attributWert="Cb2" r="153" g="192" b="120" />
+            <colorTableEntry attributWert="CbT" r="140" g="176" b="108" />
+            <colorTableEntry attributWert="PR" r="247" g="53" b="99" />
+            <colorTableEntry attributWert="NP" r="254" g="179" b="66" />
+            <colorTableEntry attributWert="NPIII" r="255" g="230" b="128" />
+            <colorTableEntry attributWert="NPII" r="255" g="217" b="115" />
+            <colorTableEntry attributWert="NPI" r="254" g="191" b="89" />
+            <colorTableEntry attributWert="MP" r="242" g="178" b="115" />
+            <colorTableEntry attributWert="N1" r="255" g="255" b="0" />
+            <colorTableEntry attributWert="PP" r="247" g="67" b="112" />
+            <colorTableEntry attributWert="AR" r="240" g="4" b="127" />
+            <colorTableEntry attributWert="nb" r="255" g="255" b="255" />
+            <colorTableEntry attributWert="Q1G" r="255" g="255" b="204" />
+            <colorTableEntry attributWert="Cb3" r="166" g="207" b="134" />
+            <colorTableEntry attributWert="E" r="253" g="154" b="82" />
+            <colorTableEntry attributWert="E3" r="253" g="192" b="122" />
+            <colorTableEntry attributWert="E2" r="253" g="180" b="108" />
+            <colorTableEntry attributWert="E1" r="253" g="167" b="95" />
+            <colorTableEntry attributWert="MZ" r="103" g="197" b="202" />
+            <colorTableEntry attributWert="K" r="127" g="198" b="78" />
+            <colorTableEntry attributWert="K2" r="166" g="216" b="74" />
+            <colorTableEntry attributWert="CZ" r="242" g="249" b="29" />
+            <colorTableEntry attributWert="K2M" r="242" g="250" b="140" />
+            <colorTableEntry attributWert="K2Ca" r="230" g="244" b="127" />
+            <colorTableEntry attributWert="K2S" r="217" g="239" b="116" />
+            <colorTableEntry attributWert="K2Cc" r="204" g="233" b="104" />
+            <colorTableEntry attributWert="K2T" r="191" g="222" b="83" />
+            <colorTableEntry attributWert="K2Cn" r="179" g="222" b="83" />
+            <colorTableEntry attributWert="K1" r="140" g="205" b="87" />
+            <colorTableEntry attributWert="K1Al" r="204" g="234" b="151" />
+            <colorTableEntry attributWert="K1Ap" r="191" g="228" b="138" />
+            <colorTableEntry attributWert="K1Ba" r="179" g="223" b="127" />
+            <colorTableEntry attributWert="Q" r="249" g="249" b="127" />
+            <colorTableEntry attributWert="K1H" r="168" g="217" b="117" />
+            <colorTableEntry attributWert="K1V" r="153" g="211" b="106" />
+            <colorTableEntry attributWert="K1Be" r="140" g="205" b="96" />
+            <colorTableEntry attributWert="J" r="52" g="197" b="202" />
+            <colorTableEntry attributWert="J3" r="52" g="178" b="201" />
+            <colorTableEntry attributWert="J3T" r="217" g="241" b="247" />
+            <colorTableEntry attributWert="J3K" r="204" g="235" b="244" />
+            <colorTableEntry attributWert="J3O" r="191" g="231" b="241" />
+            <colorTableEntry attributWert="J2" r="128" g="207" b="216" />
+            <colorTableEntry attributWert="J2C" r="191" g="231" b="229" />
+            <colorTableEntry attributWert="Q2" r="254" g="242" b="224" />
+            <colorTableEntry attributWert="J2Bt" r="179" g="226" b="227" />
+            <colorTableEntry attributWert="J2Bj" r="166" g="221" b="224" />
+            <colorTableEntry attributWert="J2A" r="154" g="221" b="224" />
+            <colorTableEntry attributWert="J1" r="66" g="174" b="208" />
+            <colorTableEntry attributWert="J1T" r="153" g="206" b="227" />
+            <colorTableEntry attributWert="J1P" r="128" g="197" b="221" />
+            <colorTableEntry attributWert="J1S" r="103" g="188" b="216" />
+            <colorTableEntry attributWert="J1H" r="78" g="179" b="211" />
+            <colorTableEntry attributWert="T" r="129" g="43" b="146" />
+            <colorTableEntry attributWert="T3" r="189" g="140" b="195" />
+            <colorTableEntry attributWert="Q1" r="255" g="255" b="153" />
+            <colorTableEntry attributWert="T3R" r="227" g="185" b="219" />
+            <colorTableEntry attributWert="T3N" r="214" g="170" b="211" />
+            <colorTableEntry attributWert="T3K" r="201" g="155" b="203" />
+            <colorTableEntry attributWert="T2" r="177" g="104" b="177" />
+            <colorTableEntry attributWert="T2L" r="201" g="131" b="191" />
+            <colorTableEntry attributWert="T2A" r="188" g="117" b="183" />
+            <colorTableEntry attributWert="T1" r="152" g="57" b="153" />
+            <colorTableEntry attributWert="T1O" r="176" g="81" b="165" />
+            <colorTableEntry attributWert="T1I" r="164" g="70" b="159" />
+            <colorTableEntry attributWert="PZ" r="153" g="192" b="141" />
+            <colorTableEntry attributWert="Q1o" r="255" g="242" b="211" />
+            <colorTableEntry attributWert="P" r="240" g="64" b="40" />
+            <colorTableEntry attributWert="P3" r="251" g="167" b="148" />
+            <colorTableEntry attributWert="P3C" r="252" g="192" b="178" />
+            <colorTableEntry attributWert="P3W" r="252" g="180" b="162" />
+            <colorTableEntry attributWert="P2" r="251" g="116" b="92" />
+            <colorTableEntry attributWert="P2C" r="251" g="154" b="133" />
+            <colorTableEntry attributWert="P2W" r="251" g="141" b="118" />
+            <colorTableEntry attributWert="P2R" r="251" g="128" b="105" />
+            <colorTableEntry attributWert="P1" r="239" g="88" b="69" />
+            <colorTableEntry attributWert="P1K" r="227" g="135" b="118" />
+            <colorTableEntry attributWert="Q1m" r="255" g="242" b="199" />
+            <colorTableEntry attributWert="P1Ar" r="227" g="123" b="104" />
+            <colorTableEntry attributWert="P1S" r="227" g="111" b="92" />
+            <colorTableEntry attributWert="P1As" r="227" g="99" b="80" />
+            <colorTableEntry attributWert="C" r="103" g="165" b="153" />
+            <colorTableEntry attributWert="C2" r="153" g="194" b="181" />
+            <colorTableEntry attributWert="C2G" r="204" g="212" b="199" />
+            <colorTableEntry attributWert="C2K" r="191" g="208" b="197" />
+            <colorTableEntry attributWert="C2M" r="179" g="203" b="185" />
+            <colorTableEntry attributWert="C2B" r="153" g="194" b="181" />
+            <colorTableEntry attributWert="C1" r="103" g="143" b="102" />
+            <colorTableEntry attributWert="Q1C" r="255" g="242" b="186" />
+            <colorTableEntry attributWert="C1S" r="191" g="194" b="107" />
+            <colorTableEntry attributWert="C1V" r="166" g="185" b="108" />
+            <colorTableEntry attributWert="C1T" r="140" g="176" b="108" />
+            <colorTableEntry attributWert="D" r="203" g="140" b="55" />
+            <colorTableEntry attributWert="D3" r="241" g="225" b="157" />
+            <colorTableEntry attributWert="D3Fm" r="242" g="237" b="197" />
+            <colorTableEntry attributWert="D3Fr" r="242" g="237" b="173" />
+            <colorTableEntry attributWert="D2" r="241" g="200" b="104" />
+            <colorTableEntry attributWert="D2G" r="241" g="225" b="133" />
+            <colorTableEntry attributWert="D2E" r="242" g="213" b="118" />
+            <colorTableEntry attributWert="B" r="242" g="249" b="29" />
+            <colorTableEntry attributWert="D1" r="229" g="172" b="77" />
+            <colorTableEntry attributWert="D1E" r="229" g="208" b="117" />
+            <colorTableEntry attributWert="D1P" r="229" g="196" b="104" />
+            <colorTableEntry attributWert="D1L" r="229" g="183" b="90" />
+            <colorTableEntry attributWert="S" r="179" g="225" b="182" />
+            <colorTableEntry attributWert="S4" r="230" g="245" b="225" />
+            <colorTableEntry attributWert="S3" r="191" g="230" b="207" />
+            <colorTableEntry attributWert="S2" r="179" g="225" b="194" />
+            <colorTableEntry attributWert="S1" r="153" g="215" b="179" />
+            <colorTableEntry attributWert="O" r="0" g="146" b="112" />  
+        </polyVisualParams>       
+    </KmlKlassenVisualParams>
+    
+    
+</KmlVisualisierung>

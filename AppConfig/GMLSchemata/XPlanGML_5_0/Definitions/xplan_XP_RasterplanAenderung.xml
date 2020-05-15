@@ -1,0 +1,108 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:02-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_RasterplanAenderung">
+  <gml:description>Basisklasse für georeferenzierte Rasterdarstellungen von Änderungen des Basisplans, die nicht in die Rasterdarstellung &lt;i&gt;XP_RasterplanBasis &lt;/i&gt;integriert sind.
+Im Standard sind nur georeferenzierte Rasterpläne zugelassen. Die über &lt;i&gt;refScan &lt;/i&gt;referierte externe Referenz muss deshalb entweder vom Typ "&lt;i&gt;PlanMitGeoreferenz&lt;/i&gt;" sein oder einen WMS-Request enthalten.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung</gml:identifier>
+  <gml:name>xplan:XP_RasterplanAenderung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_nameAenderung">
+      <gml:description>Bezeichnung des Plan-Änderung</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:nameAenderung</gml:identifier>
+      <gml:name>xplan:nameAenderung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_nummerAenderung">
+      <gml:description>Nummer der Änderung</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:nummerAenderung</gml:identifier>
+      <gml:name>xplan:nummerAenderung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_beschreibung">
+      <gml:description>Nähere Beschreibung der Plan-Änderung</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:beschreibung</gml:identifier>
+      <gml:name>xplan:beschreibung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_refBeschreibung">
+      <gml:description>Referenz auf das Beschreibungs-Dokument</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:refBeschreibung</gml:identifier>
+      <gml:name>xplan:refBeschreibung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_ExterneReferenz" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_refBegruendung">
+      <gml:description>Referenz auf das Begründungs-Dokument</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:refBegruendung</gml:identifier>
+      <gml:name>xplan:refBegruendung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_ExterneReferenz" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_refScan">
+      <gml:description>Referenz auf eine Rasterversion der Plan-Änderung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:refScan</gml:identifier>
+      <gml:name>xplan:refScan</gml:name>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_ExterneReferenz" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_refText">
+      <gml:description>Referenz auf die textlichen Inhalte der Planänderung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:refText</gml:identifier>
+      <gml:name>xplan:refText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_ExterneReferenz" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_refLegende">
+      <gml:description>Referenz auf die Legende der Plan-Änderung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:refLegende</gml:identifier>
+      <gml:name>xplan:refLegende</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_ExterneReferenz" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_geltungsbereichAenderung">
+      <gml:description>Räumlicher Bereich des georeferenzierten Rasterbildes, in dem die Änderung wirksam ist.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:geltungsbereichAenderung</gml:identifier>
+      <gml:name>xplan:geltungsbereichAenderung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Flaechengeometrie" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_RasterplanAenderung_besonderheit">
+      <gml:description>Besonderheiten der Änderung</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_RasterplanAenderung:attribute:besonderheit</gml:identifier>
+      <gml:name>xplan:besonderheit</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd"
+ name="StandardProfilBasisschema_3_0">
+    
+    <SrsName>EPSG:4149</SrsName>
+    <SrsName>CH1903</SrsName>
+    
+    <SrsName>EPSG:31466</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK2</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK2*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5676</SrsName>
+   
+    <SrsName>EPSG:31467</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK3</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK3*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5677</SrsName>
+    
+    <SrsName>EPSG:31468</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK4</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK4*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5678</SrsName>
+    
+    <SrsName>EPSG:25828</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM28</SrsName>
+    
+    <SrsName>EPSG:25829</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM29</SrsName>
+    
+    <SrsName>EPSG:25830</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM30</SrsName>
+    
+    <SrsName>EPSG:25831</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM31</SrsName>
+    <SrsName>EPSG:5554</SrsName>
+    
+    <SrsName>EPSG:25832</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM32</SrsName>
+    <SrsName>EPSG:5555</SrsName>
+    
+    <SrsName>EPSG:25833</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM33</SrsName>
+    <SrsName>EPSG:5556</SrsName>
+    
+    <SrsName>EPSG:325833</SrsName>
+
+    <SrsName>EPSG:25834</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM34</SrsName>
+    
+    <SrsName>EPSG:25835</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM35</SrsName>
+    
+    <SrsName>EPSG:25836</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM36</SrsName>
+    
+    <SrsName>EPSG:7415</SrsName>
+    <SrsName>EPSG:28992</SrsName>
+    
+    
+    <UomLength>m</UomLength>
+    <UomArea>m2</UomArea>
+    <UomVolume>m3</UomVolume>
+    <UomAngle>grad</UomAngle>
+    <UomAngle>urn:adv:uom:grad</UomAngle>
+    
+    <!--GlobalRule globalRuleId="EnumCheck" globalRuleErrorId="2.3.1"/>
+    <GlobalRule globalRuleId="UomTest" globalRuleErrorId="2.1.2.1"/>
+    <GlobalRule globalRuleId="FlaechenschlussTest" globalRuleErrorId="2.2.1.1"/>
+    <GlobalRule globalRuleId="FlaechenTest" globalRuleErrorId="2.2.2.1"/>
+    <GlobalRule globalRuleId="CoordinateReferenceSystemCheck" globalRuleErrorId="2.1.3.1"/-->
+    
+    <!--  XP_PlanType -->
+    <Rule superclassType="XP_PlanType" id="3.1.1.1">
+        <description>Die Relationen refLegende, refBegruendung, refExternalCodeList, refBeschreibung, informell, rechtverbindlich dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="rechtsverbindlich" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule  superclassType="XP_PlanType" id="3.1.1.1">
+        <description>Die Relationen refLegende, refBegruendung, refExternalCodeList, refBeschreibung, informell, rechtverbindlich dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="informell" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="XP_PlanType" id="3.1.1.1">
+        <description>Die Relationen refLegende, refBegruendung, refExternalCodeList, refBeschreibung, informell, rechtverbindlich dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="refLegende" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule  superclassType="XP_PlanType" id="3.1.1.1">
+        <description>Die Relationen refLegende, refBegruendung, refExternalCodeList, refBeschreibung, informell, rechtverbindlich dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="refBegruendung" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule  superclassType="XP_PlanType" id="3.1.1.1">
+        <description>Die Relationen refLegende, refBegruendung, refExternalCodeList, refBeschreibung, informell, rechtverbindlich dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="refExternalCodeList" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule  superclassType="XP_PlanType" id="3.1.1.1">
+        <description>Die Relationen refLegende, refBegruendung, refExternalCodeList, refBeschreibung, informell, rechtverbindlich dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="refBeschreibung"  minOccurs="0" maxOccurs="1">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="XP_PlanType" id="3.1.1.5">
+        <description>Die Relationen refPlangrundlage und refRechtsplan dürfen nur auf Instanzen der Klasse XP_ExterneReferenzPlan verweisen</description>
+        <Required>
+            <RelationFilter relationName="refPlangrundlage" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_ExterneReferenzPlanType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule  superclassType="XP_PlanType" id="3.1.1.5">
+        <description>Die Relationen refPlangrundlage und refRechtsplan dürfen nur auf Instanzen der Klasse XP_ExterneReferenzPlan verweisen</description>
+        <Required>
+            <RelationFilter relationName="refRechtsplan"  minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_ExterneReferenzPlanType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule  superclassType="XP_PlanType" id="3.1.1.2">
+        <description>Die Relation texte darf nur auf Instanzen der Klasse XP_TextAbschnitt verweisen</description>
+        <Required>
+            <RelationFilter relationName="texte" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_TextAbschnittType</GmlType>
+            </RelationFilter>        
+        </Required>
+    </Rule>
+    
+    <Rule  superclassType="XP_PlanType" id="3.1.1.3">
+        <description>Die Relation begruendungsTexte darf nur auf Instanzen der Klasse XP_BegruendungAbschnitt verweisen</description>
+        <Required>
+            <RelationFilter relationName="begruendungsTexte"  minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_BegruendungAbschnittType</GmlType>
+            </RelationFilter>        
+        </Required>
+    </Rule>    
+    
+    <Rule superclassType="XP_PlanType" id="3.1.1.4">
+        <description>Die Relation verfahrensMerkmale darf nur auf Instanzen der Klasse XP_VerfahrensMerkmal verweisen</description>
+        <Required>
+            <RelationFilter relationName="verfahrensMerkmale"  minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_VerfahrensMerkmalType</GmlType>
+            </RelationFilter>        
+        </Required>
+    </Rule>    
+   
+   <!--  XP_BereichType -->
+    <Rule superclassType="XP_BereichType">
+        <Required>
+            <AttributeFilter attributeName="nummer" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="XP_BereichType" id="3.1.2.1">
+        <description>Die Relation praesentationsobjekt darf nur auf Instanzen von Klassen verweisen, die von  XP_AbstraktesPraesentationsobjekt abgeleitet sind</description>
+        <Required>
+            <RelationFilter relationName="praesentationsobjekt" minOccurs="0" maxOccurs="unbound">
+                <GmlSuperType>XP_AbstraktesPraesentationsobjektType</GmlSuperType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="XP_BereichType" id="3.1.2.2">
+        <description>Die Relation rasterBasis darf nur auf Instanzen der Klasse XP_RasterplanBasis verweisen</description>
+        <Required>
+            <RelationFilter relationName="rasterBasis" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_RasterplanBasisType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+    <!--  XP_ObjektType -->
+    <Rule superclassType="XP_ObjektType" id="3.1.3.4">
+        <description>Die Relation hatGenerAttribut darf nur auf Objekte verweisen, die von der abstrakten Oberklasse  XP_GenerAttribut abgeleitet sind</description>
+        <Required>
+            <RelationFilter relationName="hatGenerAttribut" minOccurs="0" maxOccurs="unbound">
+                <GmlSuperType>XP_GenerAttributType</GmlSuperType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="XP_ObjektType" id="3.1.3.2">
+        <description>Die Relation refTextInhalt darf nur auf Instanzen der Klasse XP_TextAbschnitt verweisen</description>
+        <Required>
+            <RelationFilter relationName="refTextInhalt" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_TextAbschnittType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule superclassType="XP_ObjektType" id="3.1.3.3">
+        <description>Die Relation reBegruendungInhalt darf nur auf Instanzen der Klasse XP_BegruendungAbschnitt verweisen</description>
+        <Required>
+            <RelationFilter relationName="refBegruendungInhalt" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_BegruendungAbschnittType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule superclassType="XP_ObjektType" id="3.1.3.1">
+        <description>Die Relationen informell und rechtverbindlich dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="informell" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="XP_ObjektType" id="3.1.3.1">
+        <description>Die Relationen informell und rechtverbindlich dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="rechtsverbindlich" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>       
+
+    <!--  Generische Attribute  -->
+   <Rule class="XP_DoubleAttribut">
+       <Required>
+           <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/>          
+       </Required>
+   </Rule>
+    
+    <Rule class="XP_IntegerAttribut">
+        <Required>
+            <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>    
+    
+    <Rule class="XP_URLAttribut">
+        <Required>
+            <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/> 
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_StringAttribut">
+        <Required>
+            <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_DatumAttribut">
+        <Required>
+            <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_TextAbschnitt  -->
+    
+    <Rule class="XP_TextAbschnitt" id="3.2.1.1">
+        <description>Das Attribut text oder die Relation refText muss belegt sein, es dürfen aber nicht gleichzeitig text und refText belegt sein</description>
+        <Required>
+            <RelationFilter relationName="refText" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="XP_TextAbschnitt" id="3.2.1.1">
+        <description>Das Attribut text oder die Relation refText muss belegt sein, es dürfen aber nicht gleichzeitig text und refText belegt sein</description>
+        <Required>
+            <GroupFilter combination="XOR">
+                <AttributeName>text</AttributeName>
+                <RelationName>refText</RelationName>
+            </GroupFilter>
+        </Required>
+    </Rule>
+    
+    <!-- XP_BegruendungAbschnitt  -->
+    <Rule class="XP_BegruendungAbschnitt" id="3.2.2.2">
+        <description>Die Relation refText muss auf eine Instanz der Klasse XP_ExterneReferenz </description>
+        <Required>
+            <RelationFilter relationName="refText" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_BegruendungAbschnitt" id="3.2.2.1">
+        <description>Das Attribut text oder die Relation refText muss belegt sein, es dürfen aber nicht gleichzeitig text und refText belegt sein</description>
+        <Required>
+            <GroupFilter combination="XOR">
+                <AttributeName>text</AttributeName>
+                <RelationName>refText</RelationName>
+            </GroupFilter>
+        </Required>
+    </Rule>
+    
+        <!--  XP_AbstraktesPraesentationsobjektType -->
+    <Rule  superclassType="XP_AbstraktesPraesentationsobjektType">
+        <Required>
+            <AttributeFilter attributeName="stylesheetId" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+          
+    <Rule superclassType="XP_AbstraktesPraesentationsobjektType" id="3.1.4.1">
+        <description>Wenn die Relation dientZurDarstellungVon belegt ist, dann muss auch das Attribut art belegt sein</description>
+        <If>
+            <RelationFilter relationName="dientZurDarstellungVon" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="art" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+            
+<!--  XP_RasterplanBasis -->
+    <Rule class="XP_RasterplanBasis" id="3.3.1.1">
+        <description>Die Relationen refText und refLegende dürfen nur auf Instanzen der Klasse XP_ExterneReferenz verweisen</description>
+        <Required>
+            <RelationFilter relationName="refText" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>            
+            
+            <RelationFilter relationName="refLegende" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>          
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_RasterplanBasis" id="3.3.1.2">
+        <description>Die Relation refScan darf nur auf eine Instanz der Klasse XP_ExterneReferenzPlan verweisen</description>
+    <Required>
+        <RelationFilter relationName="refScan" minOccurs="1" maxOccurs="unbound">
+            <GmlType>XP_ExterneReferenzPlanType</GmlType>
+        </RelationFilter>
+    </Required>
+    </Rule>    
+    
+    
+    <!--  XP_Hoehenangabe -->
+    <Rule class="XP_Hoehenangabe" id="3.2.3.1">
+        <description>Wenn das Attribut abweichenderHoeherbezug belegt ist, muss hoehenbezug unbelegt sein oder den Wert 3000 (abweichend) haben</description>
+        <If>
+            <AttributeFilter attributeName="abweichenderHoeherbezug" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="hoehenbezug" minOccurs="0" maxOccurs="1">
+                    <AttributeValue>3000</AttributeValue>
+                </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_Hoehenangabe" id="3.2.3.2">
+        <description>Die Attribute h, hMin, hMax, hZwingend dürfen nur in folgender Kombination belegt werden:
+            -	h
+            -	hMin
+            -	hMin und hMax
+            -	hZwingend
+        </description>
+        <If>
+            <AttributeFilter attributeName="h" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="hMin" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hMax" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hZwingend" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_Hoehenangabe"  id="3.2.3.2">
+        <description>Die Attribute h, hMin, hMax, hZwingend dürfen nur in folgender Kombination belegt werden:
+            -	h
+            -	hMin
+            -	hMin und hMax
+            -	hZwingend
+        </description>
+        <If>
+            <AttributeFilter attributeName="hMin" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="h" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hZwingend" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_Hoehenangabe"  id="3.2.3.2">
+        <description>Die Attribute h, hMin, hMax, hZwingend dürfen nur in folgender Kombination belegt werden:
+            -	h
+            -	hMin
+            -	hMin und hMax
+            -	hZwingend
+        </description>
+        <If>
+            <AttributeFilter attributeName="hMax" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="hMin" minOccurs="1" maxOccurs="1"/>
+            <AttributeFilter attributeName="h" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hZwingend" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>    
+    
+    <Rule class="XP_Hoehenangabe"  id="3.2.3.2">
+        <description>Die Attribute h, hMin, hMax, hZwingend dürfen nur in folgender Kombination belegt werden:
+            -	h
+            -	hMin
+            -	hMin und hMax
+            -	hZwingend
+        </description>
+        <If>
+            <AttributeFilter attributeName="hZwingend" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="hMin" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hMax" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="h" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>    
+    
+    <Rule class="XP_Grenze">
+        <If>
+            <AttributeFilter attributeName="besondererTyp" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="typ" minOccurs="0" maxOccurs="1">
+            <AttributeValue>9999</AttributeValue>                      
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+</Profil>

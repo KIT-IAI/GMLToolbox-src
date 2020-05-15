@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Parameter zur SVG-Visualisierung eines Regionalen Entwicklungsplans Rheinland-Pfalz-->
+
+<SvgVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="SvgParameter.xsd"
+    gmlType="XPlanGML"
+    Masstab="1:2000"
+    datum="2009-09-18"
+    breiteUeberschrift="800"
+    hoeheUeberschrift="30" 
+    gmlVersion="3.0">
+    
+    <!--RP_Plan -->
+    <GmlKlassenVisual gmlKlassenName="RP_Plan" priorityFlaechendarstellung="50">
+        <FlaechenDarstellung default="true">
+            <FlaechenParams class="RpRaeumlicherGeltungsbereichA" clip="false"/>
+            <FlaechenParams class="RpRaeumlicherGeltungsbereichB" clip="false"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>        
+    
+    <Style styleName="RpRaeumlicherGeltungsbereichA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="0" b="0"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>10</Stroke-dasharray>
+        <Stroke-dasharray>3</Stroke-dasharray>
+        <Stroke-dashoffset>1</Stroke-dashoffset>
+    </Style>
+    
+    <Style styleName="RpRaeumlicherGeltungsbereichB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>0.5</Stroke-width>
+    </Style>
+    
+    <!-- RP_RLP_ZentrlerOrtBesondFunktion Punktdarstellung -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_ZentralerOrtBesondFunktion"  priorityPunktdarstellung="30" selectAttribut1="funktion" selectAttribut2="kooperation">
+        <PunktDarstellung symbol="SymbolOberzentrum">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>NNNN</SelectAttributWert2>
+        </PunktDarstellung>
+        
+        <PunktDarstellung symbol="SymbolOberzentrumFreiwilligeKooperation">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+        </PunktDarstellung>        
+        
+        <PunktDarstellung symbol="SymbolOberzentrumVerpflichtendeKooperation">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+        </PunktDarstellung>        
+        
+        <PunktDarstellung symbol="SymbolMittelzentrum">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>NNNN</SelectAttributWert2>
+        </PunktDarstellung>
+        
+        <PunktDarstellung symbol="SymbolMittelzentrumFreiwilligeKooperation">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+        </PunktDarstellung>
+        
+        <PunktDarstellung symbol="SymbolMittelzentrumVerpflichtendeKooperation">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+        </PunktDarstellung>        
+        
+        <PunktDarstellung symbol="SymbolGrundzentrum">
+            <SelectAttributWert1>3000</SelectAttributWert1>
+            <SelectAttributWert2>NNNN</SelectAttributWert2>
+        </PunktDarstellung>
+        
+        <PunktDarstellung symbol="SymbolGrundzentrumFreiwilligeKooperation">
+            <SelectAttributWert1>3000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+        </PunktDarstellung>        
+        
+        <PunktDarstellung symbol="SymbolGrundzentrumVerpflichtendeKooperation">
+            <SelectAttributWert1>3000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+        </PunktDarstellung>
+        
+    </GmlKlassenVisual>
+    
+    <Symbol name="SymbolOberzentrum">
+        <Rect  x="-10" y="-10"  width="20" height="20">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None>/</None>
+            </StrokeColor>
+        </Rect>
+        
+        <Rect x="-7.5" y="-7.5"  width="15" height="15">
+            <FillColor>
+                <ColorName>white</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect> 
+        
+        <Rect x="-5" y="-5" width="10" height="10">
+            <FillColor>
+                 <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect>
+    </Symbol>
+    
+    <Symbol name="SymbolOberzentrumFreiwilligeKooperation">
+        <Circle cx="0" cy="0" r="16">
+            <FillColor>
+                <Color r="255" g="242" b="51"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Rect  x="-10" y="-10"  width="20" height="20">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None>/</None>
+            </StrokeColor>
+        </Rect>
+        
+        <Rect x="-7.5" y="-7.5"  width="15" height="15">
+            <FillColor>
+                <ColorName>white</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect> 
+        
+        <Rect x="-5" y="-5" width="10" height="10">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect>
+    </Symbol>
+    
+    <Symbol name="SymbolOberzentrumVerpflichtendeKooperation">
+        <Circle cx="0" cy="0" r="16">
+            <FillColor>
+                <Color r="255" g="204" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Rect  x="-10" y="-10"  width="20" height="20">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None>/</None>
+            </StrokeColor>
+        </Rect>
+        
+        <Rect x="-7.5" y="-7.5"  width="15" height="15">
+            <FillColor>
+                <ColorName>white</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect> 
+        
+        <Rect x="-5" y="-5" width="10" height="10">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect>
+    </Symbol>
+    
+    <Symbol name="SymbolMittelzentrum">
+        <Rect x="-5" y="-5" width="10" height="10">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect>        
+    </Symbol>
+    
+        <Symbol name="SymbolMittelzentrumFreiwilligeKooperation">
+            <Circle cx="0" cy="0" r="9">
+                <FillColor>
+                    <Color r="255" g="242" b="51"/>
+                </FillColor>
+                <StrokeColor>
+                    <None/>
+                </StrokeColor>
+            </Circle>
+            
+            <Rect x="-5" y="-5" width="10" height="10">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect>        
+    </Symbol>    
+    
+    <Symbol name="SymbolMittelzentrumVerpflichtendeKooperation">
+        <Circle cx="0" cy="0" r="9">
+            <FillColor>
+                <Color r="255" g="204" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Rect x="-5" y="-5" width="10" height="10">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Rect>        
+    </Symbol>          
+    
+    <Symbol name="SymbolGrundzentrum">
+        <Circle cx="0" cy="0" r="4">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Symbol>
+    
+    <Symbol name="SymbolGrundzentrumFreiwilligeKooperation">
+        <Circle cx="0" cy="0" r="6">
+            <FillColor>
+                <Color r="255" g="242" b="51"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Circle cx="0" cy="0" r="4">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Symbol>
+    
+    <Symbol name="SymbolGrundzentrumVerpflichtendeKooperation">
+        <Circle cx="0" cy="0" r="6">
+            <FillColor>
+                <Color r="255" g="204" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Circle cx="0" cy="0" r="4">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Symbol>    
+    
+    <Symbol name="SymbolFreiwilligeKooperation">
+        <Circle cx="0" cy="0" r="8">
+            <FillColor>
+                <Color r="255" g="242" b="51"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Symbol>    
+    
+    <Symbol name="SymbolVerpflichtendeKooperation">
+        <Circle cx="0" cy="0" r="8">
+            <FillColor>
+                <Color r="255" g="204" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Symbol>        
+    
+    <!--  RP_RLP_Raumkategorie -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Raumkategorie" priorityFlaechendarstellung="10"  selectAttribut1="typ">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <FlaechenParams class="RP-RLP-MittelzentralerVerbundStyle" clip="true"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>3000</SelectAttributWert1>
+            <FlaechenParams class="RP-RLP-GrundzentralerVerbundStyle" clip="true"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-MittelzentralerVerbundStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>red</ColorName>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-GrundzentralerVerbundStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>red</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Siedlungsstruktur" priorityFlaechendarstellung="10"  selectAttribut2="gebietsTyp" selectAttribut1="typ" selectAttribut3="rechtsstand">
+        
+        <FlaechenDarstellung deckend="true" priority="12">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <SelectAttributWert3>1000</SelectAttributWert3>
+            <FlaechenParams hatching="VorranggebietWohnenHatch" clip="false"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true" priority="12">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <SelectAttributWert3>1000</SelectAttributWert3>
+            <FlaechenParams hatching="VorbehaltsgebietWohnenHatch" clip="false"/>
+        </FlaechenDarstellung>
+             
+        <FlaechenDarstellung deckend="true" priority="12">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <SelectAttributWert3>1000</SelectAttributWert3>
+            <FlaechenParams hatching="VorranggebietIndustrieGewerbeHatch" clip="false"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true" priority="12">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <SelectAttributWert3>1000</SelectAttributWert3>
+            <FlaechenParams hatching="VorbehaltsgebietIndustrieGewerbeHatch" clip="false"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>IIII</SelectAttributWert2>
+            <SelectAttributWert3>2000</SelectAttributWert3>
+            <FlaechenParams class="RP-RLP-SiedlungsflaecheWohnenStyle"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>IIII</SelectAttributWert2>
+            <SelectAttributWert3>2000</SelectAttributWert3>
+            <FlaechenParams class="RP-RLP-SiedlungsflaecheIndustrieGewerbeStyle"/>
+        </FlaechenDarstellung>        
+    </GmlKlassenVisual>
+    
+<Hatching name="VorranggebietWohnenHatch">
+    <stroke-width>0.5</stroke-width>
+    <line-dist>4</line-dist>
+    <StrokeColor>
+        <Color r="255" g="102" b="127"/>
+    </StrokeColor>
+    <FillColor>
+        <None/>
+    </FillColor>
+    <HatchingType>crossed</HatchingType>
+</Hatching>
+    
+    
+    <Hatching name="VorbehaltsgebietWohnenHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="255" g="102" b="127"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>lowerLeftToUpperRight</HatchingType>
+    </Hatching>
+    
+    <Hatching name="VorranggebietIndustrieGewerbeHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="0" g="0" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>crossed</HatchingType>
+    </Hatching>
+    
+    
+    <Hatching name="VorbehaltsgebietIndustrieGewerbeHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="0" g="0" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>horizontal</HatchingType>
+    </Hatching>
+    
+    <Style styleName="RP-RLP-SiedlungsflaecheWohnenStyle">
+        <FillColor>
+            <Color r="255" g="102" b="127"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    
+    <Style styleName="RP-RLP-SiedlungsflaecheIndustrieGewerbeStyle">
+        <FillColor>
+            <Color r="153" g="153" b="153"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+   
+    <!-- RP_RLP_Sonderflaeche  -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Sonderflaeche" priorityFlaechendarstellung="15" selectAttribut1="typ" selectAttribut2="rechtsstand">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>NNNN</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <FlaechenParams class="RP-RLP-SonderbauflaecheStyle" clip="true"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <FlaechenParams class="RP-RLP-SonderflaecheBundStyle" clip="true"/>
+        </FlaechenDarstellung>        
+        
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-SonderflaecheBundStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="178" b="0"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-SonderbauflaecheStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="0" b="0"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>        
+    
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Laermschutzzone">
+        <FlaechenDarstellung deckend="true">
+            <FlaechenParams class="RP-RLP-LaermschutzzoneStyle" clip="true"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-LaermschutzzoneStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="204" g="153" b="255"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+        <Stroke-dasharray>8</Stroke-dasharray>
+        <Stroke-dasharray>8</Stroke-dasharray>
+    </Style>
+    
+    
+    <!-- RP_RLP_Landwirtschaft -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Landwirtschaft" priorityFlaechendarstellung="10" selectAttribut1="gebietsTyp" selectAttribut2="kultur" selectAttribut3="rechtsstand">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>NNNN</SelectAttributWert2>
+            <SelectAttributWert3>1000</SelectAttributWert3>
+            <FlaechenParams class="RP-RLP-VorranggebietLandwirtschaftStyle" clip="false"/>
+        </FlaechenDarstellung>
+                
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>NNNN</SelectAttributWert2>
+            <SelectAttributWert3>1000</SelectAttributWert3>
+            <FlaechenParams class="RP-RLP-VorbehaltsgebietLandwirtschaftStyle" clip="false"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true" priority="12">
+        <SelectAttributWert1>IIII</SelectAttributWert1>
+        <SelectAttributWert2>1000</SelectAttributWert2>
+        <SelectAttributWert3>2000</SelectAttributWert3>
+        <FlaechenParams  pattern="RP-RLP-WeinbauPattern"  clip="false"/>
+        </FlaechenDarstellung>        
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-VorranggebietLandwirtschaftStyle">
+        <FillColor>
+            <Color r="255" g="230" b="153"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="RP-RLP-VorbehaltsgebietLandwirtschaftStyle">
+        <FillColor>
+            <Color r="255" g="255" b="179"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Pattern name="RP-RLP-WeinbauPattern" x="0" y="0" width="16" height="12">
+        <Path path="M 4 6 L 4 12 ">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="204" g="153" b="153"/>
+            </StrokeColor>
+            <Stroke-width>0.5</Stroke-width>
+        </Path>
+        <Path path="M 12 6 L 12 0">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="204" g="153" b="153"/>
+            </StrokeColor>
+            <Stroke-width>0.5</Stroke-width>
+        </Path>               
+    </Pattern>
+    
+    <!-- RP_RLP_Forstwirtschaft -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Forstwirtschaft" priorityFlaechendarstellung="10" selectAttribut1="gebietsTyp">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <FlaechenParams class="RP-RLP-VorranggebietForstwirtschaft" clip="false"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <FlaechenParams class="RP-RLP-VorbehaltsgebietForstwirtschaft" clip="false"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-VorranggebietForstwirtschaft">
+        <FillColor>
+            <Color r="179" g="255" b="128"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="RP-RLP-VorbehaltsgebietForstwirtschaft">
+        <FillColor>
+            <Color r="204" g="255" b="153"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <!--RP_RLP_Wasserschutz  -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Wasserschutz" priorityFlaechendarstellung="14"  priorityPunktdarstellung="30" selectAttribut1="typ" selectAttribut2="gebietsTyp">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <FlaechenParams hatching="RP-RLP-VorranggebietGrundwasserschutzHatch"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <FlaechenParams hatching="RP-RLP-VorbehaltsgebietGrundwasserschutzHatch"/>
+        </FlaechenDarstellung>
+        
+        <PunktDarstellung symbol="SymbolTalsperre">
+            <SelectAttributWert1>3000</SelectAttributWert1>
+            <SelectAttributWert2>IIII</SelectAttributWert2>
+        </PunktDarstellung>        
+    </GmlKlassenVisual>
+   
+    
+    <Hatching name="RP-RLP-VorranggebietGrundwasserschutzHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="0" g="255" b="255"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>horizontal</HatchingType>
+    </Hatching>
+    
+    <Hatching name="RP-RLP-VorbehaltsgebietGrundwasserschutzHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>8</line-dist>
+        <StrokeColor>
+            <Color r="0" g="255" b="255"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>horizontal</HatchingType>
+    </Hatching>
+    
+    <Symbol name="SymbolTalsperre">
+        <Circle  cx="0" cy="0" r="4">
+            <FillColor>
+                <ColorName>white</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>0.5</Stroke-width>
+        </Circle>
+        <Path  path="M 4 0 L  4 0 A 4 4 0 0 1 -4 0">
+            <FillColor>
+                <ColorName>black</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Path>
+    </Symbol>
+    
+    <!--  RP_RLP_VorbHochwasserschutz -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_VorbHochwasserschutz" priorityFlaechendarstellung="14"  selectAttribut1="typ" selectAttribut2="gebietsTyp">
+        <FlaechenDarstellung deckend="false">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <FlaechenParams pattern="RP_RP_VorranggebietHochwasserschutzPattern" clip="false"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="false">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <FlaechenParams pattern="RP_RP_VorbehaltsgebietHochwasserschutzPattern" clip="false"/>
+        </FlaechenDarstellung>      
+    </GmlKlassenVisual>
+    
+    <Pattern name="RP_RP_VorranggebietHochwasserschutzPattern" x="0" y="0" width="8" height="8">
+        <Circle cx="2" cy="2" r="1">
+            <FillColor>
+                <Color r="0" g="204" b="255"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Circle cx="6" cy="6" r="1">
+            <FillColor>
+                <Color r="0" g="204" b="255"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Pattern>
+    
+    <Pattern name="RP_RP_VorbehaltsgebietHochwasserschutzPattern" x="0" y="0" width="32" height="16">
+        <Circle cx="4" cy="4" r="1">
+            <FillColor>
+                <Color r="0" g="204" b="255"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Circle cx="12" cy="12" r="1">
+            <FillColor>
+                <Color r="0" g="204" b="255"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Pattern>
+    
+    <!--  RP_RLP_Klimaschutz-->
+<GmlKlassenVisual gmlKlassenName="RP_RLP_Klimaschutz" selectAttribut1="gebietsTyp" priorityFlaechendarstellung="15">
+    <FlaechenDarstellung deckend="true">
+        <SelectAttributWert1>1000</SelectAttributWert1>
+        <FlaechenParams clip="true" class="RP-RLP-VorranggebietKlimaschutzStyle"/>
+    </FlaechenDarstellung>
+    
+    <FlaechenDarstellung deckend="true">
+        <SelectAttributWert1>2000</SelectAttributWert1>
+        <LineSymbolParams symbolId="RP-RLP-VorbehaltsgebietKlimaschutzSymbol"/>
+    </FlaechenDarstellung>
+</GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-VorranggebietKlimaschutzStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="128" g="255" b="255"/>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+    </Style>
+    
+    <Symbol name="RP-RLP-VorbehaltsgebietKlimaschutzSymbol">
+        <Circle cx="0" cy="0" r="1">
+            <FillColor>
+                <Color r="128" g="255" b="255"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Symbol>   
+    
+    <!--  RP_RLP_FreizeitErholung -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_FreizeitErholung" priorityFlaechendarstellung="14" selectAttribut1="gebietsTyp">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <FlaechenParams hatching="RP-RLP-VorranggebietErholung"/>
+        </FlaechenDarstellung>
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <FlaechenParams hatching="RP-RLP-VorbehaltsgebietErholung"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Hatching name="RP-RLP-VorranggebietErholung">
+        <stroke-width>1</stroke-width>
+        <line-dist>8</line-dist>
+        <StrokeColor>
+            <Color r="153" g="255" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>upperLeftToLowerRight</HatchingType>
+    </Hatching>    
+    
+    <Hatching name="RP-RLP-VorbehaltsgebietErholung">
+        <stroke-width>1</stroke-width>
+        <line-dist>16</line-dist>
+        <StrokeColor>
+            <Color r="153" g="255" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>upperLeftToLowerRight</HatchingType>
+    </Hatching>
+    
+    <!--  RP_RLP_Rohstoffsicherung -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Rohstoffsicherung" priorityFlaechendarstellung="14" selectAttribut1="gebietsTyp">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <FlaechenParams class="RP-RLP-VorranggebietRohstoffsicherungStyle" clip="true"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+        
+    <!-- RP_RLP_Rohstoffabbau -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Rohstoffabbau" priorityFlaechendarstellung="14" selectAttribut1="gebietsTyp">
+       <FlaechenDarstellung deckend="true">
+        <SelectAttributWert1>1000</SelectAttributWert1>
+           <FlaechenParams hatching="RP-RLP-VorranggebietRohstoffabbauHatch"  clip="false"/>
+       </FlaechenDarstellung>  
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <FlaechenParams hatching="RP-RLP-VorbehaltsgebietRohstoffabbauHatch"  clip="false"/>
+        </FlaechenDarstellung>  
+    </GmlKlassenVisual>
+    
+    <Hatching name="RP-RLP-VorranggebietRohstoffabbauHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="0" g="0" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>upperLeftToLowerRight</HatchingType>
+    </Hatching>
+        
+    <Hatching name="RP-RLP-VorbehaltsgebietRohstoffabbauHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>8</line-dist>
+        <StrokeColor>
+            <Color r="0" g="0" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>upperLeftToLowerRight</HatchingType>
+    </Hatching>
+    
+    <Style styleName="RP-RLP-VorranggebietRohstoffsicherungStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+    </Style>
+    
+    <!--  RP_RLP_Windenergienutzung -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Windenergienutzung" priorityFlaechendarstellung="14" selectAttribut1="gebietsTyp">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <FlaechenParams hatching="RP-RLP-VorranggebietWindenergieHatch" clip="false"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <FlaechenParams hatching="RP-RLP-VorbehaltsgebietWindenergieHatch" clip="false"/>
+        </FlaechenDarstellung>
+        
+    </GmlKlassenVisual>
+    
+    <Hatching name="RP-RLP-VorranggebietWindenergieHatch">
+        <stroke-width>2</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="178" g="153" b="255"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>lowerLeftToUpperRight</HatchingType>
+    </Hatching>
+    
+        <Hatching name="RP-RLP-VorbehaltsgebietWindenergieHatch">
+        <stroke-width>2</stroke-width>
+        <line-dist>8</line-dist>
+        <StrokeColor>
+            <Color r="178" g="153" b="255"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>lowerLeftToUpperRight</HatchingType>
+    </Hatching>
+    
+    <!-- RP_RLP_Gruenzug -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Gruenzug" priorityFlaechendarstellung="15">
+        <FlaechenDarstellung deckend="true">
+            <FlaechenParams hatching="RP-RLP-GruenzugHatch" clip="true"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Hatching name="RP-RLP-GruenzugHatch">
+        <stroke-width>2</stroke-width>
+        <line-dist>8</line-dist>
+        <StrokeColor>
+            <Color r="0" g="255" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>vertical</HatchingType>
+    </Hatching>
+    
+    <!--  RP_RLP_Siedlungszaesur-->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Siedlungszaesur" priorityLiniendarstellung="20" selectAttribut1="rechtscharakter">
+        <LinienDarstellung>
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <LinienParams class="RP-RLP-SiedlungszaesurLinienStyle"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <LinienParams class="RP-RLP-SiedlungszaesurGLinienStyleA"/>
+            <LinienParams class="RP-RLP-SiedlungszaesurGLinienStyleB"/>
+        </LinienDarstellung>
+    </GmlKlassenVisual>
+    
+    <Hatching name="RP-RLP-SiedlungszaesurHatch">
+        <stroke-width>1</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="0" g="255" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>vertical</HatchingType>
+    </Hatching>
+    
+    <Style styleName="RP-RLP-SiedlungszaesurLinienStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-SiedlungszaesurGLinienStyleA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>    
+    
+    <Style styleName="RP-RLP-SiedlungszaesurGLinienStyleB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="255" b="255"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>    
+    
+    
+    <!--  RP_RLP_Gruenzaesur-->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Gruenzaesur" priorityFlaechendarstellung="15" priorityLiniendarstellung="20" selectAttribut1="rechtscharakter">
+        
+        <FlaechenDarstellung>
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <FlaechenParams hatching="RP_RLP_GruenzaesurZHatch"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung>
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <FlaechenParams hatching="RP_RLP_GruenzaesurGHatch"/>
+        </FlaechenDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <LinienParams class="RP-RLP-GruenzaesurZLinienStyle"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <LinienParams class="RP-RLP-GruenzaesurGLinienStyleA"/>
+            <LinienParams class="RP-RLP-GruenzaesurGLinienStyleB"/>
+        </LinienDarstellung>
+    </GmlKlassenVisual>
+    
+    <Hatching name="RP_RLP_GruenzaesurZHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="0" g="255" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>vertical</HatchingType>
+    </Hatching>
+    
+    <Hatching name="RP_RLP_GruenzaesurGHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>8</line-dist>
+        <StrokeColor>
+            <Color r="0" g="255" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>vertical</HatchingType>
+    </Hatching>
+    
+    <Style styleName="RP-RLP-GruenzaesurZLinienStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="255" b="0"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>    
+    
+    <Style styleName="RP-RLP-GruenzaesurGLinienStyleA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="255" b="0"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>    
+    
+    <Style styleName="RP-RLP-GruenzaesurGLinienStyleB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="255" b="255"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>        
+    
+    <!-- RP_RLP_ArtenBiotopschutz -->
+<GmlKlassenVisual gmlKlassenName="RP_RLP_ArtenBiotopschutz" priorityFlaechendarstellung="15" selectAttribut1="gebietsTyp" selectAttribut2="typ">
+    <FlaechenDarstellung deckend="true">
+        <SelectAttributWert1>IIII</SelectAttributWert1>
+        <SelectAttributWert2>1000</SelectAttributWert2>
+        <FlaechenParams hatching="RP-RLP-LandesweiterBiotopschutzHatch" clip="true"/>
+    </FlaechenDarstellung>
+    
+    <FlaechenDarstellung deckend="true">
+        <SelectAttributWert1>1000</SelectAttributWert1>
+        <SelectAttributWert2>2000</SelectAttributWert2>
+        <FlaechenParams hatching="RP-RLP-VorranggebietArtenBiotopschutzHatch" clip="true"/>
+    </FlaechenDarstellung>
+    
+    <FlaechenDarstellung deckend="true">
+        <SelectAttributWert1>2000</SelectAttributWert1>
+        <SelectAttributWert2>2000</SelectAttributWert2>
+        <FlaechenParams hatching="RP-RLP-VorbehaltsgebietArtenBiotopschutzHatch" clip="true"/>
+    </FlaechenDarstellung>
+</GmlKlassenVisual> 
+    
+    <Hatching name="RP-RLP-LandesweiterBiotopschutzHatch">
+        <stroke-width>1</stroke-width>
+        <line-dist>8</line-dist>
+        <StrokeColor>
+            <Color r="25" g="179" b="25"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>vertical</HatchingType>
+    </Hatching>    
+    
+    <Hatching name="RP-RLP-VorranggebietArtenBiotopschutzHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>4</line-dist>
+        <StrokeColor>
+            <Color r="51" g="255" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>lowerLeftToUpperRight</HatchingType>
+    </Hatching>
+    
+    <Hatching name="RP-RLP-VorbehaltsgebietArtenBiotopschutzHatch">
+        <stroke-width>0.5</stroke-width>
+        <line-dist>8</line-dist>
+        <StrokeColor>
+            <Color r="51" g="255" b="0"/>
+        </StrokeColor>
+        <FillColor>
+            <None/>
+        </FillColor>
+        <HatchingType>lowerLeftToUpperRight</HatchingType>
+    </Hatching>
+    
+    <!-- "RP_RLP_Welterbestaette -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Welterbestaette" priorityFlaechendarstellung="15" priorityLiniendarstellung="20">
+        <FlaechenDarstellung deckend="true" default="true">
+            <LineSymbolParams symbolId="SymbolWelterbestaette" symbolDist="5"/>
+        </FlaechenDarstellung>
+        
+       <LinienDarstellung>
+           <LineSymbolParams symbolId="SymbolWelterbestaette" symbolDist="5"/>
+       </LinienDarstellung>
+    </GmlKlassenVisual>
+    
+    <Symbol name="SymbolWelterbestaette">
+        <Circle cx="0" cy="0" r="1">
+            <FillColor>
+                <ColorName>black</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Symbol>
+    
+    <!-- RP_RLP_Ressourcenschutz -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Ressourcenschutz" priorityFlaechendarstellung="15" selectAttribut1="gebietsTyp" >
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <FlaechenParams pattern="RP-RLP-VorranggebietRessourcenschutz" clip="false"/>
+        </FlaechenDarstellung>
+        
+    <FlaechenDarstellung deckend="true">
+        <SelectAttributWert1>2000</SelectAttributWert1>
+        <FlaechenParams pattern="RP-RLP-VorbehaltsgebietRessourcenschutz" clip="false"/>
+    </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Pattern name="RP-RLP-VorranggebietRessourcenschutz" x="0" y="0" width="6" height="6">
+        <Circle cx="1.5" cy="1.5" r="1">
+            <FillColor>
+                <Color r="204" g="102" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Circle cx="4.5" cy="4.5" r="1">
+            <FillColor>
+                <Color r="204" g="102" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Pattern>
+    
+    <Pattern name="RP-RLP-VorbehaltsgebietRessourcenschutz" x="0" y="0" width="12" height="12">
+        <Circle cx="3" cy="3" r="1">
+            <FillColor>
+                <Color r="204" g="102" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+        
+        <Circle cx="9" cy="9" r="1">
+            <FillColor>
+                <Color r="204" g="102" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Circle>
+    </Pattern>
+    
+    <!-- RP_RLP_Landschaftsbild -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Landschaftsbild" selectAttribut1="gebietsTyp" priorityFlaechendarstellung="15">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <FlaechenParams class="RP-RLP-VorranggebietLandschaftsbildStyle" clip="true"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <FlaechenParams class="RP-RLP-VorbehaltsgebietLandschaftsbildStyle" clip="true"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-VorranggebietLandschaftsbildStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="153" g="242" b="0"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-VorbehaltsgebietLandschaftsbildStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="153" g="242" b="0"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>8</Stroke-dasharray>
+        <Stroke-dasharray>8</Stroke-dasharray>
+    </Style>
+    
+    
+    
+    <!--  RP_RLP_Verkehr-->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Verkehr" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" selectAttribut1="verbindungsTyp" selectAttribut2="typ">
+        <LinienDarstellung>
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-VerkehrGrossraeumig"/>
+        </LinienDarstellung>
+                
+        <LinienDarstellung>
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-VerkehrUeberregional"/>
+        </LinienDarstellung>
+                
+        <LinienDarstellung>
+            <SelectAttributWert1>3000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-VerkehrRegional"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>4000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-VerkehrFlaechenerschliessend"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>5000</SelectAttributWert1>
+            <SelectAttributWert2>1000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-Hochgeschwindigkeitsstrecke"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-StrassenverkehrGrossraeumig"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-StrassenverkehrUeberregional"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>3000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-StrassenverkehrRegional"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>4000</SelectAttributWert1>
+            <SelectAttributWert2>2000</SelectAttributWert2>
+            <LinienParams class="RP-RLP-StrassenverkehrFlaechenerschliessend"/>
+        </LinienDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>IIII</SelectAttributWert1>
+            <SelectAttributWert2>3000</SelectAttributWert2>
+            <FlaechenParams class="RP-RLP-LuftverkehrStyle" clip="true"/>
+        </FlaechenDarstellung>
+        
+        <PunktDarstellung symbol="SymbolFlugplatz">
+            <SelectAttributWert1>IIII</SelectAttributWert1>
+            <SelectAttributWert2>3000</SelectAttributWert2>
+        </PunktDarstellung>
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-LuftverkehrStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="204" g="153" b="255"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    
+    <Style styleName="RP-RLP-VerkehrGrossraeumig">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="178" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+    </Style>
+    
+    
+    <Style styleName="RP-RLP-VerkehrUeberregional">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="178" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>3</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-VerkehrRegional">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="178" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-VerkehrFlaechenerschliessend">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="178" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-Hochgeschwindigkeitsstrecke">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="178" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>8</Stroke-dasharray>
+        <Stroke-dasharray>8</Stroke-dasharray>
+    </Style>   
+   
+    <Style styleName="RP-RLP-StrassenverkehrGrossraeumig">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="0" b="102"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-StrassenverkehrUeberregional">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="0" b="102"/>
+        </StrokeColor>
+        <Stroke-width>3</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-StrassenverkehrRegional">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="0" b="102"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-StrassenverkehrFlaechenerschliessend">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="0" b="102"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Symbol name="SymbolFlugplatz">
+        <Circle cx="0" cy="0" r="6">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>0.5</Stroke-width>
+        </Circle>
+        <Path  path="M 0 -5 L 0.5 -2 L 3 -2 L 3 -1 L 0.5 -0.5 L 0.5 2 L 1 2 L 1 2.5 L 0.2 2.5 L 0 3 L -0.2 2.5 L -1 2.5 L -1 2 L -0.5 2 L -0.5 -0.50 L -3 -1 L -3 -2 L -0.5 -2 Z">
+            <FillColor>
+                <ColorName>black</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Path>
+        
+    </Symbol>
+    
+    <!-- RP_RLP_SonstigeFreiflaeche -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_SonstigeFreiflaeche" priorityFlaechendarstellung="10">
+        <FlaechenDarstellung deckend="true">
+            <FlaechenParams class="RP-RLP-SonstigeFreiflaecheStyle"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-SonstigeFreiflaecheStyle">
+        <FillColor>
+            <Color r="255" g="255" b="217"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <!--  RP_RLP_SonstigeWaldflaeche-->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_SonstigeWaldflaeche" priorityFlaechendarstellung="10">
+        <FlaechenDarstellung deckend="true">
+            <FlaechenParams class="RP-RLP-SonstigeWaldflaecheStyle"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-SonstigeWaldflaecheStyle">
+        <FillColor>
+            <Color r="229" g="255" b="204"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <!--RP_RLP_Gewaesser  -->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Gewaesser" priorityFlaechendarstellung="10" priorityLiniendarstellung="20">
+        <FlaechenDarstellung deckend="true">
+            <FlaechenParams class="RP-RLP-GewaesserFlaecheStyle" clip="true"/>
+        </FlaechenDarstellung>
+        
+        <LinienDarstellung>
+            <LinienParams class="RP-RLP-GewaesserLinieStyle"/>
+        </LinienDarstellung>
+    </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-GewaesserFlaecheStyle">
+        <FillColor>
+            <Color r="125" g="255" b="255"/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="255" b="255"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="RP-RLP-GewaesserLinieStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="255" b="255"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <!--  RP_RLP_Grenze-->
+    <GmlKlassenVisual gmlKlassenName="RP_RLP_Grenze" priorityLiniendarstellung="20" selectAttribut1="typ">
+        <LinienDarstellung>
+            <SelectAttributWert1>4000</SelectAttributWert1>
+            <LinienParams class="RP-RLP-KreisgrenzeStyle"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>5500</SelectAttributWert1>
+            <LinienParams class="RP-RLP-VerbandsgemeindegrenzeStyle"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>5000</SelectAttributWert1>
+            <LinienParams class="RP-RLP-GemeindegrenzeStyle"/>
+        </LinienDarstellung>       
+        
+        <LinienDarstellung>
+            <SelectAttributWert1>6000</SelectAttributWert1>
+            <LinienParams class="RP-RLP-RegionsgrenzeStyle"/>
+        </LinienDarstellung>           </GmlKlassenVisual>
+    
+    <Style styleName="RP-RLP-KreisgrenzeStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>4</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+    </Style>
+     
+    <Style styleName="RP-RLP-VerbandsgemeindegrenzeStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>4</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    
+    <Style styleName="RP-RLP-GemeindegrenzeStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="RP-RLP-RegionsgrenzeStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="178" g="178" b="178"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    
+    <Enumeration nameA="RP_RLP_KooperationsTypen">
+        <EnumItem schluesselNummerA="1000" symbolId="SymbolFreiwilligeKooperation"/>
+        <EnumItem schluesselNummerA="2000" symbolId="SymbolVerpflichtendeKooperation"/>
+    </Enumeration>
+    
+    
+    
+    
+</SvgVisualisierung>
+

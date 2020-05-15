@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">     
+    <xs:element name="TransformationsProtokollINSPIRE_PLU" type="TransformationsProtokollINSPIRE_PLUType"/>
+  
+    <xs:complexType name="TransformationsProtokollINSPIRE_PLUType">
+        <xs:sequence>
+            <xs:element name="Zusammenfassung" type="ZusammenfassungType"/>
+            <xs:element name="InstanzProtokoll" type="InstanzProtokollType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>    
+    </xs:complexType>    
+
+    <xs:complexType name="ZusammenfassungType">
+        <xs:sequence>
+            <xs:element name="FlaechenschlussKlassenVollstaendigTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="FlaechenschlussKlassenPartiellTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="FlaechenschlussKlassenNichtErwartet" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="FlaechenschlussKlassenNichtTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="UeberlagerungsKlassenVollstaendigTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="UeberlagerungsKlassenPartiellTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="UeberlagerungsKlassenNichtErwartet" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="UeberlagerungsKlassenNichtTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="SonstigeKlassenVollstaendigTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="SonstigeKlassenPartiellTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>
+            <xs:element name="SonstigeKlassenNichtTransformiert" type="InstanzAnzahlenType" minOccurs="0"/>        
+        </xs:sequence> 
+        <xs:attribute name="anzObjekteTransformiert" type="xs:int" use="required"/>
+        <xs:attribute name="anzObjektePartiellTransformiert" type="xs:int" use="required"/>  
+        <xs:attribute name="anzObjekteNichtTransformiert" type="xs:int" use="required"/>                
+    </xs:complexType>
+
+    <xs:complexType name="InstanzAnzahlenType">
+        <xs:sequence>
+            <xs:element name="InstanzAnzahl" type="InstanzAnzahlType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="InstanzAnzahlType">
+        <xs:attribute name="klassenName" type="xs:string" use="required"/>
+        <xs:attribute name="anzahl" type="xs:int" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="InstanzProtokollType">
+        <xs:sequence>
+            <xs:element name="AttributProtokoll" type="AttributProtokollType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="gmlId" type="xs:string" use="required"/>
+        <xs:attribute name="klassenNameXPlan" type="xs:string" use="required"/>
+        <xs:attribute name="objektTyp" type="ObjektTypType" use="required"/>
+        <xs:attribute name="transformationsGrad" type="TransformationsGradType" use="required"/>
+        <xs:attribute name="transformationsHindernis" type="TransformationsHindernisType" use="optional"/>
+    </xs:complexType>
+
+    <xs:simpleType name="ObjektTypType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Flächenschlussobjekt"/>
+            <xs:enumeration value="Überlagerungsobjekt"/>
+            <xs:enumeration value="Planobjekt"/>
+            <xs:enumeration value="Sonstiges Objekt"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TransformationsGradType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Vollständig"/>
+            <xs:enumeration value="Partiell"/>
+            <xs:enumeration value="Nicht transformiert"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="TransformationsHindernisType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="XPlan-Objekt nicht korrekt"/>
+            <xs:enumeration value="Klasse nicht abbildbar"/>
+            <xs:enumeration value="Klasse nicht erwartet"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="AttributProtokollType">
+        <xs:attribute name="attributName" type="xs:string" use="required"/>
+        <xs:attribute name="attributWert" type="xs:string" use="optional"/>
+        <xs:attribute name="transformationsHindernis" type="AttributTransformationHindernisType" use="required"/>        
+    </xs:complexType>
+
+    <xs:simpleType name="AttributTransformationHindernisType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Attribut nicht abbildbar"/>
+            <xs:enumeration value="Attribut-Wert nicht abbildbar"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

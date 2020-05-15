@@ -1,0 +1,897 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="BasicFunctions">
+      <UniqueIdentifier>{9c8e289c-16b6-4ba7-bd24-f44013e6a524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BasicFunctions\HeaderDateien">
+      <UniqueIdentifier>{8698839e-3eea-4ecf-8d24-6ffbe0dba690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BasicFunctions\Quelldateien">
+      <UniqueIdentifier>{cd3a1af2-edcd-4209-afb1-7e4729b8bb29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainUserInterface">
+      <UniqueIdentifier>{db114f0e-7a62-47b1-9468-4b66101ebe57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainUserInterface\Quelldateien">
+      <UniqueIdentifier>{d756ea7e-a15b-46e2-a15e-4789ed92dc1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainUserInterface\Forms-Dialoge">
+      <UniqueIdentifier>{688fb701-aedf-4190-8932-e84178df297e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GML">
+      <UniqueIdentifier>{ac960889-4bde-4dc5-bef1-2d43df7d2cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GML\Quelldateien">
+      <UniqueIdentifier>{d52fd5cb-4b4f-403e-bec8-1887ae25e3d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GML\HeaderDateien">
+      <UniqueIdentifier>{894c4a12-060f-40ba-8bc7-e76f0865638e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{8d56cdab-e7b7-4861-84d6-12b58d23a3ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time\Quelldateien">
+      <UniqueIdentifier>{c135fa29-6fb5-4104-b7fb-df88013fbcb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time\HeaderDateien">
+      <UniqueIdentifier>{3392228f-34fd-426f-9857-d251728215f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time\Forms-Dialoge">
+      <UniqueIdentifier>{d1d33c2b-c04d-41ee-8f8d-c273b7182d28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GML\Forms-Dialoge">
+      <UniqueIdentifier>{e48ac5d2-261e-41f1-b2d1-6193a1631734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{a3856018-d808-4df7-b795-12787a9d2bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\Quelldateien">
+      <UniqueIdentifier>{72d7fb6b-afe4-4f56-abe0-66b323990fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\HeaderDateien">
+      <UniqueIdentifier>{be87c616-df5d-4b48-b00a-e581cd7c9a67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\Forms-Dialoge">
+      <UniqueIdentifier>{a8f249b9-386d-48f3-b773-84c978693a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\HeaderDateien\GLU-Triangulation">
+      <UniqueIdentifier>{a10c9544-99b1-4d43-a1e6-c95da57092df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\Quelldateien\GLU-Triangulation">
+      <UniqueIdentifier>{ade7adef-6f7b-491e-be0c-4f536c53ee1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Checking">
+      <UniqueIdentifier>{dd59c4bb-2587-4fca-9d26-9019b2ac6529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Checking\Quelldateien">
+      <UniqueIdentifier>{ae51c6fa-cd8b-4010-a015-4cd8b89a26ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Checking\HeaderDateien">
+      <UniqueIdentifier>{728db5c2-5062-40d2-bf8c-3959010bd9b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Checking\Forms-Dialoge">
+      <UniqueIdentifier>{11b04c02-be7b-44b1-87f2-b81a52e4b60a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visualisierung">
+      <UniqueIdentifier>{baa43a53-5d85-4eb1-9703-9af045c0eba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visualisierung\Quelldateien">
+      <UniqueIdentifier>{6b9addd9-1576-4157-8d32-948030371842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visualisierung\HeaderDateien">
+      <UniqueIdentifier>{1a8b5b90-188e-43c4-9f83-00953ca26b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Visualisierung\Forms-Dialoge">
+      <UniqueIdentifier>{447b1a99-9a4f-4f41-aa3a-c5a7b0cc1f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XPlanGML">
+      <UniqueIdentifier>{a145e1c3-7dcf-42c1-82a3-2cc7e10750b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XPlanGML\Quelldateien">
+      <UniqueIdentifier>{4778c936-86e7-4510-a894-40fd88a3c212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XPlanGML\HeaderDateien">
+      <UniqueIdentifier>{ba162136-bb59-4994-a7fb-b7b59020971e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XPlanGML\Forms-Dialoge">
+      <UniqueIdentifier>{b26a8c19-2de9-4b79-a00a-d88223445e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BasicFunctions\Forms-Dialoge">
+      <UniqueIdentifier>{5a3bde12-303f-4e49-9533-2d3f2b88b319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BoreholeML">
+      <UniqueIdentifier>{84d60da1-855a-4929-9c53-586ce4356521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BoreholeML\Quelldateien">
+      <UniqueIdentifier>{d028cd9d-7c46-4e74-aa3e-4e4e2f75fd9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BoreholeML\HeaderDateien">
+      <UniqueIdentifier>{fae9d889-d5fa-49af-b488-4a0794abe377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BoreholeML\Forms-Dialoge">
+      <UniqueIdentifier>{863bec8d-6d3a-46b4-b7ba-14811996981d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Application\HeaderDateien">
+      <UniqueIdentifier>{83224e2d-fa39-41c0-bc1a-1c4eaa83da9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Quelldeteien">
+      <UniqueIdentifier>{a422a0c1-fea1-406c-943f-4906e1d37626}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FeatureExport.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitOfMeasure.cpp">
+      <Filter>BasicFunctions\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangulation\ModeConverter.cpp">
+      <Filter>Geometry\Quelldateien\GLU-Triangulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangulation\TessTriangulator.cpp">
+      <Filter>Geometry\Quelldateien\GLU-Triangulation</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureOffset.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureAttribute.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CodelistOrdnerAendernDialog.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalCodeLists.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>BasicFunctions\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateGuid_64.cpp">
+      <Filter>BasicFunctions\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Constant.cpp">
+      <Filter>BasicFunctions\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Convert.cpp">
+      <Filter>BasicFunctions\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Logfile.cpp">
+      <Filter>BasicFunctions\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Form1.cpp">
+      <Filter>MainUserInterface\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Info.cpp">
+      <Filter>MainUserInterface\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Options1.cpp">
+      <Filter>MainUserInterface\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Appearance.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Definitions.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Dictionary.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Feature.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GmlNamespaces.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GMLReader.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GmlSchema.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GMLWriter.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSeries.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSeriesRepository.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeX.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Topologie.cpp">
+      <Filter>Geometry\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometrie.cpp">
+      <Filter>Geometry\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MBoundingBox.cpp">
+      <Filter>Geometry\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SrsManager.cpp">
+      <Filter>Geometry\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GmlModelTest.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Checking.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometrietestCityGML.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryErrorDetails.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryErrorsPerFeature.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryErrorUebersicht.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryInspector.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryKorrektur.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryTestParams.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KonformitaetsFehler.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KonformitaetsTest.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KonformitätsregelDetails.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ModellStatistik.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SemantiktestXPlanGML.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidierungsfehlerDialog.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KmlVisualisierung.cpp">
+      <Filter>Visualisierung\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisierung_3D.cpp">
+      <Filter>Visualisierung\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectDataWriter.cpp">
+      <Filter>Visualisierung\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SvgVisualisierung.cpp">
+      <Filter>Visualisierung\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisierung_2D.cpp">
+      <Filter>Visualisierung\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KonvDateiReader.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="XPlanGML.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KonversionINSPIRE_PLU.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Migration.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ShpFileNamenKonv.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ShpFileObjekte.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="shpfilereader.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="XPlanGMLVersionsDialog.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumerationConversion.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumerationDictionaryGeneration.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GenerateKomplexAttribute.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GenerateKonversion.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GmlTypAuswahlDialog.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KonvDateiNeu.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanAttributeNeu.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanBereiche.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="RasterplanBasisDialog.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="RasterplanBasisV2Dialog.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeFileConversion.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TextlicheFestsetzungen.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="XPlanGML_Migration.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KmlErzeugungDialog.cpp">
+      <Filter>Visualisierung\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationINSPIRE_PLU.cpp">
+      <Filter>XPlanGML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="HTMLDatei.cpp">
+      <Filter>BasicFunctions\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="BoreholeVisualisation2D.cpp">
+      <Filter>BoreholeML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="BoreholeSelection.cpp">
+      <Filter>BoreholeML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GmlToolbox.cpp">
+      <Filter>Application\Quelldeteien</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>BasicFunctions\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="StrukturDialog.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometrietestXPlanGML.cpp">
+      <Filter>Checking\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CoordSystemTransformation.cpp">
+      <Filter>GML\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CSVTimeSeriesAnalysis.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CSVTimeSeriesMetadata.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyWords.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MonthlyTimeSeries.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSeriesCombination.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSeriesFilter.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSeriesGaps.cpp">
+      <Filter>Time\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Rasterizer.cpp">
+      <Filter>Visualisierung\Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginLoader.cpp">
+      <Filter>Application\Quelldeteien</Filter>
+    </ClCompile>
+    <ClCompile Include="GMLToolboxPlugin.cpp">
+      <Filter>Application\Quelldeteien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Form1.h">
+      <Filter>MainUserInterface\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="Info.h">
+      <Filter>MainUserInterface\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="Options1.h">
+      <Filter>MainUserInterface\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="CodelistOrdnerAendernDialog.h">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="CoordSystemTransformation.h">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumerationConversion.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumerationDictionaryGeneration.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalCodeLists.h">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureAttribute.h">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GenerateKomplexAttribute.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GenerateKonversion.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometrietestXPlanGML.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryErrorDetails.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="BoreholeSelection.h">
+      <Filter>BoreholeML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryErrorUebersicht.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryInspector.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GmlTypAuswahlDialog.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="KonformitaetsFehler.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="KonformitaetsTest.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="KmlErzeugungDialog.h">
+      <Filter>Visualisierung\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="HTMLDatei.h">
+      <Filter>BasicFunctions\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="KonformitätsregelDetails.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="KonvDateiNeu.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="ModellStatistik.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanAttributeNeu.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanBereiche.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="Rasterizer.h">
+      <Filter>Visualisierung\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="RasterplanBasisDialog.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="RasterplanBasisV2Dialog.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="SemantiktestXPlanGML.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeFileConversion.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="StrukturDialog.h">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="TextlicheFestsetzungen.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationINSPIRE_PLU.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="ValidierungsfehlerDialog.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryTestParams.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryKorrektur.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureExport.h">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryErrorsPerFeature.h">
+      <Filter>Checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometrietestCityGML.h">
+      <Filter>checking\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangulation\ModeConverter.hpp">
+      <Filter>Geometry\HeaderDateien\GLU-Triangulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangulation\TessTriangulator.hpp">
+      <Filter>Geometry\HeaderDateien\GLU-Triangulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangulation\Triangulator.hpp">
+      <Filter>Geometry\HeaderDateien\GLU-Triangulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangulation\x3dGL.h">
+      <Filter>Geometry\HeaderDateien\GLU-Triangulation</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureOffset.h">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="XPlanGML_Migration.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSeriesCombination.h">
+      <Filter>Time\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSeriesFilter.h">
+      <Filter>Time\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyWords.h">
+      <Filter>Time\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="MonthlyTimeSeries.h">
+      <Filter>Time\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="CSVTimeSeriesMetadata.h">
+      <Filter>Time\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="CSVTimeSeriesAnalysis.h">
+      <Filter>Time\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSeriesGaps.h">
+      <Filter>Time\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="constant.h">
+      <Filter>BasicFunctions\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitOfMeasure.h">
+      <Filter>BasicFunctions\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Convert.h">
+      <Filter>BasicFunctions\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateGuid_64.h">
+      <Filter>BasicFunctions\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>BasicFunctions\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Logfile.h">
+      <Filter>BasicFunctions\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Appearance.h">
+      <Filter>GML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
+      <Filter>GML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Dictionary.h">
+      <Filter>GML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Feature.h">
+      <Filter>GML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GmlNamespaces.h">
+      <Filter>GML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GMLReader.h">
+      <Filter>GML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GmlSchema.h">
+      <Filter>GML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GMLWriter.h">
+      <Filter>GML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSeries.h">
+      <Filter>Time\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSeriesRepository.h">
+      <Filter>Time\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeX.h">
+      <Filter>Time\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Topologie.h">
+      <Filter>Geometry\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometrie.h">
+      <Filter>Geometry\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MBoundingBox.h">
+      <Filter>Geometry\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="SrsManager.h">
+      <Filter>Geometry\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GmlModelTest.h">
+      <Filter>Checking\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Checking.h">
+      <Filter>Checking\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="KmlVisualisierung.h">
+      <Filter>Visualisierung\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisierung_3D.h">
+      <Filter>Visualisierung\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectDataWriter.h">
+      <Filter>Visualisierung\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="SvgVisualisierung.h">
+      <Filter>Visualisierung\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisierung_2D.h">
+      <Filter>Visualisierung\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CoordPair.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="XPlanGML.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="KonvDateiReader.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="KonversionINSPIRE_PLU.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Migration.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ShpFileNamenKonv.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ShpFileObjekte.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="shpfilereader.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="shptypeenum.h">
+      <Filter>XPlanGML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="XPlanGMLVersionsDialog.h">
+      <Filter>XPlanGML\Forms-Dialoge</Filter>
+    </ClInclude>
+    <ClInclude Include="BoreholeVisualisation2D.h">
+      <Filter>BoreholeML\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GmlToolbox.h">
+      <Filter>Application\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Application\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>BasicFunctions\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="AppConfigPath.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="resource3.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginLoader.h">
+      <Filter>Application\HeaderDateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GMLToolboxPlugin.h">
+      <Filter>Application\HeaderDateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FZK_Gross.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CodelistOrdnerAendernDialog.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorCodeExtraction.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateXsdSimpleType.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumerationConversion.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExternalCodeLists.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureAttribute.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateKomplexAttribute.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateKonversion.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryInspector.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GmlTypAuswahlDialog.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HTMLDatei.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KmlErzeugungDialog.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonformitaetsFehler.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonformitaetsTest.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonvDateiNeu.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options1.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanAttributeNeu.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanBereiche.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rasterizer.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterplanBasisDialog.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterplanBasisV2Dialog.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapeFileConversion.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StrukturDialog.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextlicheFestsetzungen.resX">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransformationINSPIRE_PLU.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPlanGMLVersionsDialog.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KonformitätsregelDetails.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModellStatistik.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidierungsfehlerDialog.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryErrorUebersicht.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodelistInspireGeneration.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryErrorDetails.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometrietestXPlanGML.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SemantiktestXPlanGML.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordSystemTransformation.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumerationDictionaryGeneration.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodelistInspireGeneration.resx">
+      <Filter>Headerdateien\Forms-Dialoge\SUB</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoreholeSelection.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryErrorUebersicht.resx">
+      <Filter>Headerdateien\Forms-Dialoge\Prüfung</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryTestParams.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryKorrektur.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KorrekturDialog.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geometrietest.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureExport.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometryErrorsPerFeature.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeometrietestCityGML.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureOffset.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPlanGML_Migration.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSeriesDiagrams.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSeriesCombination.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSeriesFilter.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeyWords.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyTimeSeries.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSVTimeSeries.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSVTimeSeriesMetadata.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSVTimeSeriesAnalysis.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSeriesGaps.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GML-Toolbox.rc">
+      <Filter>Ressourcendateien</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

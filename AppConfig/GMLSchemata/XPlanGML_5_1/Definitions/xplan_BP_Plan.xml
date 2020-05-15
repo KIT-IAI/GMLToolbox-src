@@ -1,0 +1,569 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:18-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_Plan">
+  <gml:description>Die Klasse modelliert einen Bebauungsplan</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan</gml:identifier>
+  <gml:name>xplan:BP_Plan</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_gemeinde">
+      <gml:description>Die für den Plan zuständige Gemeinde.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:gemeinde</gml:identifier>
+      <gml:name>xplan:gemeinde</gml:name>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Gemeinde" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_planaufstellendeGemeinde">
+      <gml:description>Die für die ursprüngliche Planaufstellung zuständige Gemeinde, falls diese nicht unter dem Attribut &lt;i&gt;gemeinde &lt;/i&gt;aufgeführt ist. Dies kann z.B. nach Gemeindefusionen der Fall sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:planaufstellendeGemeinde</gml:identifier>
+      <gml:name>xplan:planaufstellendeGemeinde</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Gemeinde" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_plangeber">
+      <gml:description>Für den Plan verantwortliche Stelle.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:plangeber</gml:identifier>
+      <gml:name>xplan:plangeber</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Plangeber" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_planArt">
+      <gml:description>Typ des vorliegenden Bebauungsplans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:planArt</gml:identifier>
+      <gml:name>xplan:planArt</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_1000">
+          <gml:description>Planwerk der verbindlichen Bauleitplanung auf kommunaler Ebene</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:1000</gml:identifier>
+          <gml:name>BPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_10000">
+          <gml:description>Einfacher BPlan, §30 Abs. 3 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:10000</gml:identifier>
+          <gml:name>EinfacherBPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_10001">
+          <gml:description>Qualifizierter BPlan nach §30 Abs. 1 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:10001</gml:identifier>
+          <gml:name>QualifizierterBPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_3000">
+          <gml:description>Vorhabensbezogener Bebauungsplan nach §12 BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:3000</gml:identifier>
+          <gml:name>VorhabenbezogenerBPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_4000">
+          <gml:description>Kommunale Satzung gemäß §34 BauGB</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:4000</gml:identifier>
+          <gml:name>InnenbereichsSatzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_40000">
+          <gml:description>Klarstellungssatzung nach  § 34 Abs.4 Nr.1 BauGB.
+</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:40000</gml:identifier>
+          <gml:name>KlarstellungsSatzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_40001">
+          <gml:description>Entwicklungssatzung nach  § 34 Abs.4 Nr. 2 BauGB.
+</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:40001</gml:identifier>
+          <gml:name>EntwicklungsSatzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_40002">
+          <gml:description>Ergänzungssatzung nach  § 34 Abs.4 Nr. 3 BauGB.
+</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:40002</gml:identifier>
+          <gml:name>ErgaenzungsSatzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_5000">
+          <gml:description>Außenbereichssatzung nach § 35 Abs. 6 BauGB.
+</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:5000</gml:identifier>
+          <gml:name>AussenbereichsSatzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_7000">
+          <gml:description>Örtliche Bauvorschrift.
+</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:7000</gml:identifier>
+          <gml:name>OertlicheBauvorschrift</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_planArt_BP_PlanArt_9999">
+          <gml:description>Sonstige Planart.
+</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:planArt:BP_PlanArt:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeName>BP_PlanArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_sonstPlanArt">
+      <gml:description>Über eine Codeliste spezifizierte  "Sonstige Planart", wenn das Attribut "&lt;i&gt;planArt" &lt;/i&gt;den Wert &lt;i&gt;9999 &lt;/i&gt;(Sonstiges) hat.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:sonstPlanArt</gml:identifier>
+      <gml:name>xplan:sonstPlanArt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_SonstPlanArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_verfahren">
+      <gml:description>Verfahrensart der BPlan-Aufstellung oder -Änderung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:verfahren</gml:identifier>
+      <gml:name>xplan:verfahren</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_verfahren_BP_Verfahren_1000">
+          <gml:description>Normales BPlan Verfahren.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:verfahren:BP_Verfahren:1000</gml:identifier>
+          <gml:name>Normal</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_verfahren_BP_Verfahren_2000">
+          <gml:description>BPlan Verfahren nach Paragraph 13 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:verfahren:BP_Verfahren:2000</gml:identifier>
+          <gml:name>Parag13</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_verfahren_BP_Verfahren_3000">
+          <gml:description>BPlan Verfahren nach Paragraph 13a BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:verfahren:BP_Verfahren:3000</gml:identifier>
+          <gml:name>Parag13a</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_verfahren_BP_Verfahren_4000">
+          <gml:description>BPlan Verfahren nach Paragraph 13b BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:verfahren:BP_Verfahren:4000</gml:identifier>
+          <gml:name>Parag13b</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_Verfahren</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_rechtsstand">
+      <gml:description>Aktueller Rechtsstand des Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:rechtsstand</gml:identifier>
+      <gml:name>xplan:rechtsstand</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_1000">
+          <gml:description>Ein Aufstellungsbeschluss der Gemeinde liegt vor.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:1000</gml:identifier>
+          <gml:name>Aufstellungsbeschluss</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_2000">
+          <gml:description>Ein Planentwurf liegt vor.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:2000</gml:identifier>
+          <gml:name>Entwurf</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_2100">
+          <gml:description>Die frühzeitige Beteiligung der Behörden (§ 4 Abs. 1 BauGB) hat stattgefunden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:2100</gml:identifier>
+          <gml:name>FruehzeitigeBehoerdenBeteiligung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_2200">
+          <gml:description>Die frühzeitige Beteiligung der Öffentlichkeit (§ 3 Abs. 1 BauGB), bzw. bei einem Verfahren nach § 13a BauGB die Unterrichtung der Öffentlichkeit (§ 13a Abs. 3 BauGB) hat stattgefunden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:2200</gml:identifier>
+          <gml:name>FruehzeitigeOeffentlichkeitsBeteiligung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_2300">
+          <gml:description>Die Beteiligung der Behörden hat stattgefunden (§ 4 Abs. 2 BauGB).</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:2300</gml:identifier>
+          <gml:name>BehoerdenBeteiligung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_2400">
+          <gml:description>Der Plan hat öffentlich ausgelegen. (§ 3 Abs. 2 BauGB).</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:2400</gml:identifier>
+          <gml:name>OeffentlicheAuslegung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_3000">
+          <gml:description>Die Satzung wurde durch Beschluss der Gemeinde verabschiedet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:3000</gml:identifier>
+          <gml:name>Satzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_4000">
+          <gml:description>Der Plan ist in kraft getreten.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:4000</gml:identifier>
+          <gml:name>InkraftGetreten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_4500">
+          <gml:description>Der Plan ist, z. B. durch einen Gerichtsbeschluss oder neuen Plan, teilweise untergegangen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:4500</gml:identifier>
+          <gml:name>TeilweiseUntergegangen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Plan_rechtsstand_BP_Rechtsstand_5000">
+          <gml:description>Der Plan wurde aufgehoben oder für nichtig erklärt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Plan:rechtsstand:BP_Rechtsstand:5000</gml:identifier>
+          <gml:name>Untergegangen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_Rechtsstand</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_status">
+      <gml:description>Über eine Codeliste definierter aktueller Status des Plans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:status</gml:identifier>
+      <gml:name>xplan:status</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_Status</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_hoehenbezug">
+      <gml:description>Bei Höhenangaben im Plan standardmäßig verwendeter Höhenbezug (z.B. Höhe über NN).</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:hoehenbezug</gml:identifier>
+      <gml:name>xplan:hoehenbezug</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_aenderungenBisDatum">
+      <gml:description>Datum der berücksichtigten Plan-Änderungen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:aenderungenBisDatum</gml:identifier>
+      <gml:name>xplan:aenderungenBisDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_aufstellungsbeschlussDatum">
+      <gml:description>Datum des Aufstellungsbeschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:aufstellungsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:aufstellungsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_veraenderungssperreDatum">
+      <gml:description>Datum der Veränderungssperre</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:veraenderungssperreDatum</gml:identifier>
+      <gml:name>xplan:veraenderungssperreDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_auslegungsStartDatum">
+      <gml:description>Start-Datum des Auslegungs-Zeitraums. Bei mehrfacher öffentlicher Auslegung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:auslegungsStartDatum</gml:identifier>
+      <gml:name>xplan:auslegungsStartDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_auslegungsEndDatum">
+      <gml:description>End-Datum des Auslegungs-Zeitraums. Bei mehrfacher öffentlicher Auslegung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:auslegungsEndDatum</gml:identifier>
+      <gml:name>xplan:auslegungsEndDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_traegerbeteiligungsStartDatum">
+      <gml:description>Start-Datum der Trägerbeteiligung. Bei mehrfacher Trägerbeteiligung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:traegerbeteiligungsStartDatum</gml:identifier>
+      <gml:name>xplan:traegerbeteiligungsStartDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_traegerbeteiligungsEndDatum">
+      <gml:description>End-Datum der Trägerbeteiligung. Bei mehrfacher Trägerbeteiligung können mehrere Datumsangaben spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:traegerbeteiligungsEndDatum</gml:identifier>
+      <gml:name>xplan:traegerbeteiligungsEndDatum</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_satzungsbeschlussDatum">
+      <gml:description>Datum des Satzungsbeschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:satzungsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:satzungsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_rechtsverordnungsDatum">
+      <gml:description>Datum der Rechtsverordnung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:rechtsverordnungsDatum</gml:identifier>
+      <gml:name>xplan:rechtsverordnungsDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_inkrafttretensDatum">
+      <gml:description>Datum des Inkrafttretens.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:inkrafttretensDatum</gml:identifier>
+      <gml:name>xplan:inkrafttretensDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_ausfertigungsDatum">
+      <gml:description>Datum der Ausfertigung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:ausfertigungsDatum</gml:identifier>
+      <gml:name>xplan:ausfertigungsDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_veraenderungssperre">
+      <gml:description>Gibt an, ob es im gesamten Geltungsbereich des Plans eine Veränderungssperre gibt.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:veraenderungssperre</gml:identifier>
+      <gml:name>xplan:veraenderungssperre</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_veraenderungssperre_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:veraenderungssperre:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_veraenderungssperre_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:veraenderungssperre:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_staedtebaulicherVertrag">
+      <gml:description>Gibt an, ob es zum Plan einen städtebaulichen Vertrag gibt.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:staedtebaulicherVertrag</gml:identifier>
+      <gml:name>xplan:staedtebaulicherVertrag</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_staedtebaulicherVertrag_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:staedtebaulicherVertrag:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_staedtebaulicherVertrag_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:staedtebaulicherVertrag:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_erschliessungsVertrag">
+      <gml:description>Gibt an, ob es für den Plan einen Erschließungsvertrag gibt.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:erschliessungsVertrag</gml:identifier>
+      <gml:name>xplan:erschliessungsVertrag</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_erschliessungsVertrag_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:erschliessungsVertrag:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_erschliessungsVertrag_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:erschliessungsVertrag:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_durchfuehrungsVertrag">
+      <gml:description>Gibt an, ob für das Planungsgebiet einen Durchführungsvertrag (Kombination aus Städtebaulichen Vertrag und Erschließungsvertrag) gibt.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:durchfuehrungsVertrag</gml:identifier>
+      <gml:name>xplan:durchfuehrungsVertrag</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_durchfuehrungsVertrag_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:durchfuehrungsVertrag:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_durchfuehrungsVertrag_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:durchfuehrungsVertrag:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_gruenordnungsplan">
+      <gml:description>Gibt an, ob für den Plan ein zugehöriger Grünordnungsplan existiert.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:gruenordnungsplan</gml:identifier>
+      <gml:name>xplan:gruenordnungsplan</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_gruenordnungsplan_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:gruenordnungsplan:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_BP_Plan_gruenordnungsplan_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::BP_Plan:gruenordnungsplan:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_versionBauNVODatum">
+      <gml:description>Datum der zugrunde liegenden Version der BauNVO</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:versionBauNVODatum</gml:identifier>
+      <gml:name>xplan:versionBauNVODatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_versionBauNVOText">
+      <gml:description>Textliche Spezifikation der zugrunde liegenden Version der BauNVO</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:versionBauNVOText</gml:identifier>
+      <gml:name>xplan:versionBauNVOText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_versionBauGBDatum">
+      <gml:description>Datum der zugrunde liegenden Version des BauGB.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:versionBauGBDatum</gml:identifier>
+      <gml:name>xplan:versionBauGBDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_versionBauGBText">
+      <gml:description>Textliche Spezifikation der zugrunde liegenden Version des BauGB.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:versionBauGBText</gml:identifier>
+      <gml:name>xplan:versionBauGBText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_versionSonstRechtsgrundlageDatum">
+      <gml:description>Datum einer zugrunde liegenden anderen Rechtsgrundlage als BauGB / BauNVO.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:versionSonstRechtsgrundlageDatum</gml:identifier>
+      <gml:name>xplan:versionSonstRechtsgrundlageDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_versionSonstRechtsgrundlageText">
+      <gml:description>Textliche Spezifikation einer zugrunde liegenden anderen Rechtsgrundlage als BauGB / BauNVO.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:attribute:versionSonstRechtsgrundlageText</gml:identifier>
+      <gml:name>xplan:versionSonstRechtsgrundlageText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Plan_bereich">
+      <gml:description>Referenz eines Bebauungsplans auf einen Bereich</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Plan:association-role:bereich</gml:identifier>
+      <gml:name>xplan:bereich</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:BP_Bereich" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_Plan" />
+</TypeDefinition>

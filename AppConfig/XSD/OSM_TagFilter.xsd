@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="OSM_TagFilterCollection">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="OSM_TagFilter" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+    
+ <xs:element name="OSM_TagFilter">
+     <xs:complexType>
+         <xs:sequence>
+             <xs:element ref="OSM_SingleTagFilter" minOccurs="1" maxOccurs="unbounded"/>
+         </xs:sequence>
+         <xs:attribute name="filterName" type="xs:ID" use="required"/>
+         <xs:attribute name="combination" type="CombinationType" use="required"/>
+     </xs:complexType>
+ </xs:element>
+    
+    <xs:element name="OSM_SingleTagFilter">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tagValue" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="osmKey" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="FilterType" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="CombinationType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AND"/>
+            <xs:enumeration value="OR"/>
+        </xs:restriction>      
+    </xs:simpleType>
+    
+    <xs:simpleType name="FilterType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="POSITIVE"/>
+            <xs:enumeration value="NEGATIVE"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

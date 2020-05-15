@@ -1,0 +1,192 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:08:44-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_WaldFlaeche">
+  <gml:description>Festsetzung von Waldflächen  (§9, Abs. 1, Nr. 18b BauGB).
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_WaldFlaeche</gml:identifier>
+  <gml:name>xplan:BP_WaldFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung">
+      <gml:description>Zweckbestimmungen der Waldfläche
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1000</gml:identifier>
+          <gml:name>Naturwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1200</gml:identifier>
+          <gml:name>Nutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1400">
+          <gml:description>Erholungswald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1400</gml:identifier>
+          <gml:name>Erholungswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1600">
+          <gml:description>Schutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1600</gml:identifier>
+          <gml:name>Schutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1800">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1800</gml:identifier>
+          <gml:name>FlaecheForstwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungWald</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung1">
+      <gml:description>Weitere Zweckbestimmung der Waldfläche &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:weitereZweckbestimmung1</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung1</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung1_XP_ZweckbestimmungWald_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung1:XP_ZweckbestimmungWald:1000</gml:identifier>
+          <gml:name>Naturwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung1_XP_ZweckbestimmungWald_1200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung1:XP_ZweckbestimmungWald:1200</gml:identifier>
+          <gml:name>Nutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung1_XP_ZweckbestimmungWald_1400">
+          <gml:description>Erholungswald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung1:XP_ZweckbestimmungWald:1400</gml:identifier>
+          <gml:name>Erholungswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung1_XP_ZweckbestimmungWald_1600">
+          <gml:description>Schutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung1:XP_ZweckbestimmungWald:1600</gml:identifier>
+          <gml:name>Schutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung1_XP_ZweckbestimmungWald_1800">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung1:XP_ZweckbestimmungWald:1800</gml:identifier>
+          <gml:name>FlaecheForstwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung1_XP_ZweckbestimmungWald_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung1:XP_ZweckbestimmungWald:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungWald</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung2">
+      <gml:description>Weitere Zweckbestimmung der Waldfläche. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:weitereZweckbestimmung2</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung2</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung2_XP_ZweckbestimmungWald_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung2:XP_ZweckbestimmungWald:1000</gml:identifier>
+          <gml:name>Naturwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung2_XP_ZweckbestimmungWald_1200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung2:XP_ZweckbestimmungWald:1200</gml:identifier>
+          <gml:name>Nutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung2_XP_ZweckbestimmungWald_1400">
+          <gml:description>Erholungswald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung2:XP_ZweckbestimmungWald:1400</gml:identifier>
+          <gml:name>Erholungswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung2_XP_ZweckbestimmungWald_1600">
+          <gml:description>Schutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung2:XP_ZweckbestimmungWald:1600</gml:identifier>
+          <gml:name>Schutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung2_XP_ZweckbestimmungWald_1800">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung2:XP_ZweckbestimmungWald:1800</gml:identifier>
+          <gml:name>FlaecheForstwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_weitereZweckbestimmung2_XP_ZweckbestimmungWald_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_WaldFlaeche:weitereZweckbestimmung2:XP_ZweckbestimmungWald:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungWald</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_detaillierteZweckbestimmung">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmung.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestWaldFlaeche</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_weitereDetailZweckbestimmung1">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmung. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;detaillierteZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:weitereDetailZweckbestimmung1</gml:identifier>
+      <gml:name>xplan:weitereDetailZweckbestimmung1</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestWaldFlaeche</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_weitereDetailZweckbestimmung2">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmung. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;detaillierteZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:weitereDetailZweckbestimmung2</gml:identifier>
+      <gml:name>xplan:weitereDetailZweckbestimmung2</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestWaldFlaeche</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Flaechenschlussobjekt" />
+</TypeDefinition>

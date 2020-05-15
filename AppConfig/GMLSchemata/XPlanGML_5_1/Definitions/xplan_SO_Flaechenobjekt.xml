@@ -1,0 +1,40 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:45-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Flaechenobjekt">
+  <gml:description>Basisklasse für alle Objekte mit flächenhaftem Raumbezug (eine Einzelfläche oder eine Menge von Flächen, die sich nicht überlappen dürfen).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Flaechenobjekt</gml:identifier>
+  <gml:name>xplan:SO_Flaechenobjekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Flaechenobjekt_position">
+      <gml:description>Flächenhafter Raumbezug des Objektes (Eine Einzelfläche oder eine Menge von Flächen, die sich nicht überlappen dürfen). </gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Flaechenobjekt:attribute:position</gml:identifier>
+      <gml:name>xplan:position</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Flaechengeometrie" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Flaechenobjekt_flaechenschluss">
+      <gml:description>Zeigt an, ob das Objekt als Flächenschlussobjekt oder Überlagerungsobjekt gebildet werden soll. Flächenschlussobjekte dürfen sich nicht überlappen, sondern nur an den Flächenrändern berühren, wobei die jeweiligen Stützpunkte der Randkurven übereinander liegen müssen. Die Vereinigung der Flächenschlussobjekte überdeckt den Geltungsbereich des sonstigen raumbezogenen Plans vollständig. </gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Flaechenobjekt:attribute:flaechenschluss</gml:identifier>
+      <gml:name>xplan:flaechenschluss</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Flaechenobjekt_flaechenschluss_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::SO_Flaechenobjekt:flaechenschluss:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Flaechenobjekt_flaechenschluss_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::SO_Flaechenobjekt:flaechenschluss:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Objekt" />
+</TypeDefinition>

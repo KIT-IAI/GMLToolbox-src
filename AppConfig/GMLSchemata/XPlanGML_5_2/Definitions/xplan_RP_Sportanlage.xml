@@ -1,0 +1,75 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:25-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Sportanlage">
+  <gml:description>Sportanlagen und -bereiche.
+Sportanlagen sind ortsfeste Einrichtungen, die zur Sportausübung bestimmt sind. Zur Sportanlage zählen auch Einrichtungen, die mit der Sportanlage in einem engen räumlichen und betrieblichen Zusammenhang stehen (nach BImSchV 18 §1).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Sportanlage</gml:identifier>
+  <gml:name>xplan:RP_Sportanlage</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Sportanlage_typ">
+      <gml:description>Klassifikation von Sportanlagen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Sportanlage:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sportanlage_typ_RP_SportanlageTypen_1000">
+          <gml:description>Sportanlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sportanlage:typ:RP_SportanlageTypen:1000</gml:identifier>
+          <gml:name>Sportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sportanlage_typ_RP_SportanlageTypen_2000">
+          <gml:description>Wassersport.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sportanlage:typ:RP_SportanlageTypen:2000</gml:identifier>
+          <gml:name>Wassersport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sportanlage_typ_RP_SportanlageTypen_3000">
+          <gml:description>Motorsport.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sportanlage:typ:RP_SportanlageTypen:3000</gml:identifier>
+          <gml:name>Motorsport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sportanlage_typ_RP_SportanlageTypen_4000">
+          <gml:description>Flugsport.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sportanlage:typ:RP_SportanlageTypen:4000</gml:identifier>
+          <gml:name>Flugsport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sportanlage_typ_RP_SportanlageTypen_5000">
+          <gml:description>Reitsport.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sportanlage:typ:RP_SportanlageTypen:5000</gml:identifier>
+          <gml:name>Reitsport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sportanlage_typ_RP_SportanlageTypen_6000">
+          <gml:description>Golfsport.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sportanlage:typ:RP_SportanlageTypen:6000</gml:identifier>
+          <gml:name>Golfsport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sportanlage_typ_RP_SportanlageTypen_7000">
+          <gml:description>Sportzentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sportanlage:typ:RP_SportanlageTypen:7000</gml:identifier>
+          <gml:name>Sportzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sportanlage_typ_RP_SportanlageTypen_9999">
+          <gml:description>Sonstige Sportanlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sportanlage:typ:RP_SportanlageTypen:9999</gml:identifier>
+          <gml:name>SonstigeSportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_SportanlageTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Freiraum" />
+</TypeDefinition>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KmlVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/XPlanung/XPlanGML-Toolbox_Executable/XSD/KmlParameter.xsd">
+
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:Building</klassenName>
+        <polyVisualParams>
+            <fillColor r="101" g="252" b="244"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:BuildingPart</klassenName>
+        <polyVisualParams>
+            <fillColor r="101" g="252" b="244"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:WallSurface</klassenName>
+        <polyVisualParams>
+            <fillColor r="128" g="128" b="128"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:RoofSurface</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="0" b="0"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>   
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:Room</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="255" b="36"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>       
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:InteriorWallSurface</klassenName>
+        <polyVisualParams>
+            <fillColor r="128" g="128" b="128"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams> 
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:FloorSurface</klassenName>
+        <polyVisualParams>
+            <fillColor r="128" g="64" b="64"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams> 
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:CeilingSurface</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="128" b="128"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams> 
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:BuildingFurniture</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="128" b="0"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams> 
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:Window</klassenName>
+        <polyVisualParams>
+            <fillColor r="0" g="0" b="255" alpha="128"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams> 
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:Door</klassenName>
+        <polyVisualParams>
+            <fillColor r="0" g="255" b="0" alpha="128"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>     
+    
+    
+    <KmlKlassenVisualParams>
+        <klassenName>brid:BridgeConstructionElement</klassenName>
+        <polyVisualParams>
+            <fillColor r="0" g="0" b="255" alpha="255"/>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>     
+    
+    <KmlKlassenVisualParams>
+        <klassenName>brid:BridgeInstallation</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="255" b="0" alpha="255"/>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>          
+    
+    <KmlKlassenVisualParams>
+        <klassenName>brid:Bridge</klassenName>
+        <polyVisualParams>
+            <fillColor r="195" g="195" b="195" alpha="255"/> 
+        </polyVisualParams>
+    </KmlKlassenVisualParams>     
+    
+    <KmlKlassenVisualParams>
+        <klassenName>trpt:AuxiliaryTrafficArea</klassenName>
+        <polyVisualParams>
+            <fillColor r="239" g="228" b="176" alpha="255"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>     
+    
+    <KmlKlassenVisualParams>
+        <klassenName>trpt:TrafficArea</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="255" b="128" alpha="255"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>     
+    
+    <KmlKlassenVisualParams>
+        <klassenName>trpt:Railway</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="0" b="255" alpha="255"/>
+            <lineColor r="255" g="0" b="255" alpha="255"/>
+            <physicalWidth>2</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>         
+    
+    
+    <KmlKlassenVisualParams>
+        <klassenName>imgeo:OverigBouwwerk</klassenName>
+        <polyVisualParams>
+            <fillColor r="128" g="128" b="0" alpha="255"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>       
+    
+    
+    <KmlKlassenVisualParams>
+        <klassenName>imgeo:Scheiding</klassenName>
+        <polyVisualParams>
+            <fillColor r="0" g="255" b="64" alpha="255"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>   
+    
+    
+    <KmlKlassenVisualParams>
+        <klassenName>imgeo:Waterdeel</klassenName>
+        <polyVisualParams>
+            <fillColor r="0" g="128" b="255" alpha="255"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>            
+    
+    
+    <KmlKlassenVisualParams>
+        <klassenName>veget:PlantCover</klassenName>
+        <polyVisualParams>
+            <fillColor r="128" g="255" b="128" alpha="255"/>
+            <lineColor r="0" g="0" b="0" alpha="255"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>    
+    
+    
+    <KmlKlassenVisualParams>
+        <klassenName>veget:SolitaryVegetationObject</klassenName>
+        <polyVisualParams>
+            <fillColor r="34" g="177" b="76" alpha="255"/>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>                 
+</KmlVisualisierung>

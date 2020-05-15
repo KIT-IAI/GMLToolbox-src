@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="FP_DetailArtDerBaulNutzung">
+    <description>GML-Dictionary weiterer Arten der baulichen Nutzung im FPlan.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:FP_DetailArtDerBaulNutzung</identifier>
+    <name>xplan:FP_DetailArtDerBaulNutzung</name>
+    <dictionaryEntry>
+        <Definition gml:id="FP_DetailArtDerBaulNutzung_52124">
+            <description>Wohnbauflächen, deren parkartiger Charakter durch besondere Festsetzungen gesichert werden soll</description>
+            <identifier codeSpace="urn:xplan">FP_DetailArtDerBaulNutzung_52124</identifier>
+            <name>52124</name>            
+        </Definition>        
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="FP_DetailArtDerBaulNutzung_52204">
+            <description>Bauflächen mit Dorf- oder Wohngebietscharakter</description>
+            <identifier codeSpace="urn:xplan">FP_DetailArtDerBaulNutzung_52204</identifier>
+            <name>52204</name>            
+        </Definition>        
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="FP_DetailArtDerBaulNutzung_52314">
+            <description>Gemischte Bauflächen, deren Charakter als Dienstleistungszentren für die Wohnbevölkerung und für die Wirtschaft durch besondere Festsetzungen gesichert werden soll</description>
+            <identifier codeSpace="urn:xplan">FP_DetailArtDerBaulNutzung_52314</identifier>
+            <name>52314</name>            
+        </Definition>        
+    </dictionaryEntry>
+    
+</Dictionary>

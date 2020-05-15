@@ -1,0 +1,247 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:35-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_Strassenverkehr">
+  <gml:description>Darstellung von Flächen für den überörtlichen Verkehr und für die örtlichen Hauptverkehrszüge ( §5, Abs. 2, Nr. 3 BauGB).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Strassenverkehr</gml:identifier>
+  <gml:name>xplan:FP_Strassenverkehr</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung">
+      <gml:description>Zweckbestimmung des Objektes.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Strassenverkehr:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_1000">
+          <gml:description>Autobahn und autobahnähnliche Straße.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:1000</gml:identifier>
+          <gml:name>Autobahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_1200">
+          <gml:description>Sonstige örtliche oder überörtliche Hauptverkehrsstraße bzw. Weg.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:1200</gml:identifier>
+          <gml:name>Hauptverkehrsstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_1400">
+          <gml:description>Sonstiger Verkehrsweg oder Anlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:1400</gml:identifier>
+          <gml:name>SonstigerVerkehrswegAnlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14000">
+          <gml:description>Verkehrsberuhigter Bereich</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14000</gml:identifier>
+          <gml:name>VerkehrsberuhigterBereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14001">
+          <gml:description>Platz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14001</gml:identifier>
+          <gml:name>Platz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14002">
+          <gml:description>Fußgängerbereich</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14002</gml:identifier>
+          <gml:name>Fussgaengerbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14003">
+          <gml:description>Rad- und Fußweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14003</gml:identifier>
+          <gml:name>RadFussweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14004">
+          <gml:description>Radweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14004</gml:identifier>
+          <gml:name>Radweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14005">
+          <gml:description>Fußweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14005</gml:identifier>
+          <gml:name>Fussweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14006">
+          <gml:description>Wanderweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14006</gml:identifier>
+          <gml:name>Wanderweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14007">
+          <gml:description>Reit- und Kutschweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14007</gml:identifier>
+          <gml:name>ReitKutschweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14008">
+          <gml:description>Rastanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14008</gml:identifier>
+          <gml:name>Rastanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_14009">
+          <gml:description>Busbahnhof</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:14009</gml:identifier>
+          <gml:name>Busbahnhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_140010">
+          <gml:description>Brückenbereich, hier: Überführender Verkehrsweg.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:140010</gml:identifier>
+          <gml:name>UeberfuehrenderVerkehrsweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_140011">
+          <gml:description>Brückenbereich, hier: Unterführender Verkehrsweg.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:140011</gml:identifier>
+          <gml:name>UnterfuehrenderVerkehrsweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_140012">
+          <gml:description>Wirtschaftsweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:140012</gml:identifier>
+          <gml:name>Wirtschaftsweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_140013">
+          <gml:description>Landwirtschaftlicher Verkehr</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:140013</gml:identifier>
+          <gml:name>LandwirtschaftlicherVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_1600">
+          <gml:description>Fläche oder Anlage für den ruhenden Verkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:1600</gml:identifier>
+          <gml:name>RuhenderVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_16000">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:16000</gml:identifier>
+          <gml:name>Parkplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_16001">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:16001</gml:identifier>
+          <gml:name>Fahrradabstellplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_16002">
+          <gml:description>Park- and Ride-Anlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:16002</gml:identifier>
+          <gml:name>P_RAnlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_3000">
+          <gml:description>Fläche zum Car-Sharing</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:3000</gml:identifier>
+          <gml:name>CarSharing</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_3100">
+          <gml:description>Fläche zum Abstellen gemeinschaftlich genutzter Fahrräder</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:3100</gml:identifier>
+          <gml:name>BikeSharing</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_3200">
+          <gml:description>Bike and Ride Anlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:3200</gml:identifier>
+          <gml:name>Bike_RideAnlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_3300">
+          <gml:description>Parkhaus</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:3300</gml:identifier>
+          <gml:name>Parkhaus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_3400">
+          <gml:description>Mischverkehrsfläche</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:3400</gml:identifier>
+          <gml:name>Mischverkehrsflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_3500">
+          <gml:description>Ladestation für Elektrofahrzeuge</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:3500</gml:identifier>
+          <gml:name>Ladestation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_zweckbestimmung_FP_ZweckbestimmungStrassenverkehr_9999">
+          <gml:description>Sonstige Zweckbestimmung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:zweckbestimmung:FP_ZweckbestimmungStrassenverkehr:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_ZweckbestimmungStrassenverkehr</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Strassenverkehr_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Zweckbestimmung.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Strassenverkehr:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestStrassenverkehr</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Strassenverkehr_nutzungsform">
+      <gml:description>Nutzungsform</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Strassenverkehr:attribute:nutzungsform</gml:identifier>
+      <gml:name>xplan:nutzungsform</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_nutzungsform_XP_Nutzungsform_1000">
+          <gml:description>Private Nutzung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:nutzungsform:XP_Nutzungsform:1000</gml:identifier>
+          <gml:name>Privat</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Strassenverkehr_nutzungsform_XP_Nutzungsform_2000">
+          <gml:description>Öffentliche Nutzung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_Strassenverkehr:nutzungsform:XP_Nutzungsform:2000</gml:identifier>
+          <gml:name>Oeffentlich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_Nutzungsform</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Geometrieobjekt" />
+</TypeDefinition>

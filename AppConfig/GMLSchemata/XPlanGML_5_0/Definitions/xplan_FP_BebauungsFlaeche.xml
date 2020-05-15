@@ -1,0 +1,416 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:16-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_BebauungsFlaeche">
+  <gml:description>Darstellung einer für die Bebauung vorgesehenen Fläche (§ 5, Abs. 2, Nr. 1 BauGB).</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche</gml:identifier>
+  <gml:name>xplan:FP_BebauungsFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_GFZ">
+      <gml:description>Angabe einer maximalen Geschossflächenzahl als Maß der baulichen Nutzung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:GFZ</gml:identifier>
+      <gml:name>xplan:GFZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Decimal" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_GFZmin">
+      <gml:description>Minimale Geschossflächenzahl bei einer Bereichsangabe (GFZmax muss ebenfalls spezifiziert werden).</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:GFZmin</gml:identifier>
+      <gml:name>xplan:GFZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Decimal" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_GFZmax">
+      <gml:description>Maximale Geschossflächenzahl bei einer Bereichsangabe (GFZmin muss ebenfalls spezifiziert werden).</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:GFZmax</gml:identifier>
+      <gml:name>xplan:GFZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Decimal" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_BMZ">
+      <gml:description>Angabe einer maximalen Baumassenzahl als Maß der baulichen Nutzung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:BMZ</gml:identifier>
+      <gml:name>xplan:BMZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Decimal" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_GRZ">
+      <gml:description>Angabe einer maximalen Grundflächenzahl als Maß der baulichen Nutzung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:GRZ</gml:identifier>
+      <gml:name>xplan:GRZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Decimal" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_allgArtDerBaulNutzung">
+      <gml:description>Angabe der allgemeinen Art der baulichen Nutzung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:allgArtDerBaulNutzung</gml:identifier>
+      <gml:name>xplan:allgArtDerBaulNutzung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_allgArtDerBaulNutzung_XP_AllgArtDerBaulNutzung_1000">
+          <gml:description>Wohnbaufläche nach §1 Abs. (1) BauNVO</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:allgArtDerBaulNutzung:XP_AllgArtDerBaulNutzung:1000</gml:identifier>
+          <gml:name>WohnBauflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_allgArtDerBaulNutzung_XP_AllgArtDerBaulNutzung_2000">
+          <gml:description>Gemischte Baufläche nach §1 Abs. (1) BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:allgArtDerBaulNutzung:XP_AllgArtDerBaulNutzung:2000</gml:identifier>
+          <gml:name>GemischteBauflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_allgArtDerBaulNutzung_XP_AllgArtDerBaulNutzung_3000">
+          <gml:description>Gewerbliche Baufläche nach §1 Abs. (1) BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:allgArtDerBaulNutzung:XP_AllgArtDerBaulNutzung:3000</gml:identifier>
+          <gml:name>GewerblicheBauflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_allgArtDerBaulNutzung_XP_AllgArtDerBaulNutzung_4000">
+          <gml:description>Sonderbaufläche nach §1 Abs. (1) BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:allgArtDerBaulNutzung:XP_AllgArtDerBaulNutzung:4000</gml:identifier>
+          <gml:name>SonderBauflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_allgArtDerBaulNutzung_XP_AllgArtDerBaulNutzung_9999">
+          <gml:description>Sonstige Baufläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:allgArtDerBaulNutzung:XP_AllgArtDerBaulNutzung:9999</gml:identifier>
+          <gml:name>SonstigeBauflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_AllgArtDerBaulNutzung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung">
+      <gml:description>Angabe der besonderen Art der baulichen Nutzung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:besondereArtDerBaulNutzung</gml:identifier>
+      <gml:name>xplan:besondereArtDerBaulNutzung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1000">
+          <gml:description>Kleinsiedlungsgebiet nach § 2 BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1000</gml:identifier>
+          <gml:name>Kleinsiedlungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1100">
+          <gml:description>Reines Wohngebiet nach § 3 BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1100</gml:identifier>
+          <gml:name>ReinesWohngebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1200">
+          <gml:description>Allgemeines Wohngebiet nach § 4 BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1200</gml:identifier>
+          <gml:name>AllgWohngebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1300">
+          <gml:description>Gebiet zur Erhaltung und Entwicklung der Wohnnutzung (Besonderes Wohngebiet) nach § 4a BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1300</gml:identifier>
+          <gml:name>BesonderesWohngebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1400">
+          <gml:description>Dorfgebiet nach $ 5 BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1400</gml:identifier>
+          <gml:name>Dorfgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1500">
+          <gml:description>Mischgebiet nach $ 6 BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1500</gml:identifier>
+          <gml:name>Mischgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1550">
+          <gml:description>Urbanes Gebiet nach § 6a BauNVO</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1550</gml:identifier>
+          <gml:name>UrbanesGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1600">
+          <gml:description>Kerngebiet nach § 7 BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1600</gml:identifier>
+          <gml:name>Kerngebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1700">
+          <gml:description>Gewerbegebiet nach § 8 BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1700</gml:identifier>
+          <gml:name>Gewerbegebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_1800">
+          <gml:description>Industriegebiet nach § 9 BauNVO.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:1800</gml:identifier>
+          <gml:name>Industriegebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_2000">
+          <gml:description>Sondergebiet, das der Erholung dient nach § 10 BauNVO von 1977 und 1990.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:2000</gml:identifier>
+          <gml:name>SondergebietErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_2100">
+          <gml:description>Sonstiges Sondergebiet nach§ 11 BauNVO 1977 und 1990; z.B. Klinikgebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:2100</gml:identifier>
+          <gml:name>SondergebietSonst</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_3000">
+          <gml:description>Wochenendhausgebiet nach §10 der BauNVO von 1962 und 1968</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:3000</gml:identifier>
+          <gml:name>Wochenendhausgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_4000">
+          <gml:description>Sondergebiet nach §11der BauNVO von 1962 und 1968</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:4000</gml:identifier>
+          <gml:name>Sondergebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_besondereArtDerBaulNutzung_XP_BesondereArtDerBaulNutzung_9999">
+          <gml:description>Sonstiges Gebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:besondereArtDerBaulNutzung:XP_BesondereArtDerBaulNutzung:9999</gml:identifier>
+          <gml:name>SonstigesGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_BesondereArtDerBaulNutzung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung">
+      <gml:description>Bei Nutzungsform "Sondergebiet": Differenzierung verschiedener Arten von Sondergebieten nach §§ 10 und 11 BauNVO.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:sonderNutzung</gml:identifier>
+      <gml:name>xplan:sonderNutzung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1000">
+          <gml:description>Wochenendhausgebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1000</gml:identifier>
+          <gml:name>Wochenendhausgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1100">
+          <gml:description>Ferienhausgebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1100</gml:identifier>
+          <gml:name>Ferienhausgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1200">
+          <gml:description>Campingplatzgebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1200</gml:identifier>
+          <gml:name>Campingplatzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1300">
+          <gml:description>Kurgebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1300</gml:identifier>
+          <gml:name>Kurgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1400">
+          <gml:description>Sonstiges Sondergebiet für Erholung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1400</gml:identifier>
+          <gml:name>SonstSondergebietErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1500">
+          <gml:description>Einzelhandelsgebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1500</gml:identifier>
+          <gml:name>Einzelhandelsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1600">
+          <gml:description>Gebiet für großflächigen Einzelhandel</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1600</gml:identifier>
+          <gml:name>GrossflaechigerEinzelhandel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_16000">
+          <gml:description>Ladengebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:16000</gml:identifier>
+          <gml:name>Ladengebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_16001">
+          <gml:description>Einkaufszentrum</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:16001</gml:identifier>
+          <gml:name>Einkaufszentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_16002">
+          <gml:description>Sonstiges Gebiet für großflächigen Einzelhandel</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:16002</gml:identifier>
+          <gml:name>SonstGrossflEinzelhandel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1700">
+          <gml:description>Verkehrsübungsplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1700</gml:identifier>
+          <gml:name>Verkehrsuebungsplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1800">
+          <gml:description>Hafengebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1800</gml:identifier>
+          <gml:name>Hafengebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_1900">
+          <gml:description>Sondergebiet für Erneuerbare Energien</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:1900</gml:identifier>
+          <gml:name>SondergebietErneuerbareEnergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2000">
+          <gml:description>Militärisches Sondergebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2000</gml:identifier>
+          <gml:name>SondergebietMilitaer</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2100">
+          <gml:description>Sondergebiet Landwirtschaft</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2100</gml:identifier>
+          <gml:name>SondergebietLandwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2200">
+          <gml:description>Sondergebiet Sport</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2200</gml:identifier>
+          <gml:name>SondergebietSport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2300">
+          <gml:description>Sondergebiet für Gesundheit und Soziales</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2300</gml:identifier>
+          <gml:name>SondergebietGesundheitSoziales</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2400">
+          <gml:description>Golfplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2400</gml:identifier>
+          <gml:name>Golfplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2500">
+          <gml:description>Sondergebiet für Kultur</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2500</gml:identifier>
+          <gml:name>SondergebietKultur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2600">
+          <gml:description>Sondergebiet Tourismus</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2600</gml:identifier>
+          <gml:name>SondergebietTourismus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2700">
+          <gml:description>Sondergebiet für Büros und Verwaltung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2700</gml:identifier>
+          <gml:name>SondergebietBueroUndVerwaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2800">
+          <gml:description>Sondergebiet Hochschule</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2800</gml:identifier>
+          <gml:name>SondergebietHochschuleEinrichtungen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_2900">
+          <gml:description>Sondergebiet für Messe</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:2900</gml:identifier>
+          <gml:name>SondergebietMesse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_BebauungsFlaeche_sonderNutzung_XP_Sondernutzungen_9999">
+          <gml:description>Sonstiges Sondergebiet</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_BebauungsFlaeche:sonderNutzung:XP_Sondernutzungen:9999</gml:identifier>
+          <gml:name>SondergebietAndereNutzungen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_Sondernutzungen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_detaillierteArtDerBaulNutzung">
+      <gml:description>Über eine Codeliste definierte detailliertere Art der baulichen Nutzung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:detaillierteArtDerBaulNutzung</gml:identifier>
+      <gml:name>xplan:detaillierteArtDerBaulNutzung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailArtDerBaulNutzung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_BebauungsFlaeche_nutzungText">
+      <gml:description>Bei Nutzungsform "Sondergebiet": Kurzform der besonderen Art der baulichen Nutzung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_BebauungsFlaeche:attribute:nutzungText</gml:identifier>
+      <gml:name>xplan:nutzungText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Flaechenschlussobjekt" />
+</TypeDefinition>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:17:53-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="SO_DetailKlassifizNachSchienenverkehrsrecht">
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:SO_DetailKlassifizNachSchienenverkehrsrecht</identifier>
+  <name>xplan:SO_DetailKlassifizNachSchienenverkehrsrecht</name>
+</Dictionary>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OSM_TagFilterCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/OSM_TagFilter.xsd">
+    <OSM_TagFilter filterName="Elektrizität" combination="OR">
+        <OSM_SingleTagFilter osmKey="power" type="POSITIVE"/>                  
+    </OSM_TagFilter>
+    
+    <OSM_TagFilter filterName="Landnutzung" combination="OR">
+        <OSM_SingleTagFilter osmKey="landuse" type="POSITIVE"/>           
+    </OSM_TagFilter>
+</OSM_TagFilterCollection>

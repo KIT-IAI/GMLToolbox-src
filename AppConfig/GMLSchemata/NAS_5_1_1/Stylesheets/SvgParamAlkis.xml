@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Parameter zur SVG-Visualisierung eine ALKIS/NAS-Modells-->
+<!--
+
+  IIII - Der Filter akzeptiert jeden bel. Attributwert, auch die Nicht-Belegung
+  BBBB - Das Attribut muss gesetzt seit, der Wert ist aber beliebig
+  NNNN - Das Attribut darf nicht belegt sein
+
+
+-->
+<SvgVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/SvgParameter.xsd"
+ gmlType="NAS_5_1_1"
+ Masstab="1:2000"
+ datum="2008-02-21"
+ breiteUeberschrift="800"
+ hoeheUeberschrift="30">
+	
+	<!--   =========================    Flurstücke  ===========================================-->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Flurstueck" priorityFlaechendarstellung="10">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXFlurstueck" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXFlurstueck">
+		<FillColor>
+			<ColorName>green</ColorName>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_BesondereFlurstuecksgrenze" priorityLiniendarstellung="11">
+		<LinienDarstellung default="true">
+			<LinienParams class="AXBesondereFlurstuecksgrenze"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBesondereFlurstuecksgrenze">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>yellow</ColorName>
+		</StrokeColor>
+	</Style>
+	
+	<!--  ================== Gebäude ====================================================== -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Gebaeude" priorityFlaechendarstellung="15">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXGebaeude" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXGebaeude">
+		<FillColor>
+			<ColorName>red</ColorName>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Bauteil" priorityFlaechendarstellung="16">
+		<FlaechenDarstellung default="true">
+			<FlaechenParams class="AXBauteil" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBauteil">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>maroon</ColorName>
+		</StrokeColor>
+		<Stroke-width>2</Stroke-width>
+	</Style>
+	
+
+		
+	<GmlKlassenVisual gmlKlassenName="adv:AX_BesondereGebaeudelinie" priorityLiniendarstellung="17">
+		<LinienDarstellung default="true">
+			<LinienParams class="AXBesondereGebaeudelinie"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBesondereGebaeudelinie">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>blue</ColorName>
+		</StrokeColor>
+	</Style>	
+	
+	<!--  ================= Bauwerke und Einrichtungen in Siedlungsflächen =============================================== -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Leitung" priorityLiniendarstellung="25">
+		<LinienDarstellung default="true">
+			<LinienParams class="AXLeitung"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXLeitung">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>2</Stroke-width>
+		<Stroke-dasharray>2</Stroke-dasharray>
+		<Stroke-dasharray>2</Stroke-dasharray>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_BauwerkOderAnlageFuerIndustrieUndGewerbe" priorityLiniendarstellung="25">
+		<LinienDarstellung default="true">
+			<LinienParams class="AXBauwerkOderAnlageFuerIndustrieUndGewerbe"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBauwerkOderAnlageFuerIndustrieUndGewerbe">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="255" g="255" b="255"/>
+		</StrokeColor>
+	</Style>
+	
+	
+
+	
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_SonstigesBauwerkOderSonstigeEinrichtung" priorityFlaechendarstellung="10" priorityLiniendarstellung="25">
+		<FlaechenDarstellung>
+			<FlaechenParams class="AXSonstigesBauwerkOderSonstigeEinrichtungFlaeche" clip="true"/>
+		</FlaechenDarstellung>
+		<LinienDarstellung default="true">
+			<LinienParams class="AXSonstigesBauwerkOderSonstigeEinrichtungLinie"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXSonstigesBauwerkOderSonstigeEinrichtungFlaeche">
+		<FillColor>
+			<ColorName>fuchsia</ColorName>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+	</Style>
+	
+	
+	<Style styleName="AXSonstigesBauwerkOderSonstigeEinrichtungLinie">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>fuchsia</ColorName>
+		</StrokeColor>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_HistorischesBauwerkOderHistorischeEinrichtung" priorityFlaechendarstellung="25" priorityLiniendarstellung="25" priorityPunktdarstellung="25">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXHistorischesBauwerkOderHistorischeEinrichtungFlaeche" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung default="true">
+			<LinienParams class="AXHistorischesBauwerkOderHistorischeEinrichtungLinie"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung default="true" symbol="AXHistorischesBauwerkOderHistorischeEinrichtungSymbol"/>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXHistorischesBauwerkOderHistorischeEinrichtungFlaeche">
+		<FillColor>
+			<Color r="180" g="14" b="22"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<Style styleName="AXHistorischesBauwerkOderHistorischeEinrichtungLinie">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="180" g="14" b="22"/>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<Symbol name="AXHistorischesBauwerkOderHistorischeEinrichtungSymbol">
+		<Circle cx="0" cy="0" r="1">
+			<FillColor>
+				<Color r="180" g="14" b="22"/>
+			</FillColor>
+		</Circle>
+		<Text size="5" x="0" y="0" text="B" class="AXHistorischesBauwerkOderHistorischeEinrichtungSymbolText"/>
+	</Symbol>
+	
+	<Style styleName="AXHistorischesBauwerkOderHistorischeEinrichtungSymbolText">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Font-family>Arial</Font-family>
+	</Style>
+	
+	<!--  ============================ Bauwerke Verkehrsbereich ============================================= -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Strassenverkehrsanlage" priorityFlaechendarstellung="25" priorityLiniendarstellung="25">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXStrassenverkehrsanlageFlaeche"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung default="true">
+			<LinienParams class="AXStrassenverkehrsanlageLinie"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXStrassenverkehrsanlageFlaeche">
+		<FillColor>
+			<ColorName>yellow</ColorName>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="AXStrassenverkehrsanlageLinie">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>yellow</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_BauwerkImVerkehrsbereich" priorityFlaechendarstellung="25" priorityLiniendarstellung="25">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXBauwerkImVerkehrsbereichFlaeche" clip="true"/>
+		</FlaechenDarstellung>
+		<LinienDarstellung default="true">
+			<LinienParams class="AXBauwerkImVerkehrsbereichLinie"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBauwerkImVerkehrsbereichFlaeche">
+		<FillColor>
+			<ColorName>red</ColorName>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	
+	<Style styleName="AXBauwerkImVerkehrsbereichLinie">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="255" g="255" b="255"/>
+		</StrokeColor>
+		<Stroke-dasharray>2</Stroke-dasharray>
+		<Stroke-dasharray>2</Stroke-dasharray>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_WegPfadSteig" priorityLiniendarstellung="25">
+		<LinienDarstellung default="true">
+			<LinienParams class="AXWegPfadSteig"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXWegPfadSteig">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>2</Stroke-width>
+		<Stroke-dasharray>5</Stroke-dasharray>
+		<Stroke-dasharray>1</Stroke-dasharray>
+		<Stroke-dasharray>1</Stroke-dasharray>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Bahnverkehrsanlage" priorityFlaechendarstellung="25" priorityPunktdarstellung="25">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXBahnverkehrsanlage"/>
+		</FlaechenDarstellung>
+		
+		<PunktDarstellung default="true" symbol="AXBahnverkehrsanlageSymbol">
+		</PunktDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBahnverkehrsanlage">
+		<FillColor>
+			<Color r="190" g="78" b="203"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Symbol name="AXBahnverkehrsanlageSymbol">
+		<Circle cx="0" cy="0" r="1">
+			<FillColor>
+				<ColorName>white</ColorName>
+			</FillColor>
+		</Circle>
+		<Text size="5" x="0" y="0" text="B" class="AXBahnverkehrsanlageSymbolText"/>
+	</Symbol>
+	
+	<Style styleName="AXBahnverkehrsanlageSymbolText">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Font-family>Arial</Font-family>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Gleis" priorityLiniendarstellung="25">
+		<LinienDarstellung default="true">
+			<LinienParams class="AXGleis"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXGleis">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_BauwerkImGewaesserbereich" priorityLiniendarstellung="25">
+		<LinienDarstellung default="true">
+			<LinienParams class="AXBauwerkImGewaesserbereich"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBauwerkImGewaesserbereich">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="200" g="200" b="200"/>
+		</StrokeColor>
+	</Style>
+	
+	<!--  =============== Öffentlich rechtliche Festlegungen ========================================= -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_KlassifizierungNachWasserrecht" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true">
+			<FlaechenParams class="AXKlassifizierungNachWasserrecht" hatching="AXKlassifizierungNachWasserrechtHatch"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXKlassifizierungNachWasserrecht">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Hatching name="AXKlassifizierungNachWasserrechtHatch">
+		<stroke-width>0.5</stroke-width>
+		<line-dist>2</line-dist>
+		<StrokeColor>
+			<ColorName>blue</ColorName>
+		</StrokeColor>
+		<FillColor>
+			<None/>
+		</FillColor>
+		<HatchingType>horizontal</HatchingType>
+	</Hatching>
+	
+	<!--  =========================== Tatsächliche Nutzung - Verkehr ==============================-->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Bahnverkehr" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXBahnverkehr" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBahnverkehr">
+		<FillColor>
+			<Color r="255" g="183" b="231"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+	</Style>
+
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Weg" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXWeg" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXWeg">
+		<FillColor>
+			<Color r="92" g="92" b="92"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Platz" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung deckend="true" default="true">
+			<FlaechenParams class="AXPlatz" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXPlatz">
+		<FillColor>
+			<Color r="128" g="128" b="64"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+
+	<!--  =================== Tatsächliche Nutzung - Siedlung ======================================== -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_FlaecheBesondererFunktionalerPraegung" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXFlaecheBesondererFunktionalerPraegung" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXFlaecheBesondererFunktionalerPraegung">
+		<FillColor>
+			<Color r="255" g="0" b="112"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_FlaecheGemischterNutzung" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXFlaecheGemischterNutzung" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXFlaecheGemischterNutzung">
+		<FillColor>
+			<Color r="168" g="112" b="0"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_IndustrieUndGewerbeflaeche" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXIndustrieUndGewerbeflaeche" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXIndustrieUndGewerbeflaeche">
+		<FillColor>
+			<Color r="192" g="192" b="192"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_SportFreizeitUndErholungsflaeche" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXSportFreizeitUndErholungsflaeche" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXSportFreizeitUndErholungsflaeche">
+		<FillColor>
+			<Color r="34" g="177" b="76"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>0.5</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Wohnbauflaeche" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXWohnbauflaeche" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXWohnbauflaeche">
+		<FillColor>
+			<Color r="255" g="138" b="111"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<!--  ================ Tatsächliche Nutzung - Verkehr ================================  -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Strassenverkehr" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXStrassenverkehr"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXStrassenverkehr">
+		<FillColor>
+			<Color r="255" g="220" b="69"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<!--  ==================== Tatsächliche Nutzung - Gewässer ==================================== -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Fliessgewaesser" priorityFlaechendarstellung="20">
+		<FlaechenDarstellung deckend="true" default="true">
+			<FlaechenParams class="AXFliessgewaesser" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXFliessgewaesser">
+		<FillColor>
+			<ColorName>blue</ColorName>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<!-- ================== Besondere Vegetationsmerkmale =================================  -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Vegetationsmerkmal" priorityFlaechendarstellung="30" priorityPunktdarstellung="30">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXVegetationsmerkmal" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<PunktDarstellung symbol="AXVegetationsmerkmalSymbol"/>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXVegetationsmerkmal">
+		<FillColor>
+			<Color r="0" g="175" b="56"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<Symbol name="AXVegetationsmerkmalSymbol">
+		<Circle cx="0" cy="0" r="1" class="AXVegetationsmerkmalSymbolStyle"/>
+	</Symbol>
+	
+	<Style styleName="AXVegetationsmerkmalSymbolStyle">
+		<FillColor>
+			<ColorName>green</ColorName>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+
+	<!-- =============== Primäres DGM ======================================== -->
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Gelaendekante" priorityLiniendarstellung="30">
+		<LinienDarstellung default="true">
+			<LinienParams class="AXGelaendekante"/>
+		</LinienDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXGelaendekante">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="128" g="128" b="128"/>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+		<Stroke-dasharray>8</Stroke-dasharray>
+		<Stroke-dasharray>1</Stroke-dasharray>
+		<Stroke-dasharray>1</Stroke-dasharray>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_HistorischesBauwerk" priorityFlaechendarstellung="25">
+		<FlaechenDarstellung default="true" deckend="true">
+			<FlaechenParams class="AXHistorischesBauwerk" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXHistorischesBauwerk">
+		<FillColor>
+			<Color r="128" g="0" b="0"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+	</Style>
+	
+	<GmlKlassenVisual gmlKlassenName="adv:AX_Boeschungsflaeche" priorityFlaechendarstellung="30">
+		<FlaechenDarstellung default="true">
+			<FlaechenParams class="AXBoeschungsflaeche"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="AXBoeschungsflaeche">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="128" g="128" b="128"/>
+		</StrokeColor>
+		<Stroke-width>1</Stroke-width>
+		<Stroke-dasharray>5</Stroke-dasharray>
+		<Stroke-dasharray>2</Stroke-dasharray>
+		<Stroke-dasharray>5</Stroke-dasharray>
+	</Style>
+	
+</SvgVisualisierung>

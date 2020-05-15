@@ -1,0 +1,64 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:08:47-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_GenerischesObjekt">
+  <gml:description>Klasse zur Modellierung aller Inhalte des BPlans, die keine nachrichtliche Übernahmen aus anderen Rechtsbereichen sind, aber durch keine andere Klasse des BPlan-Fachschemas dargestellt werden können.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GenerischesObjekt</gml:identifier>
+  <gml:name>xplan:BP_GenerischesObjekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GenerischesObjekt_weitereZweckbestimmung2">
+      <gml:description>Über eine CodeList definierte weitere Zweckbestimmung des Objektes. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden. &lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GenerischesObjekt:attribute:weitereZweckbestimmung2</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung2</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_ZweckbestimmungGenerischeObjekte</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GenerischesObjekt_weitereZweckbestimmung3">
+      <gml:description>Über eine CodeList definierte weitere Zweckbestimmung des Objektes. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GenerischesObjekt:attribute:weitereZweckbestimmung3</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung3</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_ZweckbestimmungGenerischeObjekte</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GenerischesObjekt_weitereZweckbestimmung4">
+      <gml:description>Über eine CodeList definierte weitere Zweckbestimmung des Objektes. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GenerischesObjekt:attribute:weitereZweckbestimmung4</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung4</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_ZweckbestimmungGenerischeObjekte</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GenerischesObjekt_zweckbestimmung">
+      <gml:description>Über eine CodeList definierte Zweckbestimmungen des Objektes.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GenerischesObjekt:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_ZweckbestimmungGenerischeObjekte</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GenerischesObjekt_weitereZweckbestimmung1">
+      <gml:description>Über eine CodeList definierte weitere Zweckbestimmung des Objektes. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GenerischesObjekt:attribute:weitereZweckbestimmung1</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung1</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_ZweckbestimmungGenerischeObjekte</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Geometrieobjekt" />
+</TypeDefinition>

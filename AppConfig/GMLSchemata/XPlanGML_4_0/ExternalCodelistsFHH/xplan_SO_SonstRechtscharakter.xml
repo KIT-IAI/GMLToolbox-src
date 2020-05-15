@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="SO_SonstRechtscharakter">
+    <description>GML-Dictionary für die rechtliche Charakterisierung von sonstigen raumbez. Plänen.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:SO_SonstRechtscharakter</identifier>
+    <name>xplan:SO_PlanTyp</name>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstRechtscharakter_DarstellungFPlan">
+            <description>DarstellungFPlan</description>
+            <identifier codeSpace="urn:xplan">SO_SonstRechtscharakter_DarstellungFPlan</identifier>
+            <name>DarstellungFPlan</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstRechtscharakter_FestsetzungBPlan">
+            <description>FestsetzungBPlan</description>
+            <identifier codeSpace="urn:xplan">SO_SonstRechtscharakter_FestsetzungBPlan</identifier>
+            <name>FestsetzungBPlan</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    
+</Dictionary>

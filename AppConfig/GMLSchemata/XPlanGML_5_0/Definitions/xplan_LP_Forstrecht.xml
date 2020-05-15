@@ -1,0 +1,106 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:26-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_Forstrecht">
+  <gml:description>Gebiete und Gebietsteile mit rechtlichen Bindungen nach anderen Fachgesetzen (soweit sie für den Schutz, die Pflege und die Entwicklung von Natur und Landschaft bedeutsam sind). Hier: Schutzgebiete und sonstige Flächen nach dem Bundeswaldgesetz.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Forstrecht</gml:identifier>
+  <gml:name>xplan:LP_Forstrecht</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_Forstrecht_typ">
+      <gml:description>Typ des Schutzobjektes.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Forstrecht:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_1000">
+          <gml:description>Naturwaldreservat</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:1000</gml:identifier>
+          <gml:name>Naturwaldreservat</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_2000">
+          <gml:description>Allgemeiner Schutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:2000</gml:identifier>
+          <gml:name>SchutzwaldAllgemein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_2100">
+          <gml:description>Lawinenschutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:2100</gml:identifier>
+          <gml:name>Lawinenschutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_2200">
+          <gml:description>Bodenschutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:2200</gml:identifier>
+          <gml:name>Bodenschutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_2300">
+          <gml:description>Klimaschutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:2300</gml:identifier>
+          <gml:name>Klimaschutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_2400">
+          <gml:description>Immissionsschutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:2400</gml:identifier>
+          <gml:name>Immissionsschutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_2500">
+          <gml:description>Biotopschutzwald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:2500</gml:identifier>
+          <gml:name>Biotopschutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_3000">
+          <gml:description>Allgemeiner Erholungswald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:3000</gml:identifier>
+          <gml:name>ErholungswaldAllgemein</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_3100">
+          <gml:description>Erholungswald in Heilbädern</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:3100</gml:identifier>
+          <gml:name>ErholungswaldHeilbaeder</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_3200">
+          <gml:description>Erholungswald in Ballungsräumen</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:3200</gml:identifier>
+          <gml:name>ErholungswaldBallungsraeume</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Forstrecht_typ_LP_ForstrechtTypen_9999">
+          <gml:description>Sonstiger Typ.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Forstrecht:typ:LP_ForstrechtTypen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_ForstrechtTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_Forstrecht_detailTyp">
+      <gml:description>Über eine Codeliste definierter detaillierterer Typ des Schutzobjektes.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Forstrecht:attribute:detailTyp</gml:identifier>
+      <gml:name>xplan:detailTyp</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_WaldschutzDetailTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_Geometrieobjekt" />
+</TypeDefinition>

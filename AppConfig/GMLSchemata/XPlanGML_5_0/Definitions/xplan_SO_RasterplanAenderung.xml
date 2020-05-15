@@ -1,0 +1,8 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:29-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_RasterplanAenderung">
+  <gml:description>Georeferenziertes Rasterbild der Änderung eines Basisplans. </gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:SO_RasterplanAenderung</gml:identifier>
+  <gml:name>xplan:SO_RasterplanAenderung</gml:name>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_RasterplanAenderung" />
+</TypeDefinition>

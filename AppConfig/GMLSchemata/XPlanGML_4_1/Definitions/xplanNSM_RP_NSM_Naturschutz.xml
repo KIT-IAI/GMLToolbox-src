@@ -1,0 +1,42 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:24-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplanNSM_RP_NSM_Naturschutz">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_NSM_Naturschutz</gml:identifier>
+  <gml:name>xplanNSM:RP_NSM_Naturschutz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplanNSM_RP_NSM_Naturschutz_typNS">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_NSM_Naturschutz:attribute:typNS</gml:identifier>
+      <gml:name>xplanNSM:typNS</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Naturschutz_typNS_RP_NSM_NaturschutzTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Naturschutz:typNS:RP_NSM_NaturschutzTypen:1000</gml:identifier>
+          <gml:name>GruenlandBewirtschaftungPflegeEntwicklung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Naturschutz_typNS_RP_NSM_NaturschutzTypen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Naturschutz:typNS:RP_NSM_NaturschutzTypen:2000</gml:identifier>
+          <gml:name>Natura2000</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Naturschutz_typNS_RP_NSM_NaturschutzTypen_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Naturschutz:typNS:RP_NSM_NaturschutzTypen:3000</gml:identifier>
+          <gml:name>NaturschutzLandschaftspflege</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Naturschutz_typNS_RP_NSM_NaturschutzTypen_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Naturschutz:typNS:RP_NSM_NaturschutzTypen:4000</gml:identifier>
+          <gml:name>NaturschutzLandschaftspflegeAufGewaessern</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NSM_NaturschutzTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_NaturLandschaft" />
+</TypeDefinition>

@@ -1,0 +1,93 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:19-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_NRW_Luftverkehr">
+  <gml:description>Luftverkehr
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Luftverkehr</gml:identifier>
+  <gml:name>xplan:RP_NRW_Luftverkehr</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Luftverkehr:attribute:luftverkehrTyp</gml:identifier>
+      <gml:name>xplan:luftverkehrTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:1000</gml:identifier>
+          <gml:name>ZivilerFlughafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_1500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:1500</gml:identifier>
+          <gml:name>MilitaerFlughafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:2000</gml:identifier>
+          <gml:name>Landeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_2500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:2500</gml:identifier>
+          <gml:name>StartLandebahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:3000</gml:identifier>
+          <gml:name>Verkehrsflughafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_3500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:3500</gml:identifier>
+          <gml:name>Regionalflughafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:4000</gml:identifier>
+          <gml:name>SegelflugGelaende</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_4500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:4500</gml:identifier>
+          <gml:name>HubschrauberLandeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Luftverkehr_luftverkehrTyp_RP_NRW_LuftverkehrTypen_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Luftverkehr:luftverkehrTyp:RP_NRW_LuftverkehrTypen:9999</gml:identifier>
+          <gml:name>SonstigerLuftverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NRW_LuftverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Luftverkehr_sonstTyp">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Luftverkehr:attribute:sonstTyp</gml:identifier>
+      <gml:name>xplan:sonstTyp</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NRW_SonstLuftverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Luftverkehr_bezeichnung">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Luftverkehr:attribute:bezeichnung</gml:identifier>
+      <gml:name>xplan:bezeichnung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Verkehr" />
+</TypeDefinition>

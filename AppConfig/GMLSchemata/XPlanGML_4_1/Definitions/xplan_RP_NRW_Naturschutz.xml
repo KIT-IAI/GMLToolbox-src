@@ -1,0 +1,77 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:19-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_NRW_Naturschutz">
+  <gml:description>Schutz der Natur (2da)
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Naturschutz</gml:identifier>
+  <gml:name>xplan:RP_NRW_Naturschutz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Naturschutz_typ">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Naturschutz:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Naturschutz_typ_RP_NRW_NaturschutzTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Naturschutz:typ:RP_NRW_NaturschutzTypen:1000</gml:identifier>
+          <gml:name>Naturschutzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Naturschutz_typ_RP_NRW_NaturschutzTypen_1100">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Naturschutz:typ:RP_NRW_NaturschutzTypen:1100</gml:identifier>
+          <gml:name>Nationalpark</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Naturschutz_typ_RP_NRW_NaturschutzTypen_1200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Naturschutz:typ:RP_NRW_NaturschutzTypen:1200</gml:identifier>
+          <gml:name>Biosphaerenreservat</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Naturschutz_typ_RP_NRW_NaturschutzTypen_1400">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Naturschutz:typ:RP_NRW_NaturschutzTypen:1400</gml:identifier>
+          <gml:name>Naturpark</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Naturschutz_typ_RP_NRW_NaturschutzTypen_1500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Naturschutz:typ:RP_NRW_NaturschutzTypen:1500</gml:identifier>
+          <gml:name>Naturdenkmal</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Naturschutz_typ_RP_NRW_NaturschutzTypen_1700">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Naturschutz:typ:RP_NRW_NaturschutzTypen:1700</gml:identifier>
+          <gml:name>GesetzlichGeschuetztesBiotop</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Naturschutz_typ_RP_NRW_NaturschutzTypen_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Naturschutz:typ:RP_NRW_NaturschutzTypen:3000</gml:identifier>
+          <gml:name>Feuchtgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Naturschutz_typ_RP_NRW_NaturschutzTypen_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Naturschutz:typ:RP_NRW_NaturschutzTypen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NRW_NaturschutzTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Naturschutz_massnahmen">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Naturschutz:attribute:massnahmen</gml:identifier>
+      <gml:name>xplan:massnahmen</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_NaturLandschaft" />
+</TypeDefinition>

@@ -1,0 +1,143 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:00-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_SPEMassnahmenDaten">
+  <gml:description>Spezifikation der Attribute für einer Schutz-, Pflege- oder Entwicklungsmaßnahme.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_SPEMassnahmenDaten</gml:identifier>
+  <gml:name>xplan:XP_SPEMassnahmenDaten</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme">
+      <gml:description>Klassifikation der Maßnahme</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_SPEMassnahmenDaten:attribute:klassifizMassnahme</gml:identifier>
+      <gml:name>xplan:klassifizMassnahme</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1000">
+          <gml:description>Artenreicher Gehölzbestand</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1000</gml:identifier>
+          <gml:name>ArtentreicherGehoelzbestand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1100">
+          <gml:description>Naturnaher Wald</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1100</gml:identifier>
+          <gml:name>NaturnaherWald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1200">
+          <gml:description>Extensives Grünland</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1200</gml:identifier>
+          <gml:name>ExtensivesGruenland</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1300">
+          <gml:description>Feuchtgrünland</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1300</gml:identifier>
+          <gml:name>Feuchtgruenland</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1400">
+          <gml:description>Obstwiese</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1400</gml:identifier>
+          <gml:name>Obstwiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1500">
+          <gml:description>Naturnaher Uferbereich</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1500</gml:identifier>
+          <gml:name>NaturnaherUferbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1600">
+          <gml:description>Röhrichtzone</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1600</gml:identifier>
+          <gml:name>Roehrichtzone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1700">
+          <gml:description>Ackerrandstreifen</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1700</gml:identifier>
+          <gml:name>Ackerrandstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1800">
+          <gml:description>Ackerbrache</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1800</gml:identifier>
+          <gml:name>Ackerbrache</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_1900">
+          <gml:description>Grünlandbrache</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:1900</gml:identifier>
+          <gml:name>Gruenlandbrache</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_2000">
+          <gml:description>Sukzessionsfläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:2000</gml:identifier>
+          <gml:name>Sukzessionsflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_2100">
+          <gml:description>Hochstaudenflur</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:2100</gml:identifier>
+          <gml:name>Hochstaudenflur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_2200">
+          <gml:description>Trockenrasen</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:2200</gml:identifier>
+          <gml:name>Trockenrasen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_2300">
+          <gml:description>Heide</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:2300</gml:identifier>
+          <gml:name>Heide</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SPEMassnahmenDaten_klassifizMassnahme_XP_SPEMassnahmenTypen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_SPEMassnahmenDaten:klassifizMassnahme:XP_SPEMassnahmenTypen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_SPEMassnahmenTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_SPEMassnahmenDaten_massnahmeText">
+      <gml:description>Durchzuführende Maßnahme als freier Text.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_SPEMassnahmenDaten:attribute:massnahmeText</gml:identifier>
+      <gml:name>xplan:massnahmeText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_SPEMassnahmenDaten_massnahmeKuerzel">
+      <gml:description>Kürzel der durchzuführenden Maßnahme.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_SPEMassnahmenDaten:attribute:massnahmeKuerzel</gml:identifier>
+      <gml:name>xplan:massnahmeKuerzel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

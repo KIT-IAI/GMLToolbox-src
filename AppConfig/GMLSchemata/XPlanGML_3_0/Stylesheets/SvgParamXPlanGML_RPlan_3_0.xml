@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Parameter zur SVG-Visualisierung eines XPlanGML-Modells-->
+<!-- Bereich Regionalplan   -->
+    <SvgVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/SvgParameter.xsd"
+ gmlType="XPLANGML_3_0"
+ Masstab="1:2000"
+ datum="2008-02-21"
+ breiteUeberschrift="800"
+ hoeheUeberschrift="30">
+       
+        <!-- =================Kernmodell ==========================================================================  -->      
+        
+        <!--  RP_GruenzugGruenzaesur -->
+        <GmlKlassenVisual gmlKlassenName="RP_GruenzugGruenzaesur" priorityFlaechendarstellung="15">
+            <FlaechenDarstellung deckend="true" default="true">
+                <FlaechenParams class="Dummy" hatching="HatchGruenzugGruenzaesur" clip="false"/>
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>
+        
+        <!--  RP_Entsorgung -->
+            <GmlKlassenVisual gmlKlassenName="RP_Entsorgung" priorityPunktdarstellung="30">
+                <PunktDarstellung attributA="typ" default="true"/>
+            </GmlKlassenVisual>
+        
+        <!-- RP_Energieversorgung -->
+        <GmlKlassenVisual gmlKlassenName="RP_Energieversorgung" priorityPunktdarstellung="30">
+            <PunktDarstellung attributA="typ" default="true"/>
+        </GmlKlassenVisual>
+        
+         <!--    ================ NRW-Modell ========================================================================= -->                                                          
+        <!--RP_Plan -->
+        <GmlKlassenVisual gmlKlassenName="RP_Plan" priorityFlaechendarstellung="50">
+            <FlaechenDarstellung default="true">
+                <FlaechenParams class="RpRaeumlicherGeltungsbereichA" clip="false"/>
+                <FlaechenParams class="RpRaeumlicherGeltungsbereichB" clip="false"/>
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>        
+        
+        <!-- RP_NRW_ASB-->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_ASB" priorityFlaechendarstellung="10" selectAttribut1="zweckbindung">
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>1000</SelectAttributWert1>
+                <SelectAttributWert1>1500</SelectAttributWert1>
+                <SelectAttributWert1>2000</SelectAttributWert1>
+                <SelectAttributWert1>2500</SelectAttributWert1>
+                <SelectAttributWert1>3000</SelectAttributWert1>
+                <SelectAttributWert1>3500</SelectAttributWert1>
+                <SelectAttributWert1>4000</SelectAttributWert1>
+                <SelectAttributWert1>9999</SelectAttributWert1>
+                <FlaechenParams class="RpNrwAsb" clip="true"/>
+                <LineSymbolParams symbolId="RsASBZweckgebNutzung" symbolSize="0.5" symbolDist="2"/>
+            </FlaechenDarstellung>
+            
+            <FlaechenDarstellung deckend="true" default="true">    
+                <FlaechenParams class="RpNrwAsb" clip="true"/>
+            </FlaechenDarstellung>
+            
+            <PunktDarstellung attributA="zweckbindung" attributB="sonstZweckbindung" default="true"/>
+        </GmlKlassenVisual>
+        
+        <!-- RP_NRW_GIB-->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_GIB" priorityFlaechendarstellung="10" selectAttribut1="zweckbindung">
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>1000</SelectAttributWert1>
+                <FlaechenParams class="RpNrwGibGrossvorhaben" clip="true"/>
+            </FlaechenDarstellung>
+            
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>2000</SelectAttributWert1>
+                <SelectAttributWert1>3000</SelectAttributWert1>
+                <SelectAttributWert1>9999</SelectAttributWert1>
+                <FlaechenParams class="RpNrwGib"/>
+                <LineSymbolParams symbolId="RsGIBZweckgebNutzung" symbolSize="1.0" symbolDist="5"/>
+            </FlaechenDarstellung>
+            
+            <FlaechenDarstellung deckend="true" default="true">
+                <FlaechenParams class="RpNrwGib"/>
+                <!--LineSymbolParams symbolId="RsGIBZweckgebNutzung" symbolSize="0.5" symbolDist="2"/-->
+            </FlaechenDarstellung>
+            
+            <PunktDarstellung attributA="zweckbindung" attributB="sonstZweckbindung" default="true"/>
+        </GmlKlassenVisual>
+        
+        <!-- RP_NRW_FreiraumAgrarbereich-->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_FreiraumAgrarbereich" priorityFlaechendarstellung="10" selectAttribut1="typ">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="RpNrwFreiraumAgrarbereich"/>
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>
+        
+        <!-- RP_NRW_Forstwirtschaft-->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_Forstwirtschaft" priorityFlaechendarstellung="10" selectAttribut1="typ">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="RpNrwForstwirtschaft"/>
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>
+        
+        <!-- RP_NRW_OberflaechenGwaesser-->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_OberflaechenGewaesser" priorityFlaechendarstellung="10">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="RpNrwOberflaechenGewaesser"/>
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>        
+        
+        <!-- RP_NRW_Naturschutz-->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_Naturschutz" priorityFlaechendarstellung="15" selectAttribut1="typ">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="RpNrwNaturschutz" hatching="HatchRpNrwNaturschutz"  />
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>
+        
+        <!-- RP_NRW_Landschaftsschutz-->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_Landschaftsschutz" priorityFlaechendarstellung="15" selectAttribut1="typ">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="Dummy" hatching="HatchRpNrwNaturschutz"  />
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>        
+        
+        <!-- RP_NRW_GrundwasserGewaesserschutz-->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_GrundwasserGewaesserschutz" priorityFlaechendarstellung="15" selectAttribut1="typ">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="Dummy" hatching="HatchRpNrwGrundwasserGewaesserschutz"  />
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>          
+        
+        <!-- RP_NRW_AufschuettungAblagerung -->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_AufschuettungAblagerung" priorityFlaechendarstellung="15" selectAttribut1="zweckbestimmung">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="SchwarzStrich" clip="true"/>
+                <LineSymbolParams symbolId="RsAufschuettung" symbolSize="2" symbolDist="4" symbolAngle="180"/>
+            </FlaechenDarstellung>          
+        </GmlKlassenVisual>
+        
+        <!-- RP_NRW_OberflaechennaheBodenschaetze -->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_OberflaechennaheBodenschaetze" priorityFlaechendarstellung="15">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="SchwarzStrich" clip="true"/>
+                <LineSymbolParams symbolId="RsBodenschaetze" symbolSize="2" symbolDist="2" symbolAngle="180"/>
+            </FlaechenDarstellung>          
+        </GmlKlassenVisual>
+        
+        <!--  RP_NRW_SonstigeZweckbindung  -->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_SonstigeZweckbindung" selectAttribut1="zweckbindung" priorityFlaechendarstellung="15">
+            <FlaechenDarstellung deckend="true" default="true">
+                <FlaechenParams class="RotStrich" clip="true"/>
+                <LineSymbolParams symbolId="RsNrwSonstigeZweckbindung" symbolSize="0.5" symbolDist="2"/>
+            </FlaechenDarstellung>
+            
+            <PunktDarstellung attributA="zweckbindung" default="true"/>
+        </GmlKlassenVisual>
+        
+        <!--  RpNRW_Luftverkehr  -->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_Luftverkehr" priorityFlaechendarstellung="10" selectAttribut1="luftverkehrTyp">
+            <FlaechenDarstellung default="true" deckend="true">
+                <FlaechenParams class="RpNrwLuftverkehr"/>
+            </FlaechenDarstellung>
+        </GmlKlassenVisual>
+        
+        
+        
+        <!--=================    Linien  ========================================================================== -->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_Zeitlinie" priorityLiniendarstellung="20">
+            <LinienDarstellung default="true">
+                <LinienParams class="RpNrwZeitlinie"/>
+            </LinienDarstellung>
+        </GmlKlassenVisual>
+        <!--  ============== Kernmodell ==========================================================================-->
+        
+        <!--  Rp_Laermschutzbereich  -->
+        <GmlKlassenVisual gmlKlassenName="RP_Laermschutzbereich" priorityFlaechendarstellung="15" priorityLiniendarstellung="20">
+            <FlaechenDarstellung deckend="true" default="true">
+                <FlaechenParams class="RpLaermschutz"/>
+            </FlaechenDarstellung>
+            <LinienDarstellung default="true">
+                <LinienParams class="RpLaermschutz"/>
+            </LinienDarstellung>
+        </GmlKlassenVisual>
+        
+        <!--  RP_Grenze  -->
+        <GmlKlassenVisual gmlKlassenName="RP_Grenze" priorityFlaechendarstellung="15" priorityLiniendarstellung="20" selectAttribut1="typ">
+            
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>1000</SelectAttributWert1>
+                <FlaechenParams class="RpGrenzeBund"/>
+            </FlaechenDarstellung>
+            
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>2000</SelectAttributWert1>
+                <FlaechenParams class="RpGrenzeLand"/>
+            </FlaechenDarstellung>            
+            
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>3000</SelectAttributWert1>
+                <FlaechenParams class="RpGrenzeRegierungsbezirk"/>
+            </FlaechenDarstellung>
+            
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>4000</SelectAttributWert1>
+                <FlaechenParams class="RpGrenzeKreis"/>
+            </FlaechenDarstellung>
+            
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>5000</SelectAttributWert1>
+                <FlaechenParams class="RpGrenzeGemeinde"/>
+            </FlaechenDarstellung>
+            
+            <FlaechenDarstellung deckend="true" default="false">
+                <SelectAttributWert1>9999</SelectAttributWert1>
+                <FlaechenParams class="RpGrenzeSonst"/>
+            </FlaechenDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>1000</SelectAttributWert1>
+                <LinienParams class="RpGrenzeBund"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>2000</SelectAttributWert1>
+                <LinienParams class="RpGrenzeLand"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>3000</SelectAttributWert1>
+                <LinienParams class="RpGrenzeRegierungsbezirk"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>4000</SelectAttributWert1>
+                <LinienParams class="RpGrenzeKreis"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>5000</SelectAttributWert1>
+                <LinienParams class="RpGrenzeGemeinde"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>9999</SelectAttributWert1>
+                <LinienParams class="RpGrenzeSonst"/>
+            </LinienDarstellung>
+        </GmlKlassenVisual>
+        
+        <!--  ================= NRW-Modell ======================================================================== -->
+        
+        <!--  RpNRW_Strassenverkehr  -->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_Strassenverkehr" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" 
+            priorityPunktdarstellung="30" selectAttribut1="strassenverkehrTyp" selectAttribut2="status">
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>1000</SelectAttributWert1>
+                <SelectAttributWert2>1000</SelectAttributWert2>
+                <LinienParams class="RpNrwStrasseGrossraumBestand"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>1000</SelectAttributWert1>
+                <SelectAttributWert2>2000</SelectAttributWert2>
+                <LinienParams class="RpNrwStrasseGrossraumBedarfsplan"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>2000</SelectAttributWert1>
+                <SelectAttributWert2>1000</SelectAttributWert2>
+                <LinienParams class="RpNrwStrasseUeberregionalBestand"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>2000</SelectAttributWert1>
+                <SelectAttributWert2>2000</SelectAttributWert2>
+                <LinienParams class="RpNrwStrasseUeberregionalBedarfsplan"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="true">
+                <LinienParams class="RpNrwStrasseSonst"/>
+            </LinienDarstellung>
+            
+            <PunktDarstellung default="false" symbol="SymbolRpKreisRot" symbolSize="250">
+                <SelectAttributWert1>2500</SelectAttributWert1>
+                
+            </PunktDarstellung>
+        </GmlKlassenVisual>
+        
+        <!--  RpNRW_Schienenverkehr  -->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_Schienenverkehr" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" selectAttribut1="schienenverkehrTyp" selectAttribut2="status">
+            <FlaechenDarstellung default="false">
+                <SelectAttributWert1>5000</SelectAttributWert1>
+                <FlaechenParams class="RpNrwBahnbetriebsgelaende"/>
+            </FlaechenDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>1000</SelectAttributWert1>
+                <SelectAttributWert2>1000</SelectAttributWert2>
+                <LinienParams class="RpNrwSchieneGrossraumBestand"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>1000</SelectAttributWert1>
+                <SelectAttributWert2>2000</SelectAttributWert2>
+                <LinienParams class="RpNrwSchieneGrossraumBedarfsplan"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>2000</SelectAttributWert1>
+                <SelectAttributWert2>1000</SelectAttributWert2>
+                <LinienParams class="RpNrwSchieneUeberregionalBestand"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="false">
+                <SelectAttributWert1>2000</SelectAttributWert1>
+                <SelectAttributWert2>2000</SelectAttributWert2>
+                <LinienParams class="RpNrwSchieneUeberregionalBedarfsplan"/>
+            </LinienDarstellung>
+            
+            <LinienDarstellung default="true">
+                <LinienParams class="RpNrwSchieneSonst"/>
+            </LinienDarstellung>
+            
+            <PunktDarstellung symbol="SymbolRpNrwBahnhof" attributA="schienenverkehrTyp" symbolSize="100" default="true">
+                <SelectAttributWert1>6000</SelectAttributWert1>
+            </PunktDarstellung>
+        </GmlKlassenVisual>
+        
+        <!--  RpNRW_Wasserverkehr  -->
+        <GmlKlassenVisual gmlKlassenName="RP_NRW_Wasserverkehr" priorityLiniendarstellung="20" selectAttribut1="wasserverkehrTyp">
+            <LinienDarstellung default="true">
+                <LinienParams class="RpNrwWasserverkehr"/>
+            </LinienDarstellung>
+        </GmlKlassenVisual>
+        
+        
+        <!--===============    Styles  =============================================================================-->
+        <Style styleName="Dummy">
+            <FillColor><None/></FillColor>
+            <StrokeColor><None/></StrokeColor>
+        </Style>
+        
+        <Style styleName="RpNrwZeitlinie">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+        </Style>
+        
+        
+        <Style styleName="RpNrwNaturschutz">
+            <FillColor> <None/>  </FillColor>
+            <StrokeColor>
+                <Color r="0" g="255" b="0"/>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+        </Style>         
+        
+        <Style styleName="RpNrwOberflaechenGewaesser">
+            <FillColor>
+                <Color r="0" g="191" b="237"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Style> 
+        
+        
+        <Style styleName="RpNrwForstwirtschaft">
+            <FillColor>
+                <Color r="191" g="255" b="191"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Style>
+        
+        <Style styleName="RpNrwFreiraumAgrarbereich">
+            <FillColor>
+                <Color r="255" g="255" b="191"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Style>
+        
+        <Style styleName="RpNrwAsb">
+            <FillColor>
+                <Color r="237" g="191" b="102"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Style>
+        
+        <Style styleName="RpNrwGibGrossvorhaben">
+            <FillColor>
+                <Color r="192" g="192" b="192"/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>3</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpNrwGib">
+            <FillColor>
+                <Color r="192" g="192" b="192"/>
+            </FillColor>
+            <StrokeColor>
+              <None/>
+            </StrokeColor>
+            <Stroke-width>3</Stroke-width>           
+        </Style>
+        
+        
+        <Style styleName="RotGefuellt">
+            <FillColor>
+                <ColorName>red</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Style>
+        
+        <Style styleName="RotStrich">
+            <FillColor>
+               <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>red</ColorName>
+            </StrokeColor>
+        </Style>
+        
+        <Style styleName="SchwarzGefuellt">
+            <FillColor>
+                <ColorName>black</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Style>      
+        
+        <Style styleName="SchwarzStrich">
+            <FillColor><None/></FillColor>
+            <StrokeColor>
+               <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+        </Style>        
+        
+        <Style styleName="SchwarzStrichSymbol" scalable="false">
+            <FillColor><None/></FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>1</Stroke-width>
+        </Style>        
+        
+        <Style styleName="RpSchwarzStrichDuennSymbol" scalable="false">
+            <FillColor><None/></FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>0.2</Stroke-width>
+        </Style>        
+        
+        <Style styleName="RpSchwarzStrichWeissGefuelltSymbol" scalable="false">
+            <FillColor>
+                <ColorName>white</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>0.5</Stroke-width>
+            <Stroke-linecap>round</Stroke-linecap>
+        </Style>        
+        
+        <Style styleName="SchwarzStrichDuennSymbol" scalable="false">
+            <FillColor><None/></FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>0.5</Stroke-width>
+        </Style>        
+        
+        <Style styleName="RpRaeumlicherGeltungsbereichA">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="0" g="0" b="0"/>
+            </StrokeColor>
+            <Stroke-width>4</Stroke-width>
+            <Stroke-dasharray>10</Stroke-dasharray>
+            <Stroke-dasharray>3</Stroke-dasharray>
+            <Stroke-dashoffset>1</Stroke-dashoffset>
+        </Style>
+        <Style styleName="RpRaeumlicherGeltungsbereichB">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>0.5</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpNrwStrasseGrossraumBestand">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="255" g="0" b="0"/>
+            </StrokeColor>
+            <Stroke-width>3</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpNrwStrasseGrossraumBedarfsplan">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>red</ColorName>
+            </StrokeColor>
+            <Stroke-width>3</Stroke-width>
+            <Stroke-dasharray>3</Stroke-dasharray>
+            <Stroke-dasharray>3</Stroke-dasharray>
+        </Style>
+        
+        <Style styleName="RpNrwStrasseUeberregionalBestand">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>red</ColorName>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpNrwStrasseUeberregionalBedarfsplan">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>red</ColorName>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+            <Stroke-dasharray>3</Stroke-dasharray>
+            <Stroke-dasharray>3</Stroke-dasharray>
+        </Style>
+        
+        <Style styleName="RpNrwStrasseSonst">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>red</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpNrwSchieneGrossraumBestand">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="204" g="0" b="204"/>
+            </StrokeColor>
+            <Stroke-width>3</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpNrwBahnbetriebsgelaende">
+            <FillColor>
+                <Color r="204" g="0" b="204"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Style>
+        
+        
+        <Style styleName="RpNrwSchieneGrossraumBedarfsplan">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="204" g="0" b="204"/>
+            </StrokeColor>
+            <Stroke-width>3</Stroke-width>
+            <Stroke-dasharray>3</Stroke-dasharray>
+            <Stroke-dasharray>3</Stroke-dasharray>
+        </Style>
+        
+        <Style styleName="RpNrwSchieneUeberregionalBestand">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="204" g="0" b="204"/>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+        </Style>     
+        
+        <Style styleName="RpNrwSchieneUeberregionalBedarfsplan">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="204" g="0" b="204"/>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+            <Stroke-dasharray>3</Stroke-dasharray>
+            <Stroke-dasharray>3</Stroke-dasharray>
+        </Style>
+        
+        <Style styleName="RpNrwSchieneSonst">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="204" g="0" b="204"/>
+            </StrokeColor>
+            <Stroke-width>1</Stroke-width>
+        </Style>     
+        
+        <Style styleName="SymbolRpNrwBahnhofStyle" scalable="false">
+            <FillColor>
+                <ColorName>white</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <Color r="204" g="0" b="204"/>
+            </StrokeColor>
+            <Stroke-width>0.5</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpNrwWasserverkehr">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <Color r="51" g="204" b="255"/>
+            </StrokeColor>
+            <Stroke-width>3</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpNrwLuftverkehr">
+            <FillColor>
+                <Color r="113" g="111" b="82"/>
+            </FillColor>
+            <StrokeColor>
+                <None/>
+            </StrokeColor>
+        </Style>
+        
+        <Style styleName="RpLaermschutz">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpGrenzeBund">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>3</Stroke-width>
+            <Stroke-dasharray>3</Stroke-dasharray>
+            <Stroke-dasharray>3</Stroke-dasharray>
+        </Style>
+        
+        
+        <Style styleName="RpGrenzeLand">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>2</Stroke-width>
+            <Stroke-dasharray>3</Stroke-dasharray>
+            <Stroke-dasharray>3</Stroke-dasharray>
+        </Style>      
+        
+        <Style styleName="RpGrenzeRegierungsbezirk">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>1</Stroke-width>
+            <Stroke-dasharray>8</Stroke-dasharray>
+            <Stroke-dasharray>1</Stroke-dasharray>
+            <Stroke-dasharray>2</Stroke-dasharray>
+            <Stroke-dasharray>1</Stroke-dasharray>
+        </Style>
+        
+        <Style styleName="RpGrenzeKreis">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>1</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpGrenzeGemeinde">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>1</Stroke-width>
+            <Stroke-dasharray>5</Stroke-dasharray>
+            <Stroke-dasharray>1</Stroke-dasharray>
+            <Stroke-dasharray>2</Stroke-dasharray>
+            <Stroke-dasharray>1</Stroke-dasharray>
+            <Stroke-dasharray>2</Stroke-dasharray>
+            <Stroke-dasharray>1</Stroke-dasharray>
+        </Style>
+        
+        <Style styleName="RpGrenzeSonst">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>1</Stroke-width>
+            <Stroke-dasharray>1</Stroke-dasharray>
+            <Stroke-dasharray>1</Stroke-dasharray>
+        </Style>
+        
+        <Style styleName="SymbolRpNrwKreissymbolStyle" scalable="false">
+            <FillColor>
+                <Color r="230" g="84" b="0"/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>0.2</Stroke-width>
+        </Style>
+        
+        <Style styleName="RpTextDefaultSymbol" scalable="false">
+            <FillColor>
+                <ColorName>black</ColorName>
+            </FillColor>
+            <StrokeColor>
+                <None></None>
+            </StrokeColor>
+            <Font-size>3.5</Font-size>
+            <Font-family>Arial</Font-family>
+            <Baseline-shift>-30</Baseline-shift>
+            <Baseline-shift-uom>%</Baseline-shift-uom>
+            <Text-anchor>middle</Text-anchor>
+            
+        </Style>
+        
+        
+        <!--===============    Randsignaturen  =============================================================================--> 
+        <Symbol name="RsASBZweckgebNutzung">
+            <Path class="RotGefuellt" path="M -3 -0.25 L 0 -3.25 L 3 -0.25 z"/>
+        </Symbol>
+        
+        <Symbol name="RsNrwSonstigeZweckbindung">
+            <Path class="RotGefuellt" path="M -3 -0.25 L 0 -3.25 L 3 -0.25 z"/>
+        </Symbol>
+        
+        <Symbol name="RsGIBZweckgebNutzung">
+            <Path class="RotGefuellt" path="M -3 -0.25 L 0 -3.25 L 3 -0.25 z"/>
+        </Symbol>        
+        
+        <Symbol name="RsAufschuettung">
+            <Path class="SchwarzGefuellt" path="M  -1 1.432 L 1 1.432 L 0 0  Z "/>
+        </Symbol>
+        
+        <Symbol name="RsBodenschaetze">
+            <Path class="SchwarzGefuellt" path="M  -1 0 L 1 0 L 0 1.432  Z "/>
+        </Symbol>
+        <!--===============    Symbole  =============================================================================-->
+        
+        <Symbol  name="SymbolRpKreisRot">
+            <Circle class="RotGefuellt" cx="0" cy="0" r="1"/>
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwBahnhof">
+            <Rect class="SymbolRpNrwBahnhofStyle" x="-1" y="-1" width="2" height="2"/>
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwKreissymbol">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="1"/>
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwUebertaegigerBergbau">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="7"/>
+            <Path class="SchwarzStrichSymbol" path="M -3.5 3.5 L 3.5 -3.5"/>
+            <Path class="SchwarzStrichDuennSymbol" path="M 2.085 -4.914 L 4.914 -2.085 L 5.621 -2.792 L 2.792 -5.621 Z"/>
+            <Path class="SchwarzStrichSymbol" path="M -3.5 -3.5 L 3.5 3.5"/>
+            <Path class="SchwarzStrichDuennSymbol" path="M -2.085 -4.914 L -4.914 -2.085 L -5.621 -2.792 L -2.792 -5.621 Z"/>
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwKombinierterGueterverkehr">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="7"/>
+            <Path class="SchwarzStrichDuennSymbol" path=" M -5 -1 L 5 -1 L 5 1 L -5 1 Z"/>
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwAbfalldeponie">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="7"/>
+            <Path class="SchwarzStrichDuennSymbol" path="M -4 4 L 4 4 L 0 -6.5 Z"/>
+            <Path class="SchwarzStrichDuennSymbol" path="M -12 7.5 L 12 7.5 L 0 -14 Z"/>
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwAbfallbehandlungsanlage">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="7"/>
+            <Path class="SchwarzStrichDuennSymbol" path="M -4 4 L 4 4 L 0 -6.5 Z"/>
+            <!--Path class="SchwarzStrichDuennSymbol" path="M -12 7.5 L 12 7.5 L 0 -14 Z"/-->
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwHalde">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="7"/>
+            <Path class="SchwarzStrichSymbol" path="M -3.5 3.5 L 3.5 -3.5"/>
+            <Path class="SchwarzGefuellt" path="M 2.085 -4.914 L 4.914 -2.085 L 5.621 -2.792 L 2.792 -5.621 Z"/>
+            <Path class="SchwarzStrichSymbol" path="M -3.5 -3.5 L 3.5 3.5"/>
+            <Path class="SchwarzGefuellt" path="M -2.085 -4.914 L -4.914 -2.085 L -5.621 -2.792 L -2.792 -5.621 Z"/>
+        </Symbol>
+        
+        <Symbol name="RpNrwZivilflughafen">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="4"/>
+            <Path class="SchwarzGefuellt" path="M 0 -3.5 L 0.5 -3 L 0.5 -2 L 1.5 -2 L 1.5 -2.5 L 2 -2.5 L 2 -2 L 3 -2 L 3 -1 L 2.2 -0.68 L 2 0 L 1.8 -0.51 L 0.5 0 L 0.5 2  L 1 2 L 1 2.5 L 0.5 2.5 L 0 3.5 L -0.5 2.5 L -1 2.5 L -1 2 L -0.5 2 L -0.5 0 L -1.8 -0.51 L -2 0 L -2.2 -0.68 L -3 -1 L -3 -2 L -2 -2 L -2 -2.5 L -1.5 -2.5 L -1.5 -2 L -0.5 -2 L -0.5 -3 Z "/>
+        </Symbol>
+        
+        <Symbol name="RpNrwMilitaerflughafen">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="7"/>
+            <Path class="RpSchwarzStrichWeissGefuelltSymbol" path="M 0 2 L 0 -6.5 L -5.766 3 Z"/>
+            <Path class="RpSchwarzStrichWeissGefuelltSymbol" path="M 0 2 L 0 -6.5 L  5.766 3 Z"/>
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwAbwasserbehandlung">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="7"/>
+           <Path class="SchwarzStrichDuennSymbol" path="M -7 0 L 7 0"/>
+            <Path class="SchwarzStrichDuennSymbol" path="M-6.708 -2 L 6.708 -2"/>
+        </Symbol>
+        
+        <Symbol name="SymbolRpNrwKraftwerk">
+            <Circle class="SymbolRpNrwKreissymbolStyle" cx="0" cy="0" r="7"/>
+            <Path class="SchwarzStrichSymbol" path="M 0 -7 L -2 1 L 2 -1 L 0 7"/>
+        </Symbol>
+        
+    
+        
+        <!--===============    Schraffuren  =============================================================================-->
+        
+        <Hatching name="HatchRpNrwNaturschutz" >
+            <stroke-width>1</stroke-width>
+            <line-dist>10</line-dist>
+            <StrokeColor>
+                <Color r="0" g="255" b="0"/>
+            </StrokeColor>
+            <FillColor>
+                <None/>
+            </FillColor>
+            <HatchingType>vertical</HatchingType>
+        </Hatching>
+        
+        <Hatching name="HatchRpNrwGrundwasserGewaesserschutz" >
+            <stroke-width>1</stroke-width>
+            <line-dist>5</line-dist>
+            <StrokeColor>
+                <Color r="0" g="26" b="230"/>
+            </StrokeColor>
+            <FillColor>
+                <None/>
+            </FillColor>
+            <HatchingType>horizontal</HatchingType>
+        </Hatching>
+        
+        <Hatching name="HatchGruenzugGruenzaesur">
+            <stroke-width>1</stroke-width>
+            <line-dist>5</line-dist>
+            <StrokeColor>
+                <Color r="0" g="255" b="0"/>
+            </StrokeColor>
+            <FillColor><None/></FillColor>
+            <HatchingType>horizontal</HatchingType>
+        </Hatching>
+        
+    <!-- =========================  Enumerationen  =================================================================== -->
+        
+        <!--  RP_NRW_ASB_Zweckbindungen -->
+        <Enumeration nameA="RP_NRW_ASB_Zweckbindungen" defaultTextStyle="RpTextDefaultSymbol " defaultTextSymbol="SymbolRpNrwKreissymbol" defaultSymbolSize="3" defaultTextSymbolSize="8">
+            <EnumItem schluesselNummerA="1000" text="B"/>
+            <EnumItem schluesselNummerA="1500" text="F"/>
+            <EnumItem schluesselNummerA="2000" text="G"/>
+            <EnumItem schluesselNummerA="2500" text="H"/>
+            <EnumItem schluesselNummerA="3000" text="K"/>
+            <EnumItem schluesselNummerA="3500" text="M"/>
+            <EnumItem schluesselNummerA="4000" text="P"/>
+            <EnumItem schluesselNummerA="9999" text=" "/>
+        </Enumeration>
+        
+        <!--  RP_NRW_ASB_Zweckbindungen -->
+        <Enumeration nameA="RP_NRW_ASB_Zweckbindungen" nameB="RP_NRW_ASB_SonstZweckbindungen" defaultTextStyle="RpTextDefaultSymbol " defaultTextSymbol="SymbolRpNrwKreissymbol" defaultSymbolSize="3" defaultTextSymbolSize="8">
+            <EnumItem schluesselNummerA="1000" text="B"/>
+            <EnumItem schluesselNummerA="1500" text="F"/>
+            <EnumItem schluesselNummerA="2000" text="G"/>
+            <EnumItem schluesselNummerA="2500" text="H"/>
+            <EnumItem schluesselNummerA="3000" text="K"/>
+            <EnumItem schluesselNummerA="3500" text="M"/>
+            <EnumItem schluesselNummerA="4000" text="P"/>
+            <EnumItem schluesselNummerA="9999" text=" "/>
+            <EnumItem schluesselNummerA="9999" schluesselNummerB="1000" text="W"/>
+        </Enumeration>
+        
+        <!--  RP_NRW_ASB_SonstZweckbindungen -->
+        <Enumeration nameA="RP_NRW_ASB_SonstZweckbindungen" defaultTextStyle="RpTextDefaultSymbol " defaultTextSymbol="SymbolRpNrwKreissymbol" defaultSymbolSize="3" defaultTextSymbolSize="8">
+            <EnumItem schluesselNummerA="1000" text="W" />
+        </Enumeration>
+        
+        <!--  RP_NRW_GIB_Zweckbindungen   RP_NRW_GIB_SonstigeZweckbindungen-->
+        <Enumeration nameA="RP_NRW_GIB_Zweckbindungen" nameB="RP_NRW_GIB_SonstigeZweckbindungen"  defaultSymbolSize="2" >
+            <EnumItem schluesselNummerA="9999" schluesselNummerB="1000" symbolId="SymbolRpNrwKraftwerk"/>
+            <EnumItem schluesselNummerA="9999" schluesselNummerB="2000" symbolId="SymbolRpNrwAbfallbehandlungsanlage"/>
+        </Enumeration>
+        
+        <!--  RP_NRW_GIB_Zweckbindungen  -->
+        <Enumeration nameA="RP_NRW_GIB_Zweckbindungen" defaultSymbolSize="5" >
+            <EnumItem schluesselNummerA="2000" symbolId="SymbolRpNrwUebertaegigerBergbau"/>
+            <EnumItem schluesselNummerA="3000" symbolId="SymbolRpNrwKombinierterGueterverkehr"/>
+        </Enumeration>
+        
+        <!--   RP_NRW_GIB_SonstigeZweckbindungen-->
+        <Enumeration nameA="RP_NRW_GIB_SonstigeZweckbindungen"  defaultSymbolSize="5" >
+            <EnumItem  schluesselNummerA="1000" symbolId="SymbolRpNrwKraftwerk"/>
+            <EnumItem  schluesselNummerA="2000" symbolId="SymbolRpNrwAbfallbehandlungsanlage"/>
+        </Enumeration>        
+        
+        <!--  RP_NRW_AufschuettungAblagerungTypen -->
+        <Enumeration nameA="RP_NRW_AufschuettungAblagerungTypen" defaultSymbolSize="5.0">
+            <EnumItem schluesselNummerA="1000" symbolId="SymbolRpNrwAbfalldeponie"/>
+            <EnumItem schluesselNummerA="2000" symbolId="SymbolRpNrwHalde"/>
+        </Enumeration>
+        
+        <!--  RpNrwLuftverkehrTypen -->
+        <Enumeration nameA="RP_NRW_LuftverkehrTypen">
+            <EnumItem schluesselNummerA="1000" symbolId="RpNrwZivilflughafen" symbolSize="3"/>
+            <EnumItem schluesselNummerA="1500" symbolId="RpNrwMilitaerflughafen" symbolSize="2"/>
+        </Enumeration>
+        
+        <!-- RP_EntsorgungsTypen -->
+        <Enumeration nameA="RP_EntsorgungTypen" defaultSymbolSize="5.0">
+            <EnumItem schluesselNummerA="1000" symbolId="SymbolRpNrwAbfallbehandlungsanlage"/>
+            <EnumItem schluesselNummerA="2000" symbolId="SymbolRpNrwAbwasserbehandlung"/>
+        </Enumeration>
+        
+        <!-- RP_EnergieversorgungTypen -->
+        <Enumeration nameA="RP_EnergieversorgungTypen" defaultSymbolSize="5.0">
+            <EnumItem schluesselNummerA="3000" symbolId="SymbolRpNrwKraftwerk"/>
+        </Enumeration>
+        
+        <!--  :RP_NRW_SonstZweckbindungTypen -->
+        <Enumeration nameA="RP_NRW_SonstZweckbindungTypen"  defaultTextStyle="RpTextDefaultSymbol " defaultTextSymbol="SymbolRpNrwKreissymbol" defaultSymbolSize="3" defaultTextSymbolSize="8">
+            <EnumItem schluesselNummerA="1000" symbolId="SymbolRpNrwAbwasserbehandlung" symbolSize="1.0"/>
+            <EnumItem schluesselNummerA="2000" text="F"/>
+            <EnumItem schluesselNummerA="3000" text="K"/>
+            <EnumItem schluesselNummerA="4000" text="M"/>
+        </Enumeration>
+        
+        <Enumeration nameA="RP_NRW_SchienenverkehrTypen" defaultSymbolSize="5">
+            <EnumItem schluesselNummerA="6000" symbolId="SymbolRpNrwBahnhof"/>
+        </Enumeration>
+  
+    </SvgVisualisierung>

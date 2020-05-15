@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by Dr. Joachim Benner (Institut für Angewandte Informatik Forschungszentrum Karlsruhe) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
+	<xs:element name="ShpTransform">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="StringAttributPlan" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+						<xs:attribute name="wert" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="IntegerAttributPlan" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+						<xs:attribute name="wert" type="xs:int" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DoubleAttributPlan" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+						<xs:attribute name="wert" type="xs:double" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="BoolAttributPlan" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+						<xs:attribute name="wert" type="xs:boolean" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DateAttributPlan" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+						<xs:attribute name="wert" type="xs:date" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ComplexAttributPlan" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="ComplexSubAttribut" minOccurs="1"
+								maxOccurs="unbounded"/>
+						</xs:sequence>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="TextAbschnitt" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="schluessel" type="xs:string" use="required"/>
+						<xs:attribute name="wert" type="xs:string" use="optional"/>
+						<xs:attribute name="wertURL" type="xs:string" use="optional"/>
+						<xs:attribute name="planTyp" type="planTypType" use="required"/>
+					</xs:complexType>
+				</xs:element>				
+				<xs:element name="Bereiche">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Bereich" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="rasterplanBasis"
+											type="RasterplanBasisType" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="rasterplanAenderung"
+											type="RasterplanAenderungType" minOccurs="0"
+											maxOccurs="unbounded"/>
+									</xs:sequence>
+									<xs:attribute name="nummer" type="xs:int" use="required"/>
+									<xs:attribute name="name" type="xs:string" use="optional"/>
+									<xs:attribute name="bedeutung" type="xs:string" use="optional"/>
+									<xs:attribute name="geometrieDatei" type="xs:string" use="optional"/>
+									<xs:attribute name="bedeutungEnum" type="xs:string" use="optional"/>
+									<xs:attribute name="massstab" type="xs:int" use="optional"/>
+									<xs:attribute name="versionBauNVO" type="xs:string"	use="optional"/>
+									<xs:attribute name="versionBauNVOText" type="xs:string"	use="optional"/>
+									<xs:attribute name="versionBauGBDatum" type="xs:date" use="optional"/>
+									<xs:attribute name="versionBauGBText" type="xs:string" use="optional"/>
+									<xs:attribute name="versionBROGDatum" type="xs:date" use="optional"/>
+									<xs:attribute name="versionBROGText" type="xs:string" use="optional"/>
+									<xs:attribute name="versionLPLGDatum" type="xs:date" use="optional"/>
+									<xs:attribute name="versionLPLGText" type="xs:string" use="optional"/>
+
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="ClassTransform" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="EnumerationTransform" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="planTyp" use="required" type="planTypType"/>				
+			
+			<xs:attribute name="gmlTyp" use="optional" default="XPLANGML_4_1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="XPLANGML_2_0"/>
+						<xs:enumeration value="XPLANGML_3_0"/>
+						<xs:enumeration value="XPLANGML_4_0"/>
+						<xs:enumeration value="XPLANGML_4_1"/>	
+						<xs:enumeration value="XPLANGML_5_0"/>
+						<xs:enumeration value="XPLANGML_5_1"/>
+						<xs:enumeration value="XPLANGML_5_2"/>	
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="srsName" type="xs:string" use="optional"/>
+			<xs:attribute name="planObjekteAusShapeFileErzeugen" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:simpleType name="planTypType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="BPlan"/>
+		<xs:enumeration value="FPlan"/>
+		<xs:enumeration value="RPlan"/>
+		<xs:enumeration value="LPlan"/>
+		<xs:enumeration value="SOPlan"/>
+	</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="ComplexSubAttribut">
+		<xs:complexType>
+			<xs:attribute name="subAttributName" type="xs:string" use="required"/>
+			<xs:attribute name="subAttributTyp" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="DOUBLE"/>
+						<xs:enumeration value="INT"/>
+						<xs:enumeration value="CHARACTER_STRING"/>
+						<xs:enumeration value="DATE"/>
+						<xs:enumeration value="BOOL"/>
+						<xs:enumeration value="ENUMERATION"/>
+						<xs:enumeration value="EXTERNAL_CODE_LIST"/>
+						<xs:enumeration value="URL"/>
+						<xs:enumeration value="ANGLE"/>
+						<xs:enumeration value="LENGTH"/>
+						<xs:enumeration value="AREA"/>
+						<xs:enumeration value="VOLUME"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="subAttributWert" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="RasterplanBasisType">
+		<xs:sequence>
+			<xs:element name="externeReferenz" type="ExterneReferenzType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="RasterplanAenderungType">
+		<xs:sequence>
+			<xs:element name="externeReferenz" type="ExterneReferenzType" minOccurs="0"
+				maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="nameAenderung" type="xs:string" use="optional"/>
+		<xs:attribute name="beschreibung" type="xs:string" use="optional"/>
+
+	</xs:complexType>
+
+	<xs:complexType name="ExterneReferenzType">
+		<xs:attribute name="relationName" type="xs:string" use="required"/>
+		<xs:attribute name="informationssystemURL" type="xs:anyURI" use="optional"/>
+		<xs:attribute name="referenzName" type="xs:string" use="optional"/>
+		<xs:attribute name="referenzURL" type="xs:anyURI" use="optional"/>
+		<xs:attribute name="referenzMimeType" type="xs:string" use="optional"/>
+		<xs:attribute name="georefURL" type="xs:anyURI" use="optional"/>
+		<xs:attribute name="georefMimeType" type="xs:anyURI" use="optional"/>
+		<xs:attribute name="beschreibung" type="xs:string" use="optional"/>
+	 <xs:attribute name="datum" type="xs:date" use="optional"/>
+	</xs:complexType>
+
+	<xs:element name="ClassTransform">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="AttributeTransform" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="standardName" type="xs:string" use="required"/>
+			<xs:attribute name="actualName" type="xs:string" use="required"/>
+			<xs:attribute name="bereichNummer" type="xs:int" use="required"/>
+			<xs:attribute name="rechtlicheBedeutung" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="PLANINHALT"/>
+						<xs:enumeration value="NACHR_UEBERNAHME"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AttributeTransform">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ComplexSubAttribut" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="standardName" type="xs:string" use="required"/>
+			<xs:attribute name="type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="DOUBLE"/>
+						<xs:enumeration value="INT"/>
+						<xs:enumeration value="CHARACTER_STRING"/>
+						<xs:enumeration value="DATE"/>
+						<xs:enumeration value="BOOL"/>
+						<xs:enumeration value="ENUMERATION"/>
+						<xs:enumeration value="EXTERNAL_CODE_LIST"/>
+						<xs:enumeration value="ANGLE"/>
+						<xs:enumeration value="LENGTH"/>
+						<xs:enumeration value="AREA"/>
+						<xs:enumeration value="VOLUME"/>
+						<xs:enumeration value="URL"/>
+						<xs:enumeration value="POS_X"/>
+						<xs:enumeration value="POS_Y"/>
+						<xs:enumeration value="POS_XY"/>
+						<xs:enumeration value="GENER_STRING"/>
+						<xs:enumeration value="GENER_DOUBLE"/>
+						<xs:enumeration value="GENER_INTEGER"/>
+						<xs:enumeration value="GENER_DATE"/>
+						<xs:enumeration value="GENER_URL"/>
+						<xs:enumeration value="REFERENZ"/>
+						<xs:enumeration value="DATA_TYPE"/>
+						<xs:enumeration value="TEXTE"/>
+						<xs:enumeration value="RASTERDARSTELLUNG"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="enumerationId" type="xs:string" use="optional"/>
+			<xs:attribute name="actualName" type="xs:string" use="optional"/>
+			<xs:attribute name="index" type="xs:string" use="optional"/>
+			<xs:attribute name="generAttributName" type="xs:string" use="optional"/>
+			<xs:attribute name="generAttributBedeutung" type="xs:string" use="optional"/>
+			<xs:attribute name="default" type="xs:string" use="optional"/>
+			<xs:attribute name="subAttributName" type="xs:string" use="optional"/>
+			<xs:attribute name="subAttributTyp" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="DOUBLE"/>
+						<xs:enumeration value="INT"/>
+						<xs:enumeration value="CHARACTER_STRING"/>
+						<xs:enumeration value="DATE"/>
+						<xs:enumeration value="BOOL"/>
+						<xs:enumeration value="ENUMERATION"/>
+						<xs:enumeration value="EXTERNAL_CODE_LIST"/>
+						<xs:enumeration value="URL"/>
+						<xs:enumeration value="ANGLE"/>
+						<xs:enumeration value="LENGTH"/>
+						<xs:enumeration value="AREA"/>
+						<xs:enumeration value="VOLUME"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EnumerationTransform">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EnumerationItem" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="standardName" type="xs:string" use="required"/>
+						<xs:attribute name="actualName" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="enumerationId" type="xs:string" use="required"/>
+			<xs:attribute name="codeSpace" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

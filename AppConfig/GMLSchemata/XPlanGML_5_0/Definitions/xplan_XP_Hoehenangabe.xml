@@ -1,0 +1,180 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:00:59-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_Hoehenangabe">
+  <gml:description>Spezifikation einer Angabe zur vertikalen Höhe oder zu einem Bereich vertikaler Höhen. Es ist möglich, spezifische Höhenangaben (z.B. die First- oder Traufhöhe eines Gebäudes) vorzugeben oder einzuschränken, oder den Gültigkeitsbereich eines Planinhalts auf eine bestimmte Höhe (&lt;i&gt;hZwingend&lt;/i&gt;) bzw. einen Höhenbereich (&lt;i&gt;hMin &lt;/i&gt;- &lt;i&gt;hMax&lt;/i&gt;) zu beschränken, was vor allem bei der höhenabhängigen Festsetzung einer überbaubaren Grundstücksfläche (&lt;i&gt;BP_UeberbaubareGrundstuecksflaeche&lt;/i&gt;), einer Baulinie (&lt;i&gt;BP_Baulinie&lt;/i&gt;) oder einer Baugrenze (&lt;i&gt;BP_Baugrenze&lt;/i&gt;) relevant ist. In diesem Fall bleiben die Attribute &lt;i&gt;bezugspunkt und abweichenderBezugspunkt &lt;/i&gt;unbelegt.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe</gml:identifier>
+  <gml:name>xplan:XP_Hoehenangabe</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Hoehenangabe_abweichenderHoehenbezug">
+      <gml:description>Textuelle Spezifikation des Höhenbezuges wenn das Attribut "&lt;i&gt;hoehenbezug" &lt;/i&gt;nicht belegt ist.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe:attribute:abweichenderHoehenbezug</gml:identifier>
+      <gml:name>xplan:abweichenderHoehenbezug</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Hoehenangabe_hoehenbezug">
+      <gml:description>Art des Höhenbezuges.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe:attribute:hoehenbezug</gml:identifier>
+      <gml:name>xplan:hoehenbezug</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_hoehenbezug_XP_ArtHoehenbezug_1000">
+          <gml:description>Absolute Höhenangabe</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:hoehenbezug:XP_ArtHoehenbezug:1000</gml:identifier>
+          <gml:name>absolutNHN</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_hoehenbezug_XP_ArtHoehenbezug_2000">
+          <gml:description>Höhenangabe relativ zur Geländeoberkante an der Position des Planinhalts.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:hoehenbezug:XP_ArtHoehenbezug:2000</gml:identifier>
+          <gml:name>relativGelaendeoberkante</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_hoehenbezug_XP_ArtHoehenbezug_2500">
+          <gml:description>Höhenangabe relativ zur Gehweg-Oberkante an der Position des Planinhalts.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:hoehenbezug:XP_ArtHoehenbezug:2500</gml:identifier>
+          <gml:name>relativGehwegOberkante</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_hoehenbezug_XP_ArtHoehenbezug_3000">
+          <gml:description>Höhenangabe relativ zu der auf Planebene festgelegten absoluten Bezugshöhe (Attribut &lt;i&gt;bezugshoehe &lt;/i&gt;von &lt;i&gt;XP_Plan&lt;/i&gt;).
+</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:hoehenbezug:XP_ArtHoehenbezug:3000</gml:identifier>
+          <gml:name>relativBezugshoehe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ArtHoehenbezug</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Hoehenangabe_abweichenderBezugspunkt">
+      <gml:description>Textuelle Spezifikation eines Höhenbezugspunktes wenn das Attribut "&lt;i&gt;bezugspunkt" &lt;/i&gt;nicht belegt ist.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe:attribute:abweichenderBezugspunkt</gml:identifier>
+      <gml:name>xplan:abweichenderBezugspunkt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt">
+      <gml:description>Bestimmung des Bezugspunktes der Höhenangaben. Wenn weder dies Attribut noch das Attribut "&lt;i&gt;abweichenderBezugspunkt" &lt;/i&gt;belegt sind, soll die Höhenangabe als vertikale Einschränkung des zugeordneten Planinhalts interpretiert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe:attribute:bezugspunkt</gml:identifier>
+      <gml:name>xplan:bezugspunkt</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_1000">
+          <gml:description>Traufhöhe als Höhenbezugspunkt</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:1000</gml:identifier>
+          <gml:name>TH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_2000">
+          <gml:description>Firsthöhe als Höhenbezugspunkt.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:2000</gml:identifier>
+          <gml:name>FH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_3000">
+          <gml:description>Oberkante als Höhenbezugspunkt.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:3000</gml:identifier>
+          <gml:name>OK</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_3500">
+          <gml:description>Lichte Höhe</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:3500</gml:identifier>
+          <gml:name>LH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_4000">
+          <gml:description>Sockelhöhe</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:4000</gml:identifier>
+          <gml:name>SH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_4500">
+          <gml:description>Erdgeschoss Fußbodenhöhe</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:4500</gml:identifier>
+          <gml:name>EFH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_5000">
+          <gml:description>Höhe Baulicher Anlagen</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:5000</gml:identifier>
+          <gml:name>HBA</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_5500">
+          <gml:description>Unterkante</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:5500</gml:identifier>
+          <gml:name>UK</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_Hoehenangabe_bezugspunkt_XP_ArtHoehenbezugspunkt_6000">
+          <gml:description>Gebäudehöhe</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:XP_Hoehenangabe:bezugspunkt:XP_ArtHoehenbezugspunkt:6000</gml:identifier>
+          <gml:name>GBH</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ArtHoehenbezugspunkt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Hoehenangabe_hMin">
+      <gml:description>Minimal zulässige Höhe des Bezugspunktes (&lt;i&gt;bezugspunkt&lt;/i&gt;) bei einer Bereichsangabe, bzw. untere Grenze des vertikalen Gültigkeitsbereiches eines Planinhalts, wenn "&lt;i&gt;bezugspunkt" &lt;/i&gt;nicht belegt ist. In diesem Fall gilt: Ist  "&lt;i&gt;hMax" &lt;/i&gt;nicht belegt, gilt die Festlegung ab der Höhe "&lt;i&gt;hMin"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe:attribute:hMin</gml:identifier>
+      <gml:name>xplan:hMin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Hoehenangabe_hMax">
+      <gml:description>Maximal zulässige Höhe des Bezugspunktes (&lt;i&gt;bezugspunkt&lt;/i&gt;) bei einer Bereichsangabe, bzw. obere Grenze des vertikalen Gültigkeitsbereiches eines Planinhalts, wenn "&lt;i&gt;bezugspunkt" &lt;/i&gt;nicht belegt ist.  In diesem Fall gilt: Ist  "&lt;i&gt;hMin" &lt;/i&gt;nicht belegt, gilt die Festlegung bis zur Höhe "&lt;i&gt;hMax"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe:attribute:hMax</gml:identifier>
+      <gml:name>xplan:hMax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Hoehenangabe_hZwingend">
+      <gml:description>Zwingend einzuhaltende Höhe des Bezugspunktes (&lt;i&gt;bezugspunkt&lt;/i&gt;) , bzw. Beschränkung der vertikalen Gültigkeitsbereiches eines Planinhalts auf eine bestimmte Höhe.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe:attribute:hZwingend</gml:identifier>
+      <gml:name>xplan:hZwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_Hoehenangabe_h">
+      <gml:description>Maximal zulässige Höhe des Bezugspunktes (&lt;i&gt;bezugspunkt&lt;/i&gt;) .</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_Hoehenangabe:attribute:h</gml:identifier>
+      <gml:name>xplan:h</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

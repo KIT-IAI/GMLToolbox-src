@@ -1,0 +1,63 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:27-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Geometrieobjekt">
+  <gml:description>Basisklasse für alle Objekte mit variablem Raumbezug. Ein konkretes Objekt muss entweder punktförmigen, linienförmigen oder flächenhaften Raumbezug haben, gemischte Geometrie ist nicht zugelassen.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:SO_Geometrieobjekt</gml:identifier>
+  <gml:name>xplan:SO_Geometrieobjekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Geometrieobjekt_position">
+      <gml:description>Raumbezug - Entweder punktförmig, linienförmig oder flächenhaft, gemischte Geometrie ist nicht zugelassen.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:SO_Geometrieobjekt:attribute:position</gml:identifier>
+      <gml:name>xplan:position</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_VariableGeometrie" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Geometrieobjekt_flaechenschluss">
+      <gml:description>Zeigt bei flächenhaftem Raumbezug an, ob das Objekt als Flächenschlussobjekt oder Überlagerungsobjekt gebildet werden soll. Flächenschlussobjekte dürfen sich nicht überlappen, sondern nur an den Flächenrändern berühren, wobei die jeweiligen Stützpunkte der Randkurven übereinander liegen müssen. Die Vereinigung der Flächenschlussobjekte überdeckt den Geltungsbereich des sonstigen raumbezogenen Plans vollständig. </gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:SO_Geometrieobjekt:attribute:flaechenschluss</gml:identifier>
+      <gml:name>xplan:flaechenschluss</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Geometrieobjekt_flaechenschluss_Boolean_1">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::SO_Geometrieobjekt:flaechenschluss:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Geometrieobjekt_flaechenschluss_Boolean_0">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::SO_Geometrieobjekt:flaechenschluss:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Geometrieobjekt_flussrichtung">
+      <gml:description>Das Attribut ist nur relevant, wenn ein Geometrieobjekt einen linienhaften Raumbezug hat. Ist es belegt, wird damit ausgedrückt, dass der Linie eine &lt;b&gt;Flussrichtung &lt;/b&gt;(bei Attributwert "true" in Digitalisierungsrichtung, bei Attributwert "false" gegen die Digitalisierungsrichtung der Linien-Stützpunkte) zugeordnet ist. In diesem Fall darf bei Im- und Export die Digitalisierungsreihenfolge der Stützpunkte nicht geändert werden.
+Wie eine definierte Flussrichtung  zu interpretieren oder bei einer Plandarstellung zu visualisieren ist, bleibt der Applikation überlassen.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:SO_Geometrieobjekt:attribute:flussrichtung</gml:identifier>
+      <gml:name>xplan:flussrichtung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Geometrieobjekt_flussrichtung_Boolean_1">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::SO_Geometrieobjekt:flussrichtung:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Geometrieobjekt_flussrichtung_Boolean_0">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum::SO_Geometrieobjekt:flussrichtung:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Objekt" />
+</TypeDefinition>

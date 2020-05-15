@@ -1,0 +1,245 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:11-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_WaldFlaeche">
+  <gml:description>Festsetzung von Waldflächen  (§ 9, Abs. 1, Nr. 18b BauGB).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_WaldFlaeche</gml:identifier>
+  <gml:name>xplan:BP_WaldFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung">
+      <gml:description>Funktion der Waldfläche</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1000">
+          <gml:description>Naturwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1000</gml:identifier>
+          <gml:name>Naturwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_10000">
+          <gml:description>Waldschutzgebiet</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:10000</gml:identifier>
+          <gml:name>Waldschutzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1200">
+          <gml:description>Nutzwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1200</gml:identifier>
+          <gml:name>Nutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1400">
+          <gml:description>Erholungswald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1400</gml:identifier>
+          <gml:name>Erholungswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1600">
+          <gml:description>Schutzwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1600</gml:identifier>
+          <gml:name>Schutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_16000">
+          <gml:description>Bodenschutzwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:16000</gml:identifier>
+          <gml:name>Bodenschutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_16001">
+          <gml:description>Biotopschutzwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:16001</gml:identifier>
+          <gml:name>Biotopschutzwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_16002">
+          <gml:description>Naturnaher Wald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:16002</gml:identifier>
+          <gml:name>NaturnaherWald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_16003">
+          <gml:description>Wald zum Schutz vor schädlichen Umwelteinwirkungen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:16003</gml:identifier>
+          <gml:name>SchutzwaldSchaedlicheUmwelteinwirkungen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_16004">
+          <gml:description>Schonwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:16004</gml:identifier>
+          <gml:name>Schonwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1700">
+          <gml:description>Bannwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1700</gml:identifier>
+          <gml:name>Bannwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1800">
+          <gml:description>Fläche für die Forstwirtschaft.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1800</gml:identifier>
+          <gml:name>FlaecheForstwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_1900">
+          <gml:description>Immissionsgeschädigter Wald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:1900</gml:identifier>
+          <gml:name>ImmissionsgeschaedigterWald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_zweckbestimmung_XP_ZweckbestimmungWald_9999">
+          <gml:description>Sonstigr Wald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:zweckbestimmung:XP_ZweckbestimmungWald:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungWald</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Festlegung der Funktion des Waldes.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestWaldFlaeche</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart">
+      <gml:description>Festlegung der Eigentumsart des Waldes</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:eigentumsart</gml:identifier>
+      <gml:name>xplan:eigentumsart</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_1000">
+          <gml:description>Öffentlicher Wald allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:1000</gml:identifier>
+          <gml:name>OeffentlicherWald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_1100">
+          <gml:description>Staatswald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:1100</gml:identifier>
+          <gml:name>Staatswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_1200">
+          <gml:description>Körperschaftswald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:1200</gml:identifier>
+          <gml:name>Koerperschaftswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_12000">
+          <gml:description>Kommunalwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:12000</gml:identifier>
+          <gml:name>Kommunalwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_12001">
+          <gml:description>Stiftungswald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:12001</gml:identifier>
+          <gml:name>Stiftungswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_2000">
+          <gml:description>Privatwald allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:2000</gml:identifier>
+          <gml:name>Privatwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_20000">
+          <gml:description>Gemeinschaftswald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:20000</gml:identifier>
+          <gml:name>Gemeinschaftswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_20001">
+          <gml:description>Genossenschaftswald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:20001</gml:identifier>
+          <gml:name>Genossenschaftswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_3000">
+          <gml:description>Kirchenwald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:3000</gml:identifier>
+          <gml:name>Kirchenwald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_eigentumsart_XP_EigentumsartWald_9999">
+          <gml:description>Sonstiger Wald</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:eigentumsart:XP_EigentumsartWald:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_EigentumsartWald</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_WaldFlaeche_betreten">
+      <gml:description>Festlegung zusätzlicher, normalerweise nicht-gestatteter Aktivitäten, die in dem Wald ausgeführt werden dürfen, nach §14 Abs. 2 Bundeswaldgesetz.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_WaldFlaeche:attribute:betreten</gml:identifier>
+      <gml:name>xplan:betreten</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_betreten_XP_WaldbetretungTyp_1000">
+          <gml:description>Radfahren</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:betreten:XP_WaldbetretungTyp:1000</gml:identifier>
+          <gml:name>Radfahren</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_betreten_XP_WaldbetretungTyp_2000">
+          <gml:description>Reiten</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:betreten:XP_WaldbetretungTyp:2000</gml:identifier>
+          <gml:name>Reiten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_betreten_XP_WaldbetretungTyp_3000">
+          <gml:description>Fahren</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:betreten:XP_WaldbetretungTyp:3000</gml:identifier>
+          <gml:name>Fahren</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_WaldFlaeche_betreten_XP_WaldbetretungTyp_4000">
+          <gml:description>Hundesport</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_WaldFlaeche:betreten:XP_WaldbetretungTyp:4000</gml:identifier>
+          <gml:name>Hundesport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_WaldbetretungTyp</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Flaechenschlussobjekt" />
+</TypeDefinition>

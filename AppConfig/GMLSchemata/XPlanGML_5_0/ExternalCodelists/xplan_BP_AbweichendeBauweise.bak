@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) GML-Toolbox, Erstellungsdatum: 01/30/18-->
+<Dictionary   gml:id="xplan_BP_AbweichendeBauweise" xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <description>Codeliste von Bauweisen, die keinem in der Enumeration &lt;i&gt;BP_Bauweise &lt;/i&gt;enthaltenem Typ entsprechen.</description>
+  <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise</identifier>
+  <name>urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise</name>
+  <dictionaryEntry>
+    <Definition gml:id="xplan:BP_AbweichendeBauweise1000">
+      <description>Bla Bla</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise:1000</identifier>
+      <name>1000</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise2000">
+      <description>Hallo</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise:2000</identifier>
+      <name>2000</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise3000">
+      <description>eeee</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise:3000</identifier>
+      <name>3000</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise4000">
+      <description>kikk</description>
+      <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:BP_AbweichendeBauweise:4000</identifier>
+      <name>4000</name>
+    </Definition>
+  </dictionaryEntry>
+</Dictionary  >

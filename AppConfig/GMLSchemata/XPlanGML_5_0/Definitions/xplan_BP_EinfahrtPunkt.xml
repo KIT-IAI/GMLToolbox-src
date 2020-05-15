@@ -1,0 +1,49 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:13-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_EinfahrtPunkt">
+  <gml:description>Punktförmig abgebildete Einfahrt (§9 Abs. 1 Nr. 11 und Abs. 6 BauGB).</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_EinfahrtPunkt</gml:identifier>
+  <gml:name>xplan:BP_EinfahrtPunkt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_EinfahrtPunkt_richtung">
+      <gml:description>Winkel-Richtung der Einfahrt (in Grad).</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_EinfahrtPunkt:attribute:richtung</gml:identifier>
+      <gml:name>xplan:richtung</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Angle" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_EinfahrtPunkt_typ">
+      <gml:description>Typ der Einfahrt</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_EinfahrtPunkt:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_EinfahrtPunkt_typ_BP_EinfahrtTypen_1000">
+          <gml:description>Nur Einfahrt möglich</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_EinfahrtPunkt:typ:BP_EinfahrtTypen:1000</gml:identifier>
+          <gml:name>Einfahrt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_EinfahrtPunkt_typ_BP_EinfahrtTypen_2000">
+          <gml:description>Nur Ausfahrt möglich</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_EinfahrtPunkt:typ:BP_EinfahrtTypen:2000</gml:identifier>
+          <gml:name>Ausfahrt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_EinfahrtPunkt_typ_BP_EinfahrtTypen_3000">
+          <gml:description>Ein- und Ausfahrt möglich</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_EinfahrtPunkt:typ:BP_EinfahrtTypen:3000</gml:identifier>
+          <gml:name>EinAusfahrt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_EinfahrtTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Punktobjekt" />
+</TypeDefinition>

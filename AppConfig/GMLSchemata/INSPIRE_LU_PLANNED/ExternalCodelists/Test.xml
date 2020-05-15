@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml/3.2 ..\xsd\InspireCodelist.xsd"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ xmlns:inscl="http://www.kit.edu/inspire/codelists"
+ gml:id="HILUCSValue">
+	<gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">HILUCSValue</gml:identifier>
+	<gml:name>HILUCSValue</gml:name>
+	<gml:dictionaryEntry>
+		<inscl:CodeDefinition gml:id="Id_1_PrimaryProduction">			
+			<gml:description>Areas where the production of goods is directly based on local natural resources. The primary sector transforms natural resources into primary products. Most products from this sector are either raw materials for other industries (e.g. food, metal, wood industry), or are directly consumed by end-users. Major subsectors of primary production are agriculture, animal husbandry, agribusiness, fishing, forestry and mining and quarrying activities
+
+Areas where the manufacturing industries aggregate, package, purify or process the primary products close to the primary producers are to be included, especially if the raw material is unsuitable for sale or difficult to transport long distances. </gml:description>
+			<gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">1_PrimaryProduction</gml:identifier>
+			<gml:name>primary production</gml:name>
+			<inscl:parentID></inscl:parentID>
+		</inscl:CodeDefinition>
+	</gml:dictionaryEntry>
+	
+</gml:Dictionary>

@@ -1,0 +1,109 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:19-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_NRW_Schienenverkehr">
+  <gml:description>Schienenverkehr
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Schienenverkehr</gml:identifier>
+  <gml:name>xplan:RP_NRW_Schienenverkehr</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Schienenverkehr_schienenverkehrTyp">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Schienenverkehr:attribute:schienenverkehrTyp</gml:identifier>
+      <gml:name>xplan:schienenverkehrTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_schienenverkehrTyp_RP_NRW_SchienenverkehrTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:schienenverkehrTyp:RP_NRW_SchienenverkehrTypen:1000</gml:identifier>
+          <gml:name>HochgeschwindGrossraeumVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_schienenverkehrTyp_RP_NRW_SchienenverkehrTypen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:schienenverkehrTyp:RP_NRW_SchienenverkehrTypen:2000</gml:identifier>
+          <gml:name>UeberregionalerRegionalerVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_schienenverkehrTyp_RP_NRW_SchienenverkehrTypen_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:schienenverkehrTyp:RP_NRW_SchienenverkehrTypen:3000</gml:identifier>
+          <gml:name>SBahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_schienenverkehrTyp_RP_NRW_SchienenverkehrTypen_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:schienenverkehrTyp:RP_NRW_SchienenverkehrTypen:4000</gml:identifier>
+          <gml:name>Strassenbahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_schienenverkehrTyp_RP_NRW_SchienenverkehrTypen_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:schienenverkehrTyp:RP_NRW_SchienenverkehrTypen:5000</gml:identifier>
+          <gml:name>Bahnbetriebsgelaende</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_schienenverkehrTyp_RP_NRW_SchienenverkehrTypen_6000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:schienenverkehrTyp:RP_NRW_SchienenverkehrTypen:6000</gml:identifier>
+          <gml:name>Bahnhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_schienenverkehrTyp_RP_NRW_SchienenverkehrTypen_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:schienenverkehrTyp:RP_NRW_SchienenverkehrTypen:9999</gml:identifier>
+          <gml:name>SonstigerSchienenVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NRW_SchienenverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Schienenverkehr_sonstTyp">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Schienenverkehr:attribute:sonstTyp</gml:identifier>
+      <gml:name>xplan:sonstTyp</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NRW_SonstSchienenverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Schienenverkehr_status">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Schienenverkehr:attribute:status</gml:identifier>
+      <gml:name>xplan:status</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_status_RP_NRW_SchienenverkehrStatus_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:status:RP_NRW_SchienenverkehrStatus:1000</gml:identifier>
+          <gml:name>VorhPlanfestgestLinienbestGrobtrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_status_RP_NRW_SchienenverkehrStatus_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:status:RP_NRW_SchienenverkehrStatus:2000</gml:identifier>
+          <gml:name>BedarfsplanmassnahmeOhneRaeumlFestlegung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NRW_Schienenverkehr_status_RP_NRW_SchienenverkehrStatus_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NRW_Schienenverkehr:status:RP_NRW_SchienenverkehrStatus:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NRW_SchienenverkehrStatus</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Schienenverkehr_bezeichnung">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Schienenverkehr:attribute:bezeichnung</gml:identifier>
+      <gml:name>xplan:bezeichnung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Verkehr" />
+</TypeDefinition>

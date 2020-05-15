@@ -1,0 +1,245 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:41-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Raumkategorie">
+  <gml:description>Raumkategorien sind nach bestimmten Kriterien abgegrenze Gebiete, in denen vergleichbare Strukturen bestehen und in denen die Raumordnung gleichartige Ziele verfolgt. Kriterien können z.B. siedlungsstrukturell, qualitativ oder potentialorientiert sein.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Raumkategorie</gml:identifier>
+  <gml:name>xplan:RP_Raumkategorie</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Raumkategorie_besondererTyp">
+      <gml:description>Klassifikation verschiedener besonderer Raumkategorien.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Raumkategorie:attribute:besondererTyp</gml:identifier>
+      <gml:name>xplan:besondererTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_besondererTyp_RP_BesondereRaumkategorieTypen_1000">
+          <gml:description>Grenzgebiete.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:besondererTyp:RP_BesondereRaumkategorieTypen:1000</gml:identifier>
+          <gml:name>Grenzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_besondererTyp_RP_BesondereRaumkategorieTypen_2000">
+          <gml:description>Bergbaufolgelandschaft.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:besondererTyp:RP_BesondereRaumkategorieTypen:2000</gml:identifier>
+          <gml:name>Bergbaufolgelandschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_besondererTyp_RP_BesondereRaumkategorieTypen_3000">
+          <gml:description>Braunkohlenfolgelandschaften.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:besondererTyp:RP_BesondereRaumkategorieTypen:3000</gml:identifier>
+          <gml:name>Braunkohlenfolgelandschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_BesondereRaumkategorieTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Raumkategorie_typ">
+      <gml:description>Klassifikation verschiedener Raumkategorien.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Raumkategorie:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1000">
+          <gml:description>Ordnungsraum. Von der Ministerkonferenz für Raumordnung nach einheitlichen Abgrenzungskritierien definierter Strukturraum. Besteht aus Verdichtungsraum und der Randzone des Verdichtungsraums.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1000</gml:identifier>
+          <gml:name>Ordnungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1001">
+          <gml:description>Ordnungsraum in Bezug auf Tourismus und Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1001</gml:identifier>
+          <gml:name>OrdnungsraumTourismusErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1100">
+          <gml:description>Verdichtungsraum mit höherer Dichte an Siedlungen und Infrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1100</gml:identifier>
+          <gml:name>Verdichtungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1101">
+          <gml:description>Kernzone des Verdichtungsraum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1101</gml:identifier>
+          <gml:name>KernzoneVerdichtungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1102">
+          <gml:description>Randzone des Verdichtungsraums.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1102</gml:identifier>
+          <gml:name>RandzoneVerdichtungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1103">
+          <gml:description>Ballungskernzone.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1103</gml:identifier>
+          <gml:name>Ballungskernzone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1104">
+          <gml:description>Ballungsrandzone.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1104</gml:identifier>
+          <gml:name>Ballungsrandzone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1105">
+          <gml:description>Hochverdichteter Raum</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1105</gml:identifier>
+          <gml:name>HochverdichteterRaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1106">
+          <gml:description>Stadt-Umland-Bereich im Verdichtungsraum</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1106</gml:identifier>
+          <gml:name>StadtUmlandBereichVerdichtungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1200">
+          <gml:description>Ländlicher Raum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1200</gml:identifier>
+          <gml:name>LaendlicherRaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1201">
+          <gml:description>Verdichteter Bereich im ländlichen Raum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1201</gml:identifier>
+          <gml:name>VerdichteterBereichimLaendlichenRaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1202">
+          <gml:description>Gestaltungsraum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1202</gml:identifier>
+          <gml:name>Gestaltungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1203">
+          <gml:description>Ländlicher Gestaltungsraum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1203</gml:identifier>
+          <gml:name>LaendlicherGestaltungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1300">
+          <gml:description>Stadt-Umland-Raum</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1300</gml:identifier>
+          <gml:name>StadtUmlandRaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1301">
+          <gml:description>Stadt-Umland-Bereich im ländlichen Raum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1301</gml:identifier>
+          <gml:name>StadtUmlandBereichLaendlicherRaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1400">
+          <gml:description>Abgrenzung eines Ordnungsraums.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1400</gml:identifier>
+          <gml:name>AbgrenzungOrdnungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1500">
+          <gml:description>Dünnbesiedeltes, abgelegenes Gebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1500</gml:identifier>
+          <gml:name>DuennbesiedeltesAbgelegenesGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1600">
+          <gml:description>Umkreis von zehn Kilometern.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1600</gml:identifier>
+          <gml:name>Umkreis10KM</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1700">
+          <gml:description>Raum mit besonderem Handlungsbedarf, zum Beispiel vor dem Hintergrund des demographischen Wandels.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1700</gml:identifier>
+          <gml:name>RaummitbesonderemHandlungsbedarf</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1800">
+          <gml:description>Funktionsraum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1800</gml:identifier>
+          <gml:name>Funktionsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_1900">
+          <gml:description>Grenze eines Wirtschaftsraums.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:1900</gml:identifier>
+          <gml:name>GrenzeWirtschaftsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_2000">
+          <gml:description>Funktionsschwerpunkt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:2000</gml:identifier>
+          <gml:name>Funktionsschwerpunkt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_2100">
+          <gml:description>Grundversorgung-Raumkategorie</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:2100</gml:identifier>
+          <gml:name>Grundversorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_2200">
+          <gml:description>Alpengebiet-Raumkategorie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:2200</gml:identifier>
+          <gml:name>Alpengebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_2300">
+          <gml:description>Räume mit günstigen Entwicklungsaufgaben.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:2300</gml:identifier>
+          <gml:name>RaeumeMitGuenstigenEntwicklungsvoraussetzungen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_2400">
+          <gml:description>Raeume mit ausgeglichenen Entwicklungsvoraussetzungen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:2400</gml:identifier>
+          <gml:name>RaeumeMitAusgeglichenenEntwicklungspotenzialen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_2500">
+          <gml:description>Räume mit besonderen Entwicklungspotentialen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:2500</gml:identifier>
+          <gml:name>RaeumeMitBesonderenEntwicklungsaufgaben</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Raumkategorie_typ_RP_RaumkategorieTypen_9999">
+          <gml:description>Sonstige Raumkategorien</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Raumkategorie:typ:RP_RaumkategorieTypen:9999</gml:identifier>
+          <gml:name>SonstigeRaumkategorie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_RaumkategorieTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

@@ -1,0 +1,88 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:27-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Einzelhandel">
+  <gml:description>Einzelhandelsstruktur und -funktionen.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Einzelhandel</gml:identifier>
+  <gml:name>xplan:RP_Einzelhandel</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Einzelhandel_typ">
+      <gml:description>Klassifikation von Einzelhandelstypen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Einzelhandel:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_1000">
+          <gml:description>Einzelhandel.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:1000</gml:identifier>
+          <gml:name>Einzelhandel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_2000">
+          <gml:description>Zentraler Versorgungsbereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:2000</gml:identifier>
+          <gml:name>ZentralerVersorgungsbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_3000">
+          <gml:description>Zentraler Einkaufsbereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:3000</gml:identifier>
+          <gml:name>ZentralerEinkaufsbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_4000">
+          <gml:description>Zentrenrelevantes Großprojekt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:4000</gml:identifier>
+          <gml:name>ZentrenrelevantesGrossprojekt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_5000">
+          <gml:description>Nichtzentrenrelevantes Großprojekt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:5000</gml:identifier>
+          <gml:name>NichtzentrenrelevantesGrossprojekt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_6000">
+          <gml:description>Großflächiger Einzelhandel.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:6000</gml:identifier>
+          <gml:name>GrossflaechigerEinzelhandel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_7000">
+          <gml:description>Fachmarktstandort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:7000</gml:identifier>
+          <gml:name>Fachmarktstandort</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_8000">
+          <gml:description>Ergänzungsstandort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:8000</gml:identifier>
+          <gml:name>Ergaenzungsstandort</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_9000">
+          <gml:description>Städtischer Kernbereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:9000</gml:identifier>
+          <gml:name>StaedtischerKernbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Einzelhandel_typ_RP_EinzelhandelTypen_9999">
+          <gml:description>Sonstiger Einzelhandel.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Einzelhandel:typ:RP_EinzelhandelTypen:9999</gml:identifier>
+          <gml:name>SonstigerEinzelhandel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_EinzelhandelTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Siedlung" />
+</TypeDefinition>

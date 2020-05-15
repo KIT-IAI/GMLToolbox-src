@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="BP_DetailArtDerBaulNutzung">
+    <description>GML-Dictionary für die Mime-Types referierter Dokumente.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes</identifier>
+    <name>xplan:BP_DetailArtDerBaulNutzung</name>
+            <dictionaryEntry>
+                <Definition gml:id="application_msexcel">
+                    <description>application/msexcel</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_msexcel</identifier>
+                    <name>application/msexcel</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="application_msword">
+                    <description>application/msword</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_msword</identifier>
+                    <name>application/msword</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="application_odt">
+                    <description>application/odt</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_odt</identifier>
+                    <name>application/odt</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="application_pdf">
+                    <description >application/pdf</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_odt</identifier>
+                    <name>application/pdf</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="application_vnd.ogc.gml">
+                    <description>application/vnd.ogc.gml</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_vnd.ogc.gml</identifier>
+                    <name>application/vnd.ogc.gml</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="application_vnd.ogc.sld-xml">
+                    <description>application/vnd.ogc.sld+xml</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_vnd.ogc.sld-xml</identifier>
+                    <name>application/vnd.ogc.sld+xml</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="application_vnd.ogc.wms_xml">
+                    <description>application/vnd.ogc.wms_xml</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_vnd.ogc.wms_xml</identifier>
+                    <name>application/vnd.ogc.wms_xml</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="application_xml">
+                    <description>application/xml</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_xml</identifier>
+                    <name>application/xml</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="application_zip">
+                    <description>application/zip</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:application_vnd.ogc.wms_zip</identifier>
+                    <name>application/zip</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="image_ecw">
+                    <description>image/ecw</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:image_ecw</identifier>
+                    <name>image/ecw</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="image_jpg">
+                    <description>image/jpg</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:image_jpg</identifier>
+                    <name>image/jpg</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="image_png">
+                <description>image/png</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:image_png</identifier>
+                    <name>image/png</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="image_svg-xml">
+                    <description>image/svg+xml</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:image_svg-xml</identifier>
+                    <name>image/svg+xml</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="image_tiff">
+                    <description>image/tiff</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:image_tiff</identifier>
+                    <name>image/tiff</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="text_html">
+                    <description>text/html</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:text_html</identifier>
+                    <name>text/html</name>
+                </Definition>
+            </dictionaryEntry>
+            <dictionaryEntry>
+                <Definition gml:id="text_plain">
+                    <description>text/plain</description>
+                    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:XP_MimeTypes:text_plain</identifier>
+                    <name>text/plain</name>
+                </Definition>
+            </dictionaryEntry>
+</Dictionary>

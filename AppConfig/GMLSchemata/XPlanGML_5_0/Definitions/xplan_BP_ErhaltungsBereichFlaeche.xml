@@ -1,0 +1,40 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:08-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_ErhaltungsBereichFlaeche">
+  <gml:description>Fläche, auf denen der Rückbau, die Änderung oder die Nutzungsänderung baulichen Anlagen der Genehmigung durch die Gemeinde bedarf (§172 BauGB)
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_ErhaltungsBereichFlaeche</gml:identifier>
+  <gml:name>xplan:BP_ErhaltungsBereichFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_ErhaltungsBereichFlaeche_grund">
+      <gml:description>Erhaltungsgrund</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_ErhaltungsBereichFlaeche:attribute:grund</gml:identifier>
+      <gml:name>xplan:grund</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_ErhaltungsBereichFlaeche_grund_BP_ErhaltungsGrund_1000">
+          <gml:description>Erhaltung der städtebaulichen Eigenart des Gebiets auf Grund seiner städtebaulichen Gestalt</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_ErhaltungsBereichFlaeche:grund:BP_ErhaltungsGrund:1000</gml:identifier>
+          <gml:name>StaedtebaulicheGestalt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_ErhaltungsBereichFlaeche_grund_BP_ErhaltungsGrund_2000">
+          <gml:description>Erhaltung der Zusammensetzung der Wohnbevölkerung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_ErhaltungsBereichFlaeche:grund:BP_ErhaltungsGrund:2000</gml:identifier>
+          <gml:name>Wohnbevoelkerung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_ErhaltungsBereichFlaeche_grund_BP_ErhaltungsGrund_3000">
+          <gml:description>Erhaltung bei städtebaulichen Umstrukturierungen</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_ErhaltungsBereichFlaeche:grund:BP_ErhaltungsGrund:3000</gml:identifier>
+          <gml:name>Umstrukturierung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>BP_ErhaltungsGrund</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Ueberlagerungsobjekt" />
+</TypeDefinition>

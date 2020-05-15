@@ -1,0 +1,98 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:19-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_RasterplanAenderung">
+  <gml:description>Rasterplanänderung.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung</gml:identifier>
+  <gml:name>xplan:RP_RasterplanAenderung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_aufstellungsbeschlussDatum">
+      <gml:description>Datum des Aufstellungsbeschlusses</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:aufstellungsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:aufstellungsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_auslegungStartDatum">
+      <gml:description>Beginn der öffentlichen Auslegung</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:auslegungStartDatum</gml:identifier>
+      <gml:name>xplan:auslegungStartDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_auslegungEndDatum">
+      <gml:description>Ende der öffentlichen Auslegung</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:auslegungEndDatum</gml:identifier>
+      <gml:name>xplan:auslegungEndDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_traegerbeteiligungsStartDatum">
+      <gml:description>Beginn der Beteiligung der Träger öffentlicher Belange</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:traegerbeteiligungsStartDatum</gml:identifier>
+      <gml:name>xplan:traegerbeteiligungsStartDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_traegerbeteiligungsEndDatum">
+      <gml:description>Ende der Beteiligung der Träger öffentlicher Belange</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:traegerbeteiligungsEndDatum</gml:identifier>
+      <gml:name>xplan:traegerbeteiligungsEndDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_aenderungenBisDatum">
+      <gml:description>Datum, bis zu dem Änderungen des Plans berücksichtigt wurden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:aenderungenBisDatum</gml:identifier>
+      <gml:name>xplan:aenderungenBisDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_entwurfsbeschlussDatum">
+      <gml:description>Datum des Entwurfsbeschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:entwurfsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:entwurfsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_satzungsbeschlussDatum">
+      <gml:description>Datum des Satzungsbeschlusses.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:satzungsbeschlussDatum</gml:identifier>
+      <gml:name>xplan:satzungsbeschlussDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RasterplanAenderung_datumDesInkrafttretens">
+      <gml:description>Datum des Inkrafttretens.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RasterplanAenderung:attribute:datumDesInkrafttretens</gml:identifier>
+      <gml:name>xplan:datumDesInkrafttretens</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_RasterplanAenderung" />
+</TypeDefinition>

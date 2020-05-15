@@ -1,0 +1,19 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:19-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_NRW_Zeitlinie">
+  <gml:description>Zeitlinie Braunkohle-Tagebau
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Zeitlinie</gml:identifier>
+  <gml:name>xplan:RP_NRW_Zeitlinie</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NRW_Zeitlinie_zeitlinieText">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NRW_Zeitlinie:attribute:zeitlinieText</gml:identifier>
+      <gml:name>xplan:zeitlinieText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Rohstoffsicherung" />
+</TypeDefinition>

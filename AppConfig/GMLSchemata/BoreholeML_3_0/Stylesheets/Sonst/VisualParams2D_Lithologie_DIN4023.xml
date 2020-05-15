@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BoreholeDarstellung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../XSD/BoleholeVisualisation.xsd">
+<beschreibung>Bohrloch-Darstellung nach DIN 4023</beschreibung>
+
+<LithologyDarstellungen>
+<LithologyDarstellung rockName="Organisches Lockergestein" rockCode="lo" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastisches Lockergestein" rockCode="lvk" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Tektonit, locker" rockCode="lt" color="0,0,0"/>
+<LithologyDarstellung rockName="Impakt-Lockergestein" rockCode="li" color="0,0,0"/>
+<LithologyDarstellung rockName="Klastisches Festgestein (außer Karbonatgestein)" rockCode="fsk" color="0,0,0"/>
+<LithologyDarstellung rockName="Sedimentäres Karbonatfestgestein" rockCode="fsc" color="0,0,0"/>
+<LithologyDarstellung rockName="Salzgestein" rockCode="fss" color="0,0,0"/>
+<LithologyDarstellung rockName="Sedimentäres Kieselfestgestein" rockCode="fsi" color="0,0,0"/>
+<LithologyDarstellung rockName="Sedimentäres Phosphatfestgestein" rockCode="fsp" color="0,0,0"/>
+<LithologyDarstellung rockName="Organisches Festgestein" rockCode="fo" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastisches Festgestein" rockCode="fvk" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Vulkanit, fest (außer Pyroklastit)" rockCode="fmv" color="0,0,0"/>
+<LithologyDarstellung rockName="Ganggestein" rockCode="fmg" color="0,0,0"/>
+<LithologyDarstellung rockName="Plutonit" rockCode="fmt" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Anchimetamorphit" rockCode="fun" color="0,0,0"/>
+<LithologyDarstellung rockName="Metamorphit, mittel- bis hochgradig" rockCode="fuh" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Ultrametamorphit" rockCode="fuu" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Metasomatit" rockCode="fums" color="0,0,0"/>
+<LithologyDarstellung rockName="Impakt-Festgestein" rockCode="fui" color="0,0,0"/>
+<LithologyDarstellung rockName="Tektonit, fest" rockCode="ft" color="0,0,0"/>
+<LithologyDarstellung rockName="Künstliches Lockermaterial" rockCode="la" color="0,0,0"/>
+<LithologyDarstellung rockName="Gefrorene Flüssigkeit, locker" rockCode="sfll" color="0,0,0"/>
+<LithologyDarstellung rockName="Künstlicher Feststoff" rockCode="fa" color="0,0,0"/>
+<LithologyDarstellung rockName="Gefrorene Flüssigkeit" rockCode="sflg" color="0,0,0"/>
+<LithologyDarstellung rockName="Lockergestein" rockCode="l" color="0,0,0"/>
+<LithologyDarstellung rockName="Festgestein" rockCode="f" color="0,0,0"/>
+<LithologyDarstellung rockName="Sonstiger Stoff" rockCode="s" color="0,0,0"/>
+<LithologyDarstellung rockName="Kein Material" rockCode="k" color="0,0,0"/>
+<LithologyDarstellung rockName="Kristallingestein" rockCode="fk" color="0,0,0"/>
+<LithologyDarstellung rockName="Sedimentäres Lockergestein" rockCode="ls" color="0,0,0"/>
+<LithologyDarstellung rockName="Erz, locker" rockCode="le" color="0,0,0"/>
+<LithologyDarstellung rockName="Magmatisches (auch vulkaniklastisch-sedimentäres) Lockergestein" rockCode="lm" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Sonstiges Lockergestein" rockCode="lso" color="0,0,0"/>
+<LithologyDarstellung rockName="Sedimentäres Festgestein" rockCode="fs" color="0,0,0"/>
+<LithologyDarstellung rockName="Erz, fest" rockCode="fe" color="0,0,0"/>
+<LithologyDarstellung rockName="Extraterrestrisches Festgestein" rockCode="fh" color="0,0,0"/>
+<LithologyDarstellung rockName="Magmatisches Festgestein" rockCode="fm" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Metamorphit" rockCode="fu" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Sonstiges Lockermaterial" rockCode="sl" color="0,0,0"/>
+<LithologyDarstellung rockName="Sonstiger Feststoff" rockCode="sf" color="0,0,0"/>
+<LithologyDarstellung rockName="Flüssigkeit" rockCode="sfl" color="0,0,0"/>
+<LithologyDarstellung rockName="Gas" rockCode="sg" color="0,0,0"/>
+<LithologyDarstellung rockName="Hohlraum" rockCode="kh" color="0,0,0"/>
+<LithologyDarstellung rockName="Material unbekannt" rockCode="ku" color="0,0,0"/>
+<LithologyDarstellung rockName="Klastisches Lockergestein" rockCode="lsk" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonat-Lockergestein, biogen/chemisch" rockCode="lsc" color="0,0,0"/>
+<LithologyDarstellung rockName="Kiesel-Lockergestein, biogen/chemisch" rockCode="lsi" color="0,0,0"/>
+<LithologyDarstellung rockName="Gefrorenes Gas" rockCode="sfg" color="0,0,0"/>
+<LithologyDarstellung rockName="Pelitisches Lockergestein" rockCode="lpel" color="0,0,0"/>
+<LithologyDarstellung rockName="Psammitisches Lockergestein" rockCode="lpsa" color="0,0,0"/>
+<LithologyDarstellung rockName="Psephitisches Lockergestein" rockCode="lpse" color="0,0,0"/>
+<LithologyDarstellung rockName="Diamiktisches Lockergestein" rockCode="lDm" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalk, locker, biogen/chemisch" rockCode="lK" color="0,0,0"/>
+<LithologyDarstellung rockName="Pflanzliches Material, locker" rockCode="Pfl" color="0,0,0"/>
+<LithologyDarstellung rockName="Kohle, locker" rockCode="Ko" color="0,0,0"/>
+<LithologyDarstellung rockName="Oxidisch/hydroxidisches Erz, locker" rockCode="lEox" color="0,0,0"/>
+<LithologyDarstellung rockName="Pyroklastisches Lockergestein" rockCode="lvp" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastisch-sedimentäres Lockergestein" rockCode="lvs" color="0,0,0"/>
+<LithologyDarstellung rockName="Tuffit, locker" rockCode="lvt" color="0,0,0"/>
+<LithologyDarstellung rockName="Pelitisches Festgestein (außer Karbonatgestein)" rockCode="fpel" color="0,0,0"/>
+<LithologyDarstellung rockName="Psammitisches Festgestein (außer Karbonatgestein)" rockCode="fpsa" color="0,0,0"/>
+<LithologyDarstellung rockName="Psephitisches Festgestein" rockCode="fpse" color="0,0,0"/>
+<LithologyDarstellung rockName="Sedimentäres Karbonatfestgestein, silikatführend" rockCode="Cstsi" color="0,0,0"/>
+<LithologyDarstellung rockName="Sedimentäres Karbonatfestgestein, rein" rockCode="Cst" color="0,0,0"/>
+<LithologyDarstellung rockName="Sulfatgestein" rockCode="SOst" color="0,0,0"/>
+<LithologyDarstellung rockName="Chloridgestein" rockCode="Clst" color="0,0,0"/>
+<LithologyDarstellung rockName="Porzellanit" rockCode="Pzt" color="0,0,0"/>
+<LithologyDarstellung rockName="Hornstein" rockCode="Hor" color="0,0,0"/>
+<LithologyDarstellung rockName="Kohle, fest" rockCode="Kost" color="0,0,0"/>
+<LithologyDarstellung rockName="Oxidisch/hydroxidisches Erz, fest" rockCode="Eox" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonatisches Erz" rockCode="Ec" color="0,0,0"/>
+<LithologyDarstellung rockName="Sulfidisches Erz" rockCode="Esu" color="0,0,0"/>
+<LithologyDarstellung rockName="Elementares Erz" rockCode="Eel" color="0,0,0"/>
+<LithologyDarstellung rockName="Meteorit" rockCode="Met" color="0,0,0"/>
+<LithologyDarstellung rockName="Pyroklastisches Festgestein" rockCode="fvp" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastisch-sedimentäres Festgestein" rockCode="fvs" color="0,0,0"/>
+<LithologyDarstellung rockName="Tuffit" rockCode="fvt" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkanit, fest, sauer bis intermediär" rockCode="fmvs" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkanit, fest, basisch bis ultrabasisch" rockCode="fmvb" color="0,0,0"/>
+<LithologyDarstellung rockName="Mikromagmatit" rockCode="mmag" color="0,0,0"/>
+<LithologyDarstellung rockName="Sonstiges Ganggestein" rockCode="sogg" color="0,0,0"/>
+<LithologyDarstellung rockName="Gangmineralisation" rockCode="gmin" color="0,0,0"/>
+<LithologyDarstellung rockName="Plutonit, sauer bis intermediär" rockCode="fmts" color="0,0,0"/>
+<LithologyDarstellung rockName="Plutonit, basisch bis ultrabasisch" rockCode="fmtb" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Sediment" rockCode="fus" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Pyroklastit" rockCode="fupy" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Vulkanit" rockCode="fuv" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Plutonit" rockCode="fut" color="0,0,0"/>
+<LithologyDarstellung rockName="Kontaktmetamorphit, mittel- bis hochgradig" rockCode="fuk" color="0,0,0"/>
+<LithologyDarstellung rockName="Metamorphes Karbonat- bis Kalksilikatgestein" rockCode="fuc" color="0,0,0"/>
+<LithologyDarstellung rockName="Metamorphit, mittel- bis hochgradig, sauer bis intermediär" rockCode="fuhs" color="0,0,0"/>
+<LithologyDarstellung rockName="Metamorphit, mittel- bis hochgradig, basisch bis ultrabasisch" rockCode="fub" color="0,0,0"/>
+<LithologyDarstellung rockName="Migmatit" rockCode="Mig" color="0,0,0"/>
+<LithologyDarstellung rockName="Glas-Impakt-Breccie" rockCode="GIBr" color="0,0,0"/>
+<LithologyDarstellung rockName="Tektit" rockCode="Tkt" color="0,0,0"/>
+<LithologyDarstellung rockName="Müll/Reststoff" rockCode="mr" color="0,0,0"/>
+<LithologyDarstellung rockName="Künstliches Lockermaterial, geogen" rockCode="lag" color="0,0,0"/>
+<LithologyDarstellung rockName="Mineralischer Baustoff, fest" rockCode="fBau" color="0,0,0"/>
+<LithologyDarstellung rockName="Glas" rockCode="Gls" color="0,0,0"/>
+<LithologyDarstellung rockName="Bituminöser Baustoff" rockCode="Bib" color="0,0,0"/>
+<LithologyDarstellung rockName="Metall" rockCode="Mtl" color="0,0,0"/>
+<LithologyDarstellung rockName="Kunststoff" rockCode="Pla" color="0,0,0"/>
+<LithologyDarstellung rockName="Flüssigkeit, wässrig" rockCode="slw" color="0,0,0"/>
+<LithologyDarstellung rockName="Flüssigkeit, ölig bis zähplastisch" rockCode="slz" color="0,0,0"/>
+<LithologyDarstellung rockName="Hohlraum, natürlich" rockCode="Hohn" color="0,0,0"/>
+<LithologyDarstellung rockName="Hohlraum, künstlich" rockCode="Hohk" color="0,0,0"/>
+<LithologyDarstellung rockName="Ton/Schluff" rockCode="TU" color="179, 224, 144"/>
+<LithologyDarstellung rockName="Kies bis Blöcke" rockCode="GY" color="0,0,0"/>
+<LithologyDarstellung rockName="Oxidisch/hydroxidisches Eisen/Mangan-Erz, locker" rockCode="lFeox" color="0,0,0"/>
+<LithologyDarstellung rockName="Oxidisch/hydroxidisches Leichtmetallerz, locker" rockCode="lLMox" color="0,0,0"/>
+<LithologyDarstellung rockName="Tephra" rockCode="Tea" color="0,0,0"/>
+<LithologyDarstellung rockName="Ton/Schluffstein" rockCode="TUst" color="179, 224, 144"/>
+<LithologyDarstellung rockName="Konglomerat/Breccie" rockCode="Gst" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Oxidisch/hydroxidisches Eisen/Mangan-Erz, fest" rockCode="Feox" color="0,0,0"/>
+<LithologyDarstellung rockName="Oxidisch/hydroxidisches Leichtmetallerz, fest" rockCode="fLMox" color="0,0,0"/>
+<LithologyDarstellung rockName="Tuff" rockCode="Tuf" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkanisches Glas" rockCode="vgl" color="0,0,0"/>
+<LithologyDarstellung rockName="Rhyolithoid/Dacitoid" rockCode="ryda" color="0,0,0"/>
+<LithologyDarstellung rockName="Trachytoid" rockCode="tra" color="0,0,0"/>
+<LithologyDarstellung rockName="Andesitoid/Basaltoid" rockCode="anba" color="0,0,0"/>
+<LithologyDarstellung rockName="Phonolitoid" rockCode="pho" color="0,0,0"/>
+<LithologyDarstellung rockName="Tephritoid" rockCode="tep" color="0,0,0"/>
+<LithologyDarstellung rockName="Foiditoid" rockCode="foi" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonatit-Vulkanit" rockCode="vka" color="0,0,0"/>
+<LithologyDarstellung rockName="Quarzreicher Granitoid" rockCode="qgr" color="0,0,0"/>
+<LithologyDarstellung rockName="Granitoid" rockCode="gra" color="0,0,0"/>
+<LithologyDarstellung rockName="Syenitoid" rockCode="sye" color="0,0,0"/>
+<LithologyDarstellung rockName="Dioritoid/Gabbroid" rockCode="diga" color="0,0,0"/>
+<LithologyDarstellung rockName="Foid-Syenitoid" rockCode="fosy" color="0,0,0"/>
+<LithologyDarstellung rockName="Foid-Dioritoid/Gabbroid" rockCode="fodiga" color="0,0,0"/>
+<LithologyDarstellung rockName="Foidolithe" rockCode="fol" color="0,0,0"/>
+<LithologyDarstellung rockName="Anorthosit" rockCode="ano" color="0,0,0"/>
+<LithologyDarstellung rockName="Ultramafischer Plutonit" rockCode="uma" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonatit-Plutonit" rockCode="tka" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Kieselgestein" rockCode="fuski" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Pelit" rockCode="fust" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Psammit" rockCode="fuss" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Psephit" rockCode="fusg" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Pyroklastit, sauer bis intermediär" rockCode="upys" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Pyroklastit, basisch bis ultrabasisch" rockCode="upyb" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Vulkanit, sauer bis intermediär" rockCode="uvs" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Vulkanit, basisch bis ultrabasisch" rockCode="uvb" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Plutonit, sauer bis intermediär" rockCode="uts" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Plutonit, basisch bis ultrabasisch" rockCode="utb" color="0,0,0"/>
+<LithologyDarstellung rockName="Metamorphes Karbonatgestein" rockCode="uC" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalksilikatgestein, metamorph" rockCode="Ksi" color="0,0,0"/>
+<LithologyDarstellung rockName="Kohleprodukt" rockCode="Kop" color="0,0,0"/>
+<LithologyDarstellung rockName="Bitumen, flüssig" rockCode="Bifl" color="0,0,0"/>
+<LithologyDarstellung rockName="Bitumen, plastisch" rockCode="Bitp" color="0,0,0"/>
+<LithologyDarstellung rockName="Ton" rockCode="T" color="0,0,0"/>
+<LithologyDarstellung rockName="Schluff" rockCode="U" color="0,0,0"/>
+<LithologyDarstellung rockName="Ton/Schluff, siliziklastisch" rockCode="siTU" color="0,0,0"/>
+<LithologyDarstellung rockName="Ton/Schluff, karbonatisch" rockCode="TUc" color="0,0,0"/>
+<LithologyDarstellung rockName="Mergel" rockCode="M" color="222, 222, 255"/>
+<LithologyDarstellung rockName="Karbonat, fein, locker" rockCode="C" color="0,0,0"/>
+<LithologyDarstellung rockName="Sand" rockCode="S" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Kies" rockCode="G" color="255, 255, 210">
+    <Pattern name="kies" x="0" y="0" width="0.4" height="0.4">
+        <Circle cx="0.1" cy="0.1" r="0.05">
+            <fill>false</fill>
+            <Stroke-width>0.01</Stroke-width>
+        </Circle>
+        
+        <Circle cx="0.1" cy="0.1" r="0.01">
+            <fill>true</fill>         
+        </Circle>
+        
+         <Circle cx="0.3" cy="0.28" r="0.05">
+            <fill>false</fill>
+            <Stroke-width>0.01</Stroke-width>
+        </Circle>
+        
+         <Circle cx="0.2" cy="0.15" r="0.03">
+            <fill>false</fill>
+            <Stroke-width>0.01</Stroke-width>
+        </Circle>
+        
+         <Circle cx="0.15" cy="0.35" r="0.03">
+            <fill>false</fill>
+            <Stroke-width>0.01</Stroke-width>
+        </Circle>                      
+    </Pattern>
+</LithologyDarstellung>
+<LithologyDarstellung rockName="Steine" rockCode="X" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Blöcke" rockCode="Y" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Kies bis Blöcke, gerundet" rockCode="GYr" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Grus bis Blockschutt" rockCode="eGY" color="0,0,0"/>
+<LithologyDarstellung rockName="Kies bis Blöcke, siliziklastisch" rockCode="siGY" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Kies bis Blöcke, karbonatführend" rockCode="GYc" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Karbonatkies bis -blöcke" rockCode="CGY" color="0,0,0"/>
+<LithologyDarstellung rockName="Diamikton" rockCode="Dm" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalkkonkretionen" rockCode="Kon" color="0,0,0"/>
+<LithologyDarstellung rockName="Schill" rockCode="Sch" color="0,0,0"/>
+<LithologyDarstellung rockName="Kieselgur" rockCode="Kig" color="0,0,0"/>
+<LithologyDarstellung rockName="Humus" rockCode="Hu" color="219, 172, 99"/>
+<LithologyDarstellung rockName="Torf" rockCode="H" color="219, 172, 99"/>
+<LithologyDarstellung rockName="Weich-Braunkohle" rockCode="Bkw" color="0,0,0"/>
+<LithologyDarstellung rockName="Eisenocker" rockCode="Ock" color="0,0,0"/>
+<LithologyDarstellung rockName="Bauxit, locker" rockCode="lBax" color="0,0,0"/>
+<LithologyDarstellung rockName="Aschen-Tephra" rockCode="Asv" color="0,0,0"/>
+<LithologyDarstellung rockName="Lapilli-Tephra" rockCode="Lap" color="0,0,0"/>
+<LithologyDarstellung rockName="Bomben-/Block-Tephra" rockCode="XYv" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastischer Ton/Schluff" rockCode="TUvk" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastischer Sand" rockCode="Svk" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastische(r) Kies bis Blöcke" rockCode="XYvk" color="0,0,0"/>
+<LithologyDarstellung rockName="Tuffitischer Ton/Schluff" rockCode="TUvt" color="0,0,0"/>
+<LithologyDarstellung rockName="Tuffitischer Sand" rockCode="Svt" color="0,0,0"/>
+<LithologyDarstellung rockName="Tuffitische(r) Kies bis Blöcke" rockCode="XYvt" color="0,0,0"/>
+<LithologyDarstellung rockName="Kakirit" rockCode="Kak" color="0,0,0"/>
+<LithologyDarstellung rockName="Kataklasit, locker" rockCode="Katl" color="0,0,0"/>
+<LithologyDarstellung rockName="Tonstein" rockCode="Tst" color="0,0,0"/>
+<LithologyDarstellung rockName="Schluffstein" rockCode="Ust" color="0,0,0"/>
+<LithologyDarstellung rockName="Ton/Schluffstein, siliziklastisch" rockCode="siTUst" color="0,0,0"/>
+<LithologyDarstellung rockName="Ton/Schluffstein, karbonatisch" rockCode="TUstc" color="0,0,0"/>
+<LithologyDarstellung rockName="Sandstein" rockCode="Sst" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Rudit" rockCode="CGst" color="0,0,0"/>
+<LithologyDarstellung rockName="Konglomerat" rockCode="rGst" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Breccie" rockCode="eGst" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Mergelstein" rockCode="Mst" color="222, 222, 255"/>
+<LithologyDarstellung rockName="Sandkalkstein" rockCode="Ksts" color="162, 224, 255"/>
+<LithologyDarstellung rockName="Kieselkalkstein" rockCode="Kstki" color="162, 224, 255"/>
+<LithologyDarstellung rockName="Kalkstein" rockCode="Kst" color="162, 224, 255"/>
+<LithologyDarstellung rockName="Dolomit-Kalkstein" rockCode="DKst" color="162, 224, 255"/>
+<LithologyDarstellung rockName="Dolomitstein" rockCode="Dst" color="162, 224, 255"/>
+<LithologyDarstellung rockName="Mikrit/Lutit" rockCode="Mik" color="0,0,0"/>
+<LithologyDarstellung rockName="Arenit" rockCode="Are" color="0,0,0"/>
+<LithologyDarstellung rockName="Sparit" rockCode="Spa" color="0,0,0"/>
+<LithologyDarstellung rockName="Gips" rockCode="Gyp" color="195, 255, 134"/>
+<LithologyDarstellung rockName="Anhydrit" rockCode="Ahy" color="195, 255, 134"/>
+<LithologyDarstellung rockName="Steinsalz" rockCode="NaCl" color="195, 255, 134"/>
+<LithologyDarstellung rockName="Kalisalz" rockCode="KCl" color="195, 255, 134"/>
+<LithologyDarstellung rockName="Diatomit" rockCode="Dia" color="0,0,0"/>
+<LithologyDarstellung rockName="Feuerstein" rockCode="Fst" color="0,0,0"/>
+<LithologyDarstellung rockName="Karneol" rockCode="Kar" color="0,0,0"/>
+<LithologyDarstellung rockName="Radiolarit" rockCode="Rad" color="0,0,0"/>
+<LithologyDarstellung rockName="Phosphorit" rockCode="Pos" color="0,0,0"/>
+<LithologyDarstellung rockName="Hart-Braunkohle" rockCode="Bkh" color="0,0,0"/>
+<LithologyDarstellung rockName="Steinkohle" rockCode="Stk" color="219, 172, 99"/>
+<LithologyDarstellung rockName="Limonit" rockCode="Lim" color="0,0,0"/>
+<LithologyDarstellung rockName="Bauxit, fest" rockCode="fBax" color="0,0,0"/>
+<LithologyDarstellung rockName="Ignimbrit" rockCode="Ign" color="0,0,0"/>
+<LithologyDarstellung rockName="Aschen-Tuff" rockCode="Asvst" color="0,0,0"/>
+<LithologyDarstellung rockName="Lapilli-Tuff" rockCode="Lapst" color="0,0,0"/>
+<LithologyDarstellung rockName="Bomben-/Block-Tuff" rockCode="XYvst" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastischer Ton/Schluffstein" rockCode="TUvkst" color="0,0,0"/>
+<LithologyDarstellung rockName="Vulkaniklastischer Sandstein" rockCode="Svkst" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Vulkaniklastische Breccie" rockCode="eGvkst" color="0,0,0"/>
+<LithologyDarstellung rockName="Tuffitischer Ton/Schluffstein" rockCode="TUvtst" color="0,0,0"/>
+<LithologyDarstellung rockName="Tuffitischer Sandstein" rockCode="Svtst" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Tuffitisches Konglomerat" rockCode="rGvtst" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Bims" rockCode="Bim" color="0,0,0"/>
+<LithologyDarstellung rockName="Obsidian" rockCode="Obs" color="0,0,0"/>
+<LithologyDarstellung rockName="Pechstein" rockCode="Pec" color="0,0,0"/>
+<LithologyDarstellung rockName="Alkalifeldspat-Rhyolith" rockCode="AfRy" color="0,0,0"/>
+<LithologyDarstellung rockName="Rhyolith i.w.S." rockCode="Ryw" color="0,0,0"/>
+<LithologyDarstellung rockName="Dacit" rockCode="Dac" color="0,0,0"/>
+<LithologyDarstellung rockName="Alkali-Trachyt" rockCode="ATr" color="0,0,0"/>
+<LithologyDarstellung rockName="Trachyt" rockCode="Tra" color="0,0,0"/>
+<LithologyDarstellung rockName="Latit" rockCode="Lat" color="0,0,0"/>
+<LithologyDarstellung rockName="Andesit" rockCode="And" color="0,0,0"/>
+<LithologyDarstellung rockName="Basalt" rockCode="Bas" color="0,0,0"/>
+<LithologyDarstellung rockName="Phonolith" rockCode="Pho" color="0,0,0"/>
+<LithologyDarstellung rockName="Tephrit" rockCode="Tep" color="0,0,0"/>
+<LithologyDarstellung rockName="Basanit" rockCode="Bsn" color="0,0,0"/>
+<LithologyDarstellung rockName="Mikro-Granitoid" rockCode="MGr" color="0,0,0"/>
+<LithologyDarstellung rockName="Mikro-Syenitoid" rockCode="MSy" color="0,0,0"/>
+<LithologyDarstellung rockName="Mikro-Dioritoid/Gabbroid" rockCode="MDG" color="0,0,0"/>
+<LithologyDarstellung rockName="Mikro-Foiditoid" rockCode="MFo" color="0,0,0"/>
+<LithologyDarstellung rockName="Mikro-Ultramafit-Plutonit" rockCode="MUm" color="0,0,0"/>
+<LithologyDarstellung rockName="Mikro-Karbonatit" rockCode="MKa" color="0,0,0"/>
+<LithologyDarstellung rockName="Pegmatit" rockCode="Peg" color="0,0,0"/>
+<LithologyDarstellung rockName="Lamprophyr" rockCode="Lam" color="0,0,0"/>
+<LithologyDarstellung rockName="Gangquarz" rockCode="Qzg" color="0,0,0"/>
+<LithologyDarstellung rockName="Alkalifeldspat-Granit" rockCode="AFGr" color="0,0,0"/>
+<LithologyDarstellung rockName="Granit" rockCode="Gr" color="0,0,0"/>
+<LithologyDarstellung rockName="Granodiorit" rockCode="Grd" color="0,0,0"/>
+<LithologyDarstellung rockName="Tonalit" rockCode="Ton" color="0,0,0"/>
+<LithologyDarstellung rockName="Alkalifeldspat-Syenit" rockCode="AFSy" color="0,0,0"/>
+<LithologyDarstellung rockName="Syenit" rockCode="Sy" color="0,0,0"/>
+<LithologyDarstellung rockName="Monzonit" rockCode="Mz" color="0,0,0"/>
+<LithologyDarstellung rockName="Monzodiorit" rockCode="MsDi" color="0,0,0"/>
+<LithologyDarstellung rockName="Diorit" rockCode="Di" color="0,0,0"/>
+<LithologyDarstellung rockName="Gabbro" rockCode="Gab" color="0,0,0"/>
+<LithologyDarstellung rockName="Peridotit" rockCode="Per" color="0,0,0"/>
+<LithologyDarstellung rockName="Pyroxenit" rockCode="Pyx" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Kieselschiefer" rockCode="uKisf" color="0,0,0"/>
+<LithologyDarstellung rockName="Quarzschiefer" rockCode="Qsf" color="0,0,0"/>
+<LithologyDarstellung rockName="Tonschiefer" rockCode="Tsf" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Sandstein" rockCode="uSst" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Meta-Arkose" rockCode="uArk" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Grauwacke" rockCode="uGwk" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Konglomerat" rockCode="uKgl" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Meta-Rhyolithoid" rockCode="uRyt" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Basaltoid" rockCode="uBat" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Syenitoid" rockCode="uSyt" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Granitoid" rockCode="uGrt" color="0,0,0"/>
+<LithologyDarstellung rockName="Meta-Dioritoid/Gabbroid" rockCode="uDiGa" color="0,0,0"/>
+<LithologyDarstellung rockName="Hornfels" rockCode="Hfs" color="0,0,0"/>
+<LithologyDarstellung rockName="Marmor" rockCode="Mar" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalksilikatfels" rockCode="Ksifs" color="0,0,0"/>
+<LithologyDarstellung rockName="Quarzit" rockCode="Qzt" color="255, 225, 225"/>
+<LithologyDarstellung rockName="Feldspatschiefer" rockCode="Fspsf" color="0,0,0"/>
+<LithologyDarstellung rockName="Feldspatfels" rockCode="Fspfs" color="0,0,0"/>
+<LithologyDarstellung rockName="Phyllit" rockCode="Phy" color="0,0,0"/>
+<LithologyDarstellung rockName="Glimmerschiefer" rockCode="Glsf" color="0,0,0"/>
+<LithologyDarstellung rockName="Gneis" rockCode="Gn" color="255, 162, 162"/>
+<LithologyDarstellung rockName="Granulit" rockCode="Grl" color="0,0,0"/>
+<LithologyDarstellung rockName="Grünschiefer" rockCode="Gsf" color="0,0,0"/>
+<LithologyDarstellung rockName="Prasinit" rockCode="Pra" color="0,0,0"/>
+<LithologyDarstellung rockName="Glaukophanschiefer" rockCode="Gpsf" color="0,0,0"/>
+<LithologyDarstellung rockName="Amphibolit" rockCode="Amp" color="0,0,0"/>
+<LithologyDarstellung rockName="Basischer Granulit" rockCode="Grlb" color="0,0,0"/>
+<LithologyDarstellung rockName="Eklogit" rockCode="Ekl" color="0,0,0"/>
+<LithologyDarstellung rockName="Serpentinit" rockCode="Sep" color="0,0,0"/>
+<LithologyDarstellung rockName="Talkgestein" rockCode="Tal" color="0,0,0"/>
+<LithologyDarstellung rockName="Chlorit-Aktinolith-Schiefer" rockCode="ClAksf" color="0,0,0"/>
+<LithologyDarstellung rockName="Metatexit" rockCode="Mex" color="0,0,0"/>
+<LithologyDarstellung rockName="Diatexit" rockCode="Dix" color="0,0,0"/>
+<LithologyDarstellung rockName="Glimmerfels" rockCode="Glfs" color="0,0,0"/>
+<LithologyDarstellung rockName="Greisen" rockCode="Grs" color="0,0,0"/>
+<LithologyDarstellung rockName="Skarn" rockCode="Skr" color="0,0,0"/>
+<LithologyDarstellung rockName="Suevit" rockCode="Sue" color="0,0,0"/>
+<LithologyDarstellung rockName="Moldavit" rockCode="Mdv" color="0,0,0"/>
+<LithologyDarstellung rockName="Kakirit, verfestigt" rockCode="Kakv" color="0,0,0"/>
+<LithologyDarstellung rockName="Kataklasit, fest" rockCode="Kat" color="0,0,0"/>
+<LithologyDarstellung rockName="Protomylonit" rockCode="Pmyl" color="0,0,0"/>
+<LithologyDarstellung rockName="Mylonit" rockCode="Myl" color="0,0,0"/>
+<LithologyDarstellung rockName="Ultramylonit" rockCode="Umyl" color="0,0,0"/>
+<LithologyDarstellung rockName="Blastomylonit" rockCode="Bmyl" color="0,0,0"/>
+<LithologyDarstellung rockName="Phyllonit" rockCode="Phyt" color="0,0,0"/>
+<LithologyDarstellung rockName="Pseudotachylit" rockCode="Pst" color="0,0,0"/>
+<LithologyDarstellung rockName="Asche/Staub, künstlich" rockCode="Ask" color="0,0,0"/>
+<LithologyDarstellung rockName="Schlamm, künstlich" rockCode="Slk" color="0,0,0"/>
+<LithologyDarstellung rockName="Schlacke, künstlich" rockCode="Skk" color="0,0,0"/>
+<LithologyDarstellung rockName="Bauschutt" rockCode="Bau" color="0,0,0"/>
+<LithologyDarstellung rockName="Müll" rockCode="Mul" color="0,0,0"/>
+<LithologyDarstellung rockName="Wasser" rockCode="Was" color="0,0,0"/>
+<LithologyDarstellung rockName="Erdöl" rockCode="Erd" color="0,0,0"/>
+<LithologyDarstellung rockName="Erdwachs" rockCode="Erdw" color="0,0,0"/>
+<LithologyDarstellung rockName="Kluft/Spalte" rockCode="KlSp" color="0,0,0"/>
+<LithologyDarstellung rockName="Karsthohlraum" rockCode="Kast" color="0,0,0"/>
+<LithologyDarstellung rockName="Schacht" rockCode="Scha" color="0,0,0"/>
+<LithologyDarstellung rockName="Tunnel" rockCode="Tun" color="0,0,0"/>
+<LithologyDarstellung rockName="Kernverlust" rockCode="KV" color="0,0,0"/>
+<LithologyDarstellung rockName="Keine Materialbeschreibung" rockCode="KMat" color="0,0,0"/>
+<LithologyDarstellung rockName="Lehm" rockCode="L" color="202, 202, 202">
+    <Hatching name="Lehm">
+        <stroke-width>0.05</stroke-width>
+        <line-dist>0.3</line-dist>
+        <HatchingType>lowerLeftToUpperRight</HatchingType>
+    </Hatching>
+</LithologyDarstellung>
+<LithologyDarstellung rockName="Ton, siliziklastisch" rockCode="siT" color="0,0,0"/>
+<LithologyDarstellung rockName="Schluff, siliziklastisch" rockCode="siU" color="0,0,0"/>
+<LithologyDarstellung rockName="Ton, karbonatisch" rockCode="Tc" color="0,0,0"/>
+<LithologyDarstellung rockName="Schluff, karbonatisch" rockCode="Uc" color="0,0,0"/>
+<LithologyDarstellung rockName="Tonmergel (nach Korngröße)" rockCode="TM" color="0,0,0"/>
+<LithologyDarstellung rockName="Schluffmergel" rockCode="UM" color="0,0,0"/>
+<LithologyDarstellung rockName="Sandmergel" rockCode="SM" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonatmergel" rockCode="CM" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalk, fein, locker" rockCode="K" color="0,0,0"/>
+<LithologyDarstellung rockName="Dolomit, fein, locker" rockCode="D" color="0,0,0"/>
+<LithologyDarstellung rockName="Feinsand" rockCode="fS" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Mittelsand" rockCode="mS" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Grobsand" rockCode="gS" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Sand, siliziklastisch" rockCode="Sis" color="0,0,0"/>
+<LithologyDarstellung rockName="Sand, karbonatisch" rockCode="Sc" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonatsand" rockCode="CS" color="0,0,0"/>
+<LithologyDarstellung rockName="Feinkies" rockCode="fG" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Mittelkies" rockCode="mG" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Grobkies" rockCode="gG" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Kies, gerundet" rockCode="rG" color="0,0,0"/>
+<LithologyDarstellung rockName="Steine, gerundet" rockCode="rX" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Blöcke, gerundet" rockCode="rY" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Grus" rockCode="eG" color="0,0,0"/>
+<LithologyDarstellung rockName="Grobschutt" rockCode="eX" color="0,0,0"/>
+<LithologyDarstellung rockName="Blockschutt" rockCode="eY" color="0,0,0"/>
+<LithologyDarstellung rockName="Kies, siliziklastisch" rockCode="siG" color="0,0,0"/>
+<LithologyDarstellung rockName="Steine, siliziklastisch" rockCode="siX" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Blöcke, siliziklastisch" rockCode="siY" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Karbonatkies" rockCode="CG" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonatsteine" rockCode="CX" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonatblöcke" rockCode="CY" color="0,0,0"/>
+<LithologyDarstellung rockName="Diamikton, siliziklastisch" rockCode="siDm" color="0,0,0"/>
+<LithologyDarstellung rockName="Diamikton, karbonatisch" rockCode="Dmc" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonatdiamikton" rockCode="CDm" color="0,0,0"/>
+<LithologyDarstellung rockName="Feinsandstein" rockCode="fSst" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Mittelsandstein" rockCode="mSst" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Grobsandstein" rockCode="gSst" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Sandstein, siliziklastisch" rockCode="siSst" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Sandstein, karbonatisch" rockCode="Sstc" color="255, 196, 132"/>
+<LithologyDarstellung rockName="Konglomerat, siliziklastisch" rockCode="sirGst" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Konglomerat, karbonatisch" rockCode="rGstc" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Karbonat-Konglomerat" rockCode="CrGst" color="255, 255, 210"/>
+<LithologyDarstellung rockName="Breccie, siliziklastisch" rockCode="sieGst" color="0,0,0"/>
+<LithologyDarstellung rockName="Breccie, karbonatisch" rockCode="eGstc" color="0,0,0"/>
+<LithologyDarstellung rockName="Karbonat-Breccie" rockCode="CeGst" color="0,0,0"/>
+<LithologyDarstellung rockName="Rhyolith i.e.S." rockCode="Rye" color="0,0,0"/>
+<LithologyDarstellung rockName="Rhyodacit" rockCode="Ryd" color="0,0,0"/>
+<LithologyDarstellung rockName="Syenogranit" rockCode="SyGr" color="0,0,0"/>
+<LithologyDarstellung rockName="Monzogranit" rockCode="MzGr" color="0,0,0"/>
+<LithologyDarstellung rockName="Quarzphyllit" rockCode="QPhy" color="0,0,0"/>
+<LithologyDarstellung rockName="Bentonit" rockCode="Ben" color="0,0,0"/>
+<LithologyDarstellung rockName="Kaolinton" rockCode="siTK" color="0,0,0"/>
+<LithologyDarstellung rockName="Kieselerde" rockCode="Kie" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalkmergel" rockCode="KM" color="0,0,0"/>
+<LithologyDarstellung rockName="Dolomitmergel" rockCode="DM" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalkschlamm" rockCode="Ksl" color="0,0,0"/>
+<LithologyDarstellung rockName="Dolomitasche" rockCode="Das" color="0,0,0"/>
+<LithologyDarstellung rockName="Quarzsand" rockCode="QS" color="0,0,0"/>
+<LithologyDarstellung rockName="Feldspatsand" rockCode="FspS" color="0,0,0"/>
+<LithologyDarstellung rockName="Lithoklastsand" rockCode="LkS" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalksand" rockCode="KS" color="0,0,0"/>
+<LithologyDarstellung rockName="Dolomitsand" rockCode="DS" color="0,0,0"/>
+<LithologyDarstellung rockName="Quarzsandstein" rockCode="QSst" color="0,0,0"/>
+<LithologyDarstellung rockName="Arkose" rockCode="FspSst" color="0,0,0"/>
+<LithologyDarstellung rockName="Grauwacke" rockCode="Grwk" color="0,0,0"/>
+<LithologyDarstellung rockName="Kalksandstein" rockCode="Sstk" color="0,0,0"/>
+</LithologyDarstellungen>
+
+<StratigraphyDarstellungen>
+</StratigraphyDarstellungen>
+</BoreholeDarstellung>

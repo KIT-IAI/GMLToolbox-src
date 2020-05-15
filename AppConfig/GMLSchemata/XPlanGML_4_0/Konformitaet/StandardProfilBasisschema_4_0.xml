@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd"
+ name="StandardProfilBasisschema_4_0">
+    
+    <SrsName>EPSG:4149</SrsName>
+    <SrsName>CH1903</SrsName>
+    
+    <SrsName>EPSG:31466</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK2</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK2*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5676</SrsName>
+    
+    <SrsName>EPSG:31467</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK3</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK3*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5677</SrsName>
+    
+    <SrsName>EPSG:31468</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK4</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK4*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5678</SrsName>
+    
+    <SrsName>EPSG:25828</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM28</SrsName>
+    
+    <SrsName>EPSG:25829</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM29</SrsName>
+    
+    <SrsName>EPSG:25830</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM30</SrsName>
+    
+    <SrsName>EPSG:25831</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM31</SrsName>
+    <SrsName>EPSG:5554</SrsName>
+    
+    <SrsName>EPSG:25832</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM32</SrsName>
+    <SrsName>EPSG:5555</SrsName>
+    
+    <SrsName>EPSG:25833</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM33</SrsName>
+    <SrsName>EPSG:5556</SrsName>
+    
+    <SrsName>EPSG:25834</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM34</SrsName>
+    
+    <SrsName>EPSG:25835</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM35</SrsName>
+    
+    <SrsName>EPSG:25836</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM36</SrsName>
+    
+    <SrsName>EPSG:7415</SrsName>
+    <SrsName>EPSG:28992</SrsName>
+    
+    <UomLength>m</UomLength>
+    <UomLength>urn:adv:uom:m</UomLength>
+    
+    <UomArea>m2</UomArea>
+    <UomArea>urn:adv:uom:m2</UomArea>
+    
+    <UomVolume>m3</UomVolume>
+    <UomVolume>urn:adv:uom:m3</UomVolume>
+    
+    <UomAngle>grad</UomAngle>
+    <UomAngle>urn:adv:uom:grad</UomAngle>    
+    
+    <!--GlobalRule globalRuleId="EnumCheck"/-->
+    <!--GlobalRule globalRuleId="FlaechenschlussTest" globalRuleErrorId="2.2.1.1"/>
+    <GlobalRule globalRuleId="FlaechenTest" globalRuleErrorId="2.2.2.1"/>
+    <GlobalRule globalRuleId="UomTest" globalRuleErrorId="2.1.2.1"/>
+    <GlobalRule globalRuleId="CoordinateReferenceSystemCheck" globalRuleErrorId="2.1.3.1"/>
+    <GlobalRule globalRuleId="TestRueckwaertsReferenzenXPObjektToBereich" globalRuleErrorId="3.1.3.3"/>
+    <GlobalRule globalRuleId="EnumCheck" globalRuleErrorId=""/-->
+    
+    <!--  XP_PlanType -->
+    <Rule  superclassType="XP_PlanType" id="3.1.1.1">
+        <description>Die Relation texte darf nur auf Instanzen der Klasse XP_TextAbschnitt verweisen</description>
+        <Required>
+            <RelationFilter relationName="texte" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_TextAbschnittType</GmlType>
+            </RelationFilter>        
+        </Required>
+    </Rule>
+    
+    <Rule  superclassType="XP_PlanType" id="3.1.1.2">
+        <description>Die Relation praesentationsobjekt darf nur auf Instanzen von Klassen verweisen, die von  XP_AbstraktesPraesentationsobjekt abgeleitet sind.</description>
+        <Required>
+            <RelationFilter relationName="begruendungsTexte"  minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_BegruendungAbschnittType</GmlType>
+            </RelationFilter>        
+        </Required>
+    </Rule>       
+      
+    <Rule superclassType="XP_PlanType">
+        <description>Im Datentyp  XP_VerbundenerPlan darf der Name des Plans kein leerer Textstring sein</description>
+        <Required>
+            <RelationFilter relationName="aendert" minOccurs="0" maxOccurs="unbound" attributNameInRelatedObject="xplan:planName">
+                <AttributeValueRelatedObject op="NOT_EQ"></AttributeValueRelatedObject>                
+            </RelationFilter>
+        </Required>
+    </Rule>   
+       
+    <Rule superclassType="XP_PlanType">
+        <description>Im Datentyp  XP_VerbundenerPlan darf der Name des Plans kein leerer Textstring sein</description>
+        <Required>
+            <RelationFilter relationName="wurdeGeaendertVon" minOccurs="0" maxOccurs="unbound" attributNameInRelatedObject="xplan:planName">
+                <AttributeValueRelatedObject op="NOT_EQ"></AttributeValueRelatedObject>                
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+   <!--  XP_BereichType -->
+    <Rule superclassType="XP_BereichType">
+        <Required>
+            <AttributeFilter attributeName="nummer" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="XP_BereichType" id="3.1.2.1">
+        <description>Die Relation praesentationsobjekt darf nur auf Instanzen von Klassen verweisen, die von  XP_AbstraktesPraesentationsobjekt abgeleitet sind.</description>
+        <Required>
+            <RelationFilter relationName="praesentationsobjekt" minOccurs="0" maxOccurs="unbound">
+                <GmlSuperType>XP_AbstraktesPraesentationsobjektType</GmlSuperType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="XP_BereichType" id="3.1.2.2">
+        <description>Die Relation nachrichtlich darf nur auf Instanzen der Klasse XP_Objekt verweisen. 
+            Alle Planinhalte, die über diese Relation in den Plan eingefügt sind, werden als Nachrichtliche Übernahmen betrachtet.</description>
+        <Required>
+            <RelationFilter relationName="nachrichtlich" minOccurs="0" maxOccurs="unbound" inverseRelationName="xplan:gehoertNachrichtlichZuBereich">
+                <GmlSuperType>XP_ObjektType</GmlSuperType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule superclassType="XP_BereichType" id="3.1.2.3">
+        <description>Die Relation rasterBasis darf nur auf Instanzen der Klasse XP_RasterplanBasis verweisen.</description>
+        <Required>
+            <RelationFilter relationName="rasterBasis" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_RasterplanBasisType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+    
+    <!--  XP_ObjektType -->
+    <Rule superclassType="XP_ObjektType" id="3.1.3.1">
+        <description>Die Relation refTextInhalt darf nur auf Instanzen der Klasse XP_TextAbschnitt verweisen.</description>
+        <Required>
+            <RelationFilter relationName="refTextInhalt" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_TextAbschnittType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule superclassType="XP_ObjektType" id="3.1.3.2">
+        <description>Die Relation reBegruendungInhalt darf nur auf Instanzen der Klasse XP_BegruendungAbschnitt verweisen.</description>
+        <Required>
+            <RelationFilter relationName="refBegruendungInhalt" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_BegruendungAbschnittType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+
+    <!--  Generische Attribute  -->
+   <Rule class="XP_DoubleAttribut">
+       <Required>
+           <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/>          
+       </Required>
+   </Rule>
+    
+    <Rule class="XP_IntegerAttribut">
+        <Required>
+            <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>    
+    
+    <Rule class="XP_URLAttribut">
+        <Required>
+            <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/> 
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_StringAttribut">
+        <Required>
+            <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_DatumAttribut">
+        <Required>
+            <AttributeFilter attributeName="wert" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_TextAbschnitt  -->
+    <Rule class="XP_TextAbschnitt" id="3.2.1.1">
+        <description>Das Attribut text oder die Relation refText muss belegt sein, es dürfen aber nicht gleichzeitig text und refText belegt sein.</description>
+        <Required>
+            <GroupFilter combination="XOR">
+                <AttributeName>text</AttributeName>
+                <RelationName>refText</RelationName>
+            </GroupFilter>
+        </Required>
+    </Rule>
+    
+    <!-- XP_BegruendungAbschnitt  -->
+    <Rule class="XP_BegruendungAbschnitt" id="3.2.2.1">
+        <description>Das Attribut text oder die Relation refText muss belegt sein, es dürfen aber nicht gleichzeitig text und refText belegt sein.</description>
+        <Required>
+            <GroupFilter combination="XOR">
+                <AttributeName>text</AttributeName>
+                <RelationName>refText</RelationName>
+            </GroupFilter>        </Required>
+    </Rule>
+    
+        <!--  XP_AbstraktesPraesentationsobjektType -->
+    <Rule superclassType="XP_AbstraktesPraesentationsobjektType" id="3.3.1.1">
+        <description>Wenn die Relation dientZurDarstellungVon belegt ist, dann muss auch das Attribut art belegt sein.</description>
+        <If>
+            <RelationFilter relationName="dientZurDarstellungVon" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="art" minOccurs="1" maxOccurs="unbound"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_PPO -->
+    <Rule class="XP_PPO" id="3.3.2.1">
+        <description>Das Attribut position darf nur mit Punktgeometrie (Einzelpunkt oder Punktmenge) belegt werden..</description>
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_PTO -->
+    <Rule class="XP_PTO" id="3.3.2.1">
+        <description>Das Attribut position darf nur mit Punktgeometrie (Einzelpunkt oder Punktmenge) belegt werden..</description>
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+        </Required>
+    </Rule>      
+
+    <!-- XP_LPO -->
+    <Rule class="XP_LPO" id="3.3.3.1">
+        <description>Das Attribut position darf nur mit Liniengeometrie (Einzellinie oder Menge von Linien) belegt werden..</description>
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_LTO -->
+    <Rule class="XP_LTO" id="3.3.3.1">
+        <description>Das Attribut position darf nur mit Liniengeometrie (Einzellinie oder Menge von Linien) belegt werden..</description>
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_FPO -->
+    <Rule class="XP_FPO" id="3.3.4.1">
+        <description>Das Attribut position darf nur mit Flächengeometrie (Einzelfläche oder Menge von Flächen) belegt werden.</description>
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+        </Required>
+    </Rule>
+    
+    <!--  XP_Hoehenangabe -->
+    <Rule class="XP_Hoehenangabe" id="3.2.3.1">
+        <description>Die Attribute h, hMin, hMax, hZwingend dürfen nur in folgender Kombination belegt werden:
+-	h
+-	hMin
+-	hMin und hMax
+-	hZwingend
+        </description>
+        <If>
+            <AttributeFilter attributeName="h" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="hMin" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hMax" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hZwingend" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_Hoehenangabe" id="3.2.3.1">
+        <description>Die Attribute h, hMin, hMax, hZwingend dürfen nur in folgender Kombination belegt werden:
+-	h
+-	hMin
+-	hMin und hMax
+-	hZwingend
+        </description>
+        <If>
+            <AttributeFilter attributeName="hMin" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="h" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hZwingend" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_Hoehenangabe" id="3.2.3.1">
+        <description>Die Attribute h, hMin, hMax, hZwingend dürfen nur in folgender Kombination belegt werden:
+-	h
+-	hMin
+-	hMin und hMax
+-	hZwingend
+        </description>
+        <If>
+            <AttributeFilter attributeName="hMax" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="hMin" minOccurs="1" maxOccurs="1"/>
+            <AttributeFilter attributeName="h" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hZwingend" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>    
+    
+    <Rule class="XP_Hoehenangabe" id="3.2.3.1">
+        <description>Die Attribute h, hMin, hMax, hZwingend dürfen nur in folgender Kombination belegt werden:
+-	h
+-	hMin
+-	hMin und hMax
+-	hZwingend
+        </description>
+        <If>
+            <AttributeFilter attributeName="hZwingend" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="hMin" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="hMax" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="h" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>    
+    
+    <Rule class="XP_Hoehenangabe" id="3.2.3.2">
+        <description>Wenn das Attribut hoehenbezug den Wert 3000 (relativBezugshoehe) hat, muss das Attribut bezugshoehe des zug. Planobjektes belegt sein.</description>
+        <If>
+            <AttributeFilter attributeName="hoehenbezug" minOccurs="1" maxOccurs="1">
+                <AttributeValue>3000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="bezugshoehe" minOccurs="1" maxOccurs="1" location="Plan"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="XP_Hoehenangabe">
+        <Required>
+            <AttributeFilter attributeName="hoehenbezug" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_ExterneReferenz -->
+    <Rule class="XP_ExterneReferenz" id="3.2.4.1"> 
+        <description>Wenn das Attribut art den Wert Dokument  hat, müssen die Attribute georefURL und georefMimeType unbelegt sein.</description>
+        <If>
+            <AttributeFilter attributeName="art" minOccurs="1" maxOccurs="1">
+                <AttributeValue>Dokument</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="georefURL" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="georefMimeType" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_Gemeinde -->
+    <Rule class="XP_Gemeinde" id="3.2.5.1">
+        <description>Wenn das Attribut ags unbelegt ist , muss das Attribut rs belegt sein.</description>
+        <If>
+            <AttributeFilter attributeName="ags" minOccurs="0" maxOccurs="0"/>
+        </If>
+       <Required>
+           <AttributeFilter attributeName="rs" minOccurs="1" maxOccurs="1"/>
+       </Required>
+    </Rule>
+    
+    <!-- XP_Plangeber -->
+    <Rule class="XP_Plangeber">
+        <Required>
+            <AttributeFilter attributeName="name" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- XP_rasterplanBasis -->
+    <Rule class="XP_RasterplanBasis">
+        <Required>
+            <RelationFilter relationName="refScan" minOccurs="1" maxOccurs="unbound"/>
+        </Required>
+    </Rule>  
+    
+    
+    
+</Profil>

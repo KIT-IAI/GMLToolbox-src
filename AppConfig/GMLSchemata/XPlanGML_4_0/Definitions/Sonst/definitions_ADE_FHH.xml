@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><?xml-stylesheet type='text/xsl' href='./ShapeChangeDefinitions.xsl'?>
+<ApplicationSchemaDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 
+ xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.4"
+ xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.4"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:gml="http://www.opengis.net/gml/3.2">
+  
+  <dictionaryEntry>
+    <TypeDefinition>
+      <name>BP_BaugebietsTeilFlaeche</name>
+      <dictionaryEntry>
+        <PropertyDefinition>
+          <name>xplanFHH:besondereArtDerBaulNutzung_FHH</name>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1000</identifier>
+              <name>Kleinsiedlungsgebiet</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1100</identifier>
+              <name>Wohngebiet</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1200</identifier>
+              <name>Wohngebiet mit besonderer Regelung</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1300</identifier>
+              <name>Mischgebiet</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1400</identifier>
+              <name>Geschäftsgebiet</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1500</identifier>
+              <name>Geschäftsgebiet mit besonderer Regelung</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1600</identifier>
+              <name>Industriegebiet</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1700</identifier>
+              <name>Industriegebiet mit besonderer Regelung</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <cardinality>0..1</cardinality>
+          <valueTypeName>xplanFHH:BP_BesondereArtDerBaulNutzung_FHH</valueTypeName>
+          <type>attribute</type>
+        </PropertyDefinition>
+      </dictionaryEntry>
+      
+      <classification>featureType</classification>
+    </TypeDefinition>
+    
+  </dictionaryEntry>
+  
+  
+  <dictionaryEntry>
+    <TypeDefinition>
+      <name>xplanFHH:BP_Aussengebiet_FHH</name>
+      <dictionaryEntry>
+        <PropertyDefinition>
+          <name>xplanFHH:nutzung</name>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1000</identifier>
+              <name>Sportplatz</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>1100</identifier>
+              <name>Nicht öffentliche Grünfläche</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>          
+          
+          <cardinality>0..1</cardinality>
+          <valueTypeName>xplanFHH:BP_AussengebietFHH_Nutzungen</valueTypeName>
+          
+        </PropertyDefinition>
+      </dictionaryEntry>
+    </TypeDefinition>
+  </dictionaryEntry>
+  
+  <dictionaryEntry>
+    <TypeDefinition>
+      <name>xplanFHH:BP_BesondereZweckbestimmung_FHH</name>
+      
+      <dictionaryEntry>
+        <PropertyDefinition>
+          <name>xplanFHH:besondereZweckbestimmungFHH</name>     
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>10001</identifier>
+              <name>Aufschuettungsflaeche</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>10002</identifier>
+              <name>Ausgleichsflaeche</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry >
+            <ListedValueDefinition>
+              <identifier>15005</identifier>
+              <name>Post</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <cardinality>0..1</cardinality>
+          <valueTypeName>xplanFHH:BP_BesondereZweckbestimmungGemVerSon_FHH</valueTypeName>
+        </PropertyDefinition>
+      </dictionaryEntry>
+    </TypeDefinition>   
+  </dictionaryEntry>
+  
+  <dictionaryEntry>
+    <TypeDefinition>
+      <name>BP_Plan</name>
+      <dictionaryEntry>
+        <PropertyDefinition>
+          <name>xplanFHH:planArt_FHH</name>
+          
+          <dictionaryEntry>
+            <ListedValueDefinition>
+              <identifier>11000</identifier>
+              <name>Fluchtlinienplan</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry>
+            <ListedValueDefinition>
+              <identifier>11001</identifier>
+              <name>Durchführungsplan</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry>
+            <ListedValueDefinition>
+              <identifier>11002</identifier>
+              <name>Teilbebauungsplan</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <dictionaryEntry>
+            <ListedValueDefinition>
+              <identifier>11003</identifier>
+              <name>Baustufenplan</name>
+            </ListedValueDefinition>
+          </dictionaryEntry>
+          
+          <cardinality>0..1</cardinality>
+          <valueTypeName>xplanFHH:BP_PlanArt_FHH</valueTypeName>
+          <type>attribute</type>          
+        </PropertyDefinition>        
+      </dictionaryEntry>
+      
+    </TypeDefinition>
+    
+  </dictionaryEntry>
+  
+  <dictionaryEntry>
+    <TypeDefinition>
+      <name>xplan_BP_GruenFlaeche</name>
+      <dictionaryEntry>
+        <PropertyDefinition>
+          <name>xplanFHH:zweckbestimmung_FHH</name>
+         <dictionaryEntry>
+           <ListedValueDefinition>
+             <identifier>1000</identifier>
+             <name>Aussengebiet</name>
+           </ListedValueDefinition>
+         </dictionaryEntry>
+          <cardinality>0..1</cardinality>
+          <valueTypeName>xplanFHH:BP_ZweckbestimmungGruenflaeche_FHH</valueTypeName>
+          <type>attribute</type>
+        </PropertyDefinition>
+      </dictionaryEntry>
+    </TypeDefinition>
+  </dictionaryEntry>
+  
+  
+
+</ApplicationSchemaDefinition>

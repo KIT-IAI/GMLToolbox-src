@@ -1,0 +1,63 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:20-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_NRW_ForstlicheFestsetzung">
+  <gml:description>Forstliche Festsetzungen in Naturschutzgebieten und geschützten Landschaftsbestandteilen i.S.v. § 25 LG.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_ForstlicheFestsetzung</gml:identifier>
+  <gml:name>xplan:LP_NRW_ForstlicheFestsetzung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_ForstlicheFestsetzung_zweckbestimmung">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_ForstlicheFestsetzung:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_ForstlicheFestsetzung_zweckbestimmung_LP_NRW_ZweckbestimmungForstlicheFestsetzung_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_ForstlicheFestsetzung:zweckbestimmung:LP_NRW_ZweckbestimmungForstlicheFestsetzung:1000</gml:identifier>
+          <gml:name>Erstaufforstung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_ForstlicheFestsetzung_zweckbestimmung_LP_NRW_ZweckbestimmungForstlicheFestsetzung_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_ForstlicheFestsetzung:zweckbestimmung:LP_NRW_ZweckbestimmungForstlicheFestsetzung:2000</gml:identifier>
+          <gml:name>Wiederaufforstung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_ForstlicheFestsetzung_zweckbestimmung_LP_NRW_ZweckbestimmungForstlicheFestsetzung_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_ForstlicheFestsetzung:zweckbestimmung:LP_NRW_ZweckbestimmungForstlicheFestsetzung:3000</gml:identifier>
+          <gml:name>Untersagung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_NRW_ForstlicheFestsetzung_zweckbestimmung_LP_NRW_ZweckbestimmungForstlicheFestsetzung_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_NRW_ForstlicheFestsetzung:zweckbestimmung:LP_NRW_ZweckbestimmungForstlicheFestsetzung:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_NRW_ZweckbestimmungForstlicheFestsetzung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_ForstlicheFestsetzung_verwendeteBaumart">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_ForstlicheFestsetzung:attribute:verwendeteBaumart</gml:identifier>
+      <gml:name>xplan:verwendeteBaumart</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_NRW_ForstlicheFestsetzung_ausgeschlosseneBaumart">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_NRW_ForstlicheFestsetzung:attribute:ausgeschlosseneBaumart</gml:identifier>
+      <gml:name>xplan:ausgeschlosseneBaumart</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>CharacterString</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_NutzungserfordernisRegelung" />
+</TypeDefinition>

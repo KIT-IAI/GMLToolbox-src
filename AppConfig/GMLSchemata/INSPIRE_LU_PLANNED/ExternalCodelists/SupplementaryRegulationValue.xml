@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<codelist xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue">
+  <label xml:lang="de">Ergänzende Vorschrift</label>
+  <definition xml:lang="de">Arten von Auflagen und Beschränkungen in räumlichen Plänen</definition>
+  <containeditems>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_ImpactOnEnvironment">
+      <label xml:lang="en">impact on environment</label>
+      <definition xml:lang="en">supplementary regulation related to the impact on the environment as defined by a competent authority and reported in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_NoiseManagementZone">
+      <label xml:lang="en">noise management zone</label>
+      <definition xml:lang="en">An area where measures have been established to mitigate noise pollution.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_1_NoiseProtectionArea">
+      <label xml:lang="en">noise protection area</label>
+      <definition xml:lang="en">area inside which specific measure regarding the protection against noise are enacted</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_EmissionControlArea">
+      <label xml:lang="en">emission control area</label>
+      <definition xml:lang="en">An area where measures have been established to control air pollution.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_1_AirQualityManagementZone">
+      <label xml:lang="en">air quality management zone</label>
+      <definition xml:lang="en">Part of the territory of a Member State, as delimited by that Member State for the purposes of air quality assessment and management. </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_3_RenewableEnergyArea">
+      <label xml:lang="en">renewable energy area</label>
+      <definition xml:lang="en">area suitable for renewable energy</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_NatureProtection">
+      <label xml:lang="en">nature protection</label>
+      <definition xml:lang="en">area which relates to the protection of nature</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_1_EcologicalCorridor">
+      <label xml:lang="en">ecological corridor</label>
+      <definition xml:lang="en">area of habitat connecting wildlife populations separated by human activities (such as roads, development, or logging)</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir">
+      <label xml:lang="en">biodiversity reservoir</label>
+      <definition xml:lang="en">geographic area with a significant reservoir of biodiversity that is under threat from humans</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea">
+      <label xml:lang="en">protected wooded area</label>
+      <definition xml:lang="en">wooded area that is protected </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea">
+      <label xml:lang="en">protected urban periurban agricultural or natural area</label>
+      <definition xml:lang="en">Agricultural or Natural Area in Urban or peri-urban space which is protected</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland">
+      <label xml:lang="en">protected wetland</label>
+      <definition xml:lang="en">area where the main factor of influence on habitat and its biota is waterland which is protected</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone">
+      <label xml:lang="en">plant health protection zone</label>
+      <definition xml:lang="en">Protection zone within which protective measures are established against the introduction of organisms harmful to plants or plant products and against their spread.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea">
+      <label xml:lang="en">other nature protection area</label>
+      <definition xml:lang="en">area which relates to the protection of nature of other type </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection">
+      <label xml:lang="en">climate protection</label>
+      <definition xml:lang="en">An area where measures have been established to mitigate climate change effects.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection">
+      <label xml:lang="en">water protection</label>
+      <definition xml:lang="en">An area where measures have been established to protect water</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters">
+      <label xml:lang="en">designated waters</label>
+      <definition xml:lang="en">Marine, coastal or surface waters designated by Member States as needing protection or improvement in order to support fish life.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone">
+      <label xml:lang="en">nitrate vulnerable zone</label>
+      <definition xml:lang="en">Areas of land which drain into polluted or threatened waters and which contribute to nitrate pollution.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea">
+      <label xml:lang="en">sensitive area</label>
+      <definition xml:lang="en">Sensitive areas are surface waters (freshwater, estuaries and coastal waters) that require protection against eutrophication.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters">
+      <label xml:lang="en">bathing waters</label>
+      <definition xml:lang="en">Coastal waters or inland waters (rivers, lakes) explicitly authorised, or not prohibited for recreational bathing by large numbers of people.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea">
+      <label xml:lang="en">drinking water protection area</label>
+      <definition xml:lang="en">Area in which waste water leakage, use of fertilizer or pesticides, or establishment of waste disposal sites are prohibited.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea">
+      <label xml:lang="en">forest management area</label>
+      <definition xml:lang="en">Area designated for the sustainable management of forest resources and functions.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactOnEnvironment">
+      <label xml:lang="en">other impact on environment</label>
+      <definition xml:lang="en">supplementary regulation of other type related to the impact on the environment as defined by a competent authority and reported in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure">
+      <label xml:lang="en">risk exposure</label>
+      <definition xml:lang="en">supplementary regulation related to the exposure to risk of any nature as defined by a competent authority and reported in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks">
+      <label xml:lang="en">flood risks</label>
+      <definition xml:lang="en">supplementary regulation related to the exposure to Flood</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk">
+      <label xml:lang="en">area exposed to flood risk</label>
+      <definition xml:lang="en">area which is defined as exposed to flood risks</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone">
+      <label xml:lang="en">flood risk management zone</label>
+      <definition xml:lang="en">Coastal areas or individual river basins assigned as the unit of management established for the assessment and management of flood risk.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk">
+      <label xml:lang="en">industrial risk</label>
+      <definition xml:lang="en">area at risk of dangerous material exposure </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead">
+      <label xml:lang="en">lead</label>
+      <definition xml:lang="en">area at risk of lead exposure </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites">
+      <label xml:lang="en">restricted zones around contaminated sites</label>
+      <definition xml:lang="en">Zones established to protect human, plant and animal health and control movement and development within a contaminated site.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand">
+      <label xml:lang="en">brownfield land</label>
+      <definition xml:lang="en">Brownfield land is land previously used for industrial purposes or certain commercial uses and that may be contaminated by low concentrations of hazardous waste or pollution and has the potential to be re-used once it is cleaned up4. Sometimes, the concept of brownfield land is also used for designating areas which were previously developed and have become obsolete, but are not necessarily contaminated. </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites">
+      <label xml:lang="en">exclusion area around seveso sites</label>
+      <definition xml:lang="en">area within a regulatory distance from a site classified as Seveso</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining">
+      <label xml:lang="en">mining</label>
+      <definition xml:lang="en">area which is defined as exposed to mining risks</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion">
+      <label xml:lang="en">erosion</label>
+      <definition xml:lang="en">area which is defined as exposed to erosion risks.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure">
+      <label xml:lang="en">other risk exposure</label>
+      <definition xml:lang="en">area defined by other type of risk exposure.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection">
+      <label xml:lang="en">heritage protection</label>
+      <definition xml:lang="en">supplementary regulation related to any heritage protection be it natural, landscape or built up, as defined by a competent authority and reported in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection">
+      <label xml:lang="en">natural heritage protection</label>
+      <definition xml:lang="en">surrounding of an area protected due to its natural heritage importance </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection">
+      <label xml:lang="en">biodiversity protection</label>
+      <definition xml:lang="en">including flora and fauna, scientifically known as biodiversity,</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection">
+      <label xml:lang="en">geodiversity protection</label>
+      <definition xml:lang="en">including mineralogical, geomorphological, paleontological, etc., scientifically known as geodiversity. </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection">
+      <label xml:lang="en">landscape area protection</label>
+      <definition xml:lang="en">area in which the landscape is protected, </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection">
+      <label xml:lang="en">built heritage protection</label>
+      <definition xml:lang="en">surrounding of any protected monument within which the building rights are restricted</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection">
+      <label xml:lang="en">archeological protection</label>
+      <definition xml:lang="en">surrounding of an archaeological site within which the building rights are restricted</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHeritageProtection">
+      <label xml:lang="en">other heritage protection</label>
+      <definition xml:lang="en">other supplementary regulation that relates to heritage protection.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest">
+      <label xml:lang="en">general interest</label>
+      <definition xml:lang="en">supplementary regulation related to the general interest such as easements, as defined by a competent authority and reported in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement">
+      <label xml:lang="en">public easement</label>
+      <definition xml:lang="en">An easement is a certain right to use the real property of another or to restrict the use of a real property without possessing it. The rights of an easement holder vary substantially among jurisdictions. A public easement grants an easement for a public use or for the general interest</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement">
+      <label xml:lang="en">airport easement</label>
+      <definition xml:lang="en">area around airports where constructability is restricted for safety reason (clearance of obstacle for take-off and landing)</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement">
+      <label xml:lang="en">railroad easement</label>
+      <definition xml:lang="en">right-of-way as a strip of land that is granted, through an easement, for the purposes of maintenance or expansion of existing services</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement">
+      <label xml:lang="en">utility easement</label>
+      <definition xml:lang="en">strip of land that is granted, through an easement, where constructability is restricted for safety of maintenance reason</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement">
+      <label xml:lang="en">rain water easement</label>
+      <definition xml:lang="en">An easement to carry rainwater to a river, wetland, detention pond, or other body of water.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement">
+      <label xml:lang="en">sanitary sewer easement</label>
+      <definition xml:lang="en">An easement to carry used water to a sewage treatment plant.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement">
+      <label xml:lang="en">electrical power line easement</label>
+      <definition xml:lang="en">An easement related to the high voltage electrical network</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement">
+      <label xml:lang="en">telephone line easement</label>
+      <definition xml:lang="en">An easement related to the telephone network</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement">
+      <label xml:lang="en">radio electrical easement</label>
+      <definition xml:lang="en">An easement restricting the constructability around Radio-electrical devices in order to avoid radio masks or radio interference</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement">
+      <label xml:lang="en">fuel gas pipe easement</label>
+      <definition xml:lang="en">an easement related to the security around gas-lines or pipelines</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess">
+      <label xml:lang="en">beach access</label>
+      <definition xml:lang="en">Some jurisdictions permit residents to access a public lake or beach by crossing adjacent private property. Similarly, there may be a private easement to cross a private lake to reach a remote private property, or an easement to cross private property during high tide to reach remote beach property on foot.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement">
+      <label xml:lang="en">conservation easement</label>
+      <definition xml:lang="en">Grants rights to a land trust to limit development in order to protect the environment.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement">
+      <label xml:lang="en">historic preservation easement</label>
+      <definition xml:lang="en">Similar to the conservation easement, typically grants rights to a historic preservation organization to enforce restrictions on alteration of a historic building's exterior or interior.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement">
+      <label xml:lang="en">other public easement</label>
+      <definition xml:lang="en">Other supplementary regulation related to a public easement</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement">
+      <label xml:lang="en">other easement</label>
+      <definition xml:lang="en">other supplementary regulation that relates to easements.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest">
+      <label xml:lang="en">other reserved areas serving general interest</label>
+      <definition xml:lang="en">supplementary regulation related to the general interest other than easements, as defined by a competent authority and reported in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight">
+      <label xml:lang="en">land property right</label>
+      <definition xml:lang="en">supplementary regulation related that affect the right of the owner regarding its land properties, as defined in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea">
+      <label xml:lang="en">usable building area</label>
+      <definition xml:lang="en">permissible built area of a lot/plot</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels">
+      <label xml:lang="en">area reserved for pre empting parcels</label>
+      <definition xml:lang="en">Area defined in the spatial plan where the local government define a �Right of first refusal� (ROFR or RFR) that gives him the option to enter a business transaction with the owner of a property before the owner is entitled to enter into that transaction with a third party.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels">
+      <label xml:lang="en">area reserved for restructuring parcels</label>
+      <definition xml:lang="en">Reorganization of land holdings or subdivisions in a plan area as designated on a legally-binding plan for the redistribution of developed or undeveloped [p]lots of land such that their shape and size comply with future land development or rezoning.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas">
+      <label xml:lang="en">reconstruction areas</label>
+      <definition xml:lang="en">Sectors where the issuance of building permits may be subject to the demolition of all or part of the existing buildings on the land where the implementation of the construction is planned</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources">
+      <label xml:lang="en">stand by land resources</label>
+      <definition xml:lang="en">Lands affected by the location of future infrastructures</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight">
+      <label xml:lang="en">other land property right</label>
+      <definition xml:lang="en">Other supplementary regulation that relates to a land property</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings">
+      <label xml:lang="en">regulations on buildings</label>
+      <definition xml:lang="en">supplementary regulation related to restriction and guidance on buildings (e.g. area where height limitation are imposed near airports, area where density ratio over land parcel is limited), as defined by the competent authority responsible for the spatial plan and reported in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine">
+      <label xml:lang="en">building line</label>
+      <definition xml:lang="en">Any new buildings must be placed behind the line determined by the alignment plan. If the owner built or rebuilt a house or boundary wall, it must respect the alignment.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine">
+      <label xml:lang="en">boundary line</label>
+      <definition xml:lang="en">perimeter adjacent to infrastructure</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign">
+      <label xml:lang="en">spatial design</label>
+      <definition xml:lang="en">Area where buildings have to conform to spatial design guidance</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructureArea">
+      <label xml:lang="en">secondary structure area</label>
+      <definition xml:lang="en">spaces for secondary structures which are required in accordance with other regulations on the use of land, such as play, leisure and recreational areas, and car-parking spaces, garages and drive-ways</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility">
+      <label xml:lang="en">collective facility</label>
+      <definition xml:lang="en">Constraints intended to promote a social life at the group home to which they are incorporated.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHeightRegulation">
+      <label xml:lang="en">building height regulation</label>
+      <definition xml:lang="en">Area where buildings have to conform to height guidance</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuildingDensityRegulation">
+      <label xml:lang="en">building density regulation</label>
+      <definition xml:lang="en">Area where buildings have to conform to density guidance</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize">
+      <label xml:lang="en">minimum housing size</label>
+      <definition xml:lang="en">area with minimum size of housing </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsOnBuildings">
+      <label xml:lang="en">other regulations on buildings</label>
+      <definition xml:lang="en">other supplementary regulation that relates to buildings</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies">
+      <label xml:lang="en">local regional state development policies</label>
+      <definition xml:lang="en">supplementary regulation related to local/regional/state spatial development policies (e.g. area reserved for the construction of road infrastructures development axes, central places / population growth center, suitable area for development,...) as defined by a competent authority and reported in the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure">
+      <label xml:lang="en">settlement structure</label>
+      <definition xml:lang="en">Settlement structure is the quantitative and qualitative pattern of distribution of housing, places of work, and infrastructure within a certain area.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces">
+      <label xml:lang="en">central places</label>
+      <definition xml:lang="en">The central-place classificatory system is an important tool in state and regional planning, and is laid down in spatial structure plans. In addition to supplying the needs of its own population, a central place performs service and development functions for the population of its catchment area. The central place system constitutes a hierarchy of basic, lower-order or small centres, middle-order centres, and high-order centres as determined at the different levels of state spatial planning. Some states insert intermediate categories in the hierarchy. Depending on their assignment to a central place, catchment areas are defined as local, intermediate or extended areas.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic">
+      <label xml:lang="en">basic</label>
+      <definition xml:lang="en"> basic centres supplying the basic daily needs of the population and providing a minimum of public and private infrastructure</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre">
+      <label xml:lang="en">lower order centre</label>
+      <definition xml:lang="en">The lowest level in the hierarchy is occupied by basic centres (low-order centres, small centres) with a local catchment area. They are designated in regional plans, and their functions include supplying the basic daily needs of the population and providing a minimum of public and private infrastructure (general secondary school, doctor, chemist, tradesmen, etc.).</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre">
+      <label xml:lang="en">middle order centre</label>
+      <definition xml:lang="en">Middle-order centres are central places that meet more demanding, medium-term needs of the population in the intermediate catchment area (secondary schools leading to university entrance,  hospitals, a variety of shopping amenities, etc.), and are designated by state spatial planning. They are also labour-market centres for their catchment area.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre">
+      <label xml:lang="en">high order centre</label>
+      <definition xml:lang="en">High-order centres are also designated by state spatial planning and meet demanding, specialised requirements of the population in the extended catchment area (technical colleges / universities, specialised clinics, large department stores, etc.). High-order centres also have a greater supply of highly qualified and skilled labour.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes">
+      <label xml:lang="en">axes</label>
+      <definition xml:lang="en">Important elements in spatial planning, axes are constituted by a concentration of transport and supply routes (linear infrastructure) and a relatively close succession of development centres and central places.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes">
+      <label xml:lang="en">settlement axes</label>
+      <definition xml:lang="en">Settlement axes are axes in agglomerations formed by a close succession of settlements along the routes of existing or planned public transport services.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes">
+      <label xml:lang="en">supralocal axes</label>
+      <definition xml:lang="en">Supralocal axes connect differently ranking central places and offer locational advantages at transport interchanges or nodes. Supralocal axes are national or European communication axes.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions">
+      <label xml:lang="en">assignment of functions</label>
+      <definition xml:lang="en">Tasks assigned specifically to individual municipalities or regions by state spatial planning are referred to as functions. The aim is the functional/structural (or spatial/functional) division of responsibilities and labour among component territorial entities.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing">
+      <label xml:lang="en">housing</label>
+      <definition xml:lang="en">Housing is an adequate complex of premises, an isolated room, a shelter, an apartment or a private house for permanent living</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry">
+      <label xml:lang="en">commerce industry</label>
+      <definition xml:lang="en">commerce and  industry key functions associated with municipalities or regions on regional or state level planning</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services">
+      <label xml:lang="en">services</label>
+      <definition xml:lang="en">service key functions associated with municipalities or regions on regional or state level planning</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism">
+      <label xml:lang="en">tourism</label>
+      <definition xml:lang="en">tourism key functions associated with municipalities or regions on regional or state level planning</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture">
+      <label xml:lang="en">agriculture</label>
+      <definition xml:lang="en">agriculture key functions associated with municipalities or regions on regional or state level planning</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry">
+      <label xml:lang="en">forestry</label>
+      <definition xml:lang="en">forestry functions key associated with municipalities or regions on regional or state level planning</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark">
+      <label xml:lang="en">business park</label>
+      <definition xml:lang="en">area of land in which many office and commercial buildings are grouped together5. Business parks are groupings of tertiary activities and differ from industrial parks (manufacturing activities) or technology parks (research and technological development activities).</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole">
+      <label xml:lang="en">technopole</label>
+      <definition xml:lang="en">(also called technology centre, technology park or science park) areas where numerous private and public activities pertaining to research and development, technological development, technology transfer, high-level scientific education, high-tech manufacturing activities and services, etc. are concentrated. In numerous cases, technopoles encompass one or several specialised cluster(s) of high-tech enterprises, incubators for startups, a business and innovation centre, consultancy clusters.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities">
+      <label xml:lang="en">harbor activities</label>
+      <definition xml:lang="en">harbor key functions associated with municipalities or regions on regional or state level planning</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities">
+      <label xml:lang="en">airport activities</label>
+      <definition xml:lang="en">airport key functions associated with municipalities or regions on regional or state level planning</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories">
+      <label xml:lang="en">spatial order categories</label>
+      <definition xml:lang="en">Spatial order categories are areas defined in terms of specific criteria in which comparable structures exist and where similar spatial planning goals are pursued.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea">
+      <label xml:lang="en">rural area</label>
+      <definition xml:lang="en">sparsely settled areas without significant large city or town. The countryside refers to certain forms of landscapes and land uses where agriculture and natural areas play an important part.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole">
+      <label xml:lang="en">rural development pole</label>
+      <definition xml:lang="en">an inhabited, significantly rural area where the social, economic and territorial evolutions are led within the framework of an integrated and prospective development plan. A rural pole is not an agglomeration, but a rural territory as a whole, which may include one or more small towns. The territorial development plan determines the objectives of results in short, medium and long terms. It specifies the guidelines for development, the human and material means to achieve the results targeted. The civil society, public and private actors must be partner for its development and its assessment</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea">
+      <label xml:lang="en">city and outer conurbation area</label>
+      <definition xml:lang="en">aggregation or continuous network of urban communities which have physically merged through population growth and expansion. It is a polycentric form of agglomeration</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea">
+      <label xml:lang="en">urban area</label>
+      <definition xml:lang="en">area which physically forms part of a town or city and is characterised by an important share of built-up surfaces, high density of population and employment and significant amounts of transport and other infrastructure (as opposed to rural areas). Urban areas may also comprise non built-up, green areas generally used for recreational purposes by urban dwellers.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea">
+      <label xml:lang="en">metropolitan area</label>
+      <definition xml:lang="en"> a settlement system consisting of a large city (together with its suburbs) and its adjacent zones of influence, which may comprise various urban centres of different sizes. These adjacent zones are generally the so-called commuter belt. Interstitial open spaces also form part of the metropolitan area.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea">
+      <label xml:lang="en">functional urban area</label>
+      <definition xml:lang="en">area of influence of a city. It is generally delineated on the basis of statistics (for instance commuter flows). Most European States have definitions of Functional Urban Areas or similar concepts, such as travel to-work-areas, commuting catchment areas, commuting zones or functional urban regions. In the context of the ESPON I Programme, an attempt has been made to produce an identification and delineation of functional urban areas (FUA) at European level, using a harmonised statistical definition.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas">
+      <label xml:lang="en">peri urban areas</label>
+      <definition xml:lang="en">areas that are in some form of transition from strictly rural to urban. These areas often form the immediate urban-rural interface and may eventually evolve into being fully urban. Peri-urban areas are places where people are key components: they are lived-in environments.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure">
+      <label xml:lang="en">polycentric spatial structure</label>
+      <definition xml:lang="en">A polycentric spatial structure refers to the morphology of the settlement system. It assumes that a plurality of urban agglomerations of similar size exist at the various levels of the urban hierarchy, as opposed to situations where a single large urban centre dominates each level and even eliminates the presence of intermediary levels. The principle of polycentric spatial structure can be applied at the various geographical scales, from the European to the regional one.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor">
+      <label xml:lang="en">eurocorridor or pan european corridor</label>
+      <definition xml:lang="en">category of space of linear nature connecting large agglomerations over various national borders. They are areas of rapid and large-scale spatial dynamics within a Europe of vanishing national borders. Four interrelated dimensions can be distinguished in Eurocorridors: infrastructure and transport (mainly the Trans-European Networks), urbanisation, economic development and environmental sustainability.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects">
+      <label xml:lang="en">spatial development projects</label>
+      <definition xml:lang="en">Area for projects generated or controlled by public bodies which contribute positively to territorial development at different scales. Spatial development projects may comprise infrastructure works, the economic promotion and development of specific areas, urban rehabilitation measures, the restoration of damaged ecosystems, etc.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies">
+      <label xml:lang="en">other settlement structure development policies</label>
+      <definition xml:lang="en">other supplementary regulation that relates to settlement structure development policies</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure">
+      <label xml:lang="en">open space structure</label>
+      <definition xml:lang="en">The term open-space structure refers to the quantitative and qualitative pattern or distribution of land uses and functions in a near-natural state.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture">
+      <label xml:lang="en">agriculture</label>
+      <definition xml:lang="en">open space assigned to agriculture</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest">
+      <label xml:lang="en">forest</label>
+      <definition xml:lang="en">open space assigned to forest</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation">
+      <label xml:lang="en">recreation</label>
+      <definition xml:lang="en">leisure, recreation and other outdoor activities</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism">
+      <label xml:lang="en">tourism</label>
+      <definition xml:lang="en">open space assigned to tourism</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt">
+      <label xml:lang="en">green belt</label>
+      <definition xml:lang="en">land use designation to retain areas of largely undeveloped, wild, or agricultural land surrounding or neighbouring urban areas. Similar concepts are greenways or green wedges which have a linear character and may run through an urban area instead of around it. In essence, a green belt is an invisible line encircling a certain area, preventing development of the area allowing wildlife to return and be established.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak">
+      <label xml:lang="en">green break</label>
+      <definition xml:lang="en">Green breaks or divides are smaller protected open spaces areas close to settlements to be kept free of development for local recreational purposes and in order to break up densely built-up areas. Green breaks should link up with the open countryside and act as a climatic corridor and habitat, as both refuge and exchange area for plants and animals.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials">
+      <label xml:lang="en">raw materials</label>
+      <definition xml:lang="en">open space assigned to prospection or dumping of material</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea">
+      <label xml:lang="en">prospecting and mining permit area</label>
+      <definition xml:lang="en">The area on which the prospection or extraction of any mineral has been authorised and for which that right or permit is granted.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste">
+      <label xml:lang="en">area for dumping of waste</label>
+      <definition xml:lang="en">Area affected by uncontrolled disposal of waste as defined in Waste Framework Directive (2006/12/EC) Art 4.( from AM DS V2.0)�</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation">
+      <label xml:lang="en">recultivation</label>
+      <definition xml:lang="en">open space assigned to recultivation</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water">
+      <label xml:lang="en">water</label>
+      <definition xml:lang="en">water in open space</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures">
+      <label xml:lang="en">other open space structures</label>
+      <definition xml:lang="en">Other supplementary regulation that relates to open space structures</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea">
+      <label xml:lang="en">coastal zone management area</label>
+      <definition xml:lang="en">"Area in which ""integrated coastal zone management"" takes place."</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure">
+      <label xml:lang="en">infrastructure</label>
+      <definition xml:lang="en">"technical structures that support a society, such as roads, water supply, sewers, electrical grids, telecommunications, and so forth, and can be defined as ""the physical components of interrelated systems providing commodities and services essential to enable, sustain, or enhance societal living conditions."</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network">
+      <label xml:lang="en">network</label>
+      <definition xml:lang="en">the infrastructure and installations for transfer of goods</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road">
+      <label xml:lang="en">road</label>
+      <definition xml:lang="en">by road</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad">
+      <label xml:lang="en">rail road</label>
+      <definition xml:lang="en">by rail</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure">
+      <label xml:lang="en">water infrastructure</label>
+      <definition xml:lang="en">by navigable water</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure">
+      <label xml:lang="en">other network infrastructure</label>
+      <definition xml:lang="en">by other mean such as powerlines, pipelines�</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater">
+      <label xml:lang="en">regulated fairway at sea or large inland water</label>
+      <definition xml:lang="en">Regulated navigation areas port-to-port established in accordance with Decision 884/2004/EC of the European Parliament and Council of 29 April 2004 amending Decision No 1692/96/EC on Community guidelines for the development of the trans - European transport network to organise sailing traffic, prevent accident and pollution.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply">
+      <label xml:lang="en">supply</label>
+      <definition xml:lang="en">Entire range of installations which serve to provide the population of an area with goods and services.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal">
+      <label xml:lang="en">disposal</label>
+      <definition xml:lang="en">Discarding of all no usable solid waste from the economic cycle, reprocessing of reusable material or interim storage and hauling to a disposal site for public health and convenience.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication">
+      <label xml:lang="en">communication</label>
+      <definition xml:lang="en">communication (voice image etc.) infrastructure</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure">
+      <label xml:lang="en">other infrastructure</label>
+      <definition xml:lang="en">Other supplementary regulation to infrastructure</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea">
+      <label xml:lang="en">urban reshaping and development area</label>
+      <definition xml:lang="en">Cities are confronted to both the ageing of their fabric and built-up areas and to changes in their economic functions and in the social characteristics of their population. In order to maintain a harmonious living environment, a buoyant economy and a balanced social structure, a number of public (and sometimes public-private) activities are necessary. </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal">
+      <label xml:lang="en">urban renewal</label>
+      <definition xml:lang="en">area where impoverished urban neighbourhoods and derelict areas are replaced by large-scale projects related to housing, services, transport systems, recreation areas, etc. Sometimes, the costs of urban renewal for living communities is high and this type of activity is nowadays less frequently carried out than some decades ago </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation">
+      <label xml:lang="en">urban regeneration and revitalisation</label>
+      <definition xml:lang="en">"Area defined for transforming the obsolete socio-economic base of certain urban areas into a more sustainable socio-economic base through the attraction of new activities and companies, modernisation of the urban fabric, improvement of the urban environment and diversification of the social structure</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration">
+      <label xml:lang="en">urban rehabilitation and restoration</label>
+      <definition xml:lang="en">area devoted to regenerating and conserving the built heritage or the urban environment, including the ecosystems. In addition to the refurbishment of historical buildings and townscapes, such activities also comprise the modernisation and upgrading of technical facilities and the respect of environmental and security norms and standards.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea">
+      <label xml:lang="en">commercial development area</label>
+      <definition xml:lang="en">Area where a commercial development plan applies</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning">
+      <label xml:lang="en">after zoning</label>
+      <definition xml:lang="en">after the ending of the current zoning the zoning will be forest/nature/housing�</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea">
+      <label xml:lang="en">specific area</label>
+      <definition xml:lang="en">areas for specific development policies</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea">
+      <label xml:lang="en">derelict area</label>
+      <definition xml:lang="en">areas which have suffered a significant downturn, with declining or abandoned industries, closed businesses and houses, vacant storefronts, a degraded environment and virtually empty streets at night. Some derelict areas are also contaminated and can be considered as brownfields sites. Derelict areas are a major cause of environmental stress in urban areas</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea">
+      <label xml:lang="en">parking obligation area</label>
+      <definition xml:lang="en">areas within which the conditions of service by regular public transport can reduce or eliminate the obligations imposed in the realization of parking, especially during the construction of office buildings, or within which the local plan sets a maximum number of parking spaces to achieve during the construction of buildings for other than residential</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas">
+      <label xml:lang="en">demolition provisions areas</label>
+      <definition xml:lang="en">Areas which provisions relating to the demolition permit exist within</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea">
+      <label xml:lang="en">energy saving area</label>
+      <definition xml:lang="en">priority perimeter for the development energy saving</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDeferring">
+      <label xml:lang="en">ruling deferring</label>
+      <definition xml:lang="en">areas within which the competent authority may defer ruling on applications for authorization</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest">
+      <label xml:lang="en">study plan request</label>
+      <definition xml:lang="en">areas where specific studies must be performed</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices">
+      <label xml:lang="en">social health choices</label>
+      <definition xml:lang="en">supplementary regulation related to social choices and health protection decided by the responsible authority of the plan(e.g. area reserved with social housing ratios) as defined by the competent authority responsible for the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation">
+      <label xml:lang="en">composition of local residential population</label>
+      <definition xml:lang="en">Preservation of physical structures and of the specific urban character of an area in order to maintain the composition of the local residential population. Might be adopted to counteract the threat of displacement in an inner-city residential area owing to gentrification.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea">
+      <label xml:lang="en">publicly subsidised housing area</label>
+      <definition xml:lang="en">Housing area reserved for dwellings which are subsidized by state or local government for persons and families with low incomes</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities">
+      <label xml:lang="en">regulated activities</label>
+      <definition xml:lang="en">supplementary regulation related to restricting, permitting or forbidding activities (e.g. area reserved or forbidding commercial activities) or where activities are suitable as defined by the competent authority responsible for the spatial plan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities">
+      <label xml:lang="en">restricted activities</label>
+      <definition xml:lang="en">area in which specific activities have restrictions. The NACE code should be used to list the restricted activities</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities">
+      <label xml:lang="en">permitted activities</label>
+      <definition xml:lang="en">area in which specific activities are permitted the other activities being forbidden. The NACE code should be used to list the permitted activities</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbiddenActivities">
+      <label xml:lang="en">forbidden activities</label>
+      <definition xml:lang="en">area in which specific activities are forbidden the other activities being permitted. The NACE code should be used to list the forbidden activities </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities">
+      <label xml:lang="en">suitable activities</label>
+      <definition xml:lang="en">area in which specific activities are suitable. The NACE code should be used to list the suitable activities </definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation">
+      <label xml:lang="en">other supplementary regulation</label>
+      <definition xml:lang="en">Supplementary regulation of other types, not yet listed </definition>
+    </value>
+  </containeditems>
+</codelist>

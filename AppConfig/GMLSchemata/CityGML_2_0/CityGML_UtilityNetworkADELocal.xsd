@@ -1,0 +1,1618 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 06.03.2017 14:10:13-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+ xmlns:utility="http://www.citygml.org/ade/utility/0.9.2"
+ targetNamespace="http://www.citygml.org/ade/utility/0.9.2"
+ xmlns:kit="http://www.kit.edu"
+ xmlns:gml="http://www.opengis.net/gml"
+ xmlns:core="http://www.opengis.net/citygml/2.0"
+ xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0"
+ xmlns:bldg="http://www.opengis.net/citygml/building/2.0"
+ elementFormDefault="qualified" version="0.9.1">
+ 
+ <!--import namespace="http://www.opengis.net/citygml/2.0" schemaLocation="cityGMLBase.xsd" />
+ <import namespace="http://www.opengis.net/citygml/building/2.0" schemaLocation="building.xsd" />
+ <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" />
+ <import namespace="http://www.opengis.net/citygml/cityobjectgroup/2.0" schemaLocation="cityObjectGroup.xsd" /-->
+
+  <!--=========================================================================================-->
+  <!--AbstractBuilding-->
+  <!--=========================================================================================-->
+  <element name="buildingHabitants" type="int" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" />
+  <!--=========================================================================================-->
+  <!--AbstractCityObject-->
+  <!--=========================================================================================-->
+  <element name="mediumSupply" type="utility:AbstractMediumSupplyPropertyType" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" />
+  <element name="roleInNetwork" type="utility:RoleInNetworkPropertyType" substitutionGroup="core:_GenericApplicationPropertyOfCityObject">
+    <annotation>
+      <appinfo>
+        <gml:targetElement>utility:RoleInNetwork</gml:targetElement>
+      </appinfo>
+    </annotation>
+  </element>
+  <!--=========================================================================================-->
+  <!--AbstractCommodity-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractCommodity" type="utility:AbstractCommodityType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="AbstractCommodityType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="owner" minOccurs="0" type="string" />
+          <element name="isClassifiedBy" minOccurs="0" maxOccurs="unbounded" type="utility:AbstractCommodityClassifierPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractCommodityClassifier</gml:targetElement>
+                <gml:reversePropertyName>utility:definesCommodity</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="associatedNetwork" minOccurs="0" maxOccurs="unbounded" type="utility:NetworkPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:Network</gml:targetElement>
+                <gml:reversePropertyName>utility:transportedMedium</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractCommodityPropertyType">
+    <sequence>
+      <element ref="utility:AbstractCommodity" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractCommodityClassifier-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractCommodityClassifier" type="utility:AbstractCommodityClassifierType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="AbstractCommodityClassifierType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="molFormula" minOccurs="0" type="string" />
+          <element name="description" minOccurs="0" type="string" />
+          <element name="physicalForm" minOccurs="0" type="string" />
+          <element name="molecularWeight" minOccurs="0" type="gml:MeasureType" />
+          <element name="signalWord" minOccurs="0" type="utility:SignalWordValue" />
+          <element name="isChemicalComplex" minOccurs="0" type="boolean" />
+          <element name="hazardClass" minOccurs="0" type="utility:HazardClassPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:HazardClass</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="consistsOfFurtherElements" minOccurs="0" maxOccurs="unbounded" type="utility:AbstractCommodityClassifierPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractCommodityClassifier</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="definesMaterial" minOccurs="0" type="utility:AbstractFeatureMaterialPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractFeatureMaterial</gml:targetElement>
+                <gml:reversePropertyName>utility:isClassifiedBy</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="definesCommodity" minOccurs="0" type="utility:AbstractCommodityPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractCommodity</gml:targetElement>
+                <gml:reversePropertyName>utility:isClassifiedBy</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="boundedBy" minOccurs="0" type="utility:AbstractHollowSpacePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractHollowSpace</gml:targetElement>
+                <gml:reversePropertyName>utility:containedCommodity</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractCommodityClassifierPropertyType">
+    <sequence>
+      <element ref="utility:AbstractCommodityClassifier" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractDevice-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractDevice" type="utility:AbstractDeviceType" substitutionGroup="utility:AbstractNetworkFeature" />
+  <complexType abstract="true" name="AbstractDeviceType">
+    <complexContent>
+      <extension base="utility:AbstractNetworkFeatureType">
+        <sequence>
+          <element name="description" minOccurs="0" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractDevicePropertyType">
+    <sequence>
+      <element ref="utility:AbstractDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractDistributionElement-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractDistributionElement" type="utility:AbstractDistributionElementType" substitutionGroup="utility:AbstractNetworkFeature" />
+  <complexType abstract="true" name="AbstractDistributionElementType">
+    <complexContent>
+      <extension base="utility:AbstractNetworkFeatureType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+          <element name="functionOfLine" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractDistributionElementPropertyType">
+    <sequence>
+      <element ref="utility:AbstractDistributionElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractFeatureMaterial-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractFeatureMaterial" type="utility:AbstractFeatureMaterialType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="AbstractFeatureMaterialType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="type" type="gml:CodeType" />
+          <element name="consistsOfFM" minOccurs="0" maxOccurs="unbounded" type="utility:FillingMaterialPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:FillingMaterial</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="consistsOf" minOccurs="0" maxOccurs="unbounded" type="utility:InteriorMaterialPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:InteriorMaterial</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="isClassifiedBy" minOccurs="0" maxOccurs="unbounded" type="utility:AbstractCommodityClassifierPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractCommodityClassifier</gml:targetElement>
+                <gml:reversePropertyName>utility:definesMaterial</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="usedBy" minOccurs="0" maxOccurs="unbounded" type="utility:AbstractNetworkFeaturePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractNetworkFeature</gml:targetElement>
+                <gml:reversePropertyName>utility:hasMaterial</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractFeatureMaterialPropertyType">
+    <sequence>
+      <element ref="utility:AbstractFeatureMaterial" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractHollowSpace-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractHollowSpace" type="utility:AbstractHollowSpaceType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="AbstractHollowSpaceType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="containedCommodity" minOccurs="0" type="utility:AbstractCommodityClassifierPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractCommodityClassifier</gml:targetElement>
+                <gml:reversePropertyName>utility:boundedBy</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="consistsOfParts" minOccurs="0" maxOccurs="unbounded" type="utility:HollowSpacePartPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:HollowSpacePart</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractHollowSpacePropertyType">
+    <sequence>
+      <element ref="utility:AbstractHollowSpace" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractLink-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractLink" type="utility:AbstractLinkType" substitutionGroup="gml:_Feature" />
+  <complexType abstract="true" name="AbstractLinkType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="direction" minOccurs="0" type="gml:SignType" />
+          <element name="linkControl" minOccurs="0" type="utility:AbstractLinkControlPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractLinkControl</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="realization" minOccurs="0" type="gml:CurvePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>:GM_Curve</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="start" type="utility:NodePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:Node</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="end" type="utility:NodePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:Node</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractLinkPropertyType">
+    <sequence>
+      <element ref="utility:AbstractLink" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractLinkControl-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractLinkControl" type="utility:AbstractLinkControlType" />
+  <complexType abstract="true" name="AbstractLinkControlType" />
+  <complexType name="AbstractLinkControlPropertyType">
+    <sequence>
+      <element ref="utility:AbstractLinkControl" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractMediumSupply-->
+  <!--=========================================================================================-->
+  <element name="AbstractMediumSupply" type="utility:AbstractMediumSupplyType" />
+  <complexType name="AbstractMediumSupplyType">
+    <sequence>
+      <element name="potentialSupply" minOccurs="0" type="utility:SupplyPropertyType">
+        <annotation>
+          <appinfo>
+            <gml:targetElement>utility:Supply</gml:targetElement>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="currentSupply" minOccurs="0" type="utility:SupplyPropertyType">
+        <annotation>
+          <appinfo>
+            <gml:targetElement>utility:Supply</gml:targetElement>
+          </appinfo>
+        </annotation>
+      </element>
+      <element name="storage" minOccurs="0" maxOccurs="unbounded" type="utility:StoragePropertyType">
+        <annotation>
+          <appinfo>
+            <gml:targetElement>utility:Storage</gml:targetElement>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="AbstractMediumSupplyPropertyType">
+    <sequence>
+      <element ref="utility:AbstractMediumSupply" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractNetworkFeature-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractNetworkFeature" type="utility:AbstractNetworkFeatureType" substitutionGroup="core:_CityObject" />
+  <complexType abstract="true" name="AbstractNetworkFeatureType">
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element name="function" minOccurs="0" type="gml:CodeType" />
+          <element name="usage" minOccurs="0" maxOccurs="unbounded" type="gml:CodeType" />
+          <element name="connectedCityObject" minOccurs="0" type="anyURI" />
+          <element name="yearOfConstruction" minOccurs="0" type="date" />
+          <element name="status" minOccurs="0" type="utility:StatusValue" />
+          <element name="locationQuality" minOccurs="0" type="utility:SpatialQualityValue" />
+          <element name="elevationQuality" minOccurs="0" type="utility:SpatialQualityValue" />
+          <element name="consistsOf" minOccurs="0" maxOccurs="unbounded" type="utility:AbstractNetworkFeaturePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractNetworkFeature</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="hasMaterial" minOccurs="0" maxOccurs="unbounded" type="utility:AbstractFeatureMaterialPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractFeatureMaterial</gml:targetElement>
+                <gml:reversePropertyName>utility:usedBy</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="topoGraph" minOccurs="0" type="utility:FeatureGraphPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:FeatureGraph</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="occupiedHollowSpace" minOccurs="0" type="utility:AbstractHollowSpacePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractHollowSpace</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="lod1Geometry" minOccurs="0" type="gml:GeometryPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>:GM_Object</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractNetworkFeaturePropertyType">
+    <sequence>
+      <element ref="utility:AbstractNetworkFeature" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractPipe-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractPipe" type="utility:AbstractPipeType" substitutionGroup="utility:AbstractDistributionElement" />
+  <complexType abstract="true" name="AbstractPipeType">
+    <complexContent>
+      <extension base="utility:AbstractDistributionElementType">
+        <sequence>
+          <element name="isGravity" minOccurs="0" type="boolean" />
+          <element name="exteriorWidth" minOccurs="0" type="gml:LengthType" />
+          <element name="exteriorHeight" minOccurs="0" type="gml:LengthType" />
+          <element name="exteriorDiameter" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractPipePropertyType">
+    <sequence>
+      <element ref="utility:AbstractPipe" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractProtectionShell-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractProtectionShell" type="utility:AbstractProtectionShellType" substitutionGroup="utility:ProtectiveElement" />
+  <complexType abstract="true" name="AbstractProtectionShellType">
+    <complexContent>
+      <extension base="utility:ProtectiveElementType">
+        <sequence>
+          <element name="exteriorWidth" minOccurs="0" type="gml:LengthType" />
+          <element name="exteriorHeight" minOccurs="0" type="gml:LengthType" />
+          <element name="exteriorDiameter" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractProtectionShellPropertyType">
+    <sequence>
+      <element ref="utility:AbstractProtectionShell" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractSignature-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractSignature" type="utility:AbstractSignatureType" />
+  <complexType abstract="true" name="AbstractSignatureType" />
+  <complexType name="AbstractSignaturePropertyType">
+    <sequence>
+      <element ref="utility:AbstractSignature" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AnyDevice-->
+  <!--=========================================================================================-->
+  <element name="AnyDevice" type="utility:AnyDeviceType" substitutionGroup="utility:AbstractDevice" />
+  <complexType name="AnyDeviceType">
+    <complexContent>
+      <extension base="utility:AbstractDeviceType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AnyDevicePropertyType">
+    <sequence>
+      <element ref="utility:AnyDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Bedding-->
+  <!--=========================================================================================-->
+  <element name="Bedding" type="utility:BeddingType" substitutionGroup="utility:ProtectiveElement" />
+  <complexType name="BeddingType">
+    <complexContent>
+      <extension base="utility:ProtectiveElementType">
+        <sequence>
+          <element name="width" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BeddingPropertyType">
+    <sequence>
+      <element ref="utility:Bedding" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Cable-->
+  <!--=========================================================================================-->
+  <element name="Cable" type="utility:CableType" substitutionGroup="utility:AbstractDistributionElement" />
+  <complexType name="CableType">
+    <complexContent>
+      <extension base="utility:AbstractDistributionElementType">
+        <sequence>
+          <element name="isTransmission" minOccurs="0" type="boolean" />
+          <element name="isCommunication" minOccurs="0" type="boolean" />
+          <element name="crossSection" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CablePropertyType">
+    <sequence>
+      <element ref="utility:Cable" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Canal-->
+  <!--=========================================================================================-->
+  <element name="Canal" type="utility:CanalType" substitutionGroup="utility:AbstractDistributionElement" />
+  <complexType name="CanalType">
+    <complexContent>
+      <extension base="utility:AbstractDistributionElementType">
+        <sequence>
+          <element name="profileName" minOccurs="0" type="string" />
+          <element name="slope" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="isGravity" minOccurs="0" type="boolean" />
+          <element name="exteriorWidth" minOccurs="0" type="gml:LengthType" />
+          <element name="exteriorHeight" minOccurs="0" type="gml:LengthType" />
+          <element name="exteriorDiameter" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CanalPropertyType">
+    <sequence>
+      <element ref="utility:Canal" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ChemicalClassifier-->
+  <!--=========================================================================================-->
+  <element name="ChemicalClassifier" type="utility:ChemicalClassifierType" substitutionGroup="utility:AbstractCommodityClassifier" />
+  <complexType name="ChemicalClassifierType">
+    <complexContent>
+      <extension base="utility:AbstractCommodityClassifierType">
+        <sequence>
+          <element name="ECNo" minOccurs="0" type="string" />
+          <element name="CasNo" minOccurs="0" type="string" />
+          <element name="IUCLIDChemicalDataSheet" minOccurs="0" type="anyURI" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ChemicalClassifierPropertyType">
+    <sequence>
+      <element ref="utility:ChemicalClassifier" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Closed-->
+  <!--=========================================================================================-->
+  <element name="Closed" type="utility:ClosedType" substitutionGroup="utility:Canal" />
+  <complexType name="ClosedType">
+    <complexContent>
+      <extension base="utility:CanalType" />
+    </complexContent>
+  </complexType>
+  <complexType name="ClosedPropertyType">
+    <sequence>
+      <element ref="utility:Closed" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ComplexFunctionalElement-->
+  <!--=========================================================================================-->
+  <element name="ComplexFunctionalElement" type="utility:ComplexFunctionalElementType" substitutionGroup="utility:AbstractNetworkFeature" />
+  <complexType name="ComplexFunctionalElementType">
+    <complexContent>
+      <extension base="utility:AbstractNetworkFeatureType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ComplexFunctionalElementPropertyType">
+    <sequence>
+      <element ref="utility:ComplexFunctionalElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ControllerDevice-->
+  <!--=========================================================================================-->
+  <element name="ControllerDevice" type="utility:ControllerDeviceType" substitutionGroup="utility:AbstractDevice" />
+  <complexType name="ControllerDeviceType">
+    <complexContent>
+      <extension base="utility:AbstractDeviceType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ControllerDevicePropertyType">
+    <sequence>
+      <element ref="utility:ControllerDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ElectricalMedium-->
+  <!--=========================================================================================-->
+  <element name="ElectricalMedium" type="utility:ElectricalMediumType" substitutionGroup="utility:AbstractCommodity" />
+  <complexType name="ElectricalMediumType">
+    <complexContent>
+      <extension base="utility:AbstractCommodityType">
+        <sequence>
+          <element name="type" type="utility:ElectricalMediumValue" />
+          <element name="voltageRange" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="amperageRange" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="bandWidth" minOccurs="0" type="gml:QuantityExtentType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ElectricalMediumPropertyType">
+    <sequence>
+      <element ref="utility:ElectricalMedium" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ElectricalMediumSupply-->
+  <!--=========================================================================================-->
+  <element name="ElectricalMediumSupply" type="utility:ElectricalMediumSupplyType" substitutionGroup="utility:AbstractMediumSupply" />
+  <complexType name="ElectricalMediumSupplyType">
+    <complexContent>
+      <extension base="utility:AbstractMediumSupplyType">
+        <sequence>
+          <element name="type" type="utility:ElectricalMediumValue" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ElectricalMediumSupplyPropertyType">
+    <sequence>
+      <element ref="utility:ElectricalMediumSupply" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ExteriorMaterial-->
+  <!--=========================================================================================-->
+  <element name="ExteriorMaterial" type="utility:ExteriorMaterialType" substitutionGroup="utility:AbstractFeatureMaterial" />
+  <complexType name="ExteriorMaterialType">
+    <complexContent>
+      <extension base="utility:AbstractFeatureMaterialType" />
+    </complexContent>
+  </complexType>
+  <complexType name="ExteriorMaterialPropertyType">
+    <sequence>
+      <element ref="utility:ExteriorMaterial" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--FeatureGraph-->
+  <!--=========================================================================================-->
+  <element name="FeatureGraph" type="utility:FeatureGraphType" substitutionGroup="gml:_Feature" />
+  <complexType name="FeatureGraphType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="linkMember" minOccurs="0" maxOccurs="unbounded" type="utility:InteriorFeatureLinkPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:InteriorFeatureLink</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="nodeMember" minOccurs="0" maxOccurs="unbounded" type="utility:NodePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:Node</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FeatureGraphPropertyType">
+    <sequence>
+      <element ref="utility:FeatureGraph" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--FillingMaterial-->
+  <!--=========================================================================================-->
+  <element name="FillingMaterial" type="utility:FillingMaterialType" substitutionGroup="gml:_Feature" />
+  <complexType name="FillingMaterialType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="type" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FillingMaterialPropertyType">
+    <sequence>
+      <element ref="utility:FillingMaterial" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--GaseousMedium-->
+  <!--=========================================================================================-->
+  <element name="GaseousMedium" type="utility:GaseousMediumType" substitutionGroup="utility:AbstractCommodity" />
+  <complexType name="GaseousMediumType">
+    <complexContent>
+      <extension base="utility:AbstractCommodityType">
+        <sequence>
+          <element name="type" type="gml:CodeType" />
+          <element name="concentration" minOccurs="0" type="gml:MeasureType" />
+          <element name="isExplosive" minOccurs="0" type="boolean" />
+          <element name="pressureRange" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="electricConductivity" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="lighterThanAir" minOccurs="0" type="boolean" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GaseousMediumPropertyType">
+    <sequence>
+      <element ref="utility:GaseousMedium" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--GaseousMediumSupply-->
+  <!--=========================================================================================-->
+  <element name="GaseousMediumSupply" type="utility:GaseousMediumSupplyType" substitutionGroup="utility:AbstractMediumSupply" />
+  <complexType name="GaseousMediumSupplyType">
+    <complexContent>
+      <extension base="utility:AbstractMediumSupplyType">
+        <sequence>
+          <element name="type" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GaseousMediumSupplyPropertyType">
+    <sequence>
+      <element ref="utility:GaseousMediumSupply" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--GenericClassifier-->
+  <!--=========================================================================================-->
+  <element name="GenericClassifier" type="utility:GenericClassifierType" substitutionGroup="utility:AbstractCommodityClassifier" />
+  <complexType name="GenericClassifierType">
+    <complexContent>
+      <extension base="utility:AbstractCommodityClassifierType" />
+    </complexContent>
+  </complexType>
+  <complexType name="GenericClassifierPropertyType">
+    <sequence>
+      <element ref="utility:GenericClassifier" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--GHSClassifier-->
+  <!--=========================================================================================-->
+  <element name="GHSClassifier" type="utility:GHSClassifierType" substitutionGroup="utility:AbstractCommodityClassifier" />
+  <complexType name="GHSClassifierType">
+    <complexContent>
+      <extension base="utility:AbstractCommodityClassifierType">
+        <sequence>
+          <element name="ECNo" minOccurs="0" type="string" />
+          <element name="CasNo" minOccurs="0" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GHSClassifierPropertyType">
+    <sequence>
+      <element ref="utility:GHSClassifier" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--HazardClass-->
+  <!--=========================================================================================-->
+  <element name="HazardClass" type="utility:HazardClassType" />
+  <complexType name="HazardClassType">
+    <sequence>
+      <element name="hazardClass" minOccurs="0" type="string" />
+      <element name="categoryCode" minOccurs="0" type="string" />
+      <element name="statementCode" minOccurs="0" type="string" />
+      <element name="pictogramCode" minOccurs="0" type="string" />
+      <element name="pictogramURI" minOccurs="0" type="anyURI" />
+    </sequence>
+  </complexType>
+  <complexType name="HazardClassPropertyType">
+    <sequence>
+      <element ref="utility:HazardClass" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--HollowSpace-->
+  <!--=========================================================================================-->
+  <element name="HollowSpace" type="utility:HollowSpaceType" substitutionGroup="utility:AbstractHollowSpace" />
+  <complexType name="HollowSpaceType">
+    <complexContent>
+      <extension base="utility:AbstractHollowSpaceType" />
+    </complexContent>
+  </complexType>
+  <complexType name="HollowSpacePropertyType">
+    <sequence>
+      <element ref="utility:HollowSpace" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--HollowSpacePart-->
+  <!--=========================================================================================-->
+  <element name="HollowSpacePart" type="utility:HollowSpacePartType" substitutionGroup="utility:AbstractHollowSpace" />
+  <complexType name="HollowSpacePartType">
+    <complexContent>
+      <extension base="utility:AbstractHollowSpaceType" />
+    </complexContent>
+  </complexType>
+  <complexType name="HollowSpacePartPropertyType">
+    <sequence>
+      <element ref="utility:HollowSpacePart" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--InterFeatureLink-->
+  <!--=========================================================================================-->
+  <element name="InterFeatureLink" type="utility:InterFeatureLinkType" substitutionGroup="utility:AbstractLink" />
+  <complexType name="InterFeatureLinkType">
+    <complexContent>
+      <extension base="utility:AbstractLinkType">
+        <sequence>
+          <element name="type" type="utility:InterFeatureLinkValue" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InterFeatureLinkPropertyType">
+    <sequence>
+      <element ref="utility:InterFeatureLink" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--InterFeatureLinkValue-->
+  <!--=========================================================================================-->
+  <simpleType name="InterFeatureLinkValue">
+    <restriction base="string">
+      <enumeration value="connects" />
+      <enumeration value="contains" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--InteriorFeatureLink-->
+  <!--=========================================================================================-->
+  <element name="InteriorFeatureLink" type="utility:InteriorFeatureLinkType" substitutionGroup="utility:AbstractLink" />
+  <complexType name="InteriorFeatureLinkType">
+    <complexContent>
+      <extension base="utility:AbstractLinkType" />
+    </complexContent>
+  </complexType>
+  <complexType name="InteriorFeatureLinkPropertyType">
+    <sequence>
+      <element ref="utility:InteriorFeatureLink" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--InteriorMaterial-->
+  <!--=========================================================================================-->
+  <element name="InteriorMaterial" type="utility:InteriorMaterialType" substitutionGroup="utility:AbstractFeatureMaterial" />
+  <complexType name="InteriorMaterialType">
+    <complexContent>
+      <extension base="utility:AbstractFeatureMaterialType" />
+    </complexContent>
+  </complexType>
+  <complexType name="InteriorMaterialPropertyType">
+    <sequence>
+      <element ref="utility:InteriorMaterial" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--LiquidMedium-->
+  <!--=========================================================================================-->
+  <element name="LiquidMedium" type="utility:LiquidMediumType" substitutionGroup="utility:AbstractCommodity" />
+  <complexType name="LiquidMediumType">
+    <complexContent>
+      <extension base="utility:AbstractCommodityType">
+        <sequence>
+          <element name="type" type="gml:CodeType" />
+          <element name="isCorrosive" minOccurs="0" type="boolean" />
+          <element name="isExplosive" minOccurs="0" type="boolean" />
+          <element name="flammable" minOccurs="0" type="double" />
+          <element name="electricConductivity" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="phValueRange" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="temperatureRange" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="flowRateRange" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="pressureRange" minOccurs="0" type="gml:QuantityExtentType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LiquidMediumPropertyType">
+    <sequence>
+      <element ref="utility:LiquidMedium" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--LiquidMediumSupply-->
+  <!--=========================================================================================-->
+  <element name="LiquidMediumSupply" type="utility:LiquidMediumSupplyType" substitutionGroup="utility:AbstractMediumSupply" />
+  <complexType name="LiquidMediumSupplyType">
+    <complexContent>
+      <extension base="utility:AbstractMediumSupplyType">
+        <sequence>
+          <element name="type" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LiquidMediumSupplyPropertyType">
+    <sequence>
+      <element ref="utility:LiquidMediumSupply" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--MeasurementDevice-->
+  <!--=========================================================================================-->
+  <element name="MeasurementDevice" type="utility:MeasurementDeviceType" substitutionGroup="utility:AbstractDevice" />
+  <complexType name="MeasurementDeviceType">
+    <complexContent>
+      <extension base="utility:AbstractDeviceType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MeasurementDevicePropertyType">
+    <sequence>
+      <element ref="utility:MeasurementDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Network-->
+  <!--=========================================================================================-->
+  <element name="Network" type="utility:NetworkType" substitutionGroup="core:_CityObject" />
+  <complexType name="NetworkType">
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+          <element name="function" minOccurs="0" maxOccurs="unbounded" type="gml:CodeType" />
+          <element name="usage" minOccurs="0" maxOccurs="unbounded" type="gml:CodeType" />
+          <element name="transportedMedium" minOccurs="0" type="utility:AbstractCommodityPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractCommodity</gml:targetElement>
+                <gml:reversePropertyName>utility:associatedNetwork</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="subNetwork" minOccurs="0" maxOccurs="unbounded" type="utility:NetworkPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:Network</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="topoGraph" minOccurs="0" type="utility:NetworkGraphPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:NetworkGraph</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="component" minOccurs="0" maxOccurs="unbounded" type="utility:AbstractNetworkFeaturePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractNetworkFeature</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="supplies" minOccurs="0" type="utility:SupplyAreaPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:SupplyArea</gml:targetElement>
+                <gml:reversePropertyName>utility:suppliedBy</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="superOrdinateNetwork" minOccurs="0" maxOccurs="unbounded" type="utility:NetworkPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:Network</gml:targetElement>
+                <gml:reversePropertyName>utility:subOrdinateNetwork</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NetworkPropertyType">
+    <sequence>
+      <element ref="utility:Network" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--NetworkClassValue-->
+  <!--=========================================================================================-->
+  <simpleType name="NetworkClassValue">
+    <restriction base="string">
+      <enumeration value="HighVoltageNetwork" />
+      <enumeration value="MediumVoltageNetwork" />
+      <enumeration value="LowVoltageNetwork" />
+      <enumeration value="HighPressureNetwork" />
+      <enumeration value="MediumPressureNetwork" />
+      <enumeration value="LowPressureNetwork" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--NetworkFunctionAndUsageValue-->
+  <!--=========================================================================================-->
+  <simpleType name="NetworkFunctionAndUsageValue">
+    <restriction base="string">
+      <enumeration value="supply" />
+      <enumeration value="disposal" />
+      <enumeration value="communication" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--NetworkGraph-->
+  <!--=========================================================================================-->
+  <element name="NetworkGraph" type="utility:NetworkGraphType" substitutionGroup="gml:_Feature" />
+  <complexType name="NetworkGraphType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="featureGraphMember" minOccurs="0" maxOccurs="unbounded" type="utility:FeatureGraphPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:FeatureGraph</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="linkMember" minOccurs="0" maxOccurs="unbounded" type="utility:InterFeatureLinkPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:InterFeatureLink</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="networkLinkMember" minOccurs="0" maxOccurs="unbounded" type="utility:NetworkLinkPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:NetworkLink</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NetworkGraphPropertyType">
+    <sequence>
+      <element ref="utility:NetworkGraph" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--NetworkLink-->
+  <!--=========================================================================================-->
+  <element name="NetworkLink" type="utility:NetworkLinkType" substitutionGroup="utility:AbstractLink" />
+  <complexType name="NetworkLinkType">
+    <complexContent>
+      <extension base="utility:AbstractLinkType" />
+    </complexContent>
+  </complexType>
+  <complexType name="NetworkLinkPropertyType">
+    <sequence>
+      <element ref="utility:NetworkLink" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Node-->
+  <!--=========================================================================================-->
+  <element name="Node" type="utility:NodeType" substitutionGroup="gml:_Feature" />
+  <complexType name="NodeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="type" type="utility:NodeValue" />
+          <element name="connectionSignature" minOccurs="0" type="utility:AbstractSignaturePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractSignature</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="linkControl" minOccurs="0" type="utility:AbstractLinkControlPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractLinkControl</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="realization" minOccurs="0" type="gml:PointPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>:GM_Point</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NodePropertyType">
+    <sequence>
+      <element ref="utility:Node" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--NodeValue-->
+  <!--=========================================================================================-->
+  <simpleType name="NodeValue">
+    <restriction base="string">
+      <enumeration value="exterior" />
+      <enumeration value="interior" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--OpticalMedium-->
+  <!--=========================================================================================-->
+  <element name="OpticalMedium" type="utility:OpticalMediumType" substitutionGroup="utility:AbstractCommodity" />
+  <complexType name="OpticalMediumType">
+    <complexContent>
+      <extension base="utility:AbstractCommodityType">
+        <sequence>
+          <element name="type" type="utility:OpticalMediumValue" />
+          <element name="modeType" minOccurs="0" type="utility:OpticalModeValue" />
+          <element name="bandWidth" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="coreCrossSection" minOccurs="0" type="gml:LengthType" />
+          <element name="claddingCrossSection" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OpticalMediumPropertyType">
+    <sequence>
+      <element ref="utility:OpticalMedium" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--OpticalMediumSupply-->
+  <!--=========================================================================================-->
+  <element name="OpticalMediumSupply" type="utility:OpticalMediumSupplyType" substitutionGroup="utility:AbstractMediumSupply" />
+  <complexType name="OpticalMediumSupplyType">
+    <complexContent>
+      <extension base="utility:AbstractMediumSupplyType">
+        <sequence>
+          <element name="type" type="utility:OpticalMediumValue" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OpticalMediumSupplyPropertyType">
+    <sequence>
+      <element ref="utility:OpticalMediumSupply" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--OpticalModeValue-->
+  <!--=========================================================================================-->
+  <simpleType name="OpticalModeValue">
+    <restriction base="string">
+      <enumeration value="singleMode" />
+      <enumeration value="multiMode" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--OtherShapePipe-->
+  <!--=========================================================================================-->
+  <element name="OtherShapePipe" type="utility:OtherShapePipeType" substitutionGroup="utility:AbstractPipe" />
+  <complexType name="OtherShapePipeType">
+    <complexContent>
+      <extension base="utility:AbstractPipeType" />
+    </complexContent>
+  </complexType>
+  <complexType name="OtherShapePipePropertyType">
+    <sequence>
+      <element ref="utility:OtherShapePipe" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--OtherShell-->
+  <!--=========================================================================================-->
+  <element name="OtherShell" type="utility:OtherShellType" substitutionGroup="utility:AbstractProtectionShell" />
+  <complexType name="OtherShellType">
+    <complexContent>
+      <extension base="utility:AbstractProtectionShellType" />
+    </complexContent>
+  </complexType>
+  <complexType name="OtherShellPropertyType">
+    <sequence>
+      <element ref="utility:OtherShell" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ProtectiveElement-->
+  <!--=========================================================================================-->
+  <element name="ProtectiveElement" type="utility:ProtectiveElementType" substitutionGroup="utility:AbstractNetworkFeature" />
+  <complexType name="ProtectiveElementType">
+    <complexContent>
+      <extension base="utility:AbstractNetworkFeatureType">
+        <sequence>
+          <element name="contains" minOccurs="0" maxOccurs="unbounded" type="utility:AbstractNetworkFeaturePropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:AbstractNetworkFeature</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProtectiveElementPropertyType">
+    <sequence>
+      <element ref="utility:ProtectiveElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RectangularPipe-->
+  <!--=========================================================================================-->
+  <element name="RectangularPipe" type="utility:RectangularPipeType" substitutionGroup="utility:AbstractPipe" />
+  <complexType name="RectangularPipeType">
+    <complexContent>
+      <extension base="utility:AbstractPipeType">
+        <sequence>
+          <element name="interiorWidth" minOccurs="0" type="gml:LengthType" />
+          <element name="interiorHeight" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RectangularPipePropertyType">
+    <sequence>
+      <element ref="utility:RectangularPipe" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RectangularShell-->
+  <!--=========================================================================================-->
+  <element name="RectangularShell" type="utility:RectangularShellType" substitutionGroup="utility:AbstractProtectionShell" />
+  <complexType name="RectangularShellType">
+    <complexContent>
+      <extension base="utility:AbstractProtectionShellType">
+        <sequence>
+          <element name="interiorWidth" minOccurs="0" type="gml:LengthType" />
+          <element name="interiorHeight" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RectangularShellPropertyType">
+    <sequence>
+      <element ref="utility:RectangularShell" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RoleInNetwork-->
+  <!--=========================================================================================-->
+  <element name="RoleInNetwork" type="utility:RoleInNetworkType" substitutionGroup="gml:_Feature" />
+  <complexType name="RoleInNetworkType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="functionInNetwork" minOccurs="0" type="gml:CodeType" />
+          <element name="usageInNetwork" minOccurs="0" maxOccurs="unbounded" type="gml:CodeType" />
+          <element name="network" type="utility:NetworkPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:Network</gml:targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoleInNetworkPropertyType">
+    <sequence>
+      <element ref="utility:RoleInNetwork" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RoundPipe-->
+  <!--=========================================================================================-->
+  <element name="RoundPipe" type="utility:RoundPipeType" substitutionGroup="utility:AbstractPipe" />
+  <complexType name="RoundPipeType">
+    <complexContent>
+      <extension base="utility:AbstractPipeType">
+        <sequence>
+          <element name="interiorDiameter" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoundPipePropertyType">
+    <sequence>
+      <element ref="utility:RoundPipe" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RoundShell-->
+  <!--=========================================================================================-->
+  <element name="RoundShell" type="utility:RoundShellType" substitutionGroup="utility:AbstractProtectionShell" />
+  <complexType name="RoundShellType">
+    <complexContent>
+      <extension base="utility:AbstractProtectionShellType">
+        <sequence>
+          <element name="interiorDiameter" minOccurs="0" type="gml:LengthType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoundShellPropertyType">
+    <sequence>
+      <element ref="utility:RoundShell" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SemiOpen-->
+  <!--=========================================================================================-->
+  <element name="SemiOpen" type="utility:SemiOpenType" substitutionGroup="utility:Canal" />
+  <complexType name="SemiOpenType">
+    <complexContent>
+      <extension base="utility:CanalType" />
+    </complexContent>
+  </complexType>
+  <complexType name="SemiOpenPropertyType">
+    <sequence>
+      <element ref="utility:SemiOpen" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SignalWordValue-->
+  <!--=========================================================================================-->
+  <simpleType name="SignalWordValue">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="nonHazardous" />
+      <enumeration value="attention" />
+      <enumeration value="hazardous" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--SimpleFunctionalElement-->
+  <!--=========================================================================================-->
+  <element name="SimpleFunctionalElement" type="utility:SimpleFunctionalElementType" substitutionGroup="utility:AbstractNetworkFeature" />
+  <complexType name="SimpleFunctionalElementType">
+    <complexContent>
+      <extension base="utility:AbstractNetworkFeatureType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SimpleFunctionalElementPropertyType">
+    <sequence>
+      <element ref="utility:SimpleFunctionalElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SolidMedium-->
+  <!--=========================================================================================-->
+  <element name="SolidMedium" type="utility:SolidMediumType" substitutionGroup="utility:AbstractCommodity" />
+  <complexType name="SolidMediumType">
+    <complexContent>
+      <extension base="utility:AbstractCommodityType">
+        <sequence>
+          <element name="type" type="gml:CodeType" />
+          <element name="isExplosive" minOccurs="0" type="boolean" />
+          <element name="flammable" minOccurs="0" type="double" />
+          <element name="concentration" minOccurs="0" type="gml:MeasureType" />
+          <element name="electricConductivity" minOccurs="0" type="gml:QuantityExtentType" />
+          <element name="pressureRange" minOccurs="0" type="gml:QuantityExtentType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SolidMediumPropertyType">
+    <sequence>
+      <element ref="utility:SolidMedium" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SolidMediumSupply-->
+  <!--=========================================================================================-->
+  <element name="SolidMediumSupply" type="utility:SolidMediumSupplyType" substitutionGroup="utility:AbstractMediumSupply" />
+  <complexType name="SolidMediumSupplyType">
+    <complexContent>
+      <extension base="utility:AbstractMediumSupplyType">
+        <sequence>
+          <element name="type" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SolidMediumSupplyPropertyType">
+    <sequence>
+      <element ref="utility:SolidMediumSupply" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SpatialQualityValue-->
+  <!--=========================================================================================-->
+  <simpleType name="SpatialQualityValue">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="surveyed" />
+      <enumeration value="calculated" />
+      <enumeration value="interpolated" />
+      <enumeration value="estimated" />
+      <enumeration value="assumed" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--StatusValue-->
+  <!--=========================================================================================-->
+  <simpleType name="StatusValue">
+    <restriction base="string">
+      <enumeration value="inUse" />
+      <enumeration value="tempOutOfService" />
+      <enumeration value="outOfService" />
+      <enumeration value="destroyed" />
+      <enumeration value="unknown" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--Storage-->
+  <!--=========================================================================================-->
+  <element name="Storage" type="utility:StorageType" />
+  <complexType name="StorageType">
+    <sequence>
+      <element name="type" minOccurs="0" type="gml:CodeType" />
+      <element name="maxCapacity" minOccurs="0" type="gml:MeasureType" />
+      <element name="fillLevel" minOccurs="0" type="double" />
+      <element name="inflowRate" minOccurs="0" type="gml:MeasureType" />
+      <element name="outflowRate" minOccurs="0" type="gml:MeasureType" />
+    </sequence>
+  </complexType>
+  <complexType name="StoragePropertyType">
+    <sequence>
+      <element ref="utility:Storage" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--StorageDevice-->
+  <!--=========================================================================================-->
+  <element name="StorageDevice" type="utility:StorageDeviceType" substitutionGroup="utility:AbstractDevice" />
+  <complexType name="StorageDeviceType">
+    <complexContent>
+      <extension base="utility:AbstractDeviceType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="StorageDevicePropertyType">
+    <sequence>
+      <element ref="utility:StorageDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--Supply-->
+  <!--=========================================================================================-->
+  <element name="Supply" type="utility:SupplyType" />
+  <complexType name="SupplyType">
+    <sequence>
+      <element name="flowRate" minOccurs="0" type="gml:MeasureType" />
+      <element name="status" minOccurs="0" type="utility:StatusValue" />
+    </sequence>
+  </complexType>
+  <complexType name="SupplyPropertyType">
+    <sequence>
+      <element ref="utility:Supply" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SupplyArea-->
+  <!--=========================================================================================-->
+  <element name="SupplyArea" type="utility:SupplyAreaType" substitutionGroup="grp:CityObjectGroup" />
+  <complexType name="SupplyAreaType">
+    <complexContent>
+      <extension base="grp:CityObjectGroupType">
+        <sequence>
+          <element name="suppliedBy" type="utility:NetworkPropertyType">
+            <annotation>
+              <appinfo>
+                <gml:targetElement>utility:Network</gml:targetElement>
+                <gml:reversePropertyName>utility:supplies</gml:reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SupplyAreaPropertyType">
+    <sequence>
+      <element ref="utility:SupplyArea" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--TechDevice-->
+  <!--=========================================================================================-->
+  <element name="TechDevice" type="utility:TechDeviceType" substitutionGroup="utility:AbstractDevice" />
+  <complexType name="TechDeviceType">
+    <complexContent>
+      <extension base="utility:AbstractDeviceType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TechDevicePropertyType">
+    <sequence>
+      <element ref="utility:TechDevice" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--TerminalElement-->
+  <!--=========================================================================================-->
+  <element name="TerminalElement" type="utility:TerminalElementType" substitutionGroup="utility:AbstractNetworkFeature" />
+  <complexType name="TerminalElementType">
+    <complexContent>
+      <extension base="utility:AbstractNetworkFeatureType">
+        <sequence>
+          <element name="class" minOccurs="0" type="gml:CodeType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TerminalElementPropertyType">
+    <sequence>
+      <element ref="utility:TerminalElement" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ElectricalMediumValue-->
+  <!--=========================================================================================-->
+  <simpleType name="ElectricalMediumValue">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="directCurrent" />
+      <enumeration value="singlePhaseAlternatingCurrent" />
+      <enumeration value="threePhaseAlternatingCurrent" />
+      <enumeration value="undulatoryCurrent" />
+      <enumeration value="telephone" />
+    </restriction>
+  </simpleType>
+  <!--=========================================================================================-->
+  <!--OpticalMediumValue-->
+  <!--=========================================================================================-->
+  <simpleType name="OpticalMediumValue">
+    <restriction base="string">
+      <enumeration value="unknown" />
+      <enumeration value="light" />
+    </restriction>
+  </simpleType>
+</schema>

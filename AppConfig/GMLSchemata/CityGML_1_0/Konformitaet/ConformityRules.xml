@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd" name="StandardProfilCityGML_1_0">
+    
+    <SrsName>EPSG:4149</SrsName>
+    <SrsName>CH1903</SrsName>
+    
+    <SrsName>EPSG:31466</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK2</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK2*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5676</SrsName>
+    
+    <SrsName>EPSG:31467</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK3</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK3*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5677</SrsName>
+    
+    <SrsName>EPSG:31468</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK4</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK4*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5678</SrsName>
+    
+    <SrsName>EPSG:25828</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM28</SrsName>
+    
+    <SrsName>EPSG:25829</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM29</SrsName>
+    
+    <SrsName>EPSG:25830</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM30</SrsName>
+    
+    <SrsName>EPSG:25831</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM31</SrsName>
+    <SrsName>EPSG:5554</SrsName>
+    
+    <SrsName>EPSG:25832</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM32</SrsName>
+    <SrsName>EPSG:5555</SrsName>
+    
+    <SrsName>EPSG:25833</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM33</SrsName>
+    <SrsName>EPSG:5556</SrsName>
+    
+    <SrsName>EPSG:25834</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM34</SrsName>
+    
+    <SrsName>EPSG:25835</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM35</SrsName>
+    
+    <SrsName>EPSG:25836</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM36</SrsName>
+    
+    <SrsName>EPSG:7415</SrsName>
+    <SrsName>EPSG:28992</SrsName>
+    
+    <SrsName>EPSG:325833</SrsName>
+    
+    <UomLength>m</UomLength>
+    <UomLength>urn:adv:uom:m</UomLength>
+    
+    <UomArea>m2</UomArea>
+    <UomArea>urn:adv:uom:m2</UomArea>
+    
+    <UomVolume>m3</UomVolume>
+    <UomVolume>urn:adv:uom:m3</UomVolume>
+    
+    <UomAngle>grad</UomAngle>
+    <UomAngle>urn:adv:uom:grad</UomAngle>    
+       
+    
+</Profil>

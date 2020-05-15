@@ -1,0 +1,61 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:25-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_TextAbschnitt">
+  <gml:description>Texlich formulierter Inhalt eines Landschaftsplans, der einen anderen Rechtscharakter als das zugrunde liegende Fachobjekt hat (Attribut &lt;i&gt;status &lt;/i&gt;des Fachobjektes), oder dem Plan als Ganzes zugeordnet ist.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_TextAbschnitt</gml:identifier>
+  <gml:name>xplan:LP_TextAbschnitt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_TextAbschnitt_status">
+      <gml:description>Rechtscharakter des textlich formulierten Planinhalts.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_TextAbschnitt:attribute:status</gml:identifier>
+      <gml:name>xplan:status</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_TextAbschnitt_status_LP_Status_1000">
+          <gml:description>Festsetzung im Landschaftsplan</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_TextAbschnitt:status:LP_Status:1000</gml:identifier>
+          <gml:name>Festsetzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_TextAbschnitt_status_LP_Status_2000">
+          <gml:description>Geplante Festsetzung im Landschaftsplan</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_TextAbschnitt:status:LP_Status:2000</gml:identifier>
+          <gml:name>Geplant</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_TextAbschnitt_status_LP_Status_3000">
+          <gml:description>Nachrichtliche Übernahmen im Landschaftsplan</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_TextAbschnitt:status:LP_Status:3000</gml:identifier>
+          <gml:name>NachrichtlicheUebernahme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_TextAbschnitt_status_LP_Status_4000">
+          <gml:description>Darstellungen und Kennzeichnungen im Landschaftsplan.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_TextAbschnitt:status:LP_Status:4000</gml:identifier>
+          <gml:name>DarstellungKennzeichnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_TextAbschnitt_status_LP_Status_5000">
+          <gml:description>Planinhalt aus dem Bereich Naturschutzrecht, der in einem BPlan festgesetzt wird.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_TextAbschnitt:status:LP_Status:5000</gml:identifier>
+          <gml:name>FestsetzungInBPlan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_TextAbschnitt_status_LP_Status_9999">
+          <gml:description>Sonstiger Status</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_TextAbschnitt:status:LP_Status:9999</gml:identifier>
+          <gml:name>SonstigerStatus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>LP_Status</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_TextAbschnitt" />
+</TypeDefinition>

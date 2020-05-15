@@ -1,0 +1,64 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:16-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_GewaesserFlaeche">
+  <gml:description>Festsetzung neuer Wasserflächen nach §9 Abs. 1 Nr. 16a BauGB.
+Diese Klasse wird in der nächsten Hauptversion des Standards eventuell wegfallen und durch SO_Gewaesser ersetzt werden.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GewaesserFlaeche</gml:identifier>
+  <gml:name>xplan:BP_GewaesserFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GewaesserFlaeche_zweckbestimmung">
+      <gml:description>Zweckbestimmung der Wasserfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GewaesserFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GewaesserFlaeche_zweckbestimmung_XP_ZweckbestimmungGewaesser_1000">
+          <gml:description>Hafen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GewaesserFlaeche:zweckbestimmung:XP_ZweckbestimmungGewaesser:1000</gml:identifier>
+          <gml:name>Hafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GewaesserFlaeche_zweckbestimmung_XP_ZweckbestimmungGewaesser_10000">
+          <gml:description>Sportboothafen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GewaesserFlaeche:zweckbestimmung:XP_ZweckbestimmungGewaesser:10000</gml:identifier>
+          <gml:name>Sportboothafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GewaesserFlaeche_zweckbestimmung_XP_ZweckbestimmungGewaesser_1100">
+          <gml:description>Stehende Wasserfläche, auch See, Teich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GewaesserFlaeche:zweckbestimmung:XP_ZweckbestimmungGewaesser:1100</gml:identifier>
+          <gml:name>Wasserflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GewaesserFlaeche_zweckbestimmung_XP_ZweckbestimmungGewaesser_1200">
+          <gml:description>Fließgewässer, auch Fluss, Bach</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GewaesserFlaeche:zweckbestimmung:XP_ZweckbestimmungGewaesser:1200</gml:identifier>
+          <gml:name>Fliessgewaesser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GewaesserFlaeche_zweckbestimmung_XP_ZweckbestimmungGewaesser_9999">
+          <gml:description>Sonstiges Gewässer, sofern keiner der anderen Codes zutreffend ist.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_GewaesserFlaeche:zweckbestimmung:XP_ZweckbestimmungGewaesser:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGewaesser</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GewaesserFlaeche_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Zweckbestimmung der Fläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_GewaesserFlaeche:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestGewaesser</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Flaechenschlussobjekt" />
+</TypeDefinition>

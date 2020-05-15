@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="FP_ZweckbestimmungGenerischeObjekte">
+    <description>GML-Dictionary der Zweckbestimmungen eines Generischen FPlan-Objektes.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:FP_ZweckbestimmungGenerischeObjekte</identifier>
+    <name>xplan:FP_ZweckbestimmungGenerischeObjekte</name>
+    
+    <dictionaryEntry>
+    <Definition gml:id="FP_ZweckbestimmungGenerischeObjekte_54204">
+        <description>Naturbestimmte Flächen</description>
+        <identifier codeSpace="urn:xplan">FP_ZweckbestimmungGenerischeObjekte_54204</identifier>
+        <name>52204</name>
+    </Definition>
+    </dictionaryEntry>
+    
+</Dictionary>

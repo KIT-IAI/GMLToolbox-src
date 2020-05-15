@@ -1,0 +1,76 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:09:07-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Entsorgung">
+  <gml:description>Entsorgungs-Infrastruktur</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Entsorgung</gml:identifier>
+  <gml:name>xplan:RP_Entsorgung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Entsorgung_gebietsTyp">
+      <gml:description>Klassifikation des Gebietes nach Bundesraumordnungsgesetz.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Entsorgung:attribute:gebietsTyp</gml:identifier>
+      <gml:name>xplan:gebietsTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_gebietsTyp_RP_GebietsTyp_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:gebietsTyp:RP_GebietsTyp:1000</gml:identifier>
+          <gml:name>Vorranggebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_gebietsTyp_RP_GebietsTyp_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:gebietsTyp:RP_GebietsTyp:2000</gml:identifier>
+          <gml:name>Vorbehaltsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_gebietsTyp_RP_GebietsTyp_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:gebietsTyp:RP_GebietsTyp:3000</gml:identifier>
+          <gml:name>Eignungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_gebietsTyp_RP_GebietsTyp_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:gebietsTyp:RP_GebietsTyp:4000</gml:identifier>
+          <gml:name>Ausschlussgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_gebietsTyp_RP_GebietsTyp_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:gebietsTyp:RP_GebietsTyp:5000</gml:identifier>
+          <gml:name>SonstigesGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_GebietsTyp</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Entsorgung_typ">
+      <gml:description>Klassifikation von ENtsorgungs-Arten.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Entsorgung:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typ_RP_EntsorgungTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typ:RP_EntsorgungTypen:1000</gml:identifier>
+          <gml:name>Abfallwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typ_RP_EntsorgungTypen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typ:RP_EntsorgungTypen:2000</gml:identifier>
+          <gml:name>Abwasserwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Entsorgung_typ_RP_EntsorgungTypen_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Entsorgung:typ:RP_EntsorgungTypen:9999</gml:identifier>
+          <gml:name>SonstigeEntsorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_EntsorgungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

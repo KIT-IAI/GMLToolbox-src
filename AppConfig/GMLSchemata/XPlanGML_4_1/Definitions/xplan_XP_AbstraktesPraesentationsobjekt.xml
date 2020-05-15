@@ -1,0 +1,72 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:08:29-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_AbstraktesPraesentationsobjekt">
+  <gml:description>Abstrakte Basisklasse für alle Präsentationsobjekte. Die Attribute entsprechen dem ALKIS-Objekt AP_GPO, wobei das Attribut "signaturnummer" in stylesheetId umbenannt wurde. Bei freien Präsentationsobjekten ist die Relation "dientZurDarstellungVon" unbelegt, bei gebundenen Präsentationsobjekten zeigt die Relation auf ein von XP_Objekt abgeleitetes Fachobjekt.
+Freie Präsentationsobjekte dürfen ausschließlich zur graphischen Annotation eines Plans verwendet werden
+Gebundene Präsentationsobjekte mit Raumbezug dienen ausschließlich dazu, Attributwerte des verbundenen Fachobjekts im Plan darzustellen. Die Namen der darzustellenden Fachobjekt-Attribute werden über das Attribut "art" spezifiziert.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt</gml:identifier>
+  <gml:name>xplan:XP_AbstraktesPraesentationsobjekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_AbstraktesPraesentationsobjekt_stylesheetId">
+      <gml:description>Das Attribut "stylesheetId" zeigt auf ein extern definierte Stylesheet, das Parameter zur Visualisierung von Flächen, Linien, Punkten und Texten enthält. Jedem Stylesheet ist weiterhin eine Darstellungspriorität zugeordnet.  Ausserdem kann ein Stylesheet logische Elemente enthalten,  die die Visualisierung abhängig machen vom Wert des durch "art" definierten Attributes des Fachobjektes, das durch die Relation "dientZurDarstellungVon" referiert wird.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt:attribute:stylesheetId</gml:identifier>
+      <gml:name>xplan:stylesheetId</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_StylesheetListe</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_AbstraktesPraesentationsobjekt_darstellungsprioritaet">
+      <gml:description>Enthält die Darstellungspriorität für Elemente der Signatur. Eine vom Standardwert abweichende Priorität wird über dieses Attribut definiert und nicht über eine neue Signatur.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt:attribute:darstellungsprioritaet</gml:identifier>
+      <gml:name>xplan:darstellungsprioritaet</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_AbstraktesPraesentationsobjekt_art">
+      <gml:description>'Art' gibt die Namen der Attribute an, die mit dem Präsentationsobjekt dargestellt werden sollen. 
+
+Die Attributart 'Art' darf nur bei "Freien Präsentationsobjekten (dientZurDarstellungVon = NULL) nicht belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt:attribute:art</gml:identifier>
+      <gml:name>xplan:art</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_AbstraktesPraesentationsobjekt_index">
+      <gml:description>Wenn das Attribut art des Fachobjektes mehrfach belegt ist gibt index an, auf welche Instanz des Attributs sich das Präsentationsobjekt bezieht.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt:attribute:index</gml:identifier>
+      <gml:name>xplan:index</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Integer" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_AbstraktesPraesentationsobjekt_gehoertZuBereich">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt:association-role:gehoertZuBereich</gml:identifier>
+      <gml:name>xplan:gehoertZuBereich</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Bereich" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_AbstraktesPraesentationsobjekt_dientZurDarstellungVon">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt:association-role:dientZurDarstellungVon</gml:identifier>
+      <gml:name>xplan:dientZurDarstellungVon</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Objekt" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

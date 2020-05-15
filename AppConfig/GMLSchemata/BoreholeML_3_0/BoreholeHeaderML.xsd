@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:bml="http://www.infogeo.de/boreholeml/3.0" xmlns:bmlh="http://www.infogeo.de/boreholeml/3.0/header" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" elementFormDefault="qualified" targetNamespace="http://www.infogeo.de/boreholeml/3.0/header" version="1.1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd"/>
+  <import namespace="http://www.infogeo.de/boreholeml/3.0" schemaLocation="BoreholeML.xsd"/>
+  <import namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" schemaLocation="GeographicalNames.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="BoreholeHeader" substitutionGroup="gml:AbstractFeature" type="bmlh:BoreholeHeaderType">
+    <annotation>
+      <documentation>[de] Enthält nur die Stammdaten pro Bohrung für Nachweiszwecke und leitet sich als Untermenge vom featureType &lt;i&gt;Borehole &lt;/i&gt;ab.  
+
+[en] Only contains the header information of the borehole for reference purposes. It is defined as a subset of the featureType &lt;i&gt;Borehole&lt;/i&gt;.</documentation>
+    </annotation>
+  </element>
+  <complexType name="BoreholeHeaderType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="location" type="gml:PointPropertyType">
+            <annotation>
+              <documentation>[de] Position des Bohrloch-Ansatzpunktes. Der Datentyp enthält eine dreidimensionale Koordinate basierend auf der Umrechnung von &lt;i&gt;Origin.originalLocation&lt;/i&gt; und &lt;i&gt;Origin.elevation&lt;/i&gt;. Das Attribut gml:id setzt sich zusammen aus dem Kürzel in &lt;i&gt;database &lt;/i&gt;und der jeweiligen Bohrungs-ID in &lt;i&gt;id&lt;/i&gt;. Syntax: database_id
+
+[en] Position of the borehole-location. The data type contains a three-dimensional coordinate based on the transformation of&lt;i&gt; Origin.originalLocation&lt;/i&gt; and &lt;i&gt;Origin.elevation&lt;/i&gt;. The attribute gml:id is a compound key of the code in &lt;i&gt;database &lt;/i&gt;and the given borehole-ID in &lt;i&gt;id&lt;/i&gt;. Syntax: database_id</documentation>
+            </annotation>
+          </element>
+          <element name="boreholePath" type="gml:CurvePropertyType">
+            <annotation>
+              <documentation>[de] GML-Geometrie des Bohrlochverlaufs in Koordinatentripeln bezogen auf das definierte Koordinaten- und Höhensystem. Generiert aus den Rohdaten des Bohrlochverlaufs in &lt;i&gt;BoreholeSegment&lt;/i&gt;.
+
+[en] GML-geometry of the borehole path in coordinate triples related to the given coordinate- and elevation reference system. Generated from the raw data of the borehole path in &lt;i&gt;BoreholeSegment&lt;/i&gt;.</documentation>
+            </annotation>
+          </element>
+          <element name="id" type="string">
+            <annotation>
+              <documentation>[de] Fachlicher Identifikator (ID) der Bohrung, wie in der Quelldatenbank angegeben. Das Kürzel dient als Teilschlüssel neben dem Kurznamen der Quelldatenbank in &lt;i&gt;database&lt;/i&gt; zur eindeutigen Bezeichnung einer Bohrung (vgl. gml:id).
+
+[en] Identifier (ID) of the borehole, code is taken from the source database. Combined with the database short name code in &lt;i&gt;database&lt;/i&gt;, the borehole ID is used as a compound key which allows the unique identification of the borehole (s. gml:id).</documentation>
+            </annotation>
+          </element>
+          <element name="language" type="gmd:LanguageCode_PropertyType">
+            <annotation>
+              <documentation>[de] Sprache der Datenquelle nach ISO 639-3 oder ISO 639-5.
+
+[en] Language code of the data source (s. ISO 639-3 or ISO 639-5).</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="shortName" type="gmd:LocalisedCharacterString_PropertyType">
+            <annotation>
+              <documentation>[de] Kurzname der Bohrung.
+
+[en] Short name of the borehole.</documentation>
+            </annotation>
+          </element>
+          <element name="fullName" type="gmd:LocalisedCharacterString_PropertyType">
+            <annotation>
+              <documentation>[de] Voller Name der Bohrung, meist vom Einsender vergeben (nicht zwingend eindeutig).
+
+[en] Full name of the borehole, normally given by the sender (not necessarily unique).</documentation>
+            </annotation>
+          </element>
+          <element name="databaseSource" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Kurzbezeichnung der Quelldatenbank. Das Kürzel dient als Teilschlüssel zusätzlich zu &lt;i&gt;id&lt;/i&gt; zur eindeutigen Bezeichnung einer Bohrung.
+
+[en] Short name of the source database. Combined with the ID, the name code is used as a compound key which allows the unique identification of the borehole.</documentation>
+            </annotation>
+          </element>
+          <element name="totalLength" type="gml:LengthType">
+            <annotation>
+              <documentation>[de] Die Aufschlusslänge der Bohrung in Meter. Abstand des Endpunktes der Bohrung vom Ansatzpunkt, entlang des Bohrpfades gemessen.
+
+[en] Length along the borehole path in meter measured from the drill start point to the end point.</documentation>
+            </annotation>
+          </element>
+          <element name="exportDate" type="date">
+            <annotation>
+              <documentation>[de] Datum des Auszuges aus der Quelldatenbank.
+
+[en] Export date of the borehole data from the source database.</documentation>
+            </annotation>
+          </element>
+          <element name="boreholeStatus" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Aktueller Status der Bohrung.
+
+[en] Current status of the borehole.</documentation>
+            </annotation>
+          </element>
+          <element name="groundwaterEncountered" nillable="true">
+            <annotation>
+              <documentation>[de] Information, ob Grundwasser angetroffen worden ist oder nicht.
+
+[en] Information whether groundwater was encountered or not.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="boolean">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="codingStandard" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Kodierstandard, nach dem die Schichtdaten in der Quelldatenbank verschlüsselt sind.
+
+[en] Standard used in the source data base for coding the borehole strata details.</documentation>
+            </annotation>
+          </element>
+          <element name="organisation" type="bml:BoreholeProviderPropertyType">
+            <annotation>
+              <documentation>[de] Die Daten abgebende Organisation. Erster Ansprechpartner für weitere Informationen.
+
+[en] Data providing organisation responsable for data management. First point of contact for further information.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="boreholeWebLink" nillable="true">
+            <annotation>
+              <documentation>[de] Öffentliche Internetadresse (URL) mit zusätzlichen Informationen zur Bohrung. Referenziert werden kann auf Dokumente, Bilder u.ä. oder auf weitere Informationssysteme.
+
+[en] Address of a web page (URL) pointing to additional data of the borehole. The page may also contain documents, pictures, references to other information systems.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="anyURI">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="locationName" nillable="true">
+            <annotation>
+              <documentation>[de] Bezeichnung der Bohrungslokation wie Ortschaften oder Gemarkungen.
+
+[en] Name of the borehole location, e.g. quarter or district.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="gn:GeographicalName"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="drillingMethod" nillable="true">
+            <annotation>
+              <documentation>[de] Während der Bohrung verwendetes Bohrverfahren. Bei mehreren Bohrverfahren in einer Bohrung wird ein entsprechendes Kombibohrverfahren aus der Begriffsliste verwendet.
+
+[en] Type of drilling method. In case of more than one drilling methods applied, a combined drilling method is used from the codelist.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="drillingDate" nillable="true" type="gml:CalDate">
+            <annotation>
+              <documentation>[de] Datum der Beendigung der Bohrungsarbeiten (tages-, monats- oder jahresgenau).
+
+[en] Date of finishing the drilling process (minimum declaration of the drilling year).</documentation>
+            </annotation>
+          </element>
+          <element name="lastHorizon" nillable="true">
+            <annotation>
+              <documentation>[de] Stratigraphie der letzten bei der Bohrung erschlossenen Schicht.
+
+[en] Stratigraphy of the last horizon (final layer).</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="drillingPurpose" nillable="true">
+            <annotation>
+              <documentation>[de] Zweck bzw. Fachgebiet, für welches die Bohrung abgeteuft worden ist.
+
+[en] Purpose for sinking the borehole.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="owner" nillable="true">
+            <annotation>
+              <documentation>[de] Eigentümer der Bohrung.
+
+[en] Owner of the borehole.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="project" nillable="true">
+            <annotation>
+              <documentation>[de] Name des Projektes, in welchem die Bohrung abgeteuft worden ist.
+
+[en] Name of the project for which the borehole was made.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="layerDataLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von digitalen Schichtdaten.
+
+[en] Legal availability of digital strata data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="layerDataTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von digitalen Schichtdaten.
+
+[en] Technical availability of digital strata data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="installationLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Ausbaudaten.
+
+[en] Legal availability of borehole installation data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="installationTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Ausbaudaten.
+
+[en] Technical availability of borehole installation data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="groundwaterLevelDataLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Grundwasserstandsangaben.
+
+[en] Legal availability of groundwater level data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="groundwaterLevelDataTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Grundwasserstandsangaben.
+
+[en] Technical availability of digital groundwater level data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="boreholeMeasurementLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Bohrungsmessdaten (Logs).
+
+[en] Legal availability of digital borehole measurements (logging data).</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="boreholeMeasurementTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Bohrungsmessdaten (Logs).
+
+[en] Technical availability of digital borehole measurements (logging data).</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="archiveDataLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von analogen Archivdaten.
+
+[en] Legal availability of analog archived documents.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="archiveDataTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von analogen Archivdaten.
+
+[en] Technical availability of analog archived documents.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="scansLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von gescannten Dokumenten oder Bildern.
+
+[en] Legal availability of scanned documents or images.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="scansTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von gescannten Dokumenten oder Bildern.
+
+[en] Technical availability of scanned documents or images.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="samplesLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Probendaten.
+
+[en] Legal availability of sample data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="samplesTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Probendaten.
+
+[en] Technical availability of sample data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="labDataLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Laboruntersuchungsdaten.
+
+[en] Legal availability of laboratory data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="labDataTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Laboruntersuchungsdaten.
+
+[en] Technical availability of laboratory data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="origin" nillable="true">
+            <annotation>
+              <documentation>[de] Enthält die Angaben zur Bohrungslokation und die Stammdaten pro Bohrung.
+
+[en] Contains location data and header information of the borehole.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:Origin"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BoreholeHeaderPropertyType">
+    <sequence minOccurs="0">
+      <element ref="bmlh:BoreholeHeader"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

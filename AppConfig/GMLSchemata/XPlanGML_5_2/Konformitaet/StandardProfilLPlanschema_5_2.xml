@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd" name="StandardProfilLPlanSchema_5_1">
+
+
+ <!-- LP_Plan -->
+ <Rule class="LP_Plan" id="8.1.1.1">
+  <description>Eine Instanz der Klasse LP_Plan darf über die Relation bereich nur Instanzen der Klasse LP_Bereich aggregieren</description>
+  <Required>
+   <RelationFilter relationName="bereich" minOccurs="0" maxOccurs="unbound">
+    <GmlType>LP_BereichType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="LP_Plan" id="8.1.1.2">
+  <description>Wenn das Attribut sonstPlanArt belegt ist, muss planArt unbelegt sein oder den Wert 9999 (Sonstiges) haben</description>
+  <If>
+   <AttributeFilter attributeName="sonstPlanArt" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="planArt" minOccurs="0" maxOccurs="1">
+    <AttributeValue>9999</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- LP_Bereich  -->
+ <Rule class="LP_Bereich" id="8.1.2.2">
+  <description>Eine Instanz der Klasse LP_Bereich muss über die Relation gehoertZuPlan genau eine Instanz der Klasse LP_Plan referieren. Diese Instanz referiert über die Relation bereich die Bereichs-Instanz</description>
+  <Required>
+   <RelationFilter relationName="gehoertZuPlan" minOccurs="1" maxOccurs="1"
+    inverseRelationName="xplan:bereich">
+    <GmlType>LP_PlanType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ 
+ <!--  LP_FlaechenobjektType -->
+ <Rule superclassType="LP_FlaechenobjektType" id="8.1.4.1">
+  <description>Das Attribut position darf nur mit Flächengeometrie (Einzelfläche oder Menge von Flächen) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </Required>
+ </Rule>
+
+  <!-- LP_Geometrieobjekt -->
+ <Rule superclassType="LP_GeometrieobjektType" id="8.1.5.1">
+  <description>Ausschluss von gemischter Geometrie</description>
+  <Required combination="OR">
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+   <GeometryFilter geometryPropertyName="posotion" geometryRestriction="OnlyPoint"/>
+  </Required>
+ </Rule>
+
+  <!--  LP_Linienobjekt -->
+ <Rule superclassType="LP_LinienobjektType" id="8.1.6.1">
+  <description>Das Attribut position darf nur mit Liniengeometrie (Einzellinie oder Menge von Linien) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+  </Required>
+ </Rule>
+
+ <!--  LP_PunktobjektType -->
+ <Rule superclassType="LP_PunktobjektType" id="8.1.7.1">
+  <description>Das Attribut position darf nur mit Punktgeometrie (Einzelpunkt oder Menge von Punkten) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+  </Required>
+ </Rule>
+ 
+ <!-- LP_ErholungFreizeit -->
+ <Rule class="LP_ErholungFreizeit" id="8.2.2.1">
+  <description>Konsistenz der Attribute detaillierteFunktion und Funktion</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteFunktion" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="funktion" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <!-- LP_Bodenschutzrecht -->
+ <Rule class="LP_Bodenschutzrecht" id="8.4.2.1">
+  <description>Konsistenz der Attribute detailTyp und typ</description>
+  <If>
+   <AttributeFilter attributeName="detailTyp" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <!-- LP_Forstrecht -->
+ <Rule class="LP_Forstrecht" id="8.4.4.1">
+  <description>Konsistenz der Attribute detailTyp und typ</description>
+  <If>
+   <AttributeFilter attributeName="detailTyp" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <!-- LP_SchutzobjektInternatRecht -->
+ <Rule class="LP_SchutzobjektInternatRecht" id="8.4.6.1">
+  <description>Konsistenz der Attribute sonstTyp und typ</description>
+  <If>
+   <AttributeFilter attributeName="sonstTyp" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="1" maxOccurs="1">
+    <AttributeValue>9999</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ <!-- LP_SonstigesRecht -->
+ <Rule class="LP_SonstigesRecht" id="8.4.8.1">
+  <description>Konsistenz der Attribute detailTyp und typ</description>
+  <If>
+   <AttributeFilter attributeName="detailTyp" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <!-- LP_WasserrechtWirtschaftAbflussHochwSchutz -->
+ <Rule class="LP_WasserrechtWirtschaftAbflussHochwSchutz" id="8.4.10.1">
+  <description>Konsistenz der Attribute detailTyp und typ</description>
+  <If>
+   <AttributeFilter attributeName="detailTyp" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <!-- LP_WasserrechtSchutzgebiet -->
+ <Rule class="LP_WasserrechtSchutzgebiet" id="8.4.11.1">
+  <description>Konsistenz der Attribute detailTyp und typ</description>
+  <If>
+   <AttributeFilter attributeName="detailTyp" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+
+</Profil>

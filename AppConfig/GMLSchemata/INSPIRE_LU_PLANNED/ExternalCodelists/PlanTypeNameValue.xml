@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<codelist xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue">
+  <label xml:lang="de">Bezeichnung des Plantyps</label>
+  <definition xml:lang="de">Typen von Plänen gemäß Definition in den Mitgliedstaaten</definition>
+  <containeditems>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_SatzungNachBauGB">
+      <label xml:lang="en">Satzung nach BauGB</label>
+      <definition xml:lang="en">Satzung nach BauGB</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_1_BPlan">
+      <label xml:lang="en">BPlan</label>
+      <definition xml:lang="en">Unspezifizierter Bebauungsplan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_1_1_EinfacherBPlan">
+      <label xml:lang="en">Einfacher BPlan</label>
+      <definition xml:lang="en">Einfacher BPlan, �30 Abs. 3 BauGB.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_1_2_QualifizierterBPlan">
+      <label xml:lang="en">Qualifizierter BPlan</label>
+      <definition xml:lang="en">Qualifizierter BPlan, �30 Abs. 1 BauGB.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_2_VorhabenbezogenerBPlan">
+      <label xml:lang="en">Vorhabenbezogener BPlan</label>
+      <definition xml:lang="en">Vorhabensbezogener Bebauungsplan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_3_InnenbereichsSatzung">
+      <label xml:lang="en">Innenbereichssatzung</label>
+      <definition xml:lang="en">Eine Innenbereichssatzung kann entweder eine Klarstellungssatzung, eine Entwicklungssatzung oder eine Erg�nzungssatzung sein.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_3_1_KlarstellungsSatzung">
+      <label xml:lang="en">Klarstellungssatzung</label>
+      <definition xml:lang="en">Klarstellungssatzung nach  � 34 Abs.4 Nr.1 BauGB.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_3_2_EntwicklungsSatzung">
+      <label xml:lang="en">Entwicklungssatzung</label>
+      <definition xml:lang="en">Entwicklungssatzung nach  � 34 Abs.4 Nr. 2 BauGB.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_3_3_ErgaenzungsSatzung">
+      <label xml:lang="en">Ergaenzungssatzung</label>
+      <definition xml:lang="en">Erg�nzungssatzung nach  � 34 Abs.4 Nr. 3 BauGB.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_4_AussenbereichsSatzung">
+      <label xml:lang="en">Aussenbereichssatzung</label>
+      <definition xml:lang="en">Au�enbereichssatzung nach � 35 Abs. 6 BauGB.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_5_OertlicheBauvorschrift">
+      <label xml:lang="en">Oertliche Bauvorschrift</label>
+      <definition xml:lang="en">�rtliche Bauvorschrift.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/1_6_SonstigeSatzung">
+      <label xml:lang="en">Sonstige Satzung</label>
+      <definition xml:lang="en">Sonstige Satzung</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/2_FPLan">
+      <label xml:lang="en">Unspezifizierter Fl�chennutzungsplan</label>
+      <definition xml:lang="en">Unspezifizierter Fl�chennutzungsplan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/2_1_FPlan">
+      <label xml:lang="en">Fl�chennutzungsplan</label>
+      <definition xml:lang="en">Fl�chennutzungsplan nach �5 BauGB</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/2_2_GemeinsamerFPlan">
+      <label xml:lang="en">Gemeinsamer Fl�chennutzungsplan</label>
+      <definition xml:lang="en">Gemeinsamer FPlan nach �204 BauGB</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/2_3_RegFPlan">
+      <label xml:lang="en">Regionaler Fl�chennutzungsplan</label>
+      <definition xml:lang="en">Regionaler Fl�chennutzungsplan der gleichzeitig die Funktion eines Regionalplans und eines gemeinssamen Fl�chennutzungsplan nach � 204 BauGB erf�llt.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/2_4_FPlanRegPlan">
+      <label xml:lang="en">Fl�chennutzungsplan und Regionalplan</label>
+      <definition xml:lang="en">Fl�chennutzungsplan mit regionalplanerischen Festlegungen (nur in HH, HB, B).</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/2_5_SachlicherTeilplan">
+      <label xml:lang="en">Sachlicher Teilfl�chennutzungsplan</label>
+      <definition xml:lang="en">Sachlicher Teilfl�chennutzungsplan nach �5 Abs. 2b BauGB.</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/2_5_SonstigerFPlan">
+      <label xml:lang="en">Sonstiger Fl�chennutzungsplan</label>
+      <definition xml:lang="en">Sonstiger Fl�chennutzungsplan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/3_Raumordnungsplan">
+      <label xml:lang="en">Raumordnungsplan</label>
+      <definition xml:lang="en">Allgemeiner Raumordnungsplan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/3_1_Regionalplan">
+      <label xml:lang="en">Regionalplan</label>
+      <definition xml:lang="en">Regionalplan nach Bundesraumordnungsgesetz</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/3_2_SachlicherTeilplan">
+      <label xml:lang="en">SachlicherTeilplan</label>
+      <definition xml:lang="en">SachlicherTeilplan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/3_3_Braunkohlenplan">
+      <label xml:lang="en">Braunkohlenplan</label>
+      <definition xml:lang="en">Braunkohlenplan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/3_4_LandesweiterRaumordnungsplan">
+      <label xml:lang="en">Landesweiter Raumordnungsplan</label>
+      <definition xml:lang="en">Landesweiter Raumordnungsplan</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/3_5_AWZPlan">
+      <label xml:lang="en">AWZPlan</label>
+      <definition xml:lang="en">Plan des Bundes f�r den Gesamtraum und die ausschlie�liche Wirtschaftszone (AWZ).</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/3_6_StandortkonzeptBund">
+      <label xml:lang="en">StandortkonzeptBund</label>
+      <definition xml:lang="en">Raumordnungsplan f�r das Bundesgebiet mit �bergreifenden Standortkonzepten f�r Seeh�fen, Binnenh�fen sowie Flugh�fen gem. �17 Abs. 2 ROG</definition>
+    </value>
+    <value id="http://inspire.ec.europa.eu/codelist/PlanTypeNameValue/3_7_SonstigerRaumordnungsplan">
+      <label xml:lang="en">Sonstiger Raumordnungsplan</label>
+      <definition xml:lang="en">Sonstiger Raumordnungsplan</definition>
+    </value>
+  </containeditems>
+</codelist>

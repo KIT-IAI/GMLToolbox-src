@@ -1,0 +1,143 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:40-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Verkehr">
+  <gml:description>Enthält allgemeine Verkehrs-Infrastruktur, die auch multiple Typen (etwa Straße und Schiene) beinhalten kann. Die Klasse selbst vererbt an spezialisierte Verkehrsarten, ist aber nicht abstrakt (d.h. sie kann selbst auch verwendet werden).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Verkehr</gml:identifier>
+  <gml:name>xplan:RP_Verkehr</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Verkehr_allgemeinerTyp">
+      <gml:description>Allgemeine Klassifikation der Verkehrs-Arten.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Verkehr:attribute:allgemeinerTyp</gml:identifier>
+      <gml:name>xplan:allgemeinerTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_allgemeinerTyp_RP_VerkehrTypen_1000">
+          <gml:description>Schienenverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:allgemeinerTyp:RP_VerkehrTypen:1000</gml:identifier>
+          <gml:name>Schienenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_allgemeinerTyp_RP_VerkehrTypen_2000">
+          <gml:description>Straßenverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:allgemeinerTyp:RP_VerkehrTypen:2000</gml:identifier>
+          <gml:name>Strassenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_allgemeinerTyp_RP_VerkehrTypen_3000">
+          <gml:description>Luftverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:allgemeinerTyp:RP_VerkehrTypen:3000</gml:identifier>
+          <gml:name>Luftverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_allgemeinerTyp_RP_VerkehrTypen_4000">
+          <gml:description>Wasserverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:allgemeinerTyp:RP_VerkehrTypen:4000</gml:identifier>
+          <gml:name>Wasserverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_allgemeinerTyp_RP_VerkehrTypen_9999">
+          <gml:description>Sonstiger Verkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:allgemeinerTyp:RP_VerkehrTypen:9999</gml:identifier>
+          <gml:name>SonstigerVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_VerkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Verkehr_status">
+      <gml:description>Klassifikation von Verkehrsstati.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Verkehr:attribute:status</gml:identifier>
+      <gml:name>xplan:status</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_1000">
+          <gml:description>Ausbau.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:1000</gml:identifier>
+          <gml:name>Ausbau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_1001">
+          <gml:description>Linienführung offen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:1001</gml:identifier>
+          <gml:name>LinienfuehrungOffen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_2000">
+          <gml:description>Sicherung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:2000</gml:identifier>
+          <gml:name>Sicherung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_3000">
+          <gml:description>Neubau.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:3000</gml:identifier>
+          <gml:name>Neubau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_4000">
+          <gml:description>Im Bau befindliche Verkehrsinfrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:4000</gml:identifier>
+          <gml:name>ImBau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_5000">
+          <gml:description>Vorhandene planfestgestellte linienbestimmte Grobtrasse.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:5000</gml:identifier>
+          <gml:name>VorhPlanfestgestLinienbestGrobtrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_6000">
+          <gml:description>Bedarfsplanmassnahme ohne räumliche Festlegung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:6000</gml:identifier>
+          <gml:name>BedarfsplanmassnahmeOhneRaeumlFestlegung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_7000">
+          <gml:description>Korridor.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:7000</gml:identifier>
+          <gml:name>Korridor</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_8000">
+          <gml:description>Verlegung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:8000</gml:identifier>
+          <gml:name>Verlegung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Verkehr_status_RP_VerkehrStatus_9999">
+          <gml:description>Sonstiger Verkehrsstatus.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Verkehr:status:RP_VerkehrStatus:9999</gml:identifier>
+          <gml:name>SonstigerVerkehrStatus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_VerkehrStatus</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Verkehr_bezeichnung">
+      <gml:description>Bezeichnung eines Verkehrstyps.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Verkehr:attribute:bezeichnung</gml:identifier>
+      <gml:name>xplan:bezeichnung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

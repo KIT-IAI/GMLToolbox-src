@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.11.2011 15:20:13-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="xplan_SO_DetailKlassifizNachBodenschutzrecht">
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:SO_DetailKlassifizNachBodenschutzrecht</identifier>
+  <name>xplan:SO_DetailKlassifizNachBodenschutzrecht</name>
+</Dictionary>

@@ -1,0 +1,49 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:17-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_PPO">
+  <gml:description>Punktförmiges Präsentationsobjekt. Entspricht der ALKIS-Objektklasse AP_PPO.
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_PPO</gml:identifier>
+  <gml:name>xplan:XP_PPO</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_PPO_position">
+      <gml:description>Position des zur Visualisierung benutzten  Textes oder Symbols,</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_PPO:attribute:position</gml:identifier>
+      <gml:name>xplan:position</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_Punktgeometrie" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_PPO_drehwinkel">
+      <gml:description>Winkel um den der Text oder die Signatur mit punktförmiger Bezugsgeometrie aus der Horizontalen gedreht ist. Angabe im Bogenmaß; Zählweise im mathematisch positiven Sinn (von Ost über Nord nach West und Süd).</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_PPO:attribute:drehwinkel</gml:identifier>
+      <gml:name>xplan:drehwinkel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Angle" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_PPO_skalierung">
+      <gml:description>Skalierungsfaktor für Symbole.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_PPO:attribute:skalierung</gml:identifier>
+      <gml:name>xplan:skalierung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Decimal" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_PPO_hat">
+      <gml:description>Die Relation ermöglicht es, einem punktförmigen Präsentationsobjekt ein linienförmiges Präsentationsobjekt zuzuweisen. Einziger bekannter Anwendungsfall ist der Zuordnungspfeil eines Symbols oder einer Nutzungsschablone.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_PPO:association-role:hat</gml:identifier>
+      <gml:name>xplan:hat</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_LPO" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt" />
+</TypeDefinition>

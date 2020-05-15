@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:07:23-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xplan="http://www.xplanung.de/xplangml/4/1" targetNamespace="http://www.xplanung.de/xplangml/4/1" xmlns:kit="http://www.kit.edu" elementFormDefault="qualified" version="4.1">
+  <include schemaLocation="XPlanGML_Basisschema.xsd" />
+  <include schemaLocation="XPlanGML_BPlan.xsd" />
+  <include schemaLocation="XPlanGML_FPlan.xsd" />
+  <include schemaLocation="XPlanGML_RPlan_Kernmodell.xsd" />
+  <include schemaLocation="XPlanGML_LPlan_Kernmodell.xsd" />
+  <include schemaLocation="XPlanGML_SonstigePlanwerke.xsd" />
+</schema>

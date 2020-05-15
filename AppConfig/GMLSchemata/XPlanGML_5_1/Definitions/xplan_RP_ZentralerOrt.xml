@@ -1,0 +1,281 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:41-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_ZentralerOrt">
+  <gml:description>Zentrale Orte übernehmen die Versorgung ihrer Einwohner sowie Versorgungs und Entwicklungsfunktionen für den Einzugsbereich des Zentralen Ortes. Das zentralörtliche System ist hierarchisch gegliedert.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_ZentralerOrt</gml:identifier>
+  <gml:name>xplan:RP_ZentralerOrt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_ZentralerOrt_typ">
+      <gml:description>Klassifikation von Zentralen Orten.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_ZentralerOrt:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_1000">
+          <gml:description>Oberzentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:1000</gml:identifier>
+          <gml:name>Oberzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_1001">
+          <gml:description>Gemeinsames Oberzentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:1001</gml:identifier>
+          <gml:name>GemeinsamesOberzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_1500">
+          <gml:description>Oberbereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:1500</gml:identifier>
+          <gml:name>Oberbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_2000">
+          <gml:description>Mittelzentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:2000</gml:identifier>
+          <gml:name>Mittelzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_2500">
+          <gml:description>Mittelbereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:2500</gml:identifier>
+          <gml:name>Mittelbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_3000">
+          <gml:description>Grundzentrum</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:3000</gml:identifier>
+          <gml:name>Grundzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_3001">
+          <gml:description>Unterzentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:3001</gml:identifier>
+          <gml:name>Unterzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_3500">
+          <gml:description>Nahbereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:3500</gml:identifier>
+          <gml:name>Nahbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_4000">
+          <gml:description>Kleinzentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:4000</gml:identifier>
+          <gml:name>Kleinzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_5000">
+          <gml:description>Ländlicher Zentralort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:5000</gml:identifier>
+          <gml:name>LaendlicherZentralort</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_6000">
+          <gml:description>Stadtrandkern 1. Ordnung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:6000</gml:identifier>
+          <gml:name>Stadtrandkern1Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_6001">
+          <gml:description>Stadtrandkern 2. Ordnung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:6001</gml:identifier>
+          <gml:name>Stadtrandkern2Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_7000">
+          <gml:description>Versorgungskern und/oder Siedlungskern</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:7000</gml:identifier>
+          <gml:name>VersorgungskernSiedlungskern</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_8000">
+          <gml:description>Zentrales Siedlungsgebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:8000</gml:identifier>
+          <gml:name>ZentralesSiedlungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_9000">
+          <gml:description>Metropole.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:9000</gml:identifier>
+          <gml:name>Metropole</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_typ_RP_ZentralerOrtTypen_9999">
+          <gml:description>Sonstiger Zentraler Ort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:typ:RP_ZentralerOrtTypen:9999</gml:identifier>
+          <gml:name>SonstigerZentralerOrt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeName>RP_ZentralerOrtTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp">
+      <gml:description>Sonstige Klassifikation von Zentralen Orten.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_ZentralerOrt:attribute:sonstigerTyp</gml:identifier>
+      <gml:name>xplan:sonstigerTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1000">
+          <gml:description>Doppelzentrum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1000</gml:identifier>
+          <gml:name>Doppelzentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1100">
+          <gml:description>Funktionsteiliger Zentraler Ort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1100</gml:identifier>
+          <gml:name>Funktionsteilig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1101">
+          <gml:description>Zentraler Ort mit oberzentraler Teilfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1101</gml:identifier>
+          <gml:name>MitOberzentralerTeilfunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1102">
+          <gml:description>Zentraler Ort mit mittelzentraler Teilfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1102</gml:identifier>
+          <gml:name>MitMittelzentralerTeilfunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1200">
+          <gml:description>Zentraler Ort im Verbund.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1200</gml:identifier>
+          <gml:name>ImVerbund</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1300">
+          <gml:description>Kooperierender Zentraler Ort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1300</gml:identifier>
+          <gml:name>Kooperierend</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1301">
+          <gml:description>Freiwillig kooperierender Zentraler Ort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1301</gml:identifier>
+          <gml:name>KooperierendFreiwillig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1302">
+          <gml:description>Verpflichtend kooperierender Zentraler Ort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1302</gml:identifier>
+          <gml:name>KooperierendVerpflichtend</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1400">
+          <gml:description>Zentraler Ort im Verdichtungsraum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1400</gml:identifier>
+          <gml:name>ImVerdichtungsraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1500">
+          <gml:description>Siedlungsgrundnetz.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1500</gml:identifier>
+          <gml:name>SiedlungsGrundnetz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1501">
+          <gml:description>Siedlungsergänzungsnetz.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1501</gml:identifier>
+          <gml:name>SiedlungsErgaenzungsnetz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1600">
+          <gml:description>Entwicklungsschwerpunkt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1600</gml:identifier>
+          <gml:name>Entwicklungsschwerpunkt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1700">
+          <gml:description>Überschneidungsbereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1700</gml:identifier>
+          <gml:name>Ueberschneidungsbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1800">
+          <gml:description>Zentraler Ort mit Ergänzungsfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1800</gml:identifier>
+          <gml:name>Ergaenzungsfunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_1900">
+          <gml:description>Zentraler Ort in Nachbarregionen oder Ländern.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:1900</gml:identifier>
+          <gml:name>Nachbar</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_2000">
+          <gml:description>Mögliches Zentrum, zum Beispiel "mögliches Mittelzentrum".</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:2000</gml:identifier>
+          <gml:name>MoeglichesZentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_2100">
+          <gml:description>Funktionsraum, eindeutige Ausrichtung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:2100</gml:identifier>
+          <gml:name>FunktionsraumEindeutigeAusrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_2101">
+          <gml:description>Funktionsraum, bilaterale Ausrichtung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:2101</gml:identifier>
+          <gml:name>FunktionsraumBilateraleAusrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_2200">
+          <gml:description>Der Kongruenzraum ist ein Bezugsraum zur Anwendung des 
+Kongruenzgebots. Der Kongruenzraum beschreibt den Raum im Umfeld eines Zentralen Ortes, den Einzelhandelsgroßprojekte, die im Zentralen Ort angesiedelt werden sollen oder bereits bestehen, im Wesentlichen versorgen sollen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:2200</gml:identifier>
+          <gml:name>Kongruenzraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_ZentralerOrt_sonstigerTyp_RP_ZentralerOrtSonstigeTypen_9999">
+          <gml:description>Sonstiger Sonstiger Zentraler Ort.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_ZentralerOrt:sonstigerTyp:RP_ZentralerOrtSonstigeTypen:9999</gml:identifier>
+          <gml:name>SonstigeSonstigerZentralerOrt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_ZentralerOrtSonstigeTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

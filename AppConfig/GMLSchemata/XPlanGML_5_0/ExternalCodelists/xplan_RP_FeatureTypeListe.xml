@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 29.06.2016 16:39:09-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="xplan_RP_FeatureTypeListe">
+  <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:RP_FeatureTypeListe</identifier>
+  <name>xplan:RP_FeatureTypeListe</name>
+</Dictionary>

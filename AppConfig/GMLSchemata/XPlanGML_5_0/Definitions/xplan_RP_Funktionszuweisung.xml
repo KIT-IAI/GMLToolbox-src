@@ -1,0 +1,91 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:23-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Funktionszuweisung">
+  <gml:description>Gebiets- und Gemeindefunktionen.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Funktionszuweisung</gml:identifier>
+  <gml:name>xplan:RP_Funktionszuweisung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Funktionszuweisung_typ">
+      <gml:description>Klassifikation des Gebietes nach Bundesraumordnungsgesetz.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Funktionszuweisung:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_1000">
+          <gml:description>Wohnfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:1000</gml:identifier>
+          <gml:name>Wohnen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_2000">
+          <gml:description>Arbeitsfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:2000</gml:identifier>
+          <gml:name>Arbeit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_3000">
+          <gml:description>Gewerbe- und/oder Dienstleistungsfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:3000</gml:identifier>
+          <gml:name>GewerbeDienstleistung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_4000">
+          <gml:description>Einzelhandelsfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:4000</gml:identifier>
+          <gml:name>Einzelhandel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_5000">
+          <gml:description>Landwirtschaftliche Funktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:5000</gml:identifier>
+          <gml:name>Landwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_6000">
+          <gml:description>Erholungs-, Fremdenverkehrs- und/oder Tourismusfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:6000</gml:identifier>
+          <gml:name>ErholungFremdenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_7000">
+          <gml:description>Verteidigungsfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:7000</gml:identifier>
+          <gml:name>Verteidigung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_8000">
+          <gml:description>Überörtliche Versorgungsfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:8000</gml:identifier>
+          <gml:name>UeberoertlicheVersorgungsfunktionLaendlicherRaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Funktionszuweisung_typ_RP_FunktionszuweisungTypen_9999">
+          <gml:description>Sonstige Funktion.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Funktionszuweisung:typ:RP_FunktionszuweisungTypen:9999</gml:identifier>
+          <gml:name>SonstigeFunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeName>RP_FunktionszuweisungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Funktionszuweisung_bezeichnung">
+      <gml:description>Bezeichnung und/oder Erörterung einer Gebietsfunktion.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Funktionszuweisung:attribute:bezeichnung</gml:identifier>
+      <gml:name>xplan:bezeichnung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

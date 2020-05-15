@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd" name="StandardProfilRPlanSchema_5_1">
+
+ <!-- RP_Plan -->
+ <Rule class="RP_Plan" id="7.1.1.1">
+  <description>Eine Instanz der Klasse RP_Plan darf über die Relation bereich nur Instanzen der Klasse RP_Bereich aggregieren</description>
+  <Required>
+   <RelationFilter relationName="bereich" minOccurs="0" maxOccurs="unbound">
+    <GmlType>RP_BereichType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <!-- RP_Bereich  -->
+ <Rule class="RP_Bereich" id="7.1.2.2">
+  <description>Eine Instanz der Klasse RP_Bereich muss über die Relation gehoertZuPlan genau eine Instanz der Klasse RP_Plan referieren. Diese Instanz referiert über die Relation bereich die Bereichs-Instanz</description>
+  <Required>
+   <RelationFilter relationName="gehoertZuPlan" minOccurs="1" maxOccurs="1"
+    inverseRelationName="xplan:bereich">
+    <GmlType>RP_PlanType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+ 
+ <!-- RP_Geometrieobjekt -->
+ <Rule superclassType="RP_GeometrieobjektType" id="7.1.5.1">
+  <description>Wenn das Attribut ebene != 0 ist, muss bei vorliegender Flächengeometrie das Attribut  flaechenschluss == false sein</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="NOT_EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ <Rule superclassType="SO_GeometrieobjektType" id="7.1.5.2">
+  <description>Ausschluss von gemischter Geometrie</description>
+  <Required combination="OR">
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </Required>
+ </Rule>
+
+</Profil>

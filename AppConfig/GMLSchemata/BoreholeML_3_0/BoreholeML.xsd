@@ -1,0 +1,1826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:bml="http://www.infogeo.de/boreholeml/3.0" 
+  xmlns:gmd="http://www.isotc211.org/2005/gmd"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:gco="http://www.isotc211.org/2005/gco"
+  xmlns:gn="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" 
+  elementFormDefault="qualified" targetNamespace="http://www.infogeo.de/boreholeml/3.0" version="3.0.1">
+  <import namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0" schemaLocation="GeographicalNames.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd"/>
+  <import namespace="http://www.isotc211.org/2005/gco" schemaLocation="http://schemas.opengis.net/iso/19139/20070417/gco/gco.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="Borehole" substitutionGroup="gml:AbstractFeature" type="bml:BoreholeType">
+    <annotation>
+      <documentation>[de] Enthält die Angaben zur Bohrungslokation und die Stammdaten pro Bohrung.
+
+[en] Contains location data and header information of the borehole.</documentation>
+    </annotation>
+  </element>
+  <complexType name="BoreholeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="location" type="gml:PointPropertyType">
+            <annotation>
+              <documentation>[de] Position des Bohrloch-Ansatzpunktes. Der Datentyp enthält eine dreidimensionale Koordinate basierend auf der Umrechnung von &lt;i&gt;Origin.originalLocation&lt;/i&gt; und &lt;i&gt;Origin.elevation&lt;/i&gt;. Das Attribut gml:id setzt sich zusammen aus dem Kürzel in &lt;i&gt;databaseSource &lt;/i&gt;und der jeweiligen Bohrungs-ID in &lt;i&gt;id&lt;/i&gt;. Syntax: database_id
+
+[en] Position of the borehole-location. The data type contains a three-dimensional coordinate based on the transformation of&lt;i&gt; Origin.originalLocation&lt;/i&gt; and &lt;i&gt;Origin.elevation&lt;/i&gt;. The attribute gml:id is a compound key of the code in &lt;i&gt;databaseSource &lt;/i&gt;and the given borehole-ID in &lt;i&gt;id&lt;/i&gt;. Syntax: database_id</documentation>
+            </annotation>
+          </element>
+          <element name="boreholePath" type="gml:CurvePropertyType">
+            <annotation>
+              <documentation>[de] GML-Geometrie des Bohrlochverlaufs in Koordinatentripeln bezogen auf das definierte Koordinaten- und Höhensystem. Generiert aus den Rohdaten des Bohrlochverlaufs in &lt;i&gt;BoreholeSegment&lt;/i&gt;.
+
+[en] GML-geometry of the borehole path in coordinate triples related to the given coordinate- and elevation reference system. Generated from the raw data of the borehole path in &lt;i&gt;BoreholeSegment&lt;/i&gt;.</documentation>
+            </annotation>
+          </element>
+          <element name="id" type="string">
+            <annotation>
+              <documentation>[de] Fachlicher Identifikator (ID) der Bohrung, wie in der Quelldatenbank angegeben. Das Kürzel dient als Teilschlüssel neben dem Kurznamen der Quelldatenbank in &lt;i&gt;database&lt;/i&gt; zur eindeutigen Bezeichnung einer Bohrung (vgl. gml:id).
+
+[en] Identifier (ID) of the borehole, code is taken from the source database. Combined with the database short name code in &lt;i&gt;database&lt;/i&gt;, the borehole ID is used as a compound key which allows the unique identification of the borehole (s. gml:id).</documentation>
+            </annotation>
+          </element>
+          <element name="language" type="gmd:LanguageCode_PropertyType">
+            <annotation>
+              <documentation>[de] Sprache der Datenquelle nach ISO 639-3 oder ISO 639-5.
+
+[en] Language code of the data source (s. ISO 639-3 or ISO 639-5).</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="shortName" type="gmd:LocalisedCharacterString_PropertyType">
+            <annotation>
+              <documentation>[de] Kurzname der Bohrung.
+
+[en] Short name of the borehole.</documentation>
+            </annotation>
+          </element>
+          <element name="fullName" type="gmd:LocalisedCharacterString_PropertyType">
+            <annotation>
+              <documentation>[de] Voller Name der Bohrung, meist vom Einsender vergeben (nicht zwingend eindeutig).
+
+[en] Full name of the borehole, normally given by the sender (not necessarily unique).</documentation>
+            </annotation>
+          </element>
+          <element name="databaseSource" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Kurzbezeichnung der Quelldatenbank. Das Kürzel dient als Teilschlüssel zusätzlich zu &lt;i&gt;id&lt;/i&gt; zur eindeutigen Bezeichnung einer Bohrung.
+
+[en] Short name of the source database. Combined with the ID, the name code is used as a compound key which allows the unique identification of the borehole.</documentation>
+            </annotation>
+          </element>
+          <element name="totalLength" type="gml:LengthType">
+            <annotation>
+              <documentation>[de] Die Aufschlusslänge der Bohrung in Meter. Abstand des Endpunktes der Bohrung vom Ansatzpunkt, entlang des Bohrpfades gemessen.
+
+[en] Length along the borehole path in meter measured from the drill start point to the end point.</documentation>
+            </annotation>
+          </element>
+          <element name="exportDate" type="date">
+            <annotation>
+              <documentation>[de] Datum des Auszuges aus der Quelldatenbank.
+
+[en] Export date of the borehole data from the source database.</documentation>
+            </annotation>
+          </element>
+          <element name="boreholeStatus" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Aktueller Status der Bohrung.
+
+[en] Current status of the borehole.</documentation>
+            </annotation>
+          </element>
+          <element name="groundwaterEncountered" nillable="true">
+            <annotation>
+              <documentation>[de] Information, ob Grundwasser angetroffen worden ist oder nicht.
+
+[en] Information whether groundwater was encountered or not.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="boolean">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="boreholeSegment" type="bml:BoreholeSegmentPropertyType">
+            <annotation>
+              <documentation>[de] Rohdaten des geometrischen Verlaufs der Bohrung (Bohrpfad) in Bohrabschnitten entlang des Bohrlochverlaufs soweit bekannt.
+Eine nicht abgelenkte Bohrung bzw. eine Bohrung ohne spezielle Angaben in der Datenquelle entspricht genau einem Segment der Länge von &lt;i&gt;totalLength&lt;/i&gt;.
+
+[en] Raw data for calculating the geometric borehole path along the borehole described in discrete segments. Non-inclined boreholes or boreholes without specific information in the data source equal exactly one segment with the defined length in &lt;i&gt;totalLength&lt;/i&gt;.</documentation>
+            </annotation>
+          </element>
+          <element name="codingStandard" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Kodierstandard, nach dem die Schichtdaten in der Quelldatenbank verschlüsselt sind.
+
+[en] Standard used in the source data base for coding the borehole strata details.</documentation>
+            </annotation>
+          </element>
+          <element name="organisation" type="bml:BoreholeProviderPropertyType">
+            <annotation>
+              <documentation>[de] Die Daten abgebende Organisation. Erster Ansprechpartner für weitere Informationen.
+
+[en] Data providing organisation responsable for data management. First point of contact for further information.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="groundwater" nillable="true">
+            <annotation>
+              <documentation>[de] Zusammenfassende Grundwasserbeobachtungen bezogen auf den Bohrvorgang nach DIN4022. Enthält die Grundwasserbeobachtungen
+beim ersten Antreffen des Grundwassers bis zur Beendigung der Bohrarbeiten.
+
+[en] Comprehensive Information about the groundwater level according to DIN4022. Contains the groundwater observations during the drilling process until drillhole completion.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:Groundwater"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="groundwaterObservation" nillable="true">
+            <annotation>
+              <documentation>[de] Grundwasserbeobachtungen nach Beendigung des Bohrprozesses. Dient der ausführlichen Dokumentation von Messreihen zur Grundwasserbeobachtung.
+
+[en] Groundwater observations after drillhole completion. Serves the detailed documentation of groundwater monitoring.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:GroundwaterObservation"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="boreholeWebLink" nillable="true">
+            <annotation>
+              <documentation>[de] Öffentliche Internetadresse (URL) mit zusätzlichen Informationen zur Bohrung. Referenziert werden kann auf Dokumente, Bilder u.ä. oder auf weitere Informationssysteme.
+
+[en] Address of a web page (URL) pointing to additional data of the borehole. The page may also contain documents, pictures, references to other information systems.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="anyURI">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="locationName" nillable="true">
+            <annotation>
+              <documentation>[de] Bezeichnung der Bohrungslokation wie Ortschaften oder Gemarkungen.
+
+[en] Name of the borehole location, e.g. quarter or district.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="gn:GeographicalName"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="drillingMethod" nillable="true">
+            <annotation>
+              <documentation>[de] Während der Bohrung verwendetes Bohrverfahren. Bei mehreren Bohrverfahren in einer Bohrung wird ein entsprechendes Kombibohrverfahren aus der Begriffsliste verwendet.
+
+[en] Type of drilling method. In case of more than one drilling methods applied, a combined drilling method is used from the codelist.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="drillingDate" nillable="true" type="gml:CalDate">
+            <annotation>
+              <documentation>[de] Datum der Beendigung der Bohrungsarbeiten (tages-, monats- oder jahresgenau).
+
+[en] Date of finishing the drilling process (minimum declaration of the drilling year).</documentation>
+            </annotation>
+          </element>
+          <element name="lastHorizon" nillable="true">
+            <annotation>
+              <documentation>[de] Stratigraphie der letzten bei der Bohrung erschlossenen Schicht.
+
+[en] Stratigraphy of the last horizon (final layer).</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="drillingPurpose" nillable="true">
+            <annotation>
+              <documentation>[de] Zweck bzw. Fachgebiet, für welches die Bohrung abgeteuft worden ist.
+
+[en] Purpose for sinking the borehole.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="owner" nillable="true">
+            <annotation>
+              <documentation>[de] Eigentümer der Bohrung.
+
+[en] Owner of the borehole.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="project" nillable="true">
+            <annotation>
+              <documentation>[de] Name des Projektes, in welchem die Bohrung abgeteuft worden ist.
+
+[en] Name of the project for which the borehole was made.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="layerDataLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von digitalen Schichtdaten.
+
+[en] Legal availability of digital strata data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="layerDataTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von digitalen Schichtdaten.
+
+[en] Technical availability of digital strata data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="installationLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Ausbaudaten.
+
+[en] Legal availability of borehole installation data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="installationTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Ausbaudaten.
+
+[en] Technical availability of borehole installation data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="groundwaterLevelDataLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Grundwasserstandsangaben.
+
+[en] Legal availability of groundwater level data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="groundwaterLevelDataTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Grundwasserstandsangaben.
+
+[en] Technical availability of digital groundwater level data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="boreholeMeasurementLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Bohrungsmessdaten (Logs).
+
+[en] Legal availability of digital borehole measurements (logging data).</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="boreholeMeasurementTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Bohrungsmessdaten (Logs).
+
+[en] Technical availability of digital borehole measurements (logging data).</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="archiveDataLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von analogen Archivdaten.
+
+[en] Legal availability of analog archived documents.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="archiveDataTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von analogen Archivdaten.
+
+[en] Technical availability of analog archived documents.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="scansLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von gescannten Dokumenten oder Bildern.
+
+[en] Legal availability of scanned documents or images.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="scansTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von gescannten Dokumenten oder Bildern.
+
+[en] Technical availability of scanned documents or images.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="samplesLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Probendaten.
+
+[en] Legal availability of sample data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="samplesTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Probendaten.
+
+[en] Technical availability of sample data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="labDataLegalAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Rechtliche Verfügbarkeit von Laboruntersuchungsdaten.
+
+[en] Legal availability of laboratory data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="labDataTechAvail" nillable="true">
+            <annotation>
+              <documentation>[de] Technische Verfügbarkeit von Laboruntersuchungsdaten.
+
+[en] Technical availability of laboratory data.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="origin" nillable="true">
+            <annotation>
+              <documentation>[de] Angaben zu den (Original)-Koordinaten des Bohransatzpunktes in der Quelldatenbank.
+
+[en] Original coordinates of the borehole location from source data (drill start point).</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:Origin"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="intervalSeries" nillable="true">
+            <annotation>
+              <documentation>[de] Abzugebendes Schichtenverzeichnis. Das Schichtenverzeichnis besteht aus der Abfolge einzeln abgrenzbarer Schichten, deren Merkmale jeweils in der Klasse &lt;i&gt;Lithology&lt;/i&gt; beschrieben werden. Ein Schichtenverzeichnis verfügt über mindestens eine Schicht. Es können mehrere Schichtenverzeichnis-Versionen pro Bohrung gespeichert werden.
+
+[en] Disposable interval series for the borehole. The interval series consists of an amount of single layers with specific intervals, whose attributes are stored in the class &lt;i&gt;Lithology.&lt;/i&gt; An interval series must have at least one interval defining one layer. It is possible to store several versions of interval series for the same borehole.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:IntervalSeries"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="drillingProcess" nillable="true">
+            <annotation>
+              <documentation>[de] Teufenbezogene Beschreibung des technischen Bohrprozesses.
+
+[en] Depth-related description of the technical drilling process.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:DrillingProcess"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="boreholeFilling" nillable="true">
+            <annotation>
+              <documentation>[de] Verfüllung des Bohrlochs im angegebenen Bohrintervall.
+
+[en] Borehole filling at specified intervals.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:BoreholeFilling"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="installationDetail" nillable="true">
+            <annotation>
+              <documentation>[de] Aktuelle Ausbaudaten.
+
+[en] Most recent installation.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:InstallationDetails"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="investigation" nillable="true">
+            <annotation>
+              <documentation>[de] Untersuchungsmethoden im Bohrloch (Logging-Verfahren) optional mit Teufenbezug.
+
+[en] Investigations in the borehole (logging methods) with optional depth information.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:Investigation"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="sampling" nillable="true">
+            <annotation>
+              <documentation>[de] Beprobungsintervalle im Bohrloch oder im Bohrgut.
+
+[en] Sampling intervals in the borehole or rock material.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:Sampling"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BoreholePropertyType">
+    <sequence minOccurs="0">
+      <element ref="bml:Borehole"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="BoreholeFilling" substitutionGroup="bml:DepthInterval" type="bml:BoreholeFillingType">
+    <annotation>
+      <documentation>[de] Verfüllung des Bohrlochs im angegebenen Bohrintervall.
+
+[en] Borehole filling at specified intervals.</documentation>
+    </annotation>
+  </element>
+  <complexType name="BoreholeFillingType">
+    <complexContent>
+      <extension base="bml:DepthIntervalType">
+        <sequence>
+          <element name="boreholeFillingMaterial" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Verfüllungsmaterial des Bohrlochs im angegebenen Bohrintervall.
+
+[en] Filling material in the borehole at the given interval.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BoreholeFillingPropertyType">
+    <sequence>
+      <element ref="bml:BoreholeFilling"/>
+    </sequence>
+  </complexType>
+  <element name="BoreholeProvider" substitutionGroup="gmd:CI_ResponsibleParty" type="bml:BoreholeProviderType">
+    <annotation>
+      <documentation>[de] Die Daten abgebende Organisation. Erster Ansprechpartner für weitere Informationen.
+
+[en] Data providing organisation responsable for data management. First point of contact for further information.</documentation>
+    </annotation>
+  </element>
+  <complexType name="BoreholeProviderType">
+    <complexContent>
+      <extension base="gmd:CI_ResponsibleParty_Type">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BoreholeProviderPropertyType">
+    <sequence>
+      <element ref="bml:BoreholeProvider"/>
+    </sequence>
+  </complexType>
+  <element name="BoreholeSegment" substitutionGroup="bml:DepthInterval" type="bml:BoreholeSegmentType">
+    <annotation>
+      <documentation>[de] Rohdaten des geometrischen Verlaufs der Bohrung (Bohrpfad) in Bohrabschnitten entlang des Bohrlochverlaufs soweit bekannt.
+Eine nicht abgelenkte Bohrung bzw. eine Bohrung ohne spezielle Angaben in der Datenquelle entspricht genau einem Segment der Länge von &lt;i&gt;totalLength&lt;/i&gt;.
+
+[en] Raw data for calculating the geometric borehole path along the borehole described in discrete segments. Non-inclined boreholes or boreholes without specific information in the data source equal exactly one segment with the defined length in &lt;i&gt;totalLength&lt;/i&gt;.</documentation>
+    </annotation>
+  </element>
+  <complexType name="BoreholeSegmentType">
+    <complexContent>
+      <extension base="bml:DepthIntervalType">
+        <sequence>
+          <element name="azimuth" type="gml:AngleType">
+            <annotation>
+              <documentation>[de] Azimut des Bohrlochsegmentes in Altgrad bezogen auf geographisch Nord.
+
+[en] True north-based azimuth of the borehole segment in degrees .</documentation>
+            </annotation>
+          </element>
+          <element name="inclination" type="gml:AngleType">
+            <annotation>
+              <documentation>[de] Inklination des Bohrlochsegmentes in Altgrad.
+
+[en] Inclination of the borehole segment in degrees.</documentation>
+            </annotation>
+          </element>
+          <element name="segmentDataQuality" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Qualitative Einstufung der Angaben zu Azimut und Inklination des Bohrlochsegments.
+
+[en] Qualitative classification of the information on azimuth and inclination of the borehole segment.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BoreholeSegmentPropertyType">
+    <sequence>
+      <element ref="bml:BoreholeSegment"/>
+    </sequence>
+  </complexType>
+  <element name="CasingString" substitutionGroup="gml:AbstractObject" type="bml:CasingStringType">
+    <annotation>
+      <documentation>[de] Verrohrung (Rohrtour) als Teil des Gesamtausbaus eines Bohrlochs.
+
+[en] Casing string as a part of the installation in the borehole.</documentation>
+    </annotation>
+  </element>
+  <complexType name="CasingStringType">
+    <sequence>
+      <element name="casingStringNumber" type="integer">
+        <annotation>
+          <documentation>[de] Nummer oder Index der Rohrtour im Bohrloch.
+
+[en] Number or index of casing string in the borehole.</documentation>
+        </annotation>
+      </element>
+      <element name="casingStringType" type="gml:CodeType">
+        <annotation>
+          <documentation>[de] Art der Verrohrung.
+
+[en] Type of casing string.</documentation>
+        </annotation>
+      </element>
+      <element maxOccurs="unbounded" name="casingStringSegment" type="bml:CasingStringSegmentPropertyType">
+        <annotation>
+          <documentation>[de] Rohrtourabschnitt.
+
+[en] Casing string segment.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="CasingStringPropertyType">
+    <sequence>
+      <element ref="bml:CasingString"/>
+    </sequence>
+  </complexType>
+  <element name="CasingStringSegment" substitutionGroup="bml:DepthInterval" type="bml:CasingStringSegmentType">
+    <annotation>
+      <documentation>[de] Rohrtourabschnitt.
+
+[en] Casing string segment.</documentation>
+    </annotation>
+  </element>
+  <complexType name="CasingStringSegmentType">
+    <complexContent>
+      <extension base="bml:DepthIntervalType">
+        <sequence>
+          <element name="installationElement" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Art des Rohres bzw. des Ausbauelements.
+
+[en] Type of the casing tube or the installation element.</documentation>
+            </annotation>
+          </element>
+          <element name="diameter" nillable="true">
+            <annotation>
+              <documentation>[de] Außendurchmesser der Verrohrung oder des Ausbauelements.
+
+[en] Outer diameter of the casing tube or the installation element.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:LengthType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="casingMaterial" nillable="true">
+            <annotation>
+              <documentation>[de] Material der Verrohrung oder des Ausbauelements.
+
+[en] Material of the casing tube or the installation element.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="wallThickness" nillable="true">
+            <annotation>
+              <documentation>[de] Wandstärke der Verrohrung oder des Ausbauelements.
+
+[en] Wall thickness of the casing tube or the installation element.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:LengthType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CasingStringSegmentPropertyType">
+    <sequence>
+      <element ref="bml:CasingStringSegment"/>
+    </sequence>
+  </complexType>
+  <element name="Component" substitutionGroup="gml:AbstractObject" type="bml:ComponentType">
+    <annotation>
+      <documentation>[de] Beschreibung einer Komponente bzw.Teilschicht, die Teil einer Hauptschicht ist. Jeder Teilschicht können ein oder bis maximal 9 Gesteinstypen zugeordnet werden, deren Merkmale in der Klasse &lt;i&gt;Lithology&lt;/i&gt; beschrieben werden. Jeder Teilschicht kann eine stratigraphische Bezeichnung zugeordnet sein.
+
+[en] Strata data of a component or sub-layer that is part of a main layer. Each sub-layer may be associated with one or up to nine rock types, whose attributes are stored in the class &lt;i&gt;Lithology&lt;/i&gt;.Each interval may be associated with a stratigraphical term.</documentation>
+    </annotation>
+  </element>
+  <complexType name="ComponentType">
+    <sequence>
+      <element minOccurs="0" name="rockCode" nillable="true">
+        <annotation>
+          <documentation>[de] Lithologiekodierung der Schicht nach länderspezifischem Standard. Die Kodierung wird ohne Änderungen aus der Quelldatenbank übernommen.
+
+[en] Original rock code of the interval, directly taken from the source database.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="string">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="rockNameText" nillable="true" type="gmd:LocalisedCharacterString_PropertyType">
+        <annotation>
+          <documentation>[de] Prägnante, klartextliche Gesteinsbezeichnung für die gesamte Schicht oder Komponente entsprechend der Information aus der Quelldatenbank.
+
+[en] Identifying textual description of the intervals rock types according to the information in the source database.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="intervalType" nillable="true">
+        <annotation>
+          <documentation>[de] Angabe, ob sich die Schicht aus einem Gesteinstyp (Einzelschicht) oder aus einer nicht weiter aufgelösten Wechsellagerung verschiedener Gesteinstypen (Gesteinswechsel) besteht bzw. ob die Schicht bedingt durch die Art der Probenahme mehrere Gesteinstypen (Mischprobe) enthält.
+
+[en] By using this attribute it is possible to distinguish between intervals consisting of a single rock type, intervals with intercalated rock types or intervals with mixed rock types due to mixing by the drilling process.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="genesis" nillable="true">
+        <annotation>
+          <documentation>[de] Genese der Schicht.
+
+[en] Genesis of the stratigraphic horizon.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="geoGenesis" nillable="true">
+        <annotation>
+          <documentation>[de] Petrogenetische Bezeichnung der Schicht.
+
+[en] Petrogenesis of the layer.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="carbonateContent" nillable="true">
+        <annotation>
+          <documentation>[de] Stärke und Art des Karbonatgehalts der Schicht.
+
+[en] Amount and type of carbonate content of the layer.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="waterContent" nillable="true">
+        <annotation>
+          <documentation>[de] Feuchtezustand der Schicht.
+
+[en] Water content of the layer.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="consistency" nillable="true">
+        <annotation>
+          <documentation>[de] Zustandsform bindiger Lockergesteine in der Schicht.
+
+[en] Consistency of incohesive unconsolidated sediments in the layer.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="compactness" nillable="true">
+        <annotation>
+          <documentation>[de] Lagerungsdichte rolliger Lockergesteine in der Schicht.
+
+[en] Bulk density of incohesive unconsolidated sedimens in the layer.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="descriptiveText" nillable="true" type="gmd:LocalisedCharacterString_PropertyType">
+        <annotation>
+          <documentation>[de] Ergänzender, beschreibender Text zu einer Schicht. Kann vom Datenprovider beliebig gefüllt werden.
+
+[en] Supplemental, descriptive text for an interval. The data provider can fill this attribute arbitrarily.</documentation>
+        </annotation>
+      </element>
+      <element maxOccurs="9" name="lithology" nillable="true">
+        <annotation>
+          <documentation>[de] Die Merkmale von bis zu neun verschiedenen, einer Schicht zugeordneten Gesteinstypen.
+
+[en] The characteristics of up to nine different rock types assigned to the interval.</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element ref="bml:Lithology"/>
+          </sequence>
+          <attribute name="nilReason" type="gml:NilReasonType"/>
+        </complexType>
+      </element>
+      <element name="stratigraphy" nillable="true">
+        <annotation>
+          <documentation>[de] Jeder Schicht wird eine stratigraphische Angabe zugeordnet, dabei kann entweder Chrono- oder Lithostratigraphie bzw. es können beide Chronostratigraphie und Lithostratigraphie angegeben werden.
+
+[en] Stratigraphical data is connected to each interval. Either chrono stratigraphy or litho stratigraphy must be used, both of them could be used.</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element ref="bml:Stratigraphy"/>
+          </sequence>
+          <attribute name="nilReason" type="gml:NilReasonType"/>
+        </complexType>
+      </element>
+      <element name="from" nillable="true">
+        <annotation>
+          <documentation>[de] Oberkante des Untersuchungsintervalls relativ zum Bohransatzpunkt. Intervalle werden entlang des Bohrungspfades gemessen.
+
+[en] Top of the component interval relative to given altitude at starting point. Intervals are measured along the borehole path.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:LengthType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element name="to" nillable="true">
+        <annotation>
+          <documentation>[de] Unterkante des Untersuchungs-intervalls relativ zum Bohransatzpunkt. Intervalle werden entlang des Bohrungspfades gemessen.
+
+[en] Bottom of the component interval relative to given altitude at starting point. Intervals are measured along the borehole path.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:LengthType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ComponentPropertyType">
+    <sequence>
+      <element ref="bml:Component"/>
+    </sequence>
+  </complexType>
+  <element abstract="true" name="DepthInterval" substitutionGroup="gml:AbstractObject" type="bml:DepthIntervalType">
+    <annotation>
+      <documentation>[de] Intervall relativ zum Bohransatzpunkt. Intervalle werden entlang des Bohrungspfades gemessen.
+
+[en] Interval relative to given altitude at starting point. Intervals are measured along the borehole path.</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="DepthIntervalType">
+    <sequence>
+      <element name="from" type="gml:LengthType">
+        <annotation>
+          <documentation>[de] Oberkante des Intervalls relativ zum Bohransatzpunkt.
+Intervalle werden entlang des Bohrungspfades gemessen.
+
+[en] Top of the interval relative to given altitude at starting point. Intervals are measured along the borehole path.</documentation>
+        </annotation>
+      </element>
+      <element name="to" type="gml:LengthType">
+        <annotation>
+          <documentation>[de] Unterkante des Intervalls relativ zum Bohransatzpunkt.
+Intervalle werden entlang des Bohrungspfades gemessen.
+
+[en] Bottom of the interval relative to given altitude at starting point. Intervals are measured along the borehole path.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DepthIntervalPropertyType">
+    <sequence>
+      <element ref="bml:DepthInterval"/>
+    </sequence>
+  </complexType>
+  <element name="DrillingProcess" substitutionGroup="bml:DepthInterval" type="bml:DrillingProcessType">
+    <annotation>
+      <documentation>[de] Teufenbezogene Beschreibung des technischen Bohrprozesses.
+
+[en] Depth-related description of the technical drilling process.</documentation>
+    </annotation>
+  </element>
+  <complexType name="DrillingProcessType">
+    <complexContent>
+      <extension base="bml:DepthIntervalType">
+        <sequence>
+          <element name="drillingMethod" nillable="true">
+            <annotation>
+              <documentation>[de] Spezifisches Bohrverfahren für die genannte Bohrstrecke.
+
+[en] Specific method of drilling used for given depth interval.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="drillingTool" nillable="true">
+            <annotation>
+              <documentation>[de] Bohrwerkzeug, verwendet für die genannte Bohrstrecke.
+
+[en] Drilling tool used in given depth interval.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="drillholeDiameter" nillable="true">
+            <annotation>
+              <documentation>[de] Bohrlochdurchmesser des genannten Bohrabschnittes.
+
+[en] Diameter of drillhole in given depth interval.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:LengthType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="flushingType" nillable="true">
+            <annotation>
+              <documentation>[de] Art der Spülung im genannten Bohrabschnitt.
+
+[en] Type of drilling fluid in given depth interval.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DrillingProcessPropertyType">
+    <sequence>
+      <element ref="bml:DrillingProcess"/>
+    </sequence>
+  </complexType>
+  <element name="Groundwater" substitutionGroup="gml:AbstractObject" type="bml:GroundwaterType">
+    <annotation>
+      <documentation>[de] Zusammenfassende Grundwasserbeobachtungen bezogen auf den Bohrvorgang nach DIN4022. Enthält die Grundwasserbeobachtungen
+beim ersten Antreffen des Grundwassers bis zur Beendigung der Bohrarbeiten.
+
+[en] Comprehensive Information about the groundwater level according to DIN4022. Contains the groundwater observations during the drilling process until drillhole completion.</documentation>
+    </annotation>
+  </element>
+  <complexType name="GroundwaterType">
+    <sequence>
+      <element minOccurs="0" name="entryDepth" nillable="true">
+        <annotation>
+          <documentation>[de] Bohrmeter, bei dem erstmals Grundwasser angetroffen wurde, relativ zum Bohransatzpunkt. Bohrmeter werden entlang des Bohrungspfades gemessen.
+
+[en] Distance from the starting point of the borehole to the point of first contact with groundwater. Distances are measured along the borehole path.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:LengthType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="entryDateTime" nillable="true" type="gml:TimePositionType">
+        <annotation>
+          <documentation>[de] Datum und Uhrzeit des Antreffens des Grundwassers.
+
+[en] Date and time of first encountering groundwater.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="balancedLevel" nillable="true">
+        <annotation>
+          <documentation>[de] Eingestellter Grundwasserstand im Bohrloch nach dem ersten Antreffen von Grundwasser. Der Ruhewasser­stand wird entlang des Bohrungs­pfades gemessen.
+
+[en] Balanced groundwater level in the borehole after the first contact with groundwater, measured after a rest period. Distances are measured along the borehole path.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:LengthType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="balancedDateTime" nillable="true" type="gml:TimePositionType">
+        <annotation>
+          <documentation>[de] Datum und Uhrzeit der Messung des Ruhewasserstands, gemessen nach einer Pause.
+
+[en] Date and Time of measure of balanced groundwater level in the borehole, measured after a rest period.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="endLevel" nillable="true">
+        <annotation>
+          <documentation>[de] Grundwasserstand im Bohrloch nach Beendigung der Bohrarbeiten. Der Grundwasserstand wird entlang des Bohrungspfades gemessen.
+
+[en] Groundwater level in the borehole after finishing the drilling process. Distances are measured along the borehole path.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:LengthType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="endDateTime" nillable="true" type="gml:TimePositionType">
+        <annotation>
+          <documentation>[de] Datum und Uhrzeit der Messung des Grundwasserstandes im Bohrloch nach Beendigung der Bohrarbeiten.
+
+[en] Date and time of measure of groundwater level in the borehole after finishing the drilling process.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="GroundwaterPropertyType">
+    <sequence>
+      <element ref="bml:Groundwater"/>
+    </sequence>
+  </complexType>
+  <element name="GroundwaterObservation" substitutionGroup="gml:AbstractObject" type="bml:GroundwaterObservationType">
+    <annotation>
+      <documentation>[de] Grundwasserbeobachtungen nach Beendigung des Bohrprozesses. Dient der ausführlichen Dokumentation von Messreihen zur Grundwasserbeobachtung.
+
+[en] Groundwater observations after drillhole completion. Serves the detailed documentation of groundwater monitoring.</documentation>
+    </annotation>
+  </element>
+  <complexType name="GroundwaterObservationType">
+    <sequence>
+      <element name="drillingDepth" type="gml:LengthType">
+        <annotation>
+          <documentation>[de] Bohrtiefe während der Beobachtung, relativ zum Bohransatzpunkt. Bohrmeter werden entlang des Bohrungspfades gemessen.
+
+[en] Distance from the starting point of the borehole during the observation. Distances are measured along the borehole path.</documentation>
+        </annotation>
+      </element>
+      <element name="groundwaterObservationType" type="gml:CodeType">
+        <annotation>
+          <documentation>[de] Art der Grundwasserbeobachtung.
+
+[en] Type of groundwater observation.</documentation>
+        </annotation>
+      </element>
+      <element name="dateTime" nillable="true" type="gml:TimePositionType">
+        <annotation>
+          <documentation>[de] Datum und Uhrzeit der Grundwasserbeobachtung oder Grundwassermessung.
+
+[en] Date and time of groundwater observation or measurement.</documentation>
+        </annotation>
+      </element>
+      <element name="groundwaterLevel" nillable="true">
+        <annotation>
+          <documentation>[de] Grundwasserstand im Bohrloch bezogen auf den Bohransatzpunkt. Der Grundwasserstand wird entlang des Bohrungspfades gemessen.
+
+[en] Groundwater level in the borehole relative to the starting point. Distances are measured along the borehole path.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:LengthType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element name="overflow" nillable="true">
+        <annotation>
+          <documentation>[de] Information, ob artesische Verhältnisse vorliegen oder nicht.
+
+[en] Information about artesian conditions.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="boolean">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="GroundwaterObservationPropertyType">
+    <sequence>
+      <element ref="bml:GroundwaterObservation"/>
+    </sequence>
+  </complexType>
+  <element name="InstallationDetails" substitutionGroup="gml:AbstractObject" type="bml:InstallationDetailsType">
+    <annotation>
+      <documentation>[de] Aktuelle Ausbaudaten.
+
+[en] Most recent installation.</documentation>
+    </annotation>
+  </element>
+  <complexType name="InstallationDetailsType">
+    <sequence>
+      <element maxOccurs="unbounded" name="casingString" type="bml:CasingStringPropertyType">
+        <annotation>
+          <documentation>[de] Verrohrung (Rohrtour) als Teil des Gesamtausbaus eines Bohrlochs.
+
+[en] Casing string as a part of the installation in the borehole.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="installationDate" nillable="true" type="gml:CalDate">
+        <annotation>
+          <documentation>[de] Datum der Fertigstellung des Ausbaus.
+
+[en] End date of casing or installation.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="description" nillable="true" type="gmd:LocalisedCharacterString_PropertyType">
+        <annotation>
+          <documentation>[de] Ausführliche Beschreibung des Ausbaus und seiner Besonderheiten.
+
+[en] Verbose description of the casing installation, its characteristics and peculiarities.</documentation>
+        </annotation>
+      </element>
+      <element maxOccurs="unbounded" minOccurs="0" name="spaceFilling" nillable="true">
+        <annotation>
+          <documentation>[de] Verfüllung des Ringraumes zwischen der Außenseite des Ausbaus und der Bohrlochwand.
+
+[en] Filling material of the annular space between the outside of the installation and the borehole wall.</documentation>
+        </annotation>
+        <complexType>
+          <sequence>
+            <element ref="bml:SpaceFilling"/>
+          </sequence>
+          <attribute name="nilReason" type="gml:NilReasonType"/>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="InstallationDetailsPropertyType">
+    <sequence>
+      <element ref="bml:InstallationDetails"/>
+    </sequence>
+  </complexType>
+  <element name="Interval" substitutionGroup="bml:DepthInterval" type="bml:IntervalType">
+    <annotation>
+      <documentation>[de] Die Daten einer abgrenzbaren Schicht. Jeder Schicht muss mindestens ein Gesteinstyp zugeordnet werden, dessen Merkmale in der Klasse &lt;i&gt;Lithology&lt;/i&gt; beschrieben werden. Es können bis maximal 9 verschiedene Gesteinstypen zugeordnet werden. Jeder Schicht muss eine stratigraphische Bezeichnung zugeordnet sein.
+
+[en] The strata data of a layer. Each layer must be associated with at least one rock type, whose attributes are stored in the class &lt;i&gt;Lithology&lt;/i&gt;. Each layer can be associated with up to nine different rock types. Each layer must be associated with a stratigraphical term.</documentation>
+    </annotation>
+  </element>
+  <complexType name="IntervalType">
+    <complexContent>
+      <extension base="bml:DepthIntervalType">
+        <sequence>
+          <element minOccurs="0" name="rockCode" nillable="true">
+            <annotation>
+              <documentation>[de] Lithologiekodierung der Schicht nach länderspezifischem Standard. Die Kodierung wird ohne Änderungen aus der Quelldatenbank übernommen.
+
+[en] Original rock code of the interval, directly taken from the source database.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="rockNameText" nillable="true" type="gmd:LocalisedCharacterString_PropertyType">
+            <annotation>
+              <documentation>[de] Prägnante, klartextliche Gesteinsbezeichnung für die gesamte Schicht oder Komponente entsprechend der Information aus der Quelldatenbank.
+
+[en] Identifying textual description of the intervals rock types according to the information in the source database.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="intervalType" nillable="true">
+            <annotation>
+              <documentation>[de] Angabe, ob sich die Schicht aus einem Gesteinstyp (Einzelschicht) oder aus einer nicht weiter aufgelösten Wechsellagerung verschiedener Gesteinstypen (Gesteinswechsel) besteht bzw. ob die Schicht bedingt durch die Art der Probenahme mehrere Gesteinstypen (Mischprobe) enthält.
+
+[en] By using this attribute it is possible to distinguish between intervals consisting of a single rock type, intervals with intercalated rock types or intervals with mixed rock types due to mixing by the drilling process.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="genesis" nillable="true">
+            <annotation>
+              <documentation>[de] Genese der Schicht.
+
+[en] Genesis of the stratigraphic horizon.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="geoGenesis" nillable="true">
+            <annotation>
+              <documentation>[de] Petrogenetische Bezeichnung der Schicht.
+
+[en] Petrogenesis of the layer.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="carbonateContent" nillable="true">
+            <annotation>
+              <documentation>[de] Stärke und Art des Karbonatgehalts der Schicht.
+
+[en] Amount and type of carbonate content of the layer.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="waterContent" nillable="true">
+            <annotation>
+              <documentation>[de] Feuchtezustand der Schicht.
+
+[en] Water content of the layer.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="consistency" nillable="true">
+            <annotation>
+              <documentation>[de] Zustandsform bindiger Lockergesteine in der Schicht.
+
+[en] Consistency of incohesive unconsolidated sediments in the layer.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="compactness" nillable="true">
+            <annotation>
+              <documentation>[de] Lagerungsdichte rolliger Lockergesteine in der Schicht.
+
+[en] Bulk density of incohesive unconsolidated sedimens in the layer.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="descriptiveText" nillable="true" type="gmd:LocalisedCharacterString_PropertyType">
+            <annotation>
+              <documentation>[de] Ergänzender, beschreibender Text zu einer Schicht. Kann vom Datenprovider beliebig gefüllt werden.
+
+[en] Supplemental, descriptive text for an interval. The data provider can fill this attribute arbitrarily.</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="9" name="lithology" nillable="true">
+            <annotation>
+              <documentation>[de] Die Merkmale von bis zu neun verschiedenen, einer Schicht zugeordneten Gesteinstypen.
+
+[en] The characteristics of up to nine different rock types assigned to the interval.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:Lithology"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="stratigraphy" nillable="true">
+            <annotation>
+              <documentation>[de] Jeder Schicht wird eine stratigraphische Angabe zugeordnet, dabei kann entweder Chrono- oder Lithostratigraphie bzw. es können beide Chronostratigraphie und Lithostratigraphie angegeben werden.
+
+[en] Stratigraphical data is connected to each interval. Either chrono stratigraphy or litho stratigraphy must be used, both of them could be used.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:Stratigraphy"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="sublayer" nillable="true">
+            <annotation>
+              <documentation>[de] Teilschicht oder Komponente, die Bestandteil einer Schicht ist. Jeder Teilschicht können ein oder mehrere Gesteinstypen zugeordnet werden, deren Merkmale in der Klasse &lt;i&gt;Lithology&lt;/i&gt; beschrieben werden.
+
+[en] Data of a sub-layer or component that is part of a main layer. Each sub-layer may be associated with one or more rock types, whose attributes are stored in the class &lt;i&gt;Lithology&lt;/i&gt;.</documentation>
+            </annotation>
+            <complexType>
+              <sequence>
+                <element ref="bml:Component"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="IntervalPropertyType">
+    <sequence>
+      <element ref="bml:Interval"/>
+    </sequence>
+  </complexType>
+  <element name="IntervalSeries" substitutionGroup="gml:AbstractObject" type="bml:IntervalSeriesType">
+    <annotation>
+      <documentation>[de] Abzugebendes Schichtenverzeichnis. Das Schichtenverzeichnis besteht aus der Abfolge einzeln abgrenzbarer Schichten, deren Merkmale jeweils in der Klasse &lt;i&gt;Lithology&lt;/i&gt; beschrieben werden. Ein Schichtenverzeichnis verfügt über mindestens eine Schicht. Es können mehrere Schichtenverzeichnis-Versionen pro Bohrung gespeichert werden.
+
+[en] Disposable interval series for the borehole. The interval series consists of an amount of single layers with specific intervals, whose attributes are stored in the class &lt;i&gt;Lithology.&lt;/i&gt; An interval series must have at least one interval defining one layer. It is possible to store several versions of interval series for the same borehole.</documentation>
+    </annotation>
+  </element>
+  <complexType name="IntervalSeriesType">
+    <sequence>
+      <element name="description" type="gmd:LocalisedCharacterString_PropertyType">
+        <annotation>
+          <documentation>[de] Art des Schichtenverzeichnisses. (Defaultwert: Master-Schichtenverzeichnis)
+
+[en] Type of interval series. (Default value: master interval series)</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="version" nillable="true">
+        <annotation>
+          <documentation>[de] Versionsnummer oder -name des Schichtenverzeichnisses.
+
+[en] Version number or version name of the interval series.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="string">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" name="layer" type="bml:IntervalPropertyType">
+        <annotation>
+          <documentation>[de] Der abstrakte Datentyp &lt;i&gt;layer&lt;/i&gt; dient der Vererbung allgemeiner Schichtdaten an Haupt- und Teilschichten.
+
+[en] The abstract data type &lt;i&gt;layer&lt;/i&gt; serves the inheritance of general interval data to main layers and sub layers.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="IntervalSeriesPropertyType">
+    <sequence>
+      <element ref="bml:IntervalSeries"/>
+    </sequence>
+  </complexType>
+  <element name="Investigation" substitutionGroup="gml:AbstractObject" type="bml:InvestigationType">
+    <annotation>
+      <documentation>[de] Untersuchungsmethoden im Bohrloch (Logging-Verfahren) optional mit Teufenbezug.
+
+[en] Investigations in the borehole (logging methods) with optional depth information.</documentation>
+    </annotation>
+  </element>
+  <complexType name="InvestigationType">
+    <sequence>
+      <element name="from" nillable="true">
+        <annotation>
+          <documentation>[de] Oberkante des Intervalls relativ zum Bohransatzpunkt.
+Intervalle werden entlang des Bohrungspfades gemessen.
+
+[en] Top of the interval relative to given altitude at starting point. Intervals are measured along the borehole path.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:LengthType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element name="to" nillable="true">
+        <annotation>
+          <documentation>[de] Unterkante des Intervalls relativ zum Bohransatzpunkt.
+Intervalle werden entlang des Bohrungspfades gemessen.
+
+[en] Bottom of the interval relative to given altitude at starting point. Intervals are measured along the borehole path.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:LengthType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element name="investigationType" type="gml:CodeType">
+        <annotation>
+          <documentation>[de] Art oder Methode einer im Bohrloch durchgeführten Untersuchung.
+
+[en] Kind or method of an investigation in the borehole / borehole logging.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="InvestigationPropertyType">
+    <sequence>
+      <element ref="bml:Investigation"/>
+    </sequence>
+  </complexType>
+  <complexType name="LayerPropertyType">
+    <choice minOccurs="0">
+      <element ref="bml:Component"/>
+      <element ref="bml:Interval"/>
+    </choice>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Lithology" substitutionGroup="gml:AbstractObject" type="bml:LithologyType">
+    <annotation>
+      <documentation>[de] Die Merkmale von bis zu neun verschiedenen, einer Schicht zugeordneten Gesteinstypen.
+
+[en] The characteristics of up to nine different rock types assigned to the interval.</documentation>
+    </annotation>
+  </element>
+  <complexType name="LithologyType">
+    <sequence>
+      <element name="rockName" type="gml:CodeType">
+        <annotation>
+          <documentation>[de] Name des Gesteins. Kann auch Haupt- und Nebenbestandteil umfassen.
+
+[en] Lithology. It could also comprise main constituent and secondary constituent.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="percentage" nillable="true">
+        <annotation>
+          <documentation>[de] Prozentualer Anteil des Gesteins.
+
+[en] Percentage of the specified rock type.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="double">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="percentageFrom" nillable="true">
+        <annotation>
+          <documentation>[de] Untergrenze des prozentualen Anteils des Gesteins.
+
+[en] Lower limit of the percentage of the specified rock type.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="double">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="percentageTo" nillable="true">
+        <annotation>
+          <documentation>[de] Obergrenze des prozentualen Anteils des Gesteins.
+
+[en] Lower limit of the percentage of the specified rock type.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="double">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="rockColor" nillable="true">
+        <annotation>
+          <documentation>[de] Farbton und Helligkeit des Gesteintyps.
+
+[en] Color and brightness of a rock type.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="rockColorMixture" nillable="true">
+        <annotation>
+          <documentation>[de] Verteilung der Farbe innerhalb des Gesteintyps.
+
+[en] Type of color distribution in he specified rock type.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="LithologyPropertyType">
+    <sequence>
+      <element ref="bml:Lithology"/>
+    </sequence>
+  </complexType>
+  <element name="Origin" substitutionGroup="gml:AbstractObject" type="bml:OriginType">
+    <annotation>
+      <documentation>[de] Angaben zu den (Original)-Koordinaten des Bohransatzpunktes in der Quelldatenbank.
+
+[en] Original coordinates of the borehole location from source data (drill start point).</documentation>
+    </annotation>
+  </element>
+  <complexType name="OriginType">
+    <sequence>
+      <element name="originalLocation" type="gml:DirectPositionType">
+        <annotation>
+          <documentation>[de] Angaben zu den (Original)-Koordinaten des Bohransatzpunktes in der Quelldatenbank.
+
+[en] Original coordinates of the borehole location from source data (drill start point).</documentation>
+        </annotation>
+      </element>
+      <element name="locationMethod" nillable="true">
+        <annotation>
+          <documentation>[de] Art der Koordinatenermittlung.
+
+[en] Determination method of location.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element name="elevation" type="gml:DirectPositionType">
+        <annotation>
+          <documentation>[de] Höhe des Bohrungsansatzpunktes im verwendeten Höhenreferenzsystem.
+
+[en] Level of drilling point according to the applied elevation reference system.</documentation>
+        </annotation>
+      </element>
+      <element name="levelMethod" nillable="true">
+        <annotation>
+          <documentation>[de] Art der Höhenermittlung.
+
+[en] Determination method of height level.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="OriginPropertyType">
+    <sequence>
+      <element ref="bml:Origin"/>
+    </sequence>
+  </complexType>
+  <element name="Sampling" substitutionGroup="bml:DepthInterval" type="bml:SamplingType">
+    <annotation>
+      <documentation>[de] Beprobungsintervalle im Bohrloch oder im Bohrgut.
+
+[en] Sampling intervals in the borehole or rock material.</documentation>
+    </annotation>
+  </element>
+  <complexType name="SamplingType">
+    <complexContent>
+      <extension base="bml:DepthIntervalType">
+        <sequence>
+          <element name="sampleType" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Probenart aus der genannten Bohrstrecke.
+
+[en] Type of sample in given interval.</documentation>
+            </annotation>
+          </element>
+          <element name="samplingPurpose" nillable="true">
+            <annotation>
+              <documentation>[de] Art der (vorgesehenen) Untersuchungen an einer Probe.
+
+[en] Purpose of sampling.</documentation>
+            </annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="gml:CodeType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SamplingPropertyType">
+    <sequence>
+      <element ref="bml:Sampling"/>
+    </sequence>
+  </complexType>
+  <element name="SpaceFilling" substitutionGroup="bml:DepthInterval" type="bml:SpaceFillingType">
+    <annotation>
+      <documentation>[de] Verfüllung des Ringraumes zwischen der Außenseite des Ausbaus und der Bohrlochwand.
+
+[en] Filling material of the annular space between the outside of the installation and the borehole wall.</documentation>
+    </annotation>
+  </element>
+  <complexType name="SpaceFillingType">
+    <complexContent>
+      <extension base="bml:DepthIntervalType">
+        <sequence>
+          <element name="spaceFillingMaterial" type="gml:CodeType">
+            <annotation>
+              <documentation>[de] Material der Verfüllung des Ringraumes zwischen der Aussenseite des Ausbaus und der Bohrlochwand.
+
+[en] Material of the filling of the annular space between the outside of the installation and the borehole.</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SpaceFillingPropertyType">
+    <sequence>
+      <element ref="bml:SpaceFilling"/>
+    </sequence>
+  </complexType>
+  <element name="Stratigraphy" substitutionGroup="gml:AbstractObject" type="bml:StratigraphyType">
+    <annotation>
+      <documentation>[de] Jeder Schicht wird eine stratigraphische Angabe zugeordnet, dabei kann entweder Chrono- oder Lithostratigraphie bzw. es können beide Chronostratigraphie und Lithostratigraphie angegeben werden.
+
+[en] Stratigraphical data is connected to each interval. Either chrono stratigraphy or litho stratigraphy must be used, both of them could be used.</documentation>
+    </annotation>
+  </element>
+  <complexType name="StratigraphyType">
+    <sequence>
+      <element minOccurs="0" name="chronoStratigraphy" nillable="true">
+        <annotation>
+          <documentation>[de] chronostratigraphische Einstufung der Schicht.
+
+[en] Chronostratigraphy.</documentation>
+        </annotation>
+        <complexType>
+          <simpleContent>
+            <extension base="gml:CodeType">
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="lithoStratigraphy" nillable="true" type="gmd:LocalisedCharacterString_PropertyType">
+        <annotation>
+          <documentation>[de] Länderspezifische Lithostratigraphie als Text. Kann zwei stratigraphische Angaben enthalten, die fachlich mit "und", "oder" bzw. "bis" verbunden sein können.
+
+[en] Specific regional litho stratigraphy. At most two lithostratigraphical terms could be combined by using"and", "or" or "transition to".</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="StratigraphyPropertyType">
+    <sequence>
+      <element ref="bml:Stratigraphy"/>
+    </sequence>
+  </complexType>
+</schema>

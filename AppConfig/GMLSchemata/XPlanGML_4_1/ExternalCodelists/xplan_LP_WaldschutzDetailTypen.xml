@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 29.11.2012 08:16:27-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="xplan_LP_WaldschutzDetailTypen">
+  <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:LP_WaldschutzDetailTypen</identifier>
+  <name>xplan:LP_WaldschutzDetailTypen</name>
+</Dictionary>

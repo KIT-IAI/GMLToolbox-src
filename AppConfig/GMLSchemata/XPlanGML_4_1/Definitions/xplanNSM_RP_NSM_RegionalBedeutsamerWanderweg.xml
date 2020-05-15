@@ -1,0 +1,66 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:24-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg</gml:identifier>
+  <gml:name>xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:attribute:typRBW</gml:identifier>
+      <gml:name>xplanNSM:typRBW</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW_RP_NSN_RegionalbedeutsamerWanderwegTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:typRBW:RP_NSN_RegionalbedeutsamerWanderwegTypen:1000</gml:identifier>
+          <gml:name>RegionalBedeutsamerWanderweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW_RP_NSN_RegionalbedeutsamerWanderwegTypen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:typRBW:RP_NSN_RegionalbedeutsamerWanderwegTypen:2000</gml:identifier>
+          <gml:name>RegionalBedeutsamerWanderweg_Radwandern</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW_RP_NSN_RegionalbedeutsamerWanderwegTypen_2001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:typRBW:RP_NSN_RegionalbedeutsamerWanderwegTypen:2001</gml:identifier>
+          <gml:name>RegionalBedeutsamerWanderweg_Radwandern_geplant</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW_RP_NSN_RegionalbedeutsamerWanderwegTypen_2002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:typRBW:RP_NSN_RegionalbedeutsamerWanderwegTypen:2002</gml:identifier>
+          <gml:name>Fernradweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW_RP_NSN_RegionalbedeutsamerWanderwegTypen_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:typRBW:RP_NSN_RegionalbedeutsamerWanderwegTypen:3000</gml:identifier>
+          <gml:name>RegionalBedeutsamerWanderweg_Reiten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW_RP_NSN_RegionalbedeutsamerWanderwegTypen_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:typRBW:RP_NSN_RegionalbedeutsamerWanderwegTypen:4000</gml:identifier>
+          <gml:name>RegionalBedeutsamerWanderweg_Wandern</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW_RP_NSN_RegionalbedeutsamerWanderwegTypen_4001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:typRBW:RP_NSN_RegionalbedeutsamerWanderwegTypen:4001</gml:identifier>
+          <gml:name>Fernwanderweg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_RegionalBedeutsamerWanderweg_typRBW_RP_NSN_RegionalbedeutsamerWanderwegTypen_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_RegionalBedeutsamerWanderweg:typRBW:RP_NSN_RegionalbedeutsamerWanderwegTypen:5000</gml:identifier>
+          <gml:name>RegionalBedeutsamerWanderweg_Wasserwandern</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NSN_RegionalbedeutsamerWanderwegTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_FreizeitErholung" />
+</TypeDefinition>

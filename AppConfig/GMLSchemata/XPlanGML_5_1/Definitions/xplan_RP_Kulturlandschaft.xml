@@ -1,0 +1,53 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:37-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Kulturlandschaft">
+  <gml:description>Landschaftsbereich mit überwiegend anthropogenen Ökosystemen (historisch geprägt und gewachsen). Sie sind nach §2, Nr. 5 des ROG mit ihren Kultur- und Naturdenkmälern zu erhalten und zu entwickeln. 
+Beinhaltet unter anderem die Begriffe Kulturlandschaft, kulturelle Sachgüter und Welterbestätten.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Kulturlandschaft</gml:identifier>
+  <gml:name>xplan:RP_Kulturlandschaft</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Kulturlandschaft_typ">
+      <gml:description>Klassifikation von Kulturlandschaftstypen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Kulturlandschaft:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Kulturlandschaft_typ_RP_KulturlandschaftTypen_1000">
+          <gml:description>Kulturelles Sachgut.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Kulturlandschaft:typ:RP_KulturlandschaftTypen:1000</gml:identifier>
+          <gml:name>KulturellesSachgut</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Kulturlandschaft_typ_RP_KulturlandschaftTypen_2000">
+          <gml:description>Welterbe. Von der UNESCO verliehener Titel an Stätten mit außergewöhnlichem, universellem Wert, die als "Teile des Kultur- und Naturerbes von außergewöhnlicher Bedeutung sind und daher als Bestandteil des Welterbes der ganzen Menschheit erhalten werden müssen" (Präambel der Welterbekonvention von 1972)</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Kulturlandschaft:typ:RP_KulturlandschaftTypen:2000</gml:identifier>
+          <gml:name>Welterbe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Kulturlandschaft_typ_RP_KulturlandschaftTypen_3000">
+          <gml:description>Landschaftliches Kulturerbe.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Kulturlandschaft:typ:RP_KulturlandschaftTypen:3000</gml:identifier>
+          <gml:name>KulturerbeLandschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Kulturlandschaft_typ_RP_KulturlandschaftTypen_4000">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Kulturlandschaft:typ:RP_KulturlandschaftTypen:4000</gml:identifier>
+          <gml:name>KulturDenkmalpflege</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Kulturlandschaft_typ_RP_KulturlandschaftTypen_9999">
+          <gml:description>Sonstige Kulturlandschafttypen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Kulturlandschaft:typ:RP_KulturlandschaftTypen:9999</gml:identifier>
+          <gml:name>SonstigeKulturlandschaftTypen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_KulturlandschaftTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Freiraum" />
+</TypeDefinition>

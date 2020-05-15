@@ -1,0 +1,18 @@
+﻿Der Buildvorgang wurde am 13.10.2015 10:26:57 gestartet.
+     1>Projekt "C:\Daten\XPlanung\XPlanGML-Toolbox\X3D-Module\X3D-Module\X3D-Module.vcxproj" auf Knoten "2", build Ziel(e).
+       Die Projektdatei enthält ToolsVersion="10.0". Dieses Toolset ist möglicherweise nicht bekannt oder nicht vorhanden. In diesem Fall können Sie das Problem möglicherweise beheben, indem Sie die passende Version von MSBuild installieren. Oder für den Build wurde aufgrund von Richtlinien eine bestimmte ToolsVersion erzwungen. Das Projekt wird so behandelt, als enthielte es ToolsVersion="4.0". Weitere Informationen finden Sie unter http://go.microsoft.com/fwlink/?LinkId=291333.
+     1>InitializeBuildStatus:
+         "Release\X3D-Module.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+       ClCompile:
+         Alle Ausgaben sind aktuell.
+       Lib:
+         Alle Ausgaben sind aktuell.
+         X3D-Module.vcxproj -> C:\Daten\XPlanung\XPlanGML-Toolbox\X3D-Module\X3D-Module\..\lib\X3D-Module.lib
+       FinalizeBuildStatus:
+         Die Datei "Release\X3D-Module.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Release\X3D-Module.lastbuildstate".
+     1>Die Erstellung des Projekts "C:\Daten\XPlanung\XPlanGML-Toolbox\X3D-Module\X3D-Module\X3D-Module.vcxproj" ist abgeschlossen, build Ziel(e).
+
+Das Erstellen war erfolgreich.
+
+Verstrichene Zeit 00:00:00.07

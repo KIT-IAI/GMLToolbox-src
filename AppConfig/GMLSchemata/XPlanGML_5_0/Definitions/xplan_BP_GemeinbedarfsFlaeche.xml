@@ -1,0 +1,765 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:08-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_GemeinbedarfsFlaeche">
+  <gml:description>Einrichtungen und Anlagen zur Versorgung mit Gütern und Dienstleistungen des öffentlichen und privaten Bereichs, hier Flächen für den Gemeindebedarf (§9, Abs. 1, Nr.5 und Abs. 6 BauGB).</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche</gml:identifier>
+  <gml:name>xplan:BP_GemeinbedarfsFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_MaxZahlWohnungen">
+      <gml:description>Höchstzulässige Zahl der Wohnungen in Wohngebäuden</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:MaxZahlWohnungen</gml:identifier>
+      <gml:name>xplan:MaxZahlWohnungen</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Fmin">
+      <gml:description>Mindestmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Fmin</gml:identifier>
+      <gml:name>xplan:Fmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Fmax">
+      <gml:description>Höchstmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Fmax</gml:identifier>
+      <gml:name>xplan:Fmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Bmin">
+      <gml:description>Minimale Breite von Baugrundstücken</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Bmin</gml:identifier>
+      <gml:name>xplan:Bmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Bmax">
+      <gml:description>Maximale Breite von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Bmax</gml:identifier>
+      <gml:name>xplan:Bmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Tmin">
+      <gml:description>Minimale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Tmin</gml:identifier>
+      <gml:name>xplan:Tmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Tmax">
+      <gml:description>Maximale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Tmax</gml:identifier>
+      <gml:name>xplan:Tmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GFZmin">
+      <gml:description>Minimal zulässige Geschossflächenzahl .</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GFZmin</gml:identifier>
+      <gml:name>xplan:GFZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GFZmax">
+      <gml:description>Maximal zulässige Geschossflächenzahl bei einer Bereichsangabe. Das Attribut GFZmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GFZmax</gml:identifier>
+      <gml:name>xplan:GFZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GFZ">
+      <gml:description>Maximal zulässige Geschossflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GFZ</gml:identifier>
+      <gml:name>xplan:GFZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GFZ_Ausn">
+      <gml:description>Maximal zulässige Geschossflächenzahl als Ausnahme.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GFZ_Ausn</gml:identifier>
+      <gml:name>xplan:GFZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GFmin">
+      <gml:description>Minimal zulässige Geschossfläche</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GFmin</gml:identifier>
+      <gml:name>xplan:GFmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GFmax">
+      <gml:description>Maximal zulässige Geschossfläche bei einer Bereichsabgabe. Das Attribut GFmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GFmax</gml:identifier>
+      <gml:name>xplan:GFmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GF">
+      <gml:description>Maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GF</gml:identifier>
+      <gml:name>xplan:GF</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GF_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GF_Ausn</gml:identifier>
+      <gml:name>xplan:GF_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_BMZmin">
+      <gml:description>Minimal zulässige Baumassenzahl</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:BMZmin</gml:identifier>
+      <gml:name>xplan:BMZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_BMZmax">
+      <gml:description>Maximal zulässige Baumassenzahl bei einer Bereichsangabe. Das Attribut BMZmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:BMZmax</gml:identifier>
+      <gml:name>xplan:BMZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_BMZ">
+      <gml:description>Maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:BMZ</gml:identifier>
+      <gml:name>xplan:BMZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_BMZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:BMZ_Ausn</gml:identifier>
+      <gml:name>xplan:BMZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_BMmin">
+      <gml:description>Minimal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:BMmin</gml:identifier>
+      <gml:name>xplan:BMmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_BMmax">
+      <gml:description>Maximal zulässige Baumasse bei einer Bereichsangabe. Das Attribut BMmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:BMmax</gml:identifier>
+      <gml:name>xplan:BMmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_BM">
+      <gml:description>Maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:BM</gml:identifier>
+      <gml:name>xplan:BM</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_BM_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:BM_Ausn</gml:identifier>
+      <gml:name>xplan:BM_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GRZmin">
+      <gml:description>Minimal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GRZmin</gml:identifier>
+      <gml:name>xplan:GRZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GRZmax">
+      <gml:description>Maximal zulässige Grundflächenzahl bei einer Bereichsangabe.  Das Attribut GRZmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GRZmax</gml:identifier>
+      <gml:name>xplan:GRZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GRZ">
+      <gml:description>Maximal zulässige Grundflächenzahl</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GRZ</gml:identifier>
+      <gml:name>xplan:GRZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GRZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GRZ_Ausn</gml:identifier>
+      <gml:name>xplan:GRZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GRmin">
+      <gml:description>Minimal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GRmin</gml:identifier>
+      <gml:name>xplan:GRmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GRmax">
+      <gml:description>Maximal zulässige Grundfläche bei einer Bereichsangabe. Das Attribut GRmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GRmax</gml:identifier>
+      <gml:name>xplan:GRmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GR">
+      <gml:description>Maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GR</gml:identifier>
+      <gml:name>xplan:GR</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_GR_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:GR_Ausn</gml:identifier>
+      <gml:name>xplan:GR_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Zmin">
+      <gml:description>Minimal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Zmin</gml:identifier>
+      <gml:name>xplan:Zmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Zmax">
+      <gml:description>Maximal zulässige Zahl der oberirdischen Vollgeschosse bei einer Bereichsangabe. Das Attribut Zmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Zmax</gml:identifier>
+      <gml:name>xplan:Zmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Zzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Zzwingend</gml:identifier>
+      <gml:name>xplan:Zzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Z">
+      <gml:description>Maximalzahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Z</gml:identifier>
+      <gml:name>xplan:Z</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Z_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Z_Ausn</gml:identifier>
+      <gml:name>xplan:Z_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Z_Staffel">
+      <gml:description>Maximalzahl von oberirdischen zurückgesetzten Vollgeschossen als Staffelgeschoss..</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Z_Staffel</gml:identifier>
+      <gml:name>xplan:Z_Staffel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_Z_Dach">
+      <gml:description>Maximalzahl der zusätzlich erlaubten Dachgeschosse, die gleichzeitig Vollgeschosse sind.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:Z_Dach</gml:identifier>
+      <gml:name>xplan:Z_Dach</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_ZUmin">
+      <gml:description>Minimal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:ZUmin</gml:identifier>
+      <gml:name>xplan:ZUmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_ZUmax">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse bei einer Bereichsangabe. Das Attribut ZUmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:ZUmax</gml:identifier>
+      <gml:name>xplan:ZUmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_ZUzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:ZUzwingend</gml:identifier>
+      <gml:name>xplan:ZUzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_ZU">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:ZU</gml:identifier>
+      <gml:name>xplan:ZU</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_ZU_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:ZU_Ausn</gml:identifier>
+      <gml:name>xplan:ZU_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung">
+      <gml:description>Zweckbestimmung der festgesetzten Fläche</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_1000">
+          <gml:description>Einrichtungen und Anlagen für öffentliche Verwaltung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:1000</gml:identifier>
+          <gml:name>OeffentlicheVerwaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_10000">
+          <gml:description>Kommunale Einrichtung wie z. B. Rathaus, Gesundheitsamt, Gesundheitsfürsorgestelle, Gartenbauamt, Gartenarbeitsstützpunkt, Fuhrpark.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:10000</gml:identifier>
+          <gml:name>KommunaleEinrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_10001">
+          <gml:description>Betrieb mit öffentlicher Zweckbestimmung wie z.B. ein Stadtreinigungsbetrieb, Autobusbetriebshof, Omnibusbahnhof.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:10001</gml:identifier>
+          <gml:name>BetriebOeffentlZweckbestimmung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_10002">
+          <gml:description>Eine Anlage des Bundes oder eines Bundeslandes wie z. B.  Arbeitsamt, Autobahnmeisterei, Brückenmeisterei, Patentamt, Wasserbauhof, Finanzamt.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:10002</gml:identifier>
+          <gml:name>AnlageBundLand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_10003">
+          <gml:description>Sonstige Einrichtung oder Anlage der öffentlichen Verwaltung wie z. B. die Industrie und Handelskammer oder Handwerkskammer.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:10003</gml:identifier>
+          <gml:name>SonstigeOeffentlicheVerwaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_1200">
+          <gml:description>Einrichtungen und Anlagen für öffentliche Verwaltung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:1200</gml:identifier>
+          <gml:name>BildungForschung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_12000">
+          <gml:description>Schulische Einrichtung. Darunter fallen u. a. Allgemeinbildende Schule, Oberstufenzentrum, Sonderschule, Fachschule, Volkshochschule,
+Konservatorium.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:12000</gml:identifier>
+          <gml:name>Schule</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_12001">
+          <gml:description>Hochschule, Fachhochschule, Berufsakademie, o. Ä.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:12001</gml:identifier>
+          <gml:name>Hochschule</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_12002">
+          <gml:description>Berufsbildende Schule</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:12002</gml:identifier>
+          <gml:name>BerufsbildendeSchule</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_12003">
+          <gml:description>Forschungseinrichtung, Forschungsinstitut.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:12003</gml:identifier>
+          <gml:name>Forschungseinrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_12004">
+          <gml:description>Sonstige Anlage oder Einrichtung aus Bildung und Forschung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:12004</gml:identifier>
+          <gml:name>SonstigesBildungForschung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_1400">
+          <gml:description>Kirchliche Einrichtungen.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:1400</gml:identifier>
+          <gml:name>Kirche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_14000">
+          <gml:description>Religiösen Zwecken dienendes Gebäude wie z. B. Kirche, 
+ Kapelle, Moschee, Synagoge, Gebetssaal.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:14000</gml:identifier>
+          <gml:name>Sakralgebaeude</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_14001">
+          <gml:description>Kirchliches Verwaltungsgebäude, z. B. Pfarramt, Bischöfliches Ordinariat, Konsistorium.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:14001</gml:identifier>
+          <gml:name>KirchlicheVerwaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_14002">
+          <gml:description>Religiöse Gemeinde- oder Versammlungseinrichtung, z. B. Gemeindehaus, Gemeindezentrum.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:14002</gml:identifier>
+          <gml:name>Kirchengemeinde</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_14003">
+          <gml:description>Sonstige religiösen Zwecken dienende Anlage oder Einrichtung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:14003</gml:identifier>
+          <gml:name>SonstigesKirche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_1600">
+          <gml:description>Einrichtungen und Anlagen für soziale Zwecke.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:1600</gml:identifier>
+          <gml:name>Sozial</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_16000">
+          <gml:description>Soziale Einrichtung für Kinder, wie z. B. Kinderheim, Kindertagesstätte, Kindergarten.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:16000</gml:identifier>
+          <gml:name>EinrichtungKinder</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_16001">
+          <gml:description>Soziale Einrichtung für Jugendliche, wie z. B. Jugendfreizeitheim/-stätte, Jugendgästehaus, Jugendherberge, Jugendheim.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:16001</gml:identifier>
+          <gml:name>EinrichtungJugendliche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_16002">
+          <gml:description>Soziale Einrichtung für Familien und Erwachsene, wie z. B. Bildungszentrum, Volkshochschule, Kleinkinderfürsorgestelle, Säuglingsfürsorgestelle, Nachbarschaftsheim.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:16002</gml:identifier>
+          <gml:name>EinrichtungFamilienErwachsene</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_16003">
+          <gml:description>Soziale Einrichtung für Senioren, wie z. B. Alten-/Seniorentagesstätte, Alten-/Seniorenheim, Alten-/Seniorenwohnheim, Altersheim.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:16003</gml:identifier>
+          <gml:name>EinrichtungSenioren</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_16004">
+          <gml:description>Sonstige soziale Einrichtung, z. B. Pflegeheim, Schwesternwohnheim, Studentendorf, Studentenwohnheim. Tierheim, Übergangsheim.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:16004</gml:identifier>
+          <gml:name>SonstigeSozialeEinrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_1800">
+          <gml:description>Einrichtungen und Anlagen für gesundheitliche Zwecke.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:1800</gml:identifier>
+          <gml:name>Gesundheit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_18000">
+          <gml:description>Krankenhaus oder vergleichbare Einrichtung (z. B. Klinik, Hospital, Krankenheim, Heil- und Pflegeanstalt),</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:18000</gml:identifier>
+          <gml:name>Krankenhaus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_18001">
+          <gml:description>Sonstige Gesundheits-Einrichtung, z. B. Sanatorium, Kurklinik, Desinfektionsanstalt.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:18001</gml:identifier>
+          <gml:name>SonstigesGesundheit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_2000">
+          <gml:description>Einrichtungen und Anlagen für gesundheitliche Zwecke.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:2000</gml:identifier>
+          <gml:name>Kultur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_20000">
+          <gml:description>Kulturelle Einrichtung aus dem Bereich Musik oder Theater (z. B. Theater, Konzerthaus, Musikhalle, Oper).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:20000</gml:identifier>
+          <gml:name>MusikTheater</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_20001">
+          <gml:description>Kulturelle Einrichtung mit Bildungsfunktion ( z. B. Museum, Bibliothek, Bücherei, Stadtbücherei, Volksbücherei).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:20001</gml:identifier>
+          <gml:name>Bildung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_20002">
+          <gml:description>Sonstige kulturelle Einrichtung, wie z. B. Archiv, Landesbildstelle, Rundfunk und Fernsehen, Kongress- und Veranstaltungshalle, Mehrzweckhalle..</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:20002</gml:identifier>
+          <gml:name>SonstigeKultur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_2200">
+          <gml:description>Einrichtungen und Anlagen für sportliche Zwecke.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:2200</gml:identifier>
+          <gml:name>Soprt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_22000">
+          <gml:description>Schwimmbad, Freibad, Hallenbad, Schwimmhalle o. Ä..</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:22000</gml:identifier>
+          <gml:name>Bad</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_22001">
+          <gml:description>Sportplatz, Sporthalle, Tennishalle o. Ä.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:22001</gml:identifier>
+          <gml:name>SportplatzSporthalle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_22002">
+          <gml:description>Sonstige Sporteinrichtung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:22002</gml:identifier>
+          <gml:name>SonstigerSport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_2400">
+          <gml:description>Einrichtungen und Anlagen für Sicherheit und Ordnung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:2400</gml:identifier>
+          <gml:name>SicherheitOrdnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_24000">
+          <gml:description>Einrichtung oder Anlage der Feuerwehr.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:24000</gml:identifier>
+          <gml:name>Feuerwehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_24001">
+          <gml:description>Schutzbauwerk</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:24001</gml:identifier>
+          <gml:name>Schutzbauwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_24002">
+          <gml:description>Einrichtung der Justiz, wie z. B. Justizvollzug, Gericht, Haftanstalt.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:24002</gml:identifier>
+          <gml:name>Justiz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_24003">
+          <gml:description>Sonstige Anlage oder Einrichtung für Sicherheit und Ordnung, z. B. Polizei, Zoll, Feuerwehr, Zivilschutz, Bundeswehr, Landesverteidigung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:24003</gml:identifier>
+          <gml:name>SonstigeSicherheitOrdnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_2600">
+          <gml:description>Einrichtungen und Anlagen der Infrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:2600</gml:identifier>
+          <gml:name>Infrastruktur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_26000">
+          <gml:description>Einrichtung der Post.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:26000</gml:identifier>
+          <gml:name>Post</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_26001">
+          <gml:description>Sonstige Anlage oder Einrichtung der Infrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:26001</gml:identifier>
+          <gml:name>SonstigeInfrastruktur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zweckbestimmung_XP_ZweckbestimmungGemeinbedarf_9999">
+          <gml:description>Sonstige Einrichtungen und Anlagen, die keiner anderen Kategorie zuzuordnen sind.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_GemeinbedarfsFlaeche:zweckbestimmung:XP_ZweckbestimmungGemeinbedarf:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGemeinbedarf</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Festlegung der Zweckbestimmung.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestGemeinbedarf</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_GemeinbedarfsFlaeche_zugunstenVon">
+      <gml:description>Angabe des Begünstigten einer Ausweisung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_GemeinbedarfsFlaeche:attribute:zugunstenVon</gml:identifier>
+      <gml:name>xplan:zugunstenVon</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Flaechenschlussobjekt" />
+</TypeDefinition>

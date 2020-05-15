@@ -1,0 +1,250 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:25-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplanNSM_RP_Energieversorgung">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_Energieversorgung</gml:identifier>
+  <gml:name>xplanNSM:RP_Energieversorgung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_Energieversorgung:attribute:detailTyp</gml:identifier>
+      <gml:name>xplanNSM:detailTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:10000</gml:identifier>
+          <gml:name>Leitungstrasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:10001</gml:identifier>
+          <gml:name>Leitungstrasse_110KV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:10002</gml:identifier>
+          <gml:name>Leitungstrasse_220KV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:10003</gml:identifier>
+          <gml:name>Leitungstrasse_380KV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_10004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:10004</gml:identifier>
+          <gml:name>Kabeltrasse_Netzanbindung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_20001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:20001</gml:identifier>
+          <gml:name>Rohrfernleitung_Erdoel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_20002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:20002</gml:identifier>
+          <gml:name>Rohrfernleitung_Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_20003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:20003</gml:identifier>
+          <gml:name>Rohrfernleitung_Fernwaerme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_20004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:20004</gml:identifier>
+          <gml:name>Rohrfernleitung_Kraftstoff</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_20005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:20005</gml:identifier>
+          <gml:name>Uebergabeatation_Ferngas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30001</gml:identifier>
+          <gml:name>Kraftwerk_Kohle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30002</gml:identifier>
+          <gml:name>Kraftwerk_Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30003</gml:identifier>
+          <gml:name>Kraftwerk_Erdoel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30004</gml:identifier>
+          <gml:name>Kraftwerk_Wasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30005</gml:identifier>
+          <gml:name>Kraftwerk_Kernenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30006</gml:identifier>
+          <gml:name>Kraftwerk_Reststoffverwertung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30007">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30007</gml:identifier>
+          <gml:name>Grosskraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30008">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30008</gml:identifier>
+          <gml:name>Grosskraftwerk_Kohle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30009">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30009</gml:identifier>
+          <gml:name>Grosskraftwerk_Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30010">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30010</gml:identifier>
+          <gml:name>Grosskraftwerk_Erdoel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30011">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30011</gml:identifier>
+          <gml:name>Grosskraftwerk_Wasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30012">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30012</gml:identifier>
+          <gml:name>Grosskraftwerk_Kernenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30013">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30013</gml:identifier>
+          <gml:name>Grosskraftwerk_Reststoffverwertung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30014">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30014</gml:identifier>
+          <gml:name>Energiegewinnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30015">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30015</gml:identifier>
+          <gml:name>Energiegewinnung_Kohle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30016">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30016</gml:identifier>
+          <gml:name>Energiegewinnung_Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30017">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30017</gml:identifier>
+          <gml:name>Energiegewinnung_Erdoel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30018">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30018</gml:identifier>
+          <gml:name>Energiegewinnung_Wasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_30019">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:30019</gml:identifier>
+          <gml:name>Energiegewinnung_Kernenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_40001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:40001</gml:identifier>
+          <gml:name>SpeicherungPrimaerenergie_Erdoel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_40002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:40002</gml:identifier>
+          <gml:name>SpeicherungPrimaerenergie_Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_40003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:40003</gml:identifier>
+          <gml:name>VerstetigungSpeicherungRegenerativeEnergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_40004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:40004</gml:identifier>
+          <gml:name>Untergrundspeicher</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_99991">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:99991</gml:identifier>
+          <gml:name>Windenergienutzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_detailTyp_RP_NSM_EnergieversorgungTypen_99992">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:detailTyp:RP_NSM_EnergieversorgungTypen:99992</gml:identifier>
+          <gml:name>ErneuerbareEnergien</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NSM_EnergieversorgungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplanNSM_RP_Energieversorgung_status">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_Energieversorgung:attribute:status</gml:identifier>
+      <gml:name>xplanNSM:status</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_status_RP_NSM_EnergieversorgungStatus_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:status:RP_NSM_EnergieversorgungStatus:1000</gml:identifier>
+          <gml:name>Bestand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_Energieversorgung_status_RP_NSM_EnergieversorgungStatus_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_Energieversorgung:status:RP_NSM_EnergieversorgungStatus:2000</gml:identifier>
+          <gml:name>Geplant</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NSM_EnergieversorgungStatus</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification />
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Energieversorgung" />
+</TypeDefinition>

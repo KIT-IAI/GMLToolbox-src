@@ -1,0 +1,8 @@
+infraLocal;infra-local; A plan that covers only part of a municipality.;
+local;local;Plan at municipal level, corresponding to the lower level of administration equivalent to LAU2 as laid down in Annex III to Regulation (EC) No 1059/2003 of the European Parliament and of the Council (OJ L 154, 21.6.2003, p. 1.);
+supraLocal;supra-local;A plan that overlaps several municipalities (entirely or partially).;
+infraRegional;infra-regional;A plan that overlaps several infra-administrative units in one administrative region.;
+regional;regional;Plan at regional level (equivalent to NUTS2 of EUROSTAT nomenclature of statistical units as established in Regulation (EC) No 1059/2003).;
+supraRegional;supra-regional;A plan that overlaps several administrative regions.;
+national;national;Plan at Member State level.;
+other;other;Other level of spatial plan.;

@@ -1,0 +1,27 @@
+1_SatzungNachBauGB;Satzung nach BauGB;Satzung nach BauGB;
+1_1_BPlan;BPlan;Unspezifizierter Bebauungsplan;1_SatzungNachBauGB
+1_1_1_EinfacherBPlan;Einfacher BPlan;Einfacher BPlan, §30 Abs. 3 BauGB.;1_1_BPlan
+1_1_2_QualifizierterBPlan;Qualifizierter BPlan;Qualifizierter BPlan, §30 Abs. 1 BauGB.;1_1_BPlan
+1_2_VorhabenbezogenerBPlan;Vorhabenbezogener BPlan;Vorhabensbezogener Bebauungsplan;1_SatzungNachBauGB
+1_3_InnenbereichsSatzung;Innenbereichssatzung;Eine Innenbereichssatzung kann entweder eine Klarstellungssatzung, eine Entwicklungssatzung oder eine Ergänzungssatzung sein.;1_SatzungNachBauGB
+1_3_1_KlarstellungsSatzung;Klarstellungssatzung;Klarstellungssatzung nach  § 34 Abs.4 Nr.1 BauGB.;1_3_InnenbereichsSatzung
+1_3_2_EntwicklungsSatzung;Entwicklungssatzung;Entwicklungssatzung nach  § 34 Abs.4 Nr. 2 BauGB.;1_3_InnenbereichsSatzung
+1_3_3_ErgaenzungsSatzung;Ergaenzungssatzung;Ergänzungssatzung nach  § 34 Abs.4 Nr. 3 BauGB.;1_3_InnenbereichsSatzung
+1_4_AussenbereichsSatzung;Aussenbereichssatzung;Außenbereichssatzung nach § 35 Abs. 6 BauGB.;1_SatzungNachBauGB
+1_5_OertlicheBauvorschrift;Oertliche Bauvorschrift;Örtliche Bauvorschrift.;1_SatzungNachBauGB
+1_6_SonstigeSatzung;Sonstige Satzung;Sonstige Satzung;1_SatzungNachBauGB
+2_FPLan;Unspezifizierter Flächennutzungsplan;Unspezifizierter Flächennutzungsplan;
+2_1_FPlan;Flächennutzungsplan;Flächennutzungsplan nach §5 BauGB;2_FPLan
+2_2_GemeinsamerFPlan;Gemeinsamer Flächennutzungsplan;Gemeinsamer FPlan nach §204 BauGB;2_FPLan
+2_3_RegFPlan;Regionaler Flächennutzungsplan;Regionaler Flächennutzungsplan der gleichzeitig die Funktion eines Regionalplans und eines gemeinssamen Flächennutzungsplan nach § 204 BauGB erfüllt.;2_FPLan
+2_4_FPlanRegPlan;Flächennutzungsplan und Regionalplan;Flächennutzungsplan mit regionalplanerischen Festlegungen (nur in HH, HB, B).;2_FPLan
+2_5_SachlicherTeilplan;Sachlicher Teilflächennutzungsplan;Sachlicher Teilflächennutzungsplan nach §5 Abs. 2b BauGB.;2_FPLan
+2_5_SonstigerFPlan;Sonstiger Flächennutzungsplan;Sonstiger Flächennutzungsplan;2_FPLan
+3_Raumordnungsplan;Raumordnungsplan;Allgemeiner Raumordnungsplan;
+3_1_Regionalplan;Regionalplan;Regionalplan nach Bundesraumordnungsgesetz;3_Raumordnungsplan
+3_2_SachlicherTeilplan;SachlicherTeilplan;SachlicherTeilplan;3_Raumordnungsplan
+3_3_Braunkohlenplan;Braunkohlenplan;Braunkohlenplan;3_Raumordnungsplan
+3_4_LandesweiterRaumordnungsplan;Landesweiter Raumordnungsplan;Landesweiter Raumordnungsplan;3_Raumordnungsplan
+3_5_AWZPlan;AWZPlan;Plan des Bundes für den Gesamtraum und die ausschließliche Wirtschaftszone (AWZ).;3_Raumordnungsplan
+3_6_StandortkonzeptBund;StandortkonzeptBund;Raumordnungsplan für das Bundesgebiet mit übergreifenden Standortkonzepten für Seehäfen, Binnenhäfen sowie Flughäfen gem. §17 Abs. 2 ROG;3_Raumordnungsplan
+3_7_SonstigerRaumordnungsplan;Sonstiger Raumordnungsplan;Sonstiger Raumordnungsplan;3_Raumordnungsplan

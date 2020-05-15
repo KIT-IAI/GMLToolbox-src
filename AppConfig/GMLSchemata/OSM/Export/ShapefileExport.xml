@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SachdatenSchemata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../XSD/OSM_ShapefileExport.xsd">
+    <SachdatenSchema name="Test">
+        <NodeAttributes>
+            <attribute tagName="power" shapeAttributName="power"/>
+        </NodeAttributes>
+        
+        <WayAttributes>
+            <attribute tagName="power" shapeAttributName="power"/>
+        </WayAttributes>
+        
+        <AreaAttributes>
+            <attribute tagName="power" shapeAttributName="power"/>
+        </AreaAttributes>
+        
+        <RelationAttributes>
+            <attribute tagName="power" shapeAttributName="power"/>
+        </RelationAttributes>
+    </SachdatenSchema>
+    
+</SachdatenSchemata>
+

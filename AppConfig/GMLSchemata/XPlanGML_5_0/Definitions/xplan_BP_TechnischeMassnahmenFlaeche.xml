@@ -1,0 +1,49 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:12-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_TechnischeMassnahmenFlaeche">
+  <gml:description>Fläche für technische oder bauliche Maßnahmen nach § 9, Abs. 1, Nr. 23 BauGB.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_TechnischeMassnahmenFlaeche</gml:identifier>
+  <gml:name>xplan:BP_TechnischeMassnahmenFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_TechnischeMassnahmenFlaeche_zweckbestimmung">
+      <gml:description>Klassifikation der durchzuführenden Maßnahmen nach §9, Abs. 1, Nr. 23a BauGB.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_TechnischeMassnahmenFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_TechnischeMassnahmenFlaeche_zweckbestimmung_BP_ZweckbestimmungenTMF_1000">
+          <gml:description>Gebiete, in denen zum Schutz vor schädlichen Umwelteinwirkungen im Sinne des Bundes-Immissionsschutzgesetzes bestimmte Luft-verunreinigende Stoffe nicht oder nur beschränkt verwendet werden dürfen (§9, Abs. 1, Nr. 23a BauGB).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_TechnischeMassnahmenFlaeche:zweckbestimmung:BP_ZweckbestimmungenTMF:1000</gml:identifier>
+          <gml:name>Luftreinhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_TechnischeMassnahmenFlaeche_zweckbestimmung_BP_ZweckbestimmungenTMF_2000">
+          <gml:description>Gebiete in denen bei der Errichtung von Gebäuden bestimmte bauliche Maßnahmen für den Einsatz erneuerbarer Energien wie insbesondere Solarenergie getroffen werden müssen (§9, Abs. 1, Nr. 23b BauGB).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_TechnischeMassnahmenFlaeche:zweckbestimmung:BP_ZweckbestimmungenTMF:2000</gml:identifier>
+          <gml:name>NutzungErneurerbarerEnergien</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_TechnischeMassnahmenFlaeche_zweckbestimmung_BP_ZweckbestimmungenTMF_3000">
+          <gml:description>Gebiete, in denen bei der Errichtung von nach Art, Maß oder Nutzungsintensität zu bestimmenden Gebäuden oder sonstigen baulichen Anlagen in der Nachbarschaft von Betriebsbereichen nach § 3 Absatz 5a des Bundes-Immissionsschutzgesetzes bestimmte bauliche und sonstige technische Maßnahmen, die der Vermeidung oder Minderung der Folgen von Störfällen dienen, getroffen werden müssen (§9, Abs. 1, Nr. 23c BauGB).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_TechnischeMassnahmenFlaeche:zweckbestimmung:BP_ZweckbestimmungenTMF:3000</gml:identifier>
+          <gml:name>MinderungStoerfallfolgen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>BP_ZweckbestimmungenTMF</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_TechnischeMassnahmenFlaeche_technischeMassnahme">
+      <gml:description>Beschreibung der Maßnahme</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_TechnischeMassnahmenFlaeche:attribute:technischeMassnahme</gml:identifier>
+      <gml:name>xplan:technischeMassnahme</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Ueberlagerungsobjekt" />
+</TypeDefinition>

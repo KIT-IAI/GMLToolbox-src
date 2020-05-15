@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:00:38-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="xplan_FP_DetailZweckbestLandwirtschaftsFlaeche">
+  <description>Codeliste der detaillierten Zweckbestimmungen Landwirtschaftsflächen.</description>
+  <identifier codeSpace="urn:citgml">urn:citgml:def:codelist:xplan:FP_DetailZweckbestLandwirtschaftsFlaeche</identifier>
+  <name>xplan:FP_DetailZweckbestLandwirtschaftsFlaeche</name>
+</Dictionary>

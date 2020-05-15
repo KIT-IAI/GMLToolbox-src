@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) GML-Toolbox, Erstellungsdatum: 08/14/19-->
+<Dictionary   gml:id="BP_DetailZweckbestGemeinbedarf" xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <description>Codeliste für detailliertere Zweckbestimmungen einer Gemeinbedarfsfläche.</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:BP_DetailZweckbestGemeinbedarf</identifier>
+  <name>urn:xplan:def:codelist:xplan:BP_DetailZweckbestGemeinbedarf</name>
+</Dictionary  >

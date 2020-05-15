@@ -1,0 +1,17 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 26.06.2013 14:47:22-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_KomplexesPraesentationsobjekt">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_KomplexesPraesentationsobjekt</gml:identifier>
+  <gml:name>xplan:LP_KomplexesPraesentationsobjekt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_KomplexesPraesentationsobjekt_bestehtAus">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_KomplexesPraesentationsobjekt:association-role:bestehtAus</gml:identifier>
+      <gml:name>xplan:bestehtAus</gml:name>
+      <def:cardinality>1..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+</TypeDefinition>

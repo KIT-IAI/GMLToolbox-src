@@ -1,0 +1,74 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:27-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Sperrgebiet">
+  <gml:description>Sperrgebiet, Gelände oder Areal, das für die Zivilbevölkerung überhaupt nicht oder zeitweise nicht zugänglich ist.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Sperrgebiet</gml:identifier>
+  <gml:name>xplan:RP_Sperrgebiet</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Sperrgebiet_typ">
+      <gml:description>Klassifikation verschiedener Sperrgebiettypen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Sperrgebiet:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sperrgebiet_typ_RP_SperrgebietTypen_1000">
+          <gml:description>Verteidigung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sperrgebiet:typ:RP_SperrgebietTypen:1000</gml:identifier>
+          <gml:name>Verteidigung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sperrgebiet_typ_RP_SperrgebietTypen_2000">
+          <gml:description>Sondergebiet Bund.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sperrgebiet:typ:RP_SperrgebietTypen:2000</gml:identifier>
+          <gml:name>SondergebietBund</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sperrgebiet_typ_RP_SperrgebietTypen_3000">
+          <gml:description>Warngebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sperrgebiet:typ:RP_SperrgebietTypen:3000</gml:identifier>
+          <gml:name>Warngebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sperrgebiet_typ_RP_SperrgebietTypen_4000">
+          <gml:description>Militärische Einrichtung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sperrgebiet:typ:RP_SperrgebietTypen:4000</gml:identifier>
+          <gml:name>MilitaerischeEinrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sperrgebiet_typ_RP_SperrgebietTypen_4001">
+          <gml:description>Große militärische Anlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sperrgebiet:typ:RP_SperrgebietTypen:4001</gml:identifier>
+          <gml:name>GrosseMilitaerischeAnlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sperrgebiet_typ_RP_SperrgebietTypen_5000">
+          <gml:description>Militärische Liegenschaft.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sperrgebiet:typ:RP_SperrgebietTypen:5000</gml:identifier>
+          <gml:name>MilitaerischeLiegenschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sperrgebiet_typ_RP_SperrgebietTypen_6000">
+          <gml:description>Konversionsfläche.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sperrgebiet:typ:RP_SperrgebietTypen:6000</gml:identifier>
+          <gml:name>Konversionsflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Sperrgebiet_typ_RP_SperrgebietTypen_9999">
+          <gml:description>Sonstige Sperrgebiete.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Sperrgebiet:typ:RP_SperrgebietTypen:9999</gml:identifier>
+          <gml:name>SonstigesSperrgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_SperrgebietTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

@@ -1,0 +1,105 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:23-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion">
+  <gml:description>Zentraler Ort im Regionalplan RLP
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RLP_ZentralerOrtBesondFunktion</gml:identifier>
+  <gml:name>xplan:RP_RLP_ZentralerOrtBesondFunktion</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_netzTyp">
+      <gml:description>Unterscheidung nach "Grundnetz" und "Ergänzungsnetz". Anmerkung: Diese Unterscheidung wird im LEP IV nicht mehr vorgenommen.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RLP_ZentralerOrtBesondFunktion:attribute:netzTyp</gml:identifier>
+      <gml:name>xplan:netzTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_netzTyp_RP_RLP_SiedlungsNetzTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:netzTyp:RP_RLP_SiedlungsNetzTypen:1000</gml:identifier>
+          <gml:name>Grundnetz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_netzTyp_RP_RLP_SiedlungsNetzTypen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:netzTyp:RP_RLP_SiedlungsNetzTypen:2000</gml:identifier>
+          <gml:name>Ergaenzungsnetz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_RLP_SiedlungsNetzTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_gemeindeFunktion">
+      <gml:description>Besondere Gemeindefunktion.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RLP_ZentralerOrtBesondFunktion:attribute:gemeindeFunktion</gml:identifier>
+      <gml:name>xplan:gemeindeFunktion</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_gemeindeFunktion_RP_Gemeindefunktionen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:gemeindeFunktion:RP_Gemeindefunktionen:2000</gml:identifier>
+          <gml:name>Arbeiten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_gemeindeFunktion_RP_Gemeindefunktionen_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:gemeindeFunktion:RP_Gemeindefunktionen:3000</gml:identifier>
+          <gml:name>Landwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_gemeindeFunktion_RP_Gemeindefunktionen_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:gemeindeFunktion:RP_Gemeindefunktionen:4000</gml:identifier>
+          <gml:name>Einzelhandel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_gemeindeFunktion_RP_Gemeindefunktionen_5000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:gemeindeFunktion:RP_Gemeindefunktionen:5000</gml:identifier>
+          <gml:name>ErholungFremdenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_gemeindeFunktion_RP_Gemeindefunktionen_6000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:gemeindeFunktion:RP_Gemeindefunktionen:6000</gml:identifier>
+          <gml:name>Verteidigung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_gemeindeFunktion_RP_Gemeindefunktionen_9999">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:gemeindeFunktion:RP_Gemeindefunktionen:9999</gml:identifier>
+          <gml:name>SonstigeNutzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_gemeindeFunktion_RP_Gemeindefunktionen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:gemeindeFunktion:RP_Gemeindefunktionen:1000</gml:identifier>
+          <gml:name>Wohnen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_Gemeindefunktionen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_kooperation">
+      <gml:description>Charakterisierung eines zentralen Ortes als "Kooperierendes Zentrum" (neu im LEP 4).</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_RLP_ZentralerOrtBesondFunktion:attribute:kooperation</gml:identifier>
+      <gml:name>xplan:kooperation</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_kooperation_RP_RLP_KooperationsTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:kooperation:RP_RLP_KooperationsTypen:1000</gml:identifier>
+          <gml:name>FreiwilligeKooperation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_RLP_ZentralerOrtBesondFunktion_kooperation_RP_RLP_KooperationsTypen_2000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_RLP_ZentralerOrtBesondFunktion:kooperation:RP_RLP_KooperationsTypen:2000</gml:identifier>
+          <gml:name>VerpflichtendeKooperation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_RLP_KooperationsTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_ZentralerOrt" />
+</TypeDefinition>

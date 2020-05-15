@@ -1,0 +1,57 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:33-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_SpielSportanlage">
+  <gml:description>Darstellung von Flächen für Spiel- und Sportanlagen nach §5,  Abs. 2, Nr. 2 BauGB.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_SpielSportanlage</gml:identifier>
+  <gml:name>xplan:FP_SpielSportanlage</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_SpielSportanlage_zweckbestimmung">
+      <gml:description>Zweckbestimmung der Fläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_SpielSportanlage:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_SpielSportanlage_zweckbestimmung_XP_ZweckbestimmungSpielSportanlage_1000">
+          <gml:description>Sportanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_SpielSportanlage:zweckbestimmung:XP_ZweckbestimmungSpielSportanlage:1000</gml:identifier>
+          <gml:name>Sportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_SpielSportanlage_zweckbestimmung_XP_ZweckbestimmungSpielSportanlage_2000">
+          <gml:description>Spielanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_SpielSportanlage:zweckbestimmung:XP_ZweckbestimmungSpielSportanlage:2000</gml:identifier>
+          <gml:name>Spielanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_SpielSportanlage_zweckbestimmung_XP_ZweckbestimmungSpielSportanlage_3000">
+          <gml:description>Spiel- und/oder Sportanlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_SpielSportanlage:zweckbestimmung:XP_ZweckbestimmungSpielSportanlage:3000</gml:identifier>
+          <gml:name>SpielSportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_SpielSportanlage_zweckbestimmung_XP_ZweckbestimmungSpielSportanlage_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_SpielSportanlage:zweckbestimmung:XP_ZweckbestimmungSpielSportanlage:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungSpielSportanlage</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_SpielSportanlage_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Zweckbestimmung.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_SpielSportanlage:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestSpielSportanlage</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Geometrieobjekt" />
+</TypeDefinition>

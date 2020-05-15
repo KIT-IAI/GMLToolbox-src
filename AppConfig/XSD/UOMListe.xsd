@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="UOMList" >
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="date" type="xs:date" minOccurs="0"/>
+            <xs:element name="version" type="xs:string" minOccurs="0"></xs:element>
+            <xs:element name="UOM" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="altId" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                    <xs:attribute name="name" type="xs:ID" use="required"/>
+                    <xs:attribute name="id" type="xs:anyURI" use="required"/>
+                    <xs:attribute name="quantity" type="QuantityType" use="required"/>
+                    <xs:attribute name="sign" type="xs:string" use="required"/>
+                    <xs:attribute name="description" type="xs:string" use="optional"/>
+                    <xs:attribute name="factor" type="xs:double" use="optional" default="1.0"/>
+                    <xs:attribute name="offset" type="xs:double" use="optional" default="0.0"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>        
+    </xs:complexType>
+</xs:element>
+ 
+ <xs:simpleType name="QuantityType">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="ELECTRIC_CURRENT"/>
+   <xs:enumeration value="LUMINOUS_INTENSITY"/>
+   <xs:enumeration value="TEMPERATURE"/>
+   <xs:enumeration value="ELECTRIC_CAPACITY"/>
+   <xs:enumeration value="MASS"/>
+   <xs:enumeration value="INDUCTANCE"/>
+   <xs:enumeration value="FREQUENCY"/>
+   <xs:enumeration value="ENERGY"/>
+   <xs:enumeration value="LUMINOUS_FLUX"/>
+   <xs:enumeration value="ILLUMINANCE"/>
+   <xs:enumeration value="LENGTH"/>
+   <xs:enumeration value="AREA"/>
+   <xs:enumeration value="VOLUME"/>
+   <xs:enumeration value="SUBSTANCE_AMOUNT"/>
+   <xs:enumeration value="FORCE"/>
+   <xs:enumeration value="ELECTRIC_RESISTANCE"/>
+   <xs:enumeration value="PRESSURE"/>
+   <xs:enumeration value="ANGLE"/>
+   <xs:enumeration value="TIME"/>
+   <xs:enumeration value="ELECTRIC_CONDUCTANCE"/>
+   <xs:enumeration value="VOLTAGE"/>
+   <xs:enumeration value="POWER"/>
+   <xs:enumeration value="MAGNETIC_FLUX"/>
+   <xs:enumeration value="DENSITY"/>
+   <xs:enumeration value="SPEED"/>
+   <xs:enumeration value="THERMAL_CONDUCTIVITY"/>
+   <xs:enumeration value="PERMEABILITY"/>
+   <xs:enumeration value="SPECIFIC_HEAT_CAPACITY"/>
+   <xs:enumeration value="POWER_PER_AREA"/>
+   <xs:enumeration value="ENERGY_PER_AREA"/>
+   <xs:enumeration value="UVALUE"/>
+   <xs:enumeration value="THERMAL_RESISTANCE"/>
+   <xs:enumeration value="FLOW_RATE"/>
+   <xs:enumeration value="SCALE"/>
+   <xs:enumeration value="CLOUDINESS"/>
+   <xs:enumeration value="ELECTRIC_CONDUCTIVITY"/>
+   <xs:enumeration value="DIMENSIONLESS_NUMBER"/>
+   <xs:enumeration value="AIR_CHANGE_RATE"/>   
+  </xs:restriction>
+ </xs:simpleType>
+</xs:schema>

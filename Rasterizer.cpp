@@ -1,0 +1,8 @@
+#include "StdAfx.h"
+
+#include <string>
+#include <vector>
+#include <set>
+
+#include "Rasterizer.h"
+

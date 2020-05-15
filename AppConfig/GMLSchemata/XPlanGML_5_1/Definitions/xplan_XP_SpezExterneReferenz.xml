@@ -1,0 +1,172 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:15-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_SpezExterneReferenz">
+  <gml:description>Ergänzung des Datentyps XP_ExterneReferenz um ein Attribut zur semantischen Beschreibung des referierten Dokuments.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_SpezExterneReferenz</gml:identifier>
+  <gml:name>xplan:XP_SpezExterneReferenz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_SpezExterneReferenz_typ">
+      <gml:description>Typ / Inhalt des referierten Dokuments oder Rasterplans.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_SpezExterneReferenz:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1000">
+          <gml:description>Beschreibung eines Plans</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1000</gml:identifier>
+          <gml:name>Beschreibung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1010">
+          <gml:description>Begründung eines Plans</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1010</gml:identifier>
+          <gml:name>Begruendung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1020">
+          <gml:description>Plan-Legende</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1020</gml:identifier>
+          <gml:name>Legende</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1030">
+          <gml:description>Elektronische Version des rechtsverbindlichen Plans</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1030</gml:identifier>
+          <gml:name>Rechtsplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1040">
+          <gml:description>Elektronische Version der Plangrundlage, z.B. ein katasterplan</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1040</gml:identifier>
+          <gml:name>Plangrundlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1050">
+          <gml:description>Umweltbericht - Ergebnis der Umweltprügung bzgl. der Umweltbelange</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1050</gml:identifier>
+          <gml:name>Umweltbericht</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1060">
+          <gml:description>Satzung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1060</gml:identifier>
+          <gml:name>Satzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1065">
+          <gml:description>Elektronische Version des Verordnungstextes</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1065</gml:identifier>
+          <gml:name>Verordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1070">
+          <gml:description>Referenz auf eine Karte, die in Bezug zum Plan steht</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1070</gml:identifier>
+          <gml:name>Karte</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1080">
+          <gml:description>Erläuterungsbericht</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1080</gml:identifier>
+          <gml:name>Erlaeuterung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_1090">
+          <gml:description>Zusammenfassende Erklärung der in dem Verfahren berücksichtigten Umweltbelange gemäß §10 Absatz 4 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:1090</gml:identifier>
+          <gml:name>ZusammenfassendeErklaerung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2000">
+          <gml:description>Koordinaten-Liste</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2000</gml:identifier>
+          <gml:name>Koordinatenliste</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2100">
+          <gml:description>Grundstücksverzeichnis</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2100</gml:identifier>
+          <gml:name>Grundstuecksverzeichnis</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2200">
+          <gml:description>Pflanzliste</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2200</gml:identifier>
+          <gml:name>Pflanzliste</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2300">
+          <gml:description>Grünordnungsplan</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2300</gml:identifier>
+          <gml:name>Gruenordnungsplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2400">
+          <gml:description>Erschließungsvertrag</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2400</gml:identifier>
+          <gml:name>Erschliessungsvertrag</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2500">
+          <gml:description>Durchführungsvertrag</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2500</gml:identifier>
+          <gml:name>Durchfuehrungsvertrag</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2600">
+          <gml:description>Elektronische Version eines städtebaulichen Vertrages</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2600</gml:identifier>
+          <gml:name>StaedtebaulicherVertrag</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2700">
+          <gml:description>Elentronisches Dokument mit umweltbezogenen Stellungnahmen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2700</gml:identifier>
+          <gml:name>UmweltbezogeneStellungnahmen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_2800">
+          <gml:description>Dokument mit den Beschluss des Gemeinderats zur öffentlichen Auslegung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:2800</gml:identifier>
+          <gml:name>Beschluss</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_9998">
+          <gml:description>Sonstiges rechtsverbindliches Dokument</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:9998</gml:identifier>
+          <gml:name>Rechtsverbindlich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_SpezExterneReferenz_typ_XP_ExterneReferenzTyp_9999">
+          <gml:description>Sonstiges nicht-rechtsverbindliches Dokument</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_SpezExterneReferenz:typ:XP_ExterneReferenzTyp:9999</gml:identifier>
+          <gml:name>Informell</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>XP_ExterneReferenzTyp</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_ExterneReferenz" />
+</TypeDefinition>

@@ -1,0 +1,127 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:33-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Denkmalschutzrecht">
+  <gml:description>Festlegung nach Denkmalschutzrecht
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Denkmalschutzrecht</gml:identifier>
+  <gml:name>xplan:SO_Denkmalschutzrecht</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung">
+      <gml:description>Rechtliche Klassifizierung der Festlegung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Denkmalschutzrecht:attribute:artDerFestlegung</gml:identifier>
+      <gml:name>xplan:artDerFestlegung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung_SO_KlassifizNachDenkmalschutzrecht_1000">
+          <gml:description>Denkmalschutz Ensemble</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Denkmalschutzrecht:artDerFestlegung:SO_KlassifizNachDenkmalschutzrecht:1000</gml:identifier>
+          <gml:name>DenkmalschutzEnsemble</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung_SO_KlassifizNachDenkmalschutzrecht_1100">
+          <gml:description>Denkmalschutz Einzelanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Denkmalschutzrecht:artDerFestlegung:SO_KlassifizNachDenkmalschutzrecht:1100</gml:identifier>
+          <gml:name>DenkmalschutzEinzelanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung_SO_KlassifizNachDenkmalschutzrecht_1200">
+          <gml:description>Grabungsschutzgebiet</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Denkmalschutzrecht:artDerFestlegung:SO_KlassifizNachDenkmalschutzrecht:1200</gml:identifier>
+          <gml:name>Grabungsschutzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung_SO_KlassifizNachDenkmalschutzrecht_1300">
+          <gml:description>Engere Pufferzone um eine Welterbestätte</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Denkmalschutzrecht:artDerFestlegung:SO_KlassifizNachDenkmalschutzrecht:1300</gml:identifier>
+          <gml:name>PufferzoneWeltkulturerbeEnger</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung_SO_KlassifizNachDenkmalschutzrecht_1400">
+          <gml:description>Weitere Pufferzone um eine Welterbestätte</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Denkmalschutzrecht:artDerFestlegung:SO_KlassifizNachDenkmalschutzrecht:1400</gml:identifier>
+          <gml:name>PufferzoneWeltkulturerbeWeiter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung_SO_KlassifizNachDenkmalschutzrecht_1500">
+          <gml:description>Archäologisches Denkmal</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Denkmalschutzrecht:artDerFestlegung:SO_KlassifizNachDenkmalschutzrecht:1500</gml:identifier>
+          <gml:name>ArcheologischesDenkmal</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung_SO_KlassifizNachDenkmalschutzrecht_1600">
+          <gml:description>Bodendenkmal</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Denkmalschutzrecht:artDerFestlegung:SO_KlassifizNachDenkmalschutzrecht:1600</gml:identifier>
+          <gml:name>Bodendenkmal</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Denkmalschutzrecht_artDerFestlegung_SO_KlassifizNachDenkmalschutzrecht_9999">
+          <gml:description>Sonstige Klassifizierung nach Denkmalschutzrecht.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Denkmalschutzrecht:artDerFestlegung:SO_KlassifizNachDenkmalschutzrecht:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_KlassifizNachDenkmalschutzrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Denkmalschutzrecht_detailArtDerFestlegung">
+      <gml:description>Über eine Codeliste definierte detailliertere rechtliche Klassifizierung der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Denkmalschutzrecht:attribute:detailArtDerFestlegung</gml:identifier>
+      <gml:name>xplan:detailArtDerFestlegung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_DetailKlassifizNachDenkmalschutzrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Denkmalschutzrecht_weltkulturerbe">
+      <gml:description>Gibt an, ob das geschützte Objekt zum Weltkulturerbe gehört.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Denkmalschutzrecht:attribute:weltkulturerbe</gml:identifier>
+      <gml:name>xplan:weltkulturerbe</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Denkmalschutzrecht_weltkulturerbe_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::SO_Denkmalschutzrecht:weltkulturerbe:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Denkmalschutzrecht_weltkulturerbe_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::SO_Denkmalschutzrecht:weltkulturerbe:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Denkmalschutzrecht_name">
+      <gml:description>Informelle Bezeichnung der Festlegung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Denkmalschutzrecht:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Denkmalschutzrecht_nummer">
+      <gml:description>Amtliche Bezeichnung / Kennziffer der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Denkmalschutzrecht:attribute:nummer</gml:identifier>
+      <gml:name>xplan:nummer</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Geometrieobjekt" />
+</TypeDefinition>

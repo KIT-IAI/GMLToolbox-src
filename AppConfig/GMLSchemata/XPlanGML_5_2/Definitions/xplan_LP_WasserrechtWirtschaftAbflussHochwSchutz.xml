@@ -1,0 +1,50 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:31-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_WasserrechtWirtschaftAbflussHochwSchutz">
+  <gml:description>Gebiete und Gebietsteile mit rechtlichen Bindungen nach anderen Fachgesetzen (soweit sie für den Schutz, die Pflege und die Entwicklung von Natur und Landschaft bedeutsam sind). Hier: Flächen für die Wasserwirtschaft, den Hochwasserschutz und die Regelung des Wasserabflusses nach dem Wasserhaushaltsgesetz.
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_WasserrechtWirtschaftAbflussHochwSchutz</gml:identifier>
+  <gml:name>xplan:LP_WasserrechtWirtschaftAbflussHochwSchutz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_WasserrechtWirtschaftAbflussHochwSchutz_typ">
+      <gml:description>Typ des Schutzobjektes.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_WasserrechtWirtschaftAbflussHochwSchutz:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_WasserrechtWirtschaftAbflussHochwSchutz_typ_LP_WasserrechtWirtschaftAbflussHochwSchutzTypen_1000">
+          <gml:description>Hochwasser-Rückhaltebecken</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_WasserrechtWirtschaftAbflussHochwSchutz:typ:LP_WasserrechtWirtschaftAbflussHochwSchutzTypen:1000</gml:identifier>
+          <gml:name>Hochwasserrueckhaltebecken</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_WasserrechtWirtschaftAbflussHochwSchutz_typ_LP_WasserrechtWirtschaftAbflussHochwSchutzTypen_2000">
+          <gml:description>Überschwemmungsgebiet</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_WasserrechtWirtschaftAbflussHochwSchutz:typ:LP_WasserrechtWirtschaftAbflussHochwSchutzTypen:2000</gml:identifier>
+          <gml:name>UeberschwemmGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_WasserrechtWirtschaftAbflussHochwSchutz_typ_LP_WasserrechtWirtschaftAbflussHochwSchutzTypen_9999">
+          <gml:description>Sonstiger Typ.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:LP_WasserrechtWirtschaftAbflussHochwSchutz:typ:LP_WasserrechtWirtschaftAbflussHochwSchutzTypen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_WasserrechtWirtschaftAbflussHochwSchutzTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_WasserrechtWirtschaftAbflussHochwSchutz_detailTyp">
+      <gml:description>Über eine Codeliste definierter detaillierterer Typ des Schutzobjektes.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:LP_WasserrechtWirtschaftAbflussHochwSchutz:attribute:detailTyp</gml:identifier>
+      <gml:name>xplan:detailTyp</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_WasserrechtWirtschaftAbflussHochwSchutzDetailTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_Geometrieobjekt" />
+</TypeDefinition>

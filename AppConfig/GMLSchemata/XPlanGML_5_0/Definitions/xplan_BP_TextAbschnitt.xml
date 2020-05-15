@@ -1,0 +1,55 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:04-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_TextAbschnitt">
+  <gml:description>Texlich formulierter Inhalt eines Bebauungsplans, der einen anderen Rechtscharakter als das zugrunde liegende Fachobjekt hat (Attribut &lt;i&gt;rechtscharakter &lt;/i&gt;des Fachobjektes), oder dem Plan als Ganzes zugeordnet ist.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_TextAbschnitt</gml:identifier>
+  <gml:name>xplan:BP_TextAbschnitt</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_TextAbschnitt_rechtscharakter">
+      <gml:description>Rechtscharakter des textlich formulierten Planinhalts.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_TextAbschnitt:attribute:rechtscharakter</gml:identifier>
+      <gml:name>xplan:rechtscharakter</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_TextAbschnitt_rechtscharakter_BP_Rechtscharakter_1000">
+          <gml:description>Festsetzung in Bebauungsplan.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_TextAbschnitt:rechtscharakter:BP_Rechtscharakter:1000</gml:identifier>
+          <gml:name>Festsetzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_TextAbschnitt_rechtscharakter_BP_Rechtscharakter_2000">
+          <gml:description>Nachrichtliche Übernahme aus anderen Planwerken.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_TextAbschnitt:rechtscharakter:BP_Rechtscharakter:2000</gml:identifier>
+          <gml:name>NachrichtlicheUebernahme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_TextAbschnitt_rechtscharakter_BP_Rechtscharakter_3000">
+          <gml:description>Hinweis nach BauGB</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_TextAbschnitt:rechtscharakter:BP_Rechtscharakter:3000</gml:identifier>
+          <gml:name>Hinweis</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_TextAbschnitt_rechtscharakter_BP_Rechtscharakter_4000">
+          <gml:description>Vermerk nach § 5 BauGB</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_TextAbschnitt:rechtscharakter:BP_Rechtscharakter:4000</gml:identifier>
+          <gml:name>Vermerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_TextAbschnitt_rechtscharakter_BP_Rechtscharakter_5000">
+          <gml:description>Kennzeichnung nach §5 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_TextAbschnitt:rechtscharakter:BP_Rechtscharakter:5000</gml:identifier>
+          <gml:name>Kennzeichnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeName>BP_Rechtscharakter</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_TextAbschnitt" />
+</TypeDefinition>

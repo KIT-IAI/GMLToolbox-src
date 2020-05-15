@@ -1,0 +1,97 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:34-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Gewaesser">
+  <gml:description>Abbildung eines bestehenden Gewässers</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gewaesser</gml:identifier>
+  <gml:name>xplan:SO_Gewaesser</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gewaesser_artDerFestlegung">
+      <gml:description>Klassifizierung des Gewässers</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gewaesser:attribute:artDerFestlegung</gml:identifier>
+      <gml:name>xplan:artDerFestlegung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gewaesser_artDerFestlegung_SO_KlassifizGewaesser_1000">
+          <gml:description>Allgemeines, bestehendes Gewässer</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gewaesser:artDerFestlegung:SO_KlassifizGewaesser:1000</gml:identifier>
+          <gml:name>Gewaesser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gewaesser_artDerFestlegung_SO_KlassifizGewaesser_10000">
+          <gml:description>Bestehendes Gewässer 1. Ordnung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gewaesser:artDerFestlegung:SO_KlassifizGewaesser:10000</gml:identifier>
+          <gml:name>Gewaesser1Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gewaesser_artDerFestlegung_SO_KlassifizGewaesser_10001">
+          <gml:description>Bestehendes Gewässer 2. Ordnung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gewaesser:artDerFestlegung:SO_KlassifizGewaesser:10001</gml:identifier>
+          <gml:name>Gewaesser2Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gewaesser_artDerFestlegung_SO_KlassifizGewaesser_10002">
+          <gml:description>Bestehendes Gewässer 3. Ordnung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gewaesser:artDerFestlegung:SO_KlassifizGewaesser:10002</gml:identifier>
+          <gml:name>Gewaesser3Odrnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gewaesser_artDerFestlegung_SO_KlassifizGewaesser_10003">
+          <gml:description>Stehendes Gewässer</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gewaesser:artDerFestlegung:SO_KlassifizGewaesser:10003</gml:identifier>
+          <gml:name>StehendesGewaesser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gewaesser_artDerFestlegung_SO_KlassifizGewaesser_2000">
+          <gml:description>Hafen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gewaesser:artDerFestlegung:SO_KlassifizGewaesser:2000</gml:identifier>
+          <gml:name>Hafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gewaesser_artDerFestlegung_SO_KlassifizGewaesser_9999">
+          <gml:description>Sonstiges bestehendes Gewässer</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gewaesser:artDerFestlegung:SO_KlassifizGewaesser:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_KlassifizGewaesser</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gewaesser_detailArtDerFestlegung">
+      <gml:description>Über eine Codeliste definierte detailliertere Klassifizierung des Gewässers</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gewaesser:attribute:detailArtDerFestlegung</gml:identifier>
+      <gml:name>xplan:detailArtDerFestlegung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_DetailKlassifizGewaesser</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gewaesser_name">
+      <gml:description>Informelle Bezeichnung dees Gewässers</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gewaesser:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gewaesser_nummer">
+      <gml:description>Amtliche Bezeichnung / Kennziffer des Gewässers.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gewaesser:attribute:nummer</gml:identifier>
+      <gml:name>xplan:nummer</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Geometrieobjekt" />
+</TypeDefinition>

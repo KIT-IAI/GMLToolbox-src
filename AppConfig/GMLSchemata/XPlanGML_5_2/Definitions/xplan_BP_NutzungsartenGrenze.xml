@@ -1,0 +1,49 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:13-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_NutzungsartenGrenze">
+  <gml:description>Abgrenzung unterschiedlicher Nutzung, z.B. von Baugebieten wenn diese nach PlanzVO in der gleichen Farbe dargestellt werden, oder Abgrenzung unterschiedlicher Nutzungsmaße innerhalb eines Baugebiets ("Knödellinie", § 1 Abs. 4, § 16 Abs. 5 BauNVO).</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NutzungsartenGrenze</gml:identifier>
+  <gml:name>xplan:BP_NutzungsartenGrenze</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_NutzungsartenGrenze_typ">
+      <gml:description>Typ der Abgrenzung. Wenn das Attribut nicht belegt ist, ist die Abgrenzung eine Nutzungsarten-Grenze (Schlüsselnummer 1000).</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NutzungsartenGrenze:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NutzungsartenGrenze_typ_BP_AbgrenzungenTypen_1000">
+          <gml:description>Nutzungsarten-Grenze zur Abgrenzung von Baugebieten mit unterschiedlicher Art oder unterschiedlichem Maß der baulichen Nutzung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NutzungsartenGrenze:typ:BP_AbgrenzungenTypen:1000</gml:identifier>
+          <gml:name>Nutzungsartengrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NutzungsartenGrenze_typ_BP_AbgrenzungenTypen_2000">
+          <gml:description>Abgrenzung von Bereichen mit unterschiedlichen Festsetzungen zur Gebäudehöhe und/oder Zahl der Vollgeschosse.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NutzungsartenGrenze:typ:BP_AbgrenzungenTypen:2000</gml:identifier>
+          <gml:name>UnterschiedlicheHoehen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_NutzungsartenGrenze_typ_BP_AbgrenzungenTypen_9999">
+          <gml:description>Sonstige Abgrenzung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_NutzungsartenGrenze:typ:BP_AbgrenzungenTypen:9999</gml:identifier>
+          <gml:name>SonstigeAbgrenzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_AbgrenzungenTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_NutzungsartenGrenze_detailTyp">
+      <gml:description>Detaillierter Typ der Abgrenzung, wenn das Attribut &lt;i&gt;typ &lt;/i&gt;den Wert &lt;i&gt;9999 &lt;/i&gt;(Sonstige Abgrenzung) hat.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_NutzungsartenGrenze:attribute:detailTyp</gml:identifier>
+      <gml:name>xplan:detailTyp</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_DetailAbgrenzungenTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Linienobjekt" />
+</TypeDefinition>

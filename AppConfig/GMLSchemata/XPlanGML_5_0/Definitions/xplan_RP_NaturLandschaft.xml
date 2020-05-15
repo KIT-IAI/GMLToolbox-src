@@ -1,0 +1,186 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:20-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_NaturLandschaft">
+  <gml:description>Naturlandschaften sind von umitellbaren menschlichen Aktivitäten weitestgehend unbeeinflusst gebliebene Landschaft.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NaturLandschaft</gml:identifier>
+  <gml:name>xplan:RP_NaturLandschaft</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_NaturLandschaft_typ">
+      <gml:description>Klassifikation von Naturschutz, Landschaftsschutz und Naturlandschafttypen.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_NaturLandschaft:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1000">
+          <gml:description>NaturLandschaft.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1000</gml:identifier>
+          <gml:name>NaturLandschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1100">
+          <gml:description>Naturschutz und Landschaftspflege.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1100</gml:identifier>
+          <gml:name>NaturschutzLandschaftspflege</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1101">
+          <gml:description>Naturschutz und Landschaftspflege auf Gewässern.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1101</gml:identifier>
+          <gml:name>NaturschutzLandschaftspflegeAufGewaessern</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1200">
+          <gml:description>Flurdurchgrünung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1200</gml:identifier>
+          <gml:name>Flurdurchgruenung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1300">
+          <gml:description>Unzerschnittene Räume.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1300</gml:identifier>
+          <gml:name>UnzerschnitteneRaeume</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1301">
+          <gml:description>Unzerschnittene verkehrsarme Räume.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1301</gml:identifier>
+          <gml:name>UnzerschnitteneVerkehrsarmeRaeume</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1400">
+          <gml:description>Feuchtgebiet.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1400</gml:identifier>
+          <gml:name>Feuchtgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1500">
+          <gml:description>Ökologisches Verbundssystem.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1500</gml:identifier>
+          <gml:name>OekologischesVerbundssystem</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1501">
+          <gml:description>Ökologischer Raum.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1501</gml:identifier>
+          <gml:name>OekologischerRaum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1600">
+          <gml:description>Verbesserung der Landschaftsstruktur und des Naturhaushalts.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1600</gml:identifier>
+          <gml:name>VerbesserungLandschaftsstrukturNaturhaushalt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1700">
+          <gml:description>Biotop.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1700</gml:identifier>
+          <gml:name>Biotop</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1701">
+          <gml:description>Biotopverbund.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1701</gml:identifier>
+          <gml:name>Biotopverbund</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1702">
+          <gml:description>Biotopverbundsachse.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1702</gml:identifier>
+          <gml:name>Biotopverbundachse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1703">
+          <gml:description>Arten- und/oder Biotopschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1703</gml:identifier>
+          <gml:name>ArtenBiotopschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1704">
+          <gml:description>Regionalpark.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1704</gml:identifier>
+          <gml:name>Regionalpark</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1800">
+          <gml:description>Kompensation für Entwicklung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1800</gml:identifier>
+          <gml:name>KompensationEntwicklung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_1900">
+          <gml:description>Grünlandbewirtschaftung, -pflege und -entwicklung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:1900</gml:identifier>
+          <gml:name>GruenlandBewirtschaftungPflegeEntwicklung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_2000">
+          <gml:description>Landschaftsstruktur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:2000</gml:identifier>
+          <gml:name>Landschaftsstruktur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_2100">
+          <gml:description>Landschaftsgebiet für Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:2100</gml:identifier>
+          <gml:name>LandschaftErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_2200">
+          <gml:description>Landschaftsprägend.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:2200</gml:identifier>
+          <gml:name>Landschaftspraegend</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_2300">
+          <gml:description>Schutz der Natur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:2300</gml:identifier>
+          <gml:name>SchutzderNatur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_2400">
+          <gml:description>Schutz des Landschaftsbildes.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:2400</gml:identifier>
+          <gml:name>SchutzdesLandschaftsbildes</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_2500">
+          <gml:description>Alpenpark.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:2500</gml:identifier>
+          <gml:name>Alpenpark</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_NaturLandschaft_typ_RP_NaturLandschaftTypen_9999">
+          <gml:description>Sonstiger NaturLandschaftsschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_NaturLandschaft:typ:RP_NaturLandschaftTypen:9999</gml:identifier>
+          <gml:name>SonstigerNaturLandschaftSchutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_NaturLandschaftTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Freiraum" />
+</TypeDefinition>

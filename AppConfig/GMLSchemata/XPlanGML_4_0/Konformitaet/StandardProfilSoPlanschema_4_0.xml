@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd" name="StandardProfilSoPlanSchema_4_0">
+    
+<!--GlobalRule globalRuleId="TestRueckwaertsReferenzenSOObjekt" globalRuleErrorId="5.1.3.3"/-->
+
+    <!-- SO_Plan -->
+    <Rule class="SO_Plan" id="6.1.1.1">
+      <Required>            
+          <RelationFilter relationName="bereich" minOccurs="0" maxOccurs="unbound">
+              <GmlType>SO_BereichType</GmlType>
+          </RelationFilter>
+      </Required>
+    </Rule>
+
+    <!-- SO_Bereich  --> 
+    <Rule class="SO_Bereich" id="6.1.2.3">
+        <Required>
+            <RelationFilter relationName="gehoertZuPlan" minOccurs="1" maxOccurs="1" inverseRelationName="xplan:bereich">
+                <GmlType>SO_PlanType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="SO_Bereich" id="6.1.2.1">
+        <Required>
+            <RelationFilter relationName="inhaltSoPlan" minOccurs="0" maxOccurs="unbound">
+                <GmlSuperType>SO_ObjektType</GmlSuperType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="SO_Bereich" id="6.1.2.2">
+        <Required>
+            <RelationFilter relationName="rasterAenderung" minOccurs="0" maxOccurs="unbound">
+                <GmlType>SO_RasterplanAenderungType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>    
+    
+    <!-- SO_Objekt -->
+    <Rule superclassType="SO_ObjektType" id="6.1.3.2">
+        <Required>
+            <GroupFilter combination="XOR">
+                <RelationName>gehoertNachrichtlichZuBereich</RelationName>
+                <RelationName>gehoertZuSO_Bereich</RelationName>
+            </GroupFilter>
+        </Required>
+    </Rule>
+    
+    <!--  SO_FlaechenobjektType -->
+    <Rule superclassType="SO_FlaechenobjektType">
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="SO_FlaechenobjektType" id="6.1.4.2">
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="SO_FlaechenobjektType" id="6.1.4.1">
+        <If>
+            <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">              
+                <AttributeValue op="NOT_EQ">0</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+                <AttributeValue op="EQ">false</AttributeValue>
+            </AttributeFilter>
+        </Required>       
+    </Rule>   
+    
+    <!-- SO_Geometrieobjekt -->
+    <Rule superclassType="SO_Geometrieobjekt" id="6.1.5.2">
+        <If>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="SO_Geometrieobjekt" id="6.1.5.1">
+        <If>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+            <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">
+                <AttributeValue op="NOT_EQ">0</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+                <AttributeValue>false</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <!--  SO_Linienobjekt -->
+    <Rule superclassType="SO_LinienobjektType" id="5.1.8.1">
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+        </Required>
+    </Rule>
+    
+    <!--  SO_PunktobjektType -->
+    <Rule superclassType="SO_PunktobjektType" id="5.1.9.1">
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+        </Required>
+    </Rule>   
+    
+    <!-- SO_Bodenschutzrecht -->
+    <Rule class="SO_Bodenschutzrecht" id="6.2.1.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- SO_Denkmalschutzrecht -->
+    <Rule class="SO_Denkmalschutzrecht" id="6.2.2.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- SO_Forstrecht -->
+    <Rule class="SO_Forstrecht" id="6.2.3.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- SO_Luftverkehrsrecht -->
+    <Rule class="SO_Forstrecht" id="6.2.4.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- SO_Schienenverkehrsrecht -->
+    <Rule class="SO_Schienenverkehrsrecht" id="6.2.5.1">
+        <If>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereArtDerFestlegung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="SO_Schienenverkehrsrecht" id="6.2.5.1">
+        <If>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereArtDerFestlegung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+                <AttributeValue>12005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="SO_Schienenverkehrsrecht" id="6.2.5.1">
+        <If>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereArtDerFestlegung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="SO_Schienenverkehrsrecht" id="6.2.5.1">
+        <If>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereArtDerFestlegung" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="SO_Schienenverkehrsrecht" id="6.2.5.2">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>artDerFestlegung</AttributeName>
+                <AttributeName>besondereArtDerFestlegung</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>
+    
+    <!-- SO_SonstigesRecht -->
+    <Rule class="SO_SonstigesRecht" id="6.2.6.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+ 
+    <!-- SO_Strassenverkehrsrecht -->
+    <Rule class="SO_Strassenverkehrsrecht" id="6.2.7.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- SO_Wasserrecht -->
+    <Rule class="SO_Wasserrecht" id="6.2.8.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+     
+    <!-- SO_SchutzgebietNaturschutzrecht -->
+    <Rule class="SO_SchutzgebietNaturschutzrecht" id="6.3.1.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- SO_SchutzgebietWasserrecht -->
+    <Rule class="SO_SchutzgebietWasserrecht" id="6.3.2.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+  
+    <!-- SO_SchutzgebietSonstigesRecht -->
+    <Rule class="SO_SchutzgebietSonstigesRecht" id="6.3.3.1">
+        <If>
+            <AttributeFilter attributeName="detailArtDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="artDerFestlegung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- SO_Gebiet -->
+    <Rule class="SO_Gebiet" id="6.4.1.1">
+        <If>
+            <AttributeFilter attributeName="sonstGebietsArt" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="gebietsArt" minOccurs="0" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <!-- SO_Grenze -->
+    <Rule class="SO_Grenze" id="6.5.1.1">
+        <If>
+            <AttributeFilter attributeName="sonstTyp" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="typ" minOccurs="0" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+
+</Profil>

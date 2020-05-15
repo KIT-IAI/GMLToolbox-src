@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd" name="StandardProfilCityGML_2_0">
+    
+    <SrsName>EPSG:4149</SrsName>
+    <SrsName>CH1903</SrsName>
+    
+    <SrsName>EPSG:31466</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK2</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK2*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5676</SrsName>
+    
+    <SrsName>EPSG:31467</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK3</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK3*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5677</SrsName>
+    
+    <SrsName>EPSG:31468</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK4</SrsName>
+    <SrsName>urn:adv:crs:DE_DHDN_3GK4*DE_DHHN92_NH</SrsName>
+    <SrsName>EPSG:5678</SrsName>
+    
+    <SrsName>EPSG:25828</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM28</SrsName>
+    
+    <SrsName>EPSG:25829</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM29</SrsName>
+    
+    <SrsName>EPSG:25830</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM30</SrsName>
+    
+    <SrsName>EPSG:25831</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM31</SrsName>
+    <SrsName>EPSG:5554</SrsName>
+    
+    <SrsName>EPSG:25832</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM32</SrsName>
+    <SrsName>EPSG:5555</SrsName>
+    
+    <SrsName>EPSG:25833</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM33</SrsName>
+    <SrsName>EPSG:5556</SrsName>
+    
+    <SrsName>EPSG:25834</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM34</SrsName>
+    
+    <SrsName>EPSG:25835</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM35</SrsName>
+    
+    <SrsName>EPSG:25836</SrsName>
+    <SrsName>urn:adv:crs:ETRS89_UTM36</SrsName>
+    
+    <SrsName>EPSG:7415</SrsName>
+    <SrsName>EPSG:28992</SrsName>
+    
+    <SrsName>EPSG:325833</SrsName>
+    
+    <UomLength>m</UomLength>
+    <UomLength>urn:adv:uom:m</UomLength>
+    
+    <UomArea>m2</UomArea>
+    <UomArea>urn:adv:uom:m2</UomArea>
+    
+    <UomVolume>m3</UomVolume>
+    <UomVolume>urn:adv:uom:m3</UomVolume>
+    
+    <UomAngle>grad</UomAngle>
+    <UomAngle>urn:adv:uom:grad</UomAngle>    
+   
+   <!-- Core Modul -->
+   
+     <!-- ExternalReference -->
+   <Rule class="core:externalReference" id="CR-Core-002">
+      <If>
+         <AttributeFilter attributeName="core:informationSystem" minOccurs="0" maxOccurs="0"/>
+      </If>
+      <Required>
+         <RelationFilter relationName="core:externalObject" attributNameInRelatedObject="core:uri" minOccurs="1" maxOccurs="1"/>
+      </Required>
+   </Rule>  
+   
+   <!-- Implicit Geometry -->
+   <Rule class="core:ImplicitGeometry" id="CR-Core-008">
+      <If>
+         <AttributeFilter attributeName="core:libraryObject" minOccurs="1" maxOccurs="1"/>
+      </If>
+      <Required>
+         <AttributeFilter attributeName="core:mimeType" minOccurs="1" maxOccurs="1"/>
+      </Required>
+   </Rule>
+   
+   <Rule class="bldg:BuildingInstallation" id="CR-Core-009">
+      <Required combination="AND">
+         <RelationFilter relationName="bldg:lod2ImplicitRepresentation" minOccurs="0" maxOccurs="1">
+            <GmlType>core:ImplicitGeometryType</GmlType>
+         </RelationFilter>
+         <RelationFilter relationName="bldg:lod3ImplicitRepresentation" minOccurs="0" maxOccurs="1">
+            <GmlType>core:ImplicitGeometryType</GmlType>
+         </RelationFilter>
+         <RelationFilter relationName="bldg:lod4ImplicitRepresentation" minOccurs="0" maxOccurs="1">
+            <GmlType>core:ImplicitGeometryType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   
+   
+   <Rule class="bldg:IntBuildingInstallation" id="CR-Core-009">
+      <Required>         
+         <RelationFilter relationName="bldg:lod4ImplicitRepresentation" minOccurs="0" maxOccurs="1">
+            <GmlType>core:ImplicitGeometryType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   <Rule superclassType="bldg:AbstractOpeningType" id="CR-Core-009">
+      <Required combination="AND">    
+         <RelationFilter relationName="bldg:lod3ImplicitRepresentation" minOccurs="0" maxOccurs="1">
+            <GmlType>core:ImplicitGeometryType</GmlType>
+         </RelationFilter>
+         <RelationFilter relationName="bldg:lod4ImplicitRepresentation" minOccurs="0" maxOccurs="1">
+            <GmlType>core:ImplicitGeometryType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   <!-- Door -->
+   <Rule  class="bldg:Door" id="CR_Core-006">
+      <description>The type AddressPropertyType may contain an Address element inline or an XLink reference to a re-mote Address element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the corresponding element of type AddressPropertyType may only point to a remote Address element (where remote Address elements are located in another document or elsewhere in the same document). </description>
+      <Required>
+         <RelationFilter relationName="bldg:address" minOccurs="0" maxOccurs="unbound">
+            <GmlType>core:AddressTypeType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>     
+   
+   <!-- _Opening -->
+   <Rule class="bldg:BuildingFurniture" id="CR-Core-009">
+      <Required>               
+         <RelationFilter relationName="bldg:lod4ImplicitRepresentation" minOccurs="0" maxOccurs="1">
+            <GmlType>core:ImplicitGeometryType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   <!-- _AbstractBuilding  -->
+   <Rule superclassType="bldg:AbstractBuildingType" id="CR_Core-006">
+      <description>The type AddressPropertyType may contain an Address element inline or an XLink reference to a re-mote Address element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the corresponding element of type AddressPropertyType may only point to a remote Address element (where remote Address elements are located in another document or elsewhere in the same document). </description>
+      <Required>
+         <RelationFilter relationName="bldg:address" minOccurs="0" maxOccurs="unbound">
+            <GmlType>core:AddressType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   
+   <Rule class="bldg:Building" id="CO-bldg:BU-001 ">
+      <description>If a building is composed of individual structural segments, it shall be modelled as a Building element having one or more additional BuildingPart elements. </description>
+      <Required combination="OR">
+         <GeometryFilter geometryPropertyName="bldg:lod1Solid" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod1MultiSurface" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod2Solid" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod2MultiSurface" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod3Solid" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod3MultiSurface" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod4Solid" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod4MultiSurface" minOccurs="1" maxOccurs="1" />
+         <RelationFilter relationName="bldg:boundedBy" minOccurs="3" maxOccurs="unbound"/>                   
+      </Required>
+   </Rule> 
+   
+   
+   <Rule superclassType="bldg:AbstractBuildingType" id="CO-bldg:BU-002">
+      <description>The gml:MultiSurface geometries that are associated using the lod0FootPrint and lod0RoofEdge properties must have 3D coordinates. For each surface, the height values of the coordinate tuples belonging to the same surface shall be identical. </description>
+      <Required combination="AND">
+         <GeometryFilter geometryPropertyName="bldg:lod0FootPrint" minOccurs="0" maxOccurs="1" surfaceNormal="VerticalUpward"/>
+         <GeometryFilter geometryPropertyName="bldg:lod0RoofEdge" minOccurs="0" maxOccurs="1" surfaceNormal="VerticalUpward"/>
+      </Required>
+   </Rule>
+   
+   <Rule superclassType="bldg:AbstractBuildingType" id="CO-bldg:BU-003">
+      <description>The lodXSolid and lodXMultiSurface, X ∈ [1..4], properties (gml:SolidPropertyType resp. gml:MultiSurfacePropertyType) of _AbstractBuilding may be used to geometrically represent the exterior shell of a building (as volume or surface model) within each LOD. For LOD1, either lod1Solid or lod1MultiSurface must be used, but not both.</description>
+       <If>
+          <GeometryFilter geometryPropertyName="bldg:lod1Solid" minOccurs="1" maxOccurs="1"/>          
+       </If>
+      <Required>
+        <GeometryFilter geometryPropertyName="bldg:lod1MultiSurface" minOccurs="0" maxOccurs="0"/>
+      </Required>
+   </Rule>
+   
+      
+   <Rule superclassType="bldg:AbstractBuildingType" id="CO-bldg:BU-003">
+      <description>The lodXSolid and lodXMultiSurface, X ∈ [1..4], properties (gml:SolidPropertyType resp. gml:MultiSurfacePropertyType) of _AbstractBuilding may be used to geometrically represent the exterior shell of a building (as volume or surface model) within each LOD. For LOD1, either lod1Solid or lod1MultiSurface must be used, but not both.</description>
+         <If>
+          <GeometryFilter geometryPropertyName="bldg:lod1MultiSurface" minOccurs="1" maxOccurs="1"/>          
+       </If>
+      <Required>
+        <GeometryFilter geometryPropertyName="bldg:lod1Solid" minOccurs="0" maxOccurs="0"/>
+      </Required>
+   </Rule>
+   
+   <Rule superclassType="bldg:AbstractBuildingType" id="CO-bldg:BU-004">
+      <description>Starting from LOD2, the exterior shell of an _AbstractBuilding may be semantically decomposed into _BoundarySurface elements using the boundedBy property (type: BoundarySurfacePropertyType) of _AbstractBuilding. Only RoofSurface, WallSurface, GroundSurface, OuterCeilingSurface, OuterFloorSurface and ClosureSurface as subclasses of _BoundarySurface are allowed.</description>
+      <Required>
+         <RelationFilter relationName="bldg:boundedBy" minOccurs="0" maxOccurs="unbound">
+            <GmlType>bldg:WallSurfaceType</GmlType>
+            <GmlType>bldg:RoofSurfaceType</GmlType>
+            <GmlType>bldg:GroundSurfaceType</GmlType>
+            <GmlType>bldg:OuterFloorSurfaceType</GmlType>
+            <GmlType>bldg:OuterCeilingSurfaceType</GmlType>
+            <GmlType>bldg:ClosureSurfaceType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   <Rule superclassType="bldg:AbstractBuildingType" id="CO-bldg:BU-006">
+      <description>Starting from LOD2, the outerBuildingInstallation property (type: BuildingInstallationPropertyType) of _AbstractBuilding may be used to model BuildingInstallation elements. BuildingInstallation elements shall only be used to represent outer characteristics of a building which do not have the significance of building parts. The outerBuildingInstallation property shall not be used if the building is only represented in LOD1. </description>
+      <If>
+         <RelationFilter relationName="bldg:outerBuildingInstallation" minOccurs="1" maxOccurs="unbound"/>
+      </If>
+      <Required combination="OR">
+         <GeometryFilter geometryPropertyName="bldg:lod4Solid" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod4MultiSurface" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod3Solid" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod3MultiSurface" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod2Solid" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod2MultiSurface" minOccurs="1" maxOccurs="1" />
+         <RelationFilter relationName="bldg:boundedBy" geometryPropertyNameInRelatedObject="lod4MultiSurface" minOccurs="1" maxOccurs="unbound"/>
+         <RelationFilter relationName="bldg:boundedBy" geometryPropertyNameInRelatedObject="lod3MultiSurface" minOccurs="1" maxOccurs="unbound"/>
+         <RelationFilter relationName="bldg:boundedBy" geometryPropertyNameInRelatedObject="lod2MultiSurface" minOccurs="1" maxOccurs="unbound"/>
+         <RelationFilter relationName="bldg:interiorRoom" minOccurs="1" maxOccurs="unbound"/>
+      </Required>
+   </Rule>
+   
+   <!-- BuildingInstallation -->
+   <Rule class="bldg:BuildingInstallation" id="CO-bldg:BU-007">
+      <description> Starting from LOD2, the geometry of BuildingInstallation elements may be semantically classified by _BoundarySurface elements using the boundedBy property (type: BoundarySurfacePropertyType) of BuildingInstallation. Only RoofSurface, WallSurface, GroundSurface, OuterCeilingSurface, Outer-FloorSurface and ClosureSurface as subclasses of _BoundarySurface are allowed. </description>
+      <Required>
+         <RelationFilter relationName="bldg:boundedBy" minOccurs="0" maxOccurs="unbound">
+            <GmlType>bldg:WallSurfaceType</GmlType>
+            <GmlType>bldg:RoofSurface</GmlType>
+            <GmlType>bldg:GroundSurfaceType</GmlType>
+            <GmlType>bldg:OuterFloorSurfaceType</GmlType>
+            <GmlType>bldg:OuterCeilingSurfaceType</GmlType>
+            <GmlType>bldg:ClosureSurfaceType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   <!-- _BoundarySurface -->
+   <Rule superclassType="bldg:BoundarySurfaceType" id="CO-bldg:BU-008">
+      <description>Starting from LOD3, openings of _BoundarySurface elements may be modelled using the opening property (type: OpeningPropertyType) of _BoundarySurface. This property shall not be used for _BoundarySurface elements only represented in LOD2.</description>
+      <If combination="AND">
+         <GeometryFilter geometryPropertyName="bldg:lod3MultiSurface" minOccurs="0" maxOccurs="0"/>
+         <GeometryFilter geometryPropertyName="bldg:lod4MultiSurface" minOccurs="0" maxOccurs="0"/>       
+      </If>
+      <Required>
+         <RelationFilter relationName="bldg:opening" minOccurs="0" maxOccurs="0"/>
+      </Required>
+   </Rule>
+   
+   <Rule superclassType="blgd:AbstractBuildingType" id="CO-bldg:BU-009">   
+      <description>Starting from LOD4, the interiorRoom property (type: InteriorRoomPropertyType) of _AbstractBuilding may be used to semantically model the free space inside the building by Room elements. This property shall not be used if the building is only represented in LOD 1 – 3.        
+The Room element may be geometrically represented as a surface or volume model, using its lod4Solid or lod4MultiSurface property (gml:SolidPropertyType resp. gml:MultiSurfacePropertyType).         
+In addition, different parts of the visible surface of a room may be modelled by thematic _BoundarySurface elements. Only FloorSurface, CeilingSurface, InteriorWallSurface, and ClosureSurface as subclasses of _BoundarySurface are allowed.         
+If the visible surface of a room is represented by _BoundarySurface elements, an additional geometric representation as volume or surface model using the lod4Solid and 'lod4MultiSurface property shall not explicitly define the geometry, but has to reference the according components of the gml:MultiSurface element of _BoundarySurface using the XLink concept of GML 3.1.1. </description>
+      <If>
+         <RelationFilter relationName="bldg:interiorRoom" minOccurs="1" maxOccurs="unbound"/>
+      </If>
+      <Required combination="OR">
+         <GeometryFilter geometryPropertyName="bldg:lod4MultiSurfaceProperty" minOccurs="1" maxOccurs="unbound"/>
+         <GeometryFilter geometryPropertyName="bldg:lod4SolidProperty" minOccurs="1" maxOccurs="unbound"/>
+         <RelationFilter relationName="bldg:boundedBy" geometryPropertyNameInRelatedObject="lod4MultiSurface" minOccurs="1" maxOccurs="unbound"/>
+      </Required>      
+   </Rule> 
+   
+   <Rule class="blgd:Room" id="CO-bldg:BU-009">
+      <description>Starting from LOD4, the interiorRoom property (type: InteriorRoomPropertyType) of _AbstractBuilding may be used to semantically model the free space inside the building by Room elements. This property shall not be used if the building is only represented in LOD 1 – 3.        
+         The Room element may be geometrically represented as a surface or volume model, using its lod4Solid or lod4MultiSurface property (gml:SolidPropertyType resp. gml:MultiSurfacePropertyType).         
+         In addition, different parts of the visible surface of a room may be modelled by thematic _BoundarySurface elements. Only FloorSurface, CeilingSurface, InteriorWallSurface, and ClosureSurface as subclasses of _BoundarySurface are allowed.         
+         If the visible surface of a room is represented by _BoundarySurface elements, an additional geometric representation as volume or surface model using the lod4Solid and 'lod4MultiSurface property shall not explicitly define the geometry, but has to reference the according components of the gml:MultiSurface element of _BoundarySurface using the XLink concept of GML 3.1.1. </description>
+      <Required>
+         <RelationFilter relationName="bldg:boundedBy" minOccurs="0" maxOccurs="unbound">
+            <GmlType>bldg:InteriorWallSurface</GmlType>
+            <GmlType>bldg:FloorSurface</GmlType>
+            <GmlType>bldg:CeilingSurface</GmlType>
+            <GmlType>bldg:ClosureSurface</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   <Rule class="blgd:Room" id="CO-bldg:BU-009">
+      <description>Starting from LOD4, the interiorRoom property (type: InteriorRoomPropertyType) of _AbstractBuilding may be used to semantically model the free space inside the building by Room elements. This property shall not be used if the building is only represented in LOD 1 – 3.        
+         The Room element may be geometrically represented as a surface or volume model, using its lod4Solid or lod4MultiSurface property (gml:SolidPropertyType resp. gml:MultiSurfacePropertyType).         
+         In addition, different parts of the visible surface of a room may be modelled by thematic _BoundarySurface elements. Only FloorSurface, CeilingSurface, InteriorWallSurface, and ClosureSurface as subclasses of _BoundarySurface are allowed.         
+         If the visible surface of a room is represented by _BoundarySurface elements, an additional geometric representation as volume or surface model using the lod4Solid and 'lod4MultiSurface property shall not explicitly define the geometry, but has to reference the according components of the gml:MultiSurface element of _BoundarySurface using the XLink concept of GML 3.1.1. </description>
+      <If>
+         <RelationFilter relationName="bldg:boundedBy" minOccurs="1" maxOccurs="unbound"/>
+      </If>
+      <Required combination="AND">
+         <RelationFilter relationName="bldg:boundedBy" geometryPropertyNameInRelatedObject="lod2MultiSurface" minOccurs="0" maxOccurs="0"/>
+         <RelationFilter relationName="bldg:boundedBy" geometryPropertyNameInRelatedObject="lod3MultiSurface" minOccurs="0" maxOccurs="0"/>
+      </Required>
+   </Rule>   
+   
+   <Rule superclassType="bldg:AbstractBuildingType" id="CO-bldg:BU-010">
+      <description>Starting from LOD4, the interiorBuildingInstallation property (type: IntBuildingInstallationPropertyType) of _AbstractBuilding may be used to represent immovable objects inside the building that are permamently attached to the building structure. The interiorBuildingInstallation property shall not be used if the building is only represented in LOD 1 – 3. </description>
+      <If>
+         <RelationFilter relationName="bldg:interiorBuildingInstallation" minOccurs="1" maxOccurs="unbound"/>
+      </If>
+       <Required combination="OR">
+         <GeometryFilter geometryPropertyName="bldg:lod4Solid" minOccurs="1" maxOccurs="1" />
+         <GeometryFilter geometryPropertyName="bldg:lod4MultiSurface" minOccurs="1" maxOccurs="1" />
+         <RelationFilter relationName="bldg:boundedBy" geometryPropertyNameInRelatedObject="lod4MultiSurface" minOccurs="1" maxOccurs="unbound"/>
+         <RelationFilter relationName="bldg:interiorRoom" minOccurs="1" maxOccurs="unbound"/>
+      </Required>
+   </Rule>   
+   
+   <!-- InteriorBuildingInstallation -->
+   <Rule class="bldg:IntBuildingInstallation" id="CO-bldg:BU-011">
+      <description>Starting from LOD4, the geometry of IntBuildingInstallation elements may be semantically classified by _BoundarySurface elements using the boundedBy property (type: BoundarySurfacePropertyType) of IntBuildingInstallation. Only FloorSurface, CeilingSurface, InteriorWallSurface, and ClosureSurface as subclasses of _BoundarySurface are allowed. </description>
+      <Required>
+         <RelationFilter relationName="bldg:boundedBy" minOccurs="0" maxOccurs="unbound">
+            <GmlType>bldg:InteriorWallSurfaceType</GmlType>
+            <GmlType>bldg:FloorSurfaceType</GmlType>
+            <GmlType>bldg:CeilingSurfaceType</GmlType>
+            <GmlType>bldg:ClosureSurfaceType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+  
+   
+   <Rule superclassType="bldg:AbstractBuildingType" id="CR-Building-012">
+      <description>The boundedBy property (type: BoundarySurfacePropertyType) of the element _AbstractBuilding may contain a _BoundarySurface element inline or an XLink reference to a remote _BoundarySurface element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the boundedBy property may only point to a remote_BoundarySurface element (where remote _BoundarySurface elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none. Only RoofSurface, WallSurface, GroundSurface, OuterCeilingSurface, OuterFloorSurface and ClosureSurface elements are allowed to be encapsulated or referenced by the boundedBy property of _AbstractBuilding.</description>
+      <Required>
+         <RelationFilter relationName="bldg:boundedBy" minOccurs="0" maxOccurs="unbound">
+          <GmlType>bldg:WallSurfaceType</GmlType>
+            <GmlType>bldg:RoofSurfaceType</GmlType>
+            <GmlType>bldg:GroundSurfaceType</GmlType>
+            <GmlType>bldg:OuterFloorSurfaceType</GmlType>
+            <GmlType>bldg:OuterCeilingSurfaceType</GmlType>
+            <GmlType>bldg:ClosureSurfaceType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+     
+   <Rule superclassType="bldg:AbstractBuildingType" id="CR-Building-013">
+      <description>The outerBuildingInstallation property (type: BuildingInstallationPropertyType) of the element _AbstractBuilding may contain a BuildingInstallation element inline or an XLink reference to a remote BuildingInstallation element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the outerBuildingInstallation property may only point to a remote BuildingInstallation element (where remote BuildingInstallation elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none.</description>
+      <Required>
+         <RelationFilter relationName="bldg:outerBuildingInstallation" minOccurs="0" maxOccurs="unbound">
+          <GmlType>bldg:BuildingInstallationType</GmlType>           
+         </RelationFilter>
+      </Required>
+   </Rule>
+     
+   <Rule superclassType="bldg:AbstractBuildingType" id="CR-Building-014">
+      <description>The interiorBuildingInstallation property (type: IntBuildingInstallationPropertyType) of the element _AbstractBuilding may contain an IntBuildingInstallation element inline or an XLink reference to a remote IntBuildingInstallation element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the interiorBuildingInstallation property may only point to a remote IntBuildingInstallation element (where remote IntBuildingInstallation elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none. </description>
+      <Required>
+         <RelationFilter relationName="bldg:intBuildingInstallation" minOccurs="0" maxOccurs="unbound">
+          <GmlType>bldg:IntBuildingInstallationType</GmlType>           
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+    <Rule superclassType="bldg:AbstractBuildingType" id="CR-Building-015">
+      <description>The interiorRoom property (type: InteriorRoomPropertyType') of the element _AbstractBuilding may contain a Room element inline or an XLink reference to a remote Room element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the interiorRoom property may only point to a remote Room element (where remote Room elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none. </description>
+      <Required>
+         <RelationFilter relationName="bldg:interiorRoom" minOccurs="0" maxOccurs="unbound">
+          <GmlType>bldg:RoomType</GmlType>           
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+   <Rule superclassType="bldg:AbstractBuildingType" id="CR-Building-016">
+      <description>The consistsOfBuildingPart property (type: BuildingPartPropertyType) of the element _AbstractBuilding may contain a BuildingPart element inline or an XLink reference to a remote BuildingPart element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the consistsOfBuildingPart property may only point to a remote BuildingPart element (where remote BuildingPart elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none.</description>
+      <Required>
+         <RelationFilter relationName="bldg:consistsOfBuildingPart" minOccurs="0" maxOccurs="unbound">
+            <GmlType>bldg:BuildingPartType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+   
+    <Rule superclassType="bldg:AbstractBuildingType" id="CR-Building-017">
+      <description>The address property (type: core:AddressPropertyType) of the element _AbstractBuilding may contain an core:Address element inline or an XLink reference to a remote core:Address element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the address property may only point to a remote core:Address element (where remote core:Address elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none. </description>
+      <Required>
+         <RelationFilter relationName="bldg:address" minOccurs="0" maxOccurs="unbound">
+            <GmlType>core:AddressType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+      
+   <Rule superclassType="bldg:BoundarySurfaceType" id="CR-Building-018">
+      <description>The opening property (type: OpeningPropertyType) of the element _BoundarySurface may contain an _Opening element inline or an XLink reference to a remote _Opening element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the opening property may only point to a remote _Opening element (where remote _Opening elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none. </description>
+      <Required>
+         <RelationFilter relationName="bldg:opening" minOccurs="0" maxOccurs="unbound">
+            <GmlSuperType>bldg:AbstractOpeningType</GmlSuperType>           
+         </RelationFilter>
+      </Required>
+   </Rule>
+    
+    <Rule superclassType="bldg:Room" id="CR-Building-023">
+      <description>The interiorFurniture property (type: InteriorFurniturePropertyType) of the element Room may contain a BuildingFurniture element inline or an XLink reference to a remote BuildingFurniture element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the interiorFurniture property may only point to a remote BuildingFurniture element (where remote BuildingFurniture elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none. </description>
+      <Required>
+         <RelationFilter relationName="bldg:interiorFurniture" minOccurs="0" maxOccurs="unbound">
+            <GmlType>bldg:BuildingFurnitureType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>
+  
+    <Rule superclassType="bldg:Room" id="CR-Building-024">
+      <description>The roomInstallation property (type: IntBuildingInstallationPropertyType) of the element Room may contain an IntBuildingInstallation element inline or an XLink reference to a remote IntBuildingInstallation element using the XLink concept of GML 3.1.1. In the latter case, the xlink:href attribute of the roomInstallation property may only point to a remote IntBuildingInstallation element (where remote IntBuildingInstallation elements are located in another document or elsewhere in the same document). Either the contained element or the reference must be given, but neither both nor none. </description>
+      <Required>
+         <RelationFilter relationName="bldg:roomInstallation" minOccurs="0" maxOccurs="unbound">
+            <GmlType>bldg:IntBuildingInstallationType</GmlType>
+         </RelationFilter>
+      </Required>
+   </Rule>   
+   
+ 
+    
+</Profil>

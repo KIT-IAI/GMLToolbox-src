@@ -1,0 +1,3835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd"
+ name="StandardProfilFPlanSchema_3_0">
+    
+    <!-- FP_Plan -->
+    <Rule class="FP_Plan">
+        <Required>
+            <AttributeFilter attributeName="gkz" minOccurs="1" maxOccurs="unbound"/>
+        </Required>
+    </Rule>
+     
+    <Rule class="FP_Plan"  id="5.1.1.2">
+        <Required>
+            <RelationFilter relationName="refUmweltbericht" minOccurs="0" maxOccurs="1">
+                <GmlType> XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Plan" id="5.1.1.1">
+        <Required>            
+            <RelationFilter relationName="bereich" minOccurs="1" maxOccurs="unbound">
+                <GmlType>FP_BereichType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>   
+
+    <!-- FP_Bereich  --> 
+    <Rule class="FP_Bereich">
+        <Required>
+            <RelationFilter relationName="gehoertZuPlan" minOccurs="0" maxOccurs="1">
+                <GmlType>FP_PlanType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Bereich" id="5.1.2.1">
+        <Required>
+            <RelationFilter relationName="fachobjekt" minOccurs="0" maxOccurs="unbound">
+                <GmlSuperType>FP_ObjektType</GmlSuperType>
+                <GmlSuperType>LP_ObjektType</GmlSuperType>
+                <GmlSuperType>RP_ObjektType</GmlSuperType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Bereich" id="5.1.2.2">
+        <Required>
+            <RelationFilter relationName="rasterAenderung" minOccurs="0" maxOccurs="unbound">
+                <GmlType>FP_RasterplanAenderungType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <!-- FP_Objekt  --> 
+    <Rule superclassType="FP_ObjektType" id="5.1.3.1">
+        <Required>
+            <RelationFilter relationName="hoehenangabe" minOccurs="0" maxOccurs="unbound">
+                <GmlType>XP_HoehenangabeType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="FP_ObjektType" id="5.1.3.2">
+        <Required>
+            <RelationFilter relationName="wirdAusgeglichenDurchFlaeche" minOccurs="0" maxOccurs="unbound">
+                <GmlType>FP_AusgleichsFlaeche</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <!--  FP_FlaechenobjektType -->
+    <Rule superclassType="FP_FlaechenobjektType">
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="FP_FlaechenobjektType">
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="FP_FlaechenobjektType" id="5.1.4.1">
+        <If>
+            <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">              
+                <AttributeValue op="NOT_EQ">0</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+                <AttributeValue op="EQ">false</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <!--  FP_GeometrieobjektType -->
+    <Rule superclassType="FP_GeometrieobjektType" id="5.1.4.1">
+        <If>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+            <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">              
+                <AttributeValue op="NOT_EQ">0</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+                <AttributeValue op="EQ">false</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule superclassType="FP_GeometrieobjektType" id="5.1.4.2">
+        <If>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+         </If>
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>    
+    
+    <!--  FP_FlaechenschlussobjektType -->
+    <Rule superclassType="FP_FlaechenschlussobjektType" id="5.1.7.1">
+        <If>
+            <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+                <AttributeValue op="EQ">0</AttributeValue>  
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+                <AttributeValue op="EQ">true</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <!--  FP_Linienobjekt -->
+    <Rule superclassType="FP_LinienobjektType">
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+        </Required>
+    </Rule>
+    
+    <!--  FP_PunktobjektType -->
+    <Rule superclassType="FP_PunktobjektType">
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+        </Required>
+    </Rule>    
+    
+    <!--  FP_UeberlagerungsobjektType -->
+    <Rule superclassType="FP_UeberlagerungsobjektType" id="5.1.6.1">
+        <Required>
+            <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+                <AttributeValue op="EQ">false</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <!-- FP_BebauungsFlaeche -->
+    <Rule class="FP_BebauungsFlaeche" id="5.3.1.1">
+        <If>
+            <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+                <AttributeValue>1100</AttributeValue>
+                <AttributeValue>1200</AttributeValue>
+                <AttributeValue>1300</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_BebauungsFlaeche"  id="5.3.1.1">
+        <If>
+            <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+                <AttributeValue>1500</AttributeValue>
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_BebauungsFlaeche"  id="5.3.1.1">
+        <If>
+            <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1700</AttributeValue>
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>3000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_BebauungsFlaeche"  id="5.3.1.1">
+        <If>
+            <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+                <AttributeValue>2100</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>4000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_BebauungsFlaeche" id="5.3.1.2">
+        <If>
+            <AttributeFilter attributeName="sonderNutzung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+                <AttributeValue>1100</AttributeValue>
+                <AttributeValue>1200</AttributeValue>
+                <AttributeValue>1300</AttributeValue>
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>                     
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_BebauungsFlaeche" id="5.3.1.2">
+        <If>
+            <AttributeFilter attributeName="sonderNutzung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1500</AttributeValue>
+                <AttributeValue>1600</AttributeValue>
+                <AttributeValue>1700</AttributeValue>
+                <AttributeValue>1800</AttributeValue>
+                <AttributeValue>1900</AttributeValue>
+                <AttributeValue>2000</AttributeValue>
+                <AttributeValue>2100</AttributeValue>
+                <AttributeValue>2200</AttributeValue>
+                <AttributeValue>2300</AttributeValue>
+                <AttributeValue>2400</AttributeValue>
+                <AttributeValue>2500</AttributeValue>
+                <AttributeValue>2600</AttributeValue>
+                <AttributeValue>2700</AttributeValue>
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>2100</AttributeValue>                     
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_BebauungsFlaeche" id="5.3.1.3">
+        <If>
+            <AttributeFilter attributeName="detaillierteArtDerBaulNutzung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>allgArtDerBaulNutzung</AttributeName>
+                <AttributeName>besondereArtDerBaulNutzung</AttributeName>
+                <AttributeName>sonderNutzung</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_BebauungsFlaeche"  id="5.3.1.4">
+        <If>
+            <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+            <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_BebauungsFlaeche"  id="5.3.1.4">
+        <If>
+            <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+            <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_BebauungsFlaeche"  id="5.3.1.4">
+        <If>
+            <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+            <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>    
+    
+    <!-- FP_Grabungsschutzgebiet -->
+    <Rule class="FP_Grabungsschutzgebiet" id="5.4.1.1">
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="NoLine"/>
+        </Required>
+    </Rule>
+    
+    <!-- FP_Gemeinbedarf -->
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.7">
+        <Required>
+            <GeometryFilter geometryRestriction="NoLine" geometryPropertyName="position" />
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>   
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="detailZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung4" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.6">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>zweckbestimmung</AttributeName>
+                <AttributeName>besondereZweckbestimmung</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung1</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung1</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>          
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung2</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung2</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>              
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung3</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung3</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>              
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung4" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung4</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung4</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>    
+
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+                <AttributeValue>20002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>   
+
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+                <AttributeValue>20002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>   
+
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+                <AttributeValue>20002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>        
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+                <AttributeValue>20002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>            
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+                <AttributeValue>20002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gemeinbedarf" id="5.5.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>       
+
+    <!-- FP_SpielSportanlage -->
+    <Rule class="FP_SpielSportanlage" id="5.5.2.4">
+        <Required>
+            <GeometryFilter geometryPropertyName="position" geometryRestriction="NoLine"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_SpielSportanlage" id="5.5.2.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_SpielSportanlage" id="5.5.2.2">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="detailZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    
+    <Rule class="FP_SpielSportanlage" id="5.5.2.3">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_SpielSportanlage" id="5.5.2.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>    
+
+    <!-- FP_WaldFlaeche -->
+    <Rule class="FP_WaldFlaeche" id="5.6.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_WaldFlaeche" id="5.6.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_WaldFlaeche" id="5.6.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="detailZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_WaldFlaeche" id="5.6.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_WaldFlaeche" id="5.6.1.3">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_WaldFlaeche" id="5.6.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>          
+    
+    <Rule class="FP_WaldFlaeche" id="5.6.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>          
+    
+    <!-- FP_LandwirtschaftsFlaeche -->
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.2">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="detailZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.2">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.2">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.3">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>          
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>          
+    
+    <Rule class="FP_LandwirtschaftsFlaeche" id="5.6.2.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>     
+
+    <!-- FP_Gruen -->
+    <Rule class="FP_Gruen" id="5.6.3.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    <Rule class="FP_Gruen" id="5.6.3.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule> 
+    
+    <Rule class="FP_Gruen" id="5.6.3.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="detailZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_Gruen" id="5.6.3.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_Gruen" id="5.6.3.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_Gruen" id="5.6.3.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung4" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_Gruen" id="5.6.3.6">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>zweckbestimmung</AttributeName>
+                <AttributeName>besondereZweckbestimmung</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gruen" id="5.6.3.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung1</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung1</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>          
+    
+    <Rule class="FP_Gruen" id="5.6.3.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung2</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung2</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>              
+    
+    <Rule class="FP_Gruen" id="5.6.3.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung3</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung3</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>              
+    
+    <Rule class="FP_Gruen" id="5.6.3.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung4" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung4</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung4</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+                <AttributeValue>14004</AttributeValue>
+                <AttributeValue>14005</AttributeValue>
+                <AttributeValue>14006</AttributeValue>
+                <AttributeValue>14007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24005</AttributeValue>
+                <AttributeValue>24006</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>99990</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>   
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+                <AttributeValue>14004</AttributeValue>
+                <AttributeValue>14005</AttributeValue>
+                <AttributeValue>14006</AttributeValue>
+                <AttributeValue>14007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24005</AttributeValue>
+                <AttributeValue>24006</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>99990</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+                <AttributeValue>14004</AttributeValue>
+                <AttributeValue>14005</AttributeValue>
+                <AttributeValue>14006</AttributeValue>
+                <AttributeValue>14007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24005</AttributeValue>
+                <AttributeValue>24006</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>99990</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+                <AttributeValue>14004</AttributeValue>
+                <AttributeValue>14005</AttributeValue>
+                <AttributeValue>14006</AttributeValue>
+                <AttributeValue>14007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24005</AttributeValue>
+                <AttributeValue>24006</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>99990</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>             
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+                <AttributeValue>14004</AttributeValue>
+                <AttributeValue>14005</AttributeValue>
+                <AttributeValue>14006</AttributeValue>
+                <AttributeValue>14007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24005</AttributeValue>
+                <AttributeValue>24006</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_Gruen" id="5.6.3.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung4" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung4" minOccurs="0" maxOccurs="1">
+                <AttributeValue>99990</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <!-- FP_AusgleichsFlaeche -->
+    <Rule class="FP_AusgleichsFlaeche" id="5.7.2.1">
+        <Required>
+            <RelationFilter relationName="refLandschaftsplan" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_AusgleichsFlaeche" id="5.7.2.1">
+        <Required>
+            <RelationFilter relationName="refMassnahmenText" minOccurs="0" maxOccurs="1">
+                <GmlType>XP_ExterneReferenzType</GmlType>
+            </RelationFilter>
+        </Required>
+    </Rule>  
+
+    <!-- FP_VerEntsorgung -->
+    <Rule class="FP_VerEntsorgung" id="5.8.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    <Rule class="FP_VerEntsorgung" id="5.8.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="detailZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.3">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+    <Rule class="FP_VerEntsorgung" id="5.8.1.6">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>zweckbestimmung</AttributeName>
+                <AttributeName>besondereZweckbestimmung</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>      
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung1</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung1</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>          
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung2</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung2</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>              
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.6">
+        <If>
+            <AttributeFilter attributeName="weitereDetailZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>weitereZweckbestimmung3</AttributeName>
+                <AttributeName>weitereBesondZweckbestimmung3</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>  
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+                <AttributeValue>10004</AttributeValue>
+                <AttributeValue>10005</AttributeValue>
+                <AttributeValue>10006</AttributeValue>
+                <AttributeValue>10007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>   
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+                <AttributeValue>16005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+                <AttributeValue>18002</AttributeValue>
+                <AttributeValue>18003</AttributeValue>
+                <AttributeValue>18004</AttributeValue>
+                <AttributeValue>18005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>       
+    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+                <AttributeValue>22003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>     
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.4">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+                <AttributeValue>10004</AttributeValue>
+                <AttributeValue>10005</AttributeValue>
+                <AttributeValue>10006</AttributeValue>
+                <AttributeValue>10007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>   
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+                <AttributeValue>16005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+                <AttributeValue>18002</AttributeValue>
+                <AttributeValue>18003</AttributeValue>
+                <AttributeValue>18004</AttributeValue>
+                <AttributeValue>18005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>       
+    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+                <AttributeValue>22003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>     
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+                <AttributeValue>10004</AttributeValue>
+                <AttributeValue>10005</AttributeValue>
+                <AttributeValue>10006</AttributeValue>
+                <AttributeValue>10007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>   
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+                <AttributeValue>16005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+                <AttributeValue>18002</AttributeValue>
+                <AttributeValue>18003</AttributeValue>
+                <AttributeValue>18004</AttributeValue>
+                <AttributeValue>18005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>       
+    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+                <AttributeValue>22003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>     
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+                <AttributeValue>10004</AttributeValue>
+                <AttributeValue>10005</AttributeValue>
+                <AttributeValue>10006</AttributeValue>
+                <AttributeValue>10007</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>   
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+                <AttributeValue>16003</AttributeValue>
+                <AttributeValue>16004</AttributeValue>
+                <AttributeValue>16005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+                <AttributeValue>18002</AttributeValue>
+                <AttributeValue>18003</AttributeValue>
+                <AttributeValue>18004</AttributeValue>
+                <AttributeValue>18005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>       
+    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>22000</AttributeValue>
+                <AttributeValue>22001</AttributeValue>
+                <AttributeValue>22002</AttributeValue>
+                <AttributeValue>22003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>     
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>24000</AttributeValue>
+                <AttributeValue>24001</AttributeValue>
+                <AttributeValue>24002</AttributeValue>
+                <AttributeValue>24003</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+                <AttributeValue>24004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>         
+    
+    <Rule class="FP_VerEntsorgung" id="5.8.1.5">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="0" maxOccurs="1">
+                <AttributeValue>26000</AttributeValue>
+                <AttributeValue>26001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>   
+    
+    <!-- FP_Luftverkehr -->    
+    <Rule class="FP_Luftverkehr" id="5.9.1.1">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>    
+    
+    <!-- FP_Strassenverkehr -->
+    <Rule class="FP_Strassenverkehr" id="5.9.2.2">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>zweckbestimmung</AttributeName>
+                <AttributeName>besondereZweckbestimmung</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_Strassenverkehr" id="5.9.2.1">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+                <AttributeValue>14004</AttributeValue>
+                <AttributeValue>14005</AttributeValue>
+                <AttributeValue>14006</AttributeValue>
+                <AttributeValue>14007</AttributeValue>
+                <AttributeValue>14008</AttributeValue>
+                <AttributeValue>14009</AttributeValue>
+                <AttributeValue>14010</AttributeValue>
+                <AttributeValue>14011</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <!-- FP_Bahnverkehr -->
+    <Rule class="FP_Bahnverkehr" id="5.9.3.2">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <GroupFilter combination="OR">
+                <AttributeName>zweckbestimmung</AttributeName>
+                <AttributeName>besondereZweckbestimmung</AttributeName>
+            </GroupFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Bahnverkehr" id="5.9.3.1">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Bahnverkehr" id="5.9.3.1">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+                <AttributeValue>12005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Bahnverkehr" id="5.9.3.1">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>14000</AttributeValue>
+                <AttributeValue>14001</AttributeValue>
+                <AttributeValue>14002</AttributeValue>
+                <AttributeValue>14003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_Bahnverkehr" id="5.9.3.1">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>   
+
+    <!-- FP_Gewaesser -->
+    <Rule class="FP_Gewaesser" id="5.10.1.1">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>    
+
+    <!-- FP_Wasserwirtschaft -->
+    <Rule class="FP_Wasserwirtschaft" id="5.10.2.1">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>        
+    
+    <!-- FP_Wasserrecht -->
+    <Rule class="FP_Wasserrecht" id="5.10.3.1">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>            
+    
+    <!-- FP_VorbHochwSchutz -->
+    <Rule class="FP_VorbHochwSchutz" id="5.10.4.1">
+        <If>
+            <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>           
+    
+    <!-- FP_GenerischesObjekt -->
+    <Rule class="FP_GenerischesObjekt" id="5.11.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_GenerischesObjekt" id="5.11.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_GenerischesObjekt" id="5.11.1.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- FP_PreiviligiertesVorhaben -->
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.2">
+        <If>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung3" minOccurs="1" maxOccurs="1"/>
+        </If>
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>  
+
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.3">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+                <AttributeValue>10004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.3">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+                <AttributeValue>12005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.3">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.3">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.3">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+                <AttributeValue>18002</AttributeValue>
+                <AttributeValue>18003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>            
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.3">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.3">
+        <If>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="besondereZweckbestimmung" minOccurs="0" maxOccurs="1">
+                <AttributeValue>99990</AttributeValue>
+                <AttributeValue>99991</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>  
+
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+                <AttributeValue>10004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+                <AttributeValue>12005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+                <AttributeValue>18002</AttributeValue>
+                <AttributeValue>18003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>            
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung1" minOccurs="0" maxOccurs="1">
+                <AttributeValue>99990</AttributeValue>
+                <AttributeValue>99991</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>10000</AttributeValue>
+                <AttributeValue>10001</AttributeValue>
+                <AttributeValue>10002</AttributeValue>
+                <AttributeValue>10003</AttributeValue>
+                <AttributeValue>10004</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1200</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>12000</AttributeValue>
+                <AttributeValue>12001</AttributeValue>
+                <AttributeValue>12002</AttributeValue>
+                <AttributeValue>12003</AttributeValue>
+                <AttributeValue>12004</AttributeValue>
+                <AttributeValue>12005</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>    
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1400</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="0"/>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1600</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>16000</AttributeValue>
+                <AttributeValue>16001</AttributeValue>
+                <AttributeValue>16002</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>        
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>1800</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>18000</AttributeValue>
+                <AttributeValue>18001</AttributeValue>
+                <AttributeValue>18002</AttributeValue>
+                <AttributeValue>18003</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>            
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>2000</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>20000</AttributeValue>
+                <AttributeValue>20001</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>           
+    
+    <Rule class="FP_PriviligiertesVorhaben" id="5.11.2.4">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung2" minOccurs="1" maxOccurs="1">
+                <AttributeValue>9999</AttributeValue>
+            </AttributeFilter>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="weitereBesondZweckbestimmung2" minOccurs="0" maxOccurs="1">
+                <AttributeValue>99990</AttributeValue>
+                <AttributeValue>99991</AttributeValue>
+            </AttributeFilter>
+        </Required>
+    </Rule>     
+
+    <!-- FP_Kennzeichnung -->
+    <Rule class="FP_Kennzeichnung" id="5.11.3.1">
+        <If>
+            <AttributeFilter attributeName="weitereZweckbestimmung1" minOccurs="1" maxOccurs="1"/>
+        </If>
+        
+        <Required>
+            <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+        </Required>
+    </Rule>
+    
+    <!-- FP_TextlicheDarstellungsFlaeche -->
+    <Rule class="FP_TextlicheDarstellungsFlaeche" id="5.11.6.1">
+        <Required>
+            <RelationFilter relationName="refTextInhalt" minOccurs="1" maxOccurs="unbound"/>
+        </Required>
+    </Rule>
+
+
+</Profil>
+

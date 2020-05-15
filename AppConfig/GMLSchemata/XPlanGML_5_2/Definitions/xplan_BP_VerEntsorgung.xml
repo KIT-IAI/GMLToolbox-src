@@ -1,0 +1,903 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:14-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_VerEntsorgung">
+  <gml:description>Flächen und Leitungen für Versorgungsanlagen, für die Abfallentsorgung und Abwasserbeseitigung sowie für Ablagerungen (§9 Abs. 1, Nr. 12, 14 und Abs. 6 BauGB)</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung</gml:identifier>
+  <gml:name>xplan:BP_VerEntsorgung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_MaxZahlWohnungen">
+      <gml:description>Höchstzulässige Zahl der Wohnungen in Wohngebäuden</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:MaxZahlWohnungen</gml:identifier>
+      <gml:name>xplan:MaxZahlWohnungen</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Fmin">
+      <gml:description>Mindestmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Fmin</gml:identifier>
+      <gml:name>xplan:Fmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Fmax">
+      <gml:description>Höchstmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Fmax</gml:identifier>
+      <gml:name>xplan:Fmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Bmin">
+      <gml:description>Minimale Breite von Baugrundstücken</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Bmin</gml:identifier>
+      <gml:name>xplan:Bmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Bmax">
+      <gml:description>Maximale Breite von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Bmax</gml:identifier>
+      <gml:name>xplan:Bmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Tmin">
+      <gml:description>Minimale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Tmin</gml:identifier>
+      <gml:name>xplan:Tmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Tmax">
+      <gml:description>Maximale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Tmax</gml:identifier>
+      <gml:name>xplan:Tmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GFZmin">
+      <gml:description>Minimal zulässige Geschossflächenzahl .</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GFZmin</gml:identifier>
+      <gml:name>xplan:GFZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GFZmax">
+      <gml:description>Maximal zulässige Geschossflächenzahl bei einer Bereichsangabe. Das Attribut GFZmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GFZmax</gml:identifier>
+      <gml:name>xplan:GFZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GFZ">
+      <gml:description>Maximal zulässige Geschossflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GFZ</gml:identifier>
+      <gml:name>xplan:GFZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GFZ_Ausn">
+      <gml:description>Maximal zulässige Geschossflächenzahl als Ausnahme.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GFZ_Ausn</gml:identifier>
+      <gml:name>xplan:GFZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GFmin">
+      <gml:description>Minimal zulässige Geschossfläche</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GFmin</gml:identifier>
+      <gml:name>xplan:GFmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GFmax">
+      <gml:description>Maximal zulässige Geschossfläche bei einer Bereichsabgabe. Das Attribut GFmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GFmax</gml:identifier>
+      <gml:name>xplan:GFmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GF">
+      <gml:description>Maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GF</gml:identifier>
+      <gml:name>xplan:GF</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GF_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GF_Ausn</gml:identifier>
+      <gml:name>xplan:GF_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_BMZ">
+      <gml:description>Maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:BMZ</gml:identifier>
+      <gml:name>xplan:BMZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_BMZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:BMZ_Ausn</gml:identifier>
+      <gml:name>xplan:BMZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_BM">
+      <gml:description>Maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:BM</gml:identifier>
+      <gml:name>xplan:BM</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_BM_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:BM_Ausn</gml:identifier>
+      <gml:name>xplan:BM_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GRZmin">
+      <gml:description>Minimal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GRZmin</gml:identifier>
+      <gml:name>xplan:GRZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GRZmax">
+      <gml:description>Maximal zulässige Grundflächenzahl bei einer Bereichsangabe.  Das Attribut GRZmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GRZmax</gml:identifier>
+      <gml:name>xplan:GRZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GRZ">
+      <gml:description>Maximal zulässige Grundflächenzahl</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GRZ</gml:identifier>
+      <gml:name>xplan:GRZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GRZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GRZ_Ausn</gml:identifier>
+      <gml:name>xplan:GRZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GRmin">
+      <gml:description>Minimal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GRmin</gml:identifier>
+      <gml:name>xplan:GRmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GRmax">
+      <gml:description>Maximal zulässige Grundfläche bei einer Bereichsangabe. Das Attribut GRmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GRmax</gml:identifier>
+      <gml:name>xplan:GRmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GR">
+      <gml:description>Maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GR</gml:identifier>
+      <gml:name>xplan:GR</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_GR_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:GR_Ausn</gml:identifier>
+      <gml:name>xplan:GR_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Zmin">
+      <gml:description>Minimal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Zmin</gml:identifier>
+      <gml:name>xplan:Zmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Zmax">
+      <gml:description>Maximal zulässige Zahl der oberirdischen Vollgeschosse bei einer Bereichsangabe. Das Attribut Zmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Zmax</gml:identifier>
+      <gml:name>xplan:Zmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Zzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Zzwingend</gml:identifier>
+      <gml:name>xplan:Zzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Z">
+      <gml:description>Maximalzahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Z</gml:identifier>
+      <gml:name>xplan:Z</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Z_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Z_Ausn</gml:identifier>
+      <gml:name>xplan:Z_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Z_Staffel">
+      <gml:description>Maximalzahl von oberirdischen zurückgesetzten Vollgeschossen als Staffelgeschoss..</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Z_Staffel</gml:identifier>
+      <gml:name>xplan:Z_Staffel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_Z_Dach">
+      <gml:description>Maximalzahl der zusätzlich erlaubten Dachgeschosse, die gleichzeitig Vollgeschosse sind.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:Z_Dach</gml:identifier>
+      <gml:name>xplan:Z_Dach</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_ZUmin">
+      <gml:description>Minimal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:ZUmin</gml:identifier>
+      <gml:name>xplan:ZUmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_ZUmax">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse bei einer Bereichsangabe. Das Attribut ZUmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:ZUmax</gml:identifier>
+      <gml:name>xplan:ZUmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_ZUzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:ZUzwingend</gml:identifier>
+      <gml:name>xplan:ZUzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_ZU">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:ZU</gml:identifier>
+      <gml:name>xplan:ZU</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_ZU_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:ZU_Ausn</gml:identifier>
+      <gml:name>xplan:ZU_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung">
+      <gml:description>Zweckbestimmung der Festsetzung..</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_1000">
+          <gml:description>Elektrizität allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:1000</gml:identifier>
+          <gml:name>Elektrizitaet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10000">
+          <gml:description>Hochspannungsleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10000</gml:identifier>
+          <gml:name>Hochspannungsleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10001">
+          <gml:description>Trafostation, auch Umspannwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10001</gml:identifier>
+          <gml:name>TrafostationUmspannwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10002">
+          <gml:description>Solarkraftwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10002</gml:identifier>
+          <gml:name>Solarkraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10003">
+          <gml:description>Windkraftwerk, Windenergieanlage, Windrad.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10003</gml:identifier>
+          <gml:name>Windkraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10004">
+          <gml:description>Geothermie Kraftwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10004</gml:identifier>
+          <gml:name>Geothermiekraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10005">
+          <gml:description>Elektrizitätswerk allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10005</gml:identifier>
+          <gml:name>Elektrizitaetswerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10006">
+          <gml:description>Wasserkraftwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10006</gml:identifier>
+          <gml:name>Wasserkraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10007">
+          <gml:description>Biomasse-Kraftwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10007</gml:identifier>
+          <gml:name>BiomasseKraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10008">
+          <gml:description>Kabelleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10008</gml:identifier>
+          <gml:name>Kabelleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_10009">
+          <gml:description>Niederspannungsleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:10009</gml:identifier>
+          <gml:name>Niederspannungsleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_100010">
+          <gml:description>Leitungsmast</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:100010</gml:identifier>
+          <gml:name>Leitungsmast</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_1200">
+          <gml:description>Gas allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:1200</gml:identifier>
+          <gml:name>Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_12000">
+          <gml:description>Ferngasleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:12000</gml:identifier>
+          <gml:name>Ferngasleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_12001">
+          <gml:description>Gaswerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:12001</gml:identifier>
+          <gml:name>Gaswerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_12002">
+          <gml:description>Gasbehälter</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:12002</gml:identifier>
+          <gml:name>Gasbehaelter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_12003">
+          <gml:description>Gasdruckregler</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:12003</gml:identifier>
+          <gml:name>Gasdruckregler</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_12004">
+          <gml:description>Gasstation</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:12004</gml:identifier>
+          <gml:name>Gasstation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_12005">
+          <gml:description>Gasleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:12005</gml:identifier>
+          <gml:name>Gasleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_1300">
+          <gml:description>Erdöl allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:1300</gml:identifier>
+          <gml:name>Erdoel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_13000">
+          <gml:description>Erdölleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:13000</gml:identifier>
+          <gml:name>Erdoelleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_13001">
+          <gml:description>Bohrstelle</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:13001</gml:identifier>
+          <gml:name>Bohrstelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_13002">
+          <gml:description>Erdölpumpstation</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:13002</gml:identifier>
+          <gml:name>Erdoelpumpstation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_13003">
+          <gml:description>Öltank</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:13003</gml:identifier>
+          <gml:name>Oeltank</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_1400">
+          <gml:description>Wärmeversorgung allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:1400</gml:identifier>
+          <gml:name>Waermeversorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_14000">
+          <gml:description>Blockheizkraftwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:14000</gml:identifier>
+          <gml:name>Blockheizkraftwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_14001">
+          <gml:description>Fernwärmeleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:14001</gml:identifier>
+          <gml:name>Fernwaermeleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_14002">
+          <gml:description>Fernheizwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:14002</gml:identifier>
+          <gml:name>Fernheizwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_1600">
+          <gml:description>Trink- und Brauchwasser allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:1600</gml:identifier>
+          <gml:name>Wasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_16000">
+          <gml:description>Wasserwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:16000</gml:identifier>
+          <gml:name>Wasserwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_16001">
+          <gml:description>Trinkwasserleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:16001</gml:identifier>
+          <gml:name>Wasserleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_16002">
+          <gml:description>Wasserspeicher</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:16002</gml:identifier>
+          <gml:name>Wasserspeicher</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_16003">
+          <gml:description>Brunnen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:16003</gml:identifier>
+          <gml:name>Brunnen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_16004">
+          <gml:description>Pumpwerk</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:16004</gml:identifier>
+          <gml:name>Pumpwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_16005">
+          <gml:description>Quelle</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:16005</gml:identifier>
+          <gml:name>Quelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_1800">
+          <gml:description>Abwasser allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:1800</gml:identifier>
+          <gml:name>Abwasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_18000">
+          <gml:description>Abwasserleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:18000</gml:identifier>
+          <gml:name>Abwasserleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_18001">
+          <gml:description>Abwasserrückhaltebecken</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:18001</gml:identifier>
+          <gml:name>Abwasserrueckhaltebecken</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_18002">
+          <gml:description>Abwasserpumpwerk, auch Abwasserhebeanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:18002</gml:identifier>
+          <gml:name>Abwasserpumpwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_18003">
+          <gml:description>Kläranlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:18003</gml:identifier>
+          <gml:name>Klaeranlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_18004">
+          <gml:description>Anlage zur Speicherung oder Behandlung von Klärschlamm.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:18004</gml:identifier>
+          <gml:name>AnlageKlaerschlamm</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_18005">
+          <gml:description>Sonstige Abwasser-Behandlungsanlage.
+
+Der Eintrag ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML V. 6.0 entfernt. Es sollte stattdessen der Code 1800 verwendet werden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:18005</gml:identifier>
+          <gml:name>SonstigeAbwasserBehandlungsanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_18006">
+          <gml:description>Salz- oder Sole-Leitungen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:18006</gml:identifier>
+          <gml:name>SalzOderSoleleitungen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_2000">
+          <gml:description>Regenwasser allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:2000</gml:identifier>
+          <gml:name>Regenwasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_20000">
+          <gml:description>Regenwasser Rückhaltebecken</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:20000</gml:identifier>
+          <gml:name>RegenwasserRueckhaltebecken</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_20001">
+          <gml:description>Niederschlagswasser-Leitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:20001</gml:identifier>
+          <gml:name>Niederschlagswasserleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_2200">
+          <gml:description>Abfallentsorgung allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:2200</gml:identifier>
+          <gml:name>Abfallentsorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_22000">
+          <gml:description>Müll-Umladestation</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:22000</gml:identifier>
+          <gml:name>Muellumladestation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_22001">
+          <gml:description>Müllbeseitigungsanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:22001</gml:identifier>
+          <gml:name>Muellbeseitigungsanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_22002">
+          <gml:description>Müllsortieranlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:22002</gml:identifier>
+          <gml:name>Muellsortieranlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_22003">
+          <gml:description>Recyclinghof</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:22003</gml:identifier>
+          <gml:name>Recyclinghof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_2400">
+          <gml:description>Ablagerung allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:2400</gml:identifier>
+          <gml:name>Ablagerung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_24000">
+          <gml:description>Erdaushub-Deponie</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:24000</gml:identifier>
+          <gml:name>Erdaushubdeponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_24001">
+          <gml:description>Bauschutt-Deponie</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:24001</gml:identifier>
+          <gml:name>Bauschuttdeponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_24002">
+          <gml:description>Hausmüll-Deponie</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:24002</gml:identifier>
+          <gml:name>Hausmuelldeponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_24003">
+          <gml:description>Sondermüll-Deponie</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:24003</gml:identifier>
+          <gml:name>Sondermuelldeponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_24004">
+          <gml:description>Stillgelegte Deponie</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:24004</gml:identifier>
+          <gml:name>StillgelegteDeponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_24005">
+          <gml:description>Rekultivierte Deponie</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:24005</gml:identifier>
+          <gml:name>RekultivierteDeponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_2600">
+          <gml:description>Telekommunikation allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:2600</gml:identifier>
+          <gml:name>Telekommunikation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_26000">
+          <gml:description>Fernmeldeanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:26000</gml:identifier>
+          <gml:name>Fernmeldeanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_26001">
+          <gml:description>Mobilfunkanlage</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:26001</gml:identifier>
+          <gml:name>Mobilfunkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_26002">
+          <gml:description>Fernmeldekabel</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:26002</gml:identifier>
+          <gml:name>Fernmeldekabel</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_2800">
+          <gml:description>Erneuerbare Energien allgemein</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:2800</gml:identifier>
+          <gml:name>ErneuerbareEnergien</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_3000">
+          <gml:description>Fläche oder Anlage für Kraft-Wärme Kopplung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:3000</gml:identifier>
+          <gml:name>KraftWaermeKopplung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_9999">
+          <gml:description>Sonstige, durch keinen anderen Code abbildbare Ver- oder Entsorgungsfläche bzw. -Anlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_VerEntsorgung_zweckbestimmung_XP_ZweckbestimmungVerEntsorgung_99990">
+          <gml:description>Produktenleitung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_VerEntsorgung:zweckbestimmung:XP_ZweckbestimmungVerEntsorgung:99990</gml:identifier>
+          <gml:name>Produktenleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungVerEntsorgung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_detaillierteZweckbestimmung">
+      <gml:description>Über eine Codeliste definierte detailliertere Zweckbestimmung der Festsetzung
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteZweckbestimmung" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von "&lt;i&gt;zweckbestimmung"&lt;/i&gt;.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_DetailZweckbestVerEntsorgung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_textlicheErgaenzung">
+      <gml:description>Zusätzliche textliche Beschreibung der Ver- bzw. Entsorgungseinrichtung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:textlicheErgaenzung</gml:identifier>
+      <gml:name>xplan:textlicheErgaenzung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_VerEntsorgung_zugunstenVon">
+      <gml:description>Angabe des Begünstigten der Ausweisung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_VerEntsorgung:attribute:zugunstenVon</gml:identifier>
+      <gml:name>xplan:zugunstenVon</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Geometrieobjekt" />
+</TypeDefinition>

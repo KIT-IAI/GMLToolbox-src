@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="FP_DetailZweckbestGemeinbedarf">
+    <description>GML-Dictionary weiterer Zweckbestimmungen einer Gemeinbedarfsfläche.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:FP_DetailZweckbestGemeinbedarf</identifier>
+    <name>xplan:FP_DetailZweckbestGemeinbedarf</name>
+    
+    <dictionaryEntry>
+        <Definition gml:id="FP_DetailZweckbestGemeinbedarf_10004">
+            <description>Einrichtung für den Kraftfahrzeugverkehr</description>
+            <identifier codeSpace="urn:xplan">FP_DetailZweckbestGemeinbedarf_10004</identifier>
+            <name>10004</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="FP_DetailZweckbestGemeinbedarf_26002">
+            <description>Messe Markt Festplatz</description>
+            <identifier codeSpace="urn:xplan">FP_DetailZweckbestGemeinbedarf_26002</identifier>
+            <name>26002</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="FP_DetailZweckbestGemeinbedarf_52156">
+            <description>Flächen für Gemeinbedarf, geringfügig bebaut</description>
+            <identifier codeSpace="urn:xplan">FP_DetailZweckbestGemeinbedarf_52156</identifier>
+            <name>52156</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    
+</Dictionary>

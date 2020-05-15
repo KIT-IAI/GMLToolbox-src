@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="FP_DetailZweckbestSpielSportanlage">
+    <description>GML-Dictionary weiterer Zweckbestimmungen einer Spiel- bzw. Sportanlagenfläche.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:FP_DetailZweckbestSpielSportanlage</identifier>
+    <name>xplan:FP_DetailZweckbestSpielSportanlage</name>
+    
+</Dictionary>

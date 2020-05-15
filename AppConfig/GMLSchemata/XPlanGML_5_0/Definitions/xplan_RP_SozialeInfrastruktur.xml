@@ -1,0 +1,74 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:22-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_SozialeInfrastruktur">
+  <gml:description>Soziale Infrastruktur ist ein (unpräziser) Sammelbegriff für Einrichtungen, Leistungen und Dienste in den Kommunen, distinkt von Verkehr, Energieversorgung und Entsorgung. Sie umfasst u.a. Bildung, Gesundheit, Sozialeinrichtungen, Kultureinrichtungen und Einrichtungen der öffentlichen Verwaltung.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_SozialeInfrastruktur</gml:identifier>
+  <gml:name>xplan:RP_SozialeInfrastruktur</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ">
+      <gml:description>Klassifikation von Sozialer Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_SozialeInfrastruktur:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ_RP_SozialeInfrastrukturTypen_1000">
+          <gml:description>Kulturbezogene Infrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_SozialeInfrastruktur:typ:RP_SozialeInfrastrukturTypen:1000</gml:identifier>
+          <gml:name>Kultur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ_RP_SozialeInfrastrukturTypen_2000">
+          <gml:description>Sozialeinrichtung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_SozialeInfrastruktur:typ:RP_SozialeInfrastrukturTypen:2000</gml:identifier>
+          <gml:name>Sozialeinrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ_RP_SozialeInfrastrukturTypen_3000">
+          <gml:description>Gesundheitsinfrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_SozialeInfrastruktur:typ:RP_SozialeInfrastrukturTypen:3000</gml:identifier>
+          <gml:name>Gesundheit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ_RP_SozialeInfrastrukturTypen_3001">
+          <gml:description>Krankenhaus.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_SozialeInfrastruktur:typ:RP_SozialeInfrastrukturTypen:3001</gml:identifier>
+          <gml:name>Krankenhaus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ_RP_SozialeInfrastrukturTypen_4000">
+          <gml:description>Bildungs- und/oder Forschungsinfrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_SozialeInfrastruktur:typ:RP_SozialeInfrastrukturTypen:4000</gml:identifier>
+          <gml:name>BildungForschung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ_RP_SozialeInfrastrukturTypen_4001">
+          <gml:description>Hochschule.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_SozialeInfrastruktur:typ:RP_SozialeInfrastrukturTypen:4001</gml:identifier>
+          <gml:name>Hochschule</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ_RP_SozialeInfrastrukturTypen_5000">
+          <gml:description>Polizeiliche Infrastruktur</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_SozialeInfrastruktur:typ:RP_SozialeInfrastrukturTypen:5000</gml:identifier>
+          <gml:name>Polizei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_SozialeInfrastruktur_typ_RP_SozialeInfrastrukturTypen_9999">
+          <gml:description>Sonstige Soziale Infrastruktur.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_SozialeInfrastruktur:typ:RP_SozialeInfrastrukturTypen:9999</gml:identifier>
+          <gml:name>SonstigeSozialeInfrastruktur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_SozialeInfrastrukturTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

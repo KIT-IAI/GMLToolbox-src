@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ReferenzsystemListe" type="ReferezsystemListeType"/>
+    <xs:complexType name="ReferezsystemListeType">
+       <xs:sequence>
+           <xs:element name="Referenzsystem" type="ReferenzsystemType" minOccurs="0" maxOccurs="unbounded"/>
+       </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="ReferenzsystemType">
+        <xs:sequence>
+            <xs:element name="srsNameShort" type="xs:string"/>
+            <xs:element name="internalCode" type="xs:int"/>
+            <xs:element name="srsNameFull" type="xs:string" minOccurs="0"/>
+            <xs:element name="srsDimension" type="xs:int" minOccurs="0" default="2"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="art" type="ArtType" minOccurs="0"/>
+            <xs:element name="country" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="ArtType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Geographische Koordinaten"/>
+            <xs:enumeration value="Projizierte Koordinaten"/>
+            <xs:enumeration value="Kombiniertes Lage- und Höhensystem"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,157 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:23-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Erholung">
+  <gml:description>Freizeit, Erholung und Tourismus.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Erholung</gml:identifier>
+  <gml:name>xplan:RP_Erholung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Erholung_typErholung">
+      <gml:description>Klassifikation von Erholungstypen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Erholung:attribute:typErholung</gml:identifier>
+      <gml:name>xplan:typErholung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_1000">
+          <gml:description>Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:1000</gml:identifier>
+          <gml:name>Erholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_2000">
+          <gml:description>Ruhige Erholung in Natur und Landschaft.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:2000</gml:identifier>
+          <gml:name>RuhigeErholungInNaturUndLandschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_2001">
+          <gml:description>Landschaftsbezogene Erholung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:2001</gml:identifier>
+          <gml:name>LandschaftsbezogeneErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_3000">
+          <gml:description>Erholung mit starker Inanspruchnahme durch die Bevölkerung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:3000</gml:identifier>
+          <gml:name>ErholungMitStarkerInanspruchnahmeDurchBevoelkerung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_3001">
+          <gml:description>Infrastrukturelle Erholung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:3001</gml:identifier>
+          <gml:name>InfrastrukturelleErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_4000">
+          <gml:description>Erholungswald sind Waldgebiete, oft im Umfeld von Ballungszentren, die hauptsächlich der Erholung der Bevölkerung dienen (gegenüber forstwirtschaftlicher Nutzung oder Naturschutz). Nach § 13 Bundeswaldgesetz (1) kann Wald "zu Erholungswald erklärt werden, wenn es das Wohl der Allgemeinheit erfordert, Waldflächen für Zwecke der Erholung zu schützen, zu pflegen oder zu gestalten".</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:4000</gml:identifier>
+          <gml:name>Erholungswald</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_5000">
+          <gml:description>Freizeitanlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:5000</gml:identifier>
+          <gml:name>Freizeitanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_5001">
+          <gml:description>Ferieneinrichtung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:5001</gml:identifier>
+          <gml:name>Ferieneinrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_6000">
+          <gml:description>Erholungslandschaft in den Alpen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:6000</gml:identifier>
+          <gml:name>ErholungslandschaftAlpen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_7000">
+          <gml:description>Kureinrichtung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:7000</gml:identifier>
+          <gml:name>Kureinrichtung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typErholung_RP_ErholungTypen_9999">
+          <gml:description>Sonstige Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typErholung:RP_ErholungTypen:9999</gml:identifier>
+          <gml:name>SonstigeErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_ErholungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Erholung_typTourismus">
+      <gml:description>Klassifikation von Tourismustypen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Erholung:attribute:typTourismus</gml:identifier>
+      <gml:name>xplan:typTourismus</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typTourismus_RP_TourismusTypen_1000">
+          <gml:description>Tourismus.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typTourismus:RP_TourismusTypen:1000</gml:identifier>
+          <gml:name>Tourismus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typTourismus_RP_TourismusTypen_2000">
+          <gml:description>Tourismus im Küstenraum.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typTourismus:RP_TourismusTypen:2000</gml:identifier>
+          <gml:name>Kuestenraum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_typTourismus_RP_TourismusTypen_9999">
+          <gml:description>Sonstiger Tourismus.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:typTourismus:RP_TourismusTypen:9999</gml:identifier>
+          <gml:name>SonstigerTourismus</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_TourismusTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Erholung_besondererTyp">
+      <gml:description>Klassifikation von besonderen Typen für Tourismus und/oder Erholung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Erholung:attribute:besondererTyp</gml:identifier>
+      <gml:name>xplan:besondererTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_besondererTyp_RP_BesondereTourismusErholungTypen_1000">
+          <gml:description>Entwicklungsgebiet.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:besondererTyp:RP_BesondereTourismusErholungTypen:1000</gml:identifier>
+          <gml:name>Entwicklungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_besondererTyp_RP_BesondereTourismusErholungTypen_2000">
+          <gml:description>Kernbereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:besondererTyp:RP_BesondereTourismusErholungTypen:2000</gml:identifier>
+          <gml:name>Kernbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Erholung_besondererTyp_RP_BesondereTourismusErholungTypen_3000">
+          <gml:description>Besondere Entwicklungsaufgabe von Tourismus und/oder Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Erholung:besondererTyp:RP_BesondereTourismusErholungTypen:3000</gml:identifier>
+          <gml:name>BesondereEntwicklungsaufgabe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_BesondereTourismusErholungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Freiraum" />
+</TypeDefinition>

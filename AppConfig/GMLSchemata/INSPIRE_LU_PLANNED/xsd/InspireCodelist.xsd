@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"	
+	     xmlns:inscl="http://www.kit.edu/inspire/codelists" targetNamespace="http://www.kit.edu/inspire/codelists" elementFormDefault="qualified" version="0.2">
+	<!--  import necessary definitions -->
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>	
+	
+	<!-- add hierarchy information to gml:DefinitionType -->
+	<complexType name="CodeDefinitionType">
+		<complexContent>
+			<extension base="gml:DefinitionType">
+				<sequence>				
+					<element name="parentID" type="string" minOccurs="0"/>				
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<element name="CodeDefinition" type="inscl:CodeDefinitionType" substitutionGroup="gml:Definition"/>	
+</schema>

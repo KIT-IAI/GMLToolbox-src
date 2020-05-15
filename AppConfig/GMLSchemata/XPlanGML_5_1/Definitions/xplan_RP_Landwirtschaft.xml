@@ -1,0 +1,87 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:38-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Landwirtschaft">
+  <gml:description>Landwirtschaft, hauptsächlich im ländlichen Raum angesiedelt, erfüllt für die Gesellschaft wichtige Funktionen in der Produktion- und Versorgung mit Lebensmitteln, für Freizeit und Freiraum oder zur Biodiversität.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Landwirtschaft</gml:identifier>
+  <gml:name>xplan:RP_Landwirtschaft</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Landwirtschaft_typ">
+      <gml:description>Klassifikation von Landwirtschaftstypen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Landwirtschaft:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_1000">
+          <gml:description>Allgemeine Landwirtschaftliche Nutzung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:1000</gml:identifier>
+          <gml:name>LandwirtschaftlicheNutzung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_1001">
+          <gml:description>Kernzone Landwirtschaft.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:1001</gml:identifier>
+          <gml:name>KernzoneLandwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_2000">
+          <gml:description>Intensive Landwirtschaft.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:2000</gml:identifier>
+          <gml:name>IntensivLandwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_3000">
+          <gml:description>Fischerei.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:3000</gml:identifier>
+          <gml:name>Fischerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_4000">
+          <gml:description>Weinbau.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:4000</gml:identifier>
+          <gml:name>Weinbau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_5000">
+          <gml:description>Landwirtschaft auf Grund hohen Ertragspotenzials.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:5000</gml:identifier>
+          <gml:name>AufGrundHohenErtragspotenzials</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_6000">
+          <gml:description>Landwirtschaft auf Grund besonderer Funktionen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:6000</gml:identifier>
+          <gml:name>AufGrundBesondererFunktionen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_7000">
+          <gml:description>Grünlandbewirtschaftung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:7000</gml:identifier>
+          <gml:name>Gruenlandbewirtschaftung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_8000">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:8000</gml:identifier>
+          <gml:name>Sonderkultur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Landwirtschaft_typ_RP_LandwirtschaftTypen_9999">
+          <gml:description>Sonstige Landwirtschaft</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Landwirtschaft:typ:RP_LandwirtschaftTypen:9999</gml:identifier>
+          <gml:name>SonstigeLandwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_LandwirtschaftTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Freiraum" />
+</TypeDefinition>

@@ -1,0 +1,123 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:27-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_IndustrieGewerbe">
+  <gml:description>Industrie- und Gewerbestrukturen und -funktionen.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_IndustrieGewerbe</gml:identifier>
+  <gml:name>xplan:RP_IndustrieGewerbe</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_IndustrieGewerbe_typ">
+      <gml:description>Klassifikation von Industrie- und Gewerbetypen.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_IndustrieGewerbe:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_1000">
+          <gml:description>Industrie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:1000</gml:identifier>
+          <gml:name>Industrie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_1001">
+          <gml:description>Industrielle Anlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:1001</gml:identifier>
+          <gml:name>IndustrielleAnlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_2000">
+          <gml:description>Gewerbe</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:2000</gml:identifier>
+          <gml:name>Gewerbe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_2001">
+          <gml:description>Gewerblicher Bereich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:2001</gml:identifier>
+          <gml:name>GewerblicherBereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_2002">
+          <gml:description>Gewerbepark.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:2002</gml:identifier>
+          <gml:name>Gewerbepark</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_2003">
+          <gml:description>Dienstleistungs- oder gewerbezentrum</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:2003</gml:identifier>
+          <gml:name>DienstleistungGewerbeZentrum</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_3000">
+          <gml:description>Gewerbe-Industrie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:3000</gml:identifier>
+          <gml:name>GewerbeIndustrie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_3001">
+          <gml:description>Bedeutsamer Entwicklungsstandort von Gewerbe-Industrie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:3001</gml:identifier>
+          <gml:name>BedeutsamerEntwicklungsstandortGewerbeIndustrie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_4000">
+          <gml:description>Sicherung und Entwicklung von Arbeitsstätten.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:4000</gml:identifier>
+          <gml:name>SicherungundEntwicklungvonArbeitsstaetten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_5000">
+          <gml:description>Flächenintensives Großvorhaben.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:5000</gml:identifier>
+          <gml:name>FlaechenintensivesGrossvorhaben</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_6000">
+          <gml:description>Betriebsanlage des Bergbaus.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:6000</gml:identifier>
+          <gml:name>BetriebsanlageBergbau</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_7000">
+          <gml:description>Hafenorientierte wirtschaftliche Anlage.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:7000</gml:identifier>
+          <gml:name>HafenorientierteWirtschaftlicheAnlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_8000">
+          <gml:description>Tankanlagen und Rastanlagen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:8000</gml:identifier>
+          <gml:name>TankRastanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_9000">
+          <gml:description>Sonstige Typen von Industrie und Gewerbe.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:9000</gml:identifier>
+          <gml:name>BereichFuerGewerblicheUndIndustrielleNutzungGIB</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_IndustrieGewerbe_typ_RP_IndustrieGewerbeTypen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_IndustrieGewerbe:typ:RP_IndustrieGewerbeTypen:9999</gml:identifier>
+          <gml:name>SonstigeIndustrieGewerbe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_IndustrieGewerbeTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Siedlung" />
+</TypeDefinition>

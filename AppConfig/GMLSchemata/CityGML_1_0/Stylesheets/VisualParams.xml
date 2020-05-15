@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KmlVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/XPlanung/XPlanGML-Toolbox_Executable/XSD/KmlParameter.xsd">
+
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:Building</klassenName>
+        <polyVisualParams>
+            <fillColor r="101" g="252" b="244"/>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:WallSurface</klassenName>
+        <polyVisualParams>
+            <fillColor r="128" g="128" b="128"/>
+            <lineColor r="0" g="0" b="0"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>
+    
+    <KmlKlassenVisualParams>
+        <klassenName>bldg:RoofSurface</klassenName>
+        <polyVisualParams>
+            <fillColor r="255" g="0" b="0"/>
+            <lineColor r="0" g="0" b="0"/>
+            <physicalWidth>1</physicalWidth>
+        </polyVisualParams>
+    </KmlKlassenVisualParams>
+    
+</KmlVisualisierung>

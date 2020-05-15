@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OSM_SvgVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/OSM_SvgParameter.xsd"
+     showAllSurfaces="true" showAllLines="true">
+    
+    <!-- Default Styles -->
+    <DefaultFlaechenDarstellung priority="5">
+        <FlaechenParams class="DefaultSurfaceStyle"/>
+    </DefaultFlaechenDarstellung>
+    
+    <DefaultLinienDarstellung priority="18">
+        <LinienParams class="DefaultLineStyle"/>
+    </DefaultLinienDarstellung>
+    
+    <Style styleName="DefaultSurfaceStyle">
+       <FillColor>
+           <ColorName>black</ColorName>
+       </FillColor>
+       <StrokeColor>
+           <ColorName>white</ColorName>
+       </StrokeColor>
+       <Stroke-width>1</Stroke-width>
+   </Style>
+    
+    <Style styleName="DefaultLineStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>4</Stroke-dasharray>
+        <Stroke-dasharray>4</Stroke-dasharray>               
+    </Style>
+        
+   
+    <!--   Land Use -->
+    <OSMVisual osmClassification="LandUse" selectAttribut="landuse">
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>allotments</SelectAttributWert>
+            <FlaechenParams class="AllotmentsStyle"/>        
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>brownfield</SelectAttributWert>
+            <FlaechenParams class="BrownfieldStyle"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>commercial</SelectAttributWert>
+            <FlaechenParams class="CommercialStyle"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>construction</SelectAttributWert>
+            <FlaechenParams class="ConstructionStyle"/>
+        </FlaechenDarstellung>        
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>farmland</SelectAttributWert>
+            <SelectAttributWert>farm</SelectAttributWert>
+            <SelectAttributWert>farmyard</SelectAttributWert>
+            <FlaechenParams class="FarmlandStyle"/>
+        </FlaechenDarstellung>        
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>forest</SelectAttributWert>
+            <FlaechenParams class="ForestStyle"/>
+        </FlaechenDarstellung>        
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>grass</SelectAttributWert>
+            <FlaechenParams class="GrassStyle"/>
+        </FlaechenDarstellung>        
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>industrial</SelectAttributWert>
+            <FlaechenParams class="IndustrialStyle"/>
+        </FlaechenDarstellung>        
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>meadow</SelectAttributWert>
+            <FlaechenParams class="MeadowStyle"/>
+        </FlaechenDarstellung>   
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>residential</SelectAttributWert>
+            <FlaechenParams class="ResidentialStyle"/>
+        </FlaechenDarstellung>   
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>village_green</SelectAttributWert>
+            <FlaechenParams class="VillageGreenStyle"/>
+        </FlaechenDarstellung>   
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>recreation_ground</SelectAttributWert>
+            <FlaechenParams class="RecreationGroundStyle"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>cemetery</SelectAttributWert>
+            <FlaechenParams class="CemeteryStyle"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>retail</SelectAttributWert>
+            <FlaechenParams class="RetailStyle"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="LandUseDefaultStyle"/>
+        </FlaechenDarstellung>
+        
+        <RelationDarstellung priority="11" type="multipolygon"/>            
+    </OSMVisual>
+    
+    <Style styleName="RetailStyle">
+        <FillColor>
+            <Color r="240" g="217" b="217"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="CemeteryStyle">
+        <FillColor>
+            <Color r="168" g="202" b="173"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="RecreationGroundStyle">
+        <FillColor>
+            <Color r="207" g="235" b="165"/>           
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="AllotmentsStyle">
+        <FillColor>
+            <Color r="231" g="203" b="175"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="VillageGreenStyle">
+        <FillColor>
+            <Color r="207" g="237" b="165"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="ResidentialStyle">
+        <FillColor>
+            <Color r="218" g="218" b="218"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="MeadowStyle">
+        <FillColor>
+            <Color r="207" g="236" b="168"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>    
+    
+    <Style styleName="IndustrialStyle">
+        <FillColor>
+            <Color r="223" g="209" b="214"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>    
+    
+    <Style styleName="GrassStyle">
+        <FillColor>
+            <Color r="207" g="237" b="165"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>    
+    
+    
+    <Style styleName="ForestStyle">
+        <FillColor>
+            <Color r="159" g="208" b="130"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>    
+
+    <Style styleName="FarmlandStyle">
+        <FillColor>
+            <Color r="236" g="221" b="200"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>    
+    
+    <Style styleName="ConstructionStyle">
+        <FillColor>
+            <Color r="182" g="182" b="144"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="CommercialStyle">
+        <FillColor>
+            <Color r="240" g="200" b="199"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="BrownfieldStyle">
+        <FillColor>
+            <Color r="182" g="182" b="144"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="LandUseDefaultStyle">
+        <FillColor>
+            <ColorName>black</ColorName>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <!-- Traffic -->
+    <OSMVisual osmClassification="RoadTraffic" selectAttribut="highway">
+        <FlaechenDarstellung priority="18">
+            <SelectAttributWert>pedestrian</SelectAttributWert>
+            <FlaechenParams class="PedestrianStyle"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="RoadTrafficAreaDefault"/> 
+        </FlaechenDarstellung>
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>primary</SelectAttributWert>
+            <LinienParams class="PrimaryRoadStyle"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>secondary</SelectAttributWert>
+            <LinienParams class="SecondaryRoadStyleA"/>
+            <LinienParams class="SecondaryRoadStyleB"/>
+        </LinienDarstellung>        
+            
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>tertiary</SelectAttributWert>
+            <LinienParams class="TertiaryRoadStyle"/>
+        </LinienDarstellung>       
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>service</SelectAttributWert>
+            <LinienParams class="ServiceRoadStyleA"/>
+            <LinienParams class="ServiceRoadStyleB"/>
+        </LinienDarstellung>      
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>cycleway</SelectAttributWert>
+            <LinienParams class="CyclewayStyle"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>pedestrian</SelectAttributWert>
+            <LinienParams class="PedestrianStyle"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>steps</SelectAttributWert>
+            <LinienParams class="StepsStyle"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>footway</SelectAttributWert>
+            <LinienParams class="PedestrianStyle"/>
+        </LinienDarstellung>        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <LinienParams class="RoadTrafficLineDefault"/>
+        </LinienDarstellung>
+        
+        <PunktDarstellung symbol="RoadSymbolDefault"/>
+        
+        <RelationDarstellung priority="13" type="multipolygon" />     
+    </OSMVisual>
+    
+    <Style styleName="PedestrianStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="250" g="137" b="135"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="StepsStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="250" g="137" b="135"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>    
+    <Style styleName="PrimaryRoadStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="220" g="158" b="158"/>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+    </Style>
+    
+    <Style styleName="SecondaryRoadStyleA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    
+    <Style styleName="SecondaryRoadStyleB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>white</ColorName>
+        </StrokeColor>
+        <Stroke-width>4.8</Stroke-width>
+    </Style>
+    
+    <Style styleName="TertiaryRoadStyle">
+        <FillColor>
+            <None></None>
+        </FillColor>
+        <StrokeColor>
+            <Color r="248" g="248" b="186"/>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    
+    <Style styleName="ServiceRoadStyleA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="245" g="211" b="211"/>
+        </StrokeColor>
+        <Stroke-width>3</Stroke-width>
+    </Style>
+    
+    <Style styleName="ServiceRoadStyleB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>white</ColorName>
+        </StrokeColor>
+        <Stroke-width>1.9</Stroke-width>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+    </Style>
+    
+    <Symbol name="RoadSymbolDefault">
+        <Circle cx="0" cy="0" r="1">
+            <FillColor>
+                <ColorName>black</ColorName>
+            </FillColor>
+        </Circle>
+    </Symbol>
+    
+    <Style styleName="RoadTrafficAreaDefault">
+        <FillColor>
+            <ColorName>yellow</ColorName>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="RoadTrafficLineDefault">
+        <FillColor>
+            <None></None>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <!-- cycleway -->
+    <OSMVisual osmClassification="BikeTraffic">
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="RoadTrafficAreaDefault"/>
+        </FlaechenDarstellung>
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <LinienParams class="CyclewayStyle"/>
+        </LinienDarstellung>
+    </OSMVisual>
+    
+    <Style styleName="CyclewayStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="146" g="147" b="247"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+    </Style>
+    
+    
+    <!-- Building -->
+    <OSMVisual osmClassification="Building">
+        <FlaechenDarstellung priority="12">
+            <FlaechenParams class="BuildingDefaultStyle"/>
+        </FlaechenDarstellung>
+        
+        <RelationDarstellung priority="13" type="multipolygon" />
+    </OSMVisual>
+    
+    <Style styleName="BuildingDefaultStyle">
+        <FillColor>
+           <Color r="213" g="208" b="200"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>      
+    </Style>  
+    
+    <OSMVisual osmClassification="Amenity" selectAttribut="amenity">
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="AmenityDefaultStyle"/>
+        </FlaechenDarstellung>
+        
+        <RelationDarstellung priority="13" type="multipolygon"/>
+    </OSMVisual>
+    
+    <Style styleName="AmenityDefaultStyle">
+        <FillColor>
+            <Color r="240" g="241" b="215"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <OSMVisual osmClassification="AirTraffic">
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="AerowayDefaultStyle"/>
+        </FlaechenDarstellung>
+        
+        <RelationDarstellung priority="13" type="multipolygon" />
+    </OSMVisual>
+    
+    <Style styleName="AerowayDefaultStyle">
+        <FillColor>
+            <Color r="233" g="209" b="255"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <OSMVisual osmClassification="NaturalObject">
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>water</SelectAttributWert>
+            <FlaechenParams class="WaterStyle"/>
+        </FlaechenDarstellung>
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>riverbank</SelectAttributWert>
+            <FlaechenParams class="WaterStyle"/>
+        </FlaechenDarstellung>
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="NaturalDefaultStyle"/>
+        </FlaechenDarstellung>
+        
+        <RelationDarstellung priority="11" type="multipolygon"/>
+    </OSMVisual>
+    
+    <OSMVisual osmClassification="Water">
+        <FlaechenDarstellung priority="10">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="WaterStyle"/>
+        </FlaechenDarstellung>
+    </OSMVisual>
+    
+    <Style styleName="WaterStyle">
+        <FillColor>
+            <Color r="180" g="208" b="209"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="NaturalDefaultStyle">
+        <FillColor>
+            <Color r="255" g="0" b="255"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <OSMVisual osmClassification="Leisure">
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="LeisureDefaultStyle"/>
+        </FlaechenDarstellung>
+        
+        <RelationDarstellung priority="13" type="multipolygon"/>
+    </OSMVisual>
+    
+    <Style styleName="LeisureDefaultStyle">
+        <FillColor>
+            <Color r="138" g="211" b="175"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <OSMVisual osmClassification="Electricity">
+        <FlaechenDarstellung priority="11">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="ElectricityDefaultAreaStyle"/>
+        </FlaechenDarstellung>
+        
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <LinienParams class="ElectricityDefaultLineStyle"/>
+        </LinienDarstellung>
+        
+     
+    </OSMVisual>
+    
+    <Style styleName="ElectricityDefaultAreaStyle">
+        <FillColor>
+            <Color r="255" g="255" b="0"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="ElectricityDefaultLineStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="255" b="0"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>4</Stroke-dasharray>
+        <Stroke-dasharray>4</Stroke-dasharray>
+    </Style>
+    
+    <OSMVisual osmClassification="Construction">
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="ConstructionDefaultStyle"/>
+        </FlaechenDarstellung>
+        
+        <RelationDarstellung priority="13" type="multipolygon"/>        
+    </OSMVisual>
+    
+    <Style styleName="ConstructionDefaultStyle">
+        <FillColor>
+            <Color r="236" g="215" b="254"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <OSMVisual osmClassification="Tourism">
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="TourismDefaultStyle"/>
+        </FlaechenDarstellung>
+    </OSMVisual>
+    
+    <Style styleName="TourismDefaultStyle">
+        <FillColor>
+            <Color r="242" g="202" b="234"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <OSMVisual osmClassification="RailwayTraffic" selectAttribut="railway">
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>III</SelectAttributWert>
+            <FlaechenParams class="RailwayTrafficDefaultStyle"/>
+        </FlaechenDarstellung>
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>rail</SelectAttributWert>
+            <LinienParams class="RailAStyle"/>
+            <LinienParams class="RailBStyle"/>            
+        </LinienDarstellung>
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>platform</SelectAttributWert>
+            <LinienParams class="PlatformStyle"/>
+        </LinienDarstellung>
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>subway</SelectAttributWert>
+            <LinienParams class="SubwayStyle"/>
+        </LinienDarstellung>
+        <LinienDarstellung priority="18">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <LinienParams class="RailwayLineDefaultStyle"/>
+        </LinienDarstellung>
+        
+        <RelationDarstellung priority="13" type="multipolygon" />
+    </OSMVisual>
+    
+    <Style styleName="RailwayTrafficDefaultStyle">
+        <FillColor>
+            <Color r="214" g="209" b="200"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="RailAStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="186" g="186" b="186"/>
+        </StrokeColor>
+        <Stroke-width>1.5</Stroke-width>
+    </Style>
+    <Style styleName="RailBStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>white</ColorName>                     
+        </StrokeColor>
+        <Stroke-width>1.2</Stroke-width>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="PlatformStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="186" g="186" b="186"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="SubwayStyle">
+        <FillColor>
+        <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>red</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="RailwayLineDefaultStyle">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <OSMVisual osmClassification="Wood">
+        <FlaechenDarstellung priority="12">
+            <SelectAttributWert>IIII</SelectAttributWert>
+            <FlaechenParams class="ForestStyle"/>
+        </FlaechenDarstellung>
+        
+        <RelationDarstellung priority="13" type="multipolygon" />
+    </OSMVisual>
+    
+</OSM_SvgVisualisierung>

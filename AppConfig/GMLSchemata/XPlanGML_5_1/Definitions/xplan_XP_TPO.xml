@@ -1,0 +1,113 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:17-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_XP_TPO">
+  <gml:description>Abstrakte Oberklasse für textliche Präsentationsobjekte. Entspricht der ALKIS Objektklasse AP_TPO</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_TPO</gml:identifier>
+  <gml:name>xplan:XP_TPO</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_TPO_schriftinhalt">
+      <gml:description>Schriftinhalt; enthält den darzustellenden Text.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_TPO:attribute:schriftinhalt</gml:identifier>
+      <gml:name>xplan:schriftinhalt</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_TPO_fontSperrung">
+      <gml:description>Die Zeichensperrung steuert den zusätzlichen Raum, der zwischen 2 aufeinanderfolgende Zeichenkörper geschoben wird. Er ist ein Faktor, der mit der angegebenen Zeichenhöhe multipliziert wird, um den einzufügenden Zusatzabstand zu erhalten. Mit der Abhängigkeit von der Zeichenhöhe wird erreicht, dass das Schriftbild unabhängig von der Zeichenhöhe gleich wirkt. Der Defaultwert ist 0.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_TPO:attribute:fontSperrung</gml:identifier>
+      <gml:name>xplan:fontSperrung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Decimal" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_TPO_skalierung">
+      <gml:description>Skalierungsfaktor für die Schriftgröße (fontGroesse * skalierung).</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_TPO:attribute:skalierung</gml:identifier>
+      <gml:name>xplan:skalierung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Decimal" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_TPO_horizontaleAusrichtung">
+      <gml:description>Gibt die Ausrichtung des Textes bezüglich der Textgeometrie an.
+&lt;i&gt;linksbündig&lt;/i&gt;: Der Text beginnt an der Punktgeometrie bzw. am Anfangspunkt der Liniengeometrie.
+&lt;i&gt;rechtsbündig&lt;/i&gt;: Der Text endet an der Punktgeometrie bzw. am Endpunkt der Liniengeometrie
+&lt;i&gt;zentrisch&lt;/i&gt;: Der Text erstreckt sich von der Punktgeometrie gleich weit nach links und rechts bzw. steht auf der Mitte der Standlinie.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_TPO:attribute:horizontaleAusrichtung</gml:identifier>
+      <gml:name>xplan:horizontaleAusrichtung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_TPO_horizontaleAusrichtung_XP_HorizontaleAusrichtung_linksbündig">
+          <gml:description>Text linksbündig am Textpunkt bzw. am ersten Punkt der Linie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_TPO:horizontaleAusrichtung:XP_HorizontaleAusrichtung:linksbündig</gml:identifier>
+          <gml:name>linksbündig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_TPO_horizontaleAusrichtung_XP_HorizontaleAusrichtung_rechtsbündig">
+          <gml:description>Text rechtsbündig am Textpunkt bzw. am letzten Punkt der Linie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_TPO:horizontaleAusrichtung:XP_HorizontaleAusrichtung:rechtsbündig</gml:identifier>
+          <gml:name>rechtsbündig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_TPO_horizontaleAusrichtung_XP_HorizontaleAusrichtung_zentrisch">
+          <gml:description>Text zentriert am Textpunkt bzw. in der Mitte der Textstandlinie.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_TPO:horizontaleAusrichtung:XP_HorizontaleAusrichtung:zentrisch</gml:identifier>
+          <gml:name>zentrisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_HorizontaleAusrichtung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_TPO_vertikaleAusrichtung">
+      <gml:description>Die vertikale Ausrichtung eines Textes gibt an, ob die Bezugsgeometrie die Basis (Grundlinie) des Textes, die Mitte oder obere Buchstabenbegrenzung betrifft.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_TPO:attribute:vertikaleAusrichtung</gml:identifier>
+      <gml:name>xplan:vertikaleAusrichtung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_TPO_vertikaleAusrichtung_XP_VertikaleAusrichtung_Basis">
+          <gml:description>Textgeometrie bezieht sich auf die Basis- bzw. Grundlinie der Buchstaben.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_TPO:vertikaleAusrichtung:XP_VertikaleAusrichtung:Basis</gml:identifier>
+          <gml:name>Basis</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_TPO_vertikaleAusrichtung_XP_VertikaleAusrichtung_Mitte">
+          <gml:description>Textgeometrie bezieht sich auf die Mittellinie der Buchstaben.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_TPO:vertikaleAusrichtung:XP_VertikaleAusrichtung:Mitte</gml:identifier>
+          <gml:name>Mitte</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_XP_TPO_vertikaleAusrichtung_XP_VertikaleAusrichtung_Oben">
+          <gml:description>Textgeometrie bezieht sich auf die Oberlinie der Großbuchstaben.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:XP_TPO:vertikaleAusrichtung:XP_VertikaleAusrichtung:Oben</gml:identifier>
+          <gml:name>Oben</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_VertikaleAusrichtung</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_XP_TPO_hat">
+      <gml:description>Die Relation ermöglicht es, einem textlichen Präsentationsobjekt ein linienförmiges Präsentationsobjekt zuzuweisen. Einziger bekannter Anwendungsfall ist der Zuordnungspfeil eines Symbols oder einer Nutzungsschablone.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:XP_TPO:association-role:hat</gml:identifier>
+      <gml:name>xplan:hat</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:XP_LPO" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_AbstraktesPraesentationsobjekt" />
+</TypeDefinition>

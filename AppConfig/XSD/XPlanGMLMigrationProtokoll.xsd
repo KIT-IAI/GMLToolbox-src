@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+
+ <xs:element name="MigrationProtokoll" type="MigrationProtokollType"/>
+ <xs:complexType name="MigrationProtokollType">
+  <xs:sequence>
+   <xs:element name="MigrationDateiProtokoll" minOccurs="0" maxOccurs="unbounded" type="MigrationDateiProtokollType"/>
+  </xs:sequence>
+ <xs:attribute name="schemaQuelle" type="xs:string" use="required"/>
+  <xs:attribute name="schemaZiel" type="xs:string" use="required"/>
+  <xs:attribute name="migrationsDatum" type="xs:string" use="optional"/>
+ </xs:complexType>
+ 
+ <xs:complexType name="MigrationDateiProtokollType">
+  <xs:sequence>
+   <xs:element name="MigrationFehler" minOccurs="0" maxOccurs="unbounded" type="MigrationFehlerType"/>
+  </xs:sequence>
+  <xs:attribute name="dateiName" type="xs:string" use="required"/>
+  <xs:attribute name="anzObjGelesen" type="xs:int" use="optional"/>
+  <xs:attribute name="anzObjTransformiert" type="xs:int" use="optional"/>
+ </xs:complexType>
+ 
+ <xs:complexType name="MigrationFehlerType">
+  <xs:attribute name="objectId" type="xs:string" use="required"/>
+  <xs:attribute name="klassenNameQuelle" type="xs:string" use="optional"/>
+  <xs:attribute name="attributNameQuelle" type="xs:string" use="optional"/>
+  <xs:attribute name="klassenNameZiel" type="xs:string" use="optional"/>
+  <xs:attribute name="attributNameZiel" type="xs:string" use="optional"/>
+  <xs:attribute name="fehlerKlassifikation" type="FeehlerKlassifikationEnum" use="required"/>
+  <xs:attribute name="fehlerBeschreibung" type="xs:string" use="optional"/>
+  <xs:attribute name="aktionBeschreibung" type="xs:string" use="optional"/>
+ </xs:complexType>
+ 
+ <xs:simpleType name="FeehlerKlassifikationEnum">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="INFORMATION"/>
+   <xs:enumeration value="WARNUNG"/>
+   <xs:enumeration value="FEHLER"/>
+   <xs:enumeration value="SCHWERER_FEHLER"/>
+  </xs:restriction>
+ </xs:simpleType>
+ 
+ 
+</xs:schema>

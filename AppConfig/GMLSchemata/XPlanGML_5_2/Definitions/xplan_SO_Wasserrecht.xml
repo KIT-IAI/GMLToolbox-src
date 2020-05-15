@@ -1,0 +1,161 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:35-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Wasserrecht">
+  <gml:description>Festlegung nach Wasserhaushaltsgesetz (WHG)</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Wasserrecht</gml:identifier>
+  <gml:name>xplan:SO_Wasserrecht</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung">
+      <gml:description>Rechtliche Klassifizierung der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Wasserrecht:attribute:artDerFestlegung</gml:identifier>
+      <gml:name>xplan:artDerFestlegung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_1000">
+          <gml:description>Allgemeines Gewässer
+Dieser Eintrag ist &lt;b&gt;veraltet &lt;/b&gt;und wird in der nächsten Hauptversion des Standards wegfallen. Es sollte stattdessen die Klasse SO_Gewaesser verwendet werden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:1000</gml:identifier>
+          <gml:name>Gewaesser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_10000">
+          <gml:description>Gewässer 1. Ordnung.
+Allgemeines Gewässer
+Dieser Eintrag ist &lt;b&gt;veraltet &lt;/b&gt;und wird in der nächsten Hauptversion des Standards wegfallen. Es sollte stattdessen die Klasse SO_Gewaesser verwendet werden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:10000</gml:identifier>
+          <gml:name>Gewaesser1Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_10001">
+          <gml:description>Gewässer 2. Ordnung.
+Allgemeines Gewässer
+Dieser Eintrag ist &lt;b&gt;veraltet &lt;/b&gt;und wird in der nächsten Hauptversion des Standards wegfallen. Es sollte stattdessen die Klasse SO_Gewaesser verwendet werden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:10001</gml:identifier>
+          <gml:name>Gewaesser2Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_10002">
+          <gml:description>Gewässer 3. Ordnung
+Allgemeines Gewässer
+Dieser Eintrag ist &lt;b&gt;veraltet &lt;/b&gt;und wird in der nächsten Hauptversion des Standards wegfallen. Es sollte stattdessen die Klasse SO_Gewaesser verwendet werden.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:10002</gml:identifier>
+          <gml:name>Gewaesser3Ordnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_2000">
+          <gml:description>Allgemeines Überschwemmungsgebiet nach WHG </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:2000</gml:identifier>
+          <gml:name>Ueberschwemmungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_20000">
+          <gml:description>Überschwemmungsgebiet nach §76 Abs.2 WHG </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:20000</gml:identifier>
+          <gml:name>FestgesetztesUeberschwemmungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_20001">
+          <gml:description>N Noch nicht festgesetztes Überschwemmungsgebiet, das vorläufig gesichert ist nach. § 76 Abs. 3 WHG </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:20001</gml:identifier>
+          <gml:name>NochNichtFestgesetztesUeberschwemmungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_20002">
+          <gml:description>Überschwemmungsgefährdetes Gebiet nach §31c des vor dem 1.3.2010 gültigen WHG</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:20002</gml:identifier>
+          <gml:name>UeberschwemmGefaehrdetesGebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_3000">
+          <gml:description>Risikogebiet nach § 76 Abs. 3 WHG </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:3000</gml:identifier>
+          <gml:name>Risikogebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_4000">
+          <gml:description>Risikogebiet außerhalb von Überschwemmungsgebieten  nach. § 78b Abs. 1 WHG </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:4000</gml:identifier>
+          <gml:name>RisikogebietAusserhUeberschwemmgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_5000">
+          <gml:description>Hochwasserentstehungsgebiet nach § 78d Abs. 1 WHG</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:5000</gml:identifier>
+          <gml:name>Hochwasserentstehungsgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Wasserrecht_artDerFestlegung_SO_KlassifizNachWasserrecht_9999">
+          <gml:description>Sonstige Klassifizierung nach Wasserrecht.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Wasserrecht:artDerFestlegung:SO_KlassifizNachWasserrecht:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_KlassifizNachWasserrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Wasserrecht_detailArtDerFestlegung">
+      <gml:description>Über eine Codeliste definierte detailliertere rechtliche Klassifizierung der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Wasserrecht:attribute:detailArtDerFestlegung</gml:identifier>
+      <gml:name>xplan:detailArtDerFestlegung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_DetailKlassifizNachWasserrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Wasserrecht_istNatuerlichesUberschwemmungsgebiet">
+      <gml:description>Gibt an, ob es sich bei der Fläche um ein natürliches Überschwemmungsgebiet handelt.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Wasserrecht:attribute:istNatuerlichesUberschwemmungsgebiet</gml:identifier>
+      <gml:name>xplan:istNatuerlichesUberschwemmungsgebiet</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Wasserrecht_istNatuerlichesUberschwemmungsgebiet_Boolean_1">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::SO_Wasserrecht:istNatuerlichesUberschwemmungsgebiet:Boolean:1</gml:identifier>
+          <gml:name>TRUE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="_SO_Wasserrecht_istNatuerlichesUberschwemmungsgebiet_Boolean_0">
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum::SO_Wasserrecht:istNatuerlichesUberschwemmungsgebiet:Boolean:0</gml:identifier>
+          <gml:name>FALSE</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Boolean</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Wasserrecht_name">
+      <gml:description>Informelle Bezeichnung der Festlegung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Wasserrecht:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Wasserrecht_nummer">
+      <gml:description>Amtliche Bezeichnung / Kennziffer der Festlegung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Wasserrecht:attribute:nummer</gml:identifier>
+      <gml:name>xplan:nummer</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Geometrieobjekt" />
+</TypeDefinition>

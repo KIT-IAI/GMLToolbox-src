@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gml:Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:inscl="http://www.kit.edu/inspire/codelists" gml:id   ="GML_LevelOfSpatialPlanValue">
+  <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">LevelOfSpatialPlanValue</gml:identifier>
+  <gml:name>LevelOfSpatialPlanValue</gml:name>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_infraLocal">
+      <gml:description> A plan that covers only part of a municipality.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">infraLocal</gml:identifier>
+      <gml:name>infra-local</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_local">
+      <gml:description>Plan at municipal level, corresponding to the lower level of administration equivalent to LAU2 as laid down in Annex III to Regulation (EC) No 1059/2003 of the European Parliament and of the Council (OJ L 154, 21.6.2003, p. 1.)</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">local</gml:identifier>
+      <gml:name>local</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_supraLocal">
+      <gml:description>A plan that overlaps several municipalities (entirely or partially).</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">supraLocal</gml:identifier>
+      <gml:name>supra-local</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_infraRegional">
+      <gml:description>A plan that overlaps several infra-administrative units in one administrative region.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">infraRegional</gml:identifier>
+      <gml:name>infra-regional</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_regional">
+      <gml:description>Plan at regional level (equivalent to NUTS2 of EUROSTAT nomenclature of statistical units as established in Regulation (EC) No 1059/2003).</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">regional</gml:identifier>
+      <gml:name>regional</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_supraRegional">
+      <gml:description>A plan that overlaps several administrative regions.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">supraRegional</gml:identifier>
+      <gml:name>supra-regional</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_national">
+      <gml:description>Plan at Member State level.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">national</gml:identifier>
+      <gml:name>national</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <inscl:CodeDefinition gml:id="GML_other">
+      <gml:description>Other level of spatial plan.</gml:description>
+      <gml:identifier codeSpace="http://www.kit.edu/inspire/codelists">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </inscl:CodeDefinition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

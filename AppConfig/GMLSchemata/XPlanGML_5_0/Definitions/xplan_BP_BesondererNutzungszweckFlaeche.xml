@@ -1,0 +1,625 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:06-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_BesondererNutzungszweckFlaeche">
+  <gml:description>Festsetzung einer Fläche mit besonderem Nutzungszweck, der durch besondere städtebauliche Gründe erfordert wird (§9 Abs. 1 Nr. 9 BauGB.)
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche</gml:identifier>
+  <gml:name>xplan:BP_BesondererNutzungszweckFlaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_DNmin">
+      <gml:description>Minimal zulässige Dachneigung bei einer Bereichsangabe.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:DNmin</gml:identifier>
+      <gml:name>xplan:DNmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Angle</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_DNmax">
+      <gml:description>Maximal zulässige Dachneigung bei einer Bereichsangabe.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:DNmax</gml:identifier>
+      <gml:name>xplan:DNmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Angle</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_DN">
+      <gml:description>Maximal zulässige Dachneigung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:DN</gml:identifier>
+      <gml:name>xplan:DN</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Angle</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_DNZwingend">
+      <gml:description>Zwingend vorgeschriebene Dachneigung.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:DNZwingend</gml:identifier>
+      <gml:name>xplan:DNZwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Angle</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_FR">
+      <gml:description>Vorgeschriebene Firstrichtung (Gradangabe)</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:FR</gml:identifier>
+      <gml:name>xplan:FR</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Angle</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform">
+      <gml:description>Erlaubte Dachformen</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:dachform</gml:identifier>
+      <gml:name>xplan:dachform</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_1000">
+          <gml:description>Flachdach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:1000</gml:identifier>
+          <gml:name>Flachdach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_2100">
+          <gml:description>Pultdach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:2100</gml:identifier>
+          <gml:name>Pultdach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_2200">
+          <gml:description>Versetztes Pultdach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:2200</gml:identifier>
+          <gml:name>VersetztesPultdach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3100">
+          <gml:description>Satteldach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3100</gml:identifier>
+          <gml:name>Satteldach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3200">
+          <gml:description>Walmdach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3200</gml:identifier>
+          <gml:name>Walmdach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3300">
+          <gml:description>Krüppelwalmdach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3300</gml:identifier>
+          <gml:name>Krueppelwalmdach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3400">
+          <gml:description>Mansardendach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3400</gml:identifier>
+          <gml:name>Mansarddach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3500">
+          <gml:description>Zeltdach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3500</gml:identifier>
+          <gml:name>Zeltdach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3600">
+          <gml:description>Kegeldach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3600</gml:identifier>
+          <gml:name>Kegeldach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3700">
+          <gml:description>Kuppeldach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3700</gml:identifier>
+          <gml:name>Kuppeldach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3800">
+          <gml:description>Sheddach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3800</gml:identifier>
+          <gml:name>Sheddach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_3900">
+          <gml:description>Bogendach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:3900</gml:identifier>
+          <gml:name>Bogendach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_4000">
+          <gml:description>Turmdach</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:4000</gml:identifier>
+          <gml:name>Turmdach</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_5000">
+          <gml:description>Gemischte Dachform</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:5000</gml:identifier>
+          <gml:name>Mischform</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_dachform_BP_Dachform_9999">
+          <gml:description>Sonstige Dachform</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_BesondererNutzungszweckFlaeche:dachform:BP_Dachform:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>BP_Dachform</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_detaillierteDachform">
+      <gml:description>Über eine Codeliste definiertere detailliertere Dachform.
+Der an einer bestimmten Listenposition aufgeführte Wert von "&lt;i&gt;detaillierteDachform" &lt;/i&gt;bezieht sich auf den an gleicher Position stehenden Attributwert von &lt;i&gt;dachform.&lt;/i&gt;</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:detaillierteDachform</gml:identifier>
+      <gml:name>xplan:detaillierteDachform</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_DetailDachform</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_MaxZahlWohnungen">
+      <gml:description>Höchstzulässige Zahl der Wohnungen in Wohngebäuden</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:MaxZahlWohnungen</gml:identifier>
+      <gml:name>xplan:MaxZahlWohnungen</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Fmin">
+      <gml:description>Mindestmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Fmin</gml:identifier>
+      <gml:name>xplan:Fmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Fmax">
+      <gml:description>Höchstmaß für die Größe (Fläche) eines Baugrundstücks.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Fmax</gml:identifier>
+      <gml:name>xplan:Fmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Bmin">
+      <gml:description>Minimale Breite von Baugrundstücken</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Bmin</gml:identifier>
+      <gml:name>xplan:Bmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Bmax">
+      <gml:description>Maximale Breite von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Bmax</gml:identifier>
+      <gml:name>xplan:Bmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Tmin">
+      <gml:description>Minimale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Tmin</gml:identifier>
+      <gml:name>xplan:Tmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Tmax">
+      <gml:description>Maximale Tiefe von Baugrundstücken.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Tmax</gml:identifier>
+      <gml:name>xplan:Tmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Length</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GFZmin">
+      <gml:description>Minimal zulässige Geschossflächenzahl .</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GFZmin</gml:identifier>
+      <gml:name>xplan:GFZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GFZmax">
+      <gml:description>Maximal zulässige Geschossflächenzahl bei einer Bereichsangabe. Das Attribut GFZmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GFZmax</gml:identifier>
+      <gml:name>xplan:GFZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GFZ">
+      <gml:description>Maximal zulässige Geschossflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GFZ</gml:identifier>
+      <gml:name>xplan:GFZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GFZ_Ausn">
+      <gml:description>Maximal zulässige Geschossflächenzahl als Ausnahme.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GFZ_Ausn</gml:identifier>
+      <gml:name>xplan:GFZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GFmin">
+      <gml:description>Minimal zulässige Geschossfläche</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GFmin</gml:identifier>
+      <gml:name>xplan:GFmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GFmax">
+      <gml:description>Maximal zulässige Geschossfläche bei einer Bereichsabgabe. Das Attribut GFmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GFmax</gml:identifier>
+      <gml:name>xplan:GFmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GF">
+      <gml:description>Maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GF</gml:identifier>
+      <gml:name>xplan:GF</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GF_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Geschossfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GF_Ausn</gml:identifier>
+      <gml:name>xplan:GF_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_BMZmin">
+      <gml:description>Minimal zulässige Baumassenzahl</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:BMZmin</gml:identifier>
+      <gml:name>xplan:BMZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_BMZmax">
+      <gml:description>Maximal zulässige Baumassenzahl bei einer Bereichsangabe. Das Attribut BMZmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:BMZmax</gml:identifier>
+      <gml:name>xplan:BMZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_BMZ">
+      <gml:description>Maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:BMZ</gml:identifier>
+      <gml:name>xplan:BMZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_BMZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumassenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:BMZ_Ausn</gml:identifier>
+      <gml:name>xplan:BMZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_BMmin">
+      <gml:description>Minimal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:BMmin</gml:identifier>
+      <gml:name>xplan:BMmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_BMmax">
+      <gml:description>Maximal zulässige Baumasse bei einer Bereichsangabe. Das Attribut BMmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:BMmax</gml:identifier>
+      <gml:name>xplan:BMmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_BM">
+      <gml:description>Maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:BM</gml:identifier>
+      <gml:name>xplan:BM</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_BM_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Baumasse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:BM_Ausn</gml:identifier>
+      <gml:name>xplan:BM_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Volume</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GRZmin">
+      <gml:description>Minimal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GRZmin</gml:identifier>
+      <gml:name>xplan:GRZmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GRZmax">
+      <gml:description>Maximal zulässige Grundflächenzahl bei einer Bereichsangabe.  Das Attribut GRZmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GRZmax</gml:identifier>
+      <gml:name>xplan:GRZmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GRZ">
+      <gml:description>Maximal zulässige Grundflächenzahl</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GRZ</gml:identifier>
+      <gml:name>xplan:GRZ</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GRZ_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundflächenzahl.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GRZ_Ausn</gml:identifier>
+      <gml:name>xplan:GRZ_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Decimal</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GRmin">
+      <gml:description>Minimal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GRmin</gml:identifier>
+      <gml:name>xplan:GRmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GRmax">
+      <gml:description>Maximal zulässige Grundfläche bei einer Bereichsangabe. Das Attribut GRmin muss ebenfalls spezifiziert werden.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GRmax</gml:identifier>
+      <gml:name>xplan:GRmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GR">
+      <gml:description>Maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GR</gml:identifier>
+      <gml:name>xplan:GR</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_GR_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Grundfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:GR_Ausn</gml:identifier>
+      <gml:name>xplan:GR_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Area</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Zmin">
+      <gml:description>Minimal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Zmin</gml:identifier>
+      <gml:name>xplan:Zmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Zmax">
+      <gml:description>Maximal zulässige Zahl der oberirdischen Vollgeschosse bei einer Bereichsangabe. Das Attribut Zmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Zmax</gml:identifier>
+      <gml:name>xplan:Zmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Zzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Zzwingend</gml:identifier>
+      <gml:name>xplan:Zzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Z">
+      <gml:description>Maximalzahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Z</gml:identifier>
+      <gml:name>xplan:Z</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Z_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der oberirdischen Vollgeschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Z_Ausn</gml:identifier>
+      <gml:name>xplan:Z_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Z_Staffel">
+      <gml:description>Maximalzahl von oberirdischen zurückgesetzten Vollgeschossen als Staffelgeschoss..</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Z_Staffel</gml:identifier>
+      <gml:name>xplan:Z_Staffel</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_Z_Dach">
+      <gml:description>Maximalzahl der zusätzlich erlaubten Dachgeschosse, die gleichzeitig Vollgeschosse sind.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:Z_Dach</gml:identifier>
+      <gml:name>xplan:Z_Dach</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_ZUmin">
+      <gml:description>Minimal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:ZUmin</gml:identifier>
+      <gml:name>xplan:ZUmin</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_ZUmax">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse bei einer Bereichsangabe. Das Attribut ZUmin muss ebenfalls belegt sein.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:ZUmax</gml:identifier>
+      <gml:name>xplan:ZUmax</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_ZUzwingend">
+      <gml:description>Zwingend vorgeschriebene Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:ZUzwingend</gml:identifier>
+      <gml:name>xplan:ZUzwingend</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_ZU">
+      <gml:description>Maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:ZU</gml:identifier>
+      <gml:name>xplan:ZU</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_ZU_Ausn">
+      <gml:description>Ausnahmsweise maximal zulässige Zahl der unterirdischen Geschosse.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:ZU_Ausn</gml:identifier>
+      <gml:name>xplan:ZU_Ausn</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>Integer</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_BesondererNutzungszweckFlaeche_zweckbestimmung">
+      <gml:description>Angabe des besonderen Nutzungszwecks.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_BesondererNutzungszweckFlaeche:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Flaechenobjekt" />
+</TypeDefinition>

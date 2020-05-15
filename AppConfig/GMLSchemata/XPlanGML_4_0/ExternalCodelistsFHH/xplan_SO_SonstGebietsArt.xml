@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="SO_SonstGebietsArt">
+    <description>GML-Dictionary für erweiterte Klassifizierungen sonstiger Gebietsausweisungen nach BauGB.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:SO_SonstGebietsArt</identifier>
+    <name>xplan:SO_SonstGebietsArt</name>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGebietsArt_2300">
+            <description>Erhaltungssatzung</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGebietsArt_2300</identifier>
+            <name>2300</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGebietsArt_3000">
+            <description>Gestaltungsverordnung</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGebietsArt_3000</identifier>
+            <name>3000</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_SonstGebietsArt_3500">
+            <description>städtebauliches Milieu</description>
+            <identifier codeSpace="urn:xplan">SO_SonstGebietsArt_3500</identifier>
+            <name>3500</name>
+        </Definition>
+    </dictionaryEntry>
+    
+</Dictionary>

@@ -1,0 +1,29 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:24-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_Bereich">
+  <gml:description>Ein Bereich eines Landschaftsplans.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Bereich</gml:identifier>
+  <gml:name>xplan:LP_Bereich</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_Bereich_gehoertZuPlan">
+      <gml:description>Referenz auf den Landschaftsplan, zu dem der Bereich gehört.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Bereich:association-role:gehoertZuPlan</gml:identifier>
+      <gml:name>xplan:gehoertZuPlan</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:LP_Plan" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_Bereich_rasterAenderung">
+      <gml:description>Referenz auf einen nur durch georeferenzierte Rasterbilder repräsentierten Änderungsplan.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Bereich:association-role:rasterAenderung</gml:identifier>
+      <gml:name>xplan:rasterAenderung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:LP_RasterplanAenderung" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_Bereich" />
+</TypeDefinition>

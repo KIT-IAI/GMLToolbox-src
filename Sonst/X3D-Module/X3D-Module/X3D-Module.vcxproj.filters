@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="X3D-Module.vcxproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="X3D-Viewer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\Metaable.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\IDable.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\EVENTable.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\DEFable.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\XHTMLNode.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\InputNode.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\Input.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\Dt.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\Dl.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\Div.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\Dd.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\Button.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\XHTML\A.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\X3DNode.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\X3DColor.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\X3DAppearance.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Viewpoint.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Switch.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Shape.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Scene.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Rotation.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\PointSet.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Point3D.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Material.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\IndexedTriangleSet.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\IndexedLineSet.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\IndexedFaceSet.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Indexable.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Grouping.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Group.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Coordinate.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\ComposedGeometryNode.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Writable\X3D\Background.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualParams.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumDefinition.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="X3D-Viewer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\Writable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\Metaable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\IDable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\EVENTable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\DEFable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\XHTMLNode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\InputNode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\Input.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\Dt.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\Dl.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\Div.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\Dd.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\Button.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\XHTML\A.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\X3DNode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\X3DColor.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\X3DAppearance.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Viewpoint.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Switch.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Shape.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Scene.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Rotation.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Profile.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\PointSet.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Point3D.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Optional.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Material.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\IndexedTriangleSet.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\IndexedLineSet.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\IndexedFaceSet.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Indexable.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Grouping.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Group.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\DefId.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Coordinate.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\ComposedGeometryNode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Writable\X3D\Background.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualParams.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

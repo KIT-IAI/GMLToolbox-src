@@ -1,0 +1,90 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:16-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_Bereich">
+  <gml:description>Diese Klasse modelliert einen Bereich eines Flächennutzungsplans.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Bereich</gml:identifier>
+  <gml:name>xplan:FP_Bereich</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionBauNVODatum">
+      <gml:description>Datum der zugrunde liegenden Version der BauNVO
+
+Das Attribut ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML 6.0 wegfallen. Es sollte stattdessen das gleichnamige Attribut von BP_Plan verwendet werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Bereich:attribute:versionBauNVODatum</gml:identifier>
+      <gml:name>xplan:versionBauNVODatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionBauNVOText">
+      <gml:description>Zugrunde liegende Version der BauNVO. 
+
+Das Attribut ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML 6.0 wegfallen. Es sollte stattdessen das gleichnamige Attribut von BP_Plan verwendet werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Bereich:attribute:versionBauNVOText</gml:identifier>
+      <gml:name>xplan:versionBauNVOText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionBauGBDatum">
+      <gml:description>Datum der zugrunde liegenden Version des BauGB.
+
+Das Attribut ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML 6.0 wegfallen. Es sollte stattdessen das gleichnamige Attribut von BP_Plan verwendet werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Bereich:attribute:versionBauGBDatum</gml:identifier>
+      <gml:name>xplan:versionBauGBDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionBauGBText">
+      <gml:description>Zugrunde liegende Version des BauGB.
+
+Das Attribut ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML 6.0 wegfallen. Es sollte stattdessen das gleichnamige Attribut von BP_Plan verwendet werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Bereich:attribute:versionBauGBText</gml:identifier>
+      <gml:name>xplan:versionBauGBText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionSonstRechtsgrundlageDatum">
+      <gml:description>Datum einer zugrunde liegenden anderen Rechtsgrundlage als BauGB / BauNVO.
+
+Das Attribut ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML 6.0 wegfallen. Es sollte stattdessen das gleichnamige Attribut von BP_Plan verwendet werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Bereich:attribute:versionSonstRechtsgrundlageDatum</gml:identifier>
+      <gml:name>xplan:versionSonstRechtsgrundlageDatum</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Date" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_versionSonstRechtsgrundlageText">
+      <gml:description>Textliche Spezifikation einer zugrunde liegenden anderen Rechtsgrundlage als BauGB / BauNVO.
+
+Das Attribut ist &lt;b&gt;veraltet &lt;/b&gt;und wird in XPlanGML 6.0 wegfallen. Es sollte stattdessen das gleichnamige Attribut von BP_Plan verwendet werden.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Bereich:attribute:versionSonstRechtsgrundlageText</gml:identifier>
+      <gml:name>xplan:versionSonstRechtsgrundlageText</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Bereich_gehoertZuPlan">
+      <gml:description>Referenz auf den Flächennutzungsplan, zu dem das Bereichsobjekt gehört.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_Bereich:association-role:gehoertZuPlan</gml:identifier>
+      <gml:name>xplan:gehoertZuPlan</gml:name>
+      <def:cardinality>1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element:xplan:FP_Plan" />
+      <def:type>associationRole</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:XP_Bereich" />
+</TypeDefinition>

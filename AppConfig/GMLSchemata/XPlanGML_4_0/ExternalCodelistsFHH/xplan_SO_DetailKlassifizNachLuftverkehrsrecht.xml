@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="SO_DetailKlassifizNachLuftverkehrsrecht">
+    <description>GML-Dictionary für erweiterte Klassifizierungen nach Luftverkehrsrecht.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:SO_DetailKlassifizNachLuftverkehrsrecht</identifier>
+    <name>xplan:SO_DetailKlassifizNachLuftverkehrsrecht</name>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_DetailKlassifizNachLuftverkehrsrecht_1001">
+            <description>Fluglaermschutzzone_1</description>
+            <identifier codeSpace="urn:xplan">SO_DetailKlassifizNachLuftverkehrsrecht_1001</identifier>
+            <name>1001</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_DetailKlassifizNachLuftverkehrsrecht_1002">
+            <description>Fluglaermschutzzone_2</description>
+            <identifier codeSpace="urn:xplan">SO_DetailKlassifizNachLuftverkehrsrecht_1002</identifier>
+            <name>1002</name>
+        </Definition>
+    </dictionaryEntry>
+    
+    <dictionaryEntry>
+        <Definition gml:id="SO_DetailKlassifizNachLuftverkehrsrecht_1003">
+            <description>Fluglaermschutzzone_3</description>
+            <identifier codeSpace="urn:xplan">SO_DetailKlassifizNachLuftverkehrsrecht_1003</identifier>
+            <name>1003</name>
+        </Definition>
+    </dictionaryEntry>
+    
+</Dictionary>

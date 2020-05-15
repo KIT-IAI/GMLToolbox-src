@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OSM_SemanticClassification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../XSD/OSM_Classification.xsd">
+    
+    <OSM_Class pointGeometry="true" lineGeometry="true" areaGeometry="true" relation="false" OSM_key="highway" FeatureType="RoadTraffic" priority="1"/>
+    <OSM_Class pointGeometry="false" lineGeometry="true" areaGeometry="true" relation="false" OSM_key="cycleway" FeatureType="BikeTraffic" priority="1"/>
+    <OSM_Class pointGeometry="false" lineGeometry="false" areaGeometry="true" relation="true" OSM_key="building" FeatureType="Building" priority="1"/>
+    <OSM_Class pointGeometry="true" lineGeometry="true" areaGeometry="false" relation="false" OSM_key="barrier" FeatureType="Barrier" priority="1"/>
+    <OSM_Class OSM_key="waterway" FeatureType="Water" priority="1" pointGeometry="false" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="railway" FeatureType="RailwayTraffic" priority="1" pointGeometry="false" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="aerialway" FeatureType="Aerialway" priority="1" pointGeometry="false" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="aeroway" FeatureType="AirTraffic" priority="1" pointGeometry="false" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="power" FeatureType="Electricity" priority="1" pointGeometry="true" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="man_made" FeatureType="Construction" priority="2" pointGeometry="false" lineGeometry="false" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="leisure" FeatureType="Leisure" priority="2" pointGeometry="true" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="amenity" FeatureType="Amenity" priority="1" pointGeometry="false" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="emergency" FeatureType="Emergency" priority="2" pointGeometry="true" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="landuse" FeatureType="LandUse" priority="1" pointGeometry="false" lineGeometry="false" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="military" FeatureType="Military" priority="2" pointGeometry="false" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="natural" FeatureType="NaturalObject" priority="1" pointGeometry="true" lineGeometry="true" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="boundary" FeatureType="Boundary" priority="1" pointGeometry="false" lineGeometry="false" areaGeometry="false" relation="true"/>
+    <OSM_Class OSM_key="tourism" FeatureType="Tourism" priority="1" pointGeometry="false" lineGeometry="false" areaGeometry="true" relation="true"/>
+    <OSM_Class OSM_key="wood" FeatureType="Wood" priority="1" pointGeometry="false" lineGeometry="false" areaGeometry="true" relation="true"/>
+    
+</OSM_SemanticClassification>
+

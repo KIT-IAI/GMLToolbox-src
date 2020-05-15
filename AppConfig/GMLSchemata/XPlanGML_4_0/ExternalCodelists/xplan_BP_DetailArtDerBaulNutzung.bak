@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) XPlanGML-Toolbox, Erstellungsdatum: 05/16/12-->
+<Dictionary   gml:id="CodeLists" xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/gml/3.2 ../gml/3.2.1/gml.xsd">
+  <description>GML-Dictionary für die detaillierte Art der baulichen Nutzung.</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:BP_DEtailArtDerBaulNutzung</identifier>
+  <name>xplan:BP_DetailArtDerBaulNutzung</name>
+  <dictionaryEntry>
+    <Definition gml:id="_1000">
+      <description>Spezial-1</description>
+      <identifier codeSpace="urn:xplan">1000</identifier>
+      <name>1000</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_2000">
+      <description>Spezial-2</description>
+        <identifier codeSpace="urn:xplan">2000</identifier>
+      <name>2000</name>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_3000">
+      <description>Spezial-3</description>
+        <identifier codeSpace="urn:xplan">3000</identifier>
+      <name>3000</name>
+    </Definition>
+  </dictionaryEntry>
+</Dictionary  >

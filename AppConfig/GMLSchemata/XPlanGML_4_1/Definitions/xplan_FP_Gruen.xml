@@ -1,0 +1,1587 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:08:58-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_Gruen">
+  <gml:description>Darstellung einer Grünfläche nach §5, Abs. 2, Nr. 5 BauGB,
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen</gml:identifier>
+  <gml:name>xplan:FP_Gruen</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_zweckbestimmung">
+      <gml:description>Allgemeine Zweckbestimmungen der Grünfläche.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_1000">
+          <gml:description>Parkanlage; auch: Erholungsgrün, Grünanlage, Naherholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:1000</gml:identifier>
+          <gml:name>Parkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_1200">
+          <gml:description>Dauerkleingarten; auch: Gartenfläche, Hofgärten, Gartenland</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:1200</gml:identifier>
+          <gml:name>Dauerkleingaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_1400">
+          <gml:description>Sportplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:1400</gml:identifier>
+          <gml:name>Sportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_1600">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:1600</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_1800">
+          <gml:description>Zeltplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:1800</gml:identifier>
+          <gml:name>Zeltplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_2000">
+          <gml:description>Badeplatz, auch Schwimmbad, Liegewiese</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:2000</gml:identifier>
+          <gml:name>Badeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_2200">
+          <gml:description>Anlage für Freizeit und Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:2200</gml:identifier>
+          <gml:name>FreizeitErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_2400">
+          <gml:description>Spezielle Grünfläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:2400</gml:identifier>
+          <gml:name>SpezGruenflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_2600">
+          <gml:description>Friedhof</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:2600</gml:identifier>
+          <gml:name>Friedhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_zweckbestimmung_XP_ZweckbestimmungGruen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:zweckbestimmung:XP_ZweckbestimmungGruen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1">
+      <gml:description>Weitere allgemeine Zweckbestimmung der Grünfläche. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereZweckbestimmung1</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung1</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_1000">
+          <gml:description>Parkanlage; auch: Erholungsgrün, Grünanlage, Naherholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:1000</gml:identifier>
+          <gml:name>Parkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_1200">
+          <gml:description>Dauerkleingarten; auch: Gartenfläche, Hofgärten, Gartenland</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:1200</gml:identifier>
+          <gml:name>Dauerkleingaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_1400">
+          <gml:description>Sportplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:1400</gml:identifier>
+          <gml:name>Sportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_1600">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:1600</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_1800">
+          <gml:description>Zeltplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:1800</gml:identifier>
+          <gml:name>Zeltplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_2000">
+          <gml:description>Badeplatz, auch Schwimmbad, Liegewiese</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:2000</gml:identifier>
+          <gml:name>Badeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_2200">
+          <gml:description>Anlage für Freizeit und Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:2200</gml:identifier>
+          <gml:name>FreizeitErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_2400">
+          <gml:description>Spezielle Grünfläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:2400</gml:identifier>
+          <gml:name>SpezGruenflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_2600">
+          <gml:description>Friedhof</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:2600</gml:identifier>
+          <gml:name>Friedhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung1_XP_ZweckbestimmungGruen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung1:XP_ZweckbestimmungGruen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2">
+      <gml:description>Weitere allgemeine Zweckbestimmung der Grünfläche. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereZweckbestimmung2</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung2</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_1000">
+          <gml:description>Parkanlage; auch: Erholungsgrün, Grünanlage, Naherholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:1000</gml:identifier>
+          <gml:name>Parkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_1200">
+          <gml:description>Dauerkleingarten; auch: Gartenfläche, Hofgärten, Gartenland</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:1200</gml:identifier>
+          <gml:name>Dauerkleingaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_1400">
+          <gml:description>Sportplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:1400</gml:identifier>
+          <gml:name>Sportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_1600">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:1600</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_1800">
+          <gml:description>Zeltplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:1800</gml:identifier>
+          <gml:name>Zeltplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_2000">
+          <gml:description>Badeplatz, auch Schwimmbad, Liegewiese</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:2000</gml:identifier>
+          <gml:name>Badeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_2200">
+          <gml:description>Anlage für Freizeit und Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:2200</gml:identifier>
+          <gml:name>FreizeitErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_2400">
+          <gml:description>Spezielle Grünfläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:2400</gml:identifier>
+          <gml:name>SpezGruenflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_2600">
+          <gml:description>Friedhof</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:2600</gml:identifier>
+          <gml:name>Friedhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung2_XP_ZweckbestimmungGruen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung2:XP_ZweckbestimmungGruen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3">
+      <gml:description>Weitere allgemeine Zweckbestimmung der Grünfläche. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereZweckbestimmung3</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung3</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_1000">
+          <gml:description>Parkanlage; auch: Erholungsgrün, Grünanlage, Naherholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:1000</gml:identifier>
+          <gml:name>Parkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_1200">
+          <gml:description>Dauerkleingarten; auch: Gartenfläche, Hofgärten, Gartenland</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:1200</gml:identifier>
+          <gml:name>Dauerkleingaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_1400">
+          <gml:description>Sportplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:1400</gml:identifier>
+          <gml:name>Sportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_1600">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:1600</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_1800">
+          <gml:description>Zeltplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:1800</gml:identifier>
+          <gml:name>Zeltplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_2000">
+          <gml:description>Badeplatz, auch Schwimmbad, Liegewiese</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:2000</gml:identifier>
+          <gml:name>Badeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_2200">
+          <gml:description>Anlage für Freizeit und Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:2200</gml:identifier>
+          <gml:name>FreizeitErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_2400">
+          <gml:description>Spezielle Grünfläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:2400</gml:identifier>
+          <gml:name>SpezGruenflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_2600">
+          <gml:description>Friedhof</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:2600</gml:identifier>
+          <gml:name>Friedhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung3_XP_ZweckbestimmungGruen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung3:XP_ZweckbestimmungGruen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4">
+      <gml:description>Weitere allgemeine Zweckbestimmung der Grünfläche. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereZweckbestimmung4</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung4</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_1000">
+          <gml:description>Parkanlage; auch: Erholungsgrün, Grünanlage, Naherholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:1000</gml:identifier>
+          <gml:name>Parkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_1200">
+          <gml:description>Dauerkleingarten; auch: Gartenfläche, Hofgärten, Gartenland</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:1200</gml:identifier>
+          <gml:name>Dauerkleingaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_1400">
+          <gml:description>Sportplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:1400</gml:identifier>
+          <gml:name>Sportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_1600">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:1600</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_1800">
+          <gml:description>Zeltplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:1800</gml:identifier>
+          <gml:name>Zeltplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_2000">
+          <gml:description>Badeplatz, auch Schwimmbad, Liegewiese</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:2000</gml:identifier>
+          <gml:name>Badeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_2200">
+          <gml:description>Anlage für Freizeit und Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:2200</gml:identifier>
+          <gml:name>FreizeitErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_2400">
+          <gml:description>Spezielle Grünfläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:2400</gml:identifier>
+          <gml:name>SpezGruenflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_2600">
+          <gml:description>Friedhof</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:2600</gml:identifier>
+          <gml:name>Friedhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung4_XP_ZweckbestimmungGruen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung4:XP_ZweckbestimmungGruen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5">
+      <gml:description>Weitere allgemeine Zweckbestimmung der Grünfläche. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereZweckbestimmung5</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung5</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_1000">
+          <gml:description>Parkanlage; auch: Erholungsgrün, Grünanlage, Naherholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:1000</gml:identifier>
+          <gml:name>Parkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_1200">
+          <gml:description>Dauerkleingarten; auch: Gartenfläche, Hofgärten, Gartenland</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:1200</gml:identifier>
+          <gml:name>Dauerkleingaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_1400">
+          <gml:description>Sportplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:1400</gml:identifier>
+          <gml:name>Sportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_1600">
+          <gml:description>Spielplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:1600</gml:identifier>
+          <gml:name>Spielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_1800">
+          <gml:description>Zeltplatz</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:1800</gml:identifier>
+          <gml:name>Zeltplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_2000">
+          <gml:description>Badeplatz, auch Schwimmbad, Liegewiese</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:2000</gml:identifier>
+          <gml:name>Badeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_2200">
+          <gml:description>Anlage für Freizeit und Erholung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:2200</gml:identifier>
+          <gml:name>FreizeitErholung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_2400">
+          <gml:description>Spezielle Grünfläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:2400</gml:identifier>
+          <gml:name>SpezGruenflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_2600">
+          <gml:description>Friedhof</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:2600</gml:identifier>
+          <gml:name>Friedhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereZweckbestimmung5_XP_ZweckbestimmungGruen_9999">
+          <gml:description>Sonstiges</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereZweckbestimmung5:XP_ZweckbestimmungGruen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_ZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung">
+      <gml:description>Besondere Zweckbestimmungen der Grünfläche, die die zugehörige allgemeinen Zweckbestimmungen detaillieren oder ersetzen.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:besondereZweckbestimmung</gml:identifier>
+      <gml:name>xplan:besondereZweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:10000</gml:identifier>
+          <gml:name>ParkanlageHistorisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:10001</gml:identifier>
+          <gml:name>ParkanlageNaturnah</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:10002</gml:identifier>
+          <gml:name>ParkanlageWaldcharakter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:10003</gml:identifier>
+          <gml:name>NaturnaheUferParkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_12000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:12000</gml:identifier>
+          <gml:name>ErholungsGaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_14000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:14000</gml:identifier>
+          <gml:name>Reitsportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_14001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:14001</gml:identifier>
+          <gml:name>Hundesportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_14002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:14002</gml:identifier>
+          <gml:name>Wassersportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_14003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:14003</gml:identifier>
+          <gml:name>Schiessstand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_14004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:14004</gml:identifier>
+          <gml:name>Golfplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_14005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:14005</gml:identifier>
+          <gml:name>Skisport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_14006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:14006</gml:identifier>
+          <gml:name>Tennisanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_14007">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:14007</gml:identifier>
+          <gml:name>SonstigerSportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_16000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:16000</gml:identifier>
+          <gml:name>Bolzplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_16001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:16001</gml:identifier>
+          <gml:name>Abenteuerspielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_18000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:18000</gml:identifier>
+          <gml:name>Campingplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_22000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:22000</gml:identifier>
+          <gml:name>Kleintierhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_22001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:22001</gml:identifier>
+          <gml:name>Festplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_24000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:24000</gml:identifier>
+          <gml:name>StrassenbegleitGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_24001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:24001</gml:identifier>
+          <gml:name>BoeschungsFlaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_24002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:24002</gml:identifier>
+          <gml:name>FeldWaldWiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_24003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:24003</gml:identifier>
+          <gml:name>Uferschutzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_24004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:24004</gml:identifier>
+          <gml:name>Abschirmgruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_24005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:24005</gml:identifier>
+          <gml:name>UmweltbildungsparkSchaugatter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_24006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:24006</gml:identifier>
+          <gml:name>RuhenderVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_besondereZweckbestimmung_XP_BesondereZweckbestimmungGruen_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:besondereZweckbestimmung:XP_BesondereZweckbestimmungGruen:99990</gml:identifier>
+          <gml:name>Gaertnerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_BesondereZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1">
+      <gml:description>Weitere  besondere Zweckbestimmung der Grünfläche, die die zugehörige allgemeine Zweckbestimmung detailliert oder ersetzt. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;besondereZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereBesondZweckbestimmung1</gml:identifier>
+      <gml:name>xplan:weitereBesondZweckbestimmung1</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:10000</gml:identifier>
+          <gml:name>ParkanlageHistorisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:10001</gml:identifier>
+          <gml:name>ParkanlageNaturnah</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:10002</gml:identifier>
+          <gml:name>ParkanlageWaldcharakter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:10003</gml:identifier>
+          <gml:name>NaturnaheUferParkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_12000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:12000</gml:identifier>
+          <gml:name>ErholungsGaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_14000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:14000</gml:identifier>
+          <gml:name>Reitsportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_14001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:14001</gml:identifier>
+          <gml:name>Hundesportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_14002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:14002</gml:identifier>
+          <gml:name>Wassersportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_14003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:14003</gml:identifier>
+          <gml:name>Schiessstand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_14004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:14004</gml:identifier>
+          <gml:name>Golfplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_14005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:14005</gml:identifier>
+          <gml:name>Skisport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_14006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:14006</gml:identifier>
+          <gml:name>Tennisanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_14007">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:14007</gml:identifier>
+          <gml:name>SonstigerSportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_16000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:16000</gml:identifier>
+          <gml:name>Bolzplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_16001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:16001</gml:identifier>
+          <gml:name>Abenteuerspielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_18000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:18000</gml:identifier>
+          <gml:name>Campingplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_22000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:22000</gml:identifier>
+          <gml:name>Kleintierhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_22001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:22001</gml:identifier>
+          <gml:name>Festplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_24000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:24000</gml:identifier>
+          <gml:name>StrassenbegleitGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_24001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:24001</gml:identifier>
+          <gml:name>BoeschungsFlaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_24002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:24002</gml:identifier>
+          <gml:name>FeldWaldWiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_24003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:24003</gml:identifier>
+          <gml:name>Uferschutzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_24004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:24004</gml:identifier>
+          <gml:name>Abschirmgruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_24005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:24005</gml:identifier>
+          <gml:name>UmweltbildungsparkSchaugatter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_24006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:24006</gml:identifier>
+          <gml:name>RuhenderVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung1_XP_BesondereZweckbestimmungGruen_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung1:XP_BesondereZweckbestimmungGruen:99990</gml:identifier>
+          <gml:name>Gaertnerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_BesondereZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2">
+      <gml:description>Weitere  besondere Zweckbestimmung der Grünfläche, die die zugehörige allgemeine Zweckbestimmung detailliert oder ersetzt. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;besondereZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereBesondZweckbestimmung2</gml:identifier>
+      <gml:name>xplan:weitereBesondZweckbestimmung2</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:10000</gml:identifier>
+          <gml:name>ParkanlageHistorisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:10001</gml:identifier>
+          <gml:name>ParkanlageNaturnah</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:10002</gml:identifier>
+          <gml:name>ParkanlageWaldcharakter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:10003</gml:identifier>
+          <gml:name>NaturnaheUferParkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_12000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:12000</gml:identifier>
+          <gml:name>ErholungsGaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_14000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:14000</gml:identifier>
+          <gml:name>Reitsportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_14001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:14001</gml:identifier>
+          <gml:name>Hundesportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_14002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:14002</gml:identifier>
+          <gml:name>Wassersportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_14003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:14003</gml:identifier>
+          <gml:name>Schiessstand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_14004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:14004</gml:identifier>
+          <gml:name>Golfplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_14005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:14005</gml:identifier>
+          <gml:name>Skisport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_14006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:14006</gml:identifier>
+          <gml:name>Tennisanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_14007">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:14007</gml:identifier>
+          <gml:name>SonstigerSportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_16000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:16000</gml:identifier>
+          <gml:name>Bolzplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_16001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:16001</gml:identifier>
+          <gml:name>Abenteuerspielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_18000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:18000</gml:identifier>
+          <gml:name>Campingplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_22000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:22000</gml:identifier>
+          <gml:name>Kleintierhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_22001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:22001</gml:identifier>
+          <gml:name>Festplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_24000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:24000</gml:identifier>
+          <gml:name>StrassenbegleitGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_24001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:24001</gml:identifier>
+          <gml:name>BoeschungsFlaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_24002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:24002</gml:identifier>
+          <gml:name>FeldWaldWiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_24003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:24003</gml:identifier>
+          <gml:name>Uferschutzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_24004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:24004</gml:identifier>
+          <gml:name>Abschirmgruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_24005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:24005</gml:identifier>
+          <gml:name>UmweltbildungsparkSchaugatter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_24006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:24006</gml:identifier>
+          <gml:name>RuhenderVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung2_XP_BesondereZweckbestimmungGruen_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung2:XP_BesondereZweckbestimmungGruen:99990</gml:identifier>
+          <gml:name>Gaertnerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_BesondereZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3">
+      <gml:description>Weitere  besondere Zweckbestimmung der Grünfläche, die die zugehörige allgemeine Zweckbestimmung detailliert oder ersetzt. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;besondereZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereBesondZweckbestimmung3</gml:identifier>
+      <gml:name>xplan:weitereBesondZweckbestimmung3</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:10000</gml:identifier>
+          <gml:name>ParkanlageHistorisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:10001</gml:identifier>
+          <gml:name>ParkanlageNaturnah</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:10002</gml:identifier>
+          <gml:name>ParkanlageWaldcharakter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:10003</gml:identifier>
+          <gml:name>NaturnaheUferParkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_12000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:12000</gml:identifier>
+          <gml:name>ErholungsGaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_14000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:14000</gml:identifier>
+          <gml:name>Reitsportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_14001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:14001</gml:identifier>
+          <gml:name>Hundesportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_14002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:14002</gml:identifier>
+          <gml:name>Wassersportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_14003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:14003</gml:identifier>
+          <gml:name>Schiessstand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_14004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:14004</gml:identifier>
+          <gml:name>Golfplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_14005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:14005</gml:identifier>
+          <gml:name>Skisport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_14006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:14006</gml:identifier>
+          <gml:name>Tennisanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_14007">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:14007</gml:identifier>
+          <gml:name>SonstigerSportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_16000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:16000</gml:identifier>
+          <gml:name>Bolzplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_16001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:16001</gml:identifier>
+          <gml:name>Abenteuerspielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_18000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:18000</gml:identifier>
+          <gml:name>Campingplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_22000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:22000</gml:identifier>
+          <gml:name>Kleintierhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_22001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:22001</gml:identifier>
+          <gml:name>Festplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_24000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:24000</gml:identifier>
+          <gml:name>StrassenbegleitGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_24001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:24001</gml:identifier>
+          <gml:name>BoeschungsFlaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_24002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:24002</gml:identifier>
+          <gml:name>FeldWaldWiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_24003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:24003</gml:identifier>
+          <gml:name>Uferschutzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_24004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:24004</gml:identifier>
+          <gml:name>Abschirmgruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_24005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:24005</gml:identifier>
+          <gml:name>UmweltbildungsparkSchaugatter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_24006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:24006</gml:identifier>
+          <gml:name>RuhenderVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung3_XP_BesondereZweckbestimmungGruen_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung3:XP_BesondereZweckbestimmungGruen:99990</gml:identifier>
+          <gml:name>Gaertnerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_BesondereZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4">
+      <gml:description>Weitere  besondere Zweckbestimmung der Grünfläche, die die zugehörige allgemeine Zweckbestimmung detailliert oder ersetzt. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;besondereZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereBesondZweckbestimmung4</gml:identifier>
+      <gml:name>xplan:weitereBesondZweckbestimmung4</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:10000</gml:identifier>
+          <gml:name>ParkanlageHistorisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:10001</gml:identifier>
+          <gml:name>ParkanlageNaturnah</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:10002</gml:identifier>
+          <gml:name>ParkanlageWaldcharakter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:10003</gml:identifier>
+          <gml:name>NaturnaheUferParkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_12000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:12000</gml:identifier>
+          <gml:name>ErholungsGaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_14000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:14000</gml:identifier>
+          <gml:name>Reitsportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_14001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:14001</gml:identifier>
+          <gml:name>Hundesportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_14002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:14002</gml:identifier>
+          <gml:name>Wassersportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_14003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:14003</gml:identifier>
+          <gml:name>Schiessstand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_14004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:14004</gml:identifier>
+          <gml:name>Golfplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_14005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:14005</gml:identifier>
+          <gml:name>Skisport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_14006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:14006</gml:identifier>
+          <gml:name>Tennisanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_14007">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:14007</gml:identifier>
+          <gml:name>SonstigerSportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_16000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:16000</gml:identifier>
+          <gml:name>Bolzplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_16001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:16001</gml:identifier>
+          <gml:name>Abenteuerspielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_18000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:18000</gml:identifier>
+          <gml:name>Campingplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_22000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:22000</gml:identifier>
+          <gml:name>Kleintierhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_22001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:22001</gml:identifier>
+          <gml:name>Festplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_24000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:24000</gml:identifier>
+          <gml:name>StrassenbegleitGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_24001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:24001</gml:identifier>
+          <gml:name>BoeschungsFlaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_24002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:24002</gml:identifier>
+          <gml:name>FeldWaldWiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_24003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:24003</gml:identifier>
+          <gml:name>Uferschutzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_24004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:24004</gml:identifier>
+          <gml:name>Abschirmgruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_24005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:24005</gml:identifier>
+          <gml:name>UmweltbildungsparkSchaugatter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_24006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:24006</gml:identifier>
+          <gml:name>RuhenderVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung4_XP_BesondereZweckbestimmungGruen_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung4:XP_BesondereZweckbestimmungGruen:99990</gml:identifier>
+          <gml:name>Gaertnerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_BesondereZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5">
+      <gml:description>Weitere  besondere Zweckbestimmung der Grünfläche, die die zugehörige allgemeine Zweckbestimmung detailliert oder ersetzt. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;besondereZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereBesondZweckbestimmung5</gml:identifier>
+      <gml:name>xplan:weitereBesondZweckbestimmung5</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:10000</gml:identifier>
+          <gml:name>ParkanlageHistorisch</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:10001</gml:identifier>
+          <gml:name>ParkanlageNaturnah</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:10002</gml:identifier>
+          <gml:name>ParkanlageWaldcharakter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:10003</gml:identifier>
+          <gml:name>NaturnaheUferParkanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_12000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:12000</gml:identifier>
+          <gml:name>ErholungsGaerten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_14000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:14000</gml:identifier>
+          <gml:name>Reitsportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_14001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:14001</gml:identifier>
+          <gml:name>Hundesportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_14002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:14002</gml:identifier>
+          <gml:name>Wassersportanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_14003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:14003</gml:identifier>
+          <gml:name>Schiessstand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_14004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:14004</gml:identifier>
+          <gml:name>Golfplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_14005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:14005</gml:identifier>
+          <gml:name>Skisport</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_14006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:14006</gml:identifier>
+          <gml:name>Tennisanlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_14007">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:14007</gml:identifier>
+          <gml:name>SonstigerSportplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_16000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:16000</gml:identifier>
+          <gml:name>Bolzplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_16001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:16001</gml:identifier>
+          <gml:name>Abenteuerspielplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_18000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:18000</gml:identifier>
+          <gml:name>Campingplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_22000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:22000</gml:identifier>
+          <gml:name>Kleintierhaltung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_22001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:22001</gml:identifier>
+          <gml:name>Festplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_24000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:24000</gml:identifier>
+          <gml:name>StrassenbegleitGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_24001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:24001</gml:identifier>
+          <gml:name>BoeschungsFlaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_24002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:24002</gml:identifier>
+          <gml:name>FeldWaldWiese</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_24003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:24003</gml:identifier>
+          <gml:name>Uferschutzstreifen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_24004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:24004</gml:identifier>
+          <gml:name>Abschirmgruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_24005">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:24005</gml:identifier>
+          <gml:name>UmweltbildungsparkSchaugatter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_24006">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:24006</gml:identifier>
+          <gml:name>RuhenderVerkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_weitereBesondZweckbestimmung5_XP_BesondereZweckbestimmungGruen_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:weitereBesondZweckbestimmung5:XP_BesondereZweckbestimmungGruen:99990</gml:identifier>
+          <gml:name>Gaertnerei</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_BesondereZweckbestimmungGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_detaillierteZweckbestimmung">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmungen.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:detaillierteZweckbestimmung</gml:identifier>
+      <gml:name>xplan:detaillierteZweckbestimmung</gml:name>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereDetailZweckbestimmung1">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmung. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;detaillierteZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereDetailZweckbestimmung1</gml:identifier>
+      <gml:name>xplan:weitereDetailZweckbestimmung1</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereDetailZweckbestimmung2">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmung. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;detaillierteZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereDetailZweckbestimmung2</gml:identifier>
+      <gml:name>xplan:weitereDetailZweckbestimmung2</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereDetailZweckbestimmung3">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmung. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;detaillierteZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereDetailZweckbestimmung3</gml:identifier>
+      <gml:name>xplan:weitereDetailZweckbestimmung3</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereDetailZweckbestimmung4">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmung. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;detaillierteZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereDetailZweckbestimmung4</gml:identifier>
+      <gml:name>xplan:weitereDetailZweckbestimmung4</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_weitereDetailZweckbestimmung5">
+      <gml:description>Über eine CodeList definierte zusätzliche Zweckbestimmung. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;detaillierteZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:weitereDetailZweckbestimmung5</gml:identifier>
+      <gml:name>xplan:weitereDetailZweckbestimmung5</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailZweckbestGruen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_Gruen_nutzungsform">
+      <gml:description>Nutzungsform der Grünfläche.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_Gruen:attribute:nutzungsform</gml:identifier>
+      <gml:name>xplan:nutzungsform</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_nutzungsform_XP_Nutzungsform_1000">
+          <gml:description>Private Nutzung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:nutzungsform:XP_Nutzungsform:1000</gml:identifier>
+          <gml:name>Privat</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_Gruen_nutzungsform_XP_Nutzungsform_2000">
+          <gml:description>Öffentliche Nutzung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_Gruen:nutzungsform:XP_Nutzungsform:2000</gml:identifier>
+          <gml:name>Oeffentlich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_Nutzungsform</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Geometrieobjekt" />
+</TypeDefinition>

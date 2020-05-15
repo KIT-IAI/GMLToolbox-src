@@ -1,0 +1,43 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:26-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_LP_Bodenschutzrecht">
+  <gml:description>Gebiete und Gebietsteile mit rechtlichen Bindungen nach anderen Fachgesetzen (soweit sie für den Schutz, die Pflege und die Entwicklung von Natur und Landschaft bedeutsam sind). Hier: Flächen mit schädlichen Bodenveränderungen nach dem Bodenschutzgesetz.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Bodenschutzrecht</gml:identifier>
+  <gml:name>xplan:LP_Bodenschutzrecht</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_Bodenschutzrecht_typ">
+      <gml:description>Typ des Schutzobjektes</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Bodenschutzrecht:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Bodenschutzrecht_typ_LP_BodenschutzrechtTypen_1000">
+          <gml:description>Altlastenfläche</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Bodenschutzrecht:typ:LP_BodenschutzrechtTypen:1000</gml:identifier>
+          <gml:name>Altlastenflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_LP_Bodenschutzrecht_typ_LP_BodenschutzrechtTypen_9999">
+          <gml:description>Sonstiger Typ.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:LP_Bodenschutzrecht:typ:LP_BodenschutzrechtTypen:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_BodenschutzrechtTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_LP_Bodenschutzrecht_detailTyp">
+      <gml:description>Über eine Codeliste definierter detaillierterer Typ des Schutzobjektes</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:LP_Bodenschutzrecht:attribute:detailTyp</gml:identifier>
+      <gml:name>xplan:detailTyp</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>LP_BodenschutzrechtDetailTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:LP_Geometrieobjekt" />
+</TypeDefinition>

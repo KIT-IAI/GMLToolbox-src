@@ -1,0 +1,676 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 09.09.2013 11:09:00-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_PrivilegiertesVorhaben">
+  <gml:description>Standorte für privilegierte Außenbereichsvorhaben und für sonstige Anlagen in Außenbereichen gem. § 35 Abs. 1 und 2 BauGB.
+</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_PrivilegiertesVorhaben</gml:identifier>
+  <gml:name>xplan:FP_PrivilegiertesVorhaben</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_zweckbestimmung">
+      <gml:description>Zweckbestimmungen des Vorhabens.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_PrivilegiertesVorhaben:attribute:zweckbestimmung</gml:identifier>
+      <gml:name>xplan:zweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_zweckbestimmung_FP_ZweckbestimmungPrivilegiertesVorhaben_1000">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 1 oder 2 BauGB: Vorhaben, dass "einem land- oder forstwirtschaftlichen Betrieb dient und nur einen untergeordnetenTeil der Betriebsfläche einnimmt", oder "einem Betrieb der gartenbaulichen Erzeugung dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:zweckbestimmung:FP_ZweckbestimmungPrivilegiertesVorhaben:1000</gml:identifier>
+          <gml:name>LandForstwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_zweckbestimmung_FP_ZweckbestimmungPrivilegiertesVorhaben_1200">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 3 BauBG: Vorhaben dass "der öffentlichen Versorgung mit Elektrizität, Gas,
+Telekommunikationsdienstleistungen, Wärme und Wasser, der Abwasserwirtschaft" ... dient.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:zweckbestimmung:FP_ZweckbestimmungPrivilegiertesVorhaben:1200</gml:identifier>
+          <gml:name>OeffentlicheVersorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_zweckbestimmung_FP_ZweckbestimmungPrivilegiertesVorhaben_1400">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 3 BauGB: Vorhaben das ...."einem ortsgebundenen gewerblichen Betrieb dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:zweckbestimmung:FP_ZweckbestimmungPrivilegiertesVorhaben:1400</gml:identifier>
+          <gml:name>OrtsgebundenerGewerbebetrieb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_zweckbestimmung_FP_ZweckbestimmungPrivilegiertesVorhaben_1600">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 4 BauGB: Vorhaben, dass "wegen seiner besonderen Anforderungen an die Umgebung, wegen seiner nachteiligen Wirkung auf die Umgebung oder wegen seiner besonderen Zweckbestimmung nur im Außenbereich ausgeführt werden soll".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:zweckbestimmung:FP_ZweckbestimmungPrivilegiertesVorhaben:1600</gml:identifier>
+          <gml:name>BesonderesVorhaben</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_zweckbestimmung_FP_ZweckbestimmungPrivilegiertesVorhaben_1800">
+          <gml:description>Vorhaben nach §35 Abs 1 Nr.. 5 oder 6 BauGB: Vorhaben  dass "der Erforschung, Entwicklung oder Nutzung der Wind- oder Wasserenergie dient" oder "der energetischen Nutzung von Biomasse ...".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:zweckbestimmung:FP_ZweckbestimmungPrivilegiertesVorhaben:1800</gml:identifier>
+          <gml:name>ErneuerbareEnergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_zweckbestimmung_FP_ZweckbestimmungPrivilegiertesVorhaben_2000">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 7 BauGB: Vorhaben das "der Erforschung, Entwicklung oder Nutzung der Kernenergie zu friedlichen Zwecken oder der Entsorgung radioaktiver Abfälle dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:zweckbestimmung:FP_ZweckbestimmungPrivilegiertesVorhaben:2000</gml:identifier>
+          <gml:name>Kernenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_zweckbestimmung_FP_ZweckbestimmungPrivilegiertesVorhaben_9999">
+          <gml:description>Sonstiges Vorhaben im Aussenbereich nach §35 Abs. 2 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:zweckbestimmung:FP_ZweckbestimmungPrivilegiertesVorhaben:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>FP_ZweckbestimmungPrivilegiertesVorhaben</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung1">
+      <gml:description>Weitere Zweckbestimmung des Vorhabens. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_PrivilegiertesVorhaben:attribute:weitereZweckbestimmung1</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung1</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung1_FP_ZweckbestimmungPrivilegiertesVorhaben_1000">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 1 oder 2 BauGB: Vorhaben, dass "einem land- oder forstwirtschaftlichen Betrieb dient und nur einen untergeordnetenTeil der Betriebsfläche einnimmt", oder "einem Betrieb der gartenbaulichen Erzeugung dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung1:FP_ZweckbestimmungPrivilegiertesVorhaben:1000</gml:identifier>
+          <gml:name>LandForstwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung1_FP_ZweckbestimmungPrivilegiertesVorhaben_1200">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 3 BauBG: Vorhaben dass "der öffentlichen Versorgung mit Elektrizität, Gas,
+Telekommunikationsdienstleistungen, Wärme und Wasser, der Abwasserwirtschaft" ... dient.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung1:FP_ZweckbestimmungPrivilegiertesVorhaben:1200</gml:identifier>
+          <gml:name>OeffentlicheVersorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung1_FP_ZweckbestimmungPrivilegiertesVorhaben_1400">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 3 BauGB: Vorhaben das ...."einem ortsgebundenen gewerblichen Betrieb dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung1:FP_ZweckbestimmungPrivilegiertesVorhaben:1400</gml:identifier>
+          <gml:name>OrtsgebundenerGewerbebetrieb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung1_FP_ZweckbestimmungPrivilegiertesVorhaben_1600">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 4 BauGB: Vorhaben, dass "wegen seiner besonderen Anforderungen an die Umgebung, wegen seiner nachteiligen Wirkung auf die Umgebung oder wegen seiner besonderen Zweckbestimmung nur im Außenbereich ausgeführt werden soll".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung1:FP_ZweckbestimmungPrivilegiertesVorhaben:1600</gml:identifier>
+          <gml:name>BesonderesVorhaben</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung1_FP_ZweckbestimmungPrivilegiertesVorhaben_1800">
+          <gml:description>Vorhaben nach §35 Abs 1 Nr.. 5 oder 6 BauGB: Vorhaben  dass "der Erforschung, Entwicklung oder Nutzung der Wind- oder Wasserenergie dient" oder "der energetischen Nutzung von Biomasse ...".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung1:FP_ZweckbestimmungPrivilegiertesVorhaben:1800</gml:identifier>
+          <gml:name>ErneuerbareEnergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung1_FP_ZweckbestimmungPrivilegiertesVorhaben_2000">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 7 BauGB: Vorhaben das "der Erforschung, Entwicklung oder Nutzung der Kernenergie zu friedlichen Zwecken oder der Entsorgung radioaktiver Abfälle dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung1:FP_ZweckbestimmungPrivilegiertesVorhaben:2000</gml:identifier>
+          <gml:name>Kernenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung1_FP_ZweckbestimmungPrivilegiertesVorhaben_9999">
+          <gml:description>Sonstiges Vorhaben im Aussenbereich nach §35 Abs. 2 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung1:FP_ZweckbestimmungPrivilegiertesVorhaben:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_ZweckbestimmungPrivilegiertesVorhaben</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung2">
+      <gml:description>Weitere Zweckbestimmung des Vorhabens.&lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;zweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_PrivilegiertesVorhaben:attribute:weitereZweckbestimmung2</gml:identifier>
+      <gml:name>xplan:weitereZweckbestimmung2</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung2_FP_ZweckbestimmungPrivilegiertesVorhaben_1000">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 1 oder 2 BauGB: Vorhaben, dass "einem land- oder forstwirtschaftlichen Betrieb dient und nur einen untergeordnetenTeil der Betriebsfläche einnimmt", oder "einem Betrieb der gartenbaulichen Erzeugung dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung2:FP_ZweckbestimmungPrivilegiertesVorhaben:1000</gml:identifier>
+          <gml:name>LandForstwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung2_FP_ZweckbestimmungPrivilegiertesVorhaben_1200">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 3 BauBG: Vorhaben dass "der öffentlichen Versorgung mit Elektrizität, Gas,
+Telekommunikationsdienstleistungen, Wärme und Wasser, der Abwasserwirtschaft" ... dient.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung2:FP_ZweckbestimmungPrivilegiertesVorhaben:1200</gml:identifier>
+          <gml:name>OeffentlicheVersorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung2_FP_ZweckbestimmungPrivilegiertesVorhaben_1400">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 3 BauGB: Vorhaben das ...."einem ortsgebundenen gewerblichen Betrieb dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung2:FP_ZweckbestimmungPrivilegiertesVorhaben:1400</gml:identifier>
+          <gml:name>OrtsgebundenerGewerbebetrieb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung2_FP_ZweckbestimmungPrivilegiertesVorhaben_1600">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 4 BauGB: Vorhaben, dass "wegen seiner besonderen Anforderungen an die Umgebung, wegen seiner nachteiligen Wirkung auf die Umgebung oder wegen seiner besonderen Zweckbestimmung nur im Außenbereich ausgeführt werden soll".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung2:FP_ZweckbestimmungPrivilegiertesVorhaben:1600</gml:identifier>
+          <gml:name>BesonderesVorhaben</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung2_FP_ZweckbestimmungPrivilegiertesVorhaben_1800">
+          <gml:description>Vorhaben nach §35 Abs 1 Nr.. 5 oder 6 BauGB: Vorhaben  dass "der Erforschung, Entwicklung oder Nutzung der Wind- oder Wasserenergie dient" oder "der energetischen Nutzung von Biomasse ...".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung2:FP_ZweckbestimmungPrivilegiertesVorhaben:1800</gml:identifier>
+          <gml:name>ErneuerbareEnergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung2_FP_ZweckbestimmungPrivilegiertesVorhaben_2000">
+          <gml:description>Vorhaben nach §35 Abs. 1 Nr. 7 BauGB: Vorhaben das "der Erforschung, Entwicklung oder Nutzung der Kernenergie zu friedlichen Zwecken oder der Entsorgung radioaktiver Abfälle dient".</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung2:FP_ZweckbestimmungPrivilegiertesVorhaben:2000</gml:identifier>
+          <gml:name>Kernenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereZweckbestimmung2_FP_ZweckbestimmungPrivilegiertesVorhaben_9999">
+          <gml:description>Sonstiges Vorhaben im Aussenbereich nach §35 Abs. 2 BauGB.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereZweckbestimmung2:FP_ZweckbestimmungPrivilegiertesVorhaben:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_ZweckbestimmungPrivilegiertesVorhaben</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung">
+      <gml:description>Besondere Zweckbestimmungendes Vorhabens, die die spezifizierten allgemeinen Zweckbestimmungen detaillieren. 
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_PrivilegiertesVorhaben:attribute:besondereZweckbestimmung</gml:identifier>
+      <gml:name>xplan:besondereZweckbestimmung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:10000</gml:identifier>
+          <gml:name>Aussiedlerhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:10001</gml:identifier>
+          <gml:name>Altenteil</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:10002</gml:identifier>
+          <gml:name>Reiterhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:10003</gml:identifier>
+          <gml:name>Gartenbaubetrieb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_10004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:10004</gml:identifier>
+          <gml:name>Baumschule</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_12000">
+          <gml:description>Öffentliche Wasserversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:12000</gml:identifier>
+          <gml:name>Wasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_12001">
+          <gml:description>Gasversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:12001</gml:identifier>
+          <gml:name>Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_12002">
+          <gml:description>Wärmeversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:12002</gml:identifier>
+          <gml:name>Waerme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_12003">
+          <gml:description>Versorgung mit Elektrizität.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:12003</gml:identifier>
+          <gml:name>Elektrizitaet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_12004">
+          <gml:description>Versorgung mit Telekommunikations-Dienstleistungen.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:12004</gml:identifier>
+          <gml:name>Telekommunikation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_12005">
+          <gml:description>Abwasser Entsorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:12005</gml:identifier>
+          <gml:name>Abwasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_16000">
+          <gml:description>Vorhaben dass wegen seiner besonderen Anforderungen an die Umgebung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:16000</gml:identifier>
+          <gml:name>BesondereUmgebungsAnforderung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_16001">
+          <gml:description>Vorhaben dass wegen seiner nachteiligen Wirkung auf die Umgebung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:16001</gml:identifier>
+          <gml:name>NachteiligeUmgebungsWirkung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_16002">
+          <gml:description>Vorhaben dass wegen seiner besonderen Zweckbestimmung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:16002</gml:identifier>
+          <gml:name>BesondereZweckbestimmung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_18000">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Windenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:18000</gml:identifier>
+          <gml:name>Windenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_18001">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Wasserenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:18001</gml:identifier>
+          <gml:name>Wasserenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_18002">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Solarenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:18002</gml:identifier>
+          <gml:name>Solarenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_18003">
+          <gml:description>Vorhaben zur energetischen Nutzung der Biomasse.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:18003</gml:identifier>
+          <gml:name>Biomasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_20000">
+          <gml:description>Vorhaben der Erforschung, Entwicklung oder Nutzung der Kernenergie zu friedlichen Zwecken.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:20000</gml:identifier>
+          <gml:name>NutzungKernerergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_20001">
+          <gml:description>Vorhaben zur Entsorgung radioaktiver Abfälle.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:20001</gml:identifier>
+          <gml:name>EntsorgungRadioaktiveAbfaelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:99990</gml:identifier>
+          <gml:name>StandortEinzelhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_besondereZweckbestimmung_FP_BesondZweckbestPrivilegiertesVorhaben_99991">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:besondereZweckbestimmung:FP_BesondZweckbestPrivilegiertesVorhaben:99991</gml:identifier>
+          <gml:name>BebauteFlaecheAussenbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>FP_BesondZweckbestPrivilegiertesVorhaben</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1">
+      <gml:description>Besondere Zweckbestimmung des Vorhabens, die die spezifizierte allgemeine Zweckbestimmung detaillieren. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;besondereZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_PrivilegiertesVorhaben:attribute:weitereBesondZweckbestimmung1</gml:identifier>
+      <gml:name>xplan:weitereBesondZweckbestimmung1</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:10000</gml:identifier>
+          <gml:name>Aussiedlerhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:10001</gml:identifier>
+          <gml:name>Altenteil</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:10002</gml:identifier>
+          <gml:name>Reiterhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:10003</gml:identifier>
+          <gml:name>Gartenbaubetrieb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_10004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:10004</gml:identifier>
+          <gml:name>Baumschule</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_12000">
+          <gml:description>Öffentliche Wasserversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:12000</gml:identifier>
+          <gml:name>Wasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_12001">
+          <gml:description>Gasversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:12001</gml:identifier>
+          <gml:name>Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_12002">
+          <gml:description>Wärmeversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:12002</gml:identifier>
+          <gml:name>Waerme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_12003">
+          <gml:description>Versorgung mit Elektrizität.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:12003</gml:identifier>
+          <gml:name>Elektrizitaet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_12004">
+          <gml:description>Versorgung mit Telekommunikations-Dienstleistungen.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:12004</gml:identifier>
+          <gml:name>Telekommunikation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_12005">
+          <gml:description>Abwasser Entsorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:12005</gml:identifier>
+          <gml:name>Abwasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_16000">
+          <gml:description>Vorhaben dass wegen seiner besonderen Anforderungen an die Umgebung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:16000</gml:identifier>
+          <gml:name>BesondereUmgebungsAnforderung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_16001">
+          <gml:description>Vorhaben dass wegen seiner nachteiligen Wirkung auf die Umgebung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:16001</gml:identifier>
+          <gml:name>NachteiligeUmgebungsWirkung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_16002">
+          <gml:description>Vorhaben dass wegen seiner besonderen Zweckbestimmung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:16002</gml:identifier>
+          <gml:name>BesondereZweckbestimmung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_18000">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Windenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:18000</gml:identifier>
+          <gml:name>Windenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_18001">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Wasserenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:18001</gml:identifier>
+          <gml:name>Wasserenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_18002">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Solarenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:18002</gml:identifier>
+          <gml:name>Solarenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_18003">
+          <gml:description>Vorhaben zur energetischen Nutzung der Biomasse.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:18003</gml:identifier>
+          <gml:name>Biomasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_20000">
+          <gml:description>Vorhaben der Erforschung, Entwicklung oder Nutzung der Kernenergie zu friedlichen Zwecken.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:20000</gml:identifier>
+          <gml:name>NutzungKernerergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_20001">
+          <gml:description>Vorhaben zur Entsorgung radioaktiver Abfälle.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:20001</gml:identifier>
+          <gml:name>EntsorgungRadioaktiveAbfaelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:99990</gml:identifier>
+          <gml:name>StandortEinzelhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung1_FP_BesondZweckbestPrivilegiertesVorhaben_99991">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung1:FP_BesondZweckbestPrivilegiertesVorhaben:99991</gml:identifier>
+          <gml:name>BebauteFlaecheAussenbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_BesondZweckbestPrivilegiertesVorhaben</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2">
+      <gml:description>Besondere Zweckbestimmung des Vorhabens, die die spezifizierte allgemeine Zweckbestimmung detaillieren. &lt;b&gt;Dies Attribut ist ab Version 4.1 als "veraltet" gekennzeichnet, es sollte stattdessen &lt;/b&gt;&lt;b&gt;&lt;i&gt;besondereZweckbestimmung &lt;/i&gt;&lt;/b&gt;&lt;b&gt;mehrfach belegt werden.&lt;/b&gt;
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_PrivilegiertesVorhaben:attribute:weitereBesondZweckbestimmung2</gml:identifier>
+      <gml:name>xplan:weitereBesondZweckbestimmung2</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_10000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:10000</gml:identifier>
+          <gml:name>Aussiedlerhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_10001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:10001</gml:identifier>
+          <gml:name>Altenteil</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_10002">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:10002</gml:identifier>
+          <gml:name>Reiterhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_10003">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:10003</gml:identifier>
+          <gml:name>Gartenbaubetrieb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_10004">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:10004</gml:identifier>
+          <gml:name>Baumschule</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_12000">
+          <gml:description>Öffentliche Wasserversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:12000</gml:identifier>
+          <gml:name>Wasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_12001">
+          <gml:description>Gasversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:12001</gml:identifier>
+          <gml:name>Gas</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_12002">
+          <gml:description>Wärmeversorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:12002</gml:identifier>
+          <gml:name>Waerme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_12003">
+          <gml:description>Versorgung mit Elektrizität.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:12003</gml:identifier>
+          <gml:name>Elektrizitaet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_12004">
+          <gml:description>Versorgung mit Telekommunikations-Dienstleistungen.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:12004</gml:identifier>
+          <gml:name>Telekommunikation</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_12005">
+          <gml:description>Abwasser Entsorgung</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:12005</gml:identifier>
+          <gml:name>Abwasser</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_16000">
+          <gml:description>Vorhaben dass wegen seiner besonderen Anforderungen an die Umgebung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:16000</gml:identifier>
+          <gml:name>BesondereUmgebungsAnforderung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_16001">
+          <gml:description>Vorhaben dass wegen seiner nachteiligen Wirkung auf die Umgebung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:16001</gml:identifier>
+          <gml:name>NachteiligeUmgebungsWirkung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_16002">
+          <gml:description>Vorhaben dass wegen seiner besonderen Zweckbestimmung nur im Aussenbereich durchgeführt werden soll.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:16002</gml:identifier>
+          <gml:name>BesondereZweckbestimmung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_18000">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Windenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:18000</gml:identifier>
+          <gml:name>Windenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_18001">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Wasserenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:18001</gml:identifier>
+          <gml:name>Wasserenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_18002">
+          <gml:description>Vorhaben zur Erforschung, Entwicklung oder Nutzung der Solarenergie.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:18002</gml:identifier>
+          <gml:name>Solarenergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_18003">
+          <gml:description>Vorhaben zur energetischen Nutzung der Biomasse.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:18003</gml:identifier>
+          <gml:name>Biomasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_20000">
+          <gml:description>Vorhaben der Erforschung, Entwicklung oder Nutzung der Kernenergie zu friedlichen Zwecken.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:20000</gml:identifier>
+          <gml:name>NutzungKernerergie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_20001">
+          <gml:description>Vorhaben zur Entsorgung radioaktiver Abfälle.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:20001</gml:identifier>
+          <gml:name>EntsorgungRadioaktiveAbfaelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_99990">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:99990</gml:identifier>
+          <gml:name>StandortEinzelhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_weitereBesondZweckbestimmung2_FP_BesondZweckbestPrivilegiertesVorhaben_99991">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:FP_PrivilegiertesVorhaben:weitereBesondZweckbestimmung2:FP_BesondZweckbestPrivilegiertesVorhaben:99991</gml:identifier>
+          <gml:name>BebauteFlaecheAussenbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_BesondZweckbestPrivilegiertesVorhaben</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_PrivilegiertesVorhaben_vorhaben">
+      <gml:description>Nähere Beschreibung des Vorhabens.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:FP_PrivilegiertesVorhaben:attribute:vorhaben</gml:identifier>
+      <gml:name>xplan:vorhaben</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Geometrieobjekt" />
+</TypeDefinition>

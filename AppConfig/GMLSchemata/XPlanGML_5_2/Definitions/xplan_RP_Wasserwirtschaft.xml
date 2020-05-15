@@ -1,0 +1,88 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:27-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Wasserwirtschaft">
+  <gml:description>Wasserwirtschaft beinhaltet die zielbewusste Ordnung aller menschlichen Einwirkungen auf das ober- und unterirdische Wasser. Im Datenschema werden Gewässer, Wasserschutz, Hochwasserschutz und Wasserverkehr in gesonderten Klassen gehalten.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Wasserwirtschaft</gml:identifier>
+  <gml:name>xplan:RP_Wasserwirtschaft</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Wasserwirtschaft_typ">
+      <gml:description>Klassifikation von Anlagen und Einrichtungen der Wasserwirtschaft</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Wasserwirtschaft:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_1000">
+          <gml:description>Wasserleitung.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:1000</gml:identifier>
+          <gml:name>Wasserleitung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_2000">
+          <gml:description>Wasserwerk.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:2000</gml:identifier>
+          <gml:name>Wasserwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_3000">
+          <gml:description>Staudamm und/oder Deich.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:3000</gml:identifier>
+          <gml:name>StaudammDeich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_4000">
+          <gml:description>Speicherbecken.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:4000</gml:identifier>
+          <gml:name>Speicherbecken</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_5000">
+          <gml:description>Rückhaltebecken.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:5000</gml:identifier>
+          <gml:name>Rueckhaltebecken</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_6000">
+          <gml:description>Talsperre.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:6000</gml:identifier>
+          <gml:name>Talsperre</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_7000">
+          <gml:description>Pumpwerk und/oder Schöpfwerk.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:7000</gml:identifier>
+          <gml:name>PumpwerkSchoepfwerk</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_8000">
+          <gml:description>Ein Entwässerungskanal, der gleichzeitig auch der Zuwässerung landwirtschaftlicher Flächen speziell zur Viehkehrung, als Viehtränke und zur Spülung des Systems dient.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:8000</gml:identifier>
+          <gml:name>Zuwaesserungskanal</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_8100">
+          <gml:description>Künstlich angelegtes bzw. ausgebautes Netz von Wasserläufen (Tiefs), welche die Entwässerung des Binnenlandes über Sielbauwerke bzw. Schöpfbauwerke übernehmen, zum Teil auch mit der Funktion der Zwischenspeicherung des Niederschlagswassers. </gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:8100</gml:identifier>
+          <gml:name>Entwaesserungskanal</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserwirtschaft_typ_RP_WasserwirtschaftTypen_9999">
+          <gml:description>Sonstige Wasserwirtschaft.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Wasserwirtschaft:typ:RP_WasserwirtschaftTypen:9999</gml:identifier>
+          <gml:name>SonstigeWasserwirtschaft</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_WasserwirtschaftTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

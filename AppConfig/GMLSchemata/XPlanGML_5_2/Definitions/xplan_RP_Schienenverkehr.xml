@@ -1,0 +1,245 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:18:26-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Schienenverkehr">
+  <gml:description>Schienenverkehr-Infrastruktur.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Schienenverkehr</gml:identifier>
+  <gml:name>xplan:RP_Schienenverkehr</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Schienenverkehr_typ">
+      <gml:description>Klassifikation von Schienenverkehr-Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Schienenverkehr:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1000">
+          <gml:description>Schienenverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1000</gml:identifier>
+          <gml:name>Schienenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1001">
+          <gml:description>Eisenbahnstrecke.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1001</gml:identifier>
+          <gml:name>Eisenbahnstrecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1002">
+          <gml:description>Haupteisenbahnstrecke.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1002</gml:identifier>
+          <gml:name>Haupteisenbahnstrecke</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1100">
+          <gml:description>Trasse.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1100</gml:identifier>
+          <gml:name>Trasse</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1200">
+          <gml:description>Schienennetz.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1200</gml:identifier>
+          <gml:name>Schienennetz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1300">
+          <gml:description>Stadtbahn.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1300</gml:identifier>
+          <gml:name>Stadtbahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1301">
+          <gml:description>Straßenbahn.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1301</gml:identifier>
+          <gml:name>Strassenbahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1302">
+          <gml:description>S-Bahn.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1302</gml:identifier>
+          <gml:name>SBahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1303">
+          <gml:description>U-Bahn.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1303</gml:identifier>
+          <gml:name>UBahn</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1400">
+          <gml:description>Anschlussgleis für Industrie und Gewerbe.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1400</gml:identifier>
+          <gml:name>AnschlussgleisIndustrieGewerbe</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1500">
+          <gml:description>Haltepunkt.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1500</gml:identifier>
+          <gml:name>Haltepunkt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1600">
+          <gml:description>Bahnhof.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1600</gml:identifier>
+          <gml:name>Bahnhof</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1700">
+          <gml:description>Hochgeschwindigkeitsverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1700</gml:identifier>
+          <gml:name>Hochgeschwindigkeitsverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1800">
+          <gml:description>Bahnbetriebsgelände.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1800</gml:identifier>
+          <gml:name>Bahnbetriebsgelaende</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_1801">
+          <gml:description>Anlage mit großem Flächenbedarf.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:1801</gml:identifier>
+          <gml:name>AnlagemitgrossemFlaechenbedarf</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_typ_RP_SchienenverkehrTypen_9999">
+          <gml:description>Sonstiger Schienenverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:typ:RP_SchienenverkehrTypen:9999</gml:identifier>
+          <gml:name>SonstigerSchienenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_SchienenverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp">
+      <gml:description>Klassifikation von besonderer Schienenverkehr-Infrastruktur.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:RP_Schienenverkehr:attribute:besondererTyp</gml:identifier>
+      <gml:name>xplan:besondererTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_1000">
+          <gml:description>Eingleisig.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:1000</gml:identifier>
+          <gml:name>Eingleisig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_1001">
+          <gml:description>Zweigleisig.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:1001</gml:identifier>
+          <gml:name>Zweigleisig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_1002">
+          <gml:description>Mehrgleisig.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:1002</gml:identifier>
+          <gml:name>Mehrgleisig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_2000">
+          <gml:description>Schienenverkehrsinfrastruktur ohne Betrieb.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:2000</gml:identifier>
+          <gml:name>OhneBetrieb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_3000">
+          <gml:description>Schienenverkehrsinfrastruktur mit Fernverkehrsfunktion.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:3000</gml:identifier>
+          <gml:name>MitFernverkehrsfunktion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_3001">
+          <gml:description>Schienenverkehrsinfrastruktur mit Verknüpfungsfunktion für den öffentlichen Personennahverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:3001</gml:identifier>
+          <gml:name>MitVerknuepfungsfunktionFuerOEPNV</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_4000">
+          <gml:description>Elektrischer Betrieb.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:4000</gml:identifier>
+          <gml:name>ElektrischerBetrieb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_4001">
+          <gml:description>Zu Elektrifizieren.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:4001</gml:identifier>
+          <gml:name>ZuElektrifizieren</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_5000">
+          <gml:description>Verbesserung der Leistungsfähigkeit.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:5000</gml:identifier>
+          <gml:name>VerbesserungLeistungsfaehigkeit</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_6000">
+          <gml:description>Räumliche Freihaltung entwidmeter Bahntrassen.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:6000</gml:identifier>
+          <gml:name>RaeumlicheFreihaltungentwidmeterBahntrassen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_6001">
+          <gml:description>Nachnutzung stillgelegter Strecken.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:6001</gml:identifier>
+          <gml:name>NachnutzungstillgelegterStrecken</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_7000">
+          <gml:description>Personenverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:7000</gml:identifier>
+          <gml:name>Personenverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_7001">
+          <gml:description>Güterverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:7001</gml:identifier>
+          <gml:name>Gueterverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_8000">
+          <gml:description>Nahverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:8000</gml:identifier>
+          <gml:name>Nahverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Schienenverkehr_besondererTyp_RP_BesondererSchienenverkehrTypen_8001">
+          <gml:description>Fernverkehr.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:RP_Schienenverkehr:besondererTyp:RP_BesondererSchienenverkehrTypen:8001</gml:identifier>
+          <gml:name>Fernverkehr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_BesondererSchienenverkehrTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Verkehr" />
+</TypeDefinition>

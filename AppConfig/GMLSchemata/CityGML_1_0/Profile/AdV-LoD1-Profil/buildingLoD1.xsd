@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CityGML Version No. 1.0.0, May 19th, 2008-->
+<!-- CityGML - GML3 application schema for the 3D city model of the Special Interest Group 3D (SIG 3D) of GDI NRW-->
+<!-- For further information see: www.citygml.org -->
+<!-- For the history of changes and additions to this CityGML schema see file history.txt -->
+<!-- AdV-Profil fuer LoD 1 vom 10. April 2011-->
+<xs:schema xmlns="http://www.opengis.net/citygml/building/1.0" xmlns:core="http://www.opengis.net/citygml/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" targetNamespace="http://www.opengis.net/citygml/building/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  	<xs:import namespace="http://www.opengis.net/gml" schemaLocation="../../3.1.1/base/gml.xsd" /> 
+	<xs:import namespace="http://www.opengis.net/citygml/1.0" schemaLocation="cityGMLBaseLoD1.xsd"/>
+	<!-- ========================================================================================= -->
+	<!-- ===================================CityGML Building module ================================== -->
+	<xs:complexType name="AbstractBuildingType" abstract="true">
+		<xs:annotation>
+			<xs:documentation>Type describing the thematic and geometric attributes and the associations of buildings. It is an
+                abstract type, only its subclasses Building and BuildingPart can be instantiated. An _AbstractBuilding may consist
+                of BuildingParts, which are again _AbstractBuildings by inheritance. Thus an aggregation hierarchy between
+                _AbstractBuildings of arbitrary depth may be specified. In such an hierarchy, top elements are Buildings, while
+                all other elements are BuildingParts. Each element of such a hierarchy may have all attributes and geometries of
+                _AbstractBuildings. It must, however, be assured than no inconsistencies occur (for example, if the geometry of a
+                Building does not correspond to the geometries of its parts, or if the roof type of a Building is saddle roof,
+                while its parts have an hip roof). As subclass of _CityObject, an _AbstractBuilding inherits all attributes and
+                relations, in particular an id, names, external references, and generalization relations. </xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="core:AbstractSiteType">
+				<xs:sequence>
+					<xs:annotation>
+						<xs:documentation> The name will be represented by gml:name (inherited from _GML) . list order for
+                            storeyHeightsAboveground: first floor, second floor,... list order for storeyHeightsBelowground: first
+                            floor below ground, second floor below ground,... The lodXMultiSurface must be used, if the geometry
+                            of a building is just a collection of surfaces bounding a solid, but not a topologically clean solid
+                            boundary necessary for GML3 solid boundaries. </xs:documentation>
+					</xs:annotation>
+					<xs:element name="function" type="BuildingFunctionType" minOccurs="0"/>
+					<xs:element name="measuredHeight" type="gml:LengthType" minOccurs="0"/>
+					<xs:element name="storeysAboveGround" type="xs:nonNegativeInteger" minOccurs="0"/>
+					<xs:element name="storeysBelowGround" type="xs:nonNegativeInteger" minOccurs="0"/>
+					<xs:element name="lod1Solid" type="gml:SolidPropertyType" minOccurs="0"/>
+					<xs:element name="lod1TerrainIntersection" type="gml:MultiCurvePropertyType" minOccurs="0"/>
+					<xs:element name="consistsOfBuildingPart" type="BuildingPartPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="address" type="core:AddressPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="_GenericApplicationPropertyOfAbstractBuilding" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ========================================================================================= -->
+	<xs:element name="_AbstractBuilding" type="AbstractBuildingType" abstract="true" substitutionGroup="core:_Site"/>
+	<!-- ========================================================================================= -->
+	<xs:element name="_GenericApplicationPropertyOfAbstractBuilding" type="xs:anyType" abstract="true"/>
+	<!-- ========================================================================================= -->
+	<xs:simpleType name="BuildingFunctionType">
+		<xs:annotation>
+			<xs:documentation> Intended function of a building. The values of this type are defined in the XML file
+                BuildingFunctionType.xml, according to the dictionary concept of GML3. The values may be adopted from ALKIS, the
+                german standard for cadastre modelling. If the cadastre models from other countries differ in the building
+                functions, these values may be compiled in another codelist to be used with CityGML. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<!-- ========================================================================================= -->
+	<xs:complexType name="BuildingType">
+		<xs:complexContent>
+			<xs:extension base="AbstractBuildingType">
+				<xs:sequence>
+					<xs:element ref="_GenericApplicationPropertyOfBuilding" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ========================================================================================= -->
+	<xs:element name="Building" type="BuildingType" substitutionGroup="_AbstractBuilding"/>
+	<!-- ========================================================================================= -->
+	<xs:element name="_GenericApplicationPropertyOfBuilding" type="xs:anyType" abstract="true"/>
+	    <xs:complexType name="BuildingPartType">
+        <xs:complexContent>
+            <xs:extension base="AbstractBuildingType">
+                <xs:sequence>
+                    <xs:element ref="_GenericApplicationPropertyOfBuildingPart" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- ========================================================================================= -->
+    <xs:element name="BuildingPart" type="BuildingPartType" substitutionGroup="_AbstractBuilding"/>
+    <!-- ========================================================================================= -->
+    <xs:element name="_GenericApplicationPropertyOfBuildingPart" type="xs:anyType" abstract="true"/>
+    <!-- ========================================================================================= -->
+    <xs:complexType name="BuildingPartPropertyType">
+        <xs:annotation>
+            <xs:documentation>Denotes the relation of an _AbstractBuilding to its building parts. The BuildingPartPropertyType element must either carry a reference to a BuildingPart object or contain a BuildingPart object inline, but neither both nor none.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="gml:AssociationType">
+                <xs:sequence minOccurs="0">
+                    <xs:element ref="BuildingPart"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- ========================================================================================= -->
+</xs:schema>

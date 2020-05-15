@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Parameter zur SVG-Visualisierung eine BPlanGML-Modells-->
+<!-- Version 1.0
+      Letzte Änderung: 3.8.2011 
+
+  IIII - Der Filter akzeptiert jeden bel. Attributwert, auch die Nicht-Belegung
+  BBBB - Das Attribut muss gesetzt seit, der Wert ist aber beliebig
+  NNNN - Das Attribut darf nicht belegt sein
+-->
+<SvgVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/SvgParameter.xsd"
+ gmlType="INSPIRE_LU_PLANNED"
+ Masstab="1:2000"
+ datum="2008-02-21"
+ breiteUeberschrift="800"
+ hoeheUeberschrift="30">
+			
+	<!--========================== plu:SpatialPlan ====================================================-->
+	<GmlKlassenVisual gmlKlassenName="plu:SpatialPlan" priorityFlaechendarstellung="5">
+		<FlaechenDarstellung default="true">
+			<FlaechenParams class="RaeumlicherGeltungsbereich" clip="false"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	<Style styleName="RaeumlicherGeltungsbereich">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="0" g="0" b="0"/>
+		</StrokeColor>
+		<Stroke-width>4</Stroke-width>
+	</Style>
+	
+	
+	<!--========================== plu:ZoningElement ====================================================-->
+	<GmlKlassenVisual gmlKlassenName="plu:ZoningElement" priorityFlaechendarstellung="10" selectAttribut1="plu:hilucsLandUse" >	
+		
+		<FlaechenDarstellung deckend="true" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_PrimaryProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_MiningAndQuarrying</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_1_MiningOfEnergyProducingMaterials</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_2_MiningOfMetalOres</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_3_3_OtherMiningAndQuarrying</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_AquacultureAndFishing</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_1_Aquaculture</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_4_2_ProfessionalFishing</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_1_Hunting</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_2_ManagementOfMigratoryAnimals</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_3_PickingOfNaturalProducts</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_4_OtherPrimaryProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_5_OtherPrimaryProduction</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementPrimaryProductionStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_Agriculture</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_1_CommercialAgriculturalProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_2_FarmingInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_1_3_AgriculturalProductionForOwnComsumption</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementAgricultureStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_Forestry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_1_ForestryBasedOnShortRotation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_2_ForestryBasedOnIntermediateOrLongRotation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/1_2_3_ForestryBasedOnContinuousCover</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementForestryStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_SecondaryProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_RawIndustry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_1_ManufacturingOfTextileProducts</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_2_ManufacturingOfWoodAndWoodBasedProduct</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_3_ManufacturingOfPulpPaperAndPaperProducts</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_4_ManufacturingOfCokeRefinedPetroleumProductsAndNuclearFuel</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_5_ManufacturingOfChemicalsChemicalProductsManMadeFibers</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_6_ManufacturingOfBasicMetalsAndFabricatedMetals</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_7_ManufacturingOfNonMetallicMineralProducts</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_8_ManufacturingOfRubber_PlasticProducts</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_1_9_ManufacturingOfOtherRawMaterials</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_HeavyEndProductIndustry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_1_ManufacturingOfMachinery</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_2_ManufacturingOfTransportEquipment</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_2_3_ManufacturingOfOtherHeavyEndProducts</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_LightEndProductIndustry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_1_ManufacturingOfFoodBeveragesAndTobaccoProducts</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_2_ManufacturingOfClothesAndLeather</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_3_PublishingAndPrinting</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_4_ManufacturingOfElectricalAndOpticalEquipment</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_3_5_ManufacturingOfOtherLightEndProducts</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_EnergyProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_1_NuclearBasedEnergyProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_2_FossilFuelBasedEnergyProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_3_BiomassBasedEnergyProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_4_4_RenewableEnergyProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/2_5_OtherIndustry</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementSecondaryProductionStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_TertiaryProduction</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_CommercialServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_1_WholesaleAndRetailTrade_RepairOfVehiclesAndPersonalAndHouseholdGoods</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_2_RealEstateServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_3_AccomodationAndFoodServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_1_4_OtherCommercialServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_FinancialProfessionalAndInformationServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_1_FinancialAndInsuranceServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_2_ProfessionalTechnicalAndScientificServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_3_InformationAndCommunicationServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_4_AdministrativeAndSupportServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_2_5_OtherFinancialProfessionalAndInformationServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_CommunityServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_1_PublicAdministrationDefenseAndSocialSecurityServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_2_EducationalServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_3_HealthAndSocialServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_4_ReligiousServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_3_5_OtherCommunityServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_CulturalEntertainmentAndRecreationServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_1_CulturalServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_2_EntertainmentServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_3_SportsInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_4_OpenAirRecreationalAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/3_4_5_OtherRecreationalServices</SelectAttributWert1>
+		 <SelectAttributWert1>3http://inspire.ec.europa.eu/codelist/HILUCSValue/_5_OtherServices</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementTertiaryProductionStyle"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_TransportNetworksLogisticsAndUtilities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_TransportNetworks</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_1_RoadTransport</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_2_RailwayTransport</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_3_AirTransport</SelectAttributWert1>	
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_5_OtherTransportNetwork</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_2_LogisticAndStorageServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_Utilities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_1_ElectricityGasAndThemalPowerDistributionServices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_2_WaterAndSewageInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_3_WasteTreatment</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_3_4_OtherUtilities</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementNetworksStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/4_1_4_WaterTransport</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementWaterTrafficStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/5_ResidentialUse</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/5_1_PermanentResidentialUse</SelectAttributWert1>		 
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/5_3_OtherResidentialUse</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementResidentialAreasStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/5_2_ResidentialUseWithOtherCompatibleUses</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementMischgebietStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_OtherUses</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_1_TransitionalAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_2_AbandonedAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_NaturalAreasNotInOtherEconomicUse</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_4_AreasWhereAnyUseAllowed</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_5_AreasWithoutAnySpecifiedPlannedUse</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_6_NotKnownUse</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementOtherUsesStyle" clip="true"/>
+		</FlaechenDarstellung>	
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_1_LandAreasNotInOtherEconomicUse</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementLandAreasInNaturalUseStyle" clip="true"/>
+		</FlaechenDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/HILUCSValue/6_3_2_WaterAreasNotInOtherEonomicUse</SelectAttributWert1>
+			<FlaechenParams class="ZoningElementWaterAreasInNaturalUseStyle" clip="true"/>
+		</FlaechenDarstellung>
+	</GmlKlassenVisual>
+	
+	
+	<Style styleName="ZoningElementPrimaryProductionStyle">
+		<FillColor>
+			<Color r="180" g="230" b="110"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	
+	<Style styleName="ZoningElementAgricultureStyle">
+		<FillColor>
+			<Color r="230" g="230" b="110"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementForestryStyle">
+		<FillColor>
+			<Color r="110" g="230" b="110"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+		
+	<Style styleName="ZoningElementSecondaryProductionStyle">
+		<FillColor>
+			<Color r="100" g="100" b="100"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementTertiaryProductionStyle">
+		<FillColor>
+			<Color r="150" g="150" b="150"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementNetworksStyle">
+		<FillColor>
+			<Color r="180" g="220" b="240"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementWaterTrafficStyle">
+		<FillColor>
+			<Color r="140" g="220" b="240"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementResidentialAreasStyle">
+		<FillColor>
+			<Color r="240" g="120" b="100"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementMischgebietStyle">
+		<FillColor>
+			<Color r="168" g="112" b="0"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementOtherUsesStyle">
+		<FillColor>
+			<Color r="220" g="220" b="220"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementLandAreasInNaturalUseStyle">
+		<FillColor>
+			<Color r="200" g="255" b="200"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Style styleName="ZoningElementWaterAreasInNaturalUseStyle">
+		<FillColor>
+			<Color r="200" g="200" b="255"/>
+		</FillColor>
+		<StrokeColor>
+			<ColorName>black</ColorName>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<!--========================== plu:SupplementaryRestriction ====================================================-->
+	<GmlKlassenVisual gmlKlassenName="plu:SupplementaryRegulation" priorityFlaechendarstellung="15" priorityLiniendarstellung="20" priorityPunktdarstellung="30"
+		selectAttribut1="plu:supplementaryRegulation" >	
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_ImpactOnEnvironment</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_NoiseManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_1_NoiseProtectionArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_EmmissionControlArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_1_AirQualityManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_3_RewenableEnergyArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_NatureProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_1_EcologicalCorridor</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactofEnvironmemt</SelectAttributWert1>
+			<FlaechenParams class="ImpactOnEnvironmentStrokeStyle"/>
+		</FlaechenDarstellung>
+
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_ImpactOnEnvironment</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_NoiseManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_1_NoiseProtectionArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_EmmissionControlArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_1_AirQualityManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_3_RewenableEnergyArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_NatureProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_1_EcologicalCorridor</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactofEnvironmemt</SelectAttributWert1>
+			<LinienParams class="ImpactOnEnvironmentStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="ImpactOnEnvironmentSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_ImpactOnEnvironment</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_NoiseManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_1_1_NoiseProtectionArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_EmmissionControlArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_2_1_AirQualityManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_3_RewenableEnergyArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_NatureProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_1_EcologicalCorridor</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_2_BiodiversityReservoir</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_3_ProtectedWoodedArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_4_ProtectedUrbanPeriurbanAgriculturalOrNaturalArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_5_ProtectedWetland</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_6_PlantHealthProtectionZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_4_7_OtherNatureProtectionArea_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_5_ClimateProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_WaterProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_1_DesignatedWaters</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_2_NitrateVulnerableZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_3_SensitiveArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_4_BathingWaters</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_6_5_DrinkingWaterProtectionArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_7_ForestManagementArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/1_8_OtherImpactofEnvironmemt</SelectAttributWert1>
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</SelectAttributWert1>
+			<FlaechenParams class="RiskExposureStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</SelectAttributWert1>
+			<LinienParams class="RiskExposureStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="RiskExposureSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_RiskExposure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_FloodRisks</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_1_AreaExposedToFloodRisk</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_1_2_FloodRiskManagementZone</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_IndustrialRisk</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_1_Lead</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_2_RestrictedZonesAroundContaminatedSites</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_3_BrownfieldLand</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_2_4_ExclusionAreaAroundSevesoSites</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_3_Mining</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_4_Erosion</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/2_5_OtherRiskExposure</SelectAttributWert1>
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHertiageProtection</SelectAttributWert1>
+			<FlaechenParams class="HeritageProtectionStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHertiageProtection</SelectAttributWert1>
+			<LinienParams class="HeritageProtectionStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="HeritageProtectionSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_HeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_NaturalHeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_1_BiodiversityProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_1_2_GeodiversityProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_2_LandscapeAreaProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_3_BuiltHeritageProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_4_ArcheologicalProtection</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/3_5_OtherHertiageProtection</SelectAttributWert1>
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</SelectAttributWert1>
+			<FlaechenParams class="GeneralInterestStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_7_OtherPublicEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</SelectAttributWert1>
+			<LinienParams class="GeneralInterestStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="GeneralInterestSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_GeneralInterest</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_PublicEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_1_AirportEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_2_RailroadEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_UtilityEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_1_RainWaterEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_2_SanitarySewerEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_3_ElectricalPowerLineEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_4_TelephoneLineEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_5_RadioElectricalEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_3_6_FuelGasPipeEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_4_BeachAccess</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_5_ConservationEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_1_6_HistoricPreservationEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_2_OtherEasement</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/4_3_OtherReservedAreasServingGeneralInterest</SelectAttributWert1>
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</SelectAttributWert1>		 
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</SelectAttributWert1>
+			<FlaechenParams class="LandPropertyRightStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</SelectAttributWert1>		
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</SelectAttributWert1>
+			<LinienParams class="LandPropertyRightStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="LandPropertyRightSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_LandPropertyRight</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_1_UsableBuildingArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_2_AreaReservedForPreEmptingParcels</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_3_AreaReservedForRestructuringParcels</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_4_ReconstructionAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_5_StandByLandResources</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/5_6_OtherLandPropertyRight</SelectAttributWert1>
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructuraArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHightRegulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuidingDensityRegulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsInBuildings</SelectAttributWert1>
+			<FlaechenParams class="RegulationsOnBuildingsStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructuraArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHightRegulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuidingDensityRegulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsInBuildings</SelectAttributWert1>
+			<LinienParams class="RegulationsOnBuildingsStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="RegulationsOnBuildingsSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_RegulationsOnBuildings</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_1_BuildingLine</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_2_BoundaryLine</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_3_SpatialDesign</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_4_SecondaryStructuraArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_5_CollectiveFacility</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_6_BuildingHightRegulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_7_BuidingDensityRegulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_8_MinimumHousingSize</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/6_9_OtherRegulationsInBuildings</SelectAttributWert1>
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDefering</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</SelectAttributWert1>		 
+			<FlaechenParams class="LocalRegionalStateDevelopmentPoliciesStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDefering</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</SelectAttributWert1>		 	 
+			<LinienParams class="LocalRegionalStateDevelopmentPoliciesStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="LocalRegionalStateDevelopmentPoliciesSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_LocalRegionalStateDevelopmentPolicies</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_SettlementStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_CentralPlaces</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_1_Basic</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_2_LowerOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_3_MiddleOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_1_4_HighOrderCentre</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_Axes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_1_SettlementAxes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_2_2_SupralocalAxes</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_AssignmentOfFunctions_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_1_Housing</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_2_CommerceIndustry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_3_Services</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_4_Tourism</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_5_Agriculture</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_6_Forestry</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_7_BusinessPark</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_8_Technopole</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_9_HarborActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_3_10_AirportActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_SpatialOrderCategories</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_1_RuralArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_2_RuralDevelopmentPole</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_3_CityAndOuterConurbationArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_4_UrbanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_5_MetropolitanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_6_FunctionalUrbanArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_7_PeriUrbanAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_8_PolycentricSpatialStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_4_9_EurocorridorOrPanEuropeanCorridor</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_5_SpatialDevelopmentProjects</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_1_6_OtherSettlementStructureDevelopmentPolicies</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_OpenSpaceStructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_1_Agriculture</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_2_Forest</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_3_Recreation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_4_Tourism</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_5_GreenBelt</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_6_GreenBreak</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_RawMaterials</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_1_ProspectingAndMiningPermitArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_7_2_AreaForDumpingOfWaste</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_8_Recultivation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_Water</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_9_1_CoastalZoneManagementArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_2_10_OtherOpenSpaceStructures</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_Infrastructure_</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_Network</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_1_Road</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_2_RailRoad</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_3_WaterInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_4_OtherNetworkInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_1_5_RegulatedFairwayAtSeaOrLargeInlandWater</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_2_Supply</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_3_Disposal</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_4_Communication</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_3_5_OtherInfrastructure</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_UrbanReshapingAndDevelopmentArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_1_UrbanRenewal</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_2_UrbanRegenerationAndRevitalisation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_3_UrbanRehabilitationAndRestoration</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_4_CommercialDevelopmentArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_4_5_AfterZoning</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_SpecificArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_1_DerelictArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_2_ParkingObligationArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_3_DemolitionProvisionsAreas</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_4_EnergySavingArea</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_5_5_RulingDefering</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/7_6_StudyPlanRequest</SelectAttributWert1>		 
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</SelectAttributWert1>
+			<FlaechenParams class="SocialChoicesStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</SelectAttributWert1>
+			<LinienParams class="SocialChoicesStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="SocialChoicesSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_SocialHealthChoices</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_1_CompositionOfLocalResidentialPopulation</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/8_2_PubliclySubsidisedHousingArea</SelectAttributWert1>
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbidenActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</SelectAttributWert1>
+			<FlaechenParams class="RegulatingPermittedActivitiesStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbidenActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</SelectAttributWert1>
+			<LinienParams class="RegulatingPermittedActivitiesStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="RegulatingPermittedActivitiesSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_RegulatedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_1_RestrictedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_2_PermittedActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_3_ForbidenActivities</SelectAttributWert1>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/9_4_SuitableActivities</SelectAttributWert1>
+		</PunktDarstellung>
+		
+		<FlaechenDarstellung deckend="true">
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</SelectAttributWert1>
+			<FlaechenParams class="OtherSupplementaryRegulationStrokeStyle"/>
+		</FlaechenDarstellung>
+		
+		<LinienDarstellung>
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</SelectAttributWert1>
+			<LinienParams class="OtherSupplementaryRegulationStrokeStyle"/>
+		</LinienDarstellung>
+		
+		<PunktDarstellung symbol="OtherSupplementaryRegulationSymbol" >
+		 <SelectAttributWert1>http://inspire.ec.europa.eu/codelist/SupplementaryRegulationValue/10_OtherSupplementaryRegulation</SelectAttributWert1>
+		</PunktDarstellung>	
+		
+	</GmlKlassenVisual>
+	
+	
+	<Style styleName="ImpactOnEnvironmentFillStyle">
+		<FillColor>
+			<Color r="180" g="230" b="110"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="ImpactOnEnvironmentStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="180" g="230" b="110"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Symbol name="ImpactOnEnvironmentSymbol">
+		<Circle cx="0" cy="0" r="1" class="ImpactOnEnvironmentFillStyle" />
+	</Symbol>
+	
+	
+	<Style styleName="RiskExposureFillStyle">
+		<FillColor>
+			<Color r="100" g="100" b="100"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="RiskExposureStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="100" g="100" b="100"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Symbol name="RiskExposureSymbol">
+		<Circle cx="0" cy="0" r="1" class="RiskExposureFillStyle" />
+	</Symbol>
+		
+	<Style styleName="HeritageProtectionFillStyle">
+		<FillColor>
+			<Color r="150" g="150" b="150"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="HeritageProtectionStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="150" g="150" b="150"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Symbol name="HeritageProtectionSymbol">
+		<Circle cx="0" cy="0" r="1" class="HeritageProtectionFillStyle" />
+	</Symbol>	
+	
+	<Style styleName="GeneralInterestFillStyle">
+		<FillColor>
+			<Color r="180" g="120" b="240"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="GeneralInterestStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="180" g="120" b="240"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Symbol name="GeneralInterestSymbol">
+		<Circle cx="0" cy="0" r="1" class="GeneralInterestFillStyle" />
+	</Symbol>	
+	
+	<Style styleName="LandPropertyRightFillStyle">
+		<FillColor>
+			<Color r="240" g="120" b="100"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="LandPropertyRightStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="240" g="120" b="100"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+		
+	<Symbol name="LandPropertyRightSymbol">
+		<Circle cx="0" cy="0" r="1" class="LandPropertyRightFillStyle" />
+	</Symbol>	
+	
+	<Hatching name="RegulationsOnBuildingsHatch">
+		<stroke-width>1</stroke-width>
+		<line-dist>5</line-dist>
+		<StrokeColor>
+			<Color r="0" g="0" b="255"/>
+		</StrokeColor>
+		<FillColor>
+			<None/>
+		</FillColor>
+		<HatchingType>crossed</HatchingType>
+	</Hatching>
+	
+	<Style styleName="RegulationsOnBuildingsFillStyle">
+		<FillColor>
+			<Color r="0" g="0" b="255"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="RegulationsOnBuildingsStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="0" g="0" b="255"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+
+	<Symbol name="RegulationsOnBuildingsSymbol">
+		<Circle cx="0" cy="0" r="1" class="RegulationsOnBuildingsFillStyle" />
+	</Symbol>	
+	
+	<Style styleName="LocalRegionalStateDevelopmentPoliciesFillStyle">
+		<FillColor>
+			<Color r="230" g="230" b="110"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="LocalRegionalStateDevelopmentPoliciesStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="230" g="230" b="110"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+	
+	<Symbol name="LocalRegionalStateDevelopmentPoliciesSymbol">
+		<Circle cx="0" cy="0" r="1" class="LocalRegionalStateDevelopmentPoliciesFillStyle" />
+	</Symbol>	
+	
+	<Style styleName="SocialChoicesFillStyle">
+		<FillColor>
+			<Color r="200" g="255" b="200"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="SocialChoicesStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="200" g="255" b="200"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>
+
+	<Symbol name="SocialChoicesSymbol">
+		<Circle cx="0" cy="0" r="1" class="SocialChoicesFillStyle" />
+	</Symbol>	
+	
+	<Style styleName="RegulatingPermittedActivitiesFillStyle">
+		<FillColor>
+			<Color r="200" g="200" b="255"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="RegulatingPermittedActivitiesStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="200" g="200" b="255"/>
+		</StrokeColor>
+		<Stroke-width>1.5</Stroke-width>
+	</Style>
+	
+	<Symbol name="RegulatingPermittedActivitiesSymbol">
+		<Circle cx="0" cy="0" r="1" class="RegulatingPermittedActivitiesFillStyle" />
+	</Symbol>	
+	
+	<Style styleName="OtherSupplementaryRegulationFillStyle">
+		<FillColor>
+			<Color r="140" g="220" b="240"/>
+		</FillColor>
+		<StrokeColor>
+			<None/>
+		</StrokeColor>
+	</Style>
+	
+	<Style styleName="OtherSupplementaryRegulationStrokeStyle">
+		<FillColor>
+			<None/>
+		</FillColor>
+		<StrokeColor>
+			<Color r="0" g="0" b="0"/>
+		</StrokeColor>
+		<Stroke-width>1.0</Stroke-width>
+	</Style>	
+	
+	<Symbol name="OtherSupplementaryRegulationSymbol">
+		<Circle cx="0" cy="0" r="1" class="OtherSupplementaryRegulationFillStyle" />
+	</Symbol>	
+		
+</SvgVisualisierung>

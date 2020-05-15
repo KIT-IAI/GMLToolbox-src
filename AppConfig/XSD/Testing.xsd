@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!--   Profil -->
+    <xs:element name="Profil" type="ProfilType"/>
+        <xs:complexType name="ProfilType">
+            <xs:sequence>
+                <xs:element name="SrsName" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="UomLength" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="UomArea" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="UomVolume" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="UomAngle" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <!--xs:element name="GlobalRule" type="GlobalRuleType" minOccurs="0" maxOccurs="unbounded"/-->              
+                <xs:element name="Rule" type="ProfilRegelType" minOccurs="0" maxOccurs="unbounded"/>         
+                </xs:sequence>
+            <xs:attribute name="name" use="required"/>
+        </xs:complexType>
+    
+    <!--xs:complexType name="GlobalRuleType">
+        <xs:attribute name="globalRuleId" type="GlobalRuleIdType" use="required"/>
+        <xs:attribute name="globalRuleErrorId" type="xs:string" use="required"/>
+    </xs:complexType-->
+    
+    <!--xs:simpleType name="GlobalRuleIdType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="EnumCheck"/>
+            <xs:enumeration value="CoordinateReferenceSystemCheck"/>
+            <xs:enumeration value="FlaechenschlussTest"/>
+            <xs:enumeration value="FlaechenTest"/>
+            <xs:enumeration value="UomTest"/>
+            <xs:enumeration value="TestRueckwaertsReferenzenXPObjektToBereich"/>
+            <xs:enumeration value="TestRueckwaertsReferenzenXPObjektToPraesentationsobjekt"/>
+            <xs:enumeration value="TestRueckwaertsReferenzenXPBereichToPraesentationsobjekt"/>
+            <xs:enumeration value="TestRueckwaertsReferenzenBPObjekt"/>
+            <xs:enumeration value="TestRueckwaertsReferenzenFPObjekt"/>
+            <xs:enumeration value="TestRueckwaertsReferenzenLPObjekt"/>
+            <xs:enumeration value="TestRueckwaertsReferenzenRPObjekt"/>
+            <xs:enumeration value="TestRueckwaertsReferenzenSOObjekt"/>
+        </xs:restriction>
+    </xs:simpleType-->
+    
+    <!--  Einzelne Regel in einem Profil -->
+    <xs:complexType name="ProfilRegelType">
+        <xs:sequence>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="minOccurs" type="xs:int" minOccurs="0"/>
+            <xs:element name="maxOccurs" type="MaxOccursType" minOccurs="0"/>
+            <xs:element name="If" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:choice maxOccurs="unbounded">
+                        <xs:element ref="AttributeFilter"/>
+                        <xs:element ref="AttributeCardinalityFilter"/>
+                        <xs:element ref="RelationFilter"/>
+                        <xs:element ref="GroupFilter"/>
+                        <xs:element ref="GeometryFilter"/>
+                    </xs:choice>
+                    <xs:attribute name="combination" type="CombinationTypeReduced" use="optional" default="AND"/>
+                </xs:complexType>
+            </xs:element>
+            
+            <xs:element name="Required" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:choice maxOccurs="unbounded">
+                        <xs:element ref="AttributeFilter"/>
+                        <xs:element ref="AttributeCardinalityFilter"/>
+                        <xs:element ref="RelationFilter"/>
+                        <xs:element ref="GroupFilter"/>
+                        <xs:element ref="GeometryFilter"/>
+                    </xs:choice>
+                     <xs:attribute name="combination" type="CombinationType" use="optional" default="AND"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        
+        <xs:attribute name="class" type="xs:string" use="optional"/>
+        <xs:attribute name="superclassType" type="xs:string" use="optional"/>
+        <xs:attribute name="modul" type="xs:string" use="optional"/>
+        <xs:attribute name="id" type="xs:string" use="optional"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="LocationType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Self"/>
+            <xs:enumeration value="PlanBereich"/>
+            <xs:enumeration value="Plan"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="GeometryRestrictionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OnlyPoint"/>
+            <xs:enumeration value="OnlyLine"/>
+            <xs:enumeration value="OnlyArea"/>
+            <xs:enumeration value="NoPoint"/>
+            <xs:enumeration value="NoLine"/>
+            <xs:enumeration value="NoArea"/>      
+            <xs:enumeration value="NoMultiObject"/>    
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="GeometryTypeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Point"/>
+            <xs:enumeration value="Line"/>
+            <xs:enumeration value="Area"/>
+            <xs:enumeration value="HozizontalArea"/>
+            <xs:enumeration value="NoGeometrry"/>          
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="SurfaceNormalType">
+        <xs:restriction base="xs:string">        
+            <xs:enumeration value="VerticalUpward"/>
+            <xs:enumeration value="Upward"/>
+            <xs:enumeration value="Horizontal"/>
+            <xs:enumeration value="Downward"/> 
+            <xs:enumeration value="VerticalDownward"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Attribut-Filter -->
+    <xs:element name="AttributeFilter" type="AttributeFilterType"/>
+    <xs:complexType name="AttributeFilterType">
+         <xs:choice minOccurs="0" maxOccurs="1">
+             <xs:element name="AttributeValue" type="AttributeValueType" minOccurs="1" maxOccurs="unbounded"/>
+             <xs:element name="NumericValue" type="NumericValueType" minOccurs="1" maxOccurs="unbounded"/>         
+          </xs:choice>            
+        
+        <xs:attribute name="attributeName" use="required"/>
+        <xs:attribute name="combination" type="CombinationType" use="optional" default="OR"/> 
+        <xs:attribute name="minOccurs" type="xs:int" use="required"/>
+        <xs:attribute name="maxOccurs" type="MaxOccursType" use="required"/>
+        <xs:attribute name="location" type="LocationType" use="optional" default="Self"/>
+    </xs:complexType>
+ 
+    <xs:element name="AttributeCardinalityFilter" type="AttributeCardinalityFilterType"/>
+    <xs:complexType name="AttributeCardinalityFilterType">
+       <xs:attribute name="attributeName1" use="required" type="xs:string"/>
+       <xs:attribute name="attributeName2" use="required" type="xs:string"/>
+       <xs:attribute name="compareRel" type="CompareRelType" use="required"/>
+    </xs:complexType>
+ 
+    <xs:simpleType name="CompareRelType">
+       <xs:restriction base="xs:string">
+         <xs:enumeration value="less"/>
+         <xs:enumeration value="lessEqual"/>
+         <xs:enumeration value="equal"/>
+         <xs:enumeration value="greaterEqual"/>
+         <xs:enumeration value="greater"/>
+      </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="MaxOccursType">
+        <xs:union memberTypes="xs:nonNegativeInteger">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="unbound"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+    
+    <!--  CombinationType -->
+    <xs:simpleType name="CombinationType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AND"/>
+            <xs:enumeration value="OR"/>
+            <xs:enumeration value="XOR"/>
+            <xs:enumeration value="XOR_OPT"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="CombinationTypeReduced">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AND"/>
+            <xs:enumeration value="OR"/>           
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!--  OperatorType -->
+    <xs:simpleType name="OperatorType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="EQ"/>
+            <xs:enumeration value="NOT_EQ"/>           
+        </xs:restriction>
+    </xs:simpleType>
+    
+     <xs:simpleType name="OperatorTypeNumerical">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="EQ"/>
+            <xs:enumeration value="NOT_EQ"/>
+            <xs:enumeration value="LT"/>
+            <xs:enumeration value="LE"/>
+            <xs:enumeration value="GT"/>
+            <xs:enumeration value="GE"/>            
+        </xs:restriction>
+    </xs:simpleType>
+    
+   <xs:complexType name="AttributeValueType" >
+       <xs:simpleContent>
+           <xs:extension base="xs:string">
+               <xs:attribute name="op" type="OperatorType" use="optional" default="EQ"/>
+           </xs:extension>
+       </xs:simpleContent>
+   </xs:complexType>
+         
+   <xs:complexType name="NumericValueType" >
+       <xs:simpleContent>
+           <xs:extension base="xs:double">
+               <xs:attribute name="op" type="OperatorTypeNumerical" use="optional" default="EQ"/>
+           </xs:extension>
+       </xs:simpleContent>
+   </xs:complexType>
+    
+     <!-- Relationen-Filter  -->
+    <xs:element name="RelationFilter" type="RelationFilterType"/>
+    <xs:complexType name="RelationFilterType">
+      
+       <xs:sequence>
+             <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:element name="GmlType" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="GmlSuperType" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:choice>                        
+            
+            <xs:choice minOccurs="0" maxOccurs="1">
+                <xs:element name="AttributeValueRelatedObject" type="AttributeValueType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="NumericValueRelatedObject" type="NumericValueType" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:choice>
+       </xs:sequence>                     
+        
+        <xs:attribute name="relationName" type="xs:string" use="required"/>
+        <xs:attribute name="inverseRelationName" type="xs:string" use="optional"/>
+        <xs:attribute name="attributNameInRelatedObject" type="xs:string" use="optional"/>    
+        <xs:attribute name="attributeValueInRelatedObject" type="xs:string" use="optional"/>
+        <xs:attribute name="relationNameInRelatedObject" type="xs:string" use="optional"/>
+        <xs:attribute name="geometryPropertyNameInRelatedObject" type="xs:string" use="optional"/>
+        <xs:attribute name="minOccurs" type="xs:nonNegativeInteger" use="required"/>
+        <xs:attribute name="maxOccurs" type="MaxOccursType" use="required"/>     
+        <xs:attribute name="minOccursProperty" type="xs:nonNegativeInteger" use="optional"/>
+        <xs:attribute name="maxOccursProperty" type="MaxOccursType" use="optional"/>     
+    </xs:complexType>
+    
+    <!--  Filter auf Gruppe von Attributen und/oder Relationen -->
+    <xs:element name="GroupFilter" type="GroupFilterType"/>
+    <xs:complexType name="GroupFilterType">
+        <xs:sequence>
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="AttributeName" type="xs:string"/>
+                <xs:element name="RelationName" type="xs:string"/>
+                <xs:element name="GeometryPropertyName" type="xs:string"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="combination" type="CombinationType"/>
+    </xs:complexType>
+    
+    <!--  Filter auf Geometrie-Repräsentationen -->
+    <xs:element name="GeometryFilter" type="GeometryFilterType"/>
+    <xs:complexType name="GeometryFilterType">
+        <xs:attribute name="geometryPropertyName" type="xs:string" use="required"/>
+        <xs:attribute name="minOccurs" type="xs:nonNegativeInteger" use="optional"/>
+        <xs:attribute name="maxOccurs" type="MaxOccursType" use="optional"/>
+        <xs:attribute name="geometryRestriction" type="GeometryRestrictionType" use="optional"/>
+        <xs:attribute name="surfaceNormal" type="SurfaceNormalType" use="optional"/>
+    </xs:complexType>
+    
+    <xs:element name="TestingReport" type="TestingReportType"/>
+    <xs:complexType name="TestingReportType">
+        <xs:sequence>
+            <xs:element name="GmlDateiAnalyse" type="GmlDateiAnalyseType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="ValidationErrors" type="ValidationErrorsType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="ConformityErrors" type="ConformityErrorsType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="GeometryErrors" type="GeometryErrorsType" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="ConformityErrorsType">
+        <xs:sequence>
+            <xs:element ref="ConformityError" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="ValidationErrorsType">
+        <xs:sequence>
+            <xs:element name="ValidationError" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="ConformityError" type="ConformityErrorType"/>
+    <xs:complexType name="ConformityErrorType">
+        <xs:sequence>
+            <xs:element name="ErrorType" type="xs:string"/>
+            <xs:element name="ErrorId" type="xs:string" minOccurs="0"/>
+            <xs:element name="ObjectId" type="xs:string"/>
+            <xs:element name="ObjectType" type="xs:string"/>
+            <xs:element name="ObjectGeometry" type="GeometryTypeType"/>
+            <xs:element name="RefObjectId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="RefObjType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="ReferenzName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:choice>
+                <xs:element name="BrokenRule" type="ProfilRegelType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="EnumError" type="EnumErrorType" minOccurs="0" maxOccurs="1"/>
+            </xs:choice>
+            <xs:element  name="AttributeValues" type="AttributeValueListType" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="GeometryErrorsType">
+        <xs:sequence>
+            <xs:element name="GeometryError" type="GeometryErrorType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="GeometryError" type="GeometryErrorType"/>
+    <xs:complexType name="GeometryErrorType">
+        <xs:sequence>
+            <xs:element name="ErrorType" type="xs:string"/>
+            <xs:element name="ErrorDescription" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="Object" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:attribute name="objectId" type="xs:string" use="required"/>
+                    <xs:attribute name="geometryId" type="xs:string" use="required"/>
+                    <xs:attribute name="geometryType" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="RelatedObject" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:attribute name="objectId" type="xs:string" use="required"/>
+                    <xs:attribute name="geometryId" type="xs:string" use="required"/>
+                    <xs:attribute name="geometryType" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="OverlapError" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:attribute name="ObjectArea" type="xs:double" use="required"/>
+                    <xs:attribute name="RelatedObjectArea" type="xs:double" use="required"/>
+                    <xs:attribute name="OverlapArea" type="xs:double" use="required"/>
+                </xs:complexType>                
+            </xs:element>
+            <xs:element name="PlanarityError" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:attribute name="MaximalDistance" type="xs:double" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    
+    <xs:complexType name="EnumErrorType">
+        <xs:sequence>
+            <xs:element name="ExternalCodeListName" type="xs:string"/>
+            <xs:element name="AttributeName" type="xs:string"/>
+            <xs:element name="AttributeValue" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="AttributeValueListType">
+        <xs:sequence>
+            <xs:element name="Attribut" type="AttributeType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="RelationValueListType">
+        <xs:sequence>
+            <xs:element name="Relation" type="RelationType" />
+        </xs:sequence>
+    </xs:complexType>
+  
+  <xs:complexType name="AttributeType">
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:attribute name="value" type="xs:string" use="required"/>
+  </xs:complexType>
+    
+    
+    <xs:complexType name="RelationType">
+        <xs:attribute name="relationName" type="xs:string" use="required"/>
+        <xs:attribute name="relatedObjectType" type="xs:string" use="required"/>
+    </xs:complexType>   
+ 
+    <xs:complexType name="GmlDateiAnalyseType" >
+        <xs:sequence>
+            <xs:element name="analyseDatum" type="xs:dateTime"/>
+            <xs:element name="dateiname" type="xs:string"/>
+            <xs:element name="analyse" type="GesamtmodellType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="GesamtmodellType">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="boundingBox" type="BoundigBoxType" minOccurs="0"/>
+            <xs:element name="anzFeat" type="xs:int"/>
+            <xs:element name="anzFeatRbez" type="xs:int"/>
+            <xs:element name="anzFeatNRbez" type="xs:int"/>
+            <xs:element name="srsName" type="xs:string" minOccurs="0"/>
+            <xs:element name="srsDimension" type="xs:int"/>
+            <xs:element name="namespace" type="NamespaceType" maxOccurs="unbounded"/>
+            <xs:element name="defaultNamespace" type="xs:string" minOccurs="0"/>
+            <xs:element name="klasse" type="KlassenType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+    </xs:complexType>
+    
+    <xs:complexType name="NamespaceType">
+        <xs:attribute name="kuerzel" type="xs:string"/>
+        <xs:attribute name="uri" type="xs:string"/>
+    </xs:complexType>
+    
+    <xs:complexType name="BoundigBoxType">
+        <xs:sequence>
+            <xs:element name="lowerCorner" type="doubleList"/>
+            <xs:element name="upperCorner" type="doubleList"/> 
+        </xs:sequence>                     
+    </xs:complexType>
+    
+    <xs:complexType name="KlassenType">
+        <xs:sequence>
+            <xs:element name="property" type="PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="anzFeat" type="xs:int"/>
+    </xs:complexType>
+    
+    <xs:complexType name="PropertyType">
+        <xs:attribute name="anzVerwendet" type="xs:int"/>
+        <xs:attribute name="anzFeat" type="xs:int"/>
+        <xs:attribute name="name" type="xs:string"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="doubleList">
+        <xs:list itemType="xs:double"/>
+    </xs:simpleType>    
+</xs:schema>

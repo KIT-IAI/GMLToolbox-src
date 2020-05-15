@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="AuswertungALKISGebaeude" type="AuswertungALKISGebaeudeType"/>   
+ <xs:complexType name="AuswertungALKISGebaeudeType">
+ <xs:sequence>
+  <xs:element name="Gebaeude" type="GebaeudeType"  maxOccurs="unbounded"/>
+ </xs:sequence>
+
+</xs:complexType>
+
+<xs:complexType name="GebaeudeType" >
+ <xs:sequence>
+  <xs:element name="baujahr" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+  <xs:element name="funktion" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+ </xs:sequence> 
+  
+ <xs:attribute name="id" type="xs:string" use="required"/>
+ <xs:attribute name="identifier" type="xs:string" use="required"/> 
+  
+</xs:complexType>
+ 
+</xs:schema>

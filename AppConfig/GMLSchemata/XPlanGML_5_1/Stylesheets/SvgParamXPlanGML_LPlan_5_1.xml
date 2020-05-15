@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Parameter zur SVG-Visualisierung eines XPlanGML-Modells-->
+<!-- Bereich Regionalplan   -->
+<SvgVisualisierung xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/SvgParameter.xsd"
+ gmlType="XPLANGML_5_1"
+ Masstab="1:2000"
+ datum="2018-12-05"
+ breiteUeberschrift="800"
+ hoeheUeberschrift="30">
+    
+    <!-- =================Kernmodell ==========================================================================  -->
+   
+    <!--LP_Plan -->
+    <GmlKlassenVisual gmlKlassenName="LP_Plan" priorityFlaechendarstellung="50">
+        <FlaechenDarstellung default="true">
+            <FlaechenParams class="LpRaeumlicherGeltungsbereichA" clip="false"/>
+            <FlaechenParams class="LpRaeumlicherGeltungsbereichB" clip="false"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>        
+    
+    <!--  LP_SchutzobjektBundesrecht  -->
+    <GmlKlassenVisual gmlKlassenName="LP_SchutzobjektBundesrecht" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" selectAttribut1="typ">
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert1>1100</SelectAttributWert1>
+            <SelectAttributWert1>1500</SelectAttributWert1>
+            <FlaechenParams class="LpSchutzgebietFlaecheA" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheB" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheC" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheD" clip="true"/>
+              <FlaechenParams class="LpSchutzgebietFlaecheE" clip="true"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true">
+            <SelectAttributWert1>1300</SelectAttributWert1>
+            <SelectAttributWert1>1200</SelectAttributWert1>
+            <SelectAttributWert1>1400</SelectAttributWert1>
+            <SelectAttributWert1>1600</SelectAttributWert1>
+            <FlaechenParams class="LpSchutzgebietFlaecheA" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheB1" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheC" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheD1" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheE" clip="true"/>
+        </FlaechenDarstellung>
+        
+        <FlaechenDarstellung deckend="true" default="true">
+            <FlaechenParams class="LpSchutzgebietFlaecheA" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheB2" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheC" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheD2" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheE" clip="true"/>            
+        </FlaechenDarstellung>
+        
+        <LinienDarstellung default="false">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert1>1100</SelectAttributWert1>
+            <SelectAttributWert1>1500</SelectAttributWert1>
+            <LinienParams class="LpSchutzgebietLineA"/>
+            <LinienParams class="LpSchutzgebietLineB"/>
+            <LineSymbolParams symbolId="LsLpSchutzgebietA" symbolDist="20" symbolSize="1"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung default="false">
+            <SelectAttributWert1>1300</SelectAttributWert1>
+            <SelectAttributWert1>1200</SelectAttributWert1>
+            <SelectAttributWert1>1400</SelectAttributWert1>
+            <SelectAttributWert1>1600</SelectAttributWert1>
+            <LinienParams class="LpSchutzgebietLineA"/>
+            <LinienParams class="LpSchutzgebietLineB"/>
+            <LineSymbolParams symbolId="LsLpSchutzgebietB" symbolDist="20" symbolSize="1"/>
+        </LinienDarstellung>
+        
+        <LinienDarstellung default="true">
+            <LinienParams class="LpSchutzgebietLineA"/>
+            <LinienParams class="LpSchutzgebietLineB"/>
+            <LineSymbolParams symbolId="LsLpSchutzgebietC" symbolDist="20" symbolSize="1"/>
+        </LinienDarstellung>
+        
+        <PunktDarstellung attributA="typ" symbol="SymbolLpSchutzgebietA" >
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <SelectAttributWert1>1100</SelectAttributWert1>
+            <SelectAttributWert1>1500</SelectAttributWert1>
+        </PunktDarstellung>
+        
+        <PunktDarstellung attributA="typ" symbol="SymbolLpSchutzgebietB" >
+            <SelectAttributWert1>1300</SelectAttributWert1>
+            <SelectAttributWert1>1200</SelectAttributWert1>
+            <SelectAttributWert1>1400</SelectAttributWert1>
+            <SelectAttributWert1>1600</SelectAttributWert1>
+        </PunktDarstellung>
+        
+        <PunktDarstellung attributA="typ" symbol="SymbolLpSchutzgebietC" default="true" />
+    </GmlKlassenVisual>
+    
+    <!--  LP_SchutzobjektInternatRecht  -->
+    <GmlKlassenVisual gmlKlassenName="LP_SchutzobjektInternatRecht" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" selectAttribut1="typ">
+        <FlaechenDarstellung default="true" deckend="true">
+            <FlaechenParams class="LpSchutzgebietFlaecheA" clip="true"/>
+           
+            <FlaechenParams class="LpSchutzgebietFlaecheD3" clip="true"/>
+            <FlaechenParams class="LpSchutzgebietFlaecheE" clip="true"/>            
+        </FlaechenDarstellung>
+        
+        <LinienDarstellung default="true">
+            <LinienParams class="LpSchutzgebietLineA"/>
+            <LinienParams class="LpSchutzgebietLineB"/>
+            <LineSymbolParams symbolId="LsLpSchutzgebietD" symbolDist="20" symbolSize="1"/>
+        </LinienDarstellung>
+        
+        <PunktDarstellung attributA="typ" symbol="SymbolLpSchutzgebietC" default="true" />
+    </GmlKlassenVisual>
+    
+    <!--  LP_WasserrechtGemeingebrEinschraenkungNaturschutz  -->
+    <GmlKlassenVisual gmlKlassenName="LP_WasserrechtGemeingebrEinschraenkungNaturschutz" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" defaultSymbol="SymbolLpWasserrechtGemeingebrEinschraenkungNaturschutz" defaultSymbolSize="1">
+        <FlaechenDarstellung default="true">
+            <FlaechenParams class="LpWasserrechtGemeingebr" clip="true"/>
+            <LineSymbolParams symbolId="RsLpWasserrechtGemeingebr" symbolSize="0.05" symbolDist="4.5" symbolAngle="180"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <!--  LP_Bodenschutzrecht  -->
+    <GmlKlassenVisual gmlKlassenName="LP_Bodenschutzrecht" priorityFlaechendarstellung="10" priorityPunktdarstellung="30" selectAttribut1="typ">
+        <FlaechenDarstellung deckend="true" default="true">
+            <FlaechenParams class="LpBodenschutzrecht" clip="true"/>
+            <FlaechenParams class="LpSchwarzStrich1" clip="true"/>
+            <LineTextParams class="LpBodenschutzrechtRsStyle" text="x" charSize="4"/>
+        </FlaechenDarstellung>
+       
+        <PunktDarstellung default="true"  symbol="LpBodenschutzrechtSymbol" symbolSize="0.5"/>           
+    </GmlKlassenVisual>
+    
+    <!--  LP_Denkmalschutzrecht  -->
+    <GmlKlassenVisual gmlKlassenName="LP_Denkmalschutzrecht" priorityFlaechendarstellung="10" defaultSymbol="LpDenkmalschutzSymbol" defaultSymbolSize="1">
+    <FlaechenDarstellung default="true" deckend="true">
+        <FlaechenParams class="LpDenkmalschutzA" clip="true"/>
+        <FlaechenParams class="LpDenkmalschutzB" clip="true"/>
+        <FlaechenParams class="LpDenkmalschutzC" clip="true"/>
+    </FlaechenDarstellung>    
+    </GmlKlassenVisual>
+    
+    <!--  LP_Forstrecht  -->
+    <GmlKlassenVisual gmlKlassenName="LP_Forstrecht" priorityFlaechendarstellung="10">
+        <FlaechenDarstellung deckend="true" default="true">
+            <FlaechenParams class="LpForstrechtA" clip="true"/>
+            <FlaechenParams class="LpForstrechtB" clip="true"/>
+            <FlaechenParams class="LpForstrechtC" clip="true"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <!-- LP_WasserrechtWirtschaftAbflussHochwSchutz -->
+    <GmlKlassenVisual gmlKlassenName="LP_WasserrechtWirtschaftAbflussHochwSchutz" priorityFlaechendarstellung="10">
+        <FlaechenDarstellung default="true">
+            <FlaechenParams class="LpWasserrechtWasserwirtschaft" clip="true"/>
+            <LineSymbolParams symbolId="RsLpWasserrechtWasserwirtschaft" symbolSize="0.05" symbolDist="4.5" symbolAngle="180"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <!--  LP_SonstigesRecht  -->
+    <GmlKlassenVisual gmlKlassenName="LP_SonstigesRecht" priorityFlaechendarstellung="10" selectAttribut1="typ">
+        <FlaechenDarstellung default="false" deckend="true">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+            <FlaechenParams class="LpJagdrechtA" clip="true"/>
+            <FlaechenParams class="LpJagdrechtB" clip="true"/>
+            <FlaechenParams class="LpJagdrechtC" clip="true"/>
+        </FlaechenDarstellung>    
+       
+        <FlaechenDarstellung default="false" deckend="true">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+            <FlaechenParams class="LpFischereirechtA" clip="true"/>
+            <FlaechenParams class="LpFischereirechtB" clip="true"/>
+            <FlaechenParams class="LpFischereirechtC" clip="true"/>
+        </FlaechenDarstellung>    
+        
+        <FlaechenDarstellung default="true" deckend="true">
+            <FlaechenParams class="LpSonstigesRechtA" clip="true"/>
+            <FlaechenParams class="LpSonstigesRechtB" clip="true"/>
+            <FlaechenParams class="LpSonstigesRechtC" clip="true"/>
+        </FlaechenDarstellung>    
+    </GmlKlassenVisual>
+    
+    <!--  LP_WasserrechtSchutzgebiet  -->
+    <GmlKlassenVisual gmlKlassenName="LP_WasserrechtSchutzgebiet" priorityFlaechendarstellung="10">
+        <FlaechenDarstellung default="true" deckend="true">
+            <FlaechenParams class="LpWasserrechtSchutzgebietA"/>
+            <FlaechenParams class="LpWasserrechtSchutzgebietB"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <!--  LP_AllgGruenflaeche  -->
+    <GmlKlassenVisual gmlKlassenName="LP_AllgGruenflaeche" priorityFlaechendarstellung="10">
+        <FlaechenDarstellung deckend="true" default="true">
+            <FlaechenParams class="LpAllgGruenflaeche" pattern="LpAllgGruenflaechePattern" clip="true"/>
+        </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    <!--  LP_ErholungFreizeit -->
+    <GmlKlassenVisual gmlKlassenName="LP_ErholungFreizeit" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" selectAttribut1="funktion">
+       <FlaechenDarstellung default="true" deckend="true">
+           <FlaechenParams class="LpErholungFreizeitA" clip="true"/>
+           <FlaechenParams class="LpErholungFreizeitB" clip="true"/>
+           <FlaechenParams class="LpErholungFreizeitC" clip="true"/>
+           <FlaechenParams class="LpErholungFreizeitD" clip="true"/>
+           <FlaechenParams class="LpErholungFreizeitE" clip="true"/>
+       </FlaechenDarstellung>        
+        
+        <LinienDarstellung default="true">
+            <LinienParams class="LpErholungFreizeitLinie"/>
+        </LinienDarstellung>
+        
+        <PunktDarstellung attributA="funktion" default="true"/>
+    </GmlKlassenVisual>
+    
+    <!--  LP_PlanerischeVertiefung  -->
+    <GmlKlassenVisual gmlKlassenName="LP_PlanerischeVertiefung" priorityFlaechendarstellung="10" priorityLiniendarstellung="20">
+     <FlaechenDarstellung deckend="true" default="true">
+         <FlaechenParams class="LpPlanerischeVertiefung" clip="true"/>
+         <LineSymbolParams symbolId="LpRsPlanerischeVertiefung" symbolDist="4"/>
+     </FlaechenDarstellung> 
+        
+        <LinienDarstellung default="true">
+            <LinienParams class="LpPlanerischeVertiefung"/>
+            <LineSymbolParams symbolId="LpRsPlanerischeVertiefung" symbolDist="4"/>
+        </LinienDarstellung>
+        
+    </GmlKlassenVisual>
+    
+    <!--  LP_Abgrenzung -->
+    <GmlKlassenVisual gmlKlassenName="LP_Abgrenzung" priorityLiniendarstellung="20">
+        <LinienDarstellung default="true">
+            <LinienParams class="LpAbgrenzung"/>
+            <LineSymbolParams symbolId="LpLsAbgrenzung" symbolDist="40"/>
+        </LinienDarstellung>
+    </GmlKlassenVisual>
+    
+    <!--  LP_NutzungsAusschluss  -->
+    <GmlKlassenVisual gmlKlassenName="LP_NutzungsAusschluss" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" >
+        <FlaechenDarstellung default="true" deckend="true">
+            <FlaechenParams class="LpNutzungsAusschluss"/>
+            <LineSymbolParams symbolId="LpRsNutzungsAusschluss"/>
+        </FlaechenDarstellung>
+        
+        <LinienDarstellung default="true">
+            <LinienParams class="LpNutzungsAusschluss"/>
+            <LineSymbolParams symbolId="LpLsNutzungsAusschluss"/>
+        </LinienDarstellung>
+    </GmlKlassenVisual>
+    
+    <!--  LP_AusgleichsErsatzmassnahme  Darstellung nach LANA-->
+    <!--GmlKlassenVisual gmlKlassenName="LP_AusgleichsErsatzmassnahme" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" selectAttribut1="ziel">
+<FlaechenDarstellung deckend="true" default="true">
+    <FlaechenParams class="LpAusgleichErsatzA" clip="true"/>
+    <FlaechenParams class="LpAusgleichErsatzB" clip="true"/>
+    <FlaechenParams class="LpAusgleichErsatzC" clip="true"/>
+</FlaechenDarstellung-->        
+        
+    <!--  LP_AusgleichsErsatzmassnahme, Darstellung in NRW -->
+    <GmlKlassenVisual gmlKlassenName="LP_Ausgleich" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" selectAttribut1="ziel">
+<FlaechenDarstellung deckend="true" default="true">
+    <FlaechenParams class="LpAusgleichErsatzNRW" pattern="LpAusgleichErsatzNRWPattern"/>
+</FlaechenDarstellung>            
+       
+        
+        <LinienDarstellung default="true">
+            <LinienParams class="LpAusgleichErsatzLinie"/>
+            <LineSymbolParams symbolId="LpLsAusgleichErsatzLinie" symbolDist="8"/>
+        </LinienDarstellung>
+        
+        <PunktDarstellung attributA="massnahmeKuerzel" default="false" symbol="LpSchutzPflegeSymbol">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+        </PunktDarstellung>
+        
+        <PunktDarstellung attributA="massnahmeKuerzel" default="false" symbol="LpEntwicklungSymbol">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+        </PunktDarstellung>
+    </GmlKlassenVisual>
+    
+    <!--  LP_SchutzPflegeEntwicklung -->
+    <GmlKlassenVisual gmlKlassenName="LP_SchutzPflegeEntwicklung" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" selectAttribut1="ziel">
+        <FlaechenDarstellung deckend="true" default="true">
+            <FlaechenParams class="LpAusgleichErsatzA" clip="true"/>
+            <FlaechenParams class="LpAusgleichErsatzB" clip="true"/>
+            <FlaechenParams class="LpAusgleichErsatzC" clip="true"/>
+        </FlaechenDarstellung>        
+        
+        <LinienDarstellung default="true">
+            <LinienParams class="LpAusgleichErsatzLinie"/>
+            <LineSymbolParams symbolId="LpLsAusgleichErsatzLinie" symbolDist="8"/>
+        </LinienDarstellung>
+        
+        <PunktDarstellung attributA="massnahmeKuerzel" default="false" symbol="LpSchutzPflegeSonstigesSymbol">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+        </PunktDarstellung>
+        
+        <PunktDarstellung attributA="massnahmeKuerzel" default="false" symbol="LpEntwicklungSonstigesSymbol">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+        </PunktDarstellung>
+    </GmlKlassenVisual>  
+    
+    
+    <!--  LP_NutzungserfordernisRegelung -->
+    <GmlKlassenVisual gmlKlassenName="LP_NutzungserfordernisRegelung" priorityFlaechendarstellung="10" priorityLiniendarstellung="20" priorityPunktdarstellung="30" selectAttribut1="ziel">
+        <FlaechenDarstellung deckend="true" default="true">
+            <FlaechenParams class="LpAusgleichErsatzA" clip="true"/>
+            <FlaechenParams class="LpAusgleichErsatzB" clip="true"/>
+            <FlaechenParams class="LpAusgleichErsatzC" clip="true"/>
+        </FlaechenDarstellung>        
+        
+        <LinienDarstellung default="true">
+            <LinienParams class="LpAusgleichErsatzLinie"/>
+            <LineSymbolParams symbolId="LpLsAusgleichErsatzLinie" symbolDist="8"/>
+        </LinienDarstellung>
+        
+        <PunktDarstellung attributA="erfordernisRegelungKuerzel" default="false" symbol="LpSchutzPflegeNutzungserfordernisSymbol">
+            <SelectAttributWert1>1000</SelectAttributWert1>
+        </PunktDarstellung>
+        
+        <PunktDarstellung attributA="erfordernisRegelungKuerzel" default="false" symbol="LpEntwicklungNutzungserfordernisSymbol">
+            <SelectAttributWert1>2000</SelectAttributWert1>
+        </PunktDarstellung>
+    </GmlKlassenVisual>           
+    
+    <!-- ==================  NRW-Modell =================================================================== -->
+    <GmlKlassenVisual gmlKlassenName="LP_NRW_TemporaererLandschaftsschutz" priorityFlaechendarstellung="10">
+       <FlaechenDarstellung deckend="true" default="true">
+           <FlaechenParams class="LpNRWTempLandschaftsschutz" pattern="LpNRWTempLandschaftsschutzPattern" />
+       </FlaechenDarstellung>
+    </GmlKlassenVisual>
+    
+    
+    <GmlKlassenVisual gmlKlassenName="LP_NRW_ForstlicheFestsetzung" priorityFlaechendarstellung="10">
+<FlaechenDarstellung deckend="true" default="true">
+    <FlaechenParams class="LpNRWNaturschutzgebietA"/>
+    <FlaechenParams class="LpNRWNaturschutzgebietB"/>
+    <FlaechenParams class="LpNRWNaturschutzgebietC"/>
+    <FlaechenParams class="LpNRWNaturschutzgebietD"/>
+    <FlaechenParams class="LpNRWNaturschutzgebietE"/>
+</FlaechenDarstellung>        
+    </GmlKlassenVisual>
+    
+    <GmlKlassenVisual gmlKlassenName="LP_NRW_SchutzobjektLandesrecht" priorityFlaechendarstellung="10" priorityLiniendarstellung="20">
+<FlaechenDarstellung default="true" deckend="true">
+    <FlaechenParams class="LpNRWSchutzobjektLandesrecht" pattern="LpNRWSchutzobjektLandesrechtPattern"/>
+    <LineSymbolParams symbolId="LpLsNRWSchutzobjektLandesrecht" symbolDist="12"/>
+</FlaechenDarstellung>        
+    </GmlKlassenVisual>
+    
+    
+    <!--===============    Styles  =============================================================================-->
+    <Style styleName="LpAusgleichErsatzA">
+       <FillColor>
+           <None/>
+       </FillColor>
+       <StrokeColor>
+           <Color r="128" g="64" b="0"/>
+       </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpAusgleichErsatzB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>1</Stroke-dasharray>
+        <Stroke-dasharray>10</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpAusgleichErsatzC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpAusgleichErsatzSymbol" scalable="false">
+        <FillColor>
+            <Color r="128" g="64" b="0"/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>0.5</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpAusgleichErsatzLinie">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="128" g="64" b="0"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpAusgleichErsatzSymbolLinie">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="128" g="64" b="0"/>
+        </StrokeColor>
+        <Stroke-width>0.5</Stroke-width>
+    </Style>
+    
+    
+    <Style styleName="LpPlanerischeVertiefung">
+       <FillColor>
+           <None/>
+       </FillColor>
+       <StrokeColor>
+           <ColorName>black</ColorName>
+       </StrokeColor>
+       <Stroke-width>1</Stroke-width>
+   </Style>
+    
+    <Style styleName="LpAbgrenzung">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpNutzungsAusschluss">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    
+    <Style styleName="LpWasserrechtGemeingebr">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpWasserrechtWasserwirtschaft">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpRaeumlicherGeltungsbereichA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="0" b="0"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>10</Stroke-dasharray>
+        <Stroke-dasharray>3</Stroke-dasharray>
+        <Stroke-dashoffset>1</Stroke-dashoffset>
+    </Style>
+    <Style styleName="LpRaeumlicherGeltungsbereichB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>0.5</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpErholungFreizeitLinie">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="52" g="195" b="0"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpErholungFreizeitA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="52" g="195" b="0"/>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpErholungFreizeitB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>4</Stroke-dasharray>
+        <Stroke-dasharray>8</Stroke-dasharray>    
+    </Style>
+    
+    <Style styleName="LpErholungFreizeitC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="52" g="195" b="0"/>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpErholungFreizeitD">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>3</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>8</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpErholungFreizeitE">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+<Style styleName="LpSchutzgebietFlaecheA">
+    <FillColor>
+        <None/>
+    </FillColor>
+    <StrokeColor>
+        <Color r="0" g="128" b="0"/>
+    </StrokeColor>
+    <Stroke-width>6</Stroke-width>
+</Style>
+    
+    <Style styleName="LpNRWNaturschutzgebietA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="250" g="215" b="213"/>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpSchutzgebietFlaecheB">
+    <FillColor>
+        <None/>
+    </FillColor>
+    <StrokeColor>
+        <ColorName>black</ColorName>
+    </StrokeColor>
+    <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>8</Stroke-dasharray>
+        <Stroke-dasharray>15</Stroke-dasharray>    
+    </Style>
+    
+    <Style styleName="LpSchutzgebietFlaecheB1">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>5.5</Stroke-dasharray>
+        <Stroke-dasharray>12</Stroke-dasharray>    
+    </Style>
+    
+    <Style styleName="LpNRWNaturschutzgebietB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>5.5</Stroke-dasharray>
+        <Stroke-dasharray>12</Stroke-dasharray>    
+    </Style>
+    
+    <Style styleName="LpSchutzgebietFlaecheB2">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>9.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>    
+    </Style>
+    
+    <Style styleName="LpSchutzgebietFlaecheC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="128" b="0"/>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpNRWNaturschutzgebietC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="250" g="215" b="213"/>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+        
+        <Style styleName="LpSchutzgebietFlaecheD">
+            <FillColor>
+                <None/>
+            </FillColor>
+            <StrokeColor>
+                <ColorName>black</ColorName>
+            </StrokeColor>
+            <Stroke-width>6</Stroke-width>
+            <Stroke-dasharray>0.5</Stroke-dasharray>
+            <Stroke-dasharray>2</Stroke-dasharray>
+            <Stroke-dasharray>0.5</Stroke-dasharray>
+            <Stroke-dasharray>2</Stroke-dasharray>
+            <Stroke-dasharray>0.5</Stroke-dasharray>
+            <Stroke-dasharray>2</Stroke-dasharray>
+            <Stroke-dasharray>0.5</Stroke-dasharray>
+            <Stroke-dasharray>15</Stroke-dasharray>
+        </Style>
+    
+    <Style styleName="LpSchutzgebietFlaecheD1">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>12</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpNRWNaturschutzgebietD">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>12</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpSchutzgebietFlaecheD2">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpSchutzgebietFlaecheD3">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>2</Stroke-dasharray>
+        <Stroke-dasharray>0.5</Stroke-dasharray>
+        <Stroke-dasharray>16</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpSchutzgebietFlaecheE">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpNRWNaturschutzgebietE">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpSchutzgebietLineA">
+        <FillColor><None/></FillColor>
+        <StrokeColor>
+            <Color r="0" g="128" b="0"/>
+        </StrokeColor>
+        <Stroke-width>2</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpSchutzgebietLineB">
+        <FillColor><None/></FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>  
+    
+    <Style styleName="LpSchutzgebietSymbol" scalable="false">
+        <FillColor>
+            <Color r="0" g="128" b="0"/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>0.5</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpSchwarzStrichDuennSymbol" scalable="false">
+        <FillColor><None/></FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>0.5</Stroke-width>
+    </Style>        
+    
+    <Style styleName="LpSchwarzStrichDuenn">
+        <FillColor><None/></FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>0.5</Stroke-width>
+    </Style>        
+    
+    <Style styleName="LpSchwarzStrich1">
+        <FillColor><None/></FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>   
+    
+    <Style styleName="LpSchwarz" scalable="false">
+        <FillColor>
+            <ColorName>black</ColorName>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    
+    <Style styleName="LpSchwarzStrichDuennWeissGefuelltSymbol" scalable="false">
+        <FillColor>
+            <ColorName>white</ColorName>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>0.5</Stroke-width>
+    </Style>        
+    
+    <Style styleName="LpTextDefaultSymbol" scalable="false">
+        <FillColor>
+            <ColorName>black</ColorName>
+        </FillColor>
+        <StrokeColor>
+            <None></None>
+        </StrokeColor>
+        <Font-size>3.5</Font-size>
+        <Font-family>Arial</Font-family>
+        <Baseline-shift>-30</Baseline-shift>
+        <Baseline-shift-uom>%</Baseline-shift-uom>
+        <Text-anchor>middle</Text-anchor>
+    </Style>
+    
+    <Style styleName="LpDefaultSymbol" scalable="false">
+        <FillColor>
+            <ColorName>black</ColorName>
+        </FillColor>
+        <StrokeColor>
+            <None></None>
+        </StrokeColor>
+        <Font-family>Arial</Font-family>
+        <Baseline-shift>-30</Baseline-shift>
+        <Baseline-shift-uom>%</Baseline-shift-uom>
+        <Text-anchor>middle</Text-anchor>
+    </Style>
+    
+    <Style styleName="RsLpWasserrechtGemeingebrStyle" scalable="false">
+        <FillColor>
+            <Color r="128" g="192" b="255"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+        <Font-size>4</Font-size>
+        <Font-family>MyFonts</Font-family>
+        <Kerning>-0.1</Kerning>
+        <Baseline-shift>0.1</Baseline-shift>
+    </Style>
+    
+    
+    <Style styleName="RsLpWasserrechtWasserwirtschaftStyle" scalable="false">
+        <FillColor>
+            <Color r="0" g="123" b="206"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+        <Font-size>4</Font-size>
+        <Font-family>MyFonts</Font-family>
+        <Kerning>-0.1</Kerning>
+        <Baseline-shift>0.1</Baseline-shift>
+    </Style>
+    
+    <Style styleName="LpBodenschutzrecht">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+           <Color r="255" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpBodenschutzrechtSymbolStyle" scalable="false">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="0" b="255"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    
+    <Style styleName="LpBodenschutzrechtRsStyle">
+        <FillColor>
+            <ColorName>black</ColorName>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+        <Font-size>4</Font-size>
+        <Kerning>6</Kerning>
+        <Baseline-shift>-2</Baseline-shift>
+    </Style>
+    
+    <Style styleName="LpDenkmalschutzA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    <Style styleName="LpDenkmalschutzB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="51" b="0"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>6</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpDenkmalschutzC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpForstrechtA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    <Style styleName="LpForstrechtB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="255" b="192"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>6</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpForstrechtC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpJagdrechtA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    <Style styleName="LpJagdrechtB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="255" b="0"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>6</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpJagdrechtC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpFischereirechtA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    <Style styleName="LpFischereirechtB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="102" g="153" b="255"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>6</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpFischereirechtC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpSonstigesRechtA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>5</Stroke-width>
+    </Style>
+    <Style styleName="LpSonstigesRechtB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="255" g="255" b="255"/>
+        </StrokeColor>
+        <Stroke-width>4</Stroke-width>
+        <Stroke-dasharray>6</Stroke-dasharray>
+        <Stroke-dasharray>1</Stroke-dasharray>
+    </Style>
+    
+    <Style styleName="LpSonstigesRechtC">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpWasserrechtSchutzgebietA">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <Color r="0" g="123" b="206"/>
+        </StrokeColor>
+        <Stroke-width>6</Stroke-width>
+    </Style>
+    <Style styleName="LpWasserrechtSchutzgebietB">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpAllgGruenflaeche">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpAllgGruenflaecheFill">
+        <FillColor>
+            <Color r="52" g="195" b="0"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpNRWTempLandschaftsschutz">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpNRWTempLandschaftsschutzFill">
+        <FillColor>
+            <Color r="217" g="251" b="214"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="LpAusgleichErsatzNRW">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+          <Color r="0" g="127" b="0"/>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpAusgleichErsatzNRWFill">
+        <FillColor>
+            <Color r="0" g="127" b="0"/>
+        </FillColor>
+        <StrokeColor>
+         <None/>
+        </StrokeColor>
+    </Style>
+    
+    <Style styleName="LpNRWSchutzobjektLandesrecht">
+        <FillColor>
+            <None/>
+        </FillColor>
+        <StrokeColor>
+            <ColorName>black</ColorName>
+        </StrokeColor>
+        <Stroke-width>1</Stroke-width>
+    </Style>
+    
+    <Style styleName="LpNRWSchutzobjektLandesrechtFill">
+        <FillColor>
+            <Color r="0" g="128" b="0"/>
+        </FillColor>
+        <StrokeColor>
+            <None/>
+        </StrokeColor>
+    </Style>
+ 
+    <!--===============    Randsignaturen  =============================================================================--> 
+    <Symbol name="RsLpWasserrechtGemeingebr">
+        <Path class="RsLpWasserrechtGemeingebrStyle" path="M 0 10 L 100 10 L 100 30 A 33, 33, 0, 0, 0, 75, 35 A 33, 33, 0, 0, 1, 50, 40  A 33, 33, 0, 0, 1, 25, 35  A 33, 33, 0, 0, 0, 0, 30 L 0,10"/>
+    </Symbol>
+    
+    <Symbol name="RsLpWasserrechtWasserwirtschaft">
+        <Path class="RsLpWasserrechtWasserwirtschaftStyle" path="M 0 10 L 100 10 L 100 30 A 33, 33, 0, 0, 0, 75, 35 A 33, 33, 0, 0, 1, 50, 40  A 33, 33, 0, 0, 1, 25, 35  A 33, 33, 0, 0, 0, 0, 30 L 0,10"/>
+    </Symbol>
+    
+    <Symbol name="LpRsPlanerischeVertiefung">
+        <Path class="LpPlanerischeVertiefung" path="M 0.25 -0.25 L 3 -3"/>
+    </Symbol>
+    
+    <Symbol name="LpRsNutzungsAusschluss">
+        <Path class="LpNutzungsAusschluss" path="M 0 -0.24 L 0 -3.5"/>
+        <Circle class="LpSchwarz" cx="0" cy="-4.5" r="0.5"/>
+    </Symbol>
+    
+  
+    
+    <!-- ============== Liniensignatuten ============================================================================== -->
+    <Symbol name="LsLpSchutzgebietA">
+        <Rect class="LpSchutzgebietSymbol" x="-3" y="-3" width="6" height="6"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M  -1 -3 L  -1 3"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M   1 -3 L   1  3"/>
+    </Symbol>
+    
+    <Symbol name="LsLpSchutzgebietB">
+        <Rect class="LpSchutzgebietSymbol" x="-2" y="-3" width="4" height="6"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M  0 -3 L  0  3"/>
+    </Symbol>
+    
+    <Symbol name="LsLpSchutzgebietC">
+        <Rect class="LpSchutzgebietSymbol" x="-4" y="-3" width="8" height="6"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M  0 -3 L  0  3"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M  -2  3 L  -2 -3"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M   2  3 L   2 -3"/>
+    </Symbol>
+    
+    <Symbol name="LsLpSchutzgebietD">
+        <Path class="LpSchwarzStrichDuennSymbol" path="M  -3 -3 L  -3  3"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M  -1  3 L  -1 -3"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M   1  3 L   1 -3"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M   3  3 L   3 -3"/>
+    </Symbol>
+    
+    <Symbol name="LpLsAbgrenzung">
+        <Path class="LpSchwarzStrichDuenn" path="M -2 -2 L 2 2"/>
+        <Path class="LpSchwarzStrichDuenn" path="M -2 2 L 2 -2"/>
+        <Path class="LpSchwarzStrichDuenn" path="M 0 2 L 0 -2"/>
+    </Symbol>
+    
+    <Symbol name="LpLsNutzungsAusschluss">
+        <Path class="LpNutzungsAusschluss" path="M 0 -2.0 L 0 2.0"/>
+        <Circle class="LpSchwarz" cx="0" cy="-3" r="0.5"/>
+        <Circle class="LpSchwarz" cx="0" cy="3" r="0.5"/>
+    </Symbol>
+    
+    <Symbol name="LpLsAusgleichErsatzLinie">
+        <Path class="LpAusgleichErsatzSymbolLinie" path="M 0 -2 L 0 2"/>
+        <Path class="LpAusgleichErsatzSymbolLinie" path="M -0.5 -2 L 0.5 -2"/>
+        <Path class="LpAusgleichErsatzSymbolLinie" path="M -0.5 2 L 0.5 2"/>
+    </Symbol>
+    
+    <Symbol name="LpLsNRWSchutzobjektLandesrecht">
+        <Circle class="LpNRWSchutzobjektLandesrechtFill" cx="0" cy="0" r="2"/>
+    </Symbol>
+    
+    <!--===============    Symbole  =============================================================================-->
+    <Symbol name="LpKreis5">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+    </Symbol>
+    
+    <Symbol name="SymbolLpSchutzgebietA">
+        <Circle class="LpSchwarzStrichDuennWeissGefuelltSymbol" cx="0" cy="0" r="5"/>
+        <Circle class="LpSchutzgebietSymbol" cx="0" cy="0" r="4"/>
+    </Symbol>
+    
+    <Symbol name="SymbolLpSchutzgebietB">
+        <Circle class="LpSchutzgebietSymbol" cx="0" cy="0" r="5"/>
+        <Circle class="LpSchwarzStrichDuennWeissGefuelltSymbol" cx="0" cy="0" r="4"/>
+    </Symbol>
+    
+    <Symbol name="SymbolLpSchutzgebietC">
+        <Circle class="LpSchutzgebietSymbol" cx="0" cy="0" r="5"/>
+        <Circle class="LpSchutzgebietSymbol" cx="0" cy="0" r="4"/>
+    </Symbol>
+    
+    <Symbol name="SymbolLpWasserrechtGemeingebrEinschraenkungNaturschutz">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="4.5" x="-1.5" y="-1.5" text="G"/>
+        <Text class="LpDefaultSymbol" size="4.5" x="1.5" y="1.5" text="N"/>
+    </Symbol>
+    
+    <Symbol name="LpBodenschutzrechtSymbol">
+        <Circle class="LpBodenschutzrechtSymbolStyle" cx="0" cy="0" r="5"/>
+        <Path class="LpBodenschutzrechtSymbolStyle" path="M -6 -6 L 6 6"/>
+        <Path class="LpBodenschutzrechtSymbolStyle" path="M -6 6 L 6 -6"/>
+    </Symbol>
+    
+    <Symbol name="LpDenkmalschutzSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="6" x="0" y="0" text="D"/>
+    </Symbol>
+    
+    <Symbol name="LpNaturwaldreservatSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="W"/>
+        <Text class="LpDefaultSymbol" size="2.5" x="3" y="1.5" text="R"/>
+    </Symbol>
+    
+    <Symbol name="LpSchutzwaldSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="S"/>
+    </Symbol>
+    
+    <Symbol name="LpLawinenschutzwaldSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="S"/>
+        <Text class="LpDefaultSymbol" size="2.5" x="3" y="1.5" text="L"/>
+    </Symbol>
+    
+    <Symbol name="LpBodenschutzwaldSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="S"/>
+        <Text class="LpDefaultSymbol" size="2.5" x="3" y="1.5" text="B"/>
+    </Symbol>    
+    
+    <Symbol name="LpKlimaschutzwaldSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="S"/>
+        <Text class="LpDefaultSymbol" size="2.5" x="3" y="1.5" text="K"/>
+    </Symbol>
+    
+    <Symbol name="LpImmissionsschutzwaldSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="S"/>
+        <Text class="LpDefaultSymbol" size="2.5" x="3" y="1.5" text="I"/>
+    </Symbol>
+    
+    <Symbol name="LpNaturwaldSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="S"/>
+        <Text class="LpDefaultSymbol" size="2.5" x="3" y="1.5" text="N"/>
+    </Symbol>
+    
+    <Symbol name="LpErholungswaldSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="E"/>
+    </Symbol>
+    
+    <Symbol name="LpErholungswaldHeilbaederSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="E"/>
+        <Text class="LpDefaultSymbol" size="2.5" x="3" y="1.5" text="H"/>
+    </Symbol>
+    
+    <Symbol name="LpErholungswaldBallungsraumSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="E"/>
+        <Text class="LpDefaultSymbol" size="2.5" x="3" y="1.5" text="S"/>
+    </Symbol>
+    
+    <Symbol name="LpRueckhaltebeckenSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="R"/>
+    </Symbol>
+      
+    <Symbol name="LpUeberschwemmungsgebietSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="Ü"/>
+    </Symbol>
+    
+    <Symbol name="LpFischereirechtSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="F"/>
+    </Symbol>   
+    
+    <Symbol name="LpJagdrechtSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="J"/>
+    </Symbol>
+    
+    <Symbol name="LpSonstigesRechtSymbol">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+    </Symbol>
+    
+    <Symbol name="LpSchutzgebietGrundQuellwasser">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="GW"/>
+    </Symbol>
+    
+    <Symbol name="LpSchutzgebietOberflaechengewaesser">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="OW"/>
+    </Symbol>
+    
+    <Symbol name="LpSchutzgebietHeilquellen">
+        <Circle class="LpSchwarzStrichDuennSymbol" cx="0" cy="0" r="5"/>
+        <Text class="LpDefaultSymbol" size="5" x="0" y="0" text="HQ"/>
+    </Symbol>
+    
+    <Symbol name="LpSchutzPflegeSymbol">
+        <Path class="LpAusgleichErsatzSymbol" path="M -5 -2.89 L 5 -2.89 L 0 5.77 Z"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M -3.27 -1.89 L 3.27 -1.89 L 0 3.78 Z"/>
+    </Symbol>
+    
+    <Symbol name="LpEntwicklungSymbol">
+        <Path class="LpAusgleichErsatzSymbol" path="M 0 -4.89 L 5 3.77 L -5 3.77 Z"/>
+        <Path class="LpSchwarzStrichDuennSymbol" path="M 0 -2.89 L 3.27 2.78 L -3.27 2.78 Z"/>
+    </Symbol>
+    
+    <Symbol name="LpSchutzPflegeSonstigesSymbol">
+        <Path class="LpSchwarzStrichDuennSymbol" path="M -5 -2.89 L 5 -2.89 L 0 5.77 Z"/>
+        <Path class="LpAusgleichErsatzSymbol" path="M -3.27 -1.89 L 3.27 -1.89 L 0 3.78 Z"/>
+    </Symbol>
+    
+    <Symbol name="LpEntwicklungSonstigesSymbol">
+        <Path class="LpSchwarzStrichDuennSymbol" path="M 0 -4.89 L 5 3.77 L -5 3.77 Z"/>
+        <Path class="LpAusgleichErsatzSymbol" path="M 0 -2.89 L 3.27 2.78 L -3.27 2.78 Z"/>
+    </Symbol>
+    
+    
+    <Symbol name="LpSchutzPflegeNutzungserfordernisSymbol">
+        <Path class="LpAusgleichErsatzSymbol" path="M -5 -2.89 L 5 -2.89 L 0 5.77 Z"/>
+        <Path class="LpSchwarzStrichDuennWeissGefuelltSymbol" path="M -3.27 -1.89 L 3.27 -1.89 L 0 3.78 Z"/>
+    </Symbol>
+    
+    <Symbol name="LpEntwicklungNutzungserfordernisSymbol">
+        <Path class="LpSchwarzStrichDuennSymbol" path="M 0 -4.89 L 5 3.77 L -5 3.77 Z"/>
+        <Path class="LpSchwarzStrichDuennWeissGefuelltSymbol" path="M 0 -2.89 L 3.27 2.78 L -3.27 2.78 Z"/>
+    </Symbol>
+    
+    
+    <Pattern name="LpAllgGruenflaechePattern" x="0" y="0" width="10" height="10">
+        <Rect class="LpAllgGruenflaecheFill" x="0" y="0" width="10" height="10"/>
+        <Circle class="LpSchwarz" cx="1" cy="1" r="0.5"/>
+        <Circle class="LpSchwarz" cx="3" cy="1.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="5" cy="1" r="0.5"/>
+        <Circle class="LpSchwarz" cx="7" cy="0.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="9" cy="1" r="0.5"/>
+        
+        <Circle class="LpSchwarz" cx="1" cy="3" r="0.5"/>
+        <Circle class="LpSchwarz" cx="3" cy="3.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="5" cy="3" r="0.5"/>
+        <Circle class="LpSchwarz" cx="7" cy="2.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="9" cy="3" r="0.5"/>
+        
+        <Circle class="LpSchwarz" cx="1" cy="5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="3" cy="5.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="5" cy="5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="7" cy="4.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="9" cy="5" r="0.5"/>
+        
+        <Circle class="LpSchwarz" cx="1" cy="7" r="0.5"/>
+        <Circle class="LpSchwarz" cx="3" cy="7.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="5" cy="7" r="0.5"/>
+        <Circle class="LpSchwarz" cx="7" cy="6.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="9" cy="7" r="0.5"/>
+        
+        <Circle class="LpSchwarz" cx="1" cy="9" r="0.5"/>
+        <Circle class="LpSchwarz" cx="3" cy="9.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="5" cy="9" r="0.5"/>
+        <Circle class="LpSchwarz" cx="7" cy="8.5" r="0.5"/>
+        <Circle class="LpSchwarz" cx="9" cy="9" r="0.5"/>
+    </Pattern>
+    
+    <Pattern name="LpNRWTempLandschaftsschutzPattern" x="0" y="0" width="8" height="8">
+        <Rect class="LpNRWTempLandschaftsschutzFill" x="0" y="0" width="8" height="8"/>
+        <Circle class="LpSchwarz" cx="2" cy="2" r="1"/>
+        <Circle class="LpSchwarz" cx="6" cy="6" r="1"/>
+    </Pattern>
+    
+    <Pattern name="LpAusgleichErsatzNRWPattern" x="0" y="0" width="4" height="4">
+        <Rect class="LpAusgleichErsatzNRWFill" x="0.5" y="0.5" width="1" height="1"/>
+        <Rect class="LpAusgleichErsatzNRWFill" x="2.5" y="2.5" width="1" height="1"/>
+    </Pattern>
+    
+    <Pattern name="LpNRWSchutzobjektLandesrechtPattern" x="0" y="0" width="8" height="8">
+        <Rect class="LpNRWSchutzobjektLandesrechtFill" x="1.5" y="1.5" width="1" height="1"/>
+        <Rect class="LpNRWSchutzobjektLandesrechtFill" x="5.5" y="5.5" width="1" height="1"/>
+    </Pattern>
+    
+    
+    
+    <!-- ============================  Hatchings ============================================================= -->
+    
+    
+    <!-- =========================  Enumerationen  =================================================================== -->
+    <Enumeration nameA="LP_ZweckbestimmungSchutzgebiet" defaultTextStyle="LpTextDefaultSymbol" defaultTextSymbol="LpKreis5" defaultTextSymbolSize="1" defaultSymbolSize="1" >
+       <EnumItem schluesselNummerA="1000" text="N" />
+       <EnumItem schluesselNummerA="1100" text="NLP"/>
+       <EnumItem schluesselNummerA="1200"  text="BR"/>
+       <EnumItem schluesselNummerA="1300"  text="L" />
+       <EnumItem schluesselNummerA="1400"  text="NP"/>
+       <EnumItem schluesselNummerA="1500"  text="ND"/>
+       <EnumItem schluesselNummerA="1600"  text="GLB"/>
+       <EnumItem schluesselNummerA="1700" text="GGB"/>
+       <EnumItem schluesselNummerA="1800"  text="SCI"/>
+       <EnumItem schluesselNummerA="1900" text="SPA"/>
+       <EnumItem schluesselNummerA="9999"  />
+    </Enumeration>
+    
+    <Enumeration nameA="LP_InternatSchutzobjektTypen" defaultTextStyle="LpTextDefaultSymbol" defaultTextSymbol="LpKreis5" defaultSymbolSize="1" defaultTextSymbolSize="1">
+        <EnumItem schluesselNummerA="1000" text="FIB"/>
+        <EnumItem schluesselNummerA="2000" text="IBA"/>
+        <EnumItem schluesselNummerA="9999"/>
+    </Enumeration>
+    
+    <Enumeration nameA="LP_ForstrechtTypen" defaultSymbolSize="1">
+        <EnumItem schluesselNummerA="1000" symbolId="LpNaturwaldreservatSymbol"/>
+        <EnumItem schluesselNummerA="2000" symbolId="LpSchutzwaldSymbol"/>
+        <EnumItem schluesselNummerA="2100" symbolId="LpLawinenschutzwaldSymbol"/>
+        <EnumItem schluesselNummerA="2200" symbolId="LpBodenschutzwaldSymbol"/>
+        <EnumItem schluesselNummerA="2300" symbolId="LpKlimaschutzwaldSymbol" />
+        <EnumItem schluesselNummerA="2400" symbolId="LpImmissionsschutzwaldSymbol"/>
+        <EnumItem schluesselNummerA="2500" symbolId="LpNaturwaldSymbol"/>
+        <EnumItem schluesselNummerA="3000" symbolId="LpErholungswaldSymbol"/>
+        <EnumItem schluesselNummerA="3100" symbolId="LpErholungswaldHeilbaederSymbol"/>
+        <EnumItem schluesselNummerA="3200" symbolId="LpErholungswaldBallungsraumSymbol"/>
+        <EnumItem schluesselNummerA="9999"/>
+    </Enumeration>
+    
+    <Enumeration nameA="LP_WasserrechtWirtschaftAbflussHochwSchutzTypen" defaultSymbolSize="1">
+        <EnumItem schluesselNummerA="1000" symbolId="LpRueckhaltebeckenSymbol"/>
+        <EnumItem schluesselNummerA="2000" symbolId="LpUeberschwemmungsgebietSymbol"/>
+        <EnumItem schluesselNummerA="9999"/>
+    </Enumeration>
+    
+    <Enumeration nameA="LP_SonstRechtTypen" defaultSymbolSize="1">
+        <EnumItem schluesselNummerA="1000" symbolId="LpJagdrechtSymbol"/>
+        <EnumItem schluesselNummerA="2000" symbolId="LpFischereirechtSymbol"/>
+        <EnumItem schluesselNummerA="9999" symbolId="LpSonstigesRechtSymbol"/>
+    </Enumeration>
+    
+    <Enumeration nameA="LP_WasserrechtSchutzgebietTypen" defaultSymbolSize="1">
+        <EnumItem schluesselNummerA="1000" symbolId="LpSchutzgebietGrundQuellwasser"/>
+        <EnumItem schluesselNummerA="2000" symbolId="LpSchutzgebietOberflaechengewaesser"/>
+        <EnumItem schluesselNummerA="3000" symbolId="LpSchutzgebietHeilquellen"/>
+        <EnumItem schluesselNummerA="9999"/>
+    </Enumeration>
+    
+    <Enumeration nameA="LP_Ziele" defaultSymbolSize="2">
+        <EnumItem schluesselNummerA="1000" symbolId="LpSchutzPflegeSymbol"/>
+        <EnumItem schluesselNummerA="2000" symbolId="LpEntwicklungSymbol"/>
+        <EnumItem schluesselNummerA="9999"/>
+    </Enumeration>
+    
+    <Enumeration nameA="LP_ErholungFreizeitFunktionen" defaultSymbolSize="1">
+        <EnumItem schluesselNummerA="1000" symbolId="SymbolParkanlage" symbolSize="0.25"/>
+        <EnumItem schluesselNummerA="1030" symbolId="SymbolDauerkleingartenTrans" symbolSize="0.25"/>
+        <EnumItem schluesselNummerA="1050" symbolId="SymbolSportplatzTrans" symbolSize="0.25"/>
+        <EnumItem schluesselNummerA="1100" symbolId="SymbolZeltplatzTrans" symbolSize="0.25"/>
+        <EnumItem schluesselNummerA="1300" symbolId="SymbolBadeplatzTrans" symbolSize="0.25"/>
+        <EnumItem schluesselNummerA=""/>
+    </Enumeration>
+    
+    </SvgVisualisierung>

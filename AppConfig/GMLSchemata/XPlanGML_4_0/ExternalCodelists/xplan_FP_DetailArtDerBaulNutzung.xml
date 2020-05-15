@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.11.2011 15:19:56-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" gml:id="xplan_FP_DetailArtDerBaulNutzung">
+  <description>Aufzählung von diffgerenzierten Arten der baulichen Nutzung.
+</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:FP_DetailArtDerBaulNutzung</identifier>
+  <name>xplan:FP_DetailArtDerBaulNutzung</name>
+</Dictionary>

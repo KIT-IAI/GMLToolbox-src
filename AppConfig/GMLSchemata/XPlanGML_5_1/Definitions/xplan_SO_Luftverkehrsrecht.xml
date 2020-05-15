@@ -1,0 +1,150 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:47-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Luftverkehrsrecht">
+  <gml:description>Festlegung nach Luftverkehrsrecht.
+</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Luftverkehrsrecht</gml:identifier>
+  <gml:name>xplan:SO_Luftverkehrsrecht</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung">
+      <gml:description>Rechtliche Klassifizierung der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Luftverkehrsrecht:attribute:artDerFestlegung</gml:identifier>
+      <gml:name>xplan:artDerFestlegung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_1000">
+          <gml:description>Flughafen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:1000</gml:identifier>
+          <gml:name>Flughafen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_2000">
+          <gml:description>Landeplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:2000</gml:identifier>
+          <gml:name>Landeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_3000">
+          <gml:description>Segelfluggelände</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:3000</gml:identifier>
+          <gml:name>Segelfluggelaende</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_4000">
+          <gml:description>Hubschrauber Landeplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:4000</gml:identifier>
+          <gml:name>HubschrauberLandeplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_5000">
+          <gml:description>Ballon Startplatz</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:5000</gml:identifier>
+          <gml:name>Ballonstartplatz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_5200">
+          <gml:description>Startplatz für Hängegleiter</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:5200</gml:identifier>
+          <gml:name>Haengegleiter</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_5400">
+          <gml:description>Startplatz für Gleitsegler</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:5400</gml:identifier>
+          <gml:name>Gleitsegler</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_6000">
+          <gml:description>Lärmschutzbereich nach LuftVG</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:6000</gml:identifier>
+          <gml:name>Laermschutzbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_7000">
+          <gml:description>Höhenbeschränkung nach §12 LuftVG</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:7000</gml:identifier>
+          <gml:name>Baubeschraenkungsbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_artDerFestlegung_SO_KlassifizNachLuftverkehrsrecht_9999">
+          <gml:description>Sonstige Klassifizierung nach Luftverkehrsrecht.</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:artDerFestlegung:SO_KlassifizNachLuftverkehrsrecht:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_KlassifizNachLuftverkehrsrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Luftverkehrsrecht_detailArtDerFestlegung">
+      <gml:description>Über eine Codeliste definierte detailliertere Klassifizierung der Festlegung.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Luftverkehrsrecht:attribute:detailArtDerFestlegung</gml:identifier>
+      <gml:name>xplan:detailArtDerFestlegung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_DetailKlassifizNachLuftverkehrsrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Luftverkehrsrecht_name">
+      <gml:description>Informelle Bezeichnung der Festlegung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Luftverkehrsrecht:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Luftverkehrsrecht_nummer">
+      <gml:description>Amtliche Bezeichnung / Kennziffer der Festlegung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Luftverkehrsrecht:attribute:nummer</gml:identifier>
+      <gml:name>xplan:nummer</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Luftverkehrsrecht_laermschutzzone">
+      <gml:description>Lärmschutzzone nach LuftVG.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Luftverkehrsrecht:attribute:laermschutzzone</gml:identifier>
+      <gml:name>xplan:laermschutzzone</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_laermschutzzone_SO_LaermschutzzoneTypen_1000">
+          <gml:description>Tag-Zone 1</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:laermschutzzone:SO_LaermschutzzoneTypen:1000</gml:identifier>
+          <gml:name>TagZone1</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_laermschutzzone_SO_LaermschutzzoneTypen_2000">
+          <gml:description>Tag-Zone 2</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:laermschutzzone:SO_LaermschutzzoneTypen:2000</gml:identifier>
+          <gml:name>TagZone2</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Luftverkehrsrecht_laermschutzzone_SO_LaermschutzzoneTypen_3000">
+          <gml:description>Nacht-Zone</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Luftverkehrsrecht:laermschutzzone:SO_LaermschutzzoneTypen:3000</gml:identifier>
+          <gml:name>Nacht</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_LaermschutzzoneTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Geometrieobjekt" />
+</TypeDefinition>

@@ -1,0 +1,84 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 24.08.2012 09:29:25-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplanNSM_RP_NSM_Abfallentsorgung">
+  <gml:description />
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_NSM_Abfallentsorgung</gml:identifier>
+  <gml:name>xplanNSM:RP_NSM_Abfallentsorgung</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE">
+      <gml:description />
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplanNSM:RP_NSM_Abfallentsorgung:attribute:typAE</gml:identifier>
+      <gml:name>xplanNSM:typAE</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_1000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:1000</gml:identifier>
+          <gml:name>SicherungVonStandortenFuerSiedlungsabfalldeponien</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_1001">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:1001</gml:identifier>
+          <gml:name>ZentraleAbfallbeseitigungsAnlage</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_2100">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:2100</gml:identifier>
+          <gml:name>AbfallbeseitigungAbfallverwertung_Deponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_2110">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:2110</gml:identifier>
+          <gml:name>AbfallbeseitigungAbfallverwertung_Siedlungsabfalldeponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_2120">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:2120</gml:identifier>
+          <gml:name>AbfallbeseitigungAbfallverwertung_Mineralstoffdeponie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_2200">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:2200</gml:identifier>
+          <gml:name>AbfallbeseitigungAbfallverwertung_Kompostierung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_2300">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:2300</gml:identifier>
+          <gml:name>AbfallbeseitigungAbfallverwertung_Verbrennung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_2400">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:2400</gml:identifier>
+          <gml:name>AbfallbeseitigungAbfallverwertung_Behandlung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_2500">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:2500</gml:identifier>
+          <gml:name>AbfallbeseitigungAbfallverwertung_Untertageeinlagerung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_3000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:3000</gml:identifier>
+          <gml:name>SonderabfallbeseitigungSonderabfallbehandlung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplanNSM_RP_NSM_Abfallentsorgung_typAE_RP_NSM_AbfallentsorgungTypen_4000">
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplanNSM:RP_NSM_Abfallentsorgung:typAE:RP_NSM_AbfallentsorgungTypen:4000</gml:identifier>
+          <gml:name>EntsorgungRadioaktiverAbfaelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_NSM_AbfallentsorgungTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Entsorgung" />
+</TypeDefinition>

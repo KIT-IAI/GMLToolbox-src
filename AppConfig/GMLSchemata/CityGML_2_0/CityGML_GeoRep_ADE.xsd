@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 07.07.2015 08:33:12-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+  xmlns:rep="http://www.citygml.org/ade/georep/2.0" 
+  targetNamespace="http://www.citygml.org/ade/georep/2.0"
+  xmlns:kit="http://www.kit.edu"
+  xmlns:bldg="http://www.opengis.net/citygml/building/2.0"
+  xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0"
+  xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" 
+  xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0"
+  xmlns:tran="http://www.opengis.net/citygml/transportation/2.0"
+  xmlns:dem="http://www.opengis.net/citygml/relief/2.0" 
+  xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" 
+  xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" 
+  xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" 
+  xmlns:brid="http://www.opengis.net/citygml/bridge/2.0"
+  xmlns:app="http://www.opengis.net/citygml/appearance/2.0"
+  xmlns:gen="http://www.opengis.net/citygml/generics/2.0" 
+  xmlns:core="http://www.opengis.net/citygml/2.0" 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:gml="http://www.opengis.net/gml" elementFormDefault="qualified" version="1.0">
+  
+  <!--import namespace="http://www.opengis.net/citygml/building/2.0" schemaLocation="http://schemas.opengis.net/citygml/building/2.0/building.xsd" />
+  <import namespace="http://www.opengis.net/citygml/waterbody/2.0" schemaLocation="http://schemas.opengis.net/citygml/waterbody/2.0/waterBody.xsd" />
+  <import namespace="http://www.opengis.net/citygml/vegetation/2.0" schemaLocation="http://schemas.opengis.net/citygml/vegetation/2.0/vegetation.xsd" />
+  <import namespace="http://www.opengis.net/citygml/tunnel/2.0" schemaLocation="http://schemas.opengis.net/citygml/tunnel/2.0/tunnel.xsd" />
+  <import namespace="http://www.opengis.net/citygml/transportation/2.0" schemaLocation="http://schemas.opengis.net/citygml/transportation/2.0/transportation.xsd" />
+  <import namespace="http://www.opengis.net/citygml/relief/2.0" schemaLocation="http://schemas.opengis.net/citygml/relief/2.0/relief.xsd" />
+  <import namespace="http://www.opengis.net/citygml/cityobjectgroup/2.0" schemaLocation="http://schemas.opengis.net/citygml/cityobjectgroup/2.0/cityObjectGroup.xsd" />
+  <import namespace="http://www.opengis.net/citygml/landuse/2.0" schemaLocation="http://schemas.opengis.net/citygml/landuse/2.0/landUse.xsd" />
+  <import namespace="http://www.opengis.net/citygml/cityfurniture/2.0" schemaLocation="http://schemas.opengis.net/citygml/cityfurniture/2.0/cityFurniture.xsd" />
+  <import namespace="http://www.opengis.net/citygml/bridge/2.0" schemaLocation="http://schemas.opengis.net/citygml/bridge/2.0/bridge.xsd" />
+  <import namespace="http://www.opengis.net/citygml/appearance/2.0" schemaLocation="http://schemas.opengis.net/citygml/appearance/2.0/appearance.xsd" />
+  <import namespace="http://www.opengis.net/citygml/generics/2.0" schemaLocation="http://schemas.opengis.net/citygml/generics/2.0/generics.xsd" />
+  <import namespace="http://www.opengis.net/citygml/2.0" schemaLocation="http://schemas.opengis.net/citygml/2.0/cityGMLBase.xsd" />
+  <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" /-->
+  <!--=========================================================================================-->
+  <!--_CityObject-->
+  <!--=========================================================================================-->
+  <element name="guid" type="string" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" />
+  <element name="representation" type="rep:AbstractRepresentationPropertyType" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" />
+  <!--=========================================================================================-->
+  <!--AbstractRepresentation-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractRepresentation" type="rep:AbstractRepresentationType" />
+  <complexType abstract="true" name="AbstractRepresentationType">
+    <annotation>
+      <documentation>Super class for different types of representations (shape rep., topological rep., style rep.).</documentation>
+    </annotation>
+    <sequence>
+      <element name="context" type="rep:RepresentationContextPropertyType" />
+    </sequence>
+  </complexType>
+  <complexType name="AbstractRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:AbstractRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--AbstractShapeRepresentationItem-->
+  <!--=========================================================================================-->
+  <element abstract="true" name="AbstractShapeRepresentationItem" type="rep:AbstractShapeRepresentationItemType" />
+  <complexType abstract="true" name="AbstractShapeRepresentationItemType" />
+  <complexType name="AbstractShapeRepresentationItemPropertyType">
+    <sequence>
+      <element ref="rep:AbstractShapeRepresentationItem" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--CurveRepresentation-->
+  <!--=========================================================================================-->
+  <element name="CurveRepresentation" type="rep:CurveRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="CurveRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:CurvePropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CurveRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:CurveRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--GeometryRepresentation-->
+  <!--=========================================================================================-->
+  <element name="GeometryRepresentation" type="rep:GeometryRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="GeometryRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:GeometryPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeometryRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:GeometryRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ImplicitRepresentation-->
+  <!--=========================================================================================-->
+  <element name="ImplicitRepresentation" type="rep:ImplicitRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="ImplicitRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="core:ImplicitRepresentationPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ImplicitRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:ImplicitRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--MultiCurveRepresentation-->
+  <!--=========================================================================================-->
+  <element name="MultiCurveRepresentation" type="rep:MultiCurveRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="MultiCurveRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:MultiCurvePropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MultiCurveRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:MultiCurveRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--MultiPointRepresentation-->
+  <!--=========================================================================================-->
+  <element name="MultiPointRepresentation" type="rep:MultiPointRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="MultiPointRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:MultiPointPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MultiPointRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:MultiPointRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--MultiSolidRepresentation-->
+  <!--=========================================================================================-->
+  <element name="MultiSolidRepresentation" type="rep:MultiSolidRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="MultiSolidRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:SolidPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MultiSolidRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:MultiSolidRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--MultiSurfaceRepresentation-->
+  <!--=========================================================================================-->
+  <element name="MultiSurfaceRepresentation" type="rep:MultiSurfaceRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="MultiSurfaceRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:MultiSurfacePropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MultiSurfaceRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:MultiSurfaceRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--PointRepresentation-->
+  <!--=========================================================================================-->
+  <element name="PointRepresentation" type="rep:PointRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="PointRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:PointPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PointRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:PointRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--RepresentationContext-->
+  <!--=========================================================================================-->
+  <element name="RepresentationContext" type="rep:RepresentationContextType" substitutionGroup="gml:_GML" />
+  <complexType name="RepresentationContextType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence>
+          <element name="contextIdentifier" type="anyURI" />
+          <element name="contextName" minOccurs="0" type="string" />
+          <element name="precision" minOccurs="0" type="double" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RepresentationContextPropertyType">
+    <sequence>
+      <element ref="rep:RepresentationContext" minOccurs="0" />
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup" />
+  </complexType>
+  <!--=========================================================================================-->
+  <!--ShapeRepresentation-->
+  <!--=========================================================================================-->
+  <element name="ShapeRepresentation" type="rep:ShapeRepresentationType" substitutionGroup="rep:AbstractRepresentation" />
+  <complexType name="ShapeRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractRepresentationType">
+        <sequence>
+          <element name="representationItem" maxOccurs="unbounded" type="rep:AbstractShapeRepresentationItemPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ShapeRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:ShapeRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SolidRepresentation-->
+  <!--=========================================================================================-->
+  <element name="SolidRepresentation" type="rep:SolidRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="SolidRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:SolidPropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SolidRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:SolidRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+  <!--=========================================================================================-->
+  <!--SurfaceRepresentation-->
+  <!--=========================================================================================-->
+  <element name="SurfaceRepresentation" type="rep:SurfaceRepresentationType" substitutionGroup="rep:AbstractShapeRepresentationItem" />
+  <complexType name="SurfaceRepresentationType">
+    <complexContent>
+      <extension base="rep:AbstractShapeRepresentationItemType">
+        <sequence>
+          <element name="geometryProperty" type="gml:SurfacePropertyType" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SurfaceRepresentationPropertyType">
+    <sequence>
+      <element ref="rep:SurfaceRepresentation" minOccurs="0" />
+    </sequence>
+  </complexType>
+</schema>

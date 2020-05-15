@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/gml ../gml/3.2.1/gml.xsd"
+ xmlns="http://www.opengis.net/gml/3.2"
+ xmlns:gml="http://www.opengis.net/gml/3.2"
+ gml:id="RP_Status">
+    <description>GML-Dictionary für den Status von Regionalplänen.</description>
+    <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:RP_Status</identifier>
+    <name>xplan:RP_Status</name>
+</Dictionary>

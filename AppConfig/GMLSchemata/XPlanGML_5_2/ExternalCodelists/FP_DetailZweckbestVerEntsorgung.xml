@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 03.07.2019 08:17:32-->
+<Dictionary xmlns="http://www.opengis.net/gml/3.1.1" xmlns:gml="http://www.opengis.net/gml/3.1.1" gml:id="FP_DetailZweckbestVerEntsorgung">
+  <description>Codeliste der detaillierten Zweckbestimmungen für Ver- und Entsorgung.</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:FP_DetailZweckbestVerEntsorgung</identifier>
+  <name>xplan:FP_DetailZweckbestVerEntsorgung</name>
+</Dictionary>

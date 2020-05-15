@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Erzeugt mit KIT (www.kit.edu) GML-Toolbox, Erstellungsdatum: 05/02/19-->
+<Dictionary   gml:id="BP_DetailDachform" xmlns="http://www.opengis.net/gml/3.2" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <description>Codeliste von Dachformen, die keinem in der Enumeration &lt;i&gt;BP_Dachform &lt;/i&gt;aufgeführten Typ entsprechen.</description>
+  <identifier codeSpace="urn:xplan">urn:xplan:def:codelist:xplan:BP_DetailDachform</identifier>
+  <name>urn:xplan:def:codelist:xplan:BP_DetailDachform</name>
+</Dictionary  >

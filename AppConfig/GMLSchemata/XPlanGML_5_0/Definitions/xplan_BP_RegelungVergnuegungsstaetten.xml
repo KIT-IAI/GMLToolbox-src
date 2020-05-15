@@ -1,0 +1,40 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:07-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_RegelungVergnuegungsstaetten">
+  <gml:description>Festsetzung nach §9 Abs. 2b BauGB (Zulässigkeit von Vergnügungsstätten)</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_RegelungVergnuegungsstaetten</gml:identifier>
+  <gml:name>xplan:BP_RegelungVergnuegungsstaetten</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_RegelungVergnuegungsstaetten_zulaessigkeit">
+      <gml:description>Zulässigkeit von Vergnügungsstätten.
+</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:BP_RegelungVergnuegungsstaetten:attribute:zulaessigkeit</gml:identifier>
+      <gml:name>xplan:zulaessigkeit</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_RegelungVergnuegungsstaetten_zulaessigkeit_BP_ZulaessigkeitVergnuegungsstaetten_1000">
+          <gml:description>Vergnügungsstätten sind generell zulässig.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_RegelungVergnuegungsstaetten:zulaessigkeit:BP_ZulaessigkeitVergnuegungsstaetten:1000</gml:identifier>
+          <gml:name>Zulaessig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_RegelungVergnuegungsstaetten_zulaessigkeit_BP_ZulaessigkeitVergnuegungsstaetten_2000">
+          <gml:description>Vergnügungsstätten sind generell nicht zulässig.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_RegelungVergnuegungsstaetten:zulaessigkeit:BP_ZulaessigkeitVergnuegungsstaetten:2000</gml:identifier>
+          <gml:name>NichtZulaessig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_RegelungVergnuegungsstaetten_zulaessigkeit_BP_ZulaessigkeitVergnuegungsstaetten_3000">
+          <gml:description>Vergnügungsstätten sind ausnahmsweise zulässig.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:BP_RegelungVergnuegungsstaetten:zulaessigkeit:BP_ZulaessigkeitVergnuegungsstaetten:3000</gml:identifier>
+          <gml:name>AusnahmsweiseZulaessig</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_ZulaessigkeitVergnuegungsstaetten</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Ueberlagerungsobjekt" />
+</TypeDefinition>

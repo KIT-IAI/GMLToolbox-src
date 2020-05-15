@@ -1,0 +1,198 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 28.05.2018 15:49:48-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_SchutzgebietNaturschutzrecht">
+  <gml:description>Schutzgebiet nach Naturschutzrecht.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_SchutzgebietNaturschutzrecht</gml:identifier>
+  <gml:name>xplan:SO_SchutzgebietNaturschutzrecht</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung">
+      <gml:description>Klassifizierung des Schutzgebietes</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_SchutzgebietNaturschutzrecht:attribute:artDerFestlegung</gml:identifier>
+      <gml:name>xplan:artDerFestlegung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1000">
+          <gml:description>Naturschutzgebiet gemäß &lt;font color="#00000a"&gt;§23 BNatSchG.&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1000</gml:identifier>
+          <gml:name>Naturschutzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1100">
+          <gml:description>Nationalpark &lt;font color="#00000a"&gt;gemäß §24 BNatSchG&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1100</gml:identifier>
+          <gml:name>Nationalpark</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1200">
+          <gml:description>Biosphärenreservat &lt;font color="#00000a"&gt;gemäß §25 BNatSchG.&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1200</gml:identifier>
+          <gml:name>Biosphaerenreservat</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1300">
+          <gml:description>Landschaftsschutzgebiet &lt;font color="#00000a"&gt;gemäß §65 BNatSchG.&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1300</gml:identifier>
+          <gml:name>Landschaftsschutzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1400">
+          <gml:description>Naturpark &lt;font color="#00000a"&gt;gemäß §27 BNatSchG.&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1400</gml:identifier>
+          <gml:name>Naturpark</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1500">
+          <gml:description>Naturdenkmal &lt;font color="#00000a"&gt;gemäß §28 BNatSchG.&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1500</gml:identifier>
+          <gml:name>Naturdenkmal</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1600">
+          <gml:description>Geschützter Bestandteil der Landschaft &lt;font color="#00000a"&gt;gemäß §29 BNatSchG.&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1600</gml:identifier>
+          <gml:name>GeschuetzterLandschaftsBestandteil</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1700">
+          <gml:description>Gesetzlich geschützte Biotope &lt;font color="#00000a"&gt;gemäß §30 BNatSchG.&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1700</gml:identifier>
+          <gml:name>GesetzlichGeschuetztesBiotop</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_1800">
+          <gml:description>Schutzgebiet nach Europäischem Recht. Dies umfasst das "Gebiet Gemeinschaftlicher Bedeutung" (FFH-Gebiet) und das "Europäische Vogelschutzgebiet"</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:1800</gml:identifier>
+          <gml:name>Natura2000</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_18000">
+          <gml:description>Gebiete von gemeinschaftlicher Bedeutung</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:18000</gml:identifier>
+          <gml:name>GebietGemeinschaftlicherBedeutung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_18001">
+          <gml:description>Europäische Vogelschutzgebiete</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:18001</gml:identifier>
+          <gml:name>EuropaeischesVogelschutzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_2000">
+          <gml:description>Nationales Naturmonument &lt;font color="#00000a"&gt;gemäß §24 Abs. (4)  BNatSchG.&lt;/font&gt;</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:2000</gml:identifier>
+          <gml:name>NationalesNaturmonument</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_artDerFestlegung_XP_KlassifizSchutzgebietNaturschutzrecht_9999">
+          <gml:description>Sonstiges Naturschutzgebiet</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:artDerFestlegung:XP_KlassifizSchutzgebietNaturschutzrecht:9999</gml:identifier>
+          <gml:name>Sonstiges</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>XP_KlassifizSchutzgebietNaturschutzrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_detailArtDerFestlegung">
+      <gml:description>Über eine Codeliste definierte detailliertere Klassifizierung</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_SchutzgebietNaturschutzrecht:attribute:detailArtDerFestlegung</gml:identifier>
+      <gml:name>xplan:detailArtDerFestlegung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_DetailKlassifizSchutzgebietNaturschutzrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_zone">
+      <gml:description>Klassifizierung der Schutzzone</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_SchutzgebietNaturschutzrecht:attribute:zone</gml:identifier>
+      <gml:name>xplan:zone</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_zone_SO_SchutzzonenNaturschutzrecht_1000">
+          <gml:description>Schutzzone 1</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:zone:SO_SchutzzonenNaturschutzrecht:1000</gml:identifier>
+          <gml:name>Schutzzone_1</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_zone_SO_SchutzzonenNaturschutzrecht_1100">
+          <gml:description>Schutzzone 2</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:zone:SO_SchutzzonenNaturschutzrecht:1100</gml:identifier>
+          <gml:name>Schutzzone_2</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_zone_SO_SchutzzonenNaturschutzrecht_1200">
+          <gml:description>Schutzzone 3</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:zone:SO_SchutzzonenNaturschutzrecht:1200</gml:identifier>
+          <gml:name>Schutzzone_3</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_zone_SO_SchutzzonenNaturschutzrecht_2000">
+          <gml:description>Kernzone</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:zone:SO_SchutzzonenNaturschutzrecht:2000</gml:identifier>
+          <gml:name>Kernzone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_zone_SO_SchutzzonenNaturschutzrecht_2100">
+          <gml:description>Pflegezone</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:zone:SO_SchutzzonenNaturschutzrecht:2100</gml:identifier>
+          <gml:name>Pflegezone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_zone_SO_SchutzzonenNaturschutzrecht_2200">
+          <gml:description>Entwicklungszone</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:zone:SO_SchutzzonenNaturschutzrecht:2200</gml:identifier>
+          <gml:name>Entwicklungszone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_zone_SO_SchutzzonenNaturschutzrecht_2300">
+          <gml:description>Regenerationszone</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_SchutzgebietNaturschutzrecht:zone:SO_SchutzzonenNaturschutzrecht:2300</gml:identifier>
+          <gml:name>Regenerationszone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_SchutzzonenNaturschutzrecht</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_name">
+      <gml:description>Informeller Name des Schutzgebiets</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_SchutzgebietNaturschutzrecht:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_SchutzgebietNaturschutzrecht_nummer">
+      <gml:description>Amtlicher Name / Kennziffer des Gebiets.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_SchutzgebietNaturschutzrecht:attribute:nummer</gml:identifier>
+      <gml:name>xplan:nummer</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Geometrieobjekt" />
+</TypeDefinition>

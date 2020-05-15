@@ -1,0 +1,126 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:21-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Wasserschutz">
+  <gml:description>Grund-, Trink- und Oberflächenwasserschutz.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Wasserschutz</gml:identifier>
+  <gml:name>xplan:RP_Wasserschutz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Wasserschutz_typ">
+      <gml:description>Klassifikation des Wasserschutztyps.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Wasserschutz:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_1000">
+          <gml:description>Wasserschutzgebiet.
+Nach DIN 4046 "Einzugsgebiet oder Teil des Einzugsgebietes einer Wassergewinnungsanlage, das zum Schutz des Wassers Nutzungsbeschränkungen unterliegt."</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:1000</gml:identifier>
+          <gml:name>Wasserschutzgebiet</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_2000">
+          <gml:description>Grundwasserschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:2000</gml:identifier>
+          <gml:name>Grundwasserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_2001">
+          <gml:description>Grundwasservorkommen.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:2001</gml:identifier>
+          <gml:name>Grundwasservorkommen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_2002">
+          <gml:description>Einzugsgebiet einer Talsperre.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:2002</gml:identifier>
+          <gml:name>Gewaesserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_3000">
+          <gml:description>Trinkwasserschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:3000</gml:identifier>
+          <gml:name>Trinkwasserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_4000">
+          <gml:description>Trinkwassergewinnung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:4000</gml:identifier>
+          <gml:name>Trinkwassergewinnung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_5000">
+          <gml:description>Oberflächenwasserschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:5000</gml:identifier>
+          <gml:name>Oberflaechenwasserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_6000">
+          <gml:description>Heilquelle.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:6000</gml:identifier>
+          <gml:name>Heilquelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_7000">
+          <gml:description>Wasserversorgung.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:7000</gml:identifier>
+          <gml:name>Wasserversorgung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_typ_RP_WasserschutzTypen_9999">
+          <gml:description>Sonstiger Wasserschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:typ:RP_WasserschutzTypen:9999</gml:identifier>
+          <gml:name>SonstigerWasserschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_WasserschutzTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Wasserschutz_zone">
+      <gml:description>Wasserschutzzone</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Wasserschutz:attribute:zone</gml:identifier>
+      <gml:name>xplan:zone</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_zone_RP_WasserschutzZonen_1000">
+          <gml:description>Zone 1.
+Für Grundwasser beinhaltet die Zone 1 den Fassungsbereich. In diesem Bereich und der unmittelbaren Umgebung um die Wassergewinnungsanlage muss jegliche Verunreinigung unterbleiben. Bei Talsperren  beinhaltet die Zone 1 den Stauraum mit Uferzone. Diese soll den Schutz vor unmittelbaren Verunreinigungen und sonstigen Beeinträchtigungen des Talsperrenwassers gewährleisten.
+Die Ausdehnung der Zone I sollte im allgemeinen von Brunnen allseitig 10 m, von Quellen in Richtung des ankommenden Grundwassers mindestens 20 m und von Kaarstgrundwasserleitern mindestens 30 m betragen</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:zone:RP_WasserschutzZonen:1000</gml:identifier>
+          <gml:name>Zone1</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_zone_RP_WasserschutzZonen_2000">
+          <gml:description>Zone 2.
+Die engere Schutzzone.
+Die Zone II reicht von der Grenze der Zone I bis zu einer Linie, von der aus das Grundwasser etwa 50 Tage bis zum Eintreffen in die Trinkwassergewinnungsanlage benötigt. Eine Zone II kann entfallen, wenn nur tiefere, abgedichtete Grundwasserstockwerke oder solche genutzt werden, die von der 50 Tage-Linie bis zur Fassung von undurchlässigen Schichten gegenüber der Mächtigkeit abgedeckt sind.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:zone:RP_WasserschutzZonen:2000</gml:identifier>
+          <gml:name>Zone2</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Wasserschutz_zone_RP_WasserschutzZonen_3000">
+          <gml:description>Zone 3.
+Die Weitere Schutzzone.
+Die Zone III reicht von der Grenze des Einzugsgebietes bis zur Außengrenze der Zone II. Wenn das Einzugsgebiet weiter als 2 km reicht, so kann eine Aufgliederung in eine Zone III A bis etwa 2 km Entfernung ab Fassung und eine Zone III B etwa 2 km bis zur Grenze des Einzugsgebietes zweckmäßig sein.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Wasserschutz:zone:RP_WasserschutzZonen:3000</gml:identifier>
+          <gml:name>Zone3</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>RP_WasserschutzZonen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Freiraum" />
+</TypeDefinition>

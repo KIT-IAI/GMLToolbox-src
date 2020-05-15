@@ -1,0 +1,199 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:24-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_Grenze">
+  <gml:description>Grenzen.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Grenze</gml:identifier>
+  <gml:name>xplan:RP_Grenze</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Grenze_typ">
+      <gml:description>Typ der Grenze</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Grenze:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1000">
+          <gml:description>Bundesgrenze</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1000</gml:identifier>
+          <gml:name>Bundesgrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1100">
+          <gml:description>Grenze eines Bundeslandes</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1100</gml:identifier>
+          <gml:name>Landesgrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1200">
+          <gml:description>Grenze eines Regierungsbezirks</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1200</gml:identifier>
+          <gml:name>Regierungsbezirksgrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1250">
+          <gml:description>Grenze eines Bezirks.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1250</gml:identifier>
+          <gml:name>Bezirksgrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1300">
+          <gml:description>Grenze eines Kreises.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1300</gml:identifier>
+          <gml:name>Kreisgrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1400">
+          <gml:description>Grenze einer Gemeinde.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1400</gml:identifier>
+          <gml:name>Gemeindegrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1450">
+          <gml:description>Grenze einer Verbandsgemeinde</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1450</gml:identifier>
+          <gml:name>Verbandsgemeindegrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1500">
+          <gml:description>Grenze einer Samtgemeinde</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1500</gml:identifier>
+          <gml:name>Samtgemeindegrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1510">
+          <gml:description>Mitgliedsgemeindegrenze</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1510</gml:identifier>
+          <gml:name>Mitgliedsgemeindegrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1550">
+          <gml:description>Amtsgrenze</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1550</gml:identifier>
+          <gml:name>Amtsgrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_1600">
+          <gml:description>Stadtteilgrenze</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:1600</gml:identifier>
+          <gml:name>Stadtteilgrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_2000">
+          <gml:description>Hinweis auf eine vorgeschlagene Grundstücksgrenze im BPlan.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:2000</gml:identifier>
+          <gml:name>VorgeschlageneGrundstuecksgrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_2100">
+          <gml:description>Hinweis auf den Geltungsbereich eines bestehenden BPlan.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:2100</gml:identifier>
+          <gml:name>GrenzeBestehenderBebauungsplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_typ_XP_GrenzeTypen_9999">
+          <gml:description>Sonstige Grenze</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:typ:XP_GrenzeTypen:9999</gml:identifier>
+          <gml:name>SonstGrenze</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..*</def:cardinality>
+      <def:valueTypeName>XP_GrenzeTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Grenze_spezifischerTyp">
+      <gml:description>Spezifischer Typ der Grenze</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Grenze:attribute:spezifischerTyp</gml:identifier>
+      <gml:name>xplan:spezifischerTyp</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_1000">
+          <gml:description>Grenze der Zwölf-Seemeilen-Zone, in der Küstenstaaten das Recht haben, ihre Hoheitsgewässer auf bis zu 12 Seemeilen auszudehnen (nach Seerechtsübereinkommen der UN vom 10. Dezember 1982).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:1000</gml:identifier>
+          <gml:name>Zwoelfmeilenzone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_1001">
+          <gml:description>Begrenzung des Küstenmeeres.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:1001</gml:identifier>
+          <gml:name>BegrenzungDesKuestenmeeres</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_2000">
+          <gml:description>Grenze mit umstrittenem Verlauf, beispielsweise zwischen Deutschland und den Niederlanden im Ems-Ästuar.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:2000</gml:identifier>
+          <gml:name>VerlaufUmstritten</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_3000">
+          <gml:description>Grenze der Deutschen Ausschließlichen Wirtschaftszone (AWZ).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:3000</gml:identifier>
+          <gml:name>GrenzeDtAusschlWirtschaftszone</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_4000">
+          <gml:description>Maß von Küstenlinien bei langjährig gemitteltem Küstenhochwasser.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:4000</gml:identifier>
+          <gml:name>MittlereTideHochwasserlinie</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_5000">
+          <gml:description>Grenze einer regionalen Planungsregion (z.B. Grenze eines Regionalplans).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:5000</gml:identifier>
+          <gml:name>PlanungsregionsgrenzeRegion</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_6000">
+          <gml:description>Grenze einer landesweiten Planungsregion (z.B. Grenze eines Landesentwicklungsplans).</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:6000</gml:identifier>
+          <gml:name>PlanungsregionsgrenzeLand</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_7000">
+          <gml:description>Grenze eines Braunkohlenplans.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:7000</gml:identifier>
+          <gml:name>GrenzeBraunkohlenplan</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_Grenze_spezifischerTyp_RP_SpezifischeGrenzeTypen_8000">
+          <gml:description>Grenzübergangsstelle</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_Grenze:spezifischerTyp:RP_SpezifischeGrenzeTypen:8000</gml:identifier>
+          <gml:name>Grenzuebergangsstelle</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_SpezifischeGrenzeTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_Grenze_sonstTyp">
+      <gml:description>Erweiterter Typ.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_Grenze:attribute:sonstTyp</gml:identifier>
+      <gml:name>xplan:sonstTyp</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_SonstGrenzeTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>

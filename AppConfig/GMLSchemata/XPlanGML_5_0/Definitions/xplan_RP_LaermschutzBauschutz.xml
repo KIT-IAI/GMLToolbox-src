@@ -1,0 +1,67 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 30.11.2016 13:01:22-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_RP_LaermschutzBauschutz">
+  <gml:description>Infrastruktur zum Lärmschutz und/oder Bauschutz.</gml:description>
+  <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_LaermschutzBauschutz</gml:identifier>
+  <gml:name>xplan:RP_LaermschutzBauschutz</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_RP_LaermschutzBauschutz_typ">
+      <gml:description>Klassifikation von Lärmschutztypen.</gml:description>
+      <gml:identifier codeSpace="urn:citgml">urn:xplan:element:xplan:RP_LaermschutzBauschutz:attribute:typ</gml:identifier>
+      <gml:name>xplan:typ</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_LaermschutzBauschutz_typ_RP_LaermschutzTypen_1000">
+          <gml:description>Lärmbereich.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_LaermschutzBauschutz:typ:RP_LaermschutzTypen:1000</gml:identifier>
+          <gml:name>Laermbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_LaermschutzBauschutz_typ_RP_LaermschutzTypen_1001">
+          <gml:description>Lärmschutzbereich</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_LaermschutzBauschutz:typ:RP_LaermschutzTypen:1001</gml:identifier>
+          <gml:name>Laermschutzbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_LaermschutzBauschutz_typ_RP_LaermschutzTypen_2000">
+          <gml:description>Siedlungsbeschränkungsbereich.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_LaermschutzBauschutz:typ:RP_LaermschutzTypen:2000</gml:identifier>
+          <gml:name>Siedlungsbeschraenkungsbereich</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_LaermschutzBauschutz_typ_RP_LaermschutzTypen_3000">
+          <gml:description>Zone A.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_LaermschutzBauschutz:typ:RP_LaermschutzTypen:3000</gml:identifier>
+          <gml:name>ZoneA</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_LaermschutzBauschutz_typ_RP_LaermschutzTypen_4000">
+          <gml:description>Zone B.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_LaermschutzBauschutz:typ:RP_LaermschutzTypen:4000</gml:identifier>
+          <gml:name>ZoneB</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_LaermschutzBauschutz_typ_RP_LaermschutzTypen_5000">
+          <gml:description>Zone C.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_LaermschutzBauschutz:typ:RP_LaermschutzTypen:5000</gml:identifier>
+          <gml:name>ZoneC</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_RP_LaermschutzBauschutz_typ_RP_LaermschutzTypen_9999">
+          <gml:description>Sonstiger Lärmschutz oder Bauschutz.</gml:description>
+          <gml:identifier codeSpace="urn:citgml">urn:xplan:enum:xplan:RP_LaermschutzBauschutz:typ:RP_LaermschutzTypen:9999</gml:identifier>
+          <gml:name>SonstigerLaermschutzBauschutz</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>RP_LaermschutzTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:RP_Geometrieobjekt" />
+</TypeDefinition>
