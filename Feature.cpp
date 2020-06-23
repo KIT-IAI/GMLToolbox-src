@@ -95,10 +95,16 @@ void Features::clear()
 
   for ( iter = features.begin(); iter != features.end(); iter++ )
   {
-    string gmlId = iter->first;
-    Feature * pFeature = iter->second;
-    delete pFeature;
-    features[gmlId] = NULL;
+    try
+    {
+      string gmlId = iter->first;
+      Feature * pFeature = iter->second;
+      delete pFeature;
+      features[gmlId] = NULL;
+    }
+    catch ( System::AccessViolationException ^  )
+    {
+    }
   }
 
   for ( iterAppearance = mAppearance.begin(); iterAppearance != mAppearance.end(); iterAppearance++ )
@@ -293,7 +299,8 @@ bool Features::isXPlanGML()
        gmlTyp == XPLANGML_4_1 || 
        gmlTyp == XPLANGML_5_0 ||
        gmlTyp == XPLANGML_5_1 ||
-       gmlTyp == XPLANGML_5_2 )
+       gmlTyp == XPLANGML_5_2 ||
+       gmlTyp == XPLANGML_5_3 )
     return true;
 
   return false;

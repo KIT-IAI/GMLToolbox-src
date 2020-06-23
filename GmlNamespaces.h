@@ -54,6 +54,7 @@ public:
   static std::string                xplanGml_5_0_targetNamespace;
   static std::string                xplanGml_5_1_targetNamespace;
   static std::string                xplanGml_5_2_targetNamespace;
+  static std::string                xplanGml_5_3_targetNamespace;
 
   static std::string                xAL_2_0_targetNamespace;
   static std::string                nas_5_1_targetNamespace;

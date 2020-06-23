@@ -785,7 +785,8 @@ bool XPlanGML::setPlanAttribute ()
     if ( m_pFeatures->getGmlTyp() == XPLANGML_5_0 )
       setBereichAttribute_V5_0 ( pPlanBereich, pBereich );
     else
-    if ( m_pFeatures->getGmlTyp() == XPLANGML_5_1 || m_pFeatures->getGmlTyp() == XPLANGML_5_2  )
+    if ( m_pFeatures->getGmlTyp() == XPLANGML_5_1 || m_pFeatures->getGmlTyp() == XPLANGML_5_2 || 
+         m_pFeatures->getGmlTyp() == XPLANGML_5_3 )
       setBereichAttribute_V5_X ( pPlanBereich, pBereich );
 
     pRel = new FeatureRelation;
@@ -801,7 +802,7 @@ bool XPlanGML::setPlanAttribute ()
 
       string klassenName = m_planBereichKlassenName;
 
-      geometrieDatei = pBereich->geometrieDatei+= ".shp";
+      geometrieDatei = pBereich->geometrieDatei + ".shp";
       found = false;
       for ( j = 0; j < m_vShapeFileNames.size(); j++ )
       {
@@ -810,6 +811,7 @@ bool XPlanGML::setPlanAttribute ()
         {
           shapeFilePathBereich = m_vShapeFilePaths[j];
           m_pKlassenName = m_pShapeFileNamenKonvertierung->getKlassenNameObj( pBereich->geometrieDatei );
+          m_klassenName = m_pKlassenName->getKlassenName();
 
           found = true;
           break;
@@ -1253,6 +1255,7 @@ bool XPlanGML::setBereichAttribute_V5_X ( PlanBereich * pPlanBereich, Bereich * 
     }
   }
 
+
   RasterplanBasis * pRasterplanBasis = pBereich->getRasterplanBasis();
   if ( pRasterplanBasis != NULL )
   {
@@ -1307,7 +1310,7 @@ bool XPlanGML::setBereichAttribute_V5_X ( PlanBereich * pPlanBereich, Bereich * 
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-//  Einlesen eines Shape-Files                                               //
+//  Einlesen eines Shape-Files												                       //
 ///////////////////////////////////////////////////////////////////////////////
 bool XPlanGML::readShapeFile ( std::string shapeFileP )
 {
@@ -1325,8 +1328,8 @@ bool XPlanGML::readShapeFile ( std::string shapeFileP )
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-//  Start des Einlesens eines neuen Shape-Files und Interpretation des       //
-//  Headers                                                                  //
+//  Start des Einlesens eines neuen Shape-Files und Interpretation des		   //
+//  Headers																	                                 //
 ///////////////////////////////////////////////////////////////////////////////
 bool XPlanGML::setShapeFileStructure
   ( SHPTypeEnum               shapeFileTypP, 
@@ -2204,8 +2207,11 @@ void XPlanGML::addShpPolygon (
     pObj = new Feature ( gmlObjektTyp, gmlId, m_pFeatures, m_klassenName  );
   }
 
-  if ( gmlObjektTyp == BLEIT_PLAN ||  gmlObjektTyp == PLAN_BEREICH )
+  if ( gmlObjektTyp == BLEIT_PLAN  )
     pObj->addShapePolygons2D ( "xplan:raeumlicherGeltungsbereich", vX, vY, vRingStarts, vRingTypes, m_pFeatures->getSrsName() );
+  else
+  if ( gmlObjektTyp == PLAN_BEREICH )
+    pObj->addShapePolygons2D ( "xplan:geltungsbereich", vX, vY, vRingStarts, vRingTypes, m_pFeatures->getSrsName() );
   else
     pObj->addShapePolygons2D ( "xplan:position", vX, vY, vRingStarts, vRingTypes, m_pFeatures->getSrsName() );
 
@@ -2752,6 +2758,12 @@ MigrationProtokoll * XPlanGML::migrationDatei (  string quellDatei, string zielO
     pGmlObjekteNew->readGmlSchema ( XPLANGML_5_2, NULL );
     codeSpaceCodeLists = m_pFeatures->getExternalCodeListsFolder( XPLANGML_5_2 );
   }
+  else
+  if ( versionXPlanGMLZiel == "5.2" )
+  {
+    pGmlObjekteNew->readGmlSchema ( XPLANGML_5_3, NULL );
+    codeSpaceCodeLists = m_pFeatures->getExternalCodeListsFolder( XPLANGML_5_3 );
+  }
 
   pMigProtokoll      = new MigrationProtokoll;
   pMigDateiProtokoll = new MigrationDateiProtokoll;
@@ -2899,6 +2911,12 @@ MigrationProtokoll * XPlanGML::migrationOrdner (  string quellOrdner, string zie
     {
       pGmlObjekteZiel->readGmlSchema ( XPLANGML_5_2, NULL );
       codeSpaceCodeLists = m_pFeatures->getExternalCodeListsFolder( XPLANGML_5_2 );
+    }
+    else
+    if ( versionXPlanGMLZiel == "5.3" )
+    {
+      pGmlObjekteZiel->readGmlSchema ( XPLANGML_5_3, NULL );
+      codeSpaceCodeLists = m_pFeatures->getExternalCodeListsFolder( XPLANGML_5_3 );
     }
 
     IEnumerator ^ FILES_ENUM = Directory::GetFiles ( QUELL_ORDNER )->GetEnumerator();

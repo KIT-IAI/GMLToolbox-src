@@ -1645,7 +1645,7 @@ void SHPFileReader :: DBFReadAttribute (int hEntity, int iField)
 		}
 		else
 		{
-			sscanf_s (hDBF->pszStringField, "%lf", &dDoubleField);
+			sscanf_s (hDBF->pszStringField, "%lf", &dDoubleField /*, hDBF->nStringFieldLen*/);
 			vdDblAttrValues.push_back (dDoubleField);
 		}
 	}

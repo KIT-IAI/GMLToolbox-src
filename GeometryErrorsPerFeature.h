@@ -404,6 +404,8 @@ private: System::Void buttonZeigen_Click(System::Object^  sender, System::EventA
                      "Geometriefehler", GeometryError::getGeometryErrorTypeAsString ( errType ));
 
                    vFeatures.push_back( pFeature );
+                   if ( pGeometryError->getRelatedFeature() != NULL )
+                     vFeatures.push_back (  pGeometryError->getRelatedFeature() );
                  }
                  pGeometryError->setErrorGeometryCreated();
                }
@@ -471,6 +473,8 @@ private: System::Void buttonExport_Click(System::Object^  sender, System::EventA
                {
                  GeometryError * pGeometryError = vGeometryErrors[i];
                  GeometryError::GEOMETRY_ERROR_TYPE errType = pGeometryError->getGeometryErrorType();
+                 if ( pGeometryError->getRelatedFeature() != NULL )
+                   vFeatures.push_back ( pGeometryError->getRelatedFeature() );
 
                  geoAnz =  pGeometryError->getErrorGeometryAnz();
                  if ( geoAnz > 0 && pGeometryError->getErrorGeometryCreated() == false )

@@ -184,6 +184,10 @@ std::string Constant::getSchemaPath ( GML_SCHEMA_TYPE typ )
     schemaFolder = "GmlSchemata\\XPlanGML_5_2\\";
     break;
 
+  case XPLANGML_5_3:
+    schemaFolder = "GmlSchemata\\XPlanGML_5_3\\";
+    break;
+
   case INSPIRE_LU_PLANNED:
     schemaFolder = "GmlSchemata\\INSPIRE_LU_PLANNED\\";
     break;
@@ -273,6 +277,10 @@ std::string Constant::getStylesheetPath ( GML_SCHEMA_TYPE typ )
     stylesheetFolder = "GmlSchemata\\XPlanGML_5_2\\Stylesheets\\";
     break;
 
+  case XPLANGML_5_3:
+    stylesheetFolder = "GmlSchemata\\XPlanGML_5_3\\Stylesheets\\";
+    break;
+
   case INSPIRE_LU_PLANNED:
     stylesheetFolder = "GmlSchemata\\INSPIRE_LU_PLANNED\\Stylesheets\\";
     break;
@@ -358,6 +366,10 @@ std::string Constant::getCodelistPath ( GML_SCHEMA_TYPE typ )
     codelistFolder =  "GmlSchemata\\XPlanGML_5_2\\Codelists\\";
     break;
 
+  case XPLANGML_5_3:
+    codelistFolder =  "GmlSchemata\\XPlanGML_5_3\\Codelists\\";
+    break;
+
   case INSPIRE_LU_PLANNED:
     codelistFolder = "GmlSchemata\\INSPIRE_LU_PLANNED\\Codelists\\";
     break;
@@ -428,6 +440,10 @@ std::string Constant::getDefinitionsPath ( GML_SCHEMA_TYPE typ )
     definitionsFolder =   "GmlSchemata\\XPlanGML_5_2\\Definitions\\";
     break;
 
+  case XPLANGML_5_3:
+    definitionsFolder =   "GmlSchemata\\XPlanGML_5_3\\Definitions\\";
+    break;
+
   case NAS_6_0:
     definitionsFolder = "GmlSchemata\\NAS_6_0\\Definitions\\";
     break;
@@ -471,6 +487,10 @@ std::string Constant::getConformityPath ( GML_SCHEMA_TYPE typ )
 
   case XPLANGML_5_2:
     conformityFolder =  "GmlSchemata\\XPlanGML_5_2\\Konformitaet\\";
+    break;
+
+  case XPLANGML_5_3:
+    conformityFolder =  "GmlSchemata\\XPlanGML_5_3\\Konformitaet\\";
     break;
 
   case CITYGML_0_4_0:
@@ -554,6 +574,10 @@ std::string Constant::getGMLSchemaTypeAsString ( GML_SCHEMA_TYPE typ )
     gmlVersion = "XPlanGML Version 5.2";
     break;
 
+  case XPLANGML_5_3:
+    gmlVersion = "XPlanGML Version 5.3";
+    break;
+
   case INSPIRE_LU_PLANNED:
     gmlVersion = "INSPIRE PLU Version 4.0";
     break;
@@ -624,6 +648,8 @@ GML_SCHEMA_TYPE Constant::getGMLSchemaTypeFromString( std::string typString )
 	if ( typString == "XPLANGML_5_1")                  return XPLANGML_5_1;
   if ( typString == "XPlanGML Version 5.2" )         return XPLANGML_5_2;
 	if ( typString == "XPLANGML_5_2" )                 return XPLANGML_5_2;
+  if ( typString == "XPlanGML Version 5.3" )         return XPLANGML_5_3;
+  if ( typString == "XPLANGML_5_3" )                 return XPLANGML_5_3;
   if ( typString == "INSPIRE PLU Version 4.0" )      return INSPIRE_LU_PLANNED;
   if ( typString == "INSPIRE" )                      return INSPIRE;
   if ( typString == "ALKIS Version 5.1" )            return NAS_5_1;

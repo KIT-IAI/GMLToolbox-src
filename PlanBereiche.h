@@ -38,7 +38,8 @@ using namespace std;
 			m_pCodeLists        = pCodeListsP;
 
       if ( m_pGmlSchema->getGmlTyp() == XPLANGML_5_1 ||  
-           m_pGmlSchema->getGmlTyp() == XPLANGML_5_2 )
+           m_pGmlSchema->getGmlTyp() == XPLANGML_5_2 ||
+           m_pGmlSchema->getGmlTyp() == XPLANGML_5_3 )
       {
         labelGesetzADatum->Visible = false;
         labelGesetzAText->Visible = false;
@@ -432,7 +433,7 @@ private: System::Void comboBoxBereiche_SelectedIndexChanged(System::Object ^  se
     else
     if ( m_pGmlSchema->getGmlTyp() ==  XPLANGML_4_0 || m_pGmlSchema->getGmlTyp() ==  XPLANGML_4_1  || 
          m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_0 || m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_1  ||
-         m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_2 )
+         m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_2 || m_pGmlSchema->getGmlTyp() == XPLANGML_5_3  )
     {
       if ( planTyp == BPLAN || planTyp == FPLAN )
       {
@@ -604,7 +605,7 @@ private: System::Void initialize ()
   else
   if ( m_pGmlSchema->getGmlTyp() ==  XPLANGML_4_0 || m_pGmlSchema->getGmlTyp() ==  XPLANGML_4_1 ||
        m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_0 || m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_1 ||
-       m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_2  )
+       m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_2 || m_pGmlSchema->getGmlTyp() == XPLANGML_5_3 )
   {
     if ( planTyp == BPLAN || planTyp == FPLAN )
     {
@@ -900,7 +901,8 @@ private: System::Void buttonBeenden_Click(System::Object^  sender, System::Event
        m_pGmlSchema->getGmlTyp() ==  XPLANGML_4_1 || 
        m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_0 ||
        m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_1 ||
-       m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_2 )
+       m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_2 ||
+       m_pGmlSchema->getGmlTyp() ==  XPLANGML_5_3 )
   {
     if ( planTyp == BPLAN || planTyp == FPLAN )
     {

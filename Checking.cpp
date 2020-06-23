@@ -1586,7 +1586,7 @@ void SemanticRules::checkUnitsOfMeasurement( Feature * pFeature )
     GmlAttribut * pGmlAttribut = vGmlAttributeAll[i];
     ATTRIBUT_TYP typ = pGmlAttribut->getGmlAttributTyp();
 
-    if ( typ == _LENGTH || typ == _AREA || typ == _VOLUME || typ == _ANGLE )
+    if ( typ == _LENGTH || typ == _AREA || typ == _VOLUME || typ == _ANGLE || typ == _MEASURE )
     {
       string attributName = pGmlAttribut->getGmlAttributName();
       vDoubleAttributWerte.clear();
@@ -1655,6 +1655,16 @@ void SemanticRules::checkUnitsOfMeasurement( Feature * pFeature )
               m_pErrorReport->addSemanticError ( pError );
             }
             break;
+
+          case _MEASURE:
+            if (  uomAngle.find (uomValue ) == uomMeasure.end() )
+            {
+              pError = new SemanticError ( pFeature, Error::ERROR, "Ungültige Unit of Measurement für einen Measure-Type spezifiziert" );
+              pError->setAttribute( attributName, "" );
+              m_pErrorReport->addSemanticError ( pError );
+            }
+            break;
+
           }
         }
       }
@@ -1709,6 +1719,15 @@ void SemanticRules::addUomAngle ( std::string name )
 {
   uomAngle.insert( name );
 }
+
+///////////////////////////////////////////////////////////////////////////////
+//  Fügt uom-Kürzel für "Measure" hinzu                                      //
+///////////////////////////////////////////////////////////////////////////////
+void SemanticRules::addUomMeasure ( std::string name )
+{
+  uomMeasure.insert( name );
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////
 //  ProfileRule                                                              //
@@ -4784,6 +4803,16 @@ bool ProfileReader::read ( std::string fileName )
         {
           QuConvert::systemStr2stdStr ( stdString, STR );
           pProfile->addUomAngle( stdString );
+        }
+      }
+      else
+      if ( pActElement->CompareTo("UomMeasure") == 0 )
+      {
+        STR = validReader->ReadString();
+        if ( STR != nullptr )
+        {
+          QuConvert::systemStr2stdStr ( stdString, STR );
+          pProfile->addUomMeasure( stdString );
         }
       }
       else       

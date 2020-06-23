@@ -35,7 +35,7 @@ using namespace std;
         dictionaryTyp = DICTIONARY_COLLECTION;
       else
       if ( gmlTyp == XPLANGML_4_0 || gmlTyp == XPLANGML_4_1  || gmlTyp == XPLANGML_5_0  ||
-           gmlTyp == XPLANGML_5_1 || gmlTyp == XPLANGML_5_2                             || 
+           gmlTyp == XPLANGML_5_1 || gmlTyp == XPLANGML_5_2  || gmlTyp == XPLANGML_5_3  ||
            gmlTyp == INSPIRE_LU_PLANNED ||  gmlTyp == CITYGML_1_0                       || 
            gmlTyp == CITYGML_2_0  || gmlTyp == CITYGML_3_0 || gmlTyp == GML_SCHEMA_DEFAULT )
         dictionaryTyp = SINGLE_DICTIONARY;
@@ -398,7 +398,7 @@ private: System::Void buttonEintragUebernehmen_Click(System::Object ^  sender, S
   entryDefinition.id           = codeListName + schluessel;
 
   if ( gmlTyp == XPLANGML_4_0 || gmlTyp == XPLANGML_4_1 || gmlTyp == XPLANGML_5_0 ||
-       gmlTyp == XPLANGML_5_1 || gmlTyp == XPLANGML_5_2                           ||
+       gmlTyp == XPLANGML_5_1 || gmlTyp == XPLANGML_5_2 || gmlTyp == XPLANGML_5_3 ||
        gmlTyp == XPLANGML_3_0 || gmlTyp == CITYGML_2_0 || gmlTyp == CITYGML_3_0 )
   {
     entryDefinition.name         = schluessel;
@@ -475,7 +475,7 @@ private:System::Void initialize()
 
   QuConvert::systemStr2stdStr( codeListName, CodelistDatei );
 
-  pDictionaryReader = gcnew GmlDictionaryReader ( gmlTyp );
+  pDictionaryReader = gcnew GmlDictionaryReader ();
   pExternalCodeLists = new GmlDictionary;
 
   if ( dictionaryTyp == DICTIONARY_COLLECTION )

@@ -404,6 +404,9 @@
     <ClCompile Include="GMLToolboxPlugin.cpp">
       <Filter>Application\Quelldeteien</Filter>
     </ClCompile>
+    <ClCompile Include="INSPIRECodeList.cpp">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -703,6 +706,9 @@
     <ClInclude Include="GMLToolboxPlugin.h">
       <Filter>Application\HeaderDateien</Filter>
     </ClInclude>
+    <ClInclude Include="INSPIRECodeList.h">
+      <Filter>GML\Forms-Dialoge</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="FZK_Gross.bmp">
@@ -712,12 +718,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CodelistOrdnerAendernDialog.resx">
-      <Filter>Ressourcendateien</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ColorCodeExtraction.resx">
-      <Filter>Ressourcendateien</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreateXsdSimpleType.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="EnumerationConversion.resX">
@@ -807,9 +807,6 @@
     <EmbeddedResource Include="GeometryErrorUebersicht.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="CodelistInspireGeneration.resx">
-      <Filter>Ressourcendateien</Filter>
-    </EmbeddedResource>
     <EmbeddedResource Include="GeometryErrorDetails.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
@@ -825,9 +822,6 @@
     <EmbeddedResource Include="EnumerationDictionaryGeneration.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="CodelistInspireGeneration.resx">
-      <Filter>Headerdateien\Forms-Dialoge\SUB</Filter>
-    </EmbeddedResource>
     <EmbeddedResource Include="BoreholeSelection.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
@@ -838,12 +832,6 @@
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="GeometryKorrektur.resx">
-      <Filter>Ressourcendateien</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KorrekturDialog.resx">
-      <Filter>Ressourcendateien</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Geometrietest.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="FeatureExport.resx">
@@ -861,9 +849,6 @@
     <EmbeddedResource Include="XPlanGML_Migration.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="TimeSeriesDiagrams.resx">
-      <Filter>Ressourcendateien</Filter>
-    </EmbeddedResource>
     <EmbeddedResource Include="TimeSeriesCombination.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
@@ -876,9 +861,6 @@
     <EmbeddedResource Include="MonthlyTimeSeries.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="CSVTimeSeries.resx">
-      <Filter>Ressourcendateien</Filter>
-    </EmbeddedResource>
     <EmbeddedResource Include="CSVTimeSeriesMetadata.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
@@ -886,6 +868,9 @@
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="TimeSeriesGaps.resx">
+      <Filter>Ressourcendateien</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSPIRECodeList.resx">
       <Filter>Ressourcendateien</Filter>
     </EmbeddedResource>
   </ItemGroup>

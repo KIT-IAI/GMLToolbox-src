@@ -603,7 +603,7 @@ Feature * GMLReader::readFeature( System::String ^ pObjektNameP, GmlKlasse * pGm
   AbstractTimeSeries * pTimeSeries;
 
   if ( m_readCodeListDictionary && pGmlSchema->externalCodeListDictionariesExist() )
-    pDictionaryReader = gcnew GmlDictionaryReader ( pFeatures->getGmlTyp() );
+    pDictionaryReader = gcnew GmlDictionaryReader ();
   else
     pDictionaryReader = nullptr;
 
@@ -1583,7 +1583,7 @@ Feature * GMLReader::readFeature( System::String ^ pObjektNameP, GmlKlasse * pGm
                 pGmlSchema->getGmlTyp() == INSPIRE_LU_PLANNED )      )
           {
 
-            pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( externalCodeListPath );
+            pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( externalCodeListPath, true );
             if ( pDictionaryEntry != NULL )
             {
               pDictionaryEntry->setName( externalCodeListPath );
@@ -1648,7 +1648,7 @@ Feature * GMLReader::readFeature( System::String ^ pObjektNameP, GmlKlasse * pGm
               if ( pGmlSchema->isInspire()               || 
                    pGmlSchema->getGmlTyp() == INSPIRE_LU_PLANNED )
               {
-                pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( externalCodeListPath );
+                pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( externalCodeListPath, false );
                 if ( pDictionaryEntry != NULL )
                 {
                   pDictionaryEntry->setName( externalCodeListPath );
@@ -1666,6 +1666,9 @@ Feature * GMLReader::readFeature( System::String ^ pObjektNameP, GmlKlasse * pGm
                 else
                   cityGMLSpecial = false;
                 pDictionaryEntry = pDictionaryReader->readGmlSingleDictionary( externalCodeListPath, cityGMLSpecial );
+                if ( !cityGMLSpecial && pDictionaryEntry == NULL )
+                  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList ( QuConvert::ToString ( externalCodeListPath ), false );
+                
                 if ( pDictionaryEntry !=  NULL )
                 {
                   pDictionaryEntry->setName( externalCodeListPath );

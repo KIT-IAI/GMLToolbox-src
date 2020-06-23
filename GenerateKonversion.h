@@ -426,7 +426,7 @@ private: System::Void comboBoxShapeDateien_SelectedIndexChanged(System::Object ^
 
   if ( pShapeFileObjektActive->getRechtlicheBedeutung() == NACHR_UEBERNAHME                      ||
         m_pGmlObjekte->getGmlTyp() == XPLANGML_5_0 || m_pGmlObjekte->getGmlTyp() == XPLANGML_5_1 ||
-        m_pGmlObjekte->getGmlTyp() == XPLANGML_5_2  )
+        m_pGmlObjekte->getGmlTyp() == XPLANGML_5_2 || m_pGmlObjekte->getGmlTyp() == XPLANGML_5_3 )
   {
     if ( checkBoxAlleKlassen->Checked == true )
       updateComboBoxGmlKlassen();
@@ -871,7 +871,7 @@ private: System::Void initialize()
       cli::array<String^> ^ FILES = Directory::GetFiles ( CODE_LISTS_FOLDER );
       System::Collections::IEnumerator    ^ FILES_ENUM = FILES->GetEnumerator();
 
-      GmlDictionaryReader ^ pDictionaryReader = gcnew GmlDictionaryReader ( m_pGmlObjekte->getGmlTyp() );
+      GmlDictionaryReader ^ pDictionaryReader = gcnew GmlDictionaryReader ();
 
       while ( FILES_ENUM->MoveNext() )
       {

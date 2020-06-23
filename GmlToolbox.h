@@ -221,6 +221,8 @@ public:
   void setReadCodeListDictionaries ( bool b )  {  m_readCodelistDictionaries = b;  }
   bool getReadCodeListDictionaries() {  return m_readCodelistDictionaries;  }
 
+  void showINSPIRECodelist();
+
   void generateEnumerationDictionaries();
 
   void setZOffset ( double z )  {  m_zOffset = z;  }

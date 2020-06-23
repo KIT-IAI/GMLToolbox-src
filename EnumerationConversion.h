@@ -265,7 +265,7 @@ using namespace std;
       vector<string>              schluesselNummern;
       vector<string>              schluesselTexte;
 
-      pReader = gcnew GmlDictionaryReader ( m_pFeatures->getGmlTyp() );
+      pReader = gcnew GmlDictionaryReader ();
 
 			textBoxShapefile->Text = shapeFileName;
 

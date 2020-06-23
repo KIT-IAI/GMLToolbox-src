@@ -191,7 +191,8 @@ class SemanticRules
     std::set<std::string>					          uomArea;          // Zulässige uom für eine Flächengröße
     std::set<std::string>					          uomVolume;        // Zulässige uom für eine Vo0lumenangabe
     std::set<std::string>					          uomAngle;         // Zulässige uom für eine Winkelangabe
-		std::multimap<std::string,ProfileRule*> profileRulesClasses;      // Zuordnung von Klassennamen zu semantischen Regeln
+    std::set<std::string>					          uomMeasure;       // Zulässige uom für eine allgemeine Measure Angaben
+    std::multimap<std::string,ProfileRule*> profileRulesClasses;      // Zuordnung von Klassennamen zu semantischen Regeln
 		std::multimap<std::string,ProfileRule*> profileRulesSuperclasses; // Zuordnung von Basisklassen-Name zu semantischen Regeln
 
 public:
@@ -206,7 +207,8 @@ public:
     void addUomArea ( std::string name );
     void addUomVolume ( std::string name );
     void addUomAngle ( std::string name );
-		void addProfileRule( ProfileRule *pRule ); 
+    void addUomMeasure ( std::string name );
+    void addProfileRule( ProfileRule *pRule ); 
 
     void checkRules ( Feature * pFeature );
     void checkUnitsOfMeasurement ( Feature * pFeature );

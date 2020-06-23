@@ -31,8 +31,9 @@ std::string GmlNamespaces::xplanGml_4_1_targetNamespace         = "http://www.xp
 std::string GmlNamespaces::xplanGml_5_0_targetNamespace         = "http://www.xplanung.de/xplangml/5/0";
 std::string GmlNamespaces::xplanGml_5_1_targetNamespace         = "http://www.xplanung.de/xplangml/5/1";
 std::string GmlNamespaces::xplanGml_5_2_targetNamespace         = "http://www.xplanung.de/xplangml/5/2";
+std::string GmlNamespaces::xplanGml_5_3_targetNamespace         = "http://www.xplanung.de/xplangml/5/3";
 
-std::string GmlNamespaces::cityGml_0_4_0_targetNamespace        = "http://www.citygml.org/citygml/1/0/0"; 
+std::string GmlNamespaces::cityGml_0_4_0_targetNamespace        = "http://www.citygml.org/citygml/1/0/0";
 std::string GmlNamespaces::cityGml_1_0_targetNamespace          = "http://www.opengis.net/citygml/1.0"; 
 std::string GmlNamespaces::cityGml_2_0_targetNamespace          = "http://www.opengis.net/citygml/2.0"; 
 std::string GmlNamespaces::cityGml_3_0_targetNamespace          = "http://www.opengis.net/citygml/3.0"; 
@@ -330,6 +331,16 @@ GmlNamespaces::GmlNamespaces(  int schemaType )
     namespaceKuerzel[xplanGml_5_2_targetNamespace]   = "xplan";
     break;
 
+  case  XPLANGML_5_3:
+    namespaces["adv"]   = "http://www.adv-online.de/nas";
+    namespaces["xplan"] = xplanGml_5_3_targetNamespace;
+    namespaces["gml"]   = gml_3_2_targetNamespace;
+
+    namespaceKuerzel[gml_3_2_targetNamespace]        = "gml";
+    namespaceKuerzel["http://www.adv-online.de/nas"] = "adv";
+    namespaceKuerzel[xplanGml_5_3_targetNamespace]   = "xplan";
+    break;
+
   case INSPIRE_LU_PLANNED:
     namespaces["plu"]    = INSPIRE_PLU_4_0_targetNamespace;
     namespaces["lunom"]  = "http://http://inspire.ec.europa.eu/schemas/lunom/3.0";
@@ -517,6 +528,10 @@ GML_SCHEMA_TYPE GmlNamespaces::getSchemaType()
   if ( namespaceKuerzel.find ( xplanGml_5_2_targetNamespace ) != namespaceKuerzel.end() ||
     xplanGml_5_2_targetNamespace == defaultNamespace )
     return  XPLANGML_5_2;
+
+  if ( namespaceKuerzel.find ( xplanGml_5_3_targetNamespace ) != namespaceKuerzel.end() ||
+    xplanGml_5_3_targetNamespace == defaultNamespace )
+    return  XPLANGML_5_3;
 
   if ( namespaceKuerzel.find ( nas_5_1_targetNamespace ) != namespaceKuerzel.end() ||
     nas_5_1_targetNamespace == defaultNamespace )
@@ -1236,6 +1251,19 @@ SchemaTypeNames::SchemaTypeNames ( GmlNamespaces * pNamespaceP )
     genericValueAttribute   = "wert";
     break;
 
+  case  XPLANGML_5_3:
+    rootName                = "xplan:XPlanAuszug";
+    featureMemberName       = "gml:featureMember";
+    genericAttributeKuerzel = pNamespace->getKuerzel ( GmlNamespaces::xplanGml_5_3_targetNamespace );
+    genericStringAttribute  = "XP_StringAttribut";
+    genericDoubleAttribute  = "XP_DoubleAttribut";
+    genericIntAttribute     = "XP_IntegerAttribut";
+    genericDateAttribute    = "XP_DatumAttribut";
+    genericUrlAttribute     = "XP_URLAttribut";
+    genericNameAttribute    = "name";
+    genericValueAttribute   = "wert";
+    break;
+
   case INSPIRE_LU_PLANNED:
     featureMemberName       = "gml:featureMember";
     spatialPlan                = pNamespace->getKuerzel( GmlNamespaces::INSPIRE_PLU_4_0_targetNamespace ) + ":SpatialPlanType";
@@ -1380,7 +1408,8 @@ SchemaTypeNames::SchemaTypeNames ( GmlNamespaces * pNamespaceP )
          schemaType == XPLANGML_4_1 ||
          schemaType == XPLANGML_5_0 ||
          schemaType == XPLANGML_5_1 ||
-         schemaType == XPLANGML_5_2 )
+         schemaType == XPLANGML_5_2 ||
+         schemaType == XPLANGML_5_3 )
     {
       genericNameAttribute    = genericAttributeKuerzel + ":" + genericNameAttribute;
       genericValueAttribute   = genericAttributeKuerzel + ":" + genericValueAttribute;

@@ -1,7 +1,6 @@
 #include "StdAfx.h"
 
 #include <time.h>
-
 #include "Convert.h"
 #include "Dictionary.h"
 #include "constant.h"
@@ -154,10 +153,10 @@ bool GmlDictionaryEntry::existSchluesselText ( std::string schluesselTextP )
 bool GmlDictionaryEntry::addDefinition ( std::string schluesselNummerP, GmlDictionaryEntryDefinition dictionaryEntryDefinition )
 {
   if ( existSchluesselNummer ( schluesselNummerP ) ||
-     existSchluesselText ( dictionaryEntryDefinition.beschreibung ) ) return false;
+     existSchluesselText ( dictionaryEntryDefinition.name ) ) return false;
 
-  mSchluesselTexte[dictionaryEntryDefinition.beschreibung] = schluesselNummerP;
-  mDictionaryEntryDefinitions[schluesselNummerP]           = dictionaryEntryDefinition;
+  mSchluesselTexte[dictionaryEntryDefinition.name] = schluesselNummerP;
+  mDictionaryEntryDefinitions[schluesselNummerP]   = dictionaryEntryDefinition;
   return true;
 }
 
@@ -232,7 +231,7 @@ bool GmlDictionaryEntry::getSchluesselText ( std::string schluesselNummerP, std:
   iter = mDictionaryEntryDefinitions.find ( schluesselNummerP );
   if ( iter != mDictionaryEntryDefinitions.end() )
   {
-    schluesselTextP = iter->second.beschreibung;
+    schluesselTextP = iter->second.name;
 		if ( schluesselTextP == "" )
       schluesselTextP = schluesselNummerP;
     return true;
@@ -478,10 +477,9 @@ HierarchicalCodeListEntry::~HierarchicalCodeListEntry()
 //  GmlDictionaryReader                                                      //
 //  Liest ein GML-Dictionary ein                                             //
 ///////////////////////////////////////////////////////////////////////////////
-GmlDictionaryReader::GmlDictionaryReader( GML_SCHEMA_TYPE gmlTypP )
+GmlDictionaryReader::GmlDictionaryReader( )
 {
   reader = nullptr;
-  gmlTyp = gmlTypP;
 }
 
 GmlDictionaryReader::~GmlDictionaryReader()
@@ -1105,9 +1103,9 @@ void GmlDictionaryReader::readAlternativeExpression ( HierarchicalCodeListEntry 
 
 
 //////////////////////////////////////////////////////////////////////////////
-// Einlesen einer INSPIRE CodeList                                       //
+// Einlesen einer INSPIRE CodeList; Übergeben ein XMLReader                 //
 //////////////////////////////////////////////////////////////////////////////
-GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( string fileName )
+GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( System::Xml::XmlTextReader ^ reader, bool useFullCode )
 {
   String              ^ STR;
   string                stdString;
@@ -1116,9 +1114,6 @@ GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( string fileName 
 
   try
   {
-    String ^ fName = gcnew String( fileName.c_str() );
-    reader         = gcnew System::Xml::XmlTextReader( fName );
-
     while( reader->Read() )
     {
       if ( reader->NodeType == System::Xml::XmlNodeType::Element )
@@ -1162,7 +1157,7 @@ GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( string fileName 
         else
         if ( pActElement->CompareTo( "value" ) == 0 )
         {
-          success = readINSPIRECodeListEntry( pCodeList );
+          success = readINSPIRECodeListEntry( pCodeList, useFullCode );
         }
       }
       else
@@ -1174,17 +1169,17 @@ GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( string fileName 
     }
   }
 
-  catch ( System::IO::FileNotFoundException ^ )
+  catch ( System::IO::FileNotFoundException ^ e )
   {
     return NULL;
   }
 
-  catch ( System::IO::DirectoryNotFoundException ^ )
+  catch ( System::IO::DirectoryNotFoundException ^ e )
   {
     return NULL;
   }
 
-  catch ( System::Exception ^ )
+  catch ( System::Exception ^ e )
   {
     return NULL;
   }
@@ -1192,13 +1187,92 @@ GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( string fileName 
   return pCodeList;
 }
 
+//////////////////////////////////////////////////////////////////////////////
+// Einlesen einer INSPIRE CodeList; Übergeben wird die Registry-URL         //
+//////////////////////////////////////////////////////////////////////////////
+GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList (  String ^ URL, bool useFullCode )
+{
+  System::Net::WebRequest  ^ request;
+  System::Net::WebResponse ^ response;
+
+  if ( URL[URL->Length - 1] == '/' )
+    URL = URL->Remove ( URL->Length - 1 );
+
+  int index =URL->LastIndexOf ( "/" );
+  String ^ codelistName = URL->Substring ( index + 1, URL->Length - index - 1 );
+  String ^ REGISTRY_URL = String::Concat (URL, "/", codelistName, ".de.xml" );
+
+  try
+  {
+    request = System::Net::WebRequest::Create ( REGISTRY_URL );
+    request->Credentials = System::Net::CredentialCache::DefaultNetworkCredentials;
+
+    response = request->GetResponse();
+    System::Net::HttpWebResponse ^ httpResponse = dynamic_cast<System::Net::HttpWebResponse^>( response );
+    String ^ status = httpResponse->StatusDescription;
+
+    if ( status == "OK" )
+    {
+      System::IO::Stream ^responseStream =  httpResponse->GetResponseStream();
+      GmlDictionaryReader ^ pReader = gcnew GmlDictionaryReader();
+      GmlDictionaryEntry * pCodelist = pReader->readINSPIRECodeList ( responseStream, useFullCode );
+      return pCodelist;
+    }
+    else
+      return NULL;
+  }
+  catch ( System::Exception ^ )
+  {
+    return NULL;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// Einlesen einer INSPIRE CodeList; Übergeben wird der Dateiname bzw. die   //
+//  URL der XML-Datei                                                       //
+//////////////////////////////////////////////////////////////////////////////
+GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( string fileName, bool useFullCode )
+{
+  try
+  {
+    String ^ fName = gcnew String( fileName.c_str() );
+    reader         = gcnew System::Xml::XmlTextReader( fName );
+
+    return readINSPIRECodeList  ( reader, useFullCode );
+  }
+  catch ( System::Exception ^ e )
+  {
+    return NULL;
+  }
+
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// Einlesen einer INSPIRE CodeList; Übergeben wird ein Stream               //
+//////////////////////////////////////////////////////////////////////////////
+GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList (   System::IO::Stream ^stream, bool useFullCode )
+{
+  try
+  {
+    reader = gcnew System::Xml::XmlTextReader( stream );
+
+    return readINSPIRECodeList  ( reader, useFullCode );
+  }
+  catch ( System::Exception ^ e )
+  {
+    return NULL;
+  }
+
+}
+
 
 //////////////////////////////////////////////////////////////////////////////
 // Einlesen eines INSPIRE CodeList Entry                                     //
 //////////////////////////////////////////////////////////////////////////////
-bool GmlDictionaryReader::readINSPIRECodeListEntry ( GmlDictionaryEntry * codelistEntry )
+bool GmlDictionaryReader::readINSPIRECodeListEntry ( GmlDictionaryEntry * codelistEntry, bool useFullCode )
 {
   String         ^ STR;
+  String         ^ SCHLUESSEL;
   string           schluessel = "";
   string           label;
   string           definition;
@@ -1206,9 +1280,9 @@ bool GmlDictionaryReader::readINSPIRECodeListEntry ( GmlDictionaryEntry * codeli
   GmlDictionaryEntryDefinition def;
 
 
-  STR = reader->GetAttribute( "id" );
-  if ( STR->CompareTo( "" ) != 0 )
-    QuConvert::systemStr2stdStr( schluessel, STR );
+  SCHLUESSEL = reader->GetAttribute( "id" );
+  if ( SCHLUESSEL->CompareTo( "" ) != 0 )
+    QuConvert::systemStr2stdStr( schluessel, SCHLUESSEL );
 
 
   while( reader->Read() )
@@ -1227,7 +1301,9 @@ bool GmlDictionaryReader::readINSPIRECodeListEntry ( GmlDictionaryEntry * codeli
       {
         STR = reader->ReadString();
         QuConvert::systemStr2stdStr ( def.beschreibung, STR );
-      }      
+      }   
+      else
+        skipElement ( pActElement );
     }
     else
     if ( reader->NodeType == System::Xml::XmlNodeType::EndElement )
@@ -1240,12 +1316,37 @@ bool GmlDictionaryReader::readINSPIRECodeListEntry ( GmlDictionaryEntry * codeli
 
   if ( schluessel != "" )
   {
+    if ( !useFullCode )
+    {
+      int index = SCHLUESSEL->LastIndexOf ( "/" );
+      String ^ CODE = SCHLUESSEL->Substring ( index + 1, SCHLUESSEL->Length - index - 1 );
+      QuConvert::systemStr2stdStr ( schluessel, CODE );
+    }
     codelistEntry->addDefinition( schluessel, def );
     return true;
   }
   else
     return false;
 }
+
+//////////////////////////////////////////////////////////////////////////////
+// Ünerlesen eines XML-Elements                                             //
+//////////////////////////////////////////////////////////////////////////////
+void GmlDictionaryReader::skipElement ( String ^ pSkipElement )
+{
+  String ^ pActElement;
+
+  while ( reader->Read() )
+  {
+    if ( reader->NodeType == System::Xml::XmlNodeType::EndElement )
+    {
+      pActElement = reader->LocalName;
+      if ( pActElement->CompareTo( pSkipElement ) == 0 )
+        break;
+    }
+  }
+}
+
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -1276,7 +1377,8 @@ void GmlDictionaryWriter::write( std::string fileNameP, GML_SCHEMA_TYPE schemaTy
     writeDictionaryCollection ( fileNameP );
   else
   if ( schemaType == XPLANGML_4_0 || schemaType == XPLANGML_4_1 || schemaType == XPLANGML_5_0 ||
-       schemaType == XPLANGML_5_1 || schemaType == XPLANGML_5_2 || schemaType == INSPIRE_LU_PLANNED )
+       schemaType == XPLANGML_5_1 || schemaType == XPLANGML_5_2 || schemaType == XPLANGML_5_3 ||
+    schemaType == INSPIRE_LU_PLANNED )
     writeSingleDictionary ( fileNameP );
 }
 

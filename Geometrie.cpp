@@ -2435,6 +2435,8 @@ _Curve * _Curve::copy ( _Curve * pCurve )
      {
        vPoints.erase ( vPoints.begin() + j );
        anz = anz - 1;
+       if ( anz < 3 )
+         return;
      }
      else
      {
@@ -4027,7 +4029,7 @@ bool _Ring::advancedCheck ( Feature * pObj, string featureProperty, CheckingPara
     e = new Plane ( GeoPoint ( x, y, 0.0), d );
   }
 
- /* cutAnz = checkSelfOverlap( vX, vY, 0.5*pCheckParams->minimalPointDistance, pCheckParams->minimalAngleDistance, vCutResults );
+  size_t cutAnz = checkSelfOverlap( vX, vY, 0.5*pCheckParams->minimalPointDistance, pCheckParams->minimalAngleDistance, vCutResults );
   if ( cutAnz > 0 && ( planarityCheck == PLANARITY_CHECK_FULFILLED || checkAnyway )   )
   {
 		size_t pointOnPointAnz = 0;
@@ -4140,7 +4142,6 @@ bool _Ring::advancedCheck ( Feature * pObj, string featureProperty, CheckingPara
     else
       checkResult = ADVANCED_CHECK_FAILED;
   }
-  */
 
   if ( checkResult == ADVANCED_CHECK_FULFILLED && planarityCheck == PLANARITY_CHECK_FULFILLED )
     return true;
@@ -12385,7 +12386,8 @@ void CurveSegment::addPoint ( GeoPoint &point )
 ///////////////////////////////////////////////////////////////////////////////
 bool CurveSegment::checkDoublePoints ( double minDist, bool remove )
 {
-  size_t          i, j, anz;
+  int          i, j;
+  size_t       anz;
   GeoPoint     p1(dim), p2(dim);
   double       dist;
   bool         doublePointsExist = false;

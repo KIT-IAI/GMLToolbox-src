@@ -1035,7 +1035,7 @@ bool GmlSchema::isCityGml()
 bool GmlSchema::isXPlanGml()
 {
   if ( gmlTyp == XPLANGML_2_0 || gmlTyp == XPLANGML_3_0 || gmlTyp == XPLANGML_4_0 || gmlTyp == XPLANGML_4_1 ||
-       gmlTyp == XPLANGML_5_0 || gmlTyp == XPLANGML_5_1 || gmlTyp == XPLANGML_5_2 )
+       gmlTyp == XPLANGML_5_0 || gmlTyp == XPLANGML_5_1 || gmlTyp == XPLANGML_5_2 || gmlTyp == XPLANGML_5_3 )
     return true;
   else
     return false;
@@ -1444,6 +1444,7 @@ GML_VERSION GmlSchema::getGmlVersion( GML_SCHEMA_TYPE gmlTypP )
   case  XPLANGML_5_0:        return GML_3_2;
   case  XPLANGML_5_1:        return GML_3_2;
   case  XPLANGML_5_2:        return GML_3_2;
+  case  XPLANGML_5_3:        return GML_3_2;
   case  INSPIRE_LU_PLANNED:  return GML_3_2;
   case  INSPIRE:             return GML_3_2;
   case  NAS_5_1:             return GML_3_1;
@@ -1686,7 +1687,7 @@ bool GmlSchema::readGmlSchema ( GML_SCHEMA_TYPE xPlanGmlVersion, GmlNamespaces *
   pGmlNamespaces = pGmlNamespacesAct;
 
 	GmlSchemaReader ^ pReader = gcnew GmlSchemaReader( pGmlSchemaTypes, pGmlSchemaElements, pGmlSchemaGroups, pGmlNamespacesStandard );
-  GmlDictionaryReader ^ pDictionaryReader = gcnew GmlDictionaryReader ( xPlanGmlVersion );
+  GmlDictionaryReader ^ pDictionaryReader = gcnew GmlDictionaryReader ();
 
   switch ( xPlanGmlVersion )
   {
@@ -1763,6 +1764,17 @@ bool GmlSchema::readGmlSchema ( GML_SCHEMA_TYPE xPlanGmlVersion, GmlNamespaces *
 		codeListsIdentifierCodespace = "urn:xplan";
 		externalCodeListsFolder = m_pFeatures->getExternalCodeListsFolder( XPLANGML_5_2 );
     definitionsFolder       = Constant::getDefinitionsPath( XPLANGML_5_2 );
+    isDictionaryCollection  = true;
+    isCityGMLSpecial        = false;
+    break;
+
+  case XPLANGML_5_3:
+    schemaFolder            = Constant::getSchemaPath( XPLANGML_5_3 );
+    codeListsFolder         = Constant::getCodelistPath( XPLANGML_5_3 );
+    codeListsIdentifier			     = "Enumerationen_XPlanGML_5_3";
+    codeListsIdentifierCodespace = "urn:xplan";
+    externalCodeListsFolder = m_pFeatures->getExternalCodeListsFolder( XPLANGML_5_3 );
+    definitionsFolder       = Constant::getDefinitionsPath( XPLANGML_5_3 );
     isDictionaryCollection  = true;
     isCityGMLSpecial        = false;
     break;
@@ -2003,6 +2015,7 @@ bool GmlSchema::readGmlSchema ( GML_SCHEMA_TYPE xPlanGmlVersion, GmlNamespaces *
        gmlTyp == XPLANGML_5_0       ||
        gmlTyp == XPLANGML_5_1       ||
        gmlTyp == XPLANGML_5_2       ||
+       gmlTyp == XPLANGML_5_3       ||
        gmlTyp == INSPIRE_LU_PLANNED || 
        gmlTyp == NAS_6_0 )
 	{
@@ -2996,6 +3009,7 @@ void GmlSchema::addAttribute (  GmlKlasse * pGmlKlasseP,
               gmlTyp != XPLANGML_5_0   &&
               gmlTyp != XPLANGML_5_1   &&
               gmlTyp != XPLANGML_5_2   &&
+              gmlTyp != XPLANGML_5_3   &&
               gmlTyp != XPLANGML_3_0  )
           {
             stringLength = enumerationName.find ( ":" );
@@ -3017,6 +3031,7 @@ void GmlSchema::addAttribute (  GmlKlasse * pGmlKlasseP,
                gmlTyp == XPLANGML_5_0  ||
                gmlTyp == XPLANGML_5_1  ||
                gmlTyp == XPLANGML_5_2  ||
+               gmlTyp == XPLANGML_5_3  ||
                gmlTyp == XPLANGML_3_0  ||
                gmlTyp == XPLANGML_2_0 )
           {

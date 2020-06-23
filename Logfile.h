@@ -35,3 +35,9 @@ public:
   void writeLogFile ( std::string textP );
 };
 
+
+
+
+    
+    
+    

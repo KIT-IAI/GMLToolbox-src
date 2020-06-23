@@ -37,7 +37,8 @@ using namespace std;
 			}
 
       if ( gmlSchemaType == XPLANGML_5_1 || 
-           gmlSchemaType == XPLANGML_5_2 )
+           gmlSchemaType == XPLANGML_5_2 || 
+           gmlSchemaType == XPLANGML_5_3 )
       {
         labelTextuellePlaninhalte->Visible = false;
         labelLegende->Visible = false;

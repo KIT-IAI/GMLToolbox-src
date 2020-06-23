@@ -119,10 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="konvDateiName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 28</value>
+    <value>8, 24</value>
   </data>
   <data name="konvDateiName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 22</value>
+    <value>264, 20</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="konvDateiName.TabIndex" type="System.Int32, mscorlib">
@@ -144,10 +144,10 @@
     <value>3</value>
   </data>
   <data name="buttonKonvDatei.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 28</value>
+    <value>280, 24</value>
   </data>
   <data name="buttonKonvDatei.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 27</value>
+    <value>48, 24</value>
   </data>
   <data name="buttonKonvDatei.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -168,10 +168,10 @@
     <value>4</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 55</value>
+    <value>16, 48</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 19</value>
+    <value>160, 16</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -192,10 +192,10 @@
     <value>5</value>
   </data>
   <data name="shapeDateiNamen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 83</value>
+    <value>8, 72</value>
   </data>
   <data name="shapeDateiNamen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 22</value>
+    <value>264, 20</value>
   </data>
   <data name="shapeDateiNamen.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -216,10 +216,10 @@
     <value>1</value>
   </data>
   <data name="buttonShapeDateien.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 83</value>
+    <value>280, 72</value>
   </data>
   <data name="buttonShapeDateien.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 28</value>
+    <value>48, 24</value>
   </data>
   <data name="buttonShapeDateien.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -243,10 +243,10 @@
     <value />
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 111</value>
+    <value>16, 96</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 18</value>
+    <value>176, 16</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -267,10 +267,10 @@
     <value>6</value>
   </data>
   <data name="ausgabeDateiName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 28</value>
+    <value>8, 24</value>
   </data>
   <data name="ausgabeDateiName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 22</value>
+    <value>320, 20</value>
   </data>
   <data name="ausgabeDateiName.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -291,10 +291,10 @@
     <value>2</value>
   </data>
   <data name="buttonAusgabeFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 65</value>
+    <value>256, 56</value>
   </data>
   <data name="buttonAusgabeFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 27</value>
+    <value>72, 24</value>
   </data>
   <data name="buttonAusgabeFolder.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -315,10 +315,10 @@
     <value>0</value>
   </data>
   <data name="buttonAbbrechen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 452</value>
+    <value>648, 392</value>
   </data>
   <data name="buttonAbbrechen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 56</value>
+    <value>72, 48</value>
   </data>
   <data name="buttonAbbrechen.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -339,10 +339,10 @@
     <value>5</value>
   </data>
   <data name="meldungen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 480</value>
+    <value>8, 416</value>
   </data>
   <data name="meldungen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>748, 22</value>
+    <value>624, 20</value>
   </data>
   <data name="meldungen.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -360,10 +360,10 @@
     <value>7</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 65</value>
+    <value>8, 56</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 18</value>
+    <value>160, 16</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -390,10 +390,10 @@
     <value>(*.shp)|*.shp</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 138</value>
+    <value>8, 120</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 19</value>
+    <value>152, 16</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -414,10 +414,10 @@
     <value>9</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 203</value>
+    <value>8, 176</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 19</value>
+    <value>136, 16</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -438,10 +438,10 @@
     <value>11</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 231</value>
+    <value>8, 200</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 18</value>
+    <value>160, 16</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -462,10 +462,10 @@
     <value>12</value>
   </data>
   <data name="shapeFileAnz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 138</value>
+    <value>192, 120</value>
   </data>
   <data name="shapeFileAnz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+    <value>56, 20</value>
   </data>
   <data name="shapeFileAnz.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -483,10 +483,10 @@
     <value>10</value>
   </data>
   <data name="objektReadAnz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 203</value>
+    <value>192, 176</value>
   </data>
   <data name="objektReadAnz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+    <value>56, 20</value>
   </data>
   <data name="objektReadAnz.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -504,10 +504,10 @@
     <value>13</value>
   </data>
   <data name="objektNotReadAnz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 231</value>
+    <value>192, 200</value>
   </data>
   <data name="objektNotReadAnz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+    <value>56, 20</value>
   </data>
   <data name="objektNotReadAnz.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -525,10 +525,10 @@
     <value>14</value>
   </data>
   <data name="shapeFileNotReadAnz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 166</value>
+    <value>192, 144</value>
   </data>
   <data name="shapeFileNotReadAnz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+    <value>56, 20</value>
   </data>
   <data name="shapeFileNotReadAnz.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -546,10 +546,10 @@
     <value>7</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 166</value>
+    <value>8, 144</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 19</value>
+    <value>176, 16</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -591,10 +591,10 @@
     <value>0</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 83</value>
+    <value>8, 72</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 268</value>
+    <value>336, 232</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -639,10 +639,10 @@
     <value>0</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 360</value>
+    <value>8, 312</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 111</value>
+    <value>336, 96</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -750,10 +750,10 @@
     <value>True</value>
   </data>
   <data name="checkBoxAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 59</value>
+    <value>176, 51</value>
   </data>
   <data name="checkBoxAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 21</value>
+    <value>77, 17</value>
   </data>
   <data name="checkBoxAdd.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -774,10 +774,10 @@
     <value>0</value>
   </data>
   <data name="buttonUeberpruefen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 83</value>
+    <value>8, 72</value>
   </data>
   <data name="buttonUeberpruefen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 27</value>
+    <value>120, 23</value>
   </data>
   <data name="buttonUeberpruefen.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -801,10 +801,10 @@
     <value />
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 55</value>
+    <value>16, 48</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 19</value>
+    <value>176, 16</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -825,10 +825,10 @@
     <value>2</value>
   </data>
   <data name="buttonBPlanGMLDatei.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 55</value>
+    <value>280, 48</value>
   </data>
   <data name="buttonBPlanGMLDatei.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 23</value>
+    <value>72, 20</value>
   </data>
   <data name="buttonBPlanGMLDatei.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -849,10 +849,10 @@
     <value>3</value>
   </data>
   <data name="BPlanGmldatei.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 28</value>
+    <value>8, 24</value>
   </data>
   <data name="BPlanGmldatei.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 22</value>
+    <value>344, 20</value>
   </data>
   <data name="BPlanGmldatei.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -868,6 +868,30 @@
   </data>
   <data name="&gt;&gt;BPlanGmldatei.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 8</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 96</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>GML einlesen</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -993,10 +1017,10 @@
     <value>True</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 96</value>
+    <value>233, 83</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 17</value>
+    <value>39, 13</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1017,10 +1041,10 @@
     <value>0</value>
   </data>
   <data name="comboBox3DViewer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 63</value>
+    <value>231, 55</value>
   </data>
   <data name="comboBox3DViewer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>121, 21</value>
   </data>
   <data name="comboBox3DViewer.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1038,10 +1062,10 @@
     <value>1</value>
   </data>
   <data name="buttonKmlGenerieren.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 25</value>
+    <value>231, 22</value>
   </data>
   <data name="buttonKmlGenerieren.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 27</value>
+    <value>121, 23</value>
   </data>
   <data name="buttonKmlGenerieren.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1065,10 +1089,10 @@
     <value>True</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 92</value>
+    <value>8, 80</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 17</value>
+    <value>25, 13</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1095,10 +1119,10 @@
     <value>Interaktive Karte</value>
   </data>
   <data name="comboBoxDarstellung.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 63</value>
+    <value>8, 55</value>
   </data>
   <data name="comboBoxDarstellung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 24</value>
+    <value>120, 21</value>
   </data>
   <data name="comboBoxDarstellung.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1116,10 +1140,10 @@
     <value>4</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 92</value>
+    <value>140, 80</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 25</value>
+    <value>48, 21</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1176,10 +1200,10 @@
     <value>1: 100.000</value>
   </data>
   <data name="comboBoxMassstab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 65</value>
+    <value>137, 56</value>
   </data>
   <data name="comboBoxMassstab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 24</value>
+    <value>88, 21</value>
   </data>
   <data name="comboBoxMassstab.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1197,10 +1221,10 @@
     <value>6</value>
   </data>
   <data name="buttonShowSvg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 29</value>
+    <value>8, 25</value>
   </data>
   <data name="buttonShowSvg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 23</value>
+    <value>217, 20</value>
   </data>
   <data name="buttonShowSvg.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1220,11 +1244,35 @@
   <data name="&gt;&gt;buttonShowSvg.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 192</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 112</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Visualisierung</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
   <data name="buttonAttributeBearbeiten.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 185</value>
+    <value>360, 160</value>
   </data>
   <data name="buttonAttributeBearbeiten.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 26</value>
+    <value>360, 23</value>
   </data>
   <data name="buttonAttributeBearbeiten.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -1245,10 +1293,10 @@
     <value>14</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 166</value>
+    <value>560, 144</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 19</value>
+    <value>56, 16</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -1269,10 +1317,10 @@
     <value>8</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 166</value>
+    <value>360, 144</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 19</value>
+    <value>100, 16</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -1293,10 +1341,10 @@
     <value>11</value>
   </data>
   <data name="comboBPlanEbene.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 138</value>
+    <value>560, 120</value>
   </data>
   <data name="comboBPlanEbene.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 24</value>
+    <value>48, 21</value>
   </data>
   <data name="comboBPlanEbene.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -1317,10 +1365,10 @@
     <value>9</value>
   </data>
   <data name="comboBPlan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 138</value>
+    <value>360, 120</value>
   </data>
   <data name="comboBPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 24</value>
+    <value>192, 21</value>
   </data>
   <data name="comboBPlan.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1505,6 +1553,30 @@
   <data name="menuItem66.Text" xml:space="preserve">
     <value>5.2</value>
   </data>
+  <data name="menuItem50.Text" xml:space="preserve">
+    <value>XPlanung 5.0 --&gt;</value>
+  </data>
+  <data name="menuItem4.Text" xml:space="preserve">
+    <value>Migrieren</value>
+  </data>
+  <data name="menuItemCodelistOrdner.Text" xml:space="preserve">
+    <value>Lokale Codelisten bearbeiten ...</value>
+  </data>
+  <data name="menuItem43.Text" xml:space="preserve">
+    <value>Externe Codelisten</value>
+  </data>
+  <data name="menuItem19.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuItem22.Text" xml:space="preserve">
+    <value>Color-Codes extrahieren</value>
+  </data>
+  <data name="menuItem5.Text" xml:space="preserve">
+    <value>Codelisten</value>
+  </data>
+  <data name="menuItem18.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
   <data name="menuItemShowSvg.Text" xml:space="preserve">
     <value>Mit SVG Viewer</value>
   </data>
@@ -1544,11 +1616,17 @@
   <data name="menuItem14.Text" xml:space="preserve">
     <value>Info</value>
   </data>
-  <data name="menuItem36.Text" xml:space="preserve">
-    <value />
+  <data name="menuItem11.Text" xml:space="preserve">
+    <value>Hilfe</value>
   </data>
-  <data name="menuItem39.Text" xml:space="preserve">
-    <value />
+  <data name="textBoxXPlanGMLVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="textBoxXPlanGMLVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 22</value>
+  </data>
+  <data name="textBoxXPlanGMLVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
   </data>
   <data name="menuItem42.Text" xml:space="preserve">
     <value />
@@ -1565,6 +1643,15 @@
   <data name="&gt;&gt;textBoxXPlanGMLVersion.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="textBoxPlanTyp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 24</value>
+  </data>
+  <data name="textBoxPlanTyp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 20</value>
+  </data>
+  <data name="textBoxPlanTyp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;textBoxPlanTyp.Name" xml:space="preserve">
     <value>textBoxPlanTyp</value>
   </data>
@@ -1578,10 +1665,10 @@
     <value>1</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 9</value>
+    <value>8, 8</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 65</value>
+    <value>336, 56</value>
   </data>
   <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -1797,10 +1884,10 @@
 </value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>739, 369</value>
+    <value>616, 320</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 56</value>
+    <value>112, 48</value>
   </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1818,10 +1905,10 @@
     <value>1</value>
   </data>
   <data name="checkBoxAllePlaene.Location" type="System.Drawing.Point, System.Drawing">
-    <value>739, 138</value>
+    <value>616, 120</value>
   </data>
   <data name="checkBoxAllePlaene.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 37</value>
+    <value>112, 32</value>
   </data>
   <data name="checkBoxAllePlaene.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -1915,10 +2002,10 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 360</value>
+    <value>368, 312</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 111</value>
+    <value>232, 96</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1942,10 +2029,10 @@
     <value>113</value>
   </metadata>
   <data name="$this.AutoScaleBaseSize" type="System.Drawing.Size, System.Drawing">
-    <value>6, 15</value>
+    <value>5, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>892, 522</value>
+    <value>753, 456</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2544,6 +2631,24 @@
     <value>menuItemCodelistOrdner</value>
   </data>
   <data name="&gt;&gt;menuItemCodelistOrdner.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem43.Name" xml:space="preserve">
+    <value>menuItem43</value>
+  </data>
+  <data name="&gt;&gt;menuItem43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem19.Name" xml:space="preserve">
+    <value>menuItem19</value>
+  </data>
+  <data name="&gt;&gt;menuItem19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuItem22.Name" xml:space="preserve">
+    <value>menuItem22</value>
+  </data>
+  <data name="&gt;&gt;menuItem22.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;menuItem9.Name" xml:space="preserve">

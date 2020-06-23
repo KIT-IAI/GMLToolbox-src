@@ -634,6 +634,7 @@ private: System::Void buttonAbbrechen_Click(System::Object ^  sender, System::Ev
   case XPLANGML_5_0:
   case XPLANGML_5_1:
   case XPLANGML_5_2:
+  case XPLANGML_5_3:
     m_pChecking->checkXPlanGMLRules = checkBoxSpezSyntaxCheck->Checked;
     m_pChecking->checkXPlanGMLBackwardPointer = checkXPlanGMLBackwardPointer;
     m_pChecking->checkXPlanGMLUOM = checkXPlanGMLUOM;
@@ -790,7 +791,8 @@ private: System::Void initialize()
    case XPLANGML_5_0:
    case XPLANGML_5_1:
    case XPLANGML_5_2:
-   if ( m_pChecking->checkXPlanGMLRules )
+   case XPLANGML_5_3:
+     if ( m_pChecking->checkXPlanGMLRules )
      checkBoxSpezSyntaxCheck->Checked = true;
     else
      checkBoxSpezSyntaxCheck->Checked = false;
@@ -962,6 +964,7 @@ private: System::Void checkConformity()
     case XPLANGML_5_0:
     case XPLANGML_5_1:
     case XPLANGML_5_2:
+    case XPLANGML_5_3:
       m_pChecking->CheckXPlanGMLRules();
       break;
 

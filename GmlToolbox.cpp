@@ -43,6 +43,7 @@
 #include "SvgVisualisierung.h"
 #include "EnumerationDictionaryGeneration.h"
 #include "GmlToolbox.h"
+#include "INSPIRECodeList.h"
 
 using namespace std;
 using namespace System;
@@ -1114,4 +1115,13 @@ void GmlToolbox::generateEnumerationDictionaries()
 {
   EnumerationDictionaryGeneration ^ pGen = gcnew EnumerationDictionaryGeneration ( m_pFeatures );
   pGen->ShowDialog();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//  Öffnet den Dialog zum Anzeigen von Codelisten im INSPIRE Format          //
+///////////////////////////////////////////////////////////////////////////////
+void GmlToolbox::showINSPIRECodelist()
+{
+  INSPIRECodeList ^ pINSPIRECodelistDialog = gcnew INSPIRECodeList();
+  pINSPIRECodelistDialog->ShowDialog();
 }

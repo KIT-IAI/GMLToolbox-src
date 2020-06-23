@@ -3758,7 +3758,8 @@ void SvgWriter::write ( std::string fileName, int darstellungsTyp, double global
       else
       if ( objektTyp == PLAN_BEREICH )
       {
-        if ( m_pGmlObjekte->getGmlTyp() == XPLANGML_5_1 || m_pGmlObjekte->getGmlTyp() == XPLANGML_5_2 )
+        if ( m_pGmlObjekte->getGmlTyp() == XPLANGML_5_1 || m_pGmlObjekte->getGmlTyp() == XPLANGML_5_2 ||
+             m_pGmlObjekte->getGmlTyp() == XPLANGML_5_3 )
         {
           anzScans = pPlanObjekt->getRelatedFeatures( "xplan:refScan", vRasterbilder );
           if ( anzScans > 0 )
@@ -9634,6 +9635,9 @@ void PlanzReader::read ( std::string planzListePfad )
             else
             if ( STR->CompareTo( "XPLANGML_V5_2") == 0 )
               pPlanzListe->setGmlTyp( XPLANGML_5_2 );
+            else
+            if ( STR->CompareTo( "XPLANGML_V5_3" ) == 0 )
+              pPlanzListe->setGmlTyp( XPLANGML_5_3 );
             else
             if ( STR->CompareTo( "INSPIRE_PLU") == 0 )
               pPlanzListe->setGmlTyp( INSPIRE_LU_PLANNED );          

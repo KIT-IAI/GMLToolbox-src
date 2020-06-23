@@ -52,37 +52,37 @@ bool TransformationINSPIRE_PLU_Basis::generateDictionaries ( Features * pPlanObj
   GmlDictionaryReader ^ pDictionaryReader;
   GmlSchema          * pGmlObjekte = pPlanObjekteINSPIRE->getGmlSchema();
 
-  pDictionaryReader = gcnew GmlDictionaryReader ( m_pObjekteXPlanGML->getGmlTyp() );
+  pDictionaryReader = gcnew GmlDictionaryReader ();
 
-  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryHILUCSValue );
+  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryHILUCSValue, true );
   if ( pDictionaryEntry != NULL )
     pGmlObjekte->getCodeListsDictionary()->addDictionaryEntry( pDictionaryEntry );
 
-  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryLandUseClassificationValue );
+  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryLandUseClassificationValue, true );
   if ( pDictionaryEntry != NULL )
     pGmlObjekte->getCodeListsDictionary()->addDictionaryEntry( pDictionaryEntry );
 
-  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registrySupplementaryRegulationValue );
+  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registrySupplementaryRegulationValue, true );
   if ( pDictionaryEntry != NULL )
     pGmlObjekte->getCodeListsDictionary()->addDictionaryEntry( pDictionaryEntry );
 
-  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryLocalSupplementaryRegulationValue );
+  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryLocalSupplementaryRegulationValue, true );
   if ( pDictionaryEntry != NULL )
     pGmlObjekte->getCodeListsDictionary()->addDictionaryEntry( pDictionaryEntry );
 
-  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryLevelOfSpatialPlanValue );
+  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryLevelOfSpatialPlanValue, true );
   if ( pDictionaryEntry != NULL )
     pGmlObjekte->getCodeListsDictionary()->addDictionaryEntry( pDictionaryEntry );
 
-  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryProcessStepGeneralValue );
+  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryProcessStepGeneralValue, true );
   if ( pDictionaryEntry != NULL )
     pGmlObjekte->getCodeListsDictionary()->addDictionaryEntry( pDictionaryEntry );
 
-  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryRegulationNatureValue );
+  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryRegulationNatureValue, true );
   if ( pDictionaryEntry != NULL )
     pGmlObjekte->getCodeListsDictionary()->addDictionaryEntry( pDictionaryEntry );
 
-  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryPlanTypeNameValue );
+  pDictionaryEntry = pDictionaryReader->readINSPIRECodeList( pParameter->registryPlanTypeNameValue, true );
   if ( pDictionaryEntry != NULL )
     pGmlObjekte->getCodeListsDictionary()->addDictionaryEntry( pDictionaryEntry );
 

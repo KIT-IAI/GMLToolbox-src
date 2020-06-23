@@ -182,7 +182,7 @@ public:
 public ref class GmlDictionaryReader
 {
 public:
-  GmlDictionaryReader( GML_SCHEMA_TYPE gmlTypP );
+  GmlDictionaryReader();
 
   virtual ~GmlDictionaryReader();
 
@@ -197,21 +197,28 @@ public:
 
   HierarchicalCodeList * readBMLCodeList (  std::string fileNameP );
 
-  GmlDictionaryEntry * readINSPIRECodeList (  std::string fileNameP );
+  GmlDictionaryEntry * readINSPIRECodeList ( System::String ^ registryURL, bool useFullCode );
+  GmlDictionaryEntry * readINSPIRECodeList (  std::string fileNameP, bool useFullCode );
+  GmlDictionaryEntry * readINSPIRECodeList (   System::IO::Stream ^stream, bool useFullCode );
+
+  void skipElement ( System::String ^ pActElement );
 
 
   void closeReader();
 
 private:
   System::Xml::XmlTextReader  ^ reader;   // .NET XML-Reader
-  GML_SCHEMA_TYPE  gmlTyp;                // Typ des Applikationsschemas
+ // GML_SCHEMA_TYPE  gmlTyp;                // Typ des Applikationsschemas
   DICTIONARY_TYP   dictionaryTyp;         //  Typ des Dictionaries
   System::String ^ pActElement;           //  Aktuell gelesenes XML-Element
   System::String ^ pActAttrName;          //  Aktuell gelesenes Attribut
 
   bool readHierarchicalCodeListEntry( HierarchicalCodeListEntry & codelistEntry );
-  bool readINSPIRECodeListEntry(  GmlDictionaryEntry * codelistEntry );
+  bool readINSPIRECodeListEntry(  GmlDictionaryEntry * codelistEntry, bool useFullCode );
   void readAlternativeExpression ( HierarchicalCodeListEntry & pEntry );
+
+  GmlDictionaryEntry * readINSPIRECodeList (  System::Xml::XmlTextReader ^ pReader, bool useFullCode );
+
 };
 
 ///////////////////////////////////////////////////////////////////////////////

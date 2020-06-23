@@ -99,7 +99,7 @@ ShapeFileNamenKonvertierung * KonvDateiReader::read( std::string fileName )
         }
         else
         {
-          xplanGmlTyp     =  XPLANGML_5_2;
+          xplanGmlTyp     =  XPLANGML_5_3;
           XPlanGMLVersionsDialog ^ pVersionsDialog = gcnew XPlanGMLVersionsDialog( xplanGmlTyp );
           pVersionsDialog->ShowDialog();
 
@@ -536,7 +536,7 @@ ExterneReferenz * KonvDateiReader::readExterneReferenz()
   STR = validReader->GetAttribute ( "referenzMimeType" );
   if ( STR != nullptr )  QuConvert::systemStr2stdStr( pExterneReferenz->referenzMimeType, STR );
 
-  STR = validReader->GetAttribute ( "georefzURL" );
+  STR = validReader->GetAttribute ( "georefURL" );
   if ( STR != nullptr )  QuConvert::systemStr2stdStr( pExterneReferenz->georefURL, STR );
 
   STR = validReader->GetAttribute ( "georefMimeType" );

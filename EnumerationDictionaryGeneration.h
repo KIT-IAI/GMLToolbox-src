@@ -63,68 +63,71 @@
 		/// </summary>
 		void InitializeComponent(void)
 		{
-      this->buttonErzeugen = (gcnew System::Windows::Forms::Button());
-      this->buttonAbbrechen = (gcnew System::Windows::Forms::Button());
-      this->dictionaryFolderDialog = (gcnew System::Windows::Forms::FolderBrowserDialog());
-      this->gmlDictionaryDialog = (gcnew System::Windows::Forms::SaveFileDialog());
-      this->comboBoxXPlanGMLVersion = (gcnew System::Windows::Forms::ComboBox());
-      this->label1 = (gcnew System::Windows::Forms::Label());
+      this->buttonErzeugen = ( gcnew System::Windows::Forms::Button() );
+      this->buttonAbbrechen = ( gcnew System::Windows::Forms::Button() );
+      this->dictionaryFolderDialog = ( gcnew System::Windows::Forms::FolderBrowserDialog() );
+      this->gmlDictionaryDialog = ( gcnew System::Windows::Forms::SaveFileDialog() );
+      this->comboBoxXPlanGMLVersion = ( gcnew System::Windows::Forms::ComboBox() );
+      this->label1 = ( gcnew System::Windows::Forms::Label() );
       this->SuspendLayout();
       // 
       // buttonErzeugen
       // 
-      this->buttonErzeugen->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-      this->buttonErzeugen->Location = System::Drawing::Point(219, 108);
+      this->buttonErzeugen->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right ) );
+      this->buttonErzeugen->Location = System::Drawing::Point( 219, 108 );
       this->buttonErzeugen->Name = L"buttonErzeugen";
-      this->buttonErzeugen->Size = System::Drawing::Size(75, 23);
+      this->buttonErzeugen->Size = System::Drawing::Size( 75, 23 );
       this->buttonErzeugen->TabIndex = 6;
       this->buttonErzeugen->Text = L"Erzeugen";
       this->buttonErzeugen->UseVisualStyleBackColor = true;
-      this->buttonErzeugen->Click += gcnew System::EventHandler(this, &EnumerationDictionaryGeneration::buttonErzeugen_Click);
+      this->buttonErzeugen->Click += gcnew System::EventHandler( this, &EnumerationDictionaryGeneration::buttonErzeugen_Click );
       // 
       // buttonAbbrechen
       // 
-      this->buttonAbbrechen->Location = System::Drawing::Point(12, 107);
+      this->buttonAbbrechen->Location = System::Drawing::Point( 12, 107 );
       this->buttonAbbrechen->Name = L"buttonAbbrechen";
-      this->buttonAbbrechen->Size = System::Drawing::Size(75, 23);
+      this->buttonAbbrechen->Size = System::Drawing::Size( 75, 23 );
       this->buttonAbbrechen->TabIndex = 7;
       this->buttonAbbrechen->Text = L"Abbrechen";
       this->buttonAbbrechen->UseVisualStyleBackColor = true;
-      this->buttonAbbrechen->Click += gcnew System::EventHandler(this, &EnumerationDictionaryGeneration::buttonAbbrechen_Click);
+      this->buttonAbbrechen->Click += gcnew System::EventHandler( this, &EnumerationDictionaryGeneration::buttonAbbrechen_Click );
       // 
       // comboBoxXPlanGMLVersion
       // 
       this->comboBoxXPlanGMLVersion->FormattingEnabled = true;
-      this->comboBoxXPlanGMLVersion->Items->AddRange(gcnew cli::array< System::Object^  >(7) {L"XPlanGML 2.0", L"XPlanGML 3.0", 
-        L"XPlanGML 4.0", L"XPlanGML 4.1", L"XPlanGML 5.0", L"XPlanGML 5.1", L"XPlanGML 5.2"});
-      this->comboBoxXPlanGMLVersion->Location = System::Drawing::Point(13, 28);
+      this->comboBoxXPlanGMLVersion->Items->AddRange( gcnew cli::array< System::Object^  >( 8 )
+      {
+        L"XPlanGML 2.0", L"XPlanGML 3.0",
+          L"XPlanGML 4.0", L"XPlanGML 4.1", L"XPlanGML 5.0", L"XPlanGML 5.1", L"XPlanGML 5.2", L"XPlanGML 5.3"
+      } );
+      this->comboBoxXPlanGMLVersion->Location = System::Drawing::Point( 13, 28 );
       this->comboBoxXPlanGMLVersion->Name = L"comboBoxXPlanGMLVersion";
-      this->comboBoxXPlanGMLVersion->Size = System::Drawing::Size(148, 21);
+      this->comboBoxXPlanGMLVersion->Size = System::Drawing::Size( 148, 21 );
       this->comboBoxXPlanGMLVersion->TabIndex = 8;
       // 
       // label1
       // 
       this->label1->AutoSize = true;
-      this->label1->Location = System::Drawing::Point(168, 35);
+      this->label1->Location = System::Drawing::Point( 168, 35 );
       this->label1->Name = L"label1";
-      this->label1->Size = System::Drawing::Size(96, 13);
+      this->label1->Size = System::Drawing::Size( 96, 13 );
       this->label1->TabIndex = 9;
       this->label1->Text = L"XPlanGML-Version";
       // 
       // EnumerationDictionaryGeneration
       // 
-      this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+      this->AutoScaleDimensions = System::Drawing::SizeF( 6, 13 );
       this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-      this->ClientSize = System::Drawing::Size(310, 148);
-      this->Controls->Add(this->label1);
-      this->Controls->Add(this->comboBoxXPlanGMLVersion);
-      this->Controls->Add(this->buttonAbbrechen);
-      this->Controls->Add(this->buttonErzeugen);
+      this->ClientSize = System::Drawing::Size( 310, 148 );
+      this->Controls->Add( this->label1 );
+      this->Controls->Add( this->comboBoxXPlanGMLVersion );
+      this->Controls->Add( this->buttonAbbrechen );
+      this->Controls->Add( this->buttonErzeugen );
       this->MaximizeBox = false;
       this->MinimizeBox = false;
       this->Name = L"EnumerationDictionaryGeneration";
       this->Text = L"GML-Dictionary der Enumerationen erzeugen";
-      this->ResumeLayout(false);
+      this->ResumeLayout( false );
       this->PerformLayout();
 
     }
@@ -166,6 +169,10 @@ private: System::Void buttonErzeugen_Click(System::Object^  sender, System::Even
 
            case 6:
              schemaType = XPLANGML_5_2;
+             break;
+
+           case 7:
+             schemaType = XPLANGML_5_3;
              break;
            }
 

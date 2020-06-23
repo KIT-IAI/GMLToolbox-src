@@ -77,6 +77,9 @@ using namespace System::Drawing;
       else
       if ( versionP->CompareTo( "XPlanGML 5.2") == 0 )
         versionXPlanGML = XPLANGML_5_2;
+      else
+      if ( versionP->CompareTo( "XPlanGML 5.3" ) == 0 )
+        versionXPlanGML = XPLANGML_5_3;
 
       pTransformation = m_pXPlanGML->readINSPIRE_PLUTransformation( versionXPlanGML );
 

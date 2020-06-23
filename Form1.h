@@ -163,6 +163,7 @@ private: System::Windows::Forms::MenuItem^  menuItem69;
 private: System::Windows::Forms::MenuItem^  menuItem36;
 private: System::Windows::Forms::MenuItem^  menuItem39;
 private: System::Windows::Forms::MenuItem^  menuItem42;
+private: System::Windows::Forms::MenuItem^  menuItem43;
 private: System::Windows::Forms::GroupBox ^  groupBox5;
 
 public:
@@ -1373,6 +1374,14 @@ private: System::Void readIniFile()
           systemStr2stdStr(stdString, STR);
           if (stdString != "")
             pBLeitplanViewer->setExternalCodeListFolder(XPLANGML_5_2, stdString);
+        }
+
+        if ( pActElement->CompareTo( "ExternalCodeListsFolderV5_3" ) == 0 )
+        {
+          STR = reader->ReadString();
+          systemStr2stdStr( stdString, STR );
+          if ( stdString != "" )
+            pBLeitplanViewer->setExternalCodeListFolder( XPLANGML_5_3, stdString );
         }
 
         if (pActElement->CompareTo("ExternalCodeListsFolderInspireLUPlanned") == 0)
@@ -2676,6 +2685,13 @@ private: System::Void menuItem68_Click(System::Object^  sender, System::EventArg
 private: System::Void menuItem27_Click(System::Object^  sender, System::EventArgs^  e)
 {
   pBLeitplanViewer->showManual();
+}
+          ////////////////////////////////////////////////////////////////////////////////////////////
+          //  Commandhandler Codelisten --> INSPIRE Codelisten                                      //
+          ////////////////////////////////////////////////////////////////////////////////////////////
+private: System::Void menuItem43_Click( System::Object^  sender, System::EventArgs^  e )
+{
+  pBLeitplanViewer->showINSPIRECodelist();
 }
 };
 
