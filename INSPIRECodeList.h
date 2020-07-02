@@ -62,103 +62,114 @@
 		/// </summary>
 		void InitializeComponent(void)
 		{
-      this->textBoxURL = ( gcnew System::Windows::Forms::TextBox() );
-      this->label1 = ( gcnew System::Windows::Forms::Label() );
-      this->buttonEinlesen = ( gcnew System::Windows::Forms::Button() );
-      this->dataGridViewCodes = ( gcnew System::Windows::Forms::DataGridView() );
-      this->buttonBeenden = ( gcnew System::Windows::Forms::Button() );
-      this->textBoxXML = ( gcnew System::Windows::Forms::TextBox() );
-      this->label2 = ( gcnew System::Windows::Forms::Label() );
-      this->textBoxFehler = ( gcnew System::Windows::Forms::TextBox() );
-      this->radioButtonDictionary = ( gcnew System::Windows::Forms::RadioButton() );
-      this->radioButtonINSPIRE = ( gcnew System::Windows::Forms::RadioButton() );
-      ( cli::safe_cast<System::ComponentModel::ISupportInitialize^>( this->dataGridViewCodes ) )->BeginInit();
+      this->textBoxURL = (gcnew System::Windows::Forms::TextBox());
+      this->label1 = (gcnew System::Windows::Forms::Label());
+      this->buttonEinlesen = (gcnew System::Windows::Forms::Button());
+      this->dataGridViewCodes = (gcnew System::Windows::Forms::DataGridView());
+      this->buttonBeenden = (gcnew System::Windows::Forms::Button());
+      this->textBoxXML = (gcnew System::Windows::Forms::TextBox());
+      this->label2 = (gcnew System::Windows::Forms::Label());
+      this->textBoxFehler = (gcnew System::Windows::Forms::TextBox());
+      this->radioButtonDictionary = (gcnew System::Windows::Forms::RadioButton());
+      this->radioButtonINSPIRE = (gcnew System::Windows::Forms::RadioButton());
+      (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewCodes))->BeginInit();
       this->SuspendLayout();
       // 
       // textBoxURL
       // 
-      this->textBoxURL->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left )
-        | System::Windows::Forms::AnchorStyles::Right ) );
-      this->textBoxURL->Location = System::Drawing::Point( 13, 13 );
+      this->textBoxURL->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+        | System::Windows::Forms::AnchorStyles::Right));
+      this->textBoxURL->Location = System::Drawing::Point(17, 16);
+      this->textBoxURL->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->textBoxURL->Name = L"textBoxURL";
-      this->textBoxURL->Size = System::Drawing::Size( 529, 20 );
+      this->textBoxURL->Size = System::Drawing::Size(707, 22);
       this->textBoxURL->TabIndex = 0;
       // 
       // label1
       // 
       this->label1->AutoSize = true;
-      this->label1->Location = System::Drawing::Point( 13, 36 );
+      this->label1->Location = System::Drawing::Point(17, 44);
+      this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
       this->label1->Name = L"label1";
-      this->label1->Size = System::Drawing::Size( 69, 13 );
+      this->label1->Size = System::Drawing::Size(90, 17);
       this->label1->TabIndex = 1;
       this->label1->Text = L"Codelist URL";
       // 
       // buttonEinlesen
       // 
-      this->buttonEinlesen->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right ) );
-      this->buttonEinlesen->Location = System::Drawing::Point( 467, 36 );
+      this->buttonEinlesen->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+      this->buttonEinlesen->Location = System::Drawing::Point(626, 44);
+      this->buttonEinlesen->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->buttonEinlesen->Name = L"buttonEinlesen";
-      this->buttonEinlesen->Size = System::Drawing::Size( 75, 23 );
+      this->buttonEinlesen->Size = System::Drawing::Size(100, 28);
       this->buttonEinlesen->TabIndex = 2;
       this->buttonEinlesen->Text = L"Einlesen";
       this->buttonEinlesen->UseVisualStyleBackColor = true;
-      this->buttonEinlesen->Click += gcnew System::EventHandler( this, &INSPIRECodeList::buttonEinlesen_Click );
+      this->buttonEinlesen->Click += gcnew System::EventHandler(this, &INSPIRECodeList::buttonEinlesen_Click);
       // 
       // dataGridViewCodes
       // 
-      this->dataGridViewCodes->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom )
-        | System::Windows::Forms::AnchorStyles::Left )
-        | System::Windows::Forms::AnchorStyles::Right ) );
+      this->dataGridViewCodes->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+        | System::Windows::Forms::AnchorStyles::Left)
+        | System::Windows::Forms::AnchorStyles::Right));
       this->dataGridViewCodes->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-      this->dataGridViewCodes->Location = System::Drawing::Point( 0, 137 );
+      this->dataGridViewCodes->Location = System::Drawing::Point(0, 169);
+      this->dataGridViewCodes->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->dataGridViewCodes->Name = L"dataGridViewCodes";
-      this->dataGridViewCodes->Size = System::Drawing::Size( 555, 172 );
+      this->dataGridViewCodes->Size = System::Drawing::Size(742, 212);
       this->dataGridViewCodes->TabIndex = 3;
       // 
       // buttonBeenden
       // 
-      this->buttonBeenden->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left ) );
-      this->buttonBeenden->Location = System::Drawing::Point( 170, 325 );
+      this->buttonBeenden->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
+      this->buttonBeenden->Location = System::Drawing::Point(320, 400);
+      this->buttonBeenden->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->buttonBeenden->Name = L"buttonBeenden";
-      this->buttonBeenden->Size = System::Drawing::Size( 75, 23 );
+      this->buttonBeenden->Size = System::Drawing::Size(100, 28);
       this->buttonBeenden->TabIndex = 4;
       this->buttonBeenden->Text = L"Beenden";
       this->buttonBeenden->UseVisualStyleBackColor = true;
-      this->buttonBeenden->Click += gcnew System::EventHandler( this, &INSPIRECodeList::buttonBeenden_Click );
+      this->buttonBeenden->Click += gcnew System::EventHandler(this, &INSPIRECodeList::buttonBeenden_Click);
       // 
       // textBoxXML
       // 
-      this->textBoxXML->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left )
-        | System::Windows::Forms::AnchorStyles::Right ) );
-      this->textBoxXML->Location = System::Drawing::Point( 13, 66 );
+      this->textBoxXML->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+        | System::Windows::Forms::AnchorStyles::Right));
+      this->textBoxXML->Location = System::Drawing::Point(17, 81);
+      this->textBoxXML->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->textBoxXML->Name = L"textBoxXML";
-      this->textBoxXML->Size = System::Drawing::Size( 529, 20 );
+      this->textBoxXML->Size = System::Drawing::Size(707, 22);
       this->textBoxXML->TabIndex = 5;
       // 
       // label2
       // 
       this->label2->AutoSize = true;
-      this->label2->Location = System::Drawing::Point( 13, 88 );
+      this->label2->Location = System::Drawing::Point(17, 108);
+      this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
       this->label2->Name = L"label2";
-      this->label2->Size = System::Drawing::Size( 147, 13 );
+      this->label2->Size = System::Drawing::Size(195, 17);
       this->label2->TabIndex = 6;
       this->label2->Text = L"URL der XML-Repräsentation";
       // 
       // textBoxFehler
       // 
+      this->textBoxFehler->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+        | System::Windows::Forms::AnchorStyles::Right));
       this->textBoxFehler->ForeColor = System::Drawing::Color::Red;
-      this->textBoxFehler->Location = System::Drawing::Point( 13, 111 );
+      this->textBoxFehler->Location = System::Drawing::Point(17, 137);
+      this->textBoxFehler->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->textBoxFehler->Name = L"textBoxFehler";
       this->textBoxFehler->ReadOnly = true;
-      this->textBoxFehler->Size = System::Drawing::Size( 529, 20 );
+      this->textBoxFehler->Size = System::Drawing::Size(707, 22);
       this->textBoxFehler->TabIndex = 7;
       // 
       // radioButtonDictionary
       // 
       this->radioButtonDictionary->AutoSize = true;
-      this->radioButtonDictionary->Location = System::Drawing::Point( 89, 40 );
+      this->radioButtonDictionary->Location = System::Drawing::Point(119, 49);
+      this->radioButtonDictionary->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->radioButtonDictionary->Name = L"radioButtonDictionary";
-      this->radioButtonDictionary->Size = System::Drawing::Size( 98, 17 );
+      this->radioButtonDictionary->Size = System::Drawing::Size(127, 21);
       this->radioButtonDictionary->TabIndex = 8;
       this->radioButtonDictionary->TabStop = true;
       this->radioButtonDictionary->Text = L"GML-Dictionary";
@@ -167,9 +178,10 @@
       // radioButtonINSPIRE
       // 
       this->radioButtonINSPIRE->AutoSize = true;
-      this->radioButtonINSPIRE->Location = System::Drawing::Point( 229, 42 );
+      this->radioButtonINSPIRE->Location = System::Drawing::Point(305, 52);
+      this->radioButtonINSPIRE->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->radioButtonINSPIRE->Name = L"radioButtonINSPIRE";
-      this->radioButtonINSPIRE->Size = System::Drawing::Size( 109, 17 );
+      this->radioButtonINSPIRE->Size = System::Drawing::Size(138, 21);
       this->radioButtonINSPIRE->TabIndex = 9;
       this->radioButtonINSPIRE->TabStop = true;
       this->radioButtonINSPIRE->Text = L"INSPIRE Registry";
@@ -178,23 +190,24 @@
       // INSPIRECodeList
       // 
       this->AcceptButton = this->buttonBeenden;
-      this->AutoScaleDimensions = System::Drawing::SizeF( 6, 13 );
+      this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
       this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-      this->ClientSize = System::Drawing::Size( 554, 360 );
-      this->Controls->Add( this->radioButtonINSPIRE );
-      this->Controls->Add( this->radioButtonDictionary );
-      this->Controls->Add( this->textBoxFehler );
-      this->Controls->Add( this->label2 );
-      this->Controls->Add( this->textBoxXML );
-      this->Controls->Add( this->buttonBeenden );
-      this->Controls->Add( this->dataGridViewCodes );
-      this->Controls->Add( this->buttonEinlesen );
-      this->Controls->Add( this->label1 );
-      this->Controls->Add( this->textBoxURL );
+      this->ClientSize = System::Drawing::Size(742, 443);
+      this->Controls->Add(this->radioButtonINSPIRE);
+      this->Controls->Add(this->radioButtonDictionary);
+      this->Controls->Add(this->textBoxFehler);
+      this->Controls->Add(this->label2);
+      this->Controls->Add(this->textBoxXML);
+      this->Controls->Add(this->buttonBeenden);
+      this->Controls->Add(this->dataGridViewCodes);
+      this->Controls->Add(this->buttonEinlesen);
+      this->Controls->Add(this->label1);
+      this->Controls->Add(this->textBoxURL);
+      this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
       this->Name = L"INSPIRECodeList";
       this->Text = L"Codelisten im INSPIRE Format";
-      ( cli::safe_cast<System::ComponentModel::ISupportInitialize^>( this->dataGridViewCodes ) )->EndInit();
-      this->ResumeLayout( false );
+      (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewCodes))->EndInit();
+      this->ResumeLayout(false);
       this->PerformLayout();
 
     }
