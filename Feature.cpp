@@ -5391,6 +5391,8 @@ bool Feature::getBoundingBox ( double * sw, double * no, std::string &srsNameP, 
   multimap<string,FeatureRelation*>::iterator iterRel;
 
   srsNameP      = pFeatures->getSrsName();
+  if ( srsNameP == "" )
+    srsNameP = srsName;
   srsDimensionP = pFeatures->getSrsDimension();
 
   sw[0] =  1.0E20;
