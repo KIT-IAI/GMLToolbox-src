@@ -400,6 +400,7 @@ private:
     this->menuItem66 = (gcnew System::Windows::Forms::MenuItem());
     this->menuItem5 = (gcnew System::Windows::Forms::MenuItem());
     this->menuItemCodelistOrdner = (gcnew System::Windows::Forms::MenuItem());
+    this->menuItem43 = ( gcnew System::Windows::Forms::MenuItem() );
     this->menuItem9 = (gcnew System::Windows::Forms::MenuItem());
     this->menuItemShowSvg = (gcnew System::Windows::Forms::MenuItem());
     this->menuItemShowKml = (gcnew System::Windows::Forms::MenuItem());
@@ -1014,7 +1015,11 @@ private:
     // menuItem5
     // 
     this->menuItem5->Index = 4;
-    this->menuItem5->MenuItems->AddRange(gcnew cli::array< System::Windows::Forms::MenuItem^  >(1) { this->menuItemCodelistOrdner });
+    this->menuItem5->MenuItems->AddRange( gcnew cli::array< System::Windows::Forms::MenuItem^  >( 2 )
+    {
+      this->menuItemCodelistOrdner,
+        this->menuItem43
+    } );
     resources->ApplyResources(this->menuItem5, L"menuItem5");
     // 
     // menuItemCodelistOrdner
@@ -1022,6 +1027,12 @@ private:
     this->menuItemCodelistOrdner->Index = 0;
     resources->ApplyResources(this->menuItemCodelistOrdner, L"menuItemCodelistOrdner");
     this->menuItemCodelistOrdner->Click += gcnew System::EventHandler(this, &Form1::menuItemCodelistOrdner_Click);
+    // 
+    // menuItem43
+    // 
+    this->menuItem43->Index = 1;
+    resources->ApplyResources( this->menuItem43, L"menuItem43" );
+    this->menuItem43->Click += gcnew System::EventHandler( this, &Form1::menuItem43_Click );
     // 
     // menuItem9
     // 
