@@ -1169,17 +1169,17 @@ GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( System::Xml::Xml
     }
   }
 
-  catch ( System::IO::FileNotFoundException ^ e )
+  catch ( System::IO::FileNotFoundException ^ /*e*/ )
   {
     return NULL;
   }
 
-  catch ( System::IO::DirectoryNotFoundException ^ e )
+  catch ( System::IO::DirectoryNotFoundException ^ /*e*/ )
   {
     return NULL;
   }
 
-  catch ( System::Exception ^ e )
+  catch ( System::Exception ^ /*e*/ )
   {
     return NULL;
   }
@@ -1240,7 +1240,7 @@ GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList ( string fileName,
 
     return readINSPIRECodeList  ( reader, useFullCode );
   }
-  catch ( System::Exception ^ e )
+  catch ( System::Exception ^ /*e*/ )
   {
     return NULL;
   }
@@ -1258,7 +1258,7 @@ GmlDictionaryEntry * GmlDictionaryReader::readINSPIRECodeList (   System::IO::St
 
     return readINSPIRECodeList  ( reader, useFullCode );
   }
-  catch ( System::Exception ^ e )
+  catch ( System::Exception ^ /*e*/ )
   {
     return NULL;
   }

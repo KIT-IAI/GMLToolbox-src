@@ -1259,8 +1259,8 @@ bool XPlanGML::setBereichAttribute_V5_X ( PlanBereich * pPlanBereich, Bereich * 
   RasterplanBasis * pRasterplanBasis = pBereich->getRasterplanBasis();
   if ( pRasterplanBasis != NULL )
   {
-    int anz = pRasterplanBasis->getExterneReferenzen( externeReferenzen );
-    for ( int j = 0; j < anz; j++ )
+    size_t anz = pRasterplanBasis->getExterneReferenzen( externeReferenzen );
+    for ( size_t j = 0; j < anz; j++ )
     {
       gmlId =  Constant::createGmlId();
       ExterneReferenz * pExterneReferenz = externeReferenzen[j];
