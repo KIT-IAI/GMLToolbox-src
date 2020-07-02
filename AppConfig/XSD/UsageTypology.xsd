@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:element name="UsageTypology">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="UsageType" type="UsageTypeType" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="UsageTypeType">
+        <xs:attribute name="usage" type="xs:string" use="required"/>
+        <xs:attribute name="usageProfile" type="xs:string" use="required"/>
+        <xs:attribute name="isHeated" type="xs:boolean" use="required"/>
+        <xs:attribute name="isCooled" type="xs:boolean" use="required"/>
+        <xs:attribute name="isVentilated" type="xs:boolean" use="required"/>
+    </xs:complexType>
+</xs:schema>

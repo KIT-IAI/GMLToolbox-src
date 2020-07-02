@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:gml="http://www.opengis.net/gml" xmlns:app="http://www.deegree.org/app" xmlns:xlink="http://www.w3.org/1999/xlink"
+  targetNamespace="http://www.deegree.org/app" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+  <element   name="geothermie" type="app:geothermieType" substitutionGroup="gml:_Feature"/>
+    <complexType name="geothermieType" >
+      <complexContent>
+        <extension base="gml:AbstractFeatureType">
+          <sequence>
+            <element name="Arnum" minOccurs="0" type="integer"/>
+            <element name="Vertraulichkeit" minOccurs="0" type="string"/>
+            <element name="Archivkurzbezeichnung" minOccurs="0" type="string"/>
+            <element name="Archiv_dgk5" minOccurs="0" type="integer"/>
+            <element name="Auftraggeber" minOccurs="0" type="string"/>
+            <element name="Tiefe_der_Bohrung_m" minOccurs="0" type="decimal"/>
+            <element name="Datum_der_Bohrung" minOccurs="0" type="string"/>
+            <element name="Waermeentzug_Watt_40m_1800h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_50m_1800h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_60m_1800h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_70m_1800h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_watt_80m_1800h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_90m_1800h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_100m_1800h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_40m_2400h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_50m_2400h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_60m_2400h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_70m_2400h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_80m_2400h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_90m_2400h" minOccurs="0" type="integer"/>
+            <element name="Waermeentzug_Watt_100m_2400h" minOccurs="0" type="integer"/>
+            <element name="geom" minOccurs="0" type="gml:PointPropertyType"/>
+          </sequence>
+        </extension>
+      </complexContent>
+    </complexType>
+ 
+</schema>

@@ -1,0 +1,4138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="../../../XSD/Testing.xsd" name="StandardProfilBPlanSchema_5_3">
+
+
+ <Rule class="BP_Plan">
+  <description>gemeinde ist ein Pflichtattribut</description>
+  <Required>
+   <RelationFilter relationName="gemeinde" minOccurs="1" maxOccurs="unbound"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_Plan">
+  <description>planArt ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="planArt" minOccurs="1" maxOccurs="unbound"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_Plan" id="4.1.1.1">
+  <description>Eine Instanz der Klasse BP_Plan darf über die Relation bereich nur Instanzen der Klasse BP_Bereich aggregieren</description>
+  <Required>
+   <RelationFilter relationName="bereich" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_BereichType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+
+ <!-- BP_Bereich  -->
+ <Rule class="BP_Bereich" id="4.1.2.3">
+  <description>Eine Instanz der Klasse BP_Bereich muss über die Relation gehoertZuPlan genau eine Instanz der Klasse BP_Plan referieren. Diese Instanz referiert über die Relation bereich die Bereichs-Instanz</description>
+  <Required>
+   <RelationFilter relationName="gehoertZuPlan" minOccurs="1" maxOccurs="1" inverseRelationName="bereich">
+    <GmlType>BP_PlanType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_Objekt -->
+ <Rule superclassType="BP_ObjektType">
+  <description>Das Attribut rechtscharakter ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="rechtscharakter" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ 
+ <Rule superclassType="BP_ObjektType" id="4.1.3.8">
+  <description>Die Relation refTextInhalt darf nur auf Instanzen von Klassen verweisen, die von XP_TextAbschnitt abgeleitet sind</description>
+  <Required>
+   <RelationFilter relationName="refTextInhalt" minOccurs="0" maxOccurs="unbound">
+    <GmlSuperType>XP_TextAbschnittType</GmlSuperType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+ 
+ <Rule superclassType="BP_ObjektType" id="4.1.3.9">
+  <description>Die Attribute laermkontingent und laermkontingentGebiet dürfen nicht gleich-zeitig verwendet werden</description>
+  <If>
+   <RelationFilter relationName="laermkontingent " minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <RelationFilter relationName="laermkontingentGebiet" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ 
+ <Rule superclassType="BP_ObjektType" id="4.1.3.9">
+  <description>Die Attribute laermkontingent und laermkontingentGebiet dürfen nicht gleich-zeitig verwendet werden</description>
+  <If>
+   <RelationFilter relationName="laermkontingentGebiet " minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <RelationFilter relationName="laermkontingent" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule superclassType="BP_ObjektType" id="4.1.3.1">
+  <description>Die Relation wirdAusgeglichenDurchFlaeche darf nur auf Instanzen der Klasse BP_AusgleichsFlaeche verweisen</description>
+  <Required>
+   <RelationFilter relationName="wirdAusgeglichenDurchFlaeche" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_AusgleichsFlaecheType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="BP_ObjektType" id="4.1.3.2">
+  <description>Die Relation wirdAusgeglichenDurchMassnahme darf nur auf Instanzen der Klasse BP_AusgleichsMassnahme verweisen</description>
+  <Required>
+   <RelationFilter relationName="wirdAusgeglichenDurchMassnahme" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_AusgleichsMassnahmeType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="BP_ObjektType" id="4.1.3.3">
+  <description>Die Relation wirdAusgeglichenDurchSPEMassnahme darf nur auf Instanzen der Klasse BP_SchutzPflegeEntwicklungsMassnahme verweisen</description>
+  <Required>
+   <RelationFilter relationName="wirdAusgeglichenDurchSPEMassnahme" minOccurs="0"
+    maxOccurs="unbound">
+    <GmlType>BP_SchutzPflegeEntwicklungsMassnahmeType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="BP_ObjektType" id="4.1.3.4">
+  <description>Die Relation wirdAusgeglichenDurchSPEFlaeche darf nur auf Instanzen der Klasse BP_SchutzPflegeEntwicklungsFlaeche verweisen</description>
+  <Required>
+   <RelationFilter relationName="wirdAusgeglichenDurchSPEFlaeche" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_SchutzPflegeEntwicklungsFlaecheType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+
+ <Rule superclassType="BP_ObjektType" id="4.1.3.7">
+  <description>Die Relation wirdAusgeglichenDurchABE darf nur auf Instanzen der Klasse BP_AnpflanzungBindungErhaltung verweisen</description>
+  <Required>
+   <RelationFilter relationName="wirdAusgeglichenDurchABE" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_AnpflanzungBindungErhaltungType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+ 
+ <!-- BP_TextAbschnitt -->
+ <Rule class="BP_TextAbschnitt">
+  <description>Das Attribut rechtscharakter ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="rechtscharakter" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!--  BP_FlaechenobjektType -->
+ <Rule superclassType="BP_FlaechenobjektType">
+  <description>flaechenschluss ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="BP_FlaechenobjektType" id="4.1.4.2">
+  <description>Das Attribut position darf nur mit Flächengeometrie (Einzelfläche oder Menge von Flächen) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="BP_FlaechenobjektType" id="4.1.4.1">
+  <description>Wenn das Attribut ebene != 0 ist, muss flaechenschluss == false sein</description>
+  <If>
+   <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="NOT_EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_Geometrieobjekt -->
+ <Rule superclassType="BP_GeometrieobjektType" id="4.1.5.2">
+  <description>Wenn das Objekt mit flächenhaftem Raumbezug gebildet ist muss das Attribut  flaechenschluss belegt sein</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule superclassType="BP_GeometrieobjektType" id="4.1.5.1">
+  <description>Wenn das Attribut ebene != 0 ist, muss bei vorliegender Flächengeometrie das Attribut  flaechenschluss == false sein</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="NOT_EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!--  BP_FlaechenschlussobjektType -->
+ <Rule superclassType="BP_FlaechenschlussobjektType" id="4.1.7.1">
+  <description>Wenn das Attribut ebene == 0  ist oder unbelegt ist, muss flaechenschluss auf true gesetzt werden</description>
+  <If>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue op="EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!--  BP_Linienobjekt -->
+ <Rule superclassType="BP_LinienobjektType" id="4.1.8.1">
+  <description>Das Attribut position darf nur mit Liniengeometrie (Einzellinie oder Menge von Linien) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyLine"/>
+  </Required>
+ </Rule>
+
+ <!--  BP_PunktobjektType -->
+ <Rule superclassType="BP_PunktobjektType" id="4.1.9.1">
+  <description>Das Attribut position darf nur mit Punktgeometrie (Einzelpunkt oder Menge von Punkten) belegt werden</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyPoint"/>
+  </Required>
+ </Rule>
+
+ <!--  BP_UeberlagerungsobjektType -->
+ <Rule superclassType="BP_UeberlagerungsobjektType" id="4.1.6.1">
+  <description>Das Attribut flaechenschluss muss auf false gesetzt sein</description>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_BaugebietsTeilFlaeche -->
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.1">
+  <description>Die Relation abweichungText darf nur auf Instanzen der Klasse BP_TextAbschnitt verweisen</description>
+  <Required>
+   <RelationFilter relationName="abweichungText" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_TextAbschnittType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.4">
+  <description>Wenn das Attribut abweichendeBauweise belegt ist, muss bauweise unbelegt sein oder den Wert 3000 haben</description>
+  <If>
+   <AttributeFilter attributeName="abweichendeBauweise" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="bauweise" minOccurs="0" maxOccurs="1">
+    <AttributeValue>3000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.2">
+  <description>Wenn besondereArtDerBaulNutzung den Wert 1000, 1100, 1200 oder 1300 hat, muss allgArtDerBaulNutzung unbelegt sein oder den Wert 1000 haben</description>
+  <If>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1000</AttributeValue>
+    <AttributeValue>1100</AttributeValue>
+    <AttributeValue>1200</AttributeValue>
+    <AttributeValue>1300</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>1000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.2">
+  <description>Wenn besondereArtDerBaulNutzung den Wert 1400, 1500, 1550 oder 1600 hat, muss allgArtDerBaulNutzung unbelegt sein oder den Wert 2000 haben</description>
+  <If>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1400</AttributeValue>
+    <AttributeValue>1500</AttributeValue>
+    <AttributeValue>1550</AttributeValue>
+    <AttributeValue>1600</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>2000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.2">
+  <description>Wenn besondereArtDerBaulNutzung den Wert 1700 oder 1800 hat, muss allgArtDerBaulNutzung unbelegt sein oder den Wert 3000 haben</description>
+  <If>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1700</AttributeValue>
+    <AttributeValue>1800</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>3000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.2">
+  <description>Wenn besondereArtDerBaulNutzung den Wert 2000, 2100, 3000 oder 4000 hat, muss allgArtDerBaulNutzung unbelegt sein oder den Wert 4000 haben</description>
+  <If>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>2000</AttributeValue>
+    <AttributeValue>2100</AttributeValue>
+    <AttributeValue>3000</AttributeValue>
+    <AttributeValue>4000</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="allgArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>4000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.3">
+  <description>Wenn das Attribut sondernutzung den Wert 1000, 1100, 1200, 1300 oder 1400 hat, muss besondereArtDerBaulNutzung unbelegt sein oder den Wert 2000 haben </description>
+  <If>
+   <AttributeFilter attributeName="sondernutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1000</AttributeValue>
+    <AttributeValue>1100</AttributeValue>
+    <AttributeValue>1200</AttributeValue>
+    <AttributeValue>1300</AttributeValue>
+    <AttributeValue>1400</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>2000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.3">
+  <description>Wenn das Attribut sondernutzung den Wert 1500, 1600, 16000, 16001, 16002, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900  oder 9999 hat, muss besondereArtDerBaulNutzung unbelegt sein oder den Wert 2100 haben </description>
+  <If>
+   <AttributeFilter attributeName="sondernutzung" minOccurs="1" maxOccurs="1">
+    <AttributeValue>1500</AttributeValue>
+    <AttributeValue>1600</AttributeValue>
+    <AttributeValue>16001</AttributeValue>
+    <AttributeValue>16002</AttributeValue>
+    <AttributeValue>1700</AttributeValue>
+    <AttributeValue>1800</AttributeValue>
+    <AttributeValue>1900</AttributeValue>
+    <AttributeValue>2000</AttributeValue>
+    <AttributeValue>2100</AttributeValue>
+    <AttributeValue>2200</AttributeValue>
+    <AttributeValue>2300</AttributeValue>
+    <AttributeValue>23000</AttributeValue>
+    <AttributeValue>2400</AttributeValue>
+    <AttributeValue>2500</AttributeValue>
+    <AttributeValue>2600</AttributeValue>
+    <AttributeValue>2700</AttributeValue>
+    <AttributeValue>2720</AttributeValue>
+    <AttributeValue>2800</AttributeValue>
+    <AttributeValue>2900</AttributeValue>
+    <AttributeValue>9999</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="besondereArtDerBaulNutzung" minOccurs="0" maxOccurs="1">
+    <AttributeValue>2100</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.5">
+  <description>Wenn das Attribut detaillierteArtDer belegt ist, muss mindestens auch eins der Attribute allgArtDerBaulNutzung, besondereArtDerBaulNutzung  oder sondernutzung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteArtDerBaulNutzung" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <GroupFilter combination="OR">
+    <AttributeName>allgArtDerBaulNutzung</AttributeName>
+    <AttributeName>besondereArtDerBaulNutzung</AttributeName>
+    <AttributeName>sondernutzung</AttributeName>
+   </GroupFilter>
+  </Required>
+ </Rule>
+
+ <!-- Maß der baulichen Nutzung -->
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GF" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GFZ</AttributeName>
+    <AttributeName>GFZmin</AttributeName>
+    <AttributeName>GFZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GF</AttributeName>
+    <AttributeName>GFmin</AttributeName>
+    <AttributeName>GFmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BMZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BM" minOccurs="0" maxOccurs="0"/>   
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+  <AttributeFilter attributeName="BM" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BMZ" minOccurs="0" maxOccurs="0"/>  
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GR" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GRZ</AttributeName>
+    <AttributeName>GRZmin</AttributeName>
+    <AttributeName>GRZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GR</AttributeName>
+    <AttributeName>GRmin</AttributeName>
+    <AttributeName>GRmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Z" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="Zmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZU" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="ZUmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <!-- Gestaltung Baugebiet  -->
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	DNmin
+-	DNmin und DNmax
+-	DN
+-	DNzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="DNmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	DNmin
+-	DNmin und DNmax
+-	DN
+-	DNzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="DNmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="DNmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	DNmin
+-	DNmin und DNmax
+-	DN
+-	DNzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="DN" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="DNmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	DNmin
+-	DNmin und DNmax
+-	DN
+-	DNzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required combination="AND">
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.3.2">
+  <description>Wenn das Attribut detaillierteDachform belegt ist, muss auch das Attribut dachform belegt sein.</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteDachform" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteDachform" attributeName2="dachform" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_UeberbaubareGrundstuecksFlaeche -->
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.5.2.1">
+  <description>Die Relation baugrenze darf nur auf Instanzen der Klasse BP_Baugrenze verweisen</description>
+  <Required>
+   <RelationFilter relationName="baugrenze" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_BauGrenzeType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.5.2.2">
+  <description>Die Relation baulinie darf nur auf Instanzen der Klasse BP_Baulinie verweisen</description>
+  <Required>
+   <RelationFilter relationName="baulinie" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_BauLinieType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.5.2.3">
+  <If>
+   <AttributeFilter attributeName="abweichendeBauweise" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="bauweise" minOccurs="0" maxOccurs="1">
+    <AttributeValue>3000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GF" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GFZ</AttributeName>
+    <AttributeName>GFZmin</AttributeName>
+    <AttributeName>GFZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GF</AttributeName>
+    <AttributeName>GFmin</AttributeName>
+    <AttributeName>GFmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BMZ" minOccurs="1" maxOccurs="1"/> 
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BM" minOccurs="0" maxOccurs="0"/>  
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BM" minOccurs="1" maxOccurs="1"/>    
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BMZ" minOccurs="0" maxOccurs="0"/>   
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GR" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GRZ</AttributeName>
+    <AttributeName>GRZmin</AttributeName>
+    <AttributeName>GRZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GR</AttributeName>
+    <AttributeName>GRmin</AttributeName>
+    <AttributeName>GRmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Z" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZU" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <!-- Gestaltung Baugebiet  -->
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+   -	DNmin
+   -	DNmin und DNmax
+   -	DN
+   -	DNzwingend
+  </description>
+  <If>
+   <AttributeFilter attributeName="DNmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+  
+  <Required combination="AND">
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+   -	DNmin
+   -	DNmin und DNmax
+   -	DN
+   -	DNzwingend
+  </description>
+  <If>
+   <AttributeFilter attributeName="DNmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+  
+  <Required combination="AND">
+   <AttributeFilter attributeName="DNmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+   -	DNmin
+   -	DNmin und DNmax
+   -	DN
+   -	DNzwingend
+  </description>
+  <If>
+   <AttributeFilter attributeName="DN" minOccurs="1" maxOccurs="1"/>
+  </If>
+  
+  <Required combination="AND">
+   <AttributeFilter attributeName="DNmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+   -	DNmin
+   -	DNmin und DNmax
+   -	DN
+   -	DNzwingend
+  </description>
+  <If>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="1" maxOccurs="1"/>
+  </If>
+  
+  <Required combination="AND">
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_UeberbaubareGrundstuecksFlaeche" id="4.3.2">
+  <description>Wenn das Attribut detaillierteDachform belegt ist, muss auch das Attribut dachform belegt sein.</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteDachform" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="dachform" minOccurs="1" maxOccurs="unbound"/>
+  </Required>
+ </Rule>
+  
+
+ <!-- BP_BesondererNutzungszweckFlaeche -->
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.5.3.1">
+  <description>Wenn das Attribut abweichendeBauweise belegt ist, muss bauweise unbelegt sein oder den Wert 3000 haben</description>
+  <If>
+   <AttributeFilter attributeName="abweichendeBauweise" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="bauweise" minOccurs="0" maxOccurs="1">
+    <AttributeValue>3000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ 
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GF" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden.</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GFZ</AttributeName>
+    <AttributeName>GFZmin</AttributeName>
+    <AttributeName>GFZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden.</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GF</AttributeName>
+    <AttributeName>GFmin</AttributeName>
+    <AttributeName>GFmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden.</description>
+  <If>
+   <AttributeFilter attributeName="BMZ" minOccurs="1" maxOccurs="1"/> 
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BM" minOccurs="0" maxOccurs="0"/>  
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden.</description>
+  <If>
+   <AttributeFilter attributeName="BM" minOccurs="1" maxOccurs="1"/>  
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BMZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GR" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden.</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GRZ</AttributeName>
+    <AttributeName>GRZmin</AttributeName>
+    <AttributeName>GRZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden.</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GR</AttributeName>
+    <AttributeName>GRmin</AttributeName>
+    <AttributeName>GRmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Z" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZU" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <!-- Gestaltung Baugebiet  -->
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	DNmin
+-	DNmin und DNmax
+-	DN
+-	DNzwingend
+</description>
+
+  <If>
+   <AttributeFilter attributeName="DNmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	DNmin
+-	DNmin und DNmax
+-	DN
+-	DNzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="DNmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="DNmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	DNmin
+-	DNmin und DNmax
+-	DN
+-	DNzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="DN" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="DNmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	DNmin
+-	DNmin und DNmax
+-	DN
+-	DNzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_BesondererNutzungszweckFlaeche" id="4.3.2">
+  <description>Wenn das Attribut detaillierteDachform belegt ist, muss auch das Attribut dachform belegt sein.</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteDachform" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="dachform" minOccurs="1" maxOccurs="unbound"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_SpezielleBauweise -->
+ <Rule class="BP_SpezielleBauweise" id="4.5.10.1">
+  <description>Wenn das Attribut sonstTyp belegt ist, muss typ unbelegt sein oder den Wert 9999 (Sonstiges) haben.</description>
+  <If>
+   <AttributeFilter attributeName="sonstTyp" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="0" maxOccurs="1">
+    <AttributeValue>9999></AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_NebenanlagenFlaeche -->
+ <Rule class="BP_NebenanlagenFlaeche" id="4.5.13.3">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso oft belegt werden</description>
+  <If>
+    <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>   
+  </If>        
+  <Required>
+    <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+</Rule>
+
+ <!-- BP_GemeinschaftsanlagenFlaeche -->
+ <Rule class="BP_GemeinschaftsanlagenFlaeche" id="4.5.14.3">
+  <description>Die Relation eigentümer darf nur auf Instanzen der Klasse BP_BaugebietsTeilFlaeche verweisen</description>
+  <Required>
+   <RelationFilter relationName="eigentuemer" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_BaugebietsTeilFlaecheType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinschaftsanlagenFlaeche" id="4.5.14.4">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso oft belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+
+
+ <!-- BP_GemeinschaftsanlagenZuordnung -->
+ <Rule class="BP_GemeinschaftsanlagenZuordnung" id="4.5.15.1">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryRestriction="OnlyArea" geometryPropertyName="position"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_GemeinbedarfsFlaeche --> 
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.7.1.6">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.7.1.7">
+  <description>Wenn das Attribut abweichendeBauweise belegt ist, muss bauweise unbelegt sein oder den Wert 3000 haben</description>
+  <If>
+   <AttributeFilter attributeName="abweichendeBauweise" minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="bauweise" minOccurs="0" maxOccurs="1">
+    <AttributeValue>3000</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+<!-- Maß der baulichen Nutzung -->
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GF" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden.</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GFZ</AttributeName>
+    <AttributeName>GFZmin</AttributeName>
+    <AttributeName>GFZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden.</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GF</AttributeName>
+    <AttributeName>GFmin</AttributeName>
+    <AttributeName>GFmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden.</description>
+  <If>
+   <AttributeFilter attributeName="BMZ" minOccurs="1" maxOccurs="1"/>  
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BM" minOccurs="0" maxOccurs="0"/>  
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden.</description>
+  <If>
+   <AttributeFilter attributeName="BM" minOccurs="1" maxOccurs="1"/>   
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BMZ" minOccurs="0" maxOccurs="0"/> 
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GR" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden.</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GRZ</AttributeName>
+    <AttributeName>GRZmin</AttributeName>
+    <AttributeName>GRZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GR</AttributeName>
+    <AttributeName>GRmin</AttributeName>
+    <AttributeName>GRmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Z" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZU" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <!-- Gestaltung Baugebiet  -->
+ <Rule class="BP_BaugebietsTeilFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+   -	DNmin
+   -	DNmin und DNmax
+   -	DN
+   -	DNzwingend
+  </description>
+  <If>
+   <AttributeFilter attributeName="DNmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+  
+  <Required combination="AND">
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+   -	DNmin
+   -	DNmin und DNmax
+   -	DN
+   -	DNzwingend
+  </description>
+  <If>
+   <AttributeFilter attributeName="DNmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+  
+  <Required combination="AND">
+   <AttributeFilter attributeName="DNmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+   -	DNmin
+   -	DNmin und DNmax
+   -	DN
+   -	DNzwingend
+  </description>
+  <If>
+   <AttributeFilter attributeName="DN" minOccurs="1" maxOccurs="1"/>
+  </If>
+  
+  <Required combination="AND">
+   <AttributeFilter attributeName="DNmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.3.1">
+  <description>Die Attribute DNmin, DNmax, DN und DNzwingend dürfen nur in folgenden Kombinationen belegt werden:
+   -	DNmin
+   -	DNmin und DNmax
+   -	DN
+   -	DNzwingend
+  </description>
+  <If>
+   <AttributeFilter attributeName="DNzwingend" minOccurs="1" maxOccurs="1"/>
+  </If>
+  
+  <Required combination="AND">
+   <AttributeFilter attributeName="DN" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="DNmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_GemeinbedarfsFlaeche" id="4.3.2">
+  <description>Wenn das Attribut detaillierteDachform belegt ist, muss auch das Attribut dachform belegt sein.</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteDachform" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteDachform" attributeName2="dachform" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_SpielSportanlagenFlaeche -->
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.7.2.3">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule> 
+
+<!-- Maß der baulichen Nutzung -->
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GF" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GFZ</AttributeName>
+    <AttributeName>GFZmin</AttributeName>
+    <AttributeName>GFZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GF</AttributeName>
+    <AttributeName>GFmin</AttributeName>
+    <AttributeName>GFmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BMZ" minOccurs="1" maxOccurs="1"/>  
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BM" minOccurs="0" maxOccurs="0"/> 
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BM" minOccurs="1" maxOccurs="1"/>    
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BMZ" minOccurs="0" maxOccurs="0"/> 
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GR" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GRZ</AttributeName>
+    <AttributeName>GRZmin</AttributeName>
+    <AttributeName>GRZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GR</AttributeName>
+    <AttributeName>GRmin</AttributeName>
+    <AttributeName>GRmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Z" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_SpielSportanlagenFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZU" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_WaldFlaeche -->
+ <Rule class="BP_WaldFlaeche" id="4.8.1.3">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_Landwirtschaft  -->
+ <Rule class="BP_Landwirtschaft" id="4.8.2.3">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_Landwirtschaft" id="4.8.2.4">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist,  muss das Attribut flaechenschluss den Wert true haben</description>
+  <If combination="AND">
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue>0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_GruenFlaeche -->
+ <Rule class="BP_GruenFlaeche" id="4.8.3.6">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_SchutzPflegeEntwicklungsMassnahme -->
+ <!-- BP_AusgleichsFlaeche -->
+ <!-- BP_SchutzPflegeEntwicklungsFlaeche -->
+
+ <!-- BP_AusgleichsMassnahme -->
+ <Rule class="BP_AusgleichsMassnahme" id="4.9.5.4">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_AnpflanzungBindungErhaltung -->
+ <Rule class="BP_AnpflanzungBindungErhaltung" id="4.9.6.1">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_Immissionsschutz -->
+ <Rule class="BP_Immissionsschutz" id="4.10.2.1">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_Immissionsschutz" id="4.10.2.2">
+  <description>Wenn das Attribut detaillierteTechnVorkehrung belegt ist, muss auch das Attri-but technVorkehrung belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteTechnVorkehrung " minOccurs="1" maxOccurs="1"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="technVorkehrung " minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_VerEntsorgung-->
+ <Rule class="BP_VerEntsorgung" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GF" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GFZ</AttributeName>
+    <AttributeName>GFZmin</AttributeName>
+    <AttributeName>GFZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GF</AttributeName>
+    <AttributeName>GFmin</AttributeName>
+    <AttributeName>GFmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BMZ" minOccurs="1" maxOccurs="1"/>  
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BM" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BM" minOccurs="1" maxOccurs="1"/>   
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BMZ" minOccurs="0" maxOccurs="0"/>  
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_VerEntsorgung" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GR" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GRZ</AttributeName>
+    <AttributeName>GRZmin</AttributeName>
+    <AttributeName>GRZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GR</AttributeName>
+    <AttributeName>GRmin</AttributeName>
+    <AttributeName>GRmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Z" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZU" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerEntsorgung" id="4.11.1.6">
+  <description>Wenn das Attribut detaillierteZweckbestimmung ein- oder mehrfach belegt ist, muss auch das Attribut zweckbestimmung mindestens genauso häufig belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="unbound"/>
+  </If>
+  <Required>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual"/>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_VerEntsorgung" id="4.11.1.7">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert und ebene == 0 ist, muss das Attribut flaechenschluss den Wert true haben</description>
+  <If combination="AND">
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+   <AttributeFilter attributeName="ebene" minOccurs="0" maxOccurs="1">
+    <AttributeValue op="EQ">0</AttributeValue>
+   </AttributeFilter>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">true</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_StrassenVerkehrsFlaeche -->
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.1">
+  <description> Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+	GFZmin und GFZmax
+-	GFZ</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GF" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GFZ</AttributeName>
+    <AttributeName>GFZmin</AttributeName>
+    <AttributeName>GFZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GF</AttributeName>
+    <AttributeName>GFmin</AttributeName>
+    <AttributeName>GFmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BMZ" minOccurs="1" maxOccurs="1"/>  
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BM" minOccurs="0" maxOccurs="0"/>  
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BM" minOccurs="1" maxOccurs="1"/>    
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BMZ" minOccurs="0" maxOccurs="0"/>  
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GR" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GRZ</AttributeName>
+    <AttributeName>GRZmin</AttributeName>
+    <AttributeName>GRZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GR</AttributeName>
+    <AttributeName>GRmin</AttributeName>
+    <AttributeName>GRmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Z" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZU" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_StrassenVerkehrsFlaeche" id="4.12.1.1">
+  <description>Über die Relation begrenzungslinie dürfen nur Instanzen der Klasse BP_StrassenbegrenzungsLinie referiert werden</description>
+  <Required>
+   <RelationFilter relationName="begrenzungslinie" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_StrassenbegrenzungsLinieType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_VerkehrsflaecheBesondererZweckbestimmung -->
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.1">
+  <description>Die Attribute GFZmin, GFZmax und GFZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GFZmin und GFZmax
+-	GFZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GFZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GFmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.2">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nur in folgenden Kombinationen belegt werden:
+-	GFmin und GFmax
+-	GF
+</description>
+  <If>
+   <AttributeFilter attributeName="GF" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GFZ</AttributeName>
+    <AttributeName>GFZmin</AttributeName>
+    <AttributeName>GFZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GF" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.3">
+  <description>Die Attribute GFmin, GFmax und GF dürfen nicht gleichzeitig mit den Attributen GFZmin, GFZmax und GFZ belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GF</AttributeName>
+    <AttributeName>GFmin</AttributeName>
+    <AttributeName>GFmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GFZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GFZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BMZ" minOccurs="1" maxOccurs="1"/>  
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BM" minOccurs="0" maxOccurs="0"/>  
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.6">
+  <description>Das Attribut BMZ darf nicht gleichzeitig mit dem Attribut BM belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="BM" minOccurs="1" maxOccurs="1"/>    
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="BMZ" minOccurs="0" maxOccurs="0"/> 
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.7">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nur in folgenden Kombinationen belegt werden:
+-	GRZmin und GRZmax
+-	GRZ
+</description>
+  <If>
+   <AttributeFilter attributeName="GRZ" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GRmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.8">
+  <description>Die Attribute GRmin, GRmax und GR dürfen nur in folgenden Kombinationen belegt werden:
+-	GRmin und GRmax
+-	GR
+</description>
+  <If>
+   <AttributeFilter attributeName="GR" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GRZ</AttributeName>
+    <AttributeName>GRZmin</AttributeName>
+    <AttributeName>GRZmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GR" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.9">
+  <description>Die Attribute GRZmin, GRZmax und GRZ dürfen nicht gleichzeitig mit den Attributen GRmin, GRmax und GR belegt werden</description>
+  <If>
+   <GroupFilter combination="OR">
+    <AttributeName>GR</AttributeName>
+    <AttributeName>GRmin</AttributeName>
+    <AttributeName>GRmax</AttributeName>
+   </GroupFilter>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="GRZ" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="GRZmax" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Zmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="Z" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.10">
+  <description>Die Attribute Zmin, Zmax, Z und Zzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	Zmin und Zmax
+-	Z
+-	Zzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="Z" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="Zmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="Zzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZUmax" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="1" maxOccurs="1"/>
+   <AttributeFilter attributeName="ZU" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.2.11">
+  <description>Die Attribute ZUmin, ZUmax, ZU und ZUzwingend dürfen nur in folgenden Kombinationen belegt werden:
+-	ZUmin und ZUmax
+-	ZU
+-	ZUzwingend
+</description>
+  <If>
+   <AttributeFilter attributeName="ZU" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="ZUmin" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUmax" minOccurs="0" maxOccurs="0"/>
+   <AttributeFilter attributeName="ZUzwingend" minOccurs="0" maxOccurs="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.12.2.1">
+  <description>Über die Relation begrenzungslinie dürfen nur Instanzen der Klasse BP_StrassenbegrenzungsLinie referiert werden</description>
+  <Required>
+   <RelationFilter relationName="begrenzungslinie" minOccurs="0" maxOccurs="unbound">
+    <GmlType>BP_StrassenbegrenzungsLinieType</GmlType>
+   </RelationFilter>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_VerkehrsflaecheBesondererZweckbestimmung" id="4.12.2.2">
+  <description>Wenn das Attribut detaillierteZweckbestimmung belegt ist, muss auch das Attribut zweckbestimmung belegt sein</description>
+  <If>
+   <AttributeCardinalityFilter attributeName1="detaillierteZweckbestimmung" attributeName2="zweckbestimmung" compareRel="greaterEqual" />
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_Strassenkoerper -->
+ <Rule class="BP_Strassenkoerper" id="4.12.3.1">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue>false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ <Rule class="BP_Strassenkoerper">
+  <description>Das Attribut typ ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="typ" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+ 
+ <!-- BP_EinfahrtPunkt -->
+ 
+ 
+ <!-- BP_TechnischeMassnahmenFlaeche -->
+ <Rule class="BP_TechnischeMassnahmenFlaeche">
+  <description>Das ATtribut zweckbestimmung ist ein Pflichtattribut</description>
+  <Required>
+   <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_GewaesserFlaeche -->
+ <Rule class="BP_GewaesserFlaeche" id="4.13.1.1">
+  <description>Wenn das Attribut detaillierteZweckbestimmung belegt ist, muss auch das Attribut zweckbestimmung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_WasserwirtschaftsFlaeche -->
+ <Rule class="BP_WasserwirtschaftsFlaeche" id="4.13.2.1">
+  <description>Wenn das Attribut detaillierteZweckbestimmung belegt ist, muss auch das Attribut zweckbestimmung belegt sein</description>
+  <If>
+   <AttributeFilter attributeName="detaillierteZweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="zweckbestimmung" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_GenerischesObjekt -->
+
+
+ <!-- BP_UnverbindlicheVormerkung -->
+ <Rule class="BP_UnverbindlicheVormerkung" id="4.14.2.1">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+ 
+ <!-- BP_Wegerecht -->
+ <Rule class="BP_Wegerecht" id="4.14.2.1">
+  <description>Wenn das Geometrie-Attribut position eine Flächengeometrie referiert, muss das Attribut flaechenschluss den Wert false haben</description>
+  <If>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="OnlyArea"/>
+  </If>
+  <Required>
+   <AttributeFilter attributeName="flaechenschluss" minOccurs="1" maxOccurs="1">
+    <AttributeValue op="EQ">false</AttributeValue>
+   </AttributeFilter>
+  </Required>
+ </Rule>
+
+ <!-- BP_AbstandsMass -->
+ <Rule class="BP_AbstandsMass" id="4.14.3.1">
+  <description>Die Attribute startWinkel und endWinkel dürfen nur gemeinsam belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="startWinkel" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="endWinkel" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_AbstandsMass" id="4.14.3.1">
+  <description>Die Attribute startWinkel und endWinkel dürfen nur gemeinsam belegt werden</description>
+  <If>
+   <AttributeFilter attributeName="endWinkel" minOccurs="1" maxOccurs="1"/>
+  </If>
+
+  <Required>
+   <AttributeFilter attributeName="startWinkel" minOccurs="1" maxOccurs="1"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_AbstandsMass" id="4.14.3.2">
+  <description>Das Geometrie-Attribut position darf nicht auf eine Flächengeometrie referieren</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="NoArea"/>
+  </Required>
+ </Rule>
+
+ <!-- BP_KennzeichnungsFlaeche -->
+ 
+
+ <!-- BP_TextlicheFestsetzungsFlaeche -->
+ <Rule class="BP_TextlicheFestsetzungsFlaeche" id="4.14.6.1">
+  <description>Die Relation refTextInhalt muss mindestens einmal belegt sein</description>
+  <Required>
+   <RelationFilter relationName="refTextInhalt" minOccurs="1" maxOccurs="unbound"/>
+  </Required>
+ </Rule>
+
+<!-- BP_HoehenMass -->
+ <Rule class="BP_HoehenMass" id="4.14.7.1">
+  <description>Das komplexe Attribut hoehenangabe (XP_Hoehenangabe) muss genau einmal belegt sein</description>
+  <Required>
+   <RelationFilter relationName="hoehenangabe"  minOccurs="1" maxOccurs="1" attributNameInRelatedObject="bezugspunkt" minOccursProperty="0" maxOccursProperty="0"/>
+   <RelationFilter relationName="hoehenangabe" minOccurs="1" maxOccurs="1" attributNameInRelatedObject="abweichenderBezugspunkt" minOccursProperty="0" maxOccursProperty="0"/>
+  </Required>
+ </Rule>
+
+ <Rule class="BP_HoehenMass" id="4.14.7.2">
+  <description>Das Geometrie-Attribut position darf nicht auf eine Flächengeometrie referieren</description>
+  <Required>
+   <GeometryFilter geometryPropertyName="position" geometryRestriction="NoArea"/>
+  </Required>
+ </Rule>
+
+</Profil>

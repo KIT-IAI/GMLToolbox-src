@@ -1,0 +1,76 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 16.06.2020 09:44:56-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_SO_Gelaendemorphologie">
+  <gml:description>Das Landschaftsbild prägende Geländestruktur</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gelaendemorphologie</gml:identifier>
+  <gml:name>xplan:SO_Gelaendemorphologie</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gelaendemorphologie_artDerFestlegung">
+      <gml:description>Klassifikation der Geländestruktur</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gelaendemorphologie:attribute:artDerFestlegung</gml:identifier>
+      <gml:name>xplan:artDerFestlegung</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gelaendemorphologie_artDerFestlegung_SO_KlassifizGelaendemorphologie_1000">
+          <gml:description>Terrassenkante</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gelaendemorphologie:artDerFestlegung:SO_KlassifizGelaendemorphologie:1000</gml:identifier>
+          <gml:name>Terassenkante</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gelaendemorphologie_artDerFestlegung_SO_KlassifizGelaendemorphologie_1100">
+          <gml:description>Trockengefallene Gewässerrinne</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gelaendemorphologie:artDerFestlegung:SO_KlassifizGelaendemorphologie:1100</gml:identifier>
+          <gml:name>Rinne</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gelaendemorphologie_artDerFestlegung_SO_KlassifizGelaendemorphologie_1200">
+          <gml:description>Ehemalige Fluss- und Bachmäander</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gelaendemorphologie:artDerFestlegung:SO_KlassifizGelaendemorphologie:1200</gml:identifier>
+          <gml:name>EhemMaeander</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_SO_Gelaendemorphologie_artDerFestlegung_SO_KlassifizGelaendemorphologie_9999">
+          <gml:description>Sonstige Struktur der Geländemorphologie</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:SO_Gelaendemorphologie:artDerFestlegung:SO_KlassifizGelaendemorphologie:9999</gml:identifier>
+          <gml:name>SonstigeStruktur</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_KlassifizGelaendemorphologie</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gelaendemorphologie_detailArtDerFestlegung">
+      <gml:description>Über eine Codeliste definierte detailliertere Klassifikation der Geländestruktur</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gelaendemorphologie:attribute:detailArtDerFestlegung</gml:identifier>
+      <gml:name>xplan:detailArtDerFestlegung</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>SO_DetailKlassifizGelaendemorphologie</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gelaendemorphologie_name">
+      <gml:description>Informelle Bezeichnung der Struktur</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gelaendemorphologie:attribute:name</gml:identifier>
+      <gml:name>xplan:name</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_SO_Gelaendemorphologie_nummer">
+      <gml:description>Amtliche Bezeichnung / Kennziffer der Struktur</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:SO_Gelaendemorphologie:attribute:nummer</gml:identifier>
+      <gml:name>xplan:nummer</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::CharacterString" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:SO_Geometrieobjekt" />
+</TypeDefinition>

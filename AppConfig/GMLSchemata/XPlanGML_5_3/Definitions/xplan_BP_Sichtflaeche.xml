@@ -1,0 +1,134 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 16.06.2020 09:44:07-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_BP_Sichtflaeche">
+  <gml:description>Flächenhafte Festlegung einer Sichtfläche bzw. eines Sichtdreiecks
+
+In Version 6.0 wird diese Klasse evtl. in der Modellbereich "Sonstige Planwerke" transferiert.</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Sichtflaeche</gml:identifier>
+  <gml:name>xplan:BP_Sichtflaeche</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Sichtflaeche_art">
+      <gml:description>Klassifikation der Einmündung einer untergeordneten auf eine übergeordnete Straße gemäß den "Richtlinien für die Anlage von Stadtstraßen" (TAST 06)</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Sichtflaeche:attribute:art</gml:identifier>
+      <gml:name>xplan:art</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_art_BP_SichtflaecheArt_1000">
+          <gml:description>Haltesichtweite</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:art:BP_SichtflaecheArt:1000</gml:identifier>
+          <gml:name>Haltesichtweite</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_art_BP_SichtflaecheArt_2000">
+          <gml:description>Anfahrsichtfeld</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:art:BP_SichtflaecheArt:2000</gml:identifier>
+          <gml:name>Anfahrsichtfeld</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_art_BP_SichtflaecheArt_3000">
+          <gml:description>Annäherungssichtfeld</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:art:BP_SichtflaecheArt:3000</gml:identifier>
+          <gml:name>Annaeherungssichtfeld</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_art_BP_SichtflaecheArt_4000">
+          <gml:description>Sichtfeld an Überquerungsstellen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:art:BP_SichtflaecheArt:4000</gml:identifier>
+          <gml:name>Ueberquerung</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_art_BP_SichtflaecheArt_9999">
+          <gml:description>Sonstige Sichtfläche</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:art:BP_SichtflaecheArt:9999</gml:identifier>
+          <gml:name>SonstigeSichtflaeche</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_SichtflaecheArt</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Sichtflaeche_knotenpunkt">
+      <gml:description>Klassifikation des Knotenpunktes, dem die Sichtfläche zugeordnet ist</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Sichtflaeche:attribute:knotenpunkt</gml:identifier>
+      <gml:name>xplan:knotenpunkt</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_knotenpunkt_BP_SichtflaecheKnotenpunktTypen_1000">
+          <gml:description>Knotenpunkt Anliegerstraße - Anliegerweg</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:knotenpunkt:BP_SichtflaecheKnotenpunktTypen:1000</gml:identifier>
+          <gml:name>AnlgStr-AnlgWeg</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_knotenpunkt_BP_SichtflaecheKnotenpunktTypen_2000">
+          <gml:description>Knotenpunkt Anliegerstraße - Anliegerstraße</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:knotenpunkt:BP_SichtflaecheKnotenpunktTypen:2000</gml:identifier>
+          <gml:name>AnlgStr-AnlgStr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_knotenpunkt_BP_SichtflaecheKnotenpunktTypen_3000">
+          <gml:description>Knotenpunkt Sammelstraße - Anliegerstraße</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:knotenpunkt:BP_SichtflaecheKnotenpunktTypen:3000</gml:identifier>
+          <gml:name>SammelStr-AnlgStr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_knotenpunkt_BP_SichtflaecheKnotenpunktTypen_4000">
+          <gml:description>Knotenpunkt mit einer Haupt-Sammelstraße</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:knotenpunkt:BP_SichtflaecheKnotenpunktTypen:4000</gml:identifier>
+          <gml:name>HauptSammelStr</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_knotenpunkt_BP_SichtflaecheKnotenpunktTypen_5000">
+          <gml:description>Knotenpunkt mit einer angebaute Hauptverkehrsstraße (Bebauung parallel zur Straße ist vorhanden)</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:knotenpunkt:BP_SichtflaecheKnotenpunktTypen:5000</gml:identifier>
+          <gml:name>HauptVerkStrAngeb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_knotenpunkt_BP_SichtflaecheKnotenpunktTypen_6000">
+          <gml:description>Knotenpunkt mit einer nicht angebaute Hauptverkehrsstraße (Keine Bebauung parallel zur Straße )</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:knotenpunkt:BP_SichtflaecheKnotenpunktTypen:6000</gml:identifier>
+          <gml:name>HauptVerkStrNichtAngeb</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_BP_Sichtflaeche_knotenpunkt_BP_SichtflaecheKnotenpunktTypen_9999">
+          <gml:description>Sonstiger Knotenpunkt</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:BP_Sichtflaeche:knotenpunkt:BP_SichtflaecheKnotenpunktTypen:9999</gml:identifier>
+          <gml:name>SonstigerKnotenpunkt</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>BP_SichtflaecheKnotenpunktTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Sichtflaeche_geschwindigkeit">
+      <gml:description>Zulässige Geschwindigkeit in der übergeordneten Straße, im km/h</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Sichtflaeche:attribute:geschwindigkeit</gml:identifier>
+      <gml:name>xplan:geschwindigkeit</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Measure" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_BP_Sichtflaeche_schenkellaenge">
+      <gml:description>Schenkellänge des Sichtdreiecks gemäß RAST 06</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:BP_Sichtflaeche:attribute:schenkellaenge</gml:identifier>
+      <gml:name>xplan:schenkellaenge</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeRef xlink:href="urn:xplan:element::Length" />
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:BP_Ueberlagerungsobjekt" />
+</TypeDefinition>

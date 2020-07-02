@@ -10,35 +10,12 @@
                 <xs:element name="UomArea" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
                 <xs:element name="UomVolume" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
                 <xs:element name="UomAngle" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-                <!--xs:element name="GlobalRule" type="GlobalRuleType" minOccurs="0" maxOccurs="unbounded"/-->              
+                <xs:element name="UomMeasure" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>     
                 <xs:element name="Rule" type="ProfilRegelType" minOccurs="0" maxOccurs="unbounded"/>         
                 </xs:sequence>
             <xs:attribute name="name" use="required"/>
         </xs:complexType>
-    
-    <!--xs:complexType name="GlobalRuleType">
-        <xs:attribute name="globalRuleId" type="GlobalRuleIdType" use="required"/>
-        <xs:attribute name="globalRuleErrorId" type="xs:string" use="required"/>
-    </xs:complexType-->
-    
-    <!--xs:simpleType name="GlobalRuleIdType">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="EnumCheck"/>
-            <xs:enumeration value="CoordinateReferenceSystemCheck"/>
-            <xs:enumeration value="FlaechenschlussTest"/>
-            <xs:enumeration value="FlaechenTest"/>
-            <xs:enumeration value="UomTest"/>
-            <xs:enumeration value="TestRueckwaertsReferenzenXPObjektToBereich"/>
-            <xs:enumeration value="TestRueckwaertsReferenzenXPObjektToPraesentationsobjekt"/>
-            <xs:enumeration value="TestRueckwaertsReferenzenXPBereichToPraesentationsobjekt"/>
-            <xs:enumeration value="TestRueckwaertsReferenzenBPObjekt"/>
-            <xs:enumeration value="TestRueckwaertsReferenzenFPObjekt"/>
-            <xs:enumeration value="TestRueckwaertsReferenzenLPObjekt"/>
-            <xs:enumeration value="TestRueckwaertsReferenzenRPObjekt"/>
-            <xs:enumeration value="TestRueckwaertsReferenzenSOObjekt"/>
-        </xs:restriction>
-    </xs:simpleType-->
-    
+     
     <!--  Einzelne Regel in einem Profil -->
     <xs:complexType name="ProfilRegelType">
         <xs:sequence>

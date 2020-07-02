@@ -41,6 +41,8 @@ public:
   static std::string getConformityPath( GML_SCHEMA_TYPE typ  );
   static std::string getALKISFunktionenPath();
   static std::string getALKISWeitereFunktionenPath();
+  static std::string getDefaultBuildingParamsPath();
+  static std::string getUsageTypologyPath();
 
   static std::string     getGMLSchemaTypeAsString ( GML_SCHEMA_TYPE typ );
   static GML_SCHEMA_TYPE getGMLSchemaTypeFromString ( std::string typ );

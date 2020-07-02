@@ -1,0 +1,56 @@
+﻿<!--Erzeugt mit KIT (www.kit.edu) UmlToXmlTransformation-Software, Erstellungsdatum: 16.06.2020 09:44:19-->
+<TypeDefinition xmlns="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:def="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Definitions/0.5 ../xsd/ShapeChangeDefinitions.xsd" gml:id="xplan_FP_AnpassungKlimawandel">
+  <gml:description>Anlagen, Einrichtungen und sonstige Maßnahmen, die der Anpassung an den Klimawandel dienen &lt;u&gt;nach §5 Abs.2 Nr.2c BauGB.&lt;/u&gt;</gml:description>
+  <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_AnpassungKlimawandel</gml:identifier>
+  <gml:name>xplan:FP_AnpassungKlimawandel</gml:name>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_AnpassungKlimawandel_massnahme">
+      <gml:description>Klassifikation der Massnahme</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_AnpassungKlimawandel:attribute:massnahme</gml:identifier>
+      <gml:name>xplan:massnahme</gml:name>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_AnpassungKlimawandel_massnahme_FP_MassnahmeKlimawandelTypen_1000">
+          <gml:description>Erhalt vegetationsbestandener Freiflächen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_AnpassungKlimawandel:massnahme:FP_MassnahmeKlimawandelTypen:1000</gml:identifier>
+          <gml:name>ErhaltFreiflaechen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_AnpassungKlimawandel_massnahme_FP_MassnahmeKlimawandelTypen_10000">
+          <gml:description>Erhalt privater Grünflächen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_AnpassungKlimawandel:massnahme:FP_MassnahmeKlimawandelTypen:10000</gml:identifier>
+          <gml:name>ErhaltPrivGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_AnpassungKlimawandel_massnahme_FP_MassnahmeKlimawandelTypen_10001">
+          <gml:description>Erhalt öffentlicher Grünflächen</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_AnpassungKlimawandel:massnahme:FP_MassnahmeKlimawandelTypen:10001</gml:identifier>
+          <gml:name>ErhaltOeffentlGruen</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <gml:dictionaryEntry>
+        <ListedValueDefinition gml:id="xplan_FP_AnpassungKlimawandel_massnahme_FP_MassnahmeKlimawandelTypen_9999">
+          <gml:description>Sonstige Massnahme</gml:description>
+          <gml:identifier codeSpace="urn:xplan">urn:xplan:enum:xplan:FP_AnpassungKlimawandel:massnahme:FP_MassnahmeKlimawandelTypen:9999</gml:identifier>
+          <gml:name>SonstMassnahme</gml:name>
+        </ListedValueDefinition>
+      </gml:dictionaryEntry>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_MassnahmeKlimawandelTypen</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <def:PropertyDefinition gml:id="xplan_FP_AnpassungKlimawandel_detailMassnahme">
+      <gml:description>Detaillierung der durch das Attribut &lt;i&gt;massnahme &lt;/i&gt;festgelegten Maßnahme über eine Codeliste.</gml:description>
+      <gml:identifier codeSpace="urn:xplan">urn:xplan:element:xplan:FP_AnpassungKlimawandel:attribute:detailMassnahme</gml:identifier>
+      <gml:name>xplan:detailMassnahme</gml:name>
+      <def:cardinality>0..1</def:cardinality>
+      <def:valueTypeName>FP_DetailMassnahmeKlimawandel</def:valueTypeName>
+      <def:type>attribute</def:type>
+    </def:PropertyDefinition>
+  </gml:dictionaryEntry>
+  <def:classification>featureType</def:classification>
+  <def:supertypeRef xlink:href="urn:xplan:element:xplan:FP_Geometrieobjekt" />
+</TypeDefinition>

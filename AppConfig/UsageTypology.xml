@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UsageTypology xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="XSD/UsageTypology.xsd">
+    <UsageType usage="Residential" usageProfile="KIT-FZK-Haus" isHeated="true" isCooled="true" isVentilated="true"/>
+    <UsageType usage="Office" usageProfile="StandardprofilBüro" isHeated="true" isCooled="true" isVentilated="true"/>
+    <UsageType usage="Research" usageProfile="Bau-445" isHeated="true" isCooled="true" isVentilated="true"/>
+    <UsageType usage="Education" usageProfile="Bau-445" isHeated="true" isCooled="true" isVentilated="true"/>
+    <UsageType usage="Commercial" usageProfile="Bau-445" isHeated="true" isCooled="true" isVentilated="true"/>
+    <UsageType usage="Storage" usageProfile="Bau-445" isHeated="true" isCooled="true" isVentilated="true"/>
+    <UsageType usage="Other" usageProfile="Bau-445" isHeated="true" isCooled="true" isVentilated="true"/>
+    <UsageType usage="NoHeatingAndCooling" usageProfile="NoHeatingAndCooling" isHeated="false" isCooled="false" isVentilated="false"/>  
+</UsageTypology>
+
+

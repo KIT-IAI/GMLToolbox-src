@@ -11,6 +11,10 @@
 #include "Triangulator.hpp"
 #include "ModeConverter.hpp"
 
+// Declare GLUtesselator as an empty class to get rid of the linker warning (LNK4248)
+class GLUtesselator {};
+
+
 class PolygonGeo;
 class Triangle;
 class GeoPoint;

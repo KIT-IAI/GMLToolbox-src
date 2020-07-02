@@ -200,6 +200,36 @@ void Checking::ValidateModelAgainstXMLSchema( std::string fileName, string profi
 ///////////////////////////////////////////////////////////////////////////////
 void Checking::ValidateModelAgainstSchematronRules( string fileName, string profileName )
 {
+  String ^ schematronTransformationPath;
+  String ^ schematronErrorPath;
+  String ^ inputPath = QuConvert::ToString ( fileName );
+
+
+  if ( profileName != ""  )
+  {
+    schematronTransformationPath = QuConvert::ToString ( m_pFeatures->getGmlSchema()->getSchemaFolder() + "Profile\\" + profileName + "\\Schematron\\ConformanceRules.xsl" );
+    schematronErrorPath          = QuConvert::ToString ( m_pFeatures->getGmlSchema()->getSchemaFolder() + "Profile\\" + profileName + "\\Schematron\\SchematronErrors.xml" );
+  }
+  else
+  {
+    schematronTransformationPath = QuConvert::ToString ( m_pFeatures->getGmlSchema()->getSchemaFolder() + "Schematron\\ConformanceRules.xsl" );
+    schematronErrorPath          = QuConvert::ToString ( m_pFeatures->getGmlSchema()->getSchemaFolder() + "Schematron\\SchematronErrors.xml" );
+  }
+
+
+  try
+  {
+    Xsl::XslCompiledTransform ^ xslTransformer = gcnew Xsl::XslCompiledTransform;
+    xslTransformer->Load( schematronTransformationPath );
+    xslTransformer->Transform( inputPath, schematronErrorPath );
+  }
+  catch ( System::Exception ^ )
+  {
+    return;
+  }
+  analyzeSchematromErrors ( schematronErrorPath );
+
+
 /*
 
   System::Xml::XmlTextReader  ^ pDocumentReader;

@@ -265,51 +265,7 @@
 
 
 	  <!--RULE -->
-   <xsl:template match="bldg:Building | bldg:BuildingPart" priority="4000" mode="M3">
-      <svrl:fired-rule xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                       context="bldg:Building | bldg:BuildingPart"/>
-
-		    <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if (child::bldg:lod0FootPrint/descendant::gml:posList) then                 count(tokenize(child::bldg:lod0FootPrint/descendant::gml:posList/normalize-space(.),'\s+')) mod 3 = 0                 else true()"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="if (child::bldg:lod0FootPrint/descendant::gml:posList) then count(tokenize(child::bldg:lod0FootPrint/descendant::gml:posList/normalize-space(.),'\s+')) mod 3 = 0 else true()">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-get-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-                  <xsl:text/>
-                  <xsl:value-of select="name(.)"/>
-                  <xsl:text/> with id <xsl:text/>
-                  <xsl:value-of select="@gml:id"/>
-                  <xsl:text/> contains an lod0FootPrint with non-3D geometry (number of coordinates in gml:posList element is not a multiple of 3).
-            </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-
-		    <!--ASSERT -->
-      <xsl:choose>
-         <xsl:when test="if (child::bldg:lod0FootPrint/descendant::gml:pos) then                 count(tokenize(child::bldg:lod0FootPrint/descendant::gml:pos/normalize-space(.),'\s+')) = 3                 else true()"/>
-         <xsl:otherwise>
-            <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="if (child::bldg:lod0FootPrint/descendant::gml:pos) then count(tokenize(child::bldg:lod0FootPrint/descendant::gml:pos/normalize-space(.),'\s+')) = 3 else true()">
-               <xsl:attribute name="location">
-                  <xsl:apply-templates select="." mode="schematron-get-full-path"/>
-               </xsl:attribute>
-               <svrl:text>
-                  <xsl:text/>
-                  <xsl:value-of select="name(.)"/>
-                  <xsl:text/> with id <xsl:text/>
-                  <xsl:value-of select="@gml:id"/>
-                  <xsl:text/> contains an lod0FootPrint with non-3D geometry (number of coordinates in gml:pos element is not 3).
-            </svrl:text>
-            </svrl:failed-assert>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="@*|*|comment()|processing-instruction()" mode="M3"/>
-   </xsl:template>
+   
    <xsl:template match="text()" priority="-1" mode="M3"/>
    <xsl:template match="@*|node()" priority="-2" mode="M3">
       <xsl:choose><!--Housekeeping: SAXON warns if attempting to find the attribute

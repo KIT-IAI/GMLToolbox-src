@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="DefaultMaterialParams">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="GeneralParams" type="GeneralParamsType"/>
+                <xs:element name="DefaultUValues" type="DefaultUValuesType"/>
+                <xs:element name="VeryLightMaterialParams" type="MaterialParamsType"/>
+                <xs:element name="LightMaterialParams" type="MaterialParamsType"/>
+                <xs:element name="MediumMaterialParams" type="MaterialParamsType"/>
+                <xs:element name="HeavyMaterialParams" type="MaterialParamsType"/>
+                <xs:element name="InsulationMaterialParams" type="MaterialParamsType"/>
+                <xs:element name="OuterDoorMaterialParams" type="MaterialParamsType"/>
+                <xs:element name="InteriorDoorMaterialParams" type="MaterialParamsType"/>
+                <xs:element name="WindowMaterialParams" type="WindowMaterialParamsType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="GeneralParamsType">
+        <xs:attribute name="defaultFenestrationRatioFassade" type="xs:int" use="required"/>
+        <xs:attribute name="defaultFenestrationRatioRoof" type="xs:int" use="required"/>
+        <xs:attribute name="defaultNetToGrossAreaRatio" type="xs:decimal" use="required"/>
+        <xs:attribute name="defaultBuildingSizeType" type="BuildingSizeTypeValues" use="required"/>
+        <xs:attribute name="defaultConstructionWeight" type="DefaultConstructionWeightType" use="required"/>
+        <xs:attribute name="defaultInfiltrationrate" type="xs:decimal" use="required"/>
+        <xs:attribute name="defaultYearOfConstruction" type="xs:int" use="required"/>
+        <xs:attribute name="defaultStoreyHeight" type="xs:decimal" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="BuildingSizeTypeValues">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Small"/>
+            <xs:enumeration value="Medium"/>
+            <xs:enumeration value="Large"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="DefaultConstructionWeightType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Very leight"/>
+            <xs:enumeration value="Leight"/>
+            <xs:enumeration value="Medium"/>
+            <xs:enumeration value="Heavy"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="MaterialParamsType">
+        <xs:attribute name="lamda" type="xs:decimal" use="optional"/>
+        <xs:attribute name="density" type="xs:decimal" use="required"/>
+        <xs:attribute name="specificHeatCoefficient" type="xs:decimal" use="required"/>
+        <xs:attribute name="thickness" type="xs:decimal" use="optional"/>
+    </xs:complexType>
+    
+    <xs:complexType name="WindowMaterialParamsType">
+        <xs:attribute name="transparency" type="xs:int" use="required"/>
+        <xs:attribute name="glazingRatio" type="xs:int" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="DefaultUValuesType">
+        <xs:attribute name="outerWall" type="xs:decimal" use="required"/>
+        <xs:attribute name="roof" type="xs:decimal" use="required"/>
+        <xs:attribute name="groundplate" type="xs:decimal" use="required"/>
+        <xs:attribute name="window" type="xs:decimal" use="required"/>
+        <xs:attribute name="interiorWall" type="xs:decimal" use="required"/>
+        <xs:attribute name="ceiling" type="xs:decimal" use="required"/>
+        <xs:attribute name="outerDoor" type="xs:decimal" use="required"/>
+        <xs:attribute name="interiorDoor" type="xs:decimal" use="required"/>
+        
+    </xs:complexType>
+
+</xs:schema>

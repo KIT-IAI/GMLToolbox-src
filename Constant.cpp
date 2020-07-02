@@ -536,6 +536,22 @@ std::string Constant::getConformityPath ( GML_SCHEMA_TYPE typ )
    return getSystemFolder() + "AX_Weitere_Gebaeude_Funktionen.csv";
  }
 
+///////////////////////////////////////////////////////////////////////////////
+//  Liefert den Pfadnamen der XML-Datei mit den Standard-Materialparametern  //
+///////////////////////////////////////////////////////////////////////////////
+std::string Constant::getDefaultBuildingParamsPath()
+{
+  return getSystemFolder() + "DefaultBuildingParams.xml";
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//  Liefert den Pfadnamen der XML-Datei mit den Standard-Nutzungsparametern  //
+//  und Angaben zur Interpretation von ALKIS-Funktionscodes                  //
+///////////////////////////////////////////////////////////////////////////////
+std::string Constant::getUsageTypologyPath()
+{
+  return getSystemFolder() + "UsageTypology.xml";
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 //  Liefert den GML-Schema Typ in Textform                                   //

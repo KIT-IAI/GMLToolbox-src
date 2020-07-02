@@ -24,9 +24,10 @@
 						<xs:enumeration value="XPLANGML_3_0"/>
 						<xs:enumeration value="XPLANGML_4_0"/>
 						<xs:enumeration value="XPLANGML_4_1"/>
-					 <xs:enumeration value="XPLANGML_5_0"/>
-					 <xs:enumeration value="XPLANGML_5_1"/>
-					 <xs:enumeration value="XPLANGML_5_2"/>
+					    <xs:enumeration value="XPLANGML_5_0"/>
+					    <xs:enumeration value="XPLANGML_5_1"/>
+				        <xs:enumeration value="XPLANGML_5_2"/>
+						<xs:enumeration value="XPLANGML_5_3"/>
 						<xs:enumeration value="INSPIRE_LU_EXISTING"/>
 						<xs:enumeration value="INSPIRE_LU_PLANNED"/>
 						<xs:enumeration value="NAS_5_1"/>

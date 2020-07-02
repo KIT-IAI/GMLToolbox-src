@@ -1,47 +1,12 @@
-<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
-<svrl:schematron-output xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                        xmlns:sch="http://www.ascc.net/xml/schematron"
-                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
-                        xmlns:gml="http://www.opengis.net/gml"
-                        xmlns:bldg="http://www.opengis.net/citygml/building/2.0"
-                        title=""
-                        schemaVersion="">
-   <svrl:ns-prefix-in-attribute-values uri="http://www.opengis.net/gml" prefix="gml"/>
-   <svrl:ns-prefix-in-attribute-values uri="http://www.opengis.net/citygml/building/2.0" prefix="bldg"/>
-   <svrl:active-pattern id="CO-bldg-BU-001" name="CO-bldg-BU-001"/>
-   <svrl:active-pattern id="CO-bldg-BU-002-1" name="CO-bldg-BU-002-1"/>
-   <svrl:fired-rule context="bldg:Building | bldg:BuildingPart"/>
-   <svrl:active-pattern id="CO-bldg-BU-002-2" name="CO-bldg-BU-002-2"/>
-   <svrl:fired-rule context="bldg:Building | bldg:BuildingPart"/>
-   <svrl:active-pattern id="CO-bldg-BU-003" name="CO-bldg-BU-003"/>
-   <svrl:fired-rule context="bldg:BuildingPart | bldg:Building"/>
-   <svrl:active-pattern id="CO-bldg-BU-004" name="CO-bldg-BU-004"/>
-   <svrl:fired-rule context="bldg:BuildingPart | bldg:Building"/>
-   <svrl:active-pattern id="CO-bldg-BU-005" name="CO-bldg-BU-005"/>
-   <svrl:fired-rule context="bldg:BuildingPart | bldg:Building"/>
-   <svrl:active-pattern id="CO-bldg-BU-006" name="CO-bldg-BU-006"/>
-   <svrl:fired-rule context="bldg:BuildingPart | bldg:Building"/>
-   <svrl:active-pattern id="CO-bldg-BU-007" name="CO-bldg-BU-007"/>
-   <svrl:active-pattern id="CO-bldg-BU-008" name="CO-bldg-BU-008"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:fired-rule context="bldg:RoofSurface |                         bldg:WallSurface |                         bldg:GroundSurface |                         bldg:ClosureSurface |                         bldg:CeilingSurface |                        bldg:InteriorWallSurface |                         bldg:FloorSurface |                         bldg:OuterCeilingSurface |                         bldg:OuterFloorSurface"/>
-   <svrl:active-pattern id="CO-bldg-BU-009" name="CO-bldg-BU-009"/>
-   <svrl:fired-rule context="bldg:BuildingPart | bldg:Building"/>
-   <svrl:active-pattern id="CO-bldg-BU-010" name="CO-bldg-BU-010"/>
-   <svrl:fired-rule context="bldg:BuildingPart | bldg:Building"/>
-   <svrl:active-pattern id="CO-bldg-BU-011" name="CO-bldg-BU-011"/>
-</svrl:schematron-output>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<svrl:schematron-output title="" schemaVersion="" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:iso="http://purl.oclc.org/dsdl/schematron" xmlns:gml="http://www.opengis.net/gml" xmlns:bldg="http://www.opengis.net/citygml/building/2.0">
+  <svrl:ns-prefix-in-attribute-values uri="http://www.opengis.net/gml" prefix="gml" />
+  <svrl:ns-prefix-in-attribute-values uri="http://www.opengis.net/citygml/building/2.0" prefix="bldg" />
+  <svrl:active-pattern id="CO-bldg-BU-001" name="CO-bldg-BU-001" />
+  <svrl:fired-rule context="bldg:BuildingPart" />
+  <svrl:failed-assert test="count(../../self::bldg:Building) = 1" location="/*:CityModel[namespace-uri()='http://www.opengis.net/citygml/2.0'][1]/*:cityObjectMember[namespace-uri()='http://www.opengis.net/citygml/2.0'][1]/*:BuildingPart[namespace-uri()='http://www.opengis.net/citygml/building/2.0'][1]">
+    <svrl:text>bldg:BuildingPart with id GML_7b1a5a6f-ddad-4c3d-a507-3eb9ee0a8e68 has no Building as parent</svrl:text>
+  </svrl:failed-assert>
+  <svrl:active-pattern id="CO-bldg-BU-002-1" name="CO-bldg-BU-002-1" />
+  <svrl:active-pattern id="CO-bldg-BU-002-2" name="CO-bldg-BU-002-2" />
+  <svrl:fired-rule context="bldg:Building | bldg:BuildingPart" />

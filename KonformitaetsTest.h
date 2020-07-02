@@ -140,39 +140,39 @@ using namespace std;
 		/// </summary>
 		void InitializeComponent(void)
 		{
-      this->groupBoxSyntaxChecks = (gcnew System::Windows::Forms::GroupBox());
-      this->checkBoxReferenzen = (gcnew System::Windows::Forms::CheckBox());
-      this->buttonReadProfil = (gcnew System::Windows::Forms::Button());
-      this->buttonSyntaxChecks = (gcnew System::Windows::Forms::Button());
-      this->buttonSyntaxChecksSpezifisch = (gcnew System::Windows::Forms::Button());
-      this->checkBoxSpezSyntaxCheck = (gcnew System::Windows::Forms::CheckBox());
-      this->checkBoxKoordinatenReferenzsystem = (gcnew System::Windows::Forms::CheckBox());
-      this->checkBoxCodelists = (gcnew System::Windows::Forms::CheckBox());
-      this->checkBoxRegeln = (gcnew System::Windows::Forms::CheckBox());
-      this->buttonAbbrechen = (gcnew System::Windows::Forms::Button());
-      this->buttonTest = (gcnew System::Windows::Forms::Button());
-      this->KonformRegelnDialog = (gcnew System::Windows::Forms::OpenFileDialog());
-      this->labelTest = (gcnew System::Windows::Forms::Label());
-      this->progressBarTest = (gcnew System::Windows::Forms::ProgressBar());
-      this->textBoxFehlerAnzahl = (gcnew System::Windows::Forms::TextBox());
-      this->groupBoxModellStatistik = (gcnew System::Windows::Forms::GroupBox());
-      this->radioButtonFullStatistics = (gcnew System::Windows::Forms::RadioButton());
-      this->radioButtonShortStatistics = (gcnew System::Windows::Forms::RadioButton());
-      this->buttonModellStatistik = (gcnew System::Windows::Forms::Button());
-      this->groupBoxSchemaValidierung = (gcnew System::Windows::Forms::GroupBox());
-      this->checkBoxSchematron = (gcnew System::Windows::Forms::CheckBox());
-      this->buttonSchemaValidierung = (gcnew System::Windows::Forms::Button());
-      this->label2 = (gcnew System::Windows::Forms::Label());
-      this->comboBoxProfil = (gcnew System::Windows::Forms::ComboBox());
-      this->groupBoxGeometrieChecks = (gcnew System::Windows::Forms::GroupBox());
-      this->label1 = (gcnew System::Windows::Forms::Label());
-      this->comboBoxAnzeigeGeometriefehler = (gcnew System::Windows::Forms::ComboBox());
-      this->buttonKorrektur = (gcnew System::Windows::Forms::Button());
-      this->buttonCheckParams = (gcnew System::Windows::Forms::Button());
-      this->comboBoxGeometryCheckLevel = (gcnew System::Windows::Forms::ComboBox());
-      this->buttonGeometrieChecks = (gcnew System::Windows::Forms::Button());
-      this->buttonGeometrieChecksSpezifisch = (gcnew System::Windows::Forms::Button());
-      this->checkBoxProtokoll = (gcnew System::Windows::Forms::CheckBox());
+      this->groupBoxSyntaxChecks = ( gcnew System::Windows::Forms::GroupBox() );
+      this->checkBoxReferenzen = ( gcnew System::Windows::Forms::CheckBox() );
+      this->buttonReadProfil = ( gcnew System::Windows::Forms::Button() );
+      this->buttonSyntaxChecks = ( gcnew System::Windows::Forms::Button() );
+      this->buttonSyntaxChecksSpezifisch = ( gcnew System::Windows::Forms::Button() );
+      this->checkBoxSpezSyntaxCheck = ( gcnew System::Windows::Forms::CheckBox() );
+      this->checkBoxKoordinatenReferenzsystem = ( gcnew System::Windows::Forms::CheckBox() );
+      this->checkBoxCodelists = ( gcnew System::Windows::Forms::CheckBox() );
+      this->checkBoxRegeln = ( gcnew System::Windows::Forms::CheckBox() );
+      this->buttonAbbrechen = ( gcnew System::Windows::Forms::Button() );
+      this->buttonTest = ( gcnew System::Windows::Forms::Button() );
+      this->KonformRegelnDialog = ( gcnew System::Windows::Forms::OpenFileDialog() );
+      this->labelTest = ( gcnew System::Windows::Forms::Label() );
+      this->progressBarTest = ( gcnew System::Windows::Forms::ProgressBar() );
+      this->textBoxFehlerAnzahl = ( gcnew System::Windows::Forms::TextBox() );
+      this->groupBoxModellStatistik = ( gcnew System::Windows::Forms::GroupBox() );
+      this->radioButtonFullStatistics = ( gcnew System::Windows::Forms::RadioButton() );
+      this->radioButtonShortStatistics = ( gcnew System::Windows::Forms::RadioButton() );
+      this->buttonModellStatistik = ( gcnew System::Windows::Forms::Button() );
+      this->groupBoxSchemaValidierung = ( gcnew System::Windows::Forms::GroupBox() );
+      this->checkBoxSchematron = ( gcnew System::Windows::Forms::CheckBox() );
+      this->buttonSchemaValidierung = ( gcnew System::Windows::Forms::Button() );
+      this->label2 = ( gcnew System::Windows::Forms::Label() );
+      this->comboBoxProfil = ( gcnew System::Windows::Forms::ComboBox() );
+      this->groupBoxGeometrieChecks = ( gcnew System::Windows::Forms::GroupBox() );
+      this->label1 = ( gcnew System::Windows::Forms::Label() );
+      this->comboBoxAnzeigeGeometriefehler = ( gcnew System::Windows::Forms::ComboBox() );
+      this->buttonKorrektur = ( gcnew System::Windows::Forms::Button() );
+      this->buttonCheckParams = ( gcnew System::Windows::Forms::Button() );
+      this->comboBoxGeometryCheckLevel = ( gcnew System::Windows::Forms::ComboBox() );
+      this->buttonGeometrieChecks = ( gcnew System::Windows::Forms::Button() );
+      this->buttonGeometrieChecksSpezifisch = ( gcnew System::Windows::Forms::Button() );
+      this->checkBoxProtokoll = ( gcnew System::Windows::Forms::CheckBox() );
       this->groupBoxSyntaxChecks->SuspendLayout();
       this->groupBoxModellStatistik->SuspendLayout();
       this->groupBoxSchemaValidierung->SuspendLayout();
@@ -181,21 +181,21 @@ using namespace std;
       // 
       // groupBoxSyntaxChecks
       // 
-      this->groupBoxSyntaxChecks->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-        | System::Windows::Forms::AnchorStyles::Right));
-      this->groupBoxSyntaxChecks->Controls->Add(this->checkBoxReferenzen);
-      this->groupBoxSyntaxChecks->Controls->Add(this->buttonReadProfil);
-      this->groupBoxSyntaxChecks->Controls->Add(this->buttonSyntaxChecks);
-      this->groupBoxSyntaxChecks->Controls->Add(this->buttonSyntaxChecksSpezifisch);
-      this->groupBoxSyntaxChecks->Controls->Add(this->checkBoxSpezSyntaxCheck);
-      this->groupBoxSyntaxChecks->Controls->Add(this->checkBoxKoordinatenReferenzsystem);
-      this->groupBoxSyntaxChecks->Controls->Add(this->checkBoxCodelists);
-      this->groupBoxSyntaxChecks->Controls->Add(this->checkBoxRegeln);
-      this->groupBoxSyntaxChecks->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->groupBoxSyntaxChecks->Location = System::Drawing::Point(8, 190);
+      this->groupBoxSyntaxChecks->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left )
+        | System::Windows::Forms::AnchorStyles::Right ) );
+      this->groupBoxSyntaxChecks->Controls->Add( this->checkBoxReferenzen );
+      this->groupBoxSyntaxChecks->Controls->Add( this->buttonReadProfil );
+      this->groupBoxSyntaxChecks->Controls->Add( this->buttonSyntaxChecks );
+      this->groupBoxSyntaxChecks->Controls->Add( this->buttonSyntaxChecksSpezifisch );
+      this->groupBoxSyntaxChecks->Controls->Add( this->checkBoxSpezSyntaxCheck );
+      this->groupBoxSyntaxChecks->Controls->Add( this->checkBoxKoordinatenReferenzsystem );
+      this->groupBoxSyntaxChecks->Controls->Add( this->checkBoxCodelists );
+      this->groupBoxSyntaxChecks->Controls->Add( this->checkBoxRegeln );
+      this->groupBoxSyntaxChecks->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->groupBoxSyntaxChecks->Location = System::Drawing::Point( 8, 171 );
       this->groupBoxSyntaxChecks->Name = L"groupBoxSyntaxChecks";
-      this->groupBoxSyntaxChecks->Size = System::Drawing::Size(499, 146);
+      this->groupBoxSyntaxChecks->Size = System::Drawing::Size( 499, 133 );
       this->groupBoxSyntaxChecks->TabIndex = 3;
       this->groupBoxSyntaxChecks->TabStop = false;
       this->groupBoxSyntaxChecks->Text = L"Konformitäts-Checks";
@@ -203,60 +203,60 @@ using namespace std;
       // checkBoxReferenzen
       // 
       this->checkBoxReferenzen->AutoSize = true;
-      this->checkBoxReferenzen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->checkBoxReferenzen->Location = System::Drawing::Point(339, 28);
+      this->checkBoxReferenzen->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->checkBoxReferenzen->Location = System::Drawing::Point( 339, 28 );
       this->checkBoxReferenzen->Name = L"checkBoxReferenzen";
-      this->checkBoxReferenzen->Size = System::Drawing::Size(81, 17);
+      this->checkBoxReferenzen->Size = System::Drawing::Size( 81, 17 );
       this->checkBoxReferenzen->TabIndex = 23;
       this->checkBoxReferenzen->Text = L"Referenzen";
       this->checkBoxReferenzen->UseVisualStyleBackColor = true;
       // 
       // buttonReadProfil
       // 
-      this->buttonReadProfil->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->buttonReadProfil->Location = System::Drawing::Point(157, 117);
+      this->buttonReadProfil->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->buttonReadProfil->Location = System::Drawing::Point( 10, 101 );
       this->buttonReadProfil->Name = L"buttonReadProfil";
-      this->buttonReadProfil->Size = System::Drawing::Size(158, 23);
+      this->buttonReadProfil->Size = System::Drawing::Size( 158, 23 );
       this->buttonReadProfil->TabIndex = 22;
       this->buttonReadProfil->Text = L"Weitere Konformitätsregeln";
       this->buttonReadProfil->UseVisualStyleBackColor = true;
-      this->buttonReadProfil->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonReadProfil_Click);
+      this->buttonReadProfil->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonReadProfil_Click );
       // 
       // buttonSyntaxChecks
       // 
-      this->buttonSyntaxChecks->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-      this->buttonSyntaxChecks->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->buttonSyntaxChecks->Location = System::Drawing::Point(382, 53);
+      this->buttonSyntaxChecks->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right ) );
+      this->buttonSyntaxChecks->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->buttonSyntaxChecks->Location = System::Drawing::Point( 382, 53 );
       this->buttonSyntaxChecks->Name = L"buttonSyntaxChecks";
-      this->buttonSyntaxChecks->Size = System::Drawing::Size(93, 23);
+      this->buttonSyntaxChecks->Size = System::Drawing::Size( 93, 23 );
       this->buttonSyntaxChecks->TabIndex = 8;
       this->buttonSyntaxChecks->Text = L"Ausführen";
       this->buttonSyntaxChecks->UseVisualStyleBackColor = true;
-      this->buttonSyntaxChecks->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonSyntaxChecks_Click);
+      this->buttonSyntaxChecks->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonSyntaxChecks_Click );
       // 
       // buttonSyntaxChecksSpezifisch
       // 
-      this->buttonSyntaxChecksSpezifisch->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->buttonSyntaxChecksSpezifisch->Location = System::Drawing::Point(172, 81);
+      this->buttonSyntaxChecksSpezifisch->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->buttonSyntaxChecksSpezifisch->Location = System::Drawing::Point( 172, 72 );
       this->buttonSyntaxChecksSpezifisch->Name = L"buttonSyntaxChecksSpezifisch";
-      this->buttonSyntaxChecksSpezifisch->Size = System::Drawing::Size(75, 23);
+      this->buttonSyntaxChecksSpezifisch->Size = System::Drawing::Size( 75, 23 );
       this->buttonSyntaxChecksSpezifisch->TabIndex = 7;
       this->buttonSyntaxChecksSpezifisch->Text = L"Details";
       this->buttonSyntaxChecksSpezifisch->UseVisualStyleBackColor = true;
-      this->buttonSyntaxChecksSpezifisch->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonSyntaxChecksSpezifisch_Click);
+      this->buttonSyntaxChecksSpezifisch->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonSyntaxChecksSpezifisch_Click );
       // 
       // checkBoxSpezSyntaxCheck
       // 
       this->checkBoxSpezSyntaxCheck->AutoSize = true;
-      this->checkBoxSpezSyntaxCheck->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->checkBoxSpezSyntaxCheck->Location = System::Drawing::Point(6, 85);
+      this->checkBoxSpezSyntaxCheck->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->checkBoxSpezSyntaxCheck->Location = System::Drawing::Point( 6, 70 );
       this->checkBoxSpezSyntaxCheck->Name = L"checkBoxSpezSyntaxCheck";
-      this->checkBoxSpezSyntaxCheck->Size = System::Drawing::Size(156, 17);
+      this->checkBoxSpezSyntaxCheck->Size = System::Drawing::Size( 156, 17 );
       this->checkBoxSpezSyntaxCheck->TabIndex = 6;
       this->checkBoxSpezSyntaxCheck->Text = L"Schemaspezifische Checks";
       this->checkBoxSpezSyntaxCheck->UseVisualStyleBackColor = true;
@@ -264,11 +264,11 @@ using namespace std;
       // checkBoxKoordinatenReferenzsystem
       // 
       this->checkBoxKoordinatenReferenzsystem->AutoSize = true;
-      this->checkBoxKoordinatenReferenzsystem->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->checkBoxKoordinatenReferenzsystem->Location = System::Drawing::Point(140, 30);
+      this->checkBoxKoordinatenReferenzsystem->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->checkBoxKoordinatenReferenzsystem->Location = System::Drawing::Point( 140, 30 );
       this->checkBoxKoordinatenReferenzsystem->Name = L"checkBoxKoordinatenReferenzsystem";
-      this->checkBoxKoordinatenReferenzsystem->Size = System::Drawing::Size(161, 17);
+      this->checkBoxKoordinatenReferenzsystem->Size = System::Drawing::Size( 161, 17 );
       this->checkBoxKoordinatenReferenzsystem->TabIndex = 4;
       this->checkBoxKoordinatenReferenzsystem->Text = L"Koordinaten-Referenzsystem";
       this->checkBoxKoordinatenReferenzsystem->UseVisualStyleBackColor = true;
@@ -276,45 +276,45 @@ using namespace std;
       // checkBoxCodelists
       // 
       this->checkBoxCodelists->AutoSize = true;
-      this->checkBoxCodelists->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->checkBoxCodelists->Location = System::Drawing::Point(7, 53);
+      this->checkBoxCodelists->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->checkBoxCodelists->Location = System::Drawing::Point( 7, 48 );
       this->checkBoxCodelists->Name = L"checkBoxCodelists";
-      this->checkBoxCodelists->Size = System::Drawing::Size(114, 17);
+      this->checkBoxCodelists->Size = System::Drawing::Size( 114, 17 );
       this->checkBoxCodelists->TabIndex = 3;
       this->checkBoxCodelists->Text = L"Externe Codelisten";
       this->checkBoxCodelists->UseVisualStyleBackColor = true;
       // 
       // checkBoxRegeln
       // 
-      this->checkBoxRegeln->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-        static_cast<System::Byte>(0)));
-      this->checkBoxRegeln->Location = System::Drawing::Point(6, 22);
+      this->checkBoxRegeln->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+        static_cast<System::Byte>( 0 ) ) );
+      this->checkBoxRegeln->Location = System::Drawing::Point( 6, 22 );
       this->checkBoxRegeln->Name = L"checkBoxRegeln";
-      this->checkBoxRegeln->Size = System::Drawing::Size(128, 24);
+      this->checkBoxRegeln->Size = System::Drawing::Size( 128, 24 );
       this->checkBoxRegeln->TabIndex = 2;
       this->checkBoxRegeln->Text = L"Regel-Konformität";
       // 
       // buttonAbbrechen
       // 
-      this->buttonAbbrechen->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+      this->buttonAbbrechen->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right ) );
       this->buttonAbbrechen->DialogResult = System::Windows::Forms::DialogResult::OK;
-      this->buttonAbbrechen->Location = System::Drawing::Point(436, 580);
+      this->buttonAbbrechen->Location = System::Drawing::Point( 436, 507 );
       this->buttonAbbrechen->Name = L"buttonAbbrechen";
-      this->buttonAbbrechen->Size = System::Drawing::Size(75, 39);
+      this->buttonAbbrechen->Size = System::Drawing::Size( 75, 39 );
       this->buttonAbbrechen->TabIndex = 8;
       this->buttonAbbrechen->Text = L"Beenden";
-      this->buttonAbbrechen->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonAbbrechen_Click);
+      this->buttonAbbrechen->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonAbbrechen_Click );
       // 
       // buttonTest
       // 
-      this->buttonTest->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
-      this->buttonTest->Location = System::Drawing::Point(17, 580);
+      this->buttonTest->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left ) );
+      this->buttonTest->Location = System::Drawing::Point( 17, 507 );
       this->buttonTest->Name = L"buttonTest";
-      this->buttonTest->Size = System::Drawing::Size(75, 39);
+      this->buttonTest->Size = System::Drawing::Size( 75, 39 );
       this->buttonTest->TabIndex = 9;
       this->buttonTest->Text = L"Gesamter Modelltest";
-      this->buttonTest->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonTest_Click);
+      this->buttonTest->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonTest_Click );
       // 
       // KonformRegelnDialog
       // 
@@ -325,45 +325,45 @@ using namespace std;
       // labelTest
       // 
       this->labelTest->AutoSize = true;
-      this->labelTest->Location = System::Drawing::Point(8, 217);
+      this->labelTest->Location = System::Drawing::Point( 8, 217 );
       this->labelTest->Name = L"labelTest";
-      this->labelTest->Size = System::Drawing::Size(0, 13);
+      this->labelTest->Size = System::Drawing::Size( 0, 13 );
       this->labelTest->TabIndex = 13;
       // 
       // progressBarTest
       // 
-      this->progressBarTest->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-        | System::Windows::Forms::AnchorStyles::Right));
-      this->progressBarTest->Location = System::Drawing::Point(6, 484);
+      this->progressBarTest->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left )
+        | System::Windows::Forms::AnchorStyles::Right ) );
+      this->progressBarTest->Location = System::Drawing::Point( 6, 426 );
       this->progressBarTest->Name = L"progressBarTest";
-      this->progressBarTest->Size = System::Drawing::Size(489, 23);
+      this->progressBarTest->Size = System::Drawing::Size( 501, 23 );
       this->progressBarTest->TabIndex = 14;
       // 
       // textBoxFehlerAnzahl
       // 
-      this->textBoxFehlerAnzahl->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-        | System::Windows::Forms::AnchorStyles::Left)
-        | System::Windows::Forms::AnchorStyles::Right));
-      this->textBoxFehlerAnzahl->Location = System::Drawing::Point(4, 517);
+      this->textBoxFehlerAnzahl->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom )
+        | System::Windows::Forms::AnchorStyles::Left )
+        | System::Windows::Forms::AnchorStyles::Right ) );
+      this->textBoxFehlerAnzahl->Location = System::Drawing::Point( 4, 458 );
       this->textBoxFehlerAnzahl->Multiline = true;
       this->textBoxFehlerAnzahl->Name = L"textBoxFehlerAnzahl";
       this->textBoxFehlerAnzahl->ReadOnly = true;
       this->textBoxFehlerAnzahl->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-      this->textBoxFehlerAnzahl->Size = System::Drawing::Size(503, 45);
+      this->textBoxFehlerAnzahl->Size = System::Drawing::Size( 503, 40 );
       this->textBoxFehlerAnzahl->TabIndex = 15;
       // 
       // groupBoxModellStatistik
       // 
-      this->groupBoxModellStatistik->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-        | System::Windows::Forms::AnchorStyles::Right));
-      this->groupBoxModellStatistik->Controls->Add(this->radioButtonFullStatistics);
-      this->groupBoxModellStatistik->Controls->Add(this->radioButtonShortStatistics);
-      this->groupBoxModellStatistik->Controls->Add(this->buttonModellStatistik);
-      this->groupBoxModellStatistik->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->groupBoxModellStatistik->Location = System::Drawing::Point(8, 13);
+      this->groupBoxModellStatistik->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left )
+        | System::Windows::Forms::AnchorStyles::Right ) );
+      this->groupBoxModellStatistik->Controls->Add( this->radioButtonFullStatistics );
+      this->groupBoxModellStatistik->Controls->Add( this->radioButtonShortStatistics );
+      this->groupBoxModellStatistik->Controls->Add( this->buttonModellStatistik );
+      this->groupBoxModellStatistik->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->groupBoxModellStatistik->Location = System::Drawing::Point( 8, 13 );
       this->groupBoxModellStatistik->Name = L"groupBoxModellStatistik";
-      this->groupBoxModellStatistik->Size = System::Drawing::Size(499, 54);
+      this->groupBoxModellStatistik->Size = System::Drawing::Size( 499, 54 );
       this->groupBoxModellStatistik->TabIndex = 18;
       this->groupBoxModellStatistik->TabStop = false;
       this->groupBoxModellStatistik->Text = L"Modell-Statistik";
@@ -371,11 +371,11 @@ using namespace std;
       // radioButtonFullStatistics
       // 
       this->radioButtonFullStatistics->AutoSize = true;
-      this->radioButtonFullStatistics->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->radioButtonFullStatistics->Location = System::Drawing::Point(113, 25);
+      this->radioButtonFullStatistics->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->radioButtonFullStatistics->Location = System::Drawing::Point( 113, 25 );
       this->radioButtonFullStatistics->Name = L"radioButtonFullStatistics";
-      this->radioButtonFullStatistics->Size = System::Drawing::Size(76, 17);
+      this->radioButtonFullStatistics->Size = System::Drawing::Size( 76, 17 );
       this->radioButtonFullStatistics->TabIndex = 17;
       this->radioButtonFullStatistics->TabStop = true;
       this->radioButtonFullStatistics->Text = L"Vollständig";
@@ -384,11 +384,11 @@ using namespace std;
       // radioButtonShortStatistics
       // 
       this->radioButtonShortStatistics->AutoSize = true;
-      this->radioButtonShortStatistics->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->radioButtonShortStatistics->Location = System::Drawing::Point(13, 24);
+      this->radioButtonShortStatistics->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->radioButtonShortStatistics->Location = System::Drawing::Point( 13, 24 );
       this->radioButtonShortStatistics->Name = L"radioButtonShortStatistics";
-      this->radioButtonShortStatistics->Size = System::Drawing::Size(70, 17);
+      this->radioButtonShortStatistics->Size = System::Drawing::Size( 70, 17 );
       this->radioButtonShortStatistics->TabIndex = 16;
       this->radioButtonShortStatistics->TabStop = true;
       this->radioButtonShortStatistics->Text = L"Übersicht";
@@ -396,28 +396,28 @@ using namespace std;
       // 
       // buttonModellStatistik
       // 
-      this->buttonModellStatistik->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-      this->buttonModellStatistik->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->buttonModellStatistik->Location = System::Drawing::Point(382, 19);
+      this->buttonModellStatistik->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right ) );
+      this->buttonModellStatistik->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->buttonModellStatistik->Location = System::Drawing::Point( 382, 19 );
       this->buttonModellStatistik->Name = L"buttonModellStatistik";
-      this->buttonModellStatistik->Size = System::Drawing::Size(93, 23);
+      this->buttonModellStatistik->Size = System::Drawing::Size( 93, 23 );
       this->buttonModellStatistik->TabIndex = 15;
       this->buttonModellStatistik->Text = L"Generieren";
       this->buttonModellStatistik->UseVisualStyleBackColor = true;
-      this->buttonModellStatistik->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonModellStatistik_Click);
+      this->buttonModellStatistik->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonModellStatistik_Click );
       // 
       // groupBoxSchemaValidierung
       // 
-      this->groupBoxSchemaValidierung->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-        | System::Windows::Forms::AnchorStyles::Right));
-      this->groupBoxSchemaValidierung->Controls->Add(this->checkBoxSchematron);
-      this->groupBoxSchemaValidierung->Controls->Add(this->buttonSchemaValidierung);
-      this->groupBoxSchemaValidierung->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->groupBoxSchemaValidierung->Location = System::Drawing::Point(6, 117);
+      this->groupBoxSchemaValidierung->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left )
+        | System::Windows::Forms::AnchorStyles::Right ) );
+      this->groupBoxSchemaValidierung->Controls->Add( this->checkBoxSchematron );
+      this->groupBoxSchemaValidierung->Controls->Add( this->buttonSchemaValidierung );
+      this->groupBoxSchemaValidierung->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->groupBoxSchemaValidierung->Location = System::Drawing::Point( 6, 108 );
       this->groupBoxSchemaValidierung->Name = L"groupBoxSchemaValidierung";
-      this->groupBoxSchemaValidierung->Size = System::Drawing::Size(501, 67);
+      this->groupBoxSchemaValidierung->Size = System::Drawing::Size( 501, 54 );
       this->groupBoxSchemaValidierung->TabIndex = 19;
       this->groupBoxSchemaValidierung->TabStop = false;
       this->groupBoxSchemaValidierung->Text = L"Validierung";
@@ -425,65 +425,65 @@ using namespace std;
       // checkBoxSchematron
       // 
       this->checkBoxSchematron->AutoSize = true;
-      this->checkBoxSchematron->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->checkBoxSchematron->Location = System::Drawing::Point(10, 25);
+      this->checkBoxSchematron->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->checkBoxSchematron->Location = System::Drawing::Point( 10, 25 );
       this->checkBoxSchematron->Name = L"checkBoxSchematron";
-      this->checkBoxSchematron->Size = System::Drawing::Size(120, 17);
+      this->checkBoxSchematron->Size = System::Drawing::Size( 120, 17 );
       this->checkBoxSchematron->TabIndex = 2;
       this->checkBoxSchematron->Text = L"Schematron-Regeln";
       this->checkBoxSchematron->UseVisualStyleBackColor = true;
       // 
       // buttonSchemaValidierung
       // 
-      this->buttonSchemaValidierung->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-      this->buttonSchemaValidierung->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->buttonSchemaValidierung->Location = System::Drawing::Point(382, 19);
+      this->buttonSchemaValidierung->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right ) );
+      this->buttonSchemaValidierung->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->buttonSchemaValidierung->Location = System::Drawing::Point( 382, 19 );
       this->buttonSchemaValidierung->Name = L"buttonSchemaValidierung";
-      this->buttonSchemaValidierung->Size = System::Drawing::Size(93, 23);
+      this->buttonSchemaValidierung->Size = System::Drawing::Size( 93, 23 );
       this->buttonSchemaValidierung->TabIndex = 1;
       this->buttonSchemaValidierung->Text = L"Ausführen";
       this->buttonSchemaValidierung->UseVisualStyleBackColor = true;
-      this->buttonSchemaValidierung->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonSchemaValidierung_Click);
+      this->buttonSchemaValidierung->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonSchemaValidierung_Click );
       // 
       // label2
       // 
       this->label2->AutoSize = true;
-      this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-        static_cast<System::Byte>(0)));
-      this->label2->Location = System::Drawing::Point(13, 90);
+      this->label2->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+        static_cast<System::Byte>( 0 ) ) );
+      this->label2->Location = System::Drawing::Point( 13, 84 );
       this->label2->Name = L"label2";
-      this->label2->Size = System::Drawing::Size(134, 13);
+      this->label2->Size = System::Drawing::Size( 134, 13 );
       this->label2->TabIndex = 3;
       this->label2->Text = L"Berücksichtigtes Profil";
       // 
       // comboBoxProfil
       // 
-      this->comboBoxProfil->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-        | System::Windows::Forms::AnchorStyles::Right));
+      this->comboBoxProfil->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left )
+        | System::Windows::Forms::AnchorStyles::Right ) );
       this->comboBoxProfil->FormattingEnabled = true;
-      this->comboBoxProfil->Location = System::Drawing::Point(180, 90);
+      this->comboBoxProfil->Location = System::Drawing::Point( 180, 81 );
       this->comboBoxProfil->Name = L"comboBoxProfil";
-      this->comboBoxProfil->Size = System::Drawing::Size(313, 21);
+      this->comboBoxProfil->Size = System::Drawing::Size( 313, 21 );
       this->comboBoxProfil->TabIndex = 2;
       // 
       // groupBoxGeometrieChecks
       // 
-      this->groupBoxGeometrieChecks->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-        | System::Windows::Forms::AnchorStyles::Right));
-      this->groupBoxGeometrieChecks->Controls->Add(this->label1);
-      this->groupBoxGeometrieChecks->Controls->Add(this->comboBoxAnzeigeGeometriefehler);
-      this->groupBoxGeometrieChecks->Controls->Add(this->buttonKorrektur);
-      this->groupBoxGeometrieChecks->Controls->Add(this->buttonCheckParams);
-      this->groupBoxGeometrieChecks->Controls->Add(this->comboBoxGeometryCheckLevel);
-      this->groupBoxGeometrieChecks->Controls->Add(this->buttonGeometrieChecks);
-      this->groupBoxGeometrieChecks->Controls->Add(this->buttonGeometrieChecksSpezifisch);
-      this->groupBoxGeometrieChecks->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->groupBoxGeometrieChecks->Location = System::Drawing::Point(10, 342);
+      this->groupBoxGeometrieChecks->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left )
+        | System::Windows::Forms::AnchorStyles::Right ) );
+      this->groupBoxGeometrieChecks->Controls->Add( this->label1 );
+      this->groupBoxGeometrieChecks->Controls->Add( this->comboBoxAnzeigeGeometriefehler );
+      this->groupBoxGeometrieChecks->Controls->Add( this->buttonKorrektur );
+      this->groupBoxGeometrieChecks->Controls->Add( this->buttonCheckParams );
+      this->groupBoxGeometrieChecks->Controls->Add( this->comboBoxGeometryCheckLevel );
+      this->groupBoxGeometrieChecks->Controls->Add( this->buttonGeometrieChecks );
+      this->groupBoxGeometrieChecks->Controls->Add( this->buttonGeometrieChecksSpezifisch );
+      this->groupBoxGeometrieChecks->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->groupBoxGeometrieChecks->Location = System::Drawing::Point( 10, 312 );
       this->groupBoxGeometrieChecks->Name = L"groupBoxGeometrieChecks";
-      this->groupBoxGeometrieChecks->Size = System::Drawing::Size(499, 136);
+      this->groupBoxGeometrieChecks->Size = System::Drawing::Size( 499, 105 );
       this->groupBoxGeometrieChecks->TabIndex = 20;
       this->groupBoxGeometrieChecks->TabStop = false;
       this->groupBoxGeometrieChecks->Text = L"Geometrie-Checks";
@@ -491,124 +491,125 @@ using namespace std;
       // label1
       // 
       this->label1->AutoSize = true;
-      this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-        static_cast<System::Byte>(0)));
-      this->label1->Location = System::Drawing::Point(170, 115);
+      this->label1->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+        static_cast<System::Byte>( 0 ) ) );
+      this->label1->Location = System::Drawing::Point( 185, 73 );
       this->label1->Name = L"label1";
-      this->label1->Size = System::Drawing::Size(122, 13);
+      this->label1->Size = System::Drawing::Size( 122, 13 );
       this->label1->TabIndex = 21;
       this->label1->Text = L"Geometriefehler-Anzeige";
       // 
       // comboBoxAnzeigeGeometriefehler
       // 
       this->comboBoxAnzeigeGeometriefehler->FormattingEnabled = true;
-      this->comboBoxAnzeigeGeometriefehler->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Nach Fehlertypen", L"Nach Base-Features" });
-      this->comboBoxAnzeigeGeometriefehler->Location = System::Drawing::Point(194, 92);
+      this->comboBoxAnzeigeGeometriefehler->Items->AddRange( gcnew cli::array< System::Object^  >( 2 ) { L"Nach Fehlertypen", L"Nach Base-Features" } );
+      this->comboBoxAnzeigeGeometriefehler->Location = System::Drawing::Point( 187, 46 );
       this->comboBoxAnzeigeGeometriefehler->Name = L"comboBoxAnzeigeGeometriefehler";
-      this->comboBoxAnzeigeGeometriefehler->Size = System::Drawing::Size(146, 21);
+      this->comboBoxAnzeigeGeometriefehler->Size = System::Drawing::Size( 146, 21 );
       this->comboBoxAnzeigeGeometriefehler->TabIndex = 20;
       // 
       // buttonKorrektur
       // 
-      this->buttonKorrektur->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-      this->buttonKorrektur->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-        static_cast<System::Byte>(0)));
-      this->buttonKorrektur->Location = System::Drawing::Point(393, 107);
+      this->buttonKorrektur->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right ) );
+      this->buttonKorrektur->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+        static_cast<System::Byte>( 0 ) ) );
+      this->buttonKorrektur->Location = System::Drawing::Point( 393, 66 );
       this->buttonKorrektur->Name = L"buttonKorrektur";
-      this->buttonKorrektur->Size = System::Drawing::Size(75, 23);
+      this->buttonKorrektur->Size = System::Drawing::Size( 75, 23 );
       this->buttonKorrektur->TabIndex = 19;
       this->buttonKorrektur->Text = L"Korrektur";
       this->buttonKorrektur->UseVisualStyleBackColor = true;
-      this->buttonKorrektur->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonKorrektur_Click);
+      this->buttonKorrektur->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonKorrektur_Click );
       // 
       // buttonCheckParams
       // 
-      this->buttonCheckParams->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->buttonCheckParams->Location = System::Drawing::Point(7, 107);
+      this->buttonCheckParams->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->buttonCheckParams->Location = System::Drawing::Point( 7, 78 );
       this->buttonCheckParams->Name = L"buttonCheckParams";
-      this->buttonCheckParams->Size = System::Drawing::Size(75, 23);
+      this->buttonCheckParams->Size = System::Drawing::Size( 75, 23 );
       this->buttonCheckParams->TabIndex = 18;
       this->buttonCheckParams->Text = L"Parameter";
       this->buttonCheckParams->UseVisualStyleBackColor = true;
-      this->buttonCheckParams->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonCheckParams_Click);
+      this->buttonCheckParams->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonCheckParams_Click );
       // 
       // comboBoxGeometryCheckLevel
       // 
       this->comboBoxGeometryCheckLevel->FormattingEnabled = true;
-      this->comboBoxGeometryCheckLevel->Items->AddRange(gcnew cli::array< System::Object^  >(6) {
+      this->comboBoxGeometryCheckLevel->Items->AddRange( gcnew cli::array< System::Object^  >( 6 )
+      {
         L"Keine", L"Basis-Tests", L"Fortgeschrittene Tests, Planarität",
           L"Topologie-Tests", L"Schemaspezifische Tests", L"Alle"
-      });
-      this->comboBoxGeometryCheckLevel->Location = System::Drawing::Point(2, 31);
+      } );
+      this->comboBoxGeometryCheckLevel->Location = System::Drawing::Point( 2, 19 );
       this->comboBoxGeometryCheckLevel->Name = L"comboBoxGeometryCheckLevel";
-      this->comboBoxGeometryCheckLevel->Size = System::Drawing::Size(158, 21);
+      this->comboBoxGeometryCheckLevel->Size = System::Drawing::Size( 158, 21 );
       this->comboBoxGeometryCheckLevel->TabIndex = 16;
-      this->comboBoxGeometryCheckLevel->SelectedIndexChanged += gcnew System::EventHandler(this, &KonformitaetsTest::comboBoxGeometryCheckLevel_SelectedIndexChanged);
+      this->comboBoxGeometryCheckLevel->SelectedIndexChanged += gcnew System::EventHandler( this, &KonformitaetsTest::comboBoxGeometryCheckLevel_SelectedIndexChanged );
       // 
       // buttonGeometrieChecks
       // 
-      this->buttonGeometrieChecks->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-      this->buttonGeometrieChecks->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->buttonGeometrieChecks->Location = System::Drawing::Point(382, 43);
+      this->buttonGeometrieChecks->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right ) );
+      this->buttonGeometrieChecks->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->buttonGeometrieChecks->Location = System::Drawing::Point( 382, 28 );
       this->buttonGeometrieChecks->Name = L"buttonGeometrieChecks";
-      this->buttonGeometrieChecks->Size = System::Drawing::Size(93, 23);
+      this->buttonGeometrieChecks->Size = System::Drawing::Size( 93, 23 );
       this->buttonGeometrieChecks->TabIndex = 15;
       this->buttonGeometrieChecks->Text = L"Ausführen";
       this->buttonGeometrieChecks->UseVisualStyleBackColor = true;
-      this->buttonGeometrieChecks->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonGeometrieChecks_Click);
+      this->buttonGeometrieChecks->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonGeometrieChecks_Click );
       // 
       // buttonGeometrieChecksSpezifisch
       // 
-      this->buttonGeometrieChecksSpezifisch->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
-        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-      this->buttonGeometrieChecksSpezifisch->Location = System::Drawing::Point(4, 63);
+      this->buttonGeometrieChecksSpezifisch->Font = ( gcnew System::Drawing::Font( L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular,
+        System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>( 0 ) ) );
+      this->buttonGeometrieChecksSpezifisch->Location = System::Drawing::Point( 4, 46 );
       this->buttonGeometrieChecksSpezifisch->Name = L"buttonGeometrieChecksSpezifisch";
-      this->buttonGeometrieChecksSpezifisch->Size = System::Drawing::Size(156, 23);
+      this->buttonGeometrieChecksSpezifisch->Size = System::Drawing::Size( 156, 23 );
       this->buttonGeometrieChecksSpezifisch->TabIndex = 14;
       this->buttonGeometrieChecksSpezifisch->Text = L"Schemaspezifische Tests";
       this->buttonGeometrieChecksSpezifisch->UseVisualStyleBackColor = true;
-      this->buttonGeometrieChecksSpezifisch->Click += gcnew System::EventHandler(this, &KonformitaetsTest::buttonGeometrieChecksSpezifisch_Click);
+      this->buttonGeometrieChecksSpezifisch->Click += gcnew System::EventHandler( this, &KonformitaetsTest::buttonGeometrieChecksSpezifisch_Click );
       // 
       // checkBoxProtokoll
       // 
-      this->checkBoxProtokoll->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+      this->checkBoxProtokoll->Anchor = static_cast<System::Windows::Forms::AnchorStyles>( ( System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left ) );
       this->checkBoxProtokoll->AutoSize = true;
-      this->checkBoxProtokoll->Location = System::Drawing::Point(116, 592);
+      this->checkBoxProtokoll->Location = System::Drawing::Point( 116, 519 );
       this->checkBoxProtokoll->Name = L"checkBoxProtokoll";
-      this->checkBoxProtokoll->Size = System::Drawing::Size(139, 17);
+      this->checkBoxProtokoll->Size = System::Drawing::Size( 139, 17 );
       this->checkBoxProtokoll->TabIndex = 21;
       this->checkBoxProtokoll->Text = L"XML-Protokoll erzeugen";
       this->checkBoxProtokoll->UseVisualStyleBackColor = true;
       // 
       // KonformitaetsTest
       // 
-      this->AutoScaleBaseSize = System::Drawing::Size(5, 13);
-      this->ClientSize = System::Drawing::Size(531, 643);
-      this->Controls->Add(this->label2);
-      this->Controls->Add(this->checkBoxProtokoll);
-      this->Controls->Add(this->comboBoxProfil);
-      this->Controls->Add(this->groupBoxGeometrieChecks);
-      this->Controls->Add(this->groupBoxSchemaValidierung);
-      this->Controls->Add(this->groupBoxModellStatistik);
-      this->Controls->Add(this->textBoxFehlerAnzahl);
-      this->Controls->Add(this->progressBarTest);
-      this->Controls->Add(this->labelTest);
-      this->Controls->Add(this->buttonTest);
-      this->Controls->Add(this->buttonAbbrechen);
-      this->Controls->Add(this->groupBoxSyntaxChecks);
+      this->AutoScaleBaseSize = System::Drawing::Size( 5, 13 );
+      this->ClientSize = System::Drawing::Size( 531, 570 );
+      this->Controls->Add( this->label2 );
+      this->Controls->Add( this->checkBoxProtokoll );
+      this->Controls->Add( this->comboBoxProfil );
+      this->Controls->Add( this->groupBoxGeometrieChecks );
+      this->Controls->Add( this->groupBoxSchemaValidierung );
+      this->Controls->Add( this->groupBoxModellStatistik );
+      this->Controls->Add( this->textBoxFehlerAnzahl );
+      this->Controls->Add( this->progressBarTest );
+      this->Controls->Add( this->labelTest );
+      this->Controls->Add( this->buttonTest );
+      this->Controls->Add( this->buttonAbbrechen );
+      this->Controls->Add( this->groupBoxSyntaxChecks );
       this->Name = L"KonformitaetsTest";
       this->Text = L"Prüfung von GML-Daten";
-      this->groupBoxSyntaxChecks->ResumeLayout(false);
+      this->groupBoxSyntaxChecks->ResumeLayout( false );
       this->groupBoxSyntaxChecks->PerformLayout();
-      this->groupBoxModellStatistik->ResumeLayout(false);
+      this->groupBoxModellStatistik->ResumeLayout( false );
       this->groupBoxModellStatistik->PerformLayout();
-      this->groupBoxSchemaValidierung->ResumeLayout(false);
+      this->groupBoxSchemaValidierung->ResumeLayout( false );
       this->groupBoxSchemaValidierung->PerformLayout();
-      this->groupBoxGeometrieChecks->ResumeLayout(false);
+      this->groupBoxGeometrieChecks->ResumeLayout( false );
       this->groupBoxGeometrieChecks->PerformLayout();
-      this->ResumeLayout(false);
+      this->ResumeLayout( false );
       this->PerformLayout();
 
     }

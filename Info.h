@@ -46,11 +46,11 @@ using namespace System::Drawing;
 			textBoxHaftungsAusschluss->Text = text;
 
 			text = "Kontakt:\r\n\r\n";
-			text = String::Concat ( text, "     Dr. Joachim Benner\r\n" );
+			text = String::Concat ( text, "     Krl-Heinz Häfele\r\n" );
 			text = String::Concat ( text, "     Karlsruher Institut für Technologie (KIT)\r\n" );
 			text = String::Concat ( text, "     Institut für Automation und Angewandte Informatik\r\n" );
-			text = String::Concat ( text, "     Tel.: 0721-608 22534\r\n" );
-			text = String::Concat ( text, "     EMail: Joachim.Benner@kit.edu" );
+			text = String::Concat ( text, "     Tel.: 0721-608 25745\r\n" );
+			text = String::Concat ( text, "     EMail: karl-heinz.haefele@kit.edu" );
 
 			textBoxKontakt->Text = text;
 		}
@@ -117,7 +117,7 @@ using namespace System::Drawing;
       // pictureBoxFZKLogo
       // 
       this->pictureBoxFZKLogo->Image = ( cli::safe_cast<System::Drawing::Image^>( resources->GetObject( L"pictureBoxFZKLogo.Image" ) ) );
-      this->pictureBoxFZKLogo->Location = System::Drawing::Point( 258, 268 );
+      this->pictureBoxFZKLogo->Location = System::Drawing::Point( 258, 253 );
       this->pictureBoxFZKLogo->Name = L"pictureBoxFZKLogo";
       this->pictureBoxFZKLogo->Size = System::Drawing::Size( 97, 87 );
       this->pictureBoxFZKLogo->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
@@ -170,7 +170,7 @@ using namespace System::Drawing;
         static_cast<System::Byte>( 0 ) ) );
       this->textBoxKontakt->ForeColor = System::Drawing::Color::FromArgb( static_cast<System::Int32>( static_cast<System::Byte>( 0 ) ), static_cast<System::Int32>( static_cast<System::Byte>( 0 ) ),
         static_cast<System::Int32>( static_cast<System::Byte>( 192 ) ) );
-      this->textBoxKontakt->Location = System::Drawing::Point( 8, 258 );
+      this->textBoxKontakt->Location = System::Drawing::Point( 8, 243 );
       this->textBoxKontakt->Multiline = true;
       this->textBoxKontakt->Name = L"textBoxKontakt";
       this->textBoxKontakt->ReadOnly = true;
@@ -219,7 +219,7 @@ using namespace System::Drawing;
       this->groupBox1->Controls->Add( this->label2 );
       this->groupBox1->Location = System::Drawing::Point( 8, 135 );
       this->groupBox1->Name = L"groupBox1";
-      this->groupBox1->Size = System::Drawing::Size( 347, 117 );
+      this->groupBox1->Size = System::Drawing::Size( 347, 100 );
       this->groupBox1->TabIndex = 12;
       this->groupBox1->TabStop = false;
       // 
@@ -228,7 +228,7 @@ using namespace System::Drawing;
       this->AcceptButton = this->button1;
       this->AutoScaleBaseSize = System::Drawing::Size( 5, 13 );
       this->CancelButton = this->button1;
-      this->ClientSize = System::Drawing::Size( 444, 678 );
+      this->ClientSize = System::Drawing::Size( 387, 599 );
       this->Controls->Add( this->button1 );
       this->Controls->Add( this->textBoxHaftungsAusschluss );
       this->Controls->Add( this->pictureBoxFZKLogo );
