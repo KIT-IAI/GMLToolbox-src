@@ -275,7 +275,7 @@
  </Rule>
 
  <Rule class="FP_BebauungsFlaeche" id="5.3.1.2">
-  <description>Wenn das Attribut sonderNutzung den Wert 1500, 1600, 16000, 16001, 16002, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900  oder 9999 hat, 
+  <description>Wenn das Attribut sonderNutzung den Wert 1500, 1600, 16000, 16001, 16002, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 23000, 2400, 2500, 2600, 2700, 2800, 2900  oder 9999 hat, 
    muss besondereArtDerBaulNutzung unbelegt sein oder den Wert 2100 haben </description>
   <If>
    <AttributeFilter attributeName="sonderNutzung" minOccurs="1" maxOccurs="1">
@@ -288,6 +288,7 @@
     <AttributeValue>2100</AttributeValue>
     <AttributeValue>2200</AttributeValue>
     <AttributeValue>2300</AttributeValue>
+    <AttributeValue>23000</AttributeValue>
     <AttributeValue>2400</AttributeValue>
     <AttributeValue>2500</AttributeValue>
     <AttributeValue>2600</AttributeValue>

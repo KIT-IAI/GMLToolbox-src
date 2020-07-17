@@ -1626,10 +1626,10 @@ void SemanticRules::checkUnitsOfMeasurement( Feature * pFeature )
         string       uomValue;
         DoubleAttr * pDoubleAttr = vDoubleAttributWerte[j];
 
-				if ( pDoubleAttr->uom != NULL )
-					uomValue = pDoubleAttr->uom->getIdentifier();
-				else
-				{
+//				if ( pDoubleAttr->uom != NULL )
+//					uomValue = pDoubleAttr->uom->getIdentifier();
+//				else
+//				{
 					uomValue = "";
 					for ( iterClassifier = pDoubleAttr->classifier.begin(); iterClassifier != pDoubleAttr->classifier.end(); iterClassifier++ )
 					{
@@ -1638,7 +1638,7 @@ void SemanticRules::checkUnitsOfMeasurement( Feature * pFeature )
 	            uomValue =  iterClassifier->second;
 		        }
 			    }
-				}
+	//			}
 
         if ( uomValue == "" )
         {

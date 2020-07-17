@@ -1503,7 +1503,7 @@ protected:
 
 public:
   virtual GEOMETRY_TYPE getGeometryType()  {  return LINE_STRING_SEGMENT;  }
-  virtual GEOMETRY_TYPE getCurveType()     {  return LINE_STRING_SEGMENT;  }
+  virtual GEOMETRY_TYPE getCurveType(); 
   LINE_SEGMENT_TYPE     getLineSegmentType ()  {  return lineSegmentType; }
 
 	virtual std::string getPointsSVG ( double offsetX, double offsetY );
