@@ -6888,7 +6888,7 @@ void MultiCurve::addShapeLines2D ( std::vector<double> xCoordP, std::vector<doub
 			vX.push_back ( xCoordP[j] );
 			vY.push_back ( yCoordP[j] );
 		}
-		pCurveSegment = new LineSegment ( dim, LineSegment::_LINE_STRING );
+		pCurveSegment = new LineSegment ( dim, LineSegment::_LINE_STRING_SEGMENT );
 
     string gmlId = Constant::createGmlId();
     pCurveSegment->setGmlId( gmlId );
@@ -8200,7 +8200,7 @@ bool Surface::transformToPolygon2D ( double minDist, double minAngleDist )
   vector<LinearRing*>  rings;
   _Ring              * pLoch;
   _Ring              * pLochCopy;
-  LinearRing         * pRing = nullptr;
+  LinearRing         * pRing;
   LinearRing         * pRingA;
   LinearRing         * pRingB;
   vector<double>       x, y;
@@ -10199,7 +10199,7 @@ void PolygonGeo::triangulate()
 
   for ( j = 0; j < triaAnz; j++ )
   {
-    GeoPoint * p0 = nullptr, * p1 = nullptr, * p2 = nullptr;
+    GeoPoint * p0, * p1, * p2;
     bool       success;
     
     success = true;
@@ -12386,8 +12386,7 @@ void CurveSegment::addPoint ( GeoPoint &point )
 ///////////////////////////////////////////////////////////////////////////////
 bool CurveSegment::checkDoublePoints ( double minDist, bool remove )
 {
-  int          i, j;
-  size_t       anz;
+	int          i, j, anz;
   GeoPoint     p1(dim), p2(dim);
   double       dist;
   bool         doublePointsExist = false;
@@ -12762,6 +12761,25 @@ LineSegment::LineSegment ( const LineSegment & lineSegmentOld ) : CurveSegment (
 LineSegment::~LineSegment()
 {
 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//  Liefert den CurveType                                                    //
+///////////////////////////////////////////////////////////////////////////////
+GEOMETRY_TYPE LineSegment::getCurveType() 
+{
+  switch ( lineSegmentType )
+  {
+  case  _LINEAR_RING:
+    return LINEAR_RING;
+
+  case _LINE_STRING:
+    return LINE_STRING;
+
+  case _LINE_STRING_SEGMENT:
+    return LINE_STRING_SEGMENT;
+  }
+  return LINE_STRING;
 }
 
 ///////////////////////////////////////////////////////////////////////////////

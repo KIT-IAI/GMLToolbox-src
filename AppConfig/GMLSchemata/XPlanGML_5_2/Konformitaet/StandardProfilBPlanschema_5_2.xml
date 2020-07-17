@@ -344,7 +344,7 @@
  </Rule>
 
  <Rule class="BP_BaugebietsTeilFlaeche" id="4.5.1.3">
-  <description>Wenn das Attribut sondernutzung den Wert 1500, 1600, 16000, 16001, 16002, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900  oder 9999 hat, muss besondereArtDerBaulNutzung unbelegt sein oder den Wert 2100 haben </description>
+  <description>Wenn das Attribut sondernutzung den Wert 1500, 1600, 16000, 16001, 16002, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 23000, 2400, 2500, 2600, 2700, 2800, 2900  oder 9999 hat, muss besondereArtDerBaulNutzung unbelegt sein oder den Wert 2100 haben </description>
   <If>
    <AttributeFilter attributeName="sondernutzung" minOccurs="1" maxOccurs="1">
     <AttributeValue>1500</AttributeValue>
@@ -358,6 +358,7 @@
     <AttributeValue>2100</AttributeValue>
     <AttributeValue>2200</AttributeValue>
     <AttributeValue>2300</AttributeValue>
+    <AttributeValue>23000</AttributeValue>
     <AttributeValue>2400</AttributeValue>
     <AttributeValue>2500</AttributeValue>
     <AttributeValue>2600</AttributeValue>
