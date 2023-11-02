@@ -193,7 +193,7 @@ public:
 
     checkTransformModule = true;
 
-    ToolboxVersion = "11.1";
+    ToolboxVersion = "11.1.2";
 
     menuItemGmlSpeichern->Enabled = false;
     menuItemGmlSpeichernUnter->Enabled = false;

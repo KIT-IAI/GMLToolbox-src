@@ -139,7 +139,7 @@ using namespace System::Drawing;
       this->label2->Name = L"label2";
       this->label2->Size = System::Drawing::Size(146, 16);
       this->label2->TabIndex = 3;
-      this->label2->Text = L"Version 11.1";
+      this->label2->Text = L"Version 11.1.2";
       // 
       // textBoxHaftungsAusschluss
       // 
