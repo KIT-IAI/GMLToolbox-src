@@ -46,7 +46,7 @@ using namespace System::Drawing;
 			textBoxHaftungsAusschluss->Text = text;
 
 			text = "Kontakt:\r\n\r\n";
-			text = String::Concat ( text, "     Krl-Heinz Häfele\r\n" );
+			text = String::Concat ( text, "     Karl-Heinz Häfele\r\n" );
 			text = String::Concat ( text, "     Karlsruher Institut für Technologie (KIT)\r\n" );
 			text = String::Concat ( text, "     Institut für Automation und Angewandte Informatik\r\n" );
 			text = String::Concat ( text, "     Tel.: 0721-608 25745\r\n" );
