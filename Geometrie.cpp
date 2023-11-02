@@ -12386,7 +12386,7 @@ void CurveSegment::addPoint ( GeoPoint &point )
 ///////////////////////////////////////////////////////////////////////////////
 bool CurveSegment::checkDoublePoints ( double minDist, bool remove )
 {
-	int          i, j, anz;
+  size_t       i, j, anz;
   GeoPoint     p1(dim), p2(dim);
   double       dist;
   bool         doublePointsExist = false;

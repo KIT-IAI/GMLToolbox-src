@@ -315,7 +315,7 @@ using namespace std;
 		string   schluessel, wert, wertURL, planTyp;
 		int		 index;
 
-		wertURL == "";
+		wertURL = "";
 		QuConvert::systemStr2stdStr ( planTyp, m_planTyp );
 
 		STR_schluessel = textBoxSchluessel->Text;
